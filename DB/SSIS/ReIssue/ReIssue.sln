@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "ReIssue", "ReIssue\ReIssue.dtproj", "{C4392C8F-C98A-4720-B9B8-8088FB2226A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4392C8F-C98A-4720-B9B8-8088FB2226A1}.Development|Default.ActiveCfg = Development
+		{C4392C8F-C98A-4720-B9B8-8088FB2226A1}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

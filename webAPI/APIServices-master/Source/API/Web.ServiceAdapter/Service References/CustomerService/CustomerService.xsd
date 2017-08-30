@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" elementFormDefault="qualified" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://pvukprdccoapp02.ukroi.tesco.org/CCOServices/CustomerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnlineService" />
+  <xs:import schemaLocation="https://pvukprdccoapp02.ukroi.tesco.org/CCOServices/CustomerService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Web.Security" />
+  <xs:import schemaLocation="https://pvukprdccoapp02.ukroi.tesco.org/CCOServices/CustomerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="AddPoints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPointsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPointsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPointsSummaryResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAlternativeIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAlternativeIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAlternativeIdsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeLinkingDotcomAccounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeLinkingDotcomAccountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeLinkingDotcomAccountsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoadPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateEmailLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="guid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateEmailLinkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateEmailLinkResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnlineService" minOccurs="0" name="objCouponRequest" nillable="true" type="q1:CouponRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnlineService" minOccurs="0" name="GetCustomerCouponsResult" nillable="true" type="q2:CouponResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IGHSGetCustomerCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnlineService" minOccurs="0" name="objCouponRequest" nillable="true" type="q3:CustomerCouponRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IGHSGetCustomerCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnlineService" minOccurs="0" name="IGHSGetCustomerCouponsResult" nillable="true" type="q4:CouponResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateCustomerVerificationDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUpdateCustomerVerificationDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertUpdateCustomerVerificationDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerVerificationDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerVerificationDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerVerificationDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSecretQns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+        <xs:element minOccurs="0" name="question" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="answer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSecretQnsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSecretQnsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmailAddresss">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="newUserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmailAddresssResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEmailAddresssResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerRewards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PrimaryCardNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerRewardsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerRewardsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Rewards" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertPointsToCash">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PrimaryCardID" type="xs:long" />
+        <xs:element minOccurs="0" name="TotalPoints" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertPointsToCashResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConvertPointsToCashResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsExpiryDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PrimaryCardID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsExpiryDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPointsExpiryDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRewardExpiryDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PrimaryCardID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRewardExpiryDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRewardExpiryDateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustUseMailStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustUseMailStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustUseMailStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUseMailStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUseMailStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUseMailStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCardStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCardStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCardStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllClubcards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllClubcardsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAllClubcardsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePhoneNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePhoneNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePhoneNumberResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrimaryClubcardID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrimaryClubcardIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePrimaryClubcardIDResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerTermsNConstionsStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerTermsNConstionsStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerTermsNConstionsStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerIDSecurityDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerIDSecurityDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerIDSecurityDBResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.Web.Security" minOccurs="0" name="GetUserResult" nillable="true" type="q5:MembershipUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.Web.Security" minOccurs="0" name="muser" nillable="true" type="q6:MembershipUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Resetpwd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System.Web.Security" minOccurs="0" name="muser" nillable="true" type="q7:MembershipUser" />
+        <xs:element minOccurs="0" name="secretans" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetpwdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ResetpwdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerTNCInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerTNCInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerTNCInfoResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateToken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tokenId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTokenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateTokenResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateToken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateTokenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateTokenResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExpireToken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tokenId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExpireTokenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExpireTokenResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailET">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="linkUrl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEmailETResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendEmailETResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCouponsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+        <xs:element minOccurs="0" name="couponStatus" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCouponsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetGroupDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Add">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddCustomerResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardStatus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardStatusResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransactionsByOffer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransactionsByOfferResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TransactionsByOfferResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionReasonCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionReasonCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTransactionReasonCodeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsBalance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointsBalanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPointsBalanceResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="level" type="q8:char" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchCustomerResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitlesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTitlesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cultureCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LDPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticateUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConfigDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateConfigResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPrintAtHomeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPrintAtHomeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPrintAtHomeDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCustomerDetailsResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSecretQtns">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSecretQtnsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSecretQtnsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExistingCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExistingCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetExistingCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExistingCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExistingCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateExistingCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrimaryCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrimaryCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrimaryCardResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPhoneNoToAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPhoneNoToAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPhoneNoToAccountResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmailValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmailValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmailValidationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhoneNoValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhoneNoValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PhoneNoValidationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlternateIdValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlternateIdValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlternateIdValidationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustIdByEmailId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustIdByEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustIdByEmailIdResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCardNo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCardNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCardNoResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardNoByCustId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardNoByCustIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardNoByCustIdResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTransactionHistoryResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFriendCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFriendCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFriendCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="UserStatus" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccountOverviewDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccountOverviewDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAccountOverviewDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAboutmeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAboutmeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAboutmeDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAboutMeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAboutMeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAboutMeDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDietaryPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDietaryPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDietaryPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMyProfileDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMyProfileDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateMyProfileDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProfileDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyProfileDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMyProfileDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSupplementaryCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSupplementaryCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddSupplementaryCardResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Changepassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="custtomerID" type="xs:long" />
+        <xs:element minOccurs="0" name="oldPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangepasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangepasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSecretQuestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="custtomerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSecretQuestionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSecretQuestionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmailPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmailPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEmailPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmailPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmailPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEmailPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

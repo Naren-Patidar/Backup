@@ -1,0 +1,299 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Olt_Addtxn]    Script Date: 02/06/2013 12:28:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROC [dbo].[sp_Olt_Addtxn]
+@NoOfInserted bigint OUTPUT
+AS
+BEGIN TRY
+BEGIN TRANSACTION
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.tempPCData') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE dbo.tempPCData
+Create table tempPCData ( primary_customer_id bigint NULL, ClubcardID bigint NULL )
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.tempDate') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE dbo.tempDate
+Create table tempDate ( card_account_number bigint NULL, txn_date datetime NULL )
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.TempOfflineCardNumber') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE dbo.TempOfflineCardNumber
+CREATE TABLE TempOfflineCardNumber (primarycustomerid BIGINT, ClubcardID BIGINT, PointsBalance Decimal(13,2),WelcomePoints Decimal(13,2))
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'dbo.TempOfflineTotalPoints') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE dbo.TempOfflineTotalPoints
+CREATE TABLE TempOfflineTotalPoints (primarycustomerid BIGINT, TotalPoints Decimal(13,2))
+
+declare @rc int
+set @rc = ''
+Declare @cmd varchar(2000)
+Declare @OfferID SMALLINT
+Select @OfferID=OfferID from Offer where ((Offer.StartDateTime <= GETDATE()) AND(Offer.EndDateTime > GETDATE()-1)) And IsDeleted ='N'
+Declare @type int 
+Declare @amount decimal(15,2),@points int
+
+/*Modified to fetch the transaction DB Name*/
+DECLARE @TransactionalDBName   NVARCHAR(100);  
+SET @TransactionalDBName =  dbo.TransactionalDBName()
+
+EXEC SP_OLT_CreateSkeletonForOffline_WA
+
+Truncate table TempOfflineData_AddTxns
+
+Insert into  TempOfflineData_AddTxns (
+		txn_date,card_account_number, store_code, 
+		till_number, cashier_id, reciept_number, 
+		amount_spend, total_points, customer_id, 
+		store_welcome_points,txn_type_code, 
+		txn_source_code, user_name, txn_reason_code,
+		primary_customer_id,product_points,extra_points_1,
+		extra_points_2,customer_welcomed_flag,CardNumber
+		)
+select 
+	txn_date, PrimaryClubcardID, TempOfflineData.store_code,
+	REPLICATE('0', 5 - len(TempOfflineData.till_number)) + TempOfflineData.till_number, cashier_id, 
+	REPLICATE('0', 10 - len(TempOfflineData.reciept_number)) + reciept_number, 
+	ISNull(amount_spend,0), ISNull(total_points, 0),customer.CustomerID ,0,
+	2,6, NULL, 2,customer.PrimaryCustomerID, 0, 0, 0,CustomerWelcomedFlag,ClubcardID
+From tempofflinedata 
+        Inner join Clubcard on tempofflinedata.card_account_number = Clubcard.ClubcardID
+        Inner join customer
+        on Clubcard.CustomerID = customer.CustomerID
+        Inner join TescoStore
+        on TescoStore.TescoStoreID = TempOfflineData.store_code 
+
+
+INSERT INTO  TempOfflineStaging(
+		txn_date,card_account_number, store_code, 
+		till_number, cashier_id)
+SELECT
+	txn_date,card_account_number, store_code, 
+	till_number, cashier_id from tempofflinedata
+
+INSERT INTO  TempOfflineStaging(
+		txn_date,card_account_number, store_code, 
+		till_number, cashier_id)
+SELECT
+	txn_date,card_account_number, store_code, 
+	till_number, cashier_id from TempOfflineDupTxn
+
+
+Update TempOfflineData_AddTxns Set store_welcome_points = ISNull(StoreWelcomePointsQty,0)
+From TescoStore inner join TempOfflineData_AddTxns on TescoStore.TescoStoreID = TempOfflineData_AddTxns.store_code
+where txn_date in (select min(txn_date) from TempOfflineData_AddTxns
+group by card_account_number)
+--print 'a'
+SET @NoOfInserted = @@RowCount
+if (@NoOfInserted=0)
+BEGIN
+set @rc = 0
+--RETURN 0
+COMMIT TRANSACTION
+END
+
+else
+begin
+
+
+--Changed for NGCV32 req.No-007
+--INSERT INTO  TempOfflineStaging(
+--		txn_date,card_account_number, store_code, 
+--		till_number, cashier_id)
+--SELECT
+--	txn_date,card_account_number, store_code, 
+--	till_number, cashier_id from tempofflinedata
+--
+--INSERT INTO  TempOfflineStaging(
+--		txn_date,card_account_number, store_code, 
+--		till_number, cashier_id)
+--SELECT
+--	txn_date,card_account_number, store_code, 
+--	till_number, cashier_id from TempOfflineDupTxn
+
+--select * from TempOfflineStaging
+-- Change Complete
+
+--
+--SET @NoOfInserted = @@RowCount
+--if (@NoOfInserted=0)
+--BEGIN
+--RETURN 0
+--END
+
+Truncate table tempofflinedata 
+
+Update TempOfflineData_AddTxns 
+Set txn_type_code = 3 
+Where amount_spend<0 and total_points<0
+
+Update TempOfflineData_AddTxns 
+Set store_welcome_points = 0
+Where customer_id in (select CustomerID from Customer left outer join TempOfflineData_AddTxns on customer_id=CustomerID where CustomerWelcomedFlag='1')
+
+Declare @userid int 
+Select @userid=UserID from ApplicationUser Where Upper(UserName)='SYSTEM'
+
+Set @cmd = 'Insert into tempPCData 
+			select distinct primary_customer_id,card_account_number
+			from TempOfflineData_AddTxns A 
+			Where  A.primary_customer_id not in (select CustomerID from Clubcard Where ClubcardID in 
+					(select ClubcardID from ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+'))'
+					print @cmd
+Exec(@cmd)
+
+Select @cmd = 'INSERT INTO ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+' ( 
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.SKUPointsQty,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.HighRewardInd, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.RewardInd,  
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.WelcomePointsQty, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.BonusPointsQty, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.RewardReissuedDate, 
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.RewardreissuedInd, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.RewardReissueRequestedDate, 
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.SignOffInd, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.PointsCarriedForward, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.PointsBroughtForward, 
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.PartnerPointsBalanceQty, ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.ClubcardID,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.RewardReissueRequestedBy, 
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.VoucherRedeemedValue,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.AmendDatetime,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.AmendBy,
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.InsertDateTime,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.InsertBy,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.IsDeleted,
+			ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.MailedFlag,ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.ConvertedFlag)
+			select distinct 0, ''0'', ''0'', 0, 0, NULL,''0'', NULL, ''0'', 0, 0, 0, PrimaryClubcardID, 0, 0,
+					getdate(),'+Convert(varchar(10),@userid)+',getdate(),'+Convert(varchar(10),@userid)+',''N'',''0'',''0''
+			from tempPCData T left outer join Clubcard on CustomerID=primary_customer_id
+			Where primary_customer_id in (select primary_customer_id from tempPCData) '
+PRINT @cmd
+Exec(@cmd) 
+
+truncate table tempPCData
+
+Insert into tempPCData select distinct (A.primary_customer_id),card_account_number
+From TempOfflineData_AddTxns A 
+	Inner Join customer C
+		On A.customer_id = C.CustomerID
+Where C.CustomerWelcomedFlag is null or CustomerWelcomedFlag = '0' and 
+	  A.txn_date = (select min(txn_date) from TempOfflineData_AddTxns where A.primary_customer_id = primary_customer_id)     
+
+truncate table tempDate
+
+Insert into tempDate
+select card_account_number,min(txn_date) from TempOfflineData_AddTxns group by card_account_number 
+
+truncate table TempOfflineCardNumber
+
+Insert into TempOfflineCardNumber(primarycustomerid,ClubcardID)
+Select Distinct CustomerID,PrimaryClubcardID From Clubcard where CustomerID in (
+select PrimaryCustomerID From customer where customerid in (select customer_id from tempofflinedata_addtxns))
+
+Insert into TempOfflineTotalPoints
+select PrimaryCustomerID,sum(total_points) from TempOfflineData_AddTxns,TempOfflineCardNumber 
+Where TempOfflineData_AddTxns.primary_customer_id = TempOfflineCardNumber.PrimaryCustomerID 
+ group by PrimaryCustomerID
+
+Update TempOfflineCardNumber Set PointsBalance = TempOfflineTotalPoints.TotalPoints
+From TempOfflineData_AddTxns ,TempOfflineTotalPoints
+Where TempOfflineData_AddTxns.primary_customer_id = TempOfflineCardNumber.PrimaryCustomerID 
+	And TempOfflineCardNumber.PrimaryCustomerID = TempOfflineTotalPoints.PrimaryCustomerID
+
+
+Update TempOfflineCardNumber Set WelcomePoints = store_welcome_points 
+From TempOfflineData_AddTxns ,TempOfflineTotalPoints
+Where TempOfflineData_AddTxns.primary_customer_id = TempOfflineCardNumber.PrimaryCustomerID 
+	And TempOfflineCardNumber.PrimaryCustomerID = TempOfflineTotalPoints.PrimaryCustomerID
+	And store_welcome_points != 0
+
+Set @cmd = 'UPDATE ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+'
+			SET ClubcardOffer_'+Convert(varchar(10),@OfferID)+'.WelcomePointsQty = ISNull(WelcomePointsQty,0) + (select Isnull(WelcomePoints ,0)
+			from TempOfflineCardNumber Where TempOfflineCardNumber.ClubcardID = C.ClubcardID and IsDeleted=''N'')
+			From ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+' C, TempOfflineCardNumber T1
+			Where T1.ClubcardID = C.ClubcardID and IsDeleted=''N'''
+Exec(@cmd)
+
+Select @cmd = 'update ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+'
+			set PointsBalanceQty = ISNull(PointsBalanceQty,0) + (select Sum(IsNull(PointsBalance,0)) 
+			from TempOfflineCardNumber Where TempOfflineCardNumber.ClubcardID = C.ClubcardID and IsDeleted=''N'')
+			From ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+' C, TempOfflineCardNumber T1
+			Where T1.ClubcardID = C.ClubcardID and IsDeleted=''N'''
+Exec(@cmd)
+
+Set @cmd = 'update ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+'
+			set PointsBalanceQty = ISNull(PointsBalanceQty,0) + (select Isnull(WelcomePoints ,0) 
+			from TempOfflineCardNumber Where TempOfflineCardNumber.ClubcardID = C.ClubcardID and IsDeleted=''N'')
+			From ' + @TransactionalDBName + '.dbo.ClubcardOffer_'+Convert(varchar(10),@OfferID)+' C, TempOfflineCardNumber T1
+			Where T1.ClubcardID = C.ClubcardID and IsDeleted=''N'''
+Exec(@cmd)
+
+update	customer 
+set		customer.CustomerWelcomedFlag = '1' 
+from 	TempOfflineData_AddTxns 
+		inner Join
+		Customer on TempOfflineData_AddTxns.customer_id = Customer.CustomerID
+where 	TempOfflineData_AddTxns.customer_welcomed_flag = '0' or TempOfflineData_AddTxns.customer_welcomed_flag is null
+		and Customer.IsDeleted = 'N'
+ 
+
+Select @userid=UserID from ApplicationUser where UPPER(UserName) = 'System'
+Select @cmd = 'Insert into ' + @TransactionalDBName + '.dbo.ClubcardTransaction_'+Convert(varchar(10),@OfferID)+' (
+			ClubcardID, TescoStoreID, TransactionDateTime, TransactionType ,
+			SourcePOSID ,SourceSystemTransactionID,CashierID,InsertBy,
+			AmountSpent,TransactionReasonID,WelcomePointsQty,SKUPointsQty,
+			ManualPointsQty,GreenPointsQty,InsertDateTime, 
+			PartnerOutletID,AmendDateTime,AmendBy,IsDeleted,NormalPoints)
+		 select   
+			A.CardNumber,A.store_code,
+			A.txn_date,A.txn_type_code,A.till_number,
+			A.reciept_number,A.cashier_id,'+Convert(varchar(10),@userid)+',A.amount_spend,A.txn_reason_code,
+			A.store_welcome_points,A.product_points, A.extra_points_1 ,A.extra_points_2,
+			getdate(),NULL,getdate(),'+Convert(varchar(10),@userid)+',''N'',Total_Points
+		from TempOfflineData_AddTxns A'
+--PRINT @cmd
+Exec(@cmd)
+Select @NoOfInserted=count(1) from TempOfflineData_AddTxns
+
+UPDATE StoreDay 
+SET StoreDay.AmendDateTime=getdate(),StoreDay.AmendBy=@userid,
+	StoreDay.WelcomePointsBalance = ISNull(StoreDay.WelcomePointsBalance,0) + 
+	(select IsNull(sum(store_welcome_Points),0) from TempOfflineData_AddTxns Where TempOfflineData_AddTxns.store_code =StoreDay.TescoStoreID And 
+	CONVERT(DATETIME,CONVERT(VARCHAR, TempOfflineData_AddTxns.txn_date ,111),111) = StoreDay.StoreDate And  TempOfflineData_AddTxns.rejection_Code= 32),  
+	StoreDay.AmountSpentBalance = ISNull(StoreDay.AmountSpentBalance,0) + (select Sum(IsNull(amount_spend,0)) from TempOfflineData_AddTxns Where TempOfflineData_AddTxns.store_code =StoreDay.TescoStoreID And 
+	CONVERT(DATETIME,CONVERT(VARCHAR, TempOfflineData_AddTxns.txn_date ,111),111) = StoreDay.StoreDate), 
+	StoreDay.NormalPointsBalance = ISNull(StoreDay.NormalPointsBalance,0) + (select Sum(IsNull(total_points,0)) from TempOfflineData_AddTxns Where TempOfflineData_AddTxns.store_code =StoreDay.TescoStoreID And 
+	CONVERT(DATETIME,CONVERT(VARCHAR, TempOfflineData_AddTxns.txn_date ,111),111) = StoreDay.StoreDate),
+	StoreDay.NumberOfTxns = ISNull(StoreDay.NumberOfTxns,0) + (select Count(TempOfflineData_AddTxns.txn_date) from TempOfflineData_AddTxns Where TempOfflineData_AddTxns.store_code =StoreDay.TescoStoreID And 
+	CONVERT(DATETIME,CONVERT(VARCHAR, TempOfflineData_AddTxns.txn_date ,111),111) = StoreDay.StoreDate), 
+	StoreDay.SKUPointsQty = ISnull(SKUPointsQty,0) ,
+	StoreDay.BonusPointsQty = ISnull(BonusPointsQty,0) ,
+	StoreDay.PartnerPointsBalanceQty = ISnull(PartnerPointsBalanceQty,0) ,
+	StoreDay.ManualTotalPointsBalance = ISnull(ManualTotalPointsBalance,0)
+	From StoreDay, TempOfflineData_AddTxns T1
+	Where T1.store_code =StoreDay.TescoStoreID And CONVERT(DATETIME,CONVERT(VARCHAR, T1.txn_date ,111),111) = StoreDay.StoreDate And StoreDay.IsDeleted = 'N'
+
+INSERT INTO StoreDay ( StoreDay.StoreDate, StoreDay.SKUPointsQty, StoreDay.NumberOfnewhscCustomers, 
+	StoreDay.NumberOfNormalCustomers, StoreDay.NormalPointsBalance, 
+	StoreDay.NumberOfCustomers, StoreDay.ValueOfRedeemedVouchers, 
+	StoreDay.WelcomePointsBalance, StoreDay.BonusPointsQty, StoreDay.NumberOfMailPromotionCustomers, 
+	StoreDay.ManualTotalPointsBalance, StoreDay.AmountSpentBalance,
+	StoreDay.NumberOfThirdPartyMailPromotionCustomers, StoreDay.NumberOfDeceasedCustomers, StoreDay.NumberOfRedeemedVouchers, 
+	StoreDay.NumberOfManualTxns, StoreDay.NumberOfBannedCustomers, StoreDay.NumberOfGroupPromotionCustomers, 
+	StoreDay.PartnerPointsBalanceQty, StoreDay.NumberOfPrimaryCustomers, StoreDay.NumberOfPhonePromotionCustomers, 
+	StoreDay.NumberOfTxns, StoreDay.TescoStoreID, StoreDay.NumberOfPrimaryNormalCustomers, StoreDay.NumberOfNewCustomers, 
+	StoreDay.NumberOfLeftCustomers, StoreDay.NumberOfInactiveCustomers,StoreDay.InsertDateTime,StoreDay.InsertBy,
+	StoreDay.AmendDateTime,StoreDay..AmendBy ,StoreDay.IsDeleted) 
+select CONVERT(DATETIME,CONVERT(VARCHAR, txn_date ,111),111), 0, 0, 0, sum(total_points), 0, 0, 
+(select iSnULL(sum(store_welcome_points),0) from TempOfflineData_AddTxns 
+where TempOfflineData_AddTxns.rejection_code = 32 and TempOfflineData_AddTxns.store_code =A.store_code
+And CONVERT(DATETIME,CONVERT(VARCHAR, TempOfflineData_AddTxns.txn_date ,111),111) = CONVERT(DATETIME,CONVERT(VARCHAR, A.txn_date ,111),111)) , 
+	0, 0, 0, sum(amount_spend), 0, 0, 0, 0, 0, 0, 0, 0, 0, count(*), A.store_code, 0, 0, 0, 0 ,getdate(),@userid,getdate(),@userid,'N'
+From TempOfflineData_AddTxns A
+	Left Join StoreDay
+		on CONVERT(DATETIME,CONVERT(VARCHAR, A.txn_date ,111),111) = StoreDay.StoreDate	
+		And A.store_code = StoreDay.TescoStoreID	
+	Where (StoreDay.TescoStoreID Is Null Or StoreDay.StoreDate Is Null)
+	group by CONVERT(DATETIME,CONVERT(VARCHAR, A.txn_date ,111),111), A.store_code 
+
+Truncate table TempOfflineData_AddTxns
+
+--RETURN
+COMMIT TRANSACTION
+END
+END TRY
+	BEGIN CATCH
+IF @@TRANCOUNT > 1
+		ROLLBACK TRANSACTION
+COMMIT TRANSACTION
+	END CATCH
+return(@rc)

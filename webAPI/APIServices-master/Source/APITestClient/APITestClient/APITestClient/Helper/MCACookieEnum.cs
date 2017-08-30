@@ -1,0 +1,35 @@
+﻿namespace APITestClient.Helper
+{
+    public enum MCACookieEnum
+    {
+        CustomerID,
+        DotCustomerID,
+        DotcomCustomerID,
+        PtsDtls,
+        PointSummaryCutOffDate,
+        PointSummarySignOffDate,
+        XmasCurrStartDate,
+        XmasCurrEndDate,
+        XmasNextStartDate,
+        XmasNextEndDate,
+        ExchangeFlag,
+        ExchangeStartDate,
+        ExchangeEnddate,
+        CouponPageDate,
+        ShowOrdrRplcmtPage,
+        IsSecurityCheckDone,
+        IsFuelAccountExist,
+        MenuConfiguration,
+        sShowPointsSummaryPage,
+        firstPrevOfferID,
+        PrevOfferID,
+        IGHSCustomerIndentity,
+        CustomerIdentity,
+        Activation,
+        Activated,
+        CustomerUseStatus,
+        CustomerMailStatus,
+        CurrentOfferID,
+        IsCustomerDetailsVerificationDone
+    }
+}

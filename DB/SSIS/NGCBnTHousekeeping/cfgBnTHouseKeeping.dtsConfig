@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\XC54"
+								  GeneratedFromPackageName="pkgCCOUploadStoreData"
+								  GeneratedFromPackageID="{04E4CDA7-D8BB-41F2-96C5-69FC52EC4A13}"
+								  GeneratedDate="27/08/2010 15:58:27"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+			   Path="\Package.Variables[User::varPkgADOConnectionString].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.149.228;Initial Catalog=NGCR16;User Id=sa;Password=Tesco123;</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgBnTLogFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\UserLogs\Upload\BnTHousekeeping</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varSoftDurationYears].Properties[Value]" ValueType="String">
+    <ConfiguredValue>3</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varHardDurationYears].Properties[Value]" ValueType="String">
+    <ConfiguredValue>4</ConfiguredValue>
+  </Configuration>
+  </DTSConfiguration>

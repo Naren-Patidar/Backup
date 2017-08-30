@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPosHandler", "IPosHandler.csproj", "{90AD959C-7FE0-421B-9381-CE7DD253BBEE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {B879DB21-CE7E-4D3A-87C0-13F51A946386}
+		SccProjectUniqueName1 = IPosHandler.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{90AD959C-7FE0-421B-9381-CE7DD253BBEE}.Debug.ActiveCfg = Debug|.NET
+		{90AD959C-7FE0-421B-9381-CE7DD253BBEE}.Debug.Build.0 = Debug|.NET
+		{90AD959C-7FE0-421B-9381-CE7DD253BBEE}.Release.ActiveCfg = Release|.NET
+		{90AD959C-7FE0-421B-9381-CE7DD253BBEE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+﻿@model APITestClient.Helper.APIResponse
+
+<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">Test Client for MCA API</a></p>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <section class="content-wrapper main-content clear-fix">
+        <h3>Voucher Methods:</h3>
+        <ol class="round">
+            @*@Html.Partial("_VoucherMethods.cshtml")*@
+            <li> 
+                @using (Html.BeginForm("GetVoucherRewardDetails", "MCA", FormMethod.Post))
+                { 
+                    <button id="getVoucherRewardDetails" value="GetVoucherRewardDetails">GetVoucherRewardDetails</button>
+                }
+            </li>
+           <li> 
+                @using (Html.BeginForm("GetUnusedVoucherDetails", "MCA", FormMethod.Post))
+                { 
+                    <button id="getUnusedVoucherDetails" value="GetUnusedVoucherDetails">GetUnusedVoucherDetails</button>
+                }                
+            </li>
+            <li> 
+                @using (Html.BeginForm("GetCustomerVoucherValCPS", "MCA", FormMethod.Post))
+                { 
+                    <button id="getCustomerVoucherValCPS" value="GetCustomerVoucherValCPS">GetCustomerVoucherValCPS</button>
+                }               
+            </li>
+            <li> 
+                @using (Html.BeginForm("GetUsedVoucherDetails", "MCA", FormMethod.Post))
+                { 
+                    <button id="getUsedVoucherDetails" value="GetUsedVoucherDetails">GetUsedVoucherDetails</button>
+                }                
+            </li>
+            <li> 
+                @using (Html.BeginForm("GetRewardDetailsMiles", "MCA", FormMethod.Post))
+                { 
+                    <button id="getRewardDetailsMiles" value="GetRewardDetailsMiles">GetRewardDetailsMiles</button>
+                }               
+            </li>
+            <li> 
+                @using (Html.BeginForm("GetCustomerTransactions", "MCA", FormMethod.Post))
+                { 
+                    <button id="getCustomerTransactions" value="GetCustomerTransactions">GetCustomerTransactions</button>
+                }               
+            </li>
+        </ol>
+        @if (Model != null)
+        { 
+            <label>@Model.data</label>
+        }
+    </section>
+</div>

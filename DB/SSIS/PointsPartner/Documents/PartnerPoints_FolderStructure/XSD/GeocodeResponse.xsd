@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Rob Bowman (Pearson Plc) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="GeocodeResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Customer" maxOccurs="10000">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CustomerID" type="xs:integer"/>
+							<xs:element name="Latitude">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[-]?[0-9]{3}\.[0-9]{6}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Longitude">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[-]?[0-9]{3}\.[0-9]{6}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Confidence" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:maxInclusive value="9" />
+										<xs:minInclusive value="0" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

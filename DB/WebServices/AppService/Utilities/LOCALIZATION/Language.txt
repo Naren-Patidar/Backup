@@ -1,0 +1,2033 @@
+# NGC version string
+NGCVersion=NGC Version 1.5
+
+# Sync Error
+Win.Header.SyncError=Sync Error
+SyncError.Button.Continue=Continue
+SyncError.Button.Continue.Tip=Click here to refresh the previous page with the new data
+SyncError.Message=Error<br>Whilst you were making changes to the previous page, the same data was updated by someone else. Press Continue to refresh the previous page to view the new data.
+
+# General Error
+Win.Header.GeneralError=Error
+GeneralError.NA=N/A
+GeneralError.MachineName=Machine Name
+GeneralError.DateAndTime=Date & Time
+GeneralError.ErrorID=Error ID
+GeneralError.Button.Logon=Logon
+GeneralError.Button.Logon.Tip=Click here to log back on to the application
+GeneralError.Messsage.Default=A problem has occurred with the application. Please log back onto the system and if the problem continues, contact the helpdesk. 
+
+############################################################
+##
+### NGCCSD
+##
+############################################################
+
+# Common
+Phrase.Na=n/a
+
+# Standard Buttons
+Button.Update=Update
+Button.Update.ToolTip=Click here to save change and close
+Button.Insert=Insert
+Button.Insert.ToolTip=Click here to add item and close
+Button.Ok=OK
+Button.Ok.ToolTip=Click here to confirm and close
+Button.Delete=Delete
+Button.Delete.ToolTip=Click here to delete item and close
+Button.Cancel=Cancel
+Button.Cancel.ToolTip=Click here to close
+Button.Save=Save
+Button.Save.ToolTip=Click here to save change and close
+
+Button.Logon=Logon
+Button.Language=Reselect Language
+Button.Reset=Reset
+List.TopElement=\tPlease Select...
+
+# Standard Dividers
+Divider.Dash=-
+Divider.ForwardSlash=/
+
+# Checkbox checked and unchecked values
+CheckBox.Checked=1
+CheckBox.Unchecked=0
+
+# Trimmery
+Trimmery.FindCustomer=Find&nbsp;Customer
+Trimmery.Register=Register
+Trimmery.Logout=Logout
+Trimmery.Divider= - 
+Trimmery.CustomerIsPrimary=Primary&nbsp;Customer<br>
+Trimmery.CustomerIsSecondary=
+Trimmery.FindCustomer.Tip=Find a customer
+Trimmery.Register.Tip=Register a new customer
+Trimmery.Customer.Tip=Currently selected customer's name and primary card number
+Trimmery.Customer.Secondary.Tip=Currently selected customer's name and secondary card number
+Trimmery.CustomerType.Tip=Indicates whether this customer is a primary customer
+Trimmery.CustomerUser.Tip=Indicates the status of the customer
+Trimmery.CustomerMail.Tip=Indicates whether the customer is mailable
+Trimmery.Logout.Tip=Logout of the system
+
+# Standard Date WebControl
+January=January
+February=February
+March=March
+April=April
+May=May
+June=June
+July=July
+August=August
+September=September
+October=October
+November=November
+December=December
+
+# Standard DataTable WebControl
+NextPage=Next>
+PrevPage=<Prev
+Select=Select
+
+# Standard Feedback Messages
+Msg.UpdateComplete=Update completed successfully.
+Msg.DataIsOutOfSync=Data is out of sync.
+Msg.CustomerRegistered=The registration of the customer has been successful.
+Msg.LosingChanges=Changes have been made to the form. They will be lost.
+
+# General Error Messages
+Message.DefaultError=Homeplus Family Card System<br><br>There has been an internal error in the application. Changes that you were making may not have been saved.<br>Please logon again and retry your last action. If it fails, please contact support quoting the information below.
+
+# Standard Web Exception Messages
+ExceptionMsg.SQLServerConnectionNotMade=Connection to the server/database has been lost. The system administrator has been notified. Please try again in 5 minutes. If you are currently logged onto the application, you will need to logoff and log back on again.
+ExceptionMsg.SQLExecutionError=An unexpected error has occurred. The system administrator has been informed. Please re-input the data or select another menu item.
+ExceptionMsg.ConnectionRefused=Connection refused, username/password not recognised. Please try again.
+ExceptionMsg.DefaultError=An unexpected error has occurred. The system administrator has been informed. Please re-input the data or select another menu item.
+ExceptionMsg.CardAlreadyExists=The card number already exists. Please check that the card number is entered correctly, otherwise navigate to the search page and attempt to locate the card.
+ExceptionMsg.InvalidCardNumber=The card number is invalid. Please check that the card number is entered correctly and try again.
+
+# Standard Validation Error Messages
+ValidationSummary.Text=Validation Error
+ErrorMsg.MissingMandatoryValue=You must enter a value for {0}
+ErrorMsg.InvalidRange={0} is invalid. It should be a {1}
+ErrorMsg.Minval={0} is invalid. It should be a {1} not less than {2}
+ErrorMsg.Maxval={0} is invalid. It should be a {1} not greater than {2}
+ErrorMsg.BetweenMinAndMax={0} is invalid. It should be a {1} between {2} and {3}
+ErrorMsg.IsInvalid={0} is invalid
+ErrorMsg.InvalidDifference=The value of {0} must be a {1} {2} {3}
+ErrorMsg.InvalidType=The value of {0} must be a {1}
+Date=Date
+Integer=Whole Number
+Double=Decimal Number
+Currency=Monetary Value
+String=String
+GreaterThan=greater than
+GreaterThanEqual=not less than
+LessThan=less than
+LessThanEqual=not greater than
+Equal=equal to
+NotEqual=different from
+Validation.Text=Error
+
+#
+# Tesco's Menu
+#
+
+# Login
+Menu.Item.Name.Login=Login
+Menu.Item.Tip.Login=Logon to the Customer Support Application
+
+#Logoff
+Menu.Item.Name.Logoff=Logoff
+Menu.Item.Tip.Logoff=Logoff the application
+#Register
+Menu.Item.Tip.Register=Register a new card and customer
+Menu.Item.Name.Register=Register&nbsp;Customer
+
+# Find
+Menu.Item.Name.Search=Search
+Menu.Item.Tip.Search=Search for a customer
+
+# Customer
+Menu.Item.Name.Customer=Customer
+Menu.Item.Tip.Customer=Display and edit customer details
+Menu.Item.Name.ViewDetails=View&nbsp;Details
+Menu.Item.Tip.ViewDetails=View the customer's details
+Menu.Item.Name.UpdateDetails=Update&nbsp;Details
+Menu.Item.Tip.UpdateDetails=Update the customer's details
+Menu.Item.Name.ViewInformation=View&nbsp;Information
+Menu.Item.Tip.ViewInformation=View additional customer information
+Menu.Item.Name.UpdateInformation=Update&nbsp;Information
+Menu.Item.Tip.UpdateInformation=Update the additional customer information
+
+# Cards
+Menu.Item.Name.Cards=Cards
+Menu.Item.Tip.Cards=View and amend details of the cards
+Menu.Item.Name.ViewCards=Maintain&nbsp;Cards
+Menu.Item.Tip.ViewCards=View and maintain the customer's cards or add a new card
+
+# Points
+Menu.Item.Name.Points=Points
+Menu.Item.Tip.Points=View current points balances
+Menu.Item.Name.ViewPoints=View&nbsp;Points
+Menu.Item.Tip.ViewPoints=View a summary of the points collected by this customer's reward group
+Menu.Item.Name.ViewTransactions=View&nbsp;Transactions
+Menu.Item.Tip.ViewTransactions=History of Reward Group's and Customer's Transactions
+Menu.Item.Name.AddTransaction=Add&nbsp;Transaction
+Menu.Item.Tip.AddTransaction=Manually add a transaction
+
+# Rewards
+Menu.Item.Name.Rewards=Rewards
+Menu.Item.Tip.Rewards=View current reward status
+Menu.Item.Name.ViewRewards=View&nbsp;Rewards
+Menu.Item.Tip.ViewRewards=View current rewards for customer
+
+# Reward Group
+Menu.Item.Name.RewardGroup=Reward&nbsp;Group
+Menu.Item.Tip.RewardGroup=View current reward group of customer and option to merge customer into a different reward group
+Menu.Item.Name.ViewGroup=View&nbsp;Reward&nbsp;Group
+Menu.Item.Tip.ViewGroup=View current reward group for customer
+Menu.Item.Name.Merge=Merge&nbsp;Into
+Menu.Item.Tip.Merge=Merge a customer into another reward group
+
+# Tesco's Headings
+Page.Header.HomeplusFamilyCardSystem=Homeplus Family Card System
+Page.Caption.Tip=Page Title
+Page.Header.HomeplusFamilyCardSystem.Tip=Homeplus Family Card System
+Page.Header.Date.Tip=Today's date
+Page.Header.UserName.Tip=The user that is currently logged in
+
+# Customer Details Page
+Win.Header.CustomerDetails=Customer Details
+Menu.Header.CustomerDetails=Customer Details
+Form.Header.CustomerDetails=Customer Details
+Form.ErrorHeader.CustomerDetails=Details are invalid for Customer
+
+# Customer Register Page
+Win.Header.CustomerRegister=Register Customer
+Menu.Header.CustomerRegister=Manage Card - Card Issue
+Form.Header.CardDetails=Card Details
+
+# Logon Page
+Win.Header.Logon=Login
+Menu.Header.Logon=Customer Service Application
+Form.Header.Logon=Logon
+
+# Customer Search Page
+Win.Header.CustomerSearch=Find Customer
+Menu.Header.CustomerSearch=Find Customer
+Form.Header.CustomerSearch=Find Customer
+
+# View Points
+Win.Header.ViewPoints=View Points
+Menu.Header.ViewPoints=Points : View Points
+
+# View Transaction
+Win.Header.ViewTransactions=View Transactions
+Menu.Header.ViewTransactions=Points : View Transactions
+Phrase.Collection=<b>Collection Period</b> {0} {1} - {2}
+Phrase.PreviousLink=&lt;&lt;Previous
+Phrase.PreviousLink.Tip=View Transactions for the Previous Collection Period
+Phrase.CurrentLink=Next&gt;&gt;
+Phrase.CurrentLink.Tip=View Transactions for the Next Collection Period
+Phrase.CustomerLink=View&nbsp;Customer
+Phrase.CustomerLink.Tip=View Transactions for the Customer
+Phrase.HouseholdLink=View&nbsp;Reward&nbsp;Group
+Phrase.HouseholdLink.Tip=View Transactions for the Reward Group
+Phrase.Choice=<b>Collection Period:</b> {0} - <b>Transactions:</b> {1}
+Phrase.Customer=Customer
+Phrase.Household=Reward Group
+Phrase.Previous=Previous
+Phrase.Current=Current
+Phrase.CurrentPrimaryCustomer=<b>Primary Customer:</b> {0}
+Phrase.PreviousPrimaryCustomer=<b>Customer who Received Rewards:</b> {0}
+TxnDetail=Detail
+TxnDetail.Tip=Click on a link to view detailed information about that transaction
+Form.Header.TxnDetails=Transaction Details
+Group.Header.TransactionIdentification=Transaction Identification
+Group.Header.Summary=Reward Group Points & Spend for this Period
+Group.Header.Label=Choose View
+
+# Adjust Points
+Menu.Header.AddTransaction=Points : Add Transaction
+Win.Header.AddTransaction=Add Transaction
+AdjustPointsForm.Transaction=Transaction
+AdjustPointsForm.Transaction.Tip=Enter the Store and optionally the POS Terminal ID and Transaction Number
+AdjustPointsForm.Store=Store
+AdjustPointsForm.Store.Tip=Choose a store for this transaction
+AdjustPointsForm.Points=Points
+AdjustPointsForm.NormalPoints=Normal Points
+AdjustPointsForm.WelcomePoints=Welcome Points
+AdjustPointsForm.ProductPoints=Product Points
+AdjustPointsForm.NormalPoints.Tip=Enter the amount of normal points
+AdjustPointsForm.WelcomePoints.Tip=Enter the amount of welcome points
+AdjustPointsForm.ProductPoints.Tip=Enter the amount of product points
+AdjustPointsForm.TotalPoints=Total Points
+AdjustPointsForm.TotalPoints.Tip=This is the total amount of points that the customer will receive
+AdjustPointsForm.Reason=Reason
+AdjustPointsForm.Reason.Tip=Enter a reason for this transaction
+AdjustPointsForm.SalesAmount=Sales Amount
+AdjustPointsForm.SalesAmount.Tip=If relevant, enter a sales amount associated with this transaction
+AdjustPointsForm.PosTerminal=POS Terminal
+AdjustPointsForm.PosTerminal.Tip=Enter the POS Terminal number (Optional)
+AdjustPointsForm.TransactionNum=Transaction Num
+AdjustPointsForm.TransactionNum.Tip=Enter POS Transaction Number (Optional)
+AdjustPointsButton.Cancel=Reset
+AdjustPointsButton.Cancel.Tip=Reset this page to its default values
+AdjustPointsButton.Save=Save
+AdjustPointsButton.Save.Tip=Save this transaction
+AdjustPointsPopUp.Confirmation=Confirmation
+AdjustPointsPopUp.Error=Error
+AdjustPointsPopUp.Warning=Warning
+AdjustPointsPopUp.TransactionOk=Transaction saved successfully
+AdjustPointsPopUp.TransactionFailed=Transaction not saved. Please try again. If the problem persists, please contact support.
+AdjustPointsPopUp.SpendMandatory=You must enter a sales amount
+AdjustPointsPopUp.PositiveSpendNotAllowed=Sales amount must not be a positive value
+AdjustPointsPopUp.NegativeSpendNotAllowed=Sales amount must not be a negative value
+AdjustPointsPopUp.SpendPositivePointsNegative=A positive sales amount must be entered when the total points are positive
+AdjustPointsPopUp.SpendNegativePointsPositive=A negative sales amount must be entered when the total points are negative
+AdjustPointsPopUp.PositivePointsNotAllowed=Points must not be a positive value.
+AdjustPointsPopUp.NegativePointsNotAllowed=Points must not be a negative value.
+AdjustPointsPopUp.OutsidePointsLimit=Total points is invalid. It should be between the user limits.
+AdjustPointsPopUp.NoCurrentOffer=A current collection period does not exist. Unable to add transaction.
+AdjustPointsPopUp.CustomerLeftSchemeWarning=The Customer has left the Homeplus Family Card System.
+AdjustPointsPopUp.CustomerDeceasedWarning=The Customer's status is set to deceased.
+AdjustPointsPopUp.CustomerBannedError=The Customer has been banned.  <br>Transactions can not be added to this Customer's Card Account.
+AdjustPointsPopUp.CustomerSkeletonWarning=The Customer has not registered.
+AdjustPointsPopUp.CustomerCardWarning=The selected card for the customer is not usable.
+AdjustPointsPopUp.GeneralWarning=Press Continue to add this transaction to the Customer's Account, or choose Cancel.
+AdjustPointsPopUp.Button.Ok=Continue
+AdjustPointsHeaderLabel.ItemsToBeFilledIn1=Items marked with
+AdjustPointsHeaderLabel.ItemsToBeFilledIn2=must be filled in. Items marked with <span class="formrequiredmarker">!</span> are validation errors 
+AdjustPointsForm.PointsMessage=At least one points type must have an entry.
+AdjustPointsForm.PointsMessage.Tip=Mandatory points fields 
+
+# Timeout
+Win.Header.Timeout=Session Timeout
+Page.Timeout.Message=Homeplus Family Card System.<br>Your session has timed out. Please log back in to continue using the system. 
+Page.Timeout.Button.Ok=OK
+
+# Common Logon
+LogonPanel.PopUp.Error=Error
+
+# Logon
+NGCCSD.LogonPanel.FieldGroup.Language=Select Language
+NGCCSD.LogonPanel.Flag.Primary.Tip=Click here to select Primary language
+NGCCSD.LogonPanel.Flag.Secondary.Tip=Click here to select Secondary language
+NGCCSD.LogonPanel.FieldGroup.Logon=Login
+NGCCSD.LogonPanel.TextBox.User=Username
+NGCCSD.LogonPanel.TextBox.Password=Password
+NGCCSD.LogonPanel.Header.Caption1=Welcome to the Homeplus Family Card System
+NGCCSD.LogonPanel.Header.Caption2=Customer Service Desk
+NGCCSD.LogonPanel.Button.Logon=Login
+NGCCSD.LogonPanel.PopUp.Error=Error
+NGCCSD.LogonPanel.PopUp.Message.Attempt1-2=The Username or Password that you entered is incorrect. Please try again.
+NGCCSD.LogonPanel.PopUp.Message.Attempt3=Failed login, please contact support.
+NGCCSD.LogonPanel.ValidationSummary.Message=Error
+NGCCSD.LogonPanel.TextBox.User.Tip=Enter your username
+NGCCSD.LogonPanel.TextBox.Password.Tip=Enter your password
+NGCCSD.LogonPanel.Button.Logon.Tip=Click here to Login
+
+# View Information
+Win.Header.ViewInformation=View Information
+Menu.Header.ViewInformation=Customer : View Information
+ViewInformationPanel.Form.MembershipInformation=Membership Information
+ViewInformationPanel.Form.DateJoined=Date Joined
+ViewInformationPanel.Form.DateJoined.Tip=The date the customer joined the Homeplus Family Card System
+ViewInformationPanel.Form.TimeJoined=Time Joined
+ViewInformationPanel.Form.TimeJoined.Tip=The time the customer joined the Homeplus Family Card System
+ViewInformationPanel.Form.HomeStoreHeader=Store
+ViewInformationPanel.Form.HomeStore=Preferred Store
+ViewInformationPanel.Form.HomeStore.Tip=The store most regularly used by the customer
+ViewInformationPanel.Form.HomeStore.Unknown=Unknown
+ViewInformationPanel.Form.RegisteredBy=Registered By
+ViewInformationPanel.Form.RegisteredBy.Tip=The user that registered this customer
+ViewInformationPanel.Form.FamilyInformation=Family Information
+ViewInformationPanel.Form.Income=Income
+ViewInformationPanel.Form.Income.Tip=The income band that the customer has specified
+ViewInformationPanel.Form.FamilyMember1=Family Member 1
+ViewInformationPanel.Form.FamilyMember2=Family Member 2
+ViewInformationPanel.Form.FamilyMember3=Family Member 3
+ViewInformationPanel.Form.FamilyMember4=Family Member 4
+ViewInformationPanel.Form.FamilyMember5=Family Member 5
+ViewInformationPanel.Form.FamilyMember6=Family Member 6
+ViewInformationPanel.Form.FamilyMember.Tip=Family member's details
+ViewInformationPanel.Form.Age=Age
+ViewInformationPanel.Form.Age.Tip=Family member's age
+ViewInformationPanel.Form.DateOfBirth=Date of Birth
+ViewInformationPanel.Form.DateOfBirth.Tip=Family Member's date of birth
+ViewInformationPanel.Form.Gender=Gender
+ViewInformationPanel.Form.Gender.Tip=Family member's gender
+ViewInformationPanel.Button.Edit=Update
+ViewInformationPanel.Button.Edit.Tip=Update the details shown on the screen
+ViewInformationPanel.Form.Segment=Customer Segment
+ViewInformationPanel.Form.SegmentName=Name
+ViewInformationPanel.Form.SegmentName.Tip=The name of the segment that the customer belongs to
+
+# View Details
+Win.Header.ViewDetails=View Details
+Menu.Header.ViewDetails=Customer : View Details
+ViewDetailsPanel.Error.UnknownCrmId=Unable to locate Reward Group CRM ID for customer.
+ViewDetailsPanel.Form.PersonalDetails=Personal Details
+ViewDetailsPanel.Form.Name=Name
+ViewDetailsPanel.Form.Name.Tip=The customer's name
+ViewDetailsPanel.Form.DateOfBirth=Date of Birth
+ViewDetailsPanel.Form.DateOfBirth.Tip=The customer's date of birth (Format yyyy/mm/dd)
+ViewDetailsPanel.Form.Gender=Gender
+ViewDetailsPanel.Form.Gender.Tip=The customer's gender
+ViewDetailsPanel.Form.SSNHeader=Social Security Number
+ViewDetailsPanel.Form.SSN=SSN
+ViewDetailsPanel.Form.SSN.Tip=The customer's social security number
+ViewDetailsPanel.Form.ForeignCitizen=Foreign Citizen
+ViewDetailsPanel.Form.ForeignCitizen.Tip=This box is checked if the customer is a foreign citizen
+ViewDetailsPanel.Form.ContactDetails=Contact Details
+ViewDetailsPanel.Form.Address1=Address 1
+ViewDetailsPanel.Form.Address1.Tip=The first line of the customer's address
+ViewDetailsPanel.Form.Address2=Address 2
+ViewDetailsPanel.Form.Address2.Tip=The second line of the customer's address
+ViewDetailsPanel.Form.PostCode=Postcode
+ViewDetailsPanel.Form.PostCode.Tip=The postcode of the customer's address
+ViewDetailsPanel.Form.PhoneDay=Phone&nbsp;:&nbsp;Day
+ViewDetailsPanel.Form.PhoneDay.Tip=The customer's daytime telephone number
+ViewDetailsPanel.Form.PhoneEvening=Phone&nbsp;:&nbsp;Eve
+ViewDetailsPanel.Form.PhoneEvening.Tip=The customer's evening telephone number
+ViewDetailsPanel.Form.PhoneMobile=Phone&nbsp;:&nbsp;Mob
+ViewDetailsPanel.Form.PhoneMobile.Tip=The customer's mobile telephone number
+ViewDetailsPanel.Form.Email=Email
+ViewDetailsPanel.Form.Email.Tip=The customer's email address
+ViewDetailsPanel.Form.PreferredContactMethod=Preferred Contact Method
+ViewDetailsPanel.Form.PreferredContactMethod.Option=
+ViewDetailsPanel.Form.PreferredContactMethod.Tip=The customer's preferred method of contact
+ViewDetailsPanel.Form.Method=Method
+ViewDetailsPanel.Form.CollectionPeriodDates=Collection Period Dates
+ViewDetailsPanel.Form.CollectionPeriod=Collection Period
+ViewDetailsPanel.Form.CollectionPeriod.Tip=The collection period for the reward number. 
+ViewDetailsPanel.Form.Number=No.
+ViewDetailsPanel.Form.Number.Tip=Collection Period number
+ViewDetailsPanel.Form.Dates=Dates
+ViewDetailsPanel.Form.Dates.Tip=Start and end date for the collection period
+ViewDetailsPanel.Form.Previous=Previous
+ViewDetailsPanel.Form.Previous.Tip=Details for the previous collection period
+ViewDetailsPanel.Form.Current=Current
+ViewDetailsPanel.Form.Current.Tip=Details of the current collection period
+ViewDetailsPanel.Form.RewardsAndPoints=Points and Rewards
+ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod=Points this period
+ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod.Tip=The total points collected during this collection period
+ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod=Rewards last period
+ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod.Tip=The total value of reward vouchers issued last collection period
+ViewDetailsPanel.Form.ContactMethodPreferences=Data Protection: customer accepts contact by
+ViewDetailsPanel.Form.ContactMethodPreferences.Phone=Phone
+ViewDetailsPanel.Form.ContactMethodPreferences.Group=Group
+ViewDetailsPanel.Form.ContactMethodPreferences.Mail=Mail
+ViewDetailsPanel.Form.ContactMethodPreferences.3rdParty=3rd Party
+ViewDetailsPanel.Button.Edit=Update
+ViewDetailsPanel.Button.Edit.Tip=Update the details shown on the screen
+ViewDetailsPanel.Form.DataProtectionMessage=If yes is chosen, the customer indicates they accept contact by this method
+ViewDetailsPanel.Form.DataProtectionMessage.Tip=If yes is chosen, the customer indicates they accept contact by this method
+
+# Customer Search
+SearchPanel.Button.Search=Search
+SearchPanel.Button.Search.Tip=Click here to begin search for customer
+SearchPanel.Popup.Header.Error=Error
+SearchPanel.Popup.Header.Message=Information
+SearchPanel.Form.Search=Search
+SearchPanel.Form.CardNumber=Card Number
+SearchPanel.Form.CardNumber.Tip=Enter a card number to search for. Wildcard characters are not allowed
+SearchPanel.Form.SSN=SSN
+SearchPanel.Form.SSN.Tip=Enter a social security number to search for. Wildcard characters are not allowed
+SearchPanel.Form.SSN1=First Part of SSN
+SearchPanel.Form.SSN1.Tip=The first part of the social security number should be 6 digits long. Wildcard characters are not allowed
+SearchPanel.Form.SSN2=Second Part of SSN
+SearchPanel.Form.SSN2.Tip=The second part of the social security number should be 7 digits long. Wildcard characters are not allowed
+SearchPanel.Form.Phone=Phone
+SearchPanel.Form.Phone.Tip=Enter a telephone number to search for. This can be a mobile, daytime or evening telephone number. Wildcard characters are allowed after the first 0
+SearchPanel.Form.Phone1=First Part of Phone Number
+SearchPanel.Form.Phone1.Tip=The first part of the phone number can be between 2 and 4 digits long. Wildcard characters are allowed after the first digit
+SearchPanel.Form.Phone2=Second Part of Phone Number
+SearchPanel.Form.Phone2.Tip=The second part of the phone number can be between 1 and 4 digits long. Wildcard characters are allowed
+SearchPanel.Form.Phone3=Third Part of Phone Number
+SearchPanel.Form.Phone3.Tip=The third part of the phone number should be 4 digits long. Wildcard characters are allowed
+SearchPanel.Form.Name=Name
+SearchPanel.Form.Name.Tip=Enter a customer name to search for. Wildcard characters are allowed after the first letter
+SearchPanel.Form.DateOfBirth=Date of Birth
+SearchPanel.Form.DateOfBirth.Tip=Enter a date of birth to search for (Format yyyy/mm/dd). Wildcard characters are not allowed
+SearchPanel.Form.DateOfBirth1=Year of Birth
+SearchPanel.Form.DateOfBirth1.Tip=The date-of-birth Year to search for. Wildcard characters are not allowed
+SearchPanel.Form.DateOfBirth2=Month of Birth
+SearchPanel.Form.DateOfBirth2.Tip=The date-of-birth Month to search for. Wildcard characters are not allowed
+SearchPanel.Form.DateOfBirth3=Day of Birth
+SearchPanel.Form.DateOfBirth3.Tip=The date-of-birth Day to search for. Wildcard characters are not allowed
+SearchPanel.Form.City=City
+SearchPanel.Form.City.Tip=The customer's city. Wildcard characters are allowed after the first letter
+SearchPanel.Form.Province=Province
+SearchPanel.Form.Province.Tip=The customer's province
+SearchPanel.Form.Province.Any=Any
+SearchPanel.Form.PostCode=Postcode
+SearchPanel.Form.PostCode.Tip=Enter a postcode to search for. Wildcard characters are allowed after the first digit
+SearchPanel.Form.PostCode1=First Part of Postcode
+SearchPanel.Form.PostCode1.Tip=The first part of the postcode can be between 1 and 3 digits long. Wildcard characters are allowed after the first digit
+SearchPanel.Form.PostCode2=Second Part of Postcode
+SearchPanel.Form.PostCode2.Tip=The second part of the postcode can be between 1 and 3 digits long. Wildcard characters are allowed
+SearchPanel.Table.Name=Name
+SearchPanel.Table.Name.Tip=The customer's name
+SearchPanel.Table.SSN=SSN
+SearchPanel.Table.SSN.Tip=Social Security Number
+SearchPanel.Table.Postcode=Postcode
+SearchPanel.Table.Postcode.Tip=The customer's postcode
+SearchPanel.Table.IsPrimary=Is Primary
+SearchPanel.Table.IsPrimary.Tip=Indicates if this customer is the primary customer of a reward group
+SearchPanel.Table.DateOfBirth=Date of Birth
+SearchPanel.Table.DateOfBirth.Tip=The customer's date of birth
+SearchPanel.Table.Select=Select
+SearchPanel.Table.Select.Tip=Choose the customer you would like to select
+SearchPanel.Error.NoSearchCriteria=You must make an entry in at least one search box to find a customer.
+SearchPanel.Error.WildcardsInRestrictedFields=You have entered a wildcard in a field that does not support wildcard searching. Please amend and try again.
+SearchPanel.Message.Wildcard=A '*' can be entered to match any characters. Eg: To find a user called Mr Smith, you could search for "*smi*".
+SearchPanel.Message.NoData=Your search did not return any results. Please broaden your search and try again.
+SearchPanel.Message.TooManyCustomers=Too many customers found using the criteria supplied. Please narrow your search and try again.
+SearchPanel.Message.Timeout=The search took too long using the criteria supplied. Please adjust your search criteria and try again.
+
+# search for address panel
+SearchPanel.Form.Street=Street/District
+SearchPanel.Form.Street.Tip=Enter the name of a Street/District to search for. Wildcard characters are allowed after the first letter
+SearchPanel.Table.Address1=Address 1
+SearchPanel.Table.Address1.Tip=The first line of the address
+SearchPanel.Table.Address2=Address 2
+SearchPanel.Table.Address2.Tip=The second line of the address
+SearchPanel.Message.TooManyAddresses=Too many addresses found using the criteria supplied. Please narrow your search and try again.
+
+# Customer Update Details
+Win.Header.UpdateDetails=Update Details
+Menu.Header.UpdateDetails=Customer : Update Details
+UpdateDetailsPanel.Form.PersonalDetails=Personal Details
+UpdateDetailsPanel.Form.Name=Name
+UpdateDetailsPanel.Form.Name.Tip=Enter the customer's full name
+UpdateDetailsPanel.Form.SSNHeader=Social Security Number
+UpdateDetailsPanel.Form.SSN=SSN
+UpdateDetailsPanel.Form.SSN.Tip=Enter the customer's social security number
+UpdateDetailsPanel.Form.SSN.ErrorCaption=SSN (Format nnnnnn-nnnnnnn)
+UpdateDetailsPanel.Form.ForeignCitizen=Foreign Citizen
+UpdateDetailsPanel.Form.ForeignCitizen.Tip=Tick this box if the customer is a foreign citizen
+UpdateDetailsPanel.Form.DateOfBirth=Date of Birth
+UpdateDetailsPanel.Form.DateOfBirth.Tip=Enter the customer's date of birth (Format yyyy/mm/dd)
+UpdateDetailsPanel.Form.Gender=Gender
+UpdateDetailsPanel.Form.Gender.Tip=Enter the customer's gender
+UpdateDetailsPanel.Form.ContactDetails=Contact Details
+UpdateDetailsPanel.Form.Address1=Address&nbsp;1
+UpdateDetailsPanel.Form.Address1.Tip=Enter the first line of the customer's address, or search by clicking 'Lookup'
+UpdateDetailsPanel.Form.Address2=Address&nbsp;2
+UpdateDetailsPanel.Form.Address2.Tip=Enter the second line of the customer's address, or search by clicking 'Lookup'
+UpdateDetailsPanel.Form.Postcode=Postcode
+UpdateDetailsPanel.Form.Postcode.Tip=Enter the customer's postcode, or search by clicking 'Lookup'
+UpdateDetailsPanel.Form.PhoneDay=Phone&nbsp;:&nbsp;Day
+UpdateDetailsPanel.Form.PhoneDay.Tip=Enter the customer's daytime contact number
+UpdateDetailsPanel.Form.PhoneEve=Phone&nbsp;:&nbsp;Eve
+UpdateDetailsPanel.Form.PhoneEve.Tip=Enter the customer's evening contact number
+UpdateDetailsPanel.Form.PhoneMob=Phone&nbsp;:&nbsp;Mob
+UpdateDetailsPanel.Form.PhoneMob.Tip=Enter the customer's mobile contact number
+UpdateDetailsPanel.Form.PhoneDay.PhonePart1.Tip=Enter the customer's daytime contact number. The first part of the phone number should be 2 or 3 digits long
+UpdateDetailsPanel.Form.PhoneDay.PhonePart2.Tip=Enter the customer's daytime contact number. The second part of the phone number should be 3 digits long
+UpdateDetailsPanel.Form.PhoneDay.PhonePart3.Tip=Enter the customer's daytime contact number. The third part of the phone number should be 3 or 4 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart1.Tip=Enter the customer's evening contact number. The first part of the phone number should be 2 or 3 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart2.Tip=Enter the customer's evening contact number. The second part of the phone number should be 3 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart3.Tip=Enter the customer's evening contact number. The third part of the phone number should be 3 or 4 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart1.Tip=Enter the customer's mobile contact number. The first part of the phone number should be 2 or 3 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart2.Tip=Enter the customer's mobile contact number. The second part of the phone number should be 3 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart3.Tip=Enter the customer's mobile contact number. The third part of the phone number should be 3 or 4 digits long
+
+UpdateDetailsPanel.Form.Email=Email
+UpdateDetailsPanel.Form.Email.Tip=Enter the customer's email address
+UpdateDetailsPanel.Form.PreferredContactMethod=Preferred Contact Method
+UpdateDetailsPanel.Form.PreferredContactMethod.Caption=Option
+UpdateDetailsPanel.Form.PreferredContactMethod.Tip=Enter the customer's preferred contact method
+UpdateDetailsPanel.Form.Method=Method
+UpdateDetailsPanel.Form.ChangedCustomerStatus=Change Status
+UpdateDetailsPanel.Form.Status=Status
+UpdateDetailsPanel.Form.Status.Tip=Choose a status for this customer
+UpdateDetailsPanel.Form.DataProtectionPreferences=Data Protection: customer accepts contact by
+UpdateDetailsPanel.Form.Phone=Phone
+UpdateDetailsPanel.Form.Phone.Tip=Record if this customer would like to be contacted by telephone
+UpdateDetailsPanel.Form.Mail=Mail
+UpdateDetailsPanel.Form.Mail.Tip=Record if this customer would like to be contacted by post
+UpdateDetailsPanel.Form.Group=Group
+UpdateDetailsPanel.Form.Group.Tip=Record if this customer would like to be contacted by Samsung Tesco and its parent companies
+UpdateDetailsPanel.Form.3rdParty=3rd Party
+UpdateDetailsPanel.Form.3rdParty.Tip=Record if this customer would like to be contacted by third parties
+UpdateDetailsPanel.Form.DataProtectionMessage=If yes is chosen, the customer indicates they accept contact by this method 
+UpdateDetailsPanel.Form.Store=Store
+UpdateDetailsPanel.Form.PreferredStore=Preferred Store
+UpdateDetailsPanel.Form.PreferredStore.Tip=Enter the customer's preferred store
+UpdateDetailsPanel.Form.PreferredStore.Unknown=Unknown
+UpdateDetailsPanel.Button.Save=Save
+UpdateDetailsPanel.Button.Save.Tip=Click here to update the customer's details
+UpdateDetailsPanel.Button.Reset=Reset
+UpdateDetailsPanel.Button.Reset.Tip=Click here to reset the customer's details to the original settings
+UpdateDetailsPanel.Button.Search.Tip=Click here to search for the street or district
+UpdateDetailsPanel.Button.Cancel.Tip=Click here to abandon the search
+UpdateDetailsPanel.PopupSaved.Header=Saved
+UpdateDetailsPanel.PopupSaved.Message1=Update saved.<br>Please ensure that the customer's<br>Information is also up to date
+UpdateDetailsPanel.PopupSaved.Button.Ok=OK
+UpdateDetailsPanel.Button.FindAddress=Lookup
+UpdateDetailsPanel.Button.FindAddress.Tip=Click here to search for an address
+UpdateDetailsPanel.AddressPopup.Header.Text=Lookup an address
+UpdateDetailsPanel.Form.PC1.Caption=Postcode (Format nnn-nnn)
+UpdateDetailsPanel.Form.PC2.Caption=Postcode (Format nnn-nnn)
+UpdateDetailsPanel.Form.dob1.Caption=Enter the customer's Date-of-Birth Year
+UpdateDetailsPanel.Form.dob2.Caption=Enter the customer's Date-of-Birth Month
+UpdateDetailsPanel.Form.dob3.Caption=Enter the customer's Date-of-Birth Day
+UpdateDetailsPanel.Form.SSN1.Caption=Social Security Number (Format nnnnnn-nnnnnnn)
+UpdateDetailsPanel.Form.SSN2.Caption=Social Security Number (Format nnnnnn-nnnnnnn)
+UpdateDetailsPanel.Form.PN.Caption=Phone Number (Format 0nnn-nnnn-nnnn)
+UpdateDetailsPanel.Error.DoBInFuture=The date of birth given cannot be in the future.
+UpdateDetailsPanel.Error.DoBTooOld=The date of birth given is too far in the past.
+UpdateDetailsPanel.Error.OfficialIdInUse=The ID supplied is already in use by another customer. Please amend and try again.
+UpdateDetailsPanel.PopupError.Header=Error
+UpdateDetailsPanel.PopupError.Button.Ok=Ok
+UpdateDetailsPanel.Form.Age=Age
+UpdateDetailsPanel.Form.Age.Tip=The age of the customer
+
+# Customer Update Information
+Win.Header.UpdateInformation=Update Information
+Menu.Header.UpdateInformation=Customer : Update Information
+UpdateInformationPanel.Form.DietaryPreferences=Dietary Preferences
+UpdateInformationPanel.Form.Diabetic=Diabetic
+UpdateInformationPanel.Form.Diabetic.Tip=Is the customer diabetic?
+UpdateInformationPanel.Form.Teetotal=Teetotal
+UpdateInformationPanel.Form.Teetotal.Tip=Is the customer teetotal?
+UpdateInformationPanel.Form.Halal=Halal
+UpdateInformationPanel.Form.Halal.Tip=Does the customer follow a Halal diet?
+UpdateInformationPanel.Form.Kosher=Kosher
+UpdateInformationPanel.Form.Kosher.Tip=Does the customer follow a Kosher diet?
+UpdateInformationPanel.Form.Vegetarian=Vegetarian
+UpdateInformationPanel.Form.Vegetarian.Tip=Does the customer follow a Vegetarian diet?
+UpdateInformationPanel.Form.FamilyInformation=Family Information
+UpdateInformationPanel.Form.Income=Income
+UpdateInformationPanel.Form.Income.Tip=Enter the customer's income band
+UpdateInformationPanel.Form.Member1=Family Member 1
+UpdateInformationPanel.Form.Member2=Family Member 2
+UpdateInformationPanel.Form.Member3=Family Member 3
+UpdateInformationPanel.Form.Member4=Family Member 4
+UpdateInformationPanel.Form.Member5=Family Member 5
+UpdateInformationPanel.Form.Member6=Family Member 6
+UpdateInformationPanel.Form.Member.Tip=Family member's details
+UpdateInformationPanel.Form.DateOfBirth=DOB
+UpdateInformationPanel.Form.DateOfBirth.Tip=Family member's Date Of Birth (Format yyyy/mm/dd)
+UpdateInformationPanel.Form.Gender=Gender
+UpdateInformationPanel.Form.Gender.Tip=Family member's gender
+UpdateInformationPanel.Button.Save=Save
+UpdateInformationPanel.Button.Save.Tip=Click here to update the customer's information
+UpdateInformationPanel.Button.Reset=Reset
+UpdateInformationPanel.Button.Reset.Tip=Click here to reset the customer's information to the original settings
+UpdateInformationPanel.PopupSaved.Header=Saved
+UpdateInformationPanel.PopupSaved.Message1=Update saved
+UpdateInformationPanel.PopupSaved.Button.Ok=OK
+UpdateInformationPanel.Form.dob1.Caption=Date-of-Birth Year
+UpdateInformationPanel.Form.dob2.Caption=Date-of-Birth Month
+UpdateInformationPanel.Form.dob3.Caption=Date-of-Birth Day
+UpdateInformationPanel.Error.DoBInFuture=The date of birth given cannot be in the future.
+UpdateInformationPanel.Error.DoBTooOld=The date of birth given is too far in the past.
+UpdateInformationPanel.PopupError.Header=Error
+UpdateInformationPanel.PopupError.Button.Ok=Ok
+
+# Maintain Cards
+Win.Header.CardDetails=Maintain Cards
+Menu.Header.CardDetails=Cards : Maintain Cards
+CardDetails.Button.Add=Add New Card
+CardDetails.Button.Add.Tip=Click here to add a new card to this customer
+CardDetails.Button.Select=Change Primary Card
+CardDetails.Button.Select.Tip=Click here to select a primary card for the customer
+CardDetailsPanel.Table.CardNumber=Card Number
+CardDetailsPanel.Table.CardNumber.Tip=List of each card associated with this customer
+CardDetailsPanel.Table.Primary=Primary
+CardDetailsPanel.Table.Primary.Tip=Indicates which card is the customer's primary card
+CardDetailsPanel.Table.AccountType=Card Type
+CardDetailsPanel.Table.AccountType.Tip=The type of card
+CardDetailsPanel.Table.IssuedDate=Issue Date
+CardDetailsPanel.Table.IssuedDate.Tip=The date on which the card was registered
+CardDetailsPanel.Table.UpdatedDate=Last transaction date and time
+CardDetailsPanel.Table.UpdatedDate.Tip=The date and time that this card was last used
+CardDetailsPanel.Table.Status=Status
+CardDetailsPanel.Table.Status.Tip=The card status
+CardDetailsPanel.Table.EditStatus=Edit Status
+CardDetailsPanel.Table.EditStatus.Tip=Click on Select to change the card status
+SelectPrimaryCardPopup.Header=Select Primary Card
+AddNewCardPopup.Header=Enter New Card Number
+EditCardStatusPopup.Header=Edit Card Status
+CardDetails.PopupAdd.Button.Text=Add
+CardDetails.PopupAdd.CardNumber.Tip=Enter new card number
+CardDetails.PopupEdit.Button.Text=Save
+CardDetails.PopupSelect.Button.Text=OK
+CardDetails.Popup.Error=Error
+CardDetails.ErrorPopup.CardExists=The card number has already been registered
+CardDetails.ErrorPopup.CardRangeError=The card number is not within a valid range
+CardDetails.ErrorPopup.CardCheckDigit=The card number is not valid
+CardDetails.ErrorPopup.CardNotNormal=Only a card with a status of normal can be chosen as a primary card
+CardDetails.ErrorPopup.NoSecondaryCard=The customer has no other cards that can be made the primary card
+
+# Rewards
+Rewards.Status.HighReward=High Reward
+Rewards.Status.Redeemed=Redeemed
+Rewards.Status.Expired=Expired
+Rewards.Status.ReIssueRequested=Re-Issue Requested
+Rewards.Status.ReIssued=Re-Issued
+Rewards.Status.Issued=Issued
+Rewards.Status.Unknown=Unknown
+Rewards.Status.NoRewards=No Rewards
+Rewards.Status.NotIssued=Not Issued
+
+# View Rewards
+Menu.Header.ViewRewards=Rewards : View Rewards
+ViewRewards.Table.CollectionPeriodDates=Collection Period Dates
+ViewRewards.Table.CollectionPeriodDates.Tip=The date range of the collection period
+ViewRewards.Table.CollectionPeriodDates.OutputFormat={0} - {1}
+ViewRewards.Table.RewardIssued=Reward Issue
+ViewRewards.Table.RewardIssued.Tip=The amount of rewards issued from collection period
+ViewRewards.Table.PointsConverted=Points Converted
+ViewRewards.Table.PointsConverted.Tip=The amount of points converted from collection period
+ViewRewards.Table.CarriedForward=Carried Forward
+ViewRewards.Table.CarriedForward.Tip=The amount of points carried forward from collection period
+ViewRewards.Table.Status=Status
+ViewRewards.Table.Status.Tip=The status of the collection period
+ViewRewards.Table.StatusChangeOn=Status Change On
+ViewRewards.Table.StatusChangeOn.Tip=The date of the status change
+ViewRewards.Table.ViewDetail=View Detail
+ViewRewards.Table.ViewDetail.Tip=Click here to view reward detail
+ViewRewards.Table.EmptyMessage=No rewards found for customer
+
+# Reward Detail
+Menu.Header.RewardDetail=Rewards : Reward Detail
+RewardDetail.Form.RewardVouchers=Reward Vouchers
+RewardDetail.Form.Status=Status
+RewardDetail.Form.Status.Tip=The current status of the offer
+RewardDetail.Form.StatusChangeOn=Status Change On
+RewardDetail.Form.StatusChangeOn.Tip=The date a status change occurred
+RewardDetail.Table.Value=Value
+RewardDetail.Table.Value.Tip=The monetary value of the voucher
+RewardDetail.Table.ExpiryDate=Expiry Date
+RewardDetail.Table.ExpiryDate.Tip=The expiry date of the collection period
+RewardDetail.Table.RedeemedOn=Redeemed On
+RewardDetail.Table.RedeemedOn.Tip=The date the voucher was redeemed
+RewardDetail.Table.TransactionDetails=Transaction Details
+RewardDetail.Table.TransactionDetails.Tip=Click here to view transaction details
+RewardDetail.Table.TransactionDetails.Link=View Details
+RewardDetail.Table.Empty.Message=No vouchers issued for collection period
+RewardDetail.Form.ReIssue=Re-Issue
+RewardDetail.Form.ReIssuedBy=Re-Issued By
+RewardDetail.Form.ReIssuedBy.Tip=The username of the user re-issuing the rewards
+RewardDetail.Form.ReIssuedOn=Re-Issued On
+RewardDetail.Form.ReIssuedOn.Tip=The date the vouchers were re-issued
+RewardDetail.Button.ReIssue=Re-Issue
+RewardDetail.Button.ReIssue.Tip=Click here to proceed with re-issue of rewards
+RewardDetail.Button.OK=OK
+RewardDetail.PopupError.Header=Error
+RewardDetail.PopupError.Message.OutsideReIssuePeriod=Outside Re-Issue Period
+RewardDetail.PopupError.Message.VoucherAlreadyRedeemed=Cannot Re-Issue as at least one voucher has been redeemed
+RewardDetail.PopupError.Message.InvalidUseStatus=This customer has an invalid use status. For Re-Issue, the customer must not be banned, withdrawn or left scheme.
+RewardDetail.PopupError.Message.InvalidMailStatus=This customer has an invalid mail status. For Re-Issue, the customer must have a valid address.
+RewardDetail.PopupDetail.TransactionDetails=Transaction Details
+RewardDetail.PopupDetail.Customer=Customer
+RewardDetail.PopupDetail.CustomerName=Customer Name
+RewardDetail.PopupDetail.CustomerName.Tip=The name of the customer who redeemed the voucher
+RewardDetail.PopupDetail.CardNumber=Card Number
+RewardDetail.PopupDetail.CardNumber.Tip=The card number of the customer who redeemed the voucher
+RewardDetail.PopupDetail.TransactionIdentification=Transaction Identification
+RewardDetail.PopupDetail.User=User
+RewardDetail.PopupDetail.User.Tip=The user who logged this transaction
+RewardDetail.PopupDetail.CashierId=Cashier ID
+RewardDetail.PopupDetail.CashierId.Tip=The identification of the cashier
+RewardDetail.PopupDetail.TransactionType=Transaction Type
+RewardDetail.PopupDetail.TransactionType.Tip=The type of the transaction
+RewardDetail.PopupDetail.Store=Store
+RewardDetail.PopupDetail.Store.Tip=The store where the transaction took place
+RewardDetail.PopupDetail.PosNumber=POS Number
+RewardDetail.PopupDetail.PosNumber.Tip=The POS number
+RewardDetail.PopupDetail.TransactionNumber=Transaction Number
+RewardDetail.PopupDetail.TransactionNumber.Tip=The transaction number
+RewardDetail.PopupDetail.TransactionSource=Transaction Source
+RewardDetail.PopupDetail.TransactionSource.Tip=The source of the transaction
+RewardDetail.PopupDetail.Reason=Reason
+RewardDetail.PopupDetail.TransactionReason=Transaction Reason
+RewardDetail.PopupDetail.TransactionReason.Tip=The reason for the transaction
+RewardDetail.PopupDetail.Date=Date
+RewardDetail.PopupDetail.Date.Tip=The date of the transaction
+RewardDetail.PopupDetail.Time=Time
+RewardDetail.PopupDetail.Time.Tip=The time of the transaction
+RewardDetail.PopupDetail.Points=Points
+RewardDetail.PopupDetail.SalesAmount=Sales Amount
+RewardDetail.PopupDetail.SalesAmount.Tip=The amount of points earned for the transaction
+RewardDetail.PopupDetail.NormalPoints=Normal Points
+RewardDetail.PopupDetail.NormalPoints.Tip=The amount of normal points earned for the transaction
+RewardDetail.PopupDetail.ProductPoints=Product Points
+RewardDetail.PopupDetail.ProductPoints.Tip=The amount of product points earned for the transaction
+RewardDetail.PopupDetail.WelcomePoints=Welcome Points
+RewardDetail.PopupDetail.WelcomePoints.Tip=The amount of welcome points earned for the transaction
+RewardDetail.PopupDetail.TotalPoints=Total Points
+RewardDetail.PopupDetail.TotalPoints.Tip=The total of points earned for the transaction
+NGCCSD.RewardDetail.Message.MissingVoucherRecord=Transaction not found
+
+# Group
+Group.PrimaryCustomer=Primary Customer
+Group.AssociateCustomer=Associate Customer
+
+# View Reward Group
+Menu.Header.ViewRewardGroup=Reward Group : View Reward Group
+ViewRewardGroup.Table.CustomerType=Customer Type
+ViewRewardGroup.Table.CustomerType.Tip=The type of customer
+ViewRewardGroup.Table.Name=Name
+ViewRewardGroup.Table.Name.Tip=The name of the customer
+ViewRewardGroup.Table.CustomerStatus=Customer Status
+ViewRewardGroup.Table.CustomerStatus.Tip=The current status of the customer
+ViewRewardGroup.Table.MailStatus=Mail Status
+ViewRewardGroup.Table.MailStatus.Tip=The current mail status of the customer
+ViewRewardGroup.Table.PrimaryCardNumber=Primary Card Number
+ViewRewardGroup.Table.PrimaryCardNumber.Tip=The card number of the customer
+ViewRewardGroup.Button.ChangePrimaryCustomer=Change Primary Customer
+ViewRewardGroup.Button.ChangePrimaryCustomer.Tip=Click here to change the primary customer of the reward group
+ViewRewardGroup.Popup.ChooseNewPrimaryCustomer=Choose New Primary Customer
+ViewRewardGroup.Popup.List.Caption=Card Number
+ViewRewardGroup.Popup.List.Tip=Select customer to become the new primary customer
+ViewRewardGroup.Popup.Save=Save
+ViewRewardGroup.Popup.Cancel=Cancel
+ViewRewardGroup.PopupError.NoCurrentOffer=A current collection period does not exist. Unable to change primary customer.
+
+# Merge
+Menu.Header.Merge=Reward Group : Merge Into
+Merge.Label.Text=Find Primary Customer of New Reward Group
+Merge.Button.Search=Search
+Merge.Button.Search.Tip=Click here to begin search for the primary customer of the new Reward Group
+Merge.Table.Name=Name
+Merge.Table.Name.Tip=The primary customer's name
+Merge.Table.SSN=SSN
+Merge.Table.SSN.Tip=The primary customer's social security number
+Merge.Table.Postcode=Postcode
+Merge.Table.Postcode.Tip=The primary customer's postcode
+Merge.Table.DateOfBirth=Date of Birth
+Merge.Table.DateOfBirth.Tip=The primary customer's date of birth
+Merge.Table.Select=Select
+Merge.Table.Select.Tip=Choose the primary customer of the Reward Group you would like to merge into
+Merge.Table.NoData=Your search did not return any results. Please broaden your search and try again.
+Merge.PopupConfirmed.Header=Confirmed
+Merge.PopupConfirmed.Message=Merge Successful
+Merge.PopupConfirmed.Ok=OK
+Merge.PopupConfirmMerge.Header=Confirm Merge
+Merge.PopupConfirmMerge.Message=Are you sure you wish to merge customer '{0}' into the Reward Group of customer '{1}' ?
+Merge.PopupConfirmMerge.Yes=Yes
+Merge.PopupConfirmMerge.No=No
+Merge.PopupError.NoCurrentOffer=A current collection period does not exist. Unable to merge reward groups.
+
+# High Reward Detail
+Menu.Header.HighRewardDetail=Rewards : High Reward Detail
+HighRewardDetail.Form.RewardVouchers=Reward Vouchers
+HighRewardDetail.Form.Status=Status
+HighRewardDetail.Form.Status.Tip=The status of the customer
+HighRewardDetail.Form.Message1=This customer is a High Reward Customer
+HighRewardDetail.Form.Message2=They were issued with {0} worth of Rewards
+
+# Last Updated By
+LastUpdatedBy.LastUpdatedBy=Last Updated By
+LastUpdatedBy.Colon=:
+LastUpdatedBy.At=@
+LastUpdatedBy.On=on
+LastUpdatedBy.Unknown=Unknown 
+
+# Tesco's Data Items
+Customer=Customer 
+TxnCustomer.Tip=The customer that made this transaction 
+Name=Name
+NameLong=Customer Name
+DateOfBirth=Date of Birth
+Gender=Gender
+DaytimePhoneNumber=Daytime Phone Number
+EveningPhoneNumber=Evening Phone Number
+MobilePhoneNumber=Mobile Phone Number
+EmailAddress=Email Address
+CustomerStatus=Customer Status
+MailableStatus=Mailable Status
+TescoOffers=Tesco Offers
+OffersByMail=Offers By Mail
+OffersByPhone=Offers By Phone
+ThirdPartyOffers=Third Party Offers
+AddressLine1=Address Line 1
+AddressLine2=Address Line 2
+PostalCode=Postal Code
+JoinedDate=Joined Date
+JoinedStore=Joined Store
+SocialSecurityNumber=Social Security Number
+IncomeBand=Income Band
+ContactMethod=Contact Method
+PreferredStore=Preferred Store
+Vegetarian=Vegetarian
+Teetotal=Teetotal
+Kosher=Kosher
+Halal=Halal
+Diabetic=Diabetic
+CardAccountNumber=Card Number
+User=Username
+Password=Password 
+TxnDate=Date
+TxnDate.Tip=The date the transaction occurred
+TxnTime=Time
+TxnTime.Tip=The time the transaction occurred
+TxnStore=Store
+TxnStore.Tip=The store where the transaction occurred
+TxnSpend=Spend
+TxnSpend.Tip=The amount spent in this particular transaction
+TxnNormalPoints=Normal Points
+TxnNormalPoints.Tip=The number of normal points awarded for this transaction
+TxnProductPoints=Product Points
+TxnProductPoints.Tip=The number of product points awarded for this transaction
+TxnWelcomePoints=Welcome Points
+TxnWelcomePoints.Tip=The number of welcome points awarded for this transaction
+TxnTotalPoints=Total Points
+TxnTotalPoints.Tip=The total number of points awarded for this transaction
+TxnPoints=Points
+TxnPoints.Tip=The total number of points awarded for this transaction
+CardNumber=Card Number
+TxnCardNumber.Tip=The card number used with this transaction
+TxnReason=Reason
+TxnReasonLong=Transaction Reason
+TxnReason.Tip=The reason for this transaction
+TxnUserName=Username
+TxnUserName.Tip=The username of the person that made this transaction
+CashierId=Cashier ID
+CashierId.Tip=The ID of the Cashier who made this transaction
+TxnType=Transaction Type
+TxnType.Tip=The transaction type
+PosId=POS Number
+PosId.Tip=The point-of-sale identification number
+TxnNumber=Transaction Number
+TxnNumber.Tip=The point-of-sale transaction number
+TxnSource=Transaction Source
+TxnSource.Tip=The system that recorded the transaction
+TxnAmountSpent=Sales Amount
+TxnAmountSpent.Tip=The amount spent in this particular transaction
+CollectionTotalPoints=Total Points
+CollectionTotalPoints.Tip=The total points awarded to this reward group during the selected collection period
+CollectionAmountSpent=Total Spend
+CollectionAmountSpent.Tip=The total amount spent by the members of this reward group during the selected collection period 
+
+# View Points Elements
+Format.DateRange={0} - {1}
+Phrase.PointsTableA1=All points apply to Reward Group
+Phrase.PointsTableA1.Tip=All points totals apply to Reward Group of the selected customer
+Phrase.PointsTableB1=Product Points
+Phrase.PointsTableB1.Tip=Number of product points awarded
+Phrase.PointsTableC1=Welcome Points
+Phrase.PointsTableC1.Tip=Number of welcome points awarded
+Phrase.PointsTableE1=Normal Points
+Phrase.PointsTableE1.Tip=Number of normal points awarded
+Phrase.PointsTableF1=TOTAL
+Phrase.PointsTableF1.Tip=Total number of points awarded
+Phrase.PointsTableA2=Points collected at end of previous collection period
+Phrase.PointsTableA2.Tip=Points collected at end of previous collection period. 
+Phrase.PointsTableA3=Points converted from previous collection period
+Phrase.PointsTableA3.Tip=Points converted from previous collection period. 
+Phrase.PointsTableA4=Points brought forward from previous collection period
+Phrase.PointsTableA4.Tip=Points brought forward from previous collection period. 
+Phrase.PointsTableA5=Current points balance
+Phrase.PointsTableA5.Tip=Current points balance. 
+Phrase.PeriodTableA1=Collection Period
+Phrase.PeriodTableA1.Tip=Collection Period. 
+Phrase.PeriodTableB1=No.
+Phrase.PeriodTableB1.Tip=Collection Period number
+Phrase.PeriodTableC1=Dates
+Phrase.PeriodTableC1.Tip=Start and end date for the collection period
+Phrase.PeriodTableA2=Current
+Phrase.PeriodTableA2.Tip=Details for the current collection period
+Phrase.PeriodTableA3=Previous
+Phrase.PeriodTableA3.Tip=Details for the previous collection period
+Phrase.NoTransactions=No Transactions for this collection period
+
+# Tesco's field markers
+ValidationErrorText= !
+MandatoryFieldMarker= * 
+
+# NGC POS Service fields
+POS.DefaultCustomerName=Name Unknown
+POS.NewSkeleton=30
+POS.InvalidCard=31
+POS.ClosedCard=32
+POS.BannedCustomer=33
+POS.DeceasedCustomer=34
+POS.LeftScheme=35
+POS.ExistingSkeleton=36
+POS.AddressError=37
+
+# Customer Register
+Menu.Header.CustRegister=Register New Customer
+CustRegister.Form.FieldSet.CustomerDetails=New Customer Details
+CustRegister.Form.EnterCardNumber=Card Number 
+CustRegister.Form.EnterCardNumber.ToolTip=Enter the Card Number to be registered
+CustRegister.Form.CardNumber=Card Number
+CustRegister.Form.CardNumber.ToolTip=Enter the Card Number to be registered
+CustRegister.Button.Register=Register
+CustRegister.Button.Register.ToolTip=Click here to register the card number
+CustRegister.Button.Cancel=Reset
+CustRegister.Button.Cancel.ToolTip=Click here to reset this page
+CustRegister.Popup.Exists=Error
+CustRegister.Popup.Ok=Ok
+CustRegister.Popup.Exists.Message=This account already exists. If the customer has not registered their details, then choose find customer and update their details.
+CustRegister.Popup.OutOfRange.Message=The card number is not within a valid range
+CustRegister.Popup.CardInvalid.Message=The card number is not valid
+CustRegister.Popup.OfficialIdExists.Message=This ID already exists. If the customer has not registered their details, then choose find customer and update their details.
+
+############################################################
+##
+### NGCMarketing
+##
+############################################################
+
+# Menu
+Win.Header.ReportList=View Reports
+NGCMarketing.Menu.Item.RewardMailing=Reward&nbsp;Mailing
+NGCMarketing.Menu.Item.RewardMailing.Tip=Reward Mailing
+NGCMarketing.Menu.SubItem.RewardMailing=Manage&nbsp;Mailing
+NGCMarketing.Menu.SubItem.RewardMailing.Tip=Click here to manage the reward mailing
+NGCMarketing.Menu.Item.Administer=Administer
+NGCMarketing.Menu.Item.Administer.Tip=Administer collection periods and points limits
+NGCMarketing.Menu.SubItem.MaintainCollectionPeriods=Collection&nbsp;Periods
+NGCMarketing.Menu.SubItem.MaintainCollectionPeriods.Tip=Maintain collection periods
+NGCMarketing.Menu.SubItem.PointsLimit=CSD&nbsp;Points&nbsp;Limits
+NGCMarketing.Menu.SubItem.PointsLimit.Tip=Set limits on the number of points that CSD users can give using 'add transaction'
+NGCMarketing.Menu.Item.Report=Reports
+NGCMarketing.Menu.Item.Report.Tip=Reports
+NGCMarketing.Menu.SubItem.Report=View&nbsp;Reports
+NGCMarketing.Menu.SubItem.Report.Tip=Click here to see the available reports
+NGCMarketing.Menu.SubItem.MembershipReport=Membership&nbsp;Report
+NGCMarketing.Menu.SubItem.MembershipReport.Tip=Click here to view the membership report
+NGCMarketing.Page.Header.HomeplusFamilyCardSystem=Homeplus Family Card System - Marketing
+
+# Membership Report
+NGCMarketing.Report.Menu.Header=Reports : View Reports
+NGCMarketing.Report.Win.Header=Reports
+NGCMarketing.Report.Button.RunReport.Text=Run Report
+NGCMarketing.Report.Button.Download.Text=Download Report
+NGCMarketing.Report.NoDataFound=No data found that matches your report criteria
+NGCMarketing.Report.Timeout=The report has taken too long. Please change the parameters and try again, or contact support
+NGCMarketing.Report.Button.ReportResult.Text=.
+
+# report panel captions
+NGCMarketing.ReportPanel.Form.From=From
+NGCMarketing.ReportPanel.Form.From.Tip=Start Date
+NGCMarketing.ReportPanel.Form.To=To
+NGCMarketing.ReportPanel.Form.To.Error=The 'To' date, which must be later than the 'From' date,
+
+NGCMarketing.ReportPanel.Form.To.Tip=End Date
+NGCMarketing.ReportPanel.Form.Year=Year
+NGCMarketing.ReportPanel.Form.Year.Tip=Year
+NGCMarketing.ReportPanel.Form.Month=Month
+NGCMarketing.ReportPanel.Form.Month.Tip=Month
+NGCMarketing.ReportPanel.Form.Day=Day
+NGCMarketing.ReportPanel.Form.Day.Tip=Day
+NGCMarketing.ReportPanel.Form.Store=Store
+NGCMarketing.ReportPanel.Form.Store.Tip=Store
+NGCMarketing.ReportPanel.Form.CustomersManualTransaction=Customers who have manual transaction count greater than
+NGCMarketing.ReportPanel.Form.CustomersManualTransaction.Tip=View Customers who have manual transaction count greater than this number
+NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints=Customers who have manual transaction with points total greater than
+NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints.Tip=Customers who have manual transaction with points total greater than
+NGCMarketing.ReportPanel.Form.ManualTransactionPoints=Manual transactions for a point value of more than
+NGCMarketing.ReportPanel.Form.ManualTransactionPoints.Tip=Manual transactions for a point value of more than
+NGCMarketing.ReportPanel.Form.UsersManualTransactions=Users who have added more manual transactions than 
+NGCMarketing.ReportPanel.Form.UsersManualTransactions.Tip=Users who have added more manual transactions than
+NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal=Users who have added manual transactions which have points total greater than
+NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal.Tip==Users who have added manual transactions which have points total greater than
+NGCMarketing.ReportPanel.Form.User=User
+NGCMarketing.ReportPanel.Form.User.Tip=User
+NGCMarketing.ReportPanel.Form.CollectionPeriod=Collection Period
+NGCMarketing.ReportPanel.Form.CollectionPeriod.Tip=Collection Period
+
+#report names
+NGCMarketing.Report.CollectionPeriodSummary=Collection Period Summary
+NGCMarketing.Report.DataProtectionOptOuts=Data Protection Opt-outs
+NGCMarketing.Report.FinancialLiability=Financial Liability
+NGCMarketing.Report.ManualTransactions1=Manual Transactions 1 - Customers with many transactions
+NGCMarketing.Report.ManualTransactions2=Manual Transactions 2 - Customers with transactions with many points
+NGCMarketing.Report.ManualTransactions3=Manual Transactions 3 - Transactions for many points
+NGCMarketing.Report.ManualTransactions4=Manual Transactions 4 - Users that have made many transactions
+NGCMarketing.Report.ManualTransactions5=Manual Transactions 5 - Users with transactions for many points
+NGCMarketing.Report.ManualTransactions6=Manual Transactions 6 - Transactions made by a specific user
+NGCMarketing.Report.MembershipReport=Membership by week
+NGCMarketing.Report.PointsAndRewardsByStore=Points and Rewards by Store
+
+#report form heading
+NGCMarketing.ReportPanel.ChooseDates=Choose Dates
+NGCMarketing.ReportPanel.ChooseDatesAndStore=Choose Dates and Store
+NGCMarketing.ReportPanel.SetParameters=Set Parameters
+NGCMarketing.ReportPanel.Option.Please Select=Please Select...
+NGCMarketing.ReportPanel.Option.Unknown=Unknown
+
+
+#report list heading
+NGCMarketing.ReportList.Table.Description=Report Name
+NGCMarketing.ReportList.Table.Description.Tip=Report Name
+NGCMarketing.ReportList.Table.Select=View
+NGCMarketing.ReportList.Table.Select.Tip=View
+
+ReportList.Menu.Header=Reports : View Reports
+
+#Manual transaction headering
+NGCMarketing.Reports.Heading.Customer=Customer
+NGCMarketing.Reports.Heading.Card Number=Card Number
+NGCMarketing.Reports.Heading.User=User
+NGCMarketing.Reports.Heading.Store=Store
+NGCMarketing.Reports.Heading.Date/Time=Date/Time
+NGCMarketing.Reports.Heading.No of Points=No. of Points
+NGCMarketing.Reports.Heading.Value of Spend=Value of Spend
+NGCMarketing.Reports.Heading.Value of Points=Value of Points
+
+# Points and rewards by store
+NGCMarketing.Reports.Heading.Date=Date
+NGCMarketing.Reports.Heading.# Transactions=No. of Trans- actions
+NGCMarketing.Reports.Heading.Amount Spent=Amount Spent
+NGCMarketing.Reports.Heading.Ave Trans Value=Ave. Trans Value
+NGCMarketing.Reports.Heading.Points Given=Points Given
+NGCMarketing.Reports.Heading.Value of Points Given=Value of Points Given
+NGCMarketing.Reports.Heading.Value of Vouchers Redeemed=Value of Vouchers Redeemed
+NGCMarketing.Reports.Heading.No Manual Transactions=No. Manual Trans- actions
+NGCMarketing.Reports.Heading.% Manual Transactions=% Manual Trans- actions
+
+# data protection opt outs
+NGCMarketing.Reports.Heading.Total number of Customers=Total No. of Customers
+NGCMarketing.Reports.Heading.Customers who have opted out=Customers that have opted out
+NGCMarketing.Reports.Heading.Group=Group
+NGCMarketing.Reports.Heading.3rd party=3rd Party
+NGCMarketing.Reports.Heading.Phone=Phone
+NGCMarketing.Reports.Heading.Mail=Mail
+# financial liability
+NGCMarketing.Reports.Heading.# Points not yet converted=No. Points not yet converted
+NGCMarketing.Reports.Heading.Value of points not yet converted=Value of points not yet converted
+NGCMarketing.Reports.Heading.Value of rewards not yet redeemed=Value of rewards not yet redeemed
+# membership report
+NGCMarketing.Reports.Heading.Week=Week
+NGCMarketing.Reports.Heading.# New Members=No. New Members
+NGCMarketing.Reports.Heading.# Normal Customers=No. Normal Customers
+NGCMarketing.Reports.Heading.# Inactive Customers=No. Inactive Customers
+NGCMarketing.Reports.Heading.# Banned Customers=No. Banned Customers
+NGCMarketing.Reports.Heading.# Deceased Customers=No. Deceased Customers
+NGCMarketing.Reports.Heading.# Customers Left Scheme=No. Customers Left Scheme
+NGCMarketing.Reports.Heading.New as % Normal=New as % of Normal
+NGCMarketing.Reports.Heading.Primary Normal as % Normal=Primary Normal as % Normal
+#collection period summary
+NGCMarketing.Reports.Heading.Collection Period=Collection Period
+NGCMarketing.Reports.Heading.#Transactions=No. of Trans- actions
+#NGCMarketing.Reports.Heading.Amount Spent=Amount Spent
+#NGCMarketing.Reports.Heading.Points Given=Points Given
+NGCMarketing.Reports.Heading.Points Converted=Points Converted
+NGCMarketing.Reports.Heading.Points Carried Forward=Points Carried Forward
+NGCMarketing.Reports.Heading.Rewards Given=Rewards Given
+NGCMarketing.Reports.Heading.Rewards Redeemed=Rewards Redeemed
+NGCMarketing.Reports.Heading.(no.)=No.
+NGCMarketing.Reports.Heading.From=From - To
+NGCMarketing.Reports.Heading.To=To
+
+# Logon NGCMarketing
+NGCMarketing.LogonPanel.FieldGroup.Language=Select Language
+NGCMarketing.LogonPanel.Flag.Primary.Tip=Click here to select Primary language
+NGCMarketing.LogonPanel.Flag.Secondary.Tip=Click here to select Secondary language
+NGCMarketing.LogonPanel.FieldGroup.Logon=Login
+NGCMarketing.LogonPanel.TextBox.User=Username
+NGCMarketing.LogonPanel.TextBox.Password=Password
+NGCMarketing.LogonPanel.Header.Caption1=Welcome to the Homeplus Family Card System
+NGCMarketing.LogonPanel.Header.Caption2=Marketing Application
+NGCMarketing.LogonPanel.Button.Logon=Login
+NGCMarketing.LogonPanel.PopUp.Error=Error
+NGCMarketing.LogonPanel.PopUp.Message.Attempt1-2=The username or password that you entered is incorrect. Please try again
+NGCMarketing.LogonPanel.PopUp.Message.Attempt3=Failed login, please contact support.
+NGCMarketing.LogonPanel.ValidationSummary.Message=Error
+NGCMarketing.LogonPanel.TextBox.User.Tip=Enter your Username
+NGCMarketing.LogonPanel.TextBox.Password.Tip=Enter your Password
+NGCMarketing.LogonPanel.Button.Logon.Tip=Click here to Login
+
+
+# Change Points Limit
+ChangePointsLimit.Menu.Header=Administer : CSD Points Limits
+Win.Header.ChangePointsLimit=CSD Points Limit
+ChangePointsLimit.Button.Search=Search
+ChangePointsLimit.Button.Search.ToolTip=Click here to search for groups
+ChangePointsLimit.Error.NoSearchCriteria=You must make an entry in at least one search box
+ChangePointsLimit.Form.SearchForGroups=Find Group
+ChangePointsLimit.Form.GroupName=Group Name
+ChangePointsLimit.Form.GroupName.Tip=Enter a group name to search for (you can use '*' as a wildcard)
+ChangePointsLimit.Form.GroupDescription=Description
+ChangePointsLimit.Form.GroupDescription.Tip=Enter the description of a group to search for (you can use '*' as a wildcard)
+ChangePointsLimit.PopupEdit.Title=Edit Points Limit
+ChangePointsLimit.PopupEdit.AddLimit=Add Limit
+ChangePointsLimit.PopupEdit.AddLimit.Tip=The maximum number of points that the group can ADD in a transaction
+ChangePointsLimit.PopupEdit.SubLimit=Subtract Limit
+ChangePointsLimit.PopupEdit.SubLimit.Tip=The maximum number of points that the group can SUBTRACT in a transaction
+ChangePointsLimit.PopupEdit.Cancel=Cancel
+ChangePointsLimit.PopupEdit.Save=Save
+ChangePointsLimit.Table.GroupName=Group Name
+ChangePointsLimit.Table.GroupName.Tip=Groups that match the search criteria
+ChangePointsLimit.Table.GroupDescription=Description
+ChangePointsLimit.Table.GroupDescription.Tip=Group description
+ChangePointsLimit.Table.AddLimit=Add Points Limit
+ChangePointsLimit.Table.AddLimit.Tip=The maximum number of points that the group can ADD in a transaction
+ChangePointsLimit.Table.SubLimit=Subtract Points Limit
+ChangePointsLimit.Table.SubLimit.Tip=The maximum number of points that the group can SUBTRACT in a transaction
+ChangePointsLimit.Table.UpdateBy=Last Updated By
+ChangePointsLimit.Table.UpdateBy.Tip=The last user to update this group
+ChangePointsLimit.Table.UpdateAt=Last Updated On
+ChangePointsLimit.Table.UpdateAt.Tip=The date and time when the group was last updated
+ChangePointsLimit.Table.Select=Edit
+ChangePointsLimit.Table.Select.Tip=Click Select to change the points limits for that group
+
+# Maintain Collection Periods
+Win.Header.MaintainCollectionPeriods=Collection Periods
+MaintainCollectionPeriods.Menu.Header=Administer : Collection Periods
+MaintainCollectionPeriods.Table.NoData=No collection periods exist
+MaintainCollectionPeriods.Table.Description=Description
+MaintainCollectionPeriods.Table.Description.Tip=Description of the collection period
+MaintainCollectionPeriods.Table.StartDate=Start Date
+MaintainCollectionPeriods.Table.StartDate.Tip=Start date of the collection period
+MaintainCollectionPeriods.Table.EndDate=End Date
+MaintainCollectionPeriods.Table.EndDate.Tip=End date of the collection period
+MaintainCollectionPeriods.Table.EditDetails=Edit Details
+MaintainCollectionPeriods.Table.EditDetails.Tip=Click to edit the collection period details
+MaintainCollectionPeriods.Table.Overview=Mailing Overview
+MaintainCollectionPeriods.Table.Overview.Tip=Click here for overview of mailing rewards
+MaintainCollectionPeriods.Table.ManageRewardMailing=Manage Reward Mailing
+MaintainCollectionPeriods.Button.Add=Add
+MaintainCollectionPeriods.Button.Add.Tip=Click here to add a new collection period
+MaintainCollectionPeriods.Popup.EditCollectionPeriodDetails=Edit Collection Period Details
+MaintainCollectionPeriods.Popup.AddCollectionPeriod=Add Collection Period
+MaintainCollectionPeriods.Popup.Description=Description
+MaintainCollectionPeriods.Popup.Description.Tip=Description of the collection period
+MaintainCollectionPeriods.Popup.StartDate=Start Date
+MaintainCollectionPeriods.Popup.StartDate.Tip=Start date of the collection period
+MaintainCollectionPeriods.Popup.EndDate=End Date
+MaintainCollectionPeriods.Popup.EndDate.Tip=End date of the collection period
+MaintainCollectionPeriods.Popup.ReIssueUntil=Reissue Until
+MaintainCollectionPeriods.Popup.ReIssueUntil.Tip=Vouchers for this collection period can be re-issued up until this date
+MaintainCollectionPeriods.Popup.PointsThreshold=Points Threshold
+MaintainCollectionPeriods.Popup.PointsThreshold.Tip=Customers must collect at least this many points for their points to be converted to rewards
+MaintainCollectionPeriods.Popup.MinimumVoucherValue=Minimum Voucher Value
+MaintainCollectionPeriods.Popup.MinimumVoucherValue.Tip=The smallest value of voucher that can be issued
+MaintainCollectionPeriods.Popup.StepBetweenVoucherValues=Step Between Voucher Values
+MaintainCollectionPeriods.Popup.StepBetweenVoucherValues.Tip=Consecutive voucher values will be separated by this amount
+MaintainCollectionPeriods.Popup.MaximumVoucherValue=Maximum Voucher Value
+MaintainCollectionPeriods.Popup.MaximumVoucherValue.Tip=The largest value of voucher that can be issued
+MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer=Number of Vouchers per Customer
+MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer.Tip=The number of vouchers that each customer will receive
+MaintainCollectionPeriods.Popup.PointsToRewardConversionRate=Points to Reward Conversion Rate
+MaintainCollectionPeriods.Popup.PointsToRewardConversionRate.Tip=The monetary amount that each point is worth
+MaintainCollectionPeriods.Popup.AmountToPointsConversionRate=Amount to Points Conversion Rate
+MaintainCollectionPeriods.Popup.AmountToPointsConversionRate.Tip=Amount to points conversion rate
+MaintainCollectionPeriods.Popup.Button.Save=Save
+MaintainCollectionPeriods.Popup.Button.Delete=Delete
+MaintainCollectionPeriods.Popup.Button.Cancel=Cancel
+MaintainCollectionPeriods.Popup.Button.Ok=OK
+MaintainCollectionPeriods.Popup.Button.Yes=Yes
+MaintainCollectionPeriods.Popup.Button.No=No
+MaintainCollectionPeriods.Popup.Error=Error
+MaintainCollectionPeriods.Popup.Error.CollectionStartDateIsInvalid=The collection period start date is invalid. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.CollectionEndDateIsInvalid=The collection period end date is invalid. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.CollectionReissueDateIsInvalid=The collection period re-issue date is invalid. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.EndDateLessThanStartDate=The end date must be after the start date. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.ReissueDateLessThanEndDate=The re-issue date must be after the end date. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.MinVoucherValueNotMultipleStepSize=The Minimum Voucher Value must be a multiple of the Step Between Voucher Values. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.MinVoucherGreaterThanThresholdTimesPointsToReward=The Minimum Voucher Value must be less than or equal to the Reward Threshold multiplied by the Points To Reward Conversion Rate. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.MaxVoucherValueNotMultipleStepSize=The Maximum Voucher Value must be a multiple of the Step Between Voucher Values. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.MaxVoucherLessThan2TimesMinVoucher=The Maximum Voucher Value must be at least twice the Minimum Voucher Value. Please correct and try again.
+MaintainCollectionPeriods.Popup.Error.VoucherStepMustBeMultipleOfPointsToReward=The Step Between Voucher Values must be a multiple of the Points To Reward Conversion Rate. Please correct and try again.
+MaintainCollectionPeriods.Popup.Year.Caption=Year of Date (Format YYYY/MM/DD)
+MaintainCollectionPeriods.Popup.Month.Caption=Month of Date (Format YYYY/MM/DD)
+MaintainCollectionPeriods.Popup.Day.Caption=Day of Date (Format YYYY/MM/DD)
+MaintainCollectionPeriods.Popup.Error.OfferExists=A collection period with this description already exists.
+MaintainCollectionPeriods.Popup.DeleteConfirm=Confirm Deletion
+MaintainCollectionPeriods.Popup.Message.ConfirmDelete=Are you sure you wish to delete this collection period?
+NGCMarketing.MaintainCollectionPeriods.Error.OfferAllocatedToPartitions=Error\\nThis Collection Period cannot be deleted.\\nPlease contact NGC support.
+NGCMarketing.MaintainCollectionPeriods.Message.RunAgePartitions=Warning\\nCollection period cannot be activated.\\nage_partitions will not run in time.\\n\\nTo activate this Collection Period\\nplease contact NGC support.\\n\\nFailure to do this will result in\\nserious system errors.
+
+# Reward Mailing Overview
+Win.Header.RewardMailing=Reward Mailing
+MailingOverview.Menu.Header= Administer : Collection Periods : Reward Mailing
+MailingOverview.Error.MissingOfferDetails=The Mailing Reward's details could not be found.
+MailingOverview.Error.InvalidStates=The Mailing Reward is not setup correctly.
+MailingOverview.ConfirmMailingRequested=Mailing Rewards has now been Requested. 
+MailingOverview.ConfirmMailingApproved=Mailing Rewards has now been Approved.
+MailingOverview.CouponSetupLink.Text=Setup
+MailingOverview.CouponSetupLink.ToolTip=Go to Setup Coupons Page
+MailingOverview.VoucherSetupLink.Text=Setup
+MailingOverview.VoucherSetupLink.ToolTip=Go to Setup Vouchers Page
+MailingOverview.CalculateRunLink.Text=Run
+MailingOverview.CalculateRunLink.ToolTip=Schedules the Mailing of Rewards
+MailingOverview.CalculateRequestedLink.Text=Requested
+MailingOverview.CalculateRequestedLink.ToolTip=The Mailing of Rewards has been Scheduled
+MailingOverview.ViewMailingLink.Text=View
+MailingOverview.ViewMailingLink.ToolTip=Go to View Mailing Report Page
+MailingOverview.ApproveMailingLink.Text=Approve
+MailingOverview.ApproveMailingLink.ToolTip=Approve the Mailing Rewards
+MailingOverview.Form.Header=Collection Period
+MailingOverview.Form.Number=Number
+MailingOverview.Form.Number.Tip=The number of the collection period
+MailingOverview.Form.StartDate=Start Date
+MailingOverview.Form.StartDate.Tip=The start date of the collection period
+MailingOverview.Form.EndDate=End Date
+MailingOverview.Form.EndDate.Tip=The end date of the collection period
+MailingOverview.PopupError.Header=Error
+MailingOverview.PopupMsg.Header=Confirmation
+
+# Setup Coupon Types
+Win.Header.SetUpCouponTypes=Setup Coupons
+SetUpCouponTypes.Menu.Header=Administer : Collection Periods : Reward Mailing : Setup Coupons
+SetUpCouponTypes.Table.CouponDescription=Coupon Description
+SetUpCouponTypes.Table.CouponDescription.Tip=The long description of the coupon
+SetUpCouponTypes.Table.SkuBarcode=SKU Barcode
+SetUpCouponTypes.Table.SkuBarcode.Tip=The barcode of the product
+SetUpCouponTypes.Table.CouponDetailsBarcode=Coupon Details Barcode
+SetUpCouponTypes.Table.CouponDetailsBarcode.Tip=The barcode of the coupon
+SetUpCouponTypes.Table.Reward=Reward
+SetUpCouponTypes.Table.Reward.Tip=Mail the coupon to customers with rewards
+SetUpCouponTypes.Table.NonReward=Non-Reward
+SetUpCouponTypes.Table.NonReward.Tip=Mail the coupon to customers without rewards
+SetUpCouponTypes.Table.Edit=Edit
+SetUpCouponTypes.Table.Edit.Tip=Click here to edit the coupon
+SetUpCouponTypes.Table.Delete=Delete
+SetUpCouponTypes.Table.Delete.Tip=Click here to delete the coupon
+SetUpCouponTypes.Table.EmptyMessage=No coupons for collection period
+SetUpCouponTypes.Table.NoCollectionPeriod=All collection periods have had mailing approved
+SetUpCouponTypes.Table.InvalidCollectionPeriod=The collection period supplied is invalid
+SetUpCouponTypes.Button.Add=Add
+SetUpCouponTypes.Button.Add.Tip=Click here to add a new coupon
+SetUpCouponTypes.Button.Return=Return to Overview
+SetUpCouponTypes.Button.Return.Tip=Click here to return to the Reward Mailing Overview screen
+SetUpCouponTypes.Popup.Edit=Edit
+SetUpCouponTypes.Popup.Add=Add
+SetUpCouponTypes.Popup.EditCouponDetails={0} Coupon Details
+SetUpCouponTypes.Popup.CouponDescription=Coupon Description
+SetUpCouponTypes.Popup.CouponDescription.Tip=The long description of the coupon
+SetUpCouponTypes.Popup.SkuBarcode=SKU Barcode
+SetUpCouponTypes.Popup.SkuBarcode.Tip=The barcode of the product
+SetUpCouponTypes.Popup.CouponDetailsBarcode=Coupon Details Barcode
+SetUpCouponTypes.Popup.CouponDetailsBarcode.Tip=The barcode of the coupon
+SetUpCouponTypes.Popup.Reward=Reward
+SetUpCouponTypes.Popup.Reward.Tip=Mail the coupon to customers with rewards
+SetUpCouponTypes.Popup.NonReward=Non-Reward
+SetUpCouponTypes.Popup.NonReward.Tip=Mail the coupon to customers without rewards
+SetUpCouponTypes.Popup.Save=Save
+SetUpCouponTypes.Popup.Cancel=Cancel
+SetUpCouponTypes.PopupMessage.Header.Confirmation=Confirmation
+SetUpCouponTypes.PopupMessage.Header.Error=Error
+SetUpCouponTypes.PopupMessage.Yes=Yes
+SetUpCouponTypes.PopupMessage.No=No
+SetUpCouponTypes.PopupMessage.Ok=OK
+SetUpCouponTypes.PopupMessage.Message.RewardNonReward=Either Reward or Non-Reward must be checked, or both.
+SetUpCouponTypes.PopupMessage.Message.ConfirmDelete=Do you really want to delete coupon {0} ?
+
+# Setup Voucher Types
+Win.Header.SetUpVoucherTypes=Setup Vouchers
+SetUpVoucherTypes.Menu.Header=Administer : Collection Periods : Reward Mailing : Setup Vouchers
+SetUpVoucherTypes.Form.SetParameters=Set Parameters
+SetUpVoucherTypes.Form.StepSizeBetweenVouchers=Step Size Between Vouchers
+SetUpVoucherTypes.Form.StepSizeBetweenVouchers.Tip=The step size between each of the vouchers
+SetUpVoucherTypes.Form.PointsThreshold=Points Threshold
+SetUpVoucherTypes.Form.PointsThreshold.Tip=The maximum amount of points that can be accumulated
+SetUpVoucherTypes.Form.MinimumVoucherValue=Minimum Voucher Value
+SetUpVoucherTypes.Form.MinimumVoucherValue.Tip=The minimum value of the vouchers
+SetUpVoucherTypes.Form.MaximumVoucherValue=Maximum Voucher Value
+SetUpVoucherTypes.Form.MaximumVoucherValue.Tip=The maximum value of the vouchers
+SetUpVoucherTypes.Form.NumberOfVouchers=Number of Vouchers
+SetUpVoucherTypes.Form.NumberOfVouchers.Tip=Maximum number of vouchers per customer
+SetUpVoucherTypes.Form.ExpiryDate=Expiry Date
+SetUpVoucherTypes.Form.ExpiryDate.Tip=The expiry date of the vouchers
+SetUpVoucherTypes.Form.ExpiryDate.YYYY.Tip=The year of expiry, must be in format CCYY
+SetUpVoucherTypes.Form.ExpiryDate.MM.Tip=The month of expiry, must be in format MM
+SetUpVoucherTypes.Form.ExpiryDate.DD.Tip=The day of expiry, must be in format DD
+SetUpVoucherTypes.Button.Generate=Generate
+SetUpVoucherTypes.Button.Generate.Tip=Click here to generate the vouchers
+SetUpVoucherTypes.Button.Return=Return to Overview
+SetUpVoucherTypes.Button.Return.Tip=Click here to return to the Reward Mailing Overview screen
+SetUpVoucherTypes.Table.MonetaryValue=Monetary Value
+SetUpVoucherTypes.Table.MonetaryValue.Tip=The monetary value of the voucher
+SetUpVoucherTypes.Table.Barcode=Barcode
+SetUpVoucherTypes.Table.Barcode.Tip=The barcode of the voucher
+SetUpVoucherTypes.Table.Edit=Edit
+SetUpVoucherTypes.Table.Edit.Tip=Click here to edit the voucher
+SetUpVoucherTypes.Table.NoCollectionPeriod=All collection periods have had mailing approved
+SetUpVoucherTypes.Table.EmptyMessage=No vouchers for collection period
+SetUpVoucherTypes.Table.InvalidCollectionPeriod=The collection period supplied is invalid
+SetUpVoucherTypes.Popup.Confirm=Confirm
+SetUpVoucherTypes.Popup.Confirm.Message=Are you sure you want to generate {0} new vouchers?<br>This will delete all current vouchers and result in a high reward threshold of {1}.
+SetUpVoucherTypes.Popup.Confirm.Yes=Yes
+SetUpVoucherTypes.Popup.Confirm.No=No
+SetUpVoucherTypes.Popup.Edit=Edit Barcode
+SetUpVoucherTypes.Popup.Edit.MonetaryValue=Monetary Value
+SetUpVoucherTypes.Popup.Edit.MonetaryValue.Tip=The monetary value of the voucher
+SetUpVoucherTypes.Popup.Edit.Barcode=Barcode
+SetUpVoucherTypes.Popup.Edit.Barcode.Tip=The barcode of the voucher
+SetUpVoucherTypes.Popup.Edit.Save=Save
+SetUpVoucherTypes.Popup.Edit.Cancel=Cancel
+SetUpVoucherTypes.Popup.Error=Error
+SetUpVoucherTypes.Popup.Error.MaxVoucherLessThan2TimesMinVoucher=The maximum voucher value must be at least 2 * minimum voucher value.
+SetUpVoucherTypes.Popup.Error.MaxVoucherNotMultipleStepValue=The maximum voucher value must be a multiple of the voucher step value.
+SetUpVoucherTypes.Popup.Error.CollectionEndDateLaterThanExpiryDate=The voucher expiry date must be later than the collection period end date.
+SetUpVoucherTypes.Popup.Ok=OK
+
+# Setup Voucher Types
+Win.Header.ViewMailing=View Mailing Report
+ViewMailing.Menu.Header=Administer : Collection Periods : Reward Mailing : View Mailing Report
+ViewMailing.Table.Comparison.Cell.A1=Totals: Number Of
+ViewMailing.Table.Comparison.Cell.B1=Current Mailing {0} - {1}
+ViewMailing.Table.Comparison.Cell.B1.WithoutDates=Current Mailing
+ViewMailing.Table.Comparison.Cell.C1=% Change On
+ViewMailing.Table.Comparison.Cell.E1=Last Mailing {0} - {1}
+ViewMailing.Table.Comparison.Cell.E1.WithoutDates=Last Mailing
+ViewMailing.Table.Comparison.Cell.F1=Last Year {0} - {1}
+ViewMailing.Table.Comparison.Cell.F1.WithoutDates=Last Year
+ViewMailing.Table.Comparison.Cell.C2=Last Mailing
+ViewMailing.Table.Comparison.Cell.D2=Last Year
+ViewMailing.Table.Comparison.Cell.A3=Primary Customers
+ViewMailing.Table.Comparison.Cell.A4=Primary Customers Not Mailed
+ViewMailing.Table.Comparison.Cell.A5=Reward Customers Mailed
+ViewMailing.Table.Comparison.Cell.A6=Non-Reward Customers Mailed
+ViewMailing.Table.Comparison.Cell.A7=Points Converted To Reward
+ViewMailing.Table.Comparison.Cell.A8=Points Carried Forward
+ViewMailing.Table.Comparison.Cell.A9=Total Reward Value
+ViewMailing.Table.Comparison.Cell.A10=Mailed Reward Value
+ViewMailing.Table.NotMailed.ExcludeTitle=Status Of Customer Not Mailed
+ViewMailing.Table.NotMailed.NotMailableTitle=Not Mailable Reason
+ViewMailing.Table.NotMailed.HighRewards=High Rewards
+ViewMailing.Table.NotMailed.Banned=Banned
+ViewMailing.Table.NotMailed.Inactive=Inactive
+ViewMailing.Table.NotMailed.Deceased=Deceased
+ViewMailing.Table.NotMailed.LeftScheme=Left Scheme
+ViewMailing.Table.NotMailed.Skeleton=Skeleton
+ViewMailing.Table.NotMailed.AddressInError=Address In Error
+ViewMailing.Table.NotMailed.NotMailable=Not Mailable
+ViewMailing.Text.Na=n/a
+ViewMailing.Button.Return=Return to Overview
+ViewMailing.Button.Return.Tip=Click here to return to the Reward Mailing Overview screen
+
+############################################################
+##
+### NGCSSC
+##
+############################################################
+
+# Menu
+NGCSSC.Menu.Item.User=User
+NGCSSC.Menu.Item.User.Tip=Manage users of the application
+NGCSSC.Menu.SubItem.AddUser=Add&nbsp;User
+NGCSSC.Menu.SubItem.AddUser.Tip=Add a new username into the system
+NGCSSC.Menu.SubItem.FindUser=Find&nbsp;User
+NGCSSC.Menu.SubItem.FindUser.Tip=Search for and edit users
+NGCSSC.Menu.Item.Group=Group
+NGCSSC.Menu.Item.Group.Tip=Manage the groups which users reside in
+NGCSSC.Menu.SubItem.AddGroup=Add&nbsp;Group
+NGCSSC.Menu.SubItem.AddGroup.Tip=Add a new user group into the system
+NGCSSC.Menu.SubItem.FindGroup=Find&nbsp;Group
+NGCSSC.Menu.SubItem.FindGroup.Tip=Search for and edit groups
+NGCSSC.Menu.Item.Administer=Administer
+NGCSSC.Menu.Item.Administer.Tip=Administer stores and card ranges
+NGCSSC.Menu.SubItem.EditStores=Stores
+NGCSSC.Menu.SubItem.EditStores.Tip=Maintain stores
+NGCSSC.Menu.SubItem.EditCardRanges=Card&nbsp;Ranges
+NGCSSC.Menu.SubItem.EditCardRanges.Tip=Maintain card ranges
+NGCSSC.Menu.SubItem.EditCardTypes=Card&nbsp;Types
+NGCSSC.Menu.SubItem.EditCardTypes.Tip=Maintain card types
+
+# Logon NGCSSC
+NGCSSC.LogonPanel.FieldGroup.Language=Select Language
+NGCSSC.LogonPanel.Flag.Primary.Tip=Click here to select Primary language
+NGCSSC.LogonPanel.Flag.Secondary.Tip=Click here to select Secondary language
+NGCSSC.LogonPanel.FieldGroup.Logon=Login
+NGCSSC.LogonPanel.TextBox.User=Username
+NGCSSC.LogonPanel.TextBox.Password=Password
+NGCSSC.LogonPanel.Header.Caption1=Welcome to the Homeplus Family Card System
+NGCSSC.LogonPanel.Header.Caption2=Software Support Console
+NGCSSC.LogonPanel.Button.Logon=Login
+NGCSSC.LogonPanel.PopUp.Error=Error
+NGCSSC.LogonPanel.PopUp.Message.Attempt1-2=The Username or Password that you entered is incorrect. Please try again.
+NGCSSC.LogonPanel.PopUp.Message.Attempt3=Failed login, please contact support.
+NGCSSC.LogonPanel.ValidationSummary.Message=Error
+NGCSSC.LogonPanel.TextBox.User.Tip=Enter your username
+NGCSSC.LogonPanel.TextBox.Password.Tip=Enter your password
+NGCSSC.LogonPanel.Button.Logon.Tip=Click here to Login
+
+# Add User
+NGCSSC.AddUser.Caption=User : Add User
+AddUser.Popup.Header.Error=Error
+AddUser.Button.Add=Add
+AddUser.Button.Add.Tip=Click here to add the new user
+AddUser.Form.AddUser=Add User
+AddUser.Form.AddUser.Tip=Add a user to the system
+AddUser.Form.UserName=Username
+AddUser.Form.UserName.Tip=Enter the login username to be used by the new user
+AddUser.Form.Description=Description
+AddUser.Form.Description.Tip=Enter a description for the new user
+AddUser.Form.Password=Password
+AddUser.Form.Password.Tip=Enter a password for the new user, it must contain at least six characters
+AddUser.Form.ConfirmedPassword=Confirmed Password
+AddUser.Form.ConfirmedPassword.Tip=Re-enter the password for the new user to ensure the password has been correctly entered
+AddUser.Form.ConfirmedPassword.ErrorMessage=The Confirmed Password must match the Password
+AddUser.Table.UserName=Username
+AddUser.Table.UserName.Tip=The new username
+AddUser.Table.LastUpdatedBy=Last Updated By
+AddUser.Table.LastUpdatedBy.Tip=The username of the person that last updated this user
+AddUser.Table.LastUpdatedDate=Last Updated On
+AddUser.Table.LastUpdatedDate.Tip=The date and time this user was last updated
+AddUser.Table.Description=Description
+AddUser.Table.Description.Tip=The description of the user
+AddUser.Table.ChangeGroupMembership=Edit Group Membership
+AddUser.Table.ChangeGroupMembership.Tip=Click on the link to edit the group memberships for this user
+AddUser.Table.Status=Status
+AddUser.Table.Status.Tip=The current status of the user
+AddUser.Table.Edit=Edit
+AddUser.Table.Edit.Tip=Click on the link to edit the details of the user
+AddUser.Table.EditGroups=Edit Groups 
+AddUser.Popup.EditUser=Edit User
+AddUser.Popup.Username=Username
+AddUser.Popup.Username.Tip=Edit the username
+AddUser.Popup.Description=Description
+AddUser.Popup.Description.Tip=Enter a description for the user
+AddUser.Popup.Status=Status
+AddUser.Popup.Status.Tip=Set the users status
+AddUser.Popup.Password=Password
+AddUser.Popup.Password.Tip=Change the user's password, it must contain at least six characters
+AddUser.Popup.ConfirmedPassword=Confirmed Password
+AddUser.Popup.ConfirmedPassword.Tip=Re-enter the new password for the user to ensure the password has been correctly entered
+AddUser.Popup.ConfirmedPassword.ErrorMessage=The Confirmed Password must match the Password
+AddUser.Popup.Save=Save
+AddUser.Popup.Save.Tip=Click here to save changes
+AddUser.Popup.Cancel=Cancel
+AddUser.Popup.Cancel.Tip=Click here to cancel any changes
+AddUser.Popup.Error.Message.Header=Error
+AddUser.Popup.Error.Message.ItemAlreadyExists=The username you have chosen already exists. Please correct and try again.
+
+# Find User
+NGCSSC.FindUser.Caption=User : Find User
+FindUser.Button.Search=Search
+FindUser.Button.Search.Tip=Click here to begin search for users
+FindUser.Form.SearchForUsers=Search
+FindUser.Form.UserName=Username
+FindUser.Form.UserName.Tip=Enter a username to search for (you can use '*' as a wildcard)
+FindUser.Form.Description=Description
+FindUser.Form.Description.Tip=Enter a description to search for (you can use '*' as a wildcard)
+FindUser.Form.GroupName=Group Name
+FindUser.Form.GroupName.Tip=Return all users who reside within this group (you can use '*' as a wildcard)
+FindUser.Table.UserName=Username
+FindUser.Table.UserName.Tip=Users matching the search
+FindUser.Table.Description=Description
+FindUser.Table.Description.Tip=Description of the user
+FindUser.Table.LastUpdatedBy=Last Updated By
+FindUser.Table.LastUpdatedBy.Tip=The username of the person that last updated this user
+FindUser.Table.LastUpdatedDate=Last Updated Date
+FindUser.Table.LastUpdatedDate.Tip=The date and time this user was last updated
+FindUser.Table.ChangeGroupMembership=Edit Group Membership
+FindUser.Table.ChangeGroupMembership.Tip=Click on the link to edit the group memberships for this user
+FindUser.Table.Status=Status
+FindUser.Table.Status.Tip=The current status of the user
+FindUser.Table.Edit=Edit
+FindUser.Table.Edit.Tip=Click on the link to edit the details of the user
+FindUser.Table.Message.NoDataReturned=Your search did not return any results. Please broaden your search and try again.
+FindUser.Popup.EditUser=Edit User
+FindUser.Popup.Username=Username
+FindUser.Popup.Username.Tip=Edit the username
+FindUser.Popup.Description=Description
+FindUser.Popup.Description.Tip=Enter a description for the user
+FindUser.Popup.Status=Status
+FindUser.Popup.Status.Tip=Set the users status
+FindUser.Popup.Password=Password
+FindUser.Popup.Password.Tip=Change the user's password, it must contain at least six characters
+FindUser.Popup.ConfirmedPassword=Confirmed Password
+FindUser.Popup.ConfirmedPassword.Tip=Re-enter the new password for the user to ensure the password has been correctly entered
+FindUser.Popup.ConfirmedPassword.ErrorMessage=The Confirmed Password must match the Password
+FindUser.Popup.Save=Save
+FindUser.Popup.Save.Tip=Click here to save changes
+FindUser.Popup.Cancel=Cancel
+FindUser.Popup.Error.Header=Error
+FindUser.Popup.Cancel.Tip=Click here to cancel any changes
+FindUser.Error.NoSearchCriteria=You must make an entry in at least one search box
+FindUser.Error.MaximumRetrievalExceeded=Too many users found using criteria supplied. Please narrow your search and try again
+
+# Edit Group Membership
+NGCSSC.EditGroupMembership.Caption=User : Find/Add User : Edit Group Membership
+EditGroupMembership.Header=Editing Group Membership for User {0}
+EditGroupMembership.Header.Tip=All actions taken on this screen will only apply to this user 
+EditGroupMembership.EditGroupMembership=Edit Group Membership
+EditGroupMembership.Table.GroupMembership=Group Membership
+EditGroupMembership.Table.GroupMembership.Tip=The user is a member of these groups
+EditGroupMembership.Table.Remove=Remove
+EditGroupMembership.Table.Remove.Tip=Click the link to remove the user from this group
+EditGroupMembership.Table.Message.NoEntries=User is not a member of any group
+EditGroupMembership.Listbox.AddGroup=Add Group
+EditGroupMembership.Listbox.Tip=Choose a group to add the user to
+EditGroupMembership.Listbox.Button.Add=Add
+EditGroupMembership.Listbox.Button.Add.Tip=Click here to add the user to the selected group
+EditGroupMembership.Popup.RemoveGroup=Remove Group
+EditGroupMembership.Popup.Message=Are you sure you wish to remove User '{0}' from Group '{1}'?
+EditGroupMembership.Popup.Yes=Yes
+EditGroupMembership.Popup.No=No
+EditGroupMembership.Popup.Message.ItemExists=The user is already a member of this group.
+EditGroupMembership.Popup.Error=Error
+EditGroupMembership.Table.Delete=Delete
+
+# Edit Group Privileges
+NGCSSC.EditGroupPrivileges.Caption=Group : Find/Add Group : Edit Group Privileges
+EditGroupPrivileges.Header=Editing Group Privileges for Group {0}
+EditGroupPrivileges.Header.Tip=All actions taken on this screen will apply to this group
+EditGroupPrivileges.EditScreens=Edit Accessible Screens
+EditGroupPrivileges.Table.AccessibleScreens=Accessible Screens
+EditGroupPrivileges.Table.AccessibleScreens.Tip=The list of screens available for to members of this group
+EditGroupPrivileges.Table.Remove=Remove
+EditGroupPrivileges.Table.Remove.Tip=Click the link to remove access to this screen from the group
+EditGroupPrivileges.Table.Message.NoEntries=No screens are accessible to this group
+EditGroupPrivileges.Button.Add=Add
+EditGroupPrivileges.Button.Add.Tip=Click here to add the selected screen to the group
+EditGroupPrivileges.EditPointsLimit=Edit Points Limits
+EditGroupPrivileges.Form.AddLimit=Add Limit
+EditGroupPrivileges.Form.AddLimit.Tip=The maximum number of points that the group can ADD in a transaction
+EditGroupPrivileges.Form.SubtractLimit=Subtract Limit
+EditGroupPrivileges.Form.SubtractLimit.Tip=The maximum number of points that the group can SUBTRACT in a transaction
+EditGroupPrivileges.Button.Save=Save
+EditGroupPrivileges.Button.Save.Tip=Save these points limits
+EditGroupPrivileges.Button.Cancel=Reset
+EditGroupPrivileges.Button.Cancel.Tip=Discard any changes to the points limits
+EditGroupPrivileges.Popup.RemoveScreen=Remove Screen
+EditGroupPrivileges.Popup.RemoveScreen.Message=Are you sure you wish to remove access to this screen for group {0}?
+EditGroupPrivileges.Popup.RemoveScreen.Yes=Yes
+EditGroupPrivileges.Popup.RemoveScreen.No=No
+EditGroupPrivileges.Listbox.AddGroup=Add Screen
+EditGroupPrivileges.Listbox.AddGroup.Tip=Choose a screen to allow this group to access
+EditGroupPrivileges.Popup.Error=Error
+EditGroupPrivileges.Popup.Message.ItemExists=The group can already access this screen
+EditGroupPrivileges.Popup.Message.AddNegativeLimits=A negative limit cannot be set. Enter the add limit as a positive number
+EditGroupPrivileges.Popup.Message.SubNegativeLimits=A negative limit cannot be set. Enter the subtract limit as a positive number
+EditGroupPrivileges.Popup.Message.LimitsRequired=You must supply a value for both add and subtract limits
+EditGroupPrivileges.Table.Delete=Delete
+
+# Add Group
+NGCSSC.AddGroup.Caption=Group : Add Group
+AddGroup.Button.Add=Add
+AddGroup.Button.Add.Tip=Click here to add the new group
+AddGroup.Form.AddGroup=Add Group
+AddGroup.Form.GroupName=Group Name
+AddGroup.Form.GroupName.Tip=Enter the name of the new group to be added
+AddGroup.Form.Description=Description
+AddGroup.Form.Description.Tip=Enter a description for the new group
+AddGroup.Table.GroupName=Group Name
+AddGroup.Table.GroupName.Tip=The new group
+AddGroup.Table.Description=Description
+AddGroup.Table.Description.Tip=The description of the group
+AddGroup.Table.LastUpdatedBy=Last Updated By
+AddGroup.Table.LastUpdatedBy.Tip=The user who last updated this group
+AddGroup.Table.LastUpdatedDate=Last Updated On
+AddGroup.Table.LastUpdatedDate.Tip=The date and time this group was last updated
+AddGroup.Table.EditgroupPrivileges=Edit Group Privileges
+AddGroup.Table.EditgroupPrivileges.Tip=Click on the link to edit the privileges associated with this group
+AddGroup.Table.Edit=Edit
+AddGroup.Table.Edit.Tip=Click on the link to edit the details of the group
+AddGroup.Table.Delete=Delete
+AddGroup.Table.Delete.Tip=Click on the link to delete this group
+AddGroup.PopupEdit.EditGroup=Edit Group
+AddGroup.PopupEdit.GroupName=Group Name
+AddGroup.PopupEdit.GroupName.Tip=Edit the name of the group
+AddGroup.PopupEdit.Description=Description
+AddGroup.PopupEdit.Description.Tip=Enter the description for the group
+AddGroup.PopupEdit.Save=Save
+AddGroup.PopupEdit.Cancel=Cancel
+AddGroup.PopupConfirmation.DeleteGroup=Delete Group
+AddGroup.PopupConfirmation.Message=Are you sure you wish to delete the Group '{0}'?
+AddGroup.PopupConfirmation.Yes=Yes
+AddGroup.PopupConfirmation.No=No
+AddGroup.Popup.Error.Header=Error
+AddGroup.PopupError.Error=Error
+AddGroup.PopupError.Message=This group cannot be deleted as it still contains users.
+AddGroup.PopupError.Ok=OK
+AddGroup.PopupError.Message.ItemAlreadyExists=The Group Name you have chosen already exists. Please correct and try again.
+
+# Find Group
+NGCSSC.FindGroup.Caption=Group : Find Group
+FindGroup.Button.Add=Search
+FindGroup.Button.Add.Tip=Click here to begin search for groups
+FindGroup.Form.SearchForGroup=Search
+FindGroup.Form.GroupName=Group Name
+FindGroup.Form.GroupName.Tip=Enter a Group Name to search for (you can use '*' as a wildcard)
+FindGroup.Form.Description=Description
+FindGroup.Form.Description.Tip=Enter a description to search for (you can use '*' as a wildcard)
+FindGroup.Table.GroupName=Group Name
+FindGroup.Table.GroupName.Tip=Groups matching the search
+FindGroup.Table.Description=Description
+FindGroup.Table.Description.Tip=Description of the group
+FindGroup.Table.LastUpdatedBy=Last Updated By
+FindGroup.Table.LastUpdatedBy.Tip=The user who last updated this group
+FindGroup.Table.LastUpdatedDate=Last Updated On
+FindGroup.Table.LastUpdatedDate.Tip=The date and time this group was last updated
+FindGroup.Table.EditgroupPrivileges=Edit group Privileges
+FindGroup.Table.EditgroupPrivileges.Tip=Click on the link to edit the privileges associated with this group
+FindGroup.Table.Edit=Edit
+FindGroup.Table.Edit.Tip=Click on the link to edit the details of the group
+FindGroup.Table.Delete=Delete
+FindGroup.Table.Delete.Tip=Click on the link to delete this group
+FindGroup.Table.Message.NoDataReturned=Your search did not return any results. Please broaden your search and try again.
+FindGroup.PopupEdit.EditGroup=Edit Group
+FindGroup.PopupEdit.GroupName=Group Name
+FindGroup.PopupEdit.GroupName.Tip=Edit the name of the group
+FindGroup.PopupEdit.Description=Description
+FindGroup.PopupEdit.Description.Tip=Enter the description for the group
+FindGroup.PopupEdit.Save=Save
+FindGroup.PopupEdit.Cancel=Cancel
+FindGroup.PopupConfirmation.DeleteGroup=Delete Group
+FindGroup.PopupConfirmation.Message=Are you sure you wish to delete the Group {0}?
+FindGroup.PopupConfirmation.Yes=Yes
+FindGroup.PopupConfirmation.No=No
+FindGroup.Popup.Error.Header=Error
+FindGroup.PopupError.DeleteGroup=Delete Group
+FindGroup.PopupError.Message=This group cannot be deleted as it still contains users.
+FindGroup.PopupError.Ok=OK
+FindGroup.Error.NoSearchCriteria=You must make an entry in at least one search box
+FindGroup.Error.MaximumRetrievalExceeded=Too many groups found using criteria supplied. Please narrow your search and try again
+FindGroup.PopupError.Message.UsersStillPresent=Group cannot be deleted because it still has users associated with it
+
+# Store Details
+NGCSSC.MaintainStore.Caption=Administer : Stores
+MaintainStore.Form.Store=Store
+MaintainStore.Form.StoreNumber=Store Number 
+MaintainStore.Table.Message.NoEntries=No stores found.
+MaintainStore.Table.ToolTip=List of Store details 
+MaintainStore.Table.StoreNumber=Store Number
+MaintainStore.Table.StoreNumber.ToolTip=The number assigned to this store
+MaintainStore.Table.StoreName=Store Name
+MaintainStore.Table.StoreName.ToolTip=The name of the store
+MaintainStore.Table.Region=Region
+MaintainStore.Table.Region.ToolTip=The region that the store is in
+MaintainStore.Table.Edit.ToolTip=Click here to view or edit store details
+MaintainStore.Table.Edit=Edit
+MaintainStore.Table.EditCap=Edit
+MaintainStore.Button.Add=Add
+MaintainStore.Button.Add.ToolTip=Click here to add a new store
+MaintainStore.Popup.EditTitle=Edit Store
+MaintainStore.Popup.AddTitle=Add Store
+MaintainStore.Popup.StoreNumber=Store Number
+MaintainStore.Popup.StoreNumber.ToolTip=The number assigned to this store
+MaintainStore.Popup.StoreName=Store Name
+MaintainStore.Popup.StoreName.ToolTip=The name of the store
+MaintainStore.Popup.Region=Region
+MaintainStore.Popup.Region.ToolTip=The region that the store is in
+MaintainStore.Popup.Button.Save=Save
+MaintainStore.Popup.Button.Save.ToolTip=Click here to save the details for this store
+MaintainStore.Popup.Button.Cancel=Cancel
+MaintainStore.Popup.Button.Cancel.ToolTip=Click here to abandon any changes
+MaintainStore.Ip.Divider=.
+MaintainStore.Popup.Error=Error
+MaintainStore.Error.InvalidStoreCode=Store code already in use.
+MaintainStore.Error.InvalidStoreName=Store name already in use.
+NGCSSC.MaintainStore.Caption.WelcomePoints=Welcome Points
+NGCSSC.MaintainStore.Caption.WelcomePoints.Tip=The number of points given to a new customer at this store
+NGCSSC.MaintainStores.FieldGroup.POSServers=POS Servers
+NGCSSC.MaintainStores.Caption.IP1=IP1
+NGCSSC.MaintainStores.Caption.POSIP1.Tip=Store POS server IP address 1
+NGCSSC.MaintainStores.Caption.IP2=IP2
+NGCSSC.MaintainStores.Caption.POSIP2.Tip=Store POS server IP address 2
+NGCSSC.MaintainStores.Caption.IP3=IP3
+NGCSSC.MaintainStores.Caption.IP4=IP4
+NGCSSC.MaintainStores.Message.POSIP1Part1Error=First part of store POS server IP address 1
+NGCSSC.MaintainStores.Message.POSIP1Part2Error=Second part of store POS server IP address 1
+NGCSSC.MaintainStores.Message.POSIP1Part3Error=Third part of store POS server IP address 1
+NGCSSC.MaintainStores.Message.POSIP1Part4Error=Fourth part of store POS server IP address 1
+NGCSSC.MaintainStores.Message.POSIP2Part1Error=First part of store POS server IP address 2
+NGCSSC.MaintainStores.Message.POSIP2Part2Error=Second part of store POS server IP address 2
+NGCSSC.MaintainStores.Message.POSIP2Part3Error=Third part of store POS server IP address 2
+NGCSSC.MaintainStores.Message.POSIP2Part4Error=Fourth part of store POS server IP address 2
+NGCSSC.MaintainStores.Message.POSIP1InvalidIpAddressAllZero=Invalid store POS server IP address 1, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.POSIP2InvalidIpAddressAllZero=Invalid store POS server IP address 2, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.ErrorCaption.POSIP1=Store POS server IP address 1
+NGCSSC.MaintainStores.ErrorCaption.POSIP2=Store POS server IP address 2
+
+# Maintain Card Ranges
+NGCSSC.MaintainCardRanges.Caption=Administer : Card Ranges
+MaintainCardRanges.Table.Message.NoEntries=No card ranges found.
+MaintainCardRanges.Table.ToolTip=List of Card Range details
+MaintainCardRanges.Table.FromCardNumber=From Card Number
+MaintainCardRanges.Table.FromCardNumber.ToolTip=The card range starts at this number
+MaintainCardRanges.Table.ToCardNumber=To Card Number
+MaintainCardRanges.Table.ToCardNumber.ToolTip=The card range finishes at this number
+MaintainCardRanges.Table.CardType=Card Type
+MaintainCardRanges.Table.CardType.ToolTip=The type of card
+MaintainCardRanges.Table.CardNoD=No of Digits
+MaintainCardRanges.Table.CardNoD.ToolTip=The number of digits for this type of card
+MaintainCardRanges.Table.Edit.ToolTip=Click here to view, edit or delete card range details
+MaintainCardRanges.Table.Edit=Edit
+MaintainCardRanges.Table.EditCap=Edit
+MaintainCardRanges.Button.Add=Add
+MaintainCardRanges.Button.Add.ToolTip=Click here to add a new card range
+MaintainCardRanges.Popup.EditTitle=Edit Card Range
+MaintainCardRanges.Popup.AddTitle=Add Card Range
+MaintainCardRanges.Popup.FromCardNumber=From Card Number
+MaintainCardRanges.Popup.FromCardNumber.ToolTip=The card range starts at this number
+MaintainCardRanges.Popup.ToCardNumber=To Card Number
+MaintainCardRanges.Popup.ToCardNumber.ToolTip=The card range finishes at this number
+MaintainCardRanges.Popup.CardType=Card Type
+MaintainCardRanges.Popup.CardType.ToolTip=The type of card
+MaintainCardRanges.Popup.Button.Save=Save
+MaintainCardRanges.Popup.Button.Save.ToolTip=Click here to save the details for this card range
+MaintainCardRanges.Popup.Button.Delete=Delete
+MaintainCardRanges.Popup.Button.Delete.ToolTip=Click here to delete this card range
+MaintainCardRanges.Popup.Button.Cancel=Cancel
+MaintainCardRanges.Popup.Button.Cancel.ToolTip=Click here to abandon any changes
+MaintainCardRanges.Popup.Error=Error
+MaintainCardRanges.Error.RangeOverlap=The card range specified overlaps with an existing range
+MaintainCardRanges.Error.IncorrectCardNumberLength=From and to card numbers should contain {0} digits for this type of card
+MaintainCardRanges.Error.MaxLessThanMin='To Card Number' must be greater than 'From Card Number'
+NGCSSC.MaintainCardRanges.Caption.DateAdded=Date Added
+NGCSSC.MaintainCardRanges.Caption.DateAdded.Tip=The date the card range was added to the system
+
+# Maintain Card Types
+NGCSSC.MaintainCardTypes.Caption.Page=Administer : Card Types
+NGCSSC.MaintainCardTypes.Button.Add=Add
+NGCSSC.MaintainCardTypes.Button.Add.Tip=Click here to add a new card type
+NGCSSC.MaintainCardTypes.Message.Code=Code
+NGCSSC.MaintainCardTypes.Message.Code.Tip=The ID of the card type
+NGCSSC.MaintainCardTypes.Message.Description=Name
+NGCSSC.MaintainCardTypes.Message.Description.Tip=The name of the card type
+NGCSSC.MaintainCardTypes.Message.Length=Length
+NGCSSC.MaintainCardTypes.Message.Length.Tip=The length of the card type number. This cannot be modified once the card type has been added
+NGCSSC.MaintainCardTypes.Message.HscFlag=HSC Card
+NGCSSC.MaintainCardTypes.Message.HscFlag.Tip=Is this a HSC card type?
+NGCSSC.MaintainCardTypes.Table.NoData=No card types found
+NGCSSC.MaintainCardTypes.Table.Edit=Edit
+NGCSSC.MaintainCardTypes.Table.Edit.Tip=Click here to edit a card type
+NGCSSC.MaintainCardTypes.Popup.Add=Add Card Type
+NGCSSC.MaintainCardTypes.Popup.Edit=Edit Card Type
+NGCSSC.MaintainCardTypes.Popup.Error=Error
+NGCSSC.MaintainCardTypes.Popup.Save=Save
+NGCSSC.MaintainCardTypes.Popup.Save.Tip=Click here to save the details for this card type
+NGCSSC.MaintainCardTypes.Popup.Cancel.Tip=Click here to abandon any changes
+NGCSSC.MaintainCardTypes.Error.DuplicateDescription=Card account type name already in use.
+
+############################################################
+##
+### Batch Scripts
+##
+############################################################
+
+Batch.BatchRegisterNewCustomer.Replace.Name=Name Unknown
+
+############################################################
+##
+### Batch Scripts
+###
+### NOTE : These are event log messages and should not be translated.
+##
+############################################################
+
+#Batch Rewards
+BatchRewards.RewardCalculationStarted=Reward Calculation Started.
+BatchRewards.NoRewardCalculationRequired=No Reward Calculation is required.
+BatchRewards.RewardCalculationInProgress=Reward Calculation is already in progress.
+BatchRewards.RunFullMailingStarted=Reward Mailing Started.
+BatchRewards.MailingNotRequested=Reward Mailing not requested.
+BatchRewards.MailingInProgress=Reward Mailing is already in progress.
+BatchRewards.RewardError=Calculate Rewards failed for the following reason: {0}
+BatchRewards.ResetRewardCalculationError=Calculate Rewards failed for the following reason: {0}
+BatchRewards.Error=A Batch Rewards job failed for the following reason: {0} 
+BatchRewards.MailError=Reward Mailing failed for the following reason: {0}
+BatchRewards.RewardCalculationEnded=Calculate Rewards Completed.\r\nRewarded {0} customers.\r\n{1} points converted to rewards.\r\n{2} points carried forwards.\r\nValue of {3}
+BatchRewards.RewardCalculationStopped=Calculate Rewards failed to reward some customers.\r\nRewarded {0} customers.\r\nSkipped {1} customers.\r\n{2} points converted to rewards.\r\n{3} points carried forwards.\r\nValue of {4}
+BatchRewards.FullMailingRunEnded=Reward Mailing Completed.\r\nRewarded {0} vouchers, with total value of {1}.\r\nRewarded {2} coupons.\r\n{3} customers have high reward mailings.\r\n{4} customers have non-high reward mailings.\r\n{5} customers have non-reward mailings.
+BatchRewards.MailStopped=Reward Mailing failed to process {0} customers.\r\nRewarded {1} vouchers, with total value of {2}.\r\nRewarded {3} coupons.\r\n{4} customers have high reward mailings.\r\n{5} customers have non-high reward mailings.\r\n{6} customers have non-reward mailings.
+BatchRewards.ReissueMailingRunStarted=Reissue Rewards started.
+BatchRewards.ReissueMailingNotRequired=There is no last collection period to Reissue Rewards for.
+BatchRewards.ReissueMailingRunEnded=Reissue Rewards completed.\r\nReissued {0} vouchers, with total value of {1}.\r\n{2} customers have reissued rewards.
+BatchRewards.ReissueMailingError=Reissue Rewards failed for the following reason: {0} 
+BatchRewards.ResetRewardCalculationStarted=Reset Reward Calculation started.
+BatchRewards.ResetRewardCalculationCompleted=Reset Reward Calculation completed.\nReset {0} customer rewards.
+BatchRewards.ResetRewardCalculationStopped=Reset Reward Calculation failed.\r\nFailed to reset {0} customer rewards.\r\nReset {1} customer rewards. 
+BatchRewards.ResetRewardCalculationInProgress=Reset Rewards Calculation is already in progress.
+BatchRewards.ResetRewardCalculationNotRequested=Reset reward calculation is not requested.
+BatchRewards.LastConversionRateMissing=The last collection period's points to reward conversion rate is not set up.
+BatchRewards.LastConversionRateInvalid=The last collection period's points to reward conversion rate is not a positive number.
+BatchRewards.LastPeriodIncomplete=Calculate Rewards has not been completed.
+BatchRewards.LastPeriodNotEnabled=The last collection period conversion is not enabled.
+BatchRewards.LastPeriodMissing=There is no last collection period.
+BatchRewards.LastPointsThresholdMissing=The last collection period's points threshold is not set up.
+BatchRewards.LastPointsThresholdInvalid=The last collection period's points threshold is not a positive number.
+BatchRewards.LastMinimumVoucherValueMissing=The last collection period's minimum voucher value is not set up.
+BatchRewards.LastMinimumVoucherValueInvalid=The last collection period's minimum voucher value is not a positive number.
+BatchRewards.RewardCalculationNotComplete=Reward Calculation has not run, or has not successfully completed.
+BatchRewards.VouchersNotGenerated=The last collection period's voucher types have not been generated, or all barcodes have not been supplied.
+BatchRewards.LastVoucherStepSizeMissing=Last collection period's voucher step size is not set up.
+BatchRewards.LastVoucherStepSizeInvalid=Last collection period's voucher step size is not a positive number.
+BatchRewards.CurrentPeriodMissing=There is no current collection period defined.
+BatchRewards.CurrentConversionRateMissing=The current collection period's points to reward conversion rate is not set up.
+BatchRewards.CurrentConversionRateInvalid=The current collection period's points to reward conversion rate is not a positive number.
+
+#Batch Register
+BatchRegister.BatchRegisterStarted=Batch Register Customers Started.
+BatchRegister.BatchRegisterEnded=Batch Register Customers Completed\r\nRead {0} records\r\nRejected {1} customers.\r\nInserted {2} Customer records.\r\nUpdated {3} Customer records without new Card Account records.\r\nUpdated {4} Customer records with new Card Account records.\r\nMerged {5} Customer record pairs.
+BatchRegister.BatchRegisterError=Batch Register Customers Failed.\r\nERROR: '{6}'\r\nRead {0} records\r\nRejected {1} customers.\r\nInserted {2} Customer records.\r\nUpdated {3} Customer records without new Card Account records.\r\nUpdated {4} Customer records with new Card Account records.\r\nMerged {5} Customer record pairs.
+
+#Batch Upload Transaction
+BatchTransaction.BatchRegisterStarted=Batch Upload Of Transactions Started.
+BatchTransaction.BatchRegisterEnded=Batch Upload Of Transactions Started\r\nRead {0} records\r\nRejected {1} transaction records.\r\nInserted {2} transaction records.
+BatchTransaction.BatchTransactionError=Batch Upload Of Transactions Failed.\r\nERROR: '{3}'\r\nRead {0} records\r\nRejected {1} transactions.\r\nInserted {2} transaction records.
+
+#Batch Aggregations
+BatchAggregation.Stopped=Daily Summarisation Failed.\r\nERROR: '{0}'\r\nReturn Code: '{1}'
+BatchAggregation.SummariseCollectionPeriodsRunStarted=Daily Summarisation of Collection Periods Started.
+BatchAggregation.SummariseCollectionPeriodsRunEnded=Daily Summarisation of Collection Periods Completed.
+BatchAggregation.SummariseCustomerDataRunStarted=Daily Summarisation of Customer Data Started.
+BatchAggregation.SummariseCustomerDataRunEnded=Daily Summarisation of Customer Data Completed.
+BatchAggregation.SummariseTransactionDataRunStarted=Daily Summarisation of Transaction Data Started.
+BatchAggregation.SummariseTransactionDataRunEnded=Daily Summarisation of Transaction Data Completed.
+
+#Import PAF
+ImportPaf.Started=Import PAF started.
+ImportPaf.FileInaccessible=The Post Office Address file (paf.dat) is missing or inaccessible.
+ImportPaf.FileEmpty=The Post Office Address file (paf.dat) is empty.
+ImportPaf.Completed=Import Paf Completed.\r\n{0} addresses loaded.
+ImportPaf.RemoveError=Import PAF failed.\nUnable to delete existing PAF data.\n{0}
+ImportPaf.LoadError=Import PAF failed.\nUnable to load the following PAF data.\n{1}.\n{0}
+ImportPaf.AddError=Import PAF failed.\nUnable to add new PAF data.\n{0}
+
+
+############################################################
+##
+### KOREAN
+##
+############################################################
+
+##############################
+##
+### NGCSSC
+##
+##############################
+
+# Maintain Stores
+MaintainStore.Popup.TRANPort=TRAN Port
+MaintainStore.Popup.TRANPort.ToolTip=The NGC server TRAN Port for this store
+MaintainStore.Popup.IRTPort=IRT Port
+MaintainStore.Popup.IRTPort.ToolTip=The NGC server IRT Port for this store
+MaintainStore.Popup.TRANIp=TRAN IP
+MaintainStore.Popup.TRANIp.ToolTip=The NGC server TRAN IP address for this store
+MaintainStore.Popup.IRTIp=IRT IP
+MaintainStore.Popup.IRTIp.ToolTip=The NGC server IRT IP address for this store
+MaintainStore.IrtIp.Part1=First part of NGC server IRT IP address
+MaintainStore.IrtIp.Part2=Second part of NGC server IRT IP address
+MaintainStore.IrtIp.Part3=Third part of NGC server IRT IP address
+MaintainStore.IrtIp.Part4=Fourth part of NGC server IRT IP address
+MaintainStore.TranIp.Part1=First part of NGC server TRAN IP address
+MaintainStore.TranIp.Part2=Second part of NGC server TRAN IP address
+MaintainStore.TranIp.Part3=Third part of NGC server TRAN IP address
+MaintainStore.TranIp.Part4=Fourth part of NGC server TRAN IP address
+NGCSSC.MaintainStores.Message.IRTIP1InvalidIpAddressAllZero=Invalid NGC server IRT IP address, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.TRANIP1InvalidIpAddressAllZero=Invalid NGC server TRAN IP address, 0.0.0.0 is not allowed.
+
+##############################
+##
+### NGCCSD
+##
+##############################
+
+# Register Customer
+CustRegister.Popup.SSNInvalid.Message=The SSN entered is invalid. Please re-enter and try again.
+
+# Auto Add Points
+Menu.Item.Name.AutoAddPoints=Auto&nbsp;Add&nbsp;Points
+Menu.Item.Tip.AutoAddPoints=Update points using barcodes from a receipt
+
+Menu.Header.AutoAddPoints=Points : Auto Add Points
+Win.Header.AutoAddPoints=Auto Add Points
+NGCCSD.AutoAddPoints.Button.Reset=Reset
+NGCCSD.AutoAddPoints.Button.Reset.ToolTip=Click here to reset the form and clear any current entries
+NGCCSD.AutoAddPoints.Button.Save=Save
+NGCCSD.AutoAddPoints.Button.Save.ToolTip=Click here to submit the transaction
+NGCCSD.AutoAddPoints.FieldGroup.Barcodes=Scan Barcodes to Enter Points
+NGCCSD.AutoAddPoints.Caption.Barcode1=Barcode 1
+NGCCSD.AutoAddPoints.Caption.Barcode1.ToolTip=Enter the first barcode
+NGCCSD.AutoAddPoints.Caption.Barcode2=Barcode 2
+NGCCSD.AutoAddPoints.Caption.Barcode2.ToolTip=Enter the second barcode
+NGCCSD.AutoAddPoints.Caption.Warning=Warning
+NGCCSD.AutoAddPoints.Button.Continue=Continue
+NGCCSD.AutoAddPoints.Button.Continue.ToolTip=Click here to continue the addition of points to the customer
+NGCCSD.AutoAddPoints.Button.Cancel=Cancel
+NGCCSD.AutoAddPoints.Button.Cancel.ToolTip=Click here to cancel the addition of points to the customer
+NGCCSD.AutoAddPoints.Message.MissingBarcode1=Please enter barcode 1.
+NGCCSD.AutoAddPoints.Message.MissingBarcode2=Please enter barcode 2.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode1=Please enter barcode 1 again.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode2=Please enter barcode 2 again.
+NGCCSD.AutoAddPoints.Message.PointsAdded=Points Added
+NGCCSD.AutoAddPoints.Message.NoCollectionPeriod=Points have not been added. There is no current collection period.
+NGCCSD.AutoAddPoints.Message.CustomerBanned=Points have not been added. The customer is banned.
+NGCCSD.AutoAddPoints.Message.InvalidStore=Points have not been added. The issuing store code of the barcode is invalid.
+NGCCSD.AutoAddPoints.Message.WarningUseStatus=The customer use status is currently 'Left Scheme' or 'Deceased'.
+NGCCSD.AutoAddPoints.Message.WarningCardStatus=The customer card status is currently not 'Normal' or 'Lost'.
+NGCCSD.AutoAddPoints.Message.WarningMailStatus=The customer mail status is currently 'Skeleton'.
+NGCCSD.AutoAddPoints.Message.TransactionFailed=Points have not been added. Please try again. If the problem persists, please contact support.
+NGCCSD.AutoAddPoints.Message.Continue=Do you wish to continue?
+NGCCSD.AutoAddPoints.Message.InvalidPoints=Barcode 2 is incorrect. Please check and retype it.
+NGCCSD.AutoAddPoints.Message.PointsAlreadyAdded=Points have already been added.
+NGCCSD.AutoAddPoints.Message.TransactionTooOld=The points cannot be added - the transaction was more than {0} days ago.
+
+############################################################
+##
+### THAI
+##
+############################################################
+
+##############################
+##
+### NGCCSD
+##
+##############################
+
+# Maintain Stores
+NGCSSC.MaintainStores.FieldGroup.NGCServers=NGC Servers
+NGCSSC.MaintainStores.Caption.NGCIP1.Tip=NGC server IP address 1
+NGCSSC.MaintainStores.Caption.NGCIP2.Tip=NGC server IP address 2
+NGCSSC.MaintainStores.Caption.NGCIP3.Tip=NGC server IP address 3
+NGCSSC.MaintainStores.Caption.NGCIP4.Tip=NGC server IP address 4
+NGCSSC.MaintainStores.Caption.Port1=Port1
+NGCSSC.MaintainStores.Caption.Port1.Tip=NGC server port number 1
+NGCSSC.MaintainStores.Caption.Port2=Port2
+NGCSSC.MaintainStores.Caption.Port2.Tip=NGC server port number 2
+NGCSSC.MaintainStores.Caption.Port3=Port3
+NGCSSC.MaintainStores.Caption.Port3.Tip=NGC server port number 3
+NGCSSC.MaintainStores.Caption.Port4=Port4
+NGCSSC.MaintainStores.Caption.Port4.Tip=NGC server port number 4
+NGCSSC.MaintainStores.Message.NGCIP1Part1Error=First part of NGC server IP address 1
+NGCSSC.MaintainStores.Message.NGCIP1Part2Error=Second part of NGC server IP address 1
+NGCSSC.MaintainStores.Message.NGCIP1Part3Error=Third part of NGC server IP address 1
+NGCSSC.MaintainStores.Message.NGCIP1Part4Error=Fourth part of NGC server IP address 1
+NGCSSC.MaintainStores.Message.NGCIP2Part1Error=First part of NGC server IP address 2
+NGCSSC.MaintainStores.Message.NGCIP2Part2Error=Second part of NGC server IP address 2
+NGCSSC.MaintainStores.Message.NGCIP2Part3Error=Third part of NGC server IP address 2
+NGCSSC.MaintainStores.Message.NGCIP2Part4Error=Fourth part of NGC server IP address 2
+NGCSSC.MaintainStores.Message.NGCIP3Part1Error=First part of NGC server IP address 3
+NGCSSC.MaintainStores.Message.NGCIP3Part2Error=Second part of NGC server IP address 3
+NGCSSC.MaintainStores.Message.NGCIP3Part3Error=Third part of NGC server IP address 3
+NGCSSC.MaintainStores.Message.NGCIP3Part4Error=Fourth part of NGC server IP address 3
+NGCSSC.MaintainStores.Message.NGCIP4Part1Error=First part of NGC server IP address 4
+NGCSSC.MaintainStores.Message.NGCIP4Part2Error=Second part of NGC server IP address 4
+NGCSSC.MaintainStores.Message.NGCIP4Part3Error=Third part of NGC server IP address 4
+NGCSSC.MaintainStores.Message.NGCIP4Part4Error=Fourth part of NGC server IP address 4
+NGCSSC.MaintainStores.Message.NGCIP1InvalidIpAddressAllZero=Invalid NGC server IP address 1, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.NGCIP2InvalidIpAddressAllZero=Invalid NGC server IP address 2, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.NGCIP3InvalidIpAddressAllZero=Invalid NGC server IP address 3, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.NGCIP4InvalidIpAddressAllZero=Invalid NGC server IP address 4, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.ErrorCaption.NGCIP1=NGC server IP address 1
+NGCSSC.MaintainStores.ErrorCaption.NGCIP2=NGC server IP address 2
+NGCSSC.MaintainStores.ErrorCaption.NGCIP3=NGC server IP address 3
+NGCSSC.MaintainStores.ErrorCaption.NGCIP4=NGC server IP address 4
+
+##############################
+##
+### NGCCSD
+##
+##############################
+
+# View Details
+ViewDetailsPanel.Form.City=City
+ViewDetailsPanel.Form.City.Tip=The customer's city
+ViewDetailsPanel.Form.Province=Province
+ViewDetailsPanel.Form.Province.Tip=The customer's province
+ViewDetailsPanel.Form.Name_2=Name 2
+ViewDetailsPanel.Form.Name_2.Tip=The customer's second name
+
+# Customer Search
+SearchPanel.Form.Name_2=Name 2
+SearchPanel.Form.Name_2.Tip=The customer's second name
+
+# Update Details
+UpdateDetailsPanel.Form.Name_2=Name 2
+UpdateDetailsPanel.Form.Name_2.Tip=Enter the customer's second name

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "ReportCoupon", "ReportCoupon\ReportCoupon.dtproj", "{703893AB-F160-4F74-87C1-D25EBDE781F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{703893AB-F160-4F74-87C1-D25EBDE781F7}.Development|Default.ActiveCfg = Development
+		{703893AB-F160-4F74-87C1-D25EBDE781F7}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

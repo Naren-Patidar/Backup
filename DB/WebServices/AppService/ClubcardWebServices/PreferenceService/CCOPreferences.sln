@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCOPreferences", "CCOPreferences\CCOPreferences.csproj", "{96D75481-EA52-4858-8C0F-78070F132466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreferencesEntities", "PreferencesEntities\PreferencesEntities.csproj", "{94697ACC-CF7C-46F2-9CCD-F5367C9333D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96D75481-EA52-4858-8C0F-78070F132466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D75481-EA52-4858-8C0F-78070F132466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D75481-EA52-4858-8C0F-78070F132466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D75481-EA52-4858-8C0F-78070F132466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94697ACC-CF7C-46F2-9CCD-F5367C9333D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94697ACC-CF7C-46F2-9CCD-F5367C9333D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94697ACC-CF7C-46F2-9CCD-F5367C9333D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94697ACC-CF7C-46F2-9CCD-F5367C9333D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

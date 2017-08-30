@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\XC54" GeneratedFromPackageName="pkgNGCROIUploadCustomerClubcard" GeneratedFromPackageID="{FAC12931-DDB9-4FE9-BB41-51DC7325A797}" GeneratedDate="21/09/2012 08:12:19"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgClubcardBackupFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Backup\Clubcard</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgClubcardSourceFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Input</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+		<!--<ConfiguredValue>Data Source=172.21.159.148;Initial Catalog=NGCROI;Provider=SQLOLEDB;User Id=cconline;Password=cconline;</ConfiguredValue>-->
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=NGCROIC;Provider=SQLOLEDB;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgCustomerBackupFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Backup\Customer</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgCustomerClubcardLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UserLogs\Upload\CustomerClubcard</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgCustomerSourceFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Input</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgUtilityLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UtilityLogs\Upload\CustomerClubcard\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

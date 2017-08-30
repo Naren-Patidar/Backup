@@ -1,0 +1,13 @@
+GI|DIR|NVC|Director's|Director(1789290119)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1789290119
+COMMUNISIS|DIR|BPC|Director's|Director(1788689847)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1788689847
+GI|DIR|AVC|Director's|Director(1788689862)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1788689862 and AirmilesStandard = 1
+GI|DIR|AVC|Director's|Director(1789290121)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1789290121 and AirmilesPremium = 1
+GI|DIR|BAC|Director's|Director(1798606136)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1798606136 and BAMilesStandard = 1
+GI|DIR|BAC|Director's|Director(1788689875)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1788689875 and BAMilesPremium = 1
+COMMUNISIS|DIR|HVC|Director's|Director(1788689888)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1788689888
+COMMUNISIS|DIR|CSC|Director's|Director(1788689890)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1788689890
+COMMUNISIS|DIR|BPC|Director's|Director(1789290134)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1789290134
+COMMUNISIS|DIR|CSC|Director's|Director(1817260656)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1817260656
+COMMUNISIS|DIR|CSC|Director's|Director(1817260709)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1817260709
+GI|DIR|VIRC|Director's|Director(1958722951)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1958722951
+GI|DIR|VIRC|Director's|Director(1958722977)|select m.HouseholdID, m.ClubcardID from MailableCustomers m WITH(NOLOCK) where m.HouseholdID = 1958722977

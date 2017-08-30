@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="group_AdHoc_Coupon">
+			<ComponentRef Id="comp_AdHoc_Coupon_0" />
+			<ComponentRef Id="comp_AdHoc_Coupon_2" />
+			<ComponentRef Id="comp_AdHoc_Coupon_13" />
+		</ComponentGroup>
+		<DirectoryRef Id="AdHocCouponServiceDir">
+			<Component Id="comp_AdHoc_Coupon_0" DiskId="1" KeyPath="yes" Guid="6E69F555-3AEF-43D7-A215-E5AF8A8A593E">
+				<File Id="file_AdHoc_Coupon_0" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\AdHocCouponService.svc" />
+				<File Id="file_AdHoc_Coupon_1" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\Web.config" />
+			</Component>
+			<Directory Id="dir_Tesco_ClubcardCoupon_AdHocCoupon_bin_1" Name="bin">
+				<Component Id="comp_AdHoc_Coupon_2" DiskId="1" KeyPath="yes" Guid="23FD897E-D6ED-41F3-B4B4-D23C5925DA71">
+					<File Id="file_AdHoc_Coupon_2" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+					<File Id="file_AdHoc_Coupon_3" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+					<File Id="file_AdHoc_Coupon_4" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll" />
+					<File Id="file_AdHoc_Coupon_5" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+					<File Id="file_AdHoc_Coupon_6" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.ServiceLocation.dll" />
+					<File Id="file_AdHoc_Coupon_7" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.Unity.dll" />
+					<File Id="file_AdHoc_Coupon_8" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Debug\Microsoft.Practices.Unity.Interception.dll" />
+				</Component>
+				<Component Id="comp_AdHoc_Coupon_13" DiskId="1" KeyPath="yes" Guid="55CA5AB7-CA55-4D5C-B7D0-D31AB57FDAEE">
+					<File Id="file_AdHoc_Coupon_13" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Release\Tesco.ClubcardCoupon.BAL.dll" />
+					<File Id="file_AdHoc_Coupon_14" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Release\Tesco.ClubcardCoupon.DAL.dll" />
+					<File Id="file_AdHoc_Coupon_15" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Release\Tesco.ClubcardCouponDataContract.dll" />
+					<File Id="file_AdHoc_Coupon_16" Checksum="yes" Source="..\Tesco.ClubcardCoupon.AdHocCoupon\bin\Release\Tesco.ClubcardCoupon.AdHocCoupon.dll" />
+				</Component>
+			</Directory>
+		</DirectoryRef>
+	</Fragment>
+</Wix>

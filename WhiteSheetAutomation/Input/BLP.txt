@@ -1,0 +1,2 @@
+GI|BLP|BP12,BP3,BD3,TDN12,TDN6,UV12,UVC,UVN12,AV12,AVC,BA12,BAC,VIR12,VIRC,NV12,NVC,NEW,NNV|Braille & Large Print|All braille customers|select top 1 m.HouseholdID,m.ClubcardID from MailableCustomers m WITH(NOLOCK) where (Braille='1' OR LargePrint='1')
+COMMUNISIS|BLP|BD12,BDC,BPC,TD12,TD6,HV12,HVC,CSVO,CSVT,CSVTB,CSTO,CSTB,CSC|Braille & Large Print|Braille & Large Print|select top 1 m.HouseholdID,m.ClubcardID from MailableCustomers m WITH(NOLOCK) where (Braille='1' OR LargePrint='1')

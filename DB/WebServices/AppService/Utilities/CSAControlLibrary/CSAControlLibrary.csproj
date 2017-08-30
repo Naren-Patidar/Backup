@@ -1,0 +1,258 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{152310B1-0219-4274-AA50-7F359EC06E16}</ProjectGuid>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CSAControlLibrary</AssemblyName>
+    <AssemblyOriginatorKeyFile>CSAControlLibrary.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>true</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Fujitsu.eCrm.Generic.ControlLibrary</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>http://localhost/CSAControlLibrary/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>CSAControlLibrary.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>CSAControlLibrary.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ISharedUtils, Version=9.0.1.9, Culture=neutral, PublicKeyToken=ca68e969763d354c, processorArchitecture=MSIL">
+      <HintPath>..\ISharedUtils\bin\ISharedUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalizationLibrary, Version=9.0.1.9, Culture=neutral, PublicKeyToken=860ef521a32837fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LocalizationLibrary\bin\LocalizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=9.0.1.9, Culture=neutral, PublicKeyToken=468ff2615375db33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NGC Marketing\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=9.0.1.9, Culture=neutral, PublicKeyToken=468ff2615375db33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Business Layer\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedUtils, Version=9.0.1.9, Culture=neutral, PublicKeyToken=0947c21eb5908c45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NGC Marketing\sharedutils\bin\SharedUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSAControlLibrary.snk" />
+    <Compile Include="Project\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\AssemblyVersionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\ControlTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAComparer\GenericComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAComparer\ICSAComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAComparer\IntegerComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAComparer\StringComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSAScript\CSAJavaScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\ButtonList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CheckBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSABasicControlConstruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSABlankLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSACheckBoxList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSACurrencyTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSADatePlaceHolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSADropDownList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSARadioButtonList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\CSAReportControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\DifferenceValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\HyperLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\ICSASimpleControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\Label.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\TextBox\CSAGenericTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\TextBox\CSAMultiControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\TextBox\CSATextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\CSASimpleControl\ValidationSummaryControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\DataForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\DataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project\PopupForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

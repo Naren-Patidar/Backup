@@ -1,0 +1,27 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Group_Config_Values];
+    var HideConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Mandatory_fields];
+    var ChinaHide = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+    bool islocale = false;
+    islocale = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsLocale.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    var currentPage = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var provinces = Provinces.List as List<Province>;
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+    
+}
+@Html.HiddenFor(model => model.FindAddressClicked)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6)

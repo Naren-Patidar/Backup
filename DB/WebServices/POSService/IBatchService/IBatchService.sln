@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBatchService", "IBatchService.csproj", "{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IBatchService.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

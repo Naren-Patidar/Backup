@@ -1,0 +1,276 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Olt_Process_All_Non_Imported]    Script Date: 02/06/2013 12:30:25 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER   PROCEDURE [dbo].[sp_Olt_Process_All_Non_Imported]   
+@Path varchar(250),  
+@FileName varchar(50),  
+@NoOfDateFormatWrong bigint OUTPUT,  
+@NoOfDateFuture bigint OUTPUT,  
+@NoOfStoreUnknown bigint OUTPUT,  
+--@NoOfInvalidCardStatus bigint OUTPUT,  
+--@NoOfInvalidUseStatus bigint OUTPUT,  
+@NoOfSkeleton bigint OUTPUT ,  
+@NoOfDupTxn bigint OUTPUT,  
+@NoOfNegAmt bigint OUTPUT,  
+@NoOfNegPtn bigint OUTPUT,  
+@NoOfZeroAmt bigint OUTPUT,  
+@NoOfNullField bigint OUTPUT,  
+--@NoOfHHeadMis bigint OUTPUT,  
+@NoOfOutOfRange bigint OUTPUT,  
+@NoOfStoreNoWrong bigint OUTPUT,  
+@NoOfInvalidPos bigint OUTPUT,  
+@NoOfDuplicate bigint OUTPUT  
+AS  
+declare @dbname Varchar(100)  
+Select @dbname = DB_NAME()  
+declare @Cmd nvarchar (1500)  
+--Reading All counts into Output Parameters  
+Select @NoOfDateFormatWrong=count(1) from TempOfflineDateFormatWrong  
+Select @NoOfDateFuture=count(1) from TempOfflineDateFuture  
+Select @NoOfStoreUnknown=count(1) from TempOfflineStoreUnknown  
+--Select @NoOfInvalidCardStatus=count(1) from TempOfflineInvalidCardStatus  
+--Select @NoOfInvalidUseStatus=count(1) from TempOfflineInvalidUseStatus  
+Select @NoOfSkeleton=count(1) from TempOfflineSkeleton  
+Select @NoOfDupTxn=count(1) from TempOfflineDupTxn  
+Select @NoOfNegAmt=count(1) from TempOfflineDateAmtNeg  
+Select @NoOfNegPtn=count(1) from TempOfflineDatePointNeg  
+Select @NoOfZeroAmt=count(1) from TempOfflineDateAmtzero  
+Select @NoOfNullField=count(1) from TempOfflineDateFieldNUll  
+--Select @NoOfHHeadMis=count(1) from TempOfflineDataHHeadmis  
+Select @NoOfOutOfRange=count(1) from TempOfflineDataOutOfRange  
+Select @NoOfStoreNoWrong=count(1) from TempOfflineDataStoreNo  
+select @NoOfInvalidPos=count(1) from TempOfflineDataInvalidPos  
+select @NoOfDuplicate=count(1) from TempOfflineDataDuplicate  
+  
+  
+Declare @TableName varchar(50)  
+Declare @File varchar(50)  
+declare @n int  
+--Declare @Path Varchar(100)  
+--Declare @Filename Varchar(50)  
+--set @Path='\\172.29.16.38\HOPOSDummy'  
+--set @FileName='test.txt'  
+--Declare @NoOfDateFormatWrong Bigint  
+--set @NoOfDateFormatWrong=1  
+  
+--invalis store code  
+set @n=len(@FileName)  
+set @File = substring(@FileName,0,@n-3)  
+if(@NoOfStoreNoWrong>0)  
+Begin  
+  
+Set @TableName='TempOfflineDataStoreNo'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\InvalidStore_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDataStoreNo  
+end  
+  
+--Number of duplicate transaction in input file.  
+if(@NoOfDuplicate>0)  
+Begin  
+  
+Set @TableName='TempOfflineDataDuplicate'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\DuplicateTxnCards_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDataDuplicate  
+end  
+  
+--BCP All ccard accounts those are out of range  
+if(@NoOfOutOfRange>0)  
+Begin  
+  
+Set @TableName='TempOfflineDataOutOfRange'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\CardOutofRange_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDataOutOfRange  
+end  
+  
+--BCP All card accounts with no household head  
+--if(@NoOfHHeadMis>0)  
+--Begin  
+--  
+--Set @TableName='TempOfflineDataHHeadmis'  
+--  
+--select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
+--+@Path+'\'+@File+' -S' + @@servername + ' -T -c -t ~'  
+--  
+--exec master..xp_cmdshell @Cmd  
+--TRUNCATE TABLE TempOfflineDataHHeadmis  
+--end  
+--  
+  
+--BCP All null ccard account transactions  
+if(@NoOfNullField>0)  
+Begin  
+  
+Set @TableName='TempOfflineDateFieldNull'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\FieldNull_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDateFieldNull  
+end  
+  
+--BCP All amount spent zero and pasitive points  
+if(@NoOfZeroAmt>0)  
+Begin  
+  
+Set @TableName='TempOfflineDateAmtzero'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\AmountZero_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDateAmtzero  
+end  
+  
+--BCP All Negative points and pasitive amount spent  
+if(@NoOfNegPtn>0)  
+Begin  
+  
+Set @TableName='TempOfflineDatePointNeg'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\NegativePoints_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDatePointNeg  
+end  
+  
+--BCP All Negative amount spent and pasitive points  
+if(@NoOfNegAmt>0)  
+Begin  
+  
+Set @TableName='TempOfflineDateAmtNeg'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\AmountNegetive_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDateAmtNeg  
+end  
+  
+--BCP All Format Wrong TXNs  
+if(@NoOfDateFormatWrong>0)  
+Begin  
+  
+Set @TableName='TempOfflineDateFormatWrong'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\DateForamtWrong_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDateFormatWrong  
+  
+End  
+  
+--BCP All Future Dated TXNs  
+if(@NoOfDateFuture>0)  
+Begin  
+  
+Set @TableName='TempOfflineDateFuture'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\FutureDate_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDateFuture  
+  
+End  
+  
+--BCP All Unknown Store TXNs  
+if(@NoOfStoreUnknown>0)  
+Begin  
+  
+Set @TableName='TempOfflineStoreUnknown'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\UnknownStore_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineStoreUnknown  
+  
+End  
+  
+--BCP All Invalid Card Status TXNs  
+--if(@NoOfInvalidCardStatus>0)  
+--Begin  
+--  
+--Set @TableName='TempOfflineInvalidCardStatus'  
+--  
+--select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
+--+@Path+'\InvaliCardStatus_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+--  
+--exec master..xp_cmdshell @Cmd  
+--TRUNCATE TABLE TempOfflineInvalidCardStatus  
+--  
+--End  
+  
+--BCP All Invalid Use Status TXNs  
+--if(@NoOfInvalidUseStatus>0)  
+--Begin  
+--  
+--Set @TableName='TempOfflineInvalidUseStatus'  
+--  
+--select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
+--+@Path+'\InvalidUseStatus_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+--  
+--exec master..xp_cmdshell @Cmd  
+--TRUNCATE TABLE TempOfflineInvalidUseStatus  
+--  
+--End  
+  
+--BCP All  Skeleton TXNs  
+if(@NoOfSkeleton>0)  
+Begin  
+  
+Set @TableName='TempOfflineSkeleton'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\SkeletonCustomer_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineSkeleton  
+  
+End  
+  
+--BCP All Duplicate TXNs  
+if(@NoOfDupTxn>0)  
+Begin  
+  
+Set @TableName='TempOfflineDupTxn'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\DuplicateTXN_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDupTxn  
+  
+End  
+--BCP All TXNs with Invalid Cashier ID  
+if(@NoOfInvalidPos>0)  
+Begin  
+  
+Set @TableName='TempOfflineDataInvalidPos'  
+  
+select @Cmd = 'bcp "Select [txn_date],[card_account_number],[store_code],[till_number],[cashier_id],[reciept_number],[amount_spend],[total_points] From ' +  @dbname + '.dbo.'+@TableName+' " queryout '  
++@Path+'\InvalidPOSorCashierID_'+@File+'R.dat -S' + @@servername + ' -T -c -t ~'  
+  
+exec master..xp_cmdshell @Cmd  
+TRUNCATE TABLE TempOfflineDataInvalidPos  
+  
+End  

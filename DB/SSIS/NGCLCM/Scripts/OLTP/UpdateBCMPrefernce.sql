@@ -1,0 +1,1 @@
+UPDATE Preference Set IsDeleted = 'N' WHERE PreferenceID = 49

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="PreferenceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NULL" />
+      <xs:enumeration value="ALLERGY" />
+      <xs:enumeration value="DIETARY" />
+      <xs:enumeration value="CONTACT_METHOD" />
+      <xs:enumeration value="PROMOTIONS" />
+      <xs:enumeration value="REWARD" />
+      <xs:enumeration value="PREFERRED_MAILING_ADDRESS" />
+      <xs:enumeration value="MEDICAL" />
+      <xs:enumeration value="COMMUNICATION_LANGUAGE" />
+      <xs:enumeration value="DATA_PROTECTION" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PreferenceType" nillable="true" type="tns:PreferenceType" />
+  <xs:complexType name="CustomerPreference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerID" type="xs:long" />
+      <xs:element minOccurs="0" name="CustomerPreferenceType" type="xs:short" />
+      <xs:element minOccurs="0" name="EmailSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POptStatus" type="tns:OptStatus" />
+      <xs:element minOccurs="0" name="Preference" nillable="true" type="tns:ArrayOfCustomerPreference" />
+      <xs:element minOccurs="0" name="PreferenceDescriptionEng" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferenceDescriptionLocal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferenceID" type="xs:short" />
+      <xs:element minOccurs="0" name="PreferenceOptStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferenceType" nillable="true" type="tns:ArrayOfCustomerPreference" />
+      <xs:element minOccurs="0" name="Sortseq" type="xs:short" />
+      <xs:element minOccurs="0" name="UpdateDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerPreference" nillable="true" type="tns:CustomerPreference" />
+  <xs:simpleType name="OptStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NOT_SELECTED" />
+      <xs:enumeration value="OPTED_IN" />
+      <xs:enumeration value="OPTED_OUT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OptStatus" nillable="true" type="tns:OptStatus" />
+  <xs:complexType name="ArrayOfCustomerPreference">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerPreference" nillable="true" type="tns:CustomerPreference" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerPreference" nillable="true" type="tns:ArrayOfCustomerPreference" />
+  <xs:complexType name="ClubDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChangedBirthDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClubID" type="xs:short" />
+      <xs:element minOccurs="0" name="ClubInformation" nillable="true" type="tns:ArrayOfClubDetails" />
+      <xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOBDetails" nillable="true" type="tns:ArrayOfClubDetails" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JoinDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Media" type="xs:short" />
+      <xs:element minOccurs="0" name="MediaDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MediaDetails" nillable="true" type="tns:ArrayOfClubDetails" />
+      <xs:element minOccurs="0" name="MembershipID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClubDetails" nillable="true" type="tns:ClubDetails" />
+  <xs:complexType name="ArrayOfClubDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClubDetails" nillable="true" type="tns:ClubDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClubDetails" nillable="true" type="tns:ArrayOfClubDetails" />
+  <xs:complexType name="CustomerDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CardNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Preferencelist" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerDetails" nillable="true" type="tns:CustomerDetails" />
+</xs:schema>

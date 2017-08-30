@@ -1,0 +1,16 @@
+﻿<Window x:Class="EncryptDecryptTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MCACrypt" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="846" Width="777">
+    <Grid Height="785" Width="758" ShowGridLines="False">        
+        <Label  Content="Input:" Height="28" HorizontalAlignment="Left" Margin="12,10,0,0" Name="lblInputData" VerticalAlignment="Top" Width="43" HorizontalContentAlignment="Right" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="61,12,0,0" Name="txtInput" VerticalAlignment="Top" Width="685" Grid.ColumnSpan="3" Grid.RowSpan="1" />
+        <Button Content="Parse Content" Height="23" HorizontalAlignment="Left" Margin="451,51,0,0" Name="btnParse" VerticalAlignment="Top" Width="89" Click="btnParse_Click" />
+        
+        <Button Content="Clear All Text" Height="23" HorizontalAlignment="Left" Margin="12,51,0,0" Name="btnClear" VerticalAlignment="Top" Width="102" Click="btnClear_Click" Grid.Row="1" />
+        <Button Content="Encrypt File" Height="23" HorizontalAlignment="Left" Margin="546,51,0,0" Name="btnEncryptFile" VerticalAlignment="Top" Width="95" Click="btnEncryptFile_Click" />
+        <Button Content="Decrypt File" Height="23" HorizontalAlignment="Left" Margin="647,51,0,0" Name="btnDecryptFile" VerticalAlignment="Top" Width="102" Click="btnDecryptFile_Click" />
+        <TextBox Height="661" HorizontalAlignment="Left" Margin="12,93,0,0" Name="txtResult" VerticalAlignment="Top" Width="734" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible"/>
+        <CheckBox Content="MCACrypt" Height="16" HorizontalAlignment="Left" Margin="361,55,0,0" Name="chkMCACrypt" VerticalAlignment="Top" Width="84" />
+    </Grid>
+</Window>

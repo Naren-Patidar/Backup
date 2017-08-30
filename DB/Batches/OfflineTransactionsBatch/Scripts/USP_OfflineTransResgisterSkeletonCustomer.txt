@@ -1,0 +1,117 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[USP_OfflineTransResgisterSkeletonCustomer]    Script Date: 02/06/2013 12:26:54 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROC [dbo].[USP_OfflineTransResgisterSkeletonCustomer]
+AS
+BEGIN
+	DECLARE @count BIGINT
+	DECLARE @rowsprocessed BIGINT
+	DECLARE @i BIGINT
+	DECLARE @ClubcardID BIGINT
+	DECLARE @PreferredStoreID BIGINT
+	DECLARE @joinedDate DATETIME
+	DECLARE @now DATETIME
+	DECLARE @UserID INT 
+	DECLARE @CustomerID BIGINT
+	DECLARE @ClubcardType SMALLINT 
+	DECLARE @@THISERROR INT 
+	
+	IF ((SELECT COUNT(1) FROM  TempOfflineSkeleton  WHERE txn_date NOT IN (SELECT MIn(txn_date) FROM TempOfflineSkeleton GROUP BY card_account_number))>1)
+	BEGIN
+		DELETE FROM  TempOfflineSkeleton  WHERE txn_date NOT IN (SELECT MIn(txn_date) FROM TempOfflineSkeleton GROUP BY card_account_number)
+		ALTER TABLE TempOfflineSkeleton DROP COLUMN temp_txn_id
+		ALTER TABLE TempOfflineSkeleton ADD temp_txn_id BIGINT identity(1,1)
+	END
+	SET @i = 1
+	SET @UserID = 0
+	SET @now = GETDATE()
+	SELECT @count = COUNT(1) FROM TempOfflineSkeleton
+	WHILE ( @i <= @count ) 
+	BEGIN
+		/* Add new Customer with a Card Account */ 
+			
+			SELECT @ClubcardID = card_account_number,@PreferredStoreID = store_code,
+				@joinedDate = txn_date
+				FROM TempOfflineSkeleton WHERE temp_txn_id = @i
+				
+			SELECT @ClubcardType =  ClubcardType.ClubcardType  
+			FROM ClubcardType, ClubcardRange 
+			WHERE ClubcardRange.ClubcardType = ClubcardType.ClubcardType 
+				AND  ClubcardRange.MinCardNumber  <=  @ClubcardID  
+				AND  ClubcardRange.MaxCardNumber  >=  @ClubcardID  
+				AND  ClubcardType.CardNumberLength  =  LEN(@ClubcardID) 
+
+			INSERT INTO [NGCData].[dbo].[Customer]
+					   (TitleEnglish
+					   ,[Name1]
+					   ,[Sex]
+					   ,[RaceId]
+					   ,[MailingAddressLine5]
+					   ,[BusinessAddressLine5]
+					   ,[CustomerMailStatus]
+					   ,[BusinessType]
+					   ,[PreferredStoreID]
+					   ,[JoinedDate]
+					   ,[JoinedStoreID]
+					   ,[CustomerUseStatusID]
+					   ,[InsertDateTime]
+					   ,[InsertBy]
+					   ,[AmendDateTime]
+					   ,[AmendBy]
+					   ,[IsDeleted]
+					   ,[CustomerWelcomedFlag])
+				 VALUES	('Unknown','Name Unknown','U',0,'-1','-1',1,0,
+						@PreferredStoreID,@joinedDate,@PreferredStoreID,
+						0,@now,@UserID,@now,@UserID,'N','0')
+
+			SET @@THISERROR = @@ERROR  
+			IF (@@THISERROR != 0) 
+				BEGIN 
+					RAISERROR ('INSERT Customer failed',16,1) 
+					RETURN (1) 
+				END 
+
+			--SELECT @CustomerID = max(CustomerID) FROM Customer 
+			SET @CustomerID=scope_identity()
+
+			-- Update the PrimaryCustomerID of the Customer
+			UPDATE Customer set PrimaryCustomerID = @CustomerID where CustomerID = @CustomerID
+
+			SET @@THISERROR = @@ERROR  
+			IF (@@THISERROR != 0) 
+				BEGIN 
+					RAISERROR ('UPDATE Customer failed',16,1) 
+					RETURN (1) 
+				END 
+		
+		
+			INSERT INTO Clubcard ( 
+						CustomerID, 
+						ClubcardID, 
+						ClubcardStatus, 
+						InsertDateTime,
+						CardIssuedDate, 
+						InsertBy, 
+						ClubcardType,
+						AmendDateTime,
+						AmendBy,
+						IsDeleted,
+						PrimaryClubcardID ) 
+			VALUES (@CustomerID, @ClubcardID, 0, 
+					@now, @JoinedDate, @UserID, @ClubcardType,
+					@now,@UserID,'N',@ClubcardID)  
+
+			SET @@THISERROR = @@ERROR  
+			IF (@@THISERROR != 0) 
+			BEGIN 
+				RAISERROR ('INSERT Clubcard failed',16,1)  
+				RETURN (1)				
+			END 
+			SET @i = @i + 1
+			SET @ClubcardID = null
+	END
+END

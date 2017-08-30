@@ -1,0 +1,1809 @@
+﻿# NGC version string 
+NGCVersion=NGC Version 1.5
+
+# Sync Error
+Win.Header.SyncError=전송오류
+SyncError.Button.Continue=계속
+SyncError.Button.Continue.Tip=이전 화면을 새로운 정보로 고치려면 클릭하십시오.
+SyncError.Message=오류<br>이전화면을 변경하는 동안, 다른 사용자에 의해 동일정보가 업데이트되었습니다. 이전 화면을 새로운 정보로 고치려면 계속을 누르십시오.
+
+# General Error
+Win.Header.GeneralError=오류
+GeneralError.NA=N/A
+GeneralError.MachineName=시스템명칭
+GeneralError.DateAndTime=날짜 & 시각
+GeneralError.ErrorID=오류 ID
+GeneralError.Button.Logon=로그인
+GeneralError.Button.Logon.Tip=시스템에 재접속하려면 클릭하십시오.
+GeneralError.Messsage.Default=시스템에 오류가 발생하였습니다. 다시 시도해보시고, 계속 오류가 발생할 경우 Help Desk로 연락바랍니다.
+
+############################################################
+##
+### NGCCSD
+##
+############################################################
+
+# Common
+Phrase.Na=n/a
+
+# Standard Buttons
+Button.Update=수정
+Button.Update.ToolTip=변경된 내용을 저장하려면 클릭하십시오.
+Button.Insert=삽입
+Button.Insert.ToolTip=추가된 내용을 저장하려면 클릭하십시오.
+Button.Delete=삭제
+Button.Delete.ToolTip=내용을 삭제하려면 클릭하십시오.
+Button.Ok=확인
+Button.Ok.ToolTip=계속 진행하려면 클릭하십시오.
+Button.Cancel=취소
+Button.Cancel.ToolTip=취소하려면 클릭하십시오.
+Button.Save=저장
+Button.Save.ToolTip=저장하려면 클릭하십시오.
+
+Button.Logon=로그인
+Button.Language=언어선택
+Button.Reset=초기화
+List.TopElement=선택하세요.
+
+# Standard Dividers
+Divider.Dash=-
+Divider.ForwardSlash=/
+
+# Checkbox checked and unchecked values
+CheckBox.Checked=1
+CheckBox.Unchecked=0
+
+# Trimmery
+Trimmery.FindCustomer=회원조회
+Trimmery.Register=회원등록
+Trimmery.Logout=로그아웃
+Trimmery.Divider= - 
+Trimmery.CustomerIsPrimary=대표회원<br>
+Trimmery.CustomerIsSecondary=소속회원<br>
+Trimmery.FindCustomer.Tip=회원을 조회하려면 클릭하십시오.
+Trimmery.Register.Tip=신규 회원을 등록하려면 클릭하십시오.
+Trimmery.Customer.Tip=회원명과 카드번호
+Trimmery.Customer.Secondary.Tip=회원명과 카드번호
+Trimmery.CustomerType.Tip=대표회원여부
+Trimmery.CustomerUser.Tip=회원상태
+Trimmery.CustomerMail.Tip=DM발송오류
+Trimmery.Logout.Tip=시스템에서 로그아웃됩니다.
+
+# Standard Date WebControl
+January=1월
+February=2월
+March=3월
+April=4월
+May=5월
+June=6월
+July=7월
+August=8월
+September=9월
+October=10월
+November=11월
+December=12월
+
+# Standard DataTable WebControl
+NextPage=다음>
+PrevPage=<이전
+Select=선택
+
+# Standard Feedback Messages
+Msg.UpdateComplete=성공적으로 수정되었습니다
+Msg.DataIsOutOfSync=오류
+Msg.CustomerRegistered=성공적으로 회원이 등록되었습니다
+Msg.LosingChanges=수정된 내용이 반영되었습니다. 이전 내용은 삭제됩니다.
+
+# General Error Messages
+Message.DefaultError=Homeplus Family Card System.<br>심각한 오류가 발행하였습니다. 다시 시스템에 접속하시기 바랍니다.
+
+# Standard Web Exception Messages
+ExceptionMsg.SQLServerConnectionNotMade=서버/데이터베이스의 연결이 끊겼습니다. 시스템 운영자에게 통보되었습니다. 로그인 상태이면 로그아웃 하시고, 5분정도 후에 다시 로그인 하신 후 시도해 주십시오.
+ExceptionMsg.SQLExecutionError=예상치 못한 에러가 발생하였습니다. 시스템운영자에게 통보되었습니다. 자료를 다시 입력하시거나 다른 메뉴항목을 선택하여 주십시오.
+ExceptionMsg.ConnectionRefused=등록된 사용자 ID/비밀번호가 아닙니다. 접속이 거부되었으며, 확인 후 다시 시도해주시기 바랍니다.
+ExceptionMsg.DefaultError=예상치 못한 에러가 발생하였습니다. 시스템운영자에게 통보되었습니다. 자료를 다시 입력하거나 다른 메뉴항목을 선택하여 주십시오.
+ExceptionMsg.CardAlreadyExists=이미 등록된 카드번호입니다. 카드번호를 정확히 입력하였는지 확인하거나, 카드조회 메뉴로 이동하여 카드번호를 조회하십시오.
+ExceptionMsg.InvalidCardNumber=유효한 카드번호가 아닙니다. 카드번호를 정확히 입력하였는지 확인하고, 다시 입력해주십시오.
+
+# Standard Validation Error Messages
+ValidationSummary.Text=유효성 에러
+ErrorMsg.MissingMandatoryValue='{0}'을/를 입력하셔야 합니다.
+ErrorMsg.InvalidRange='{0}'은/는 유효하지 않으며, {1}을/를 입력하셔야 합니다.
+ErrorMsg.Minval='{0}'은/는 유효하지 않으며, {2}미만의 {1}을/를 입력하셔야 합니다.
+ErrorMsg.Maxval='{0}'은/는 유효하지 않으며, {2}이하의 {1}을/를 입력하셔야 합니다.
+ErrorMsg.BetweenMinAndMax='{0}'은/는 유효하지 않으며, {2}와 {3} 사이의 {1}을 입력하셔야 합니다.
+ErrorMsg.IsInvalid='{0}'은/는 유효하지 않습니다.
+ErrorMsg.InvalidDifference='{0}'의 값은 반드시 {1} {2} {3}이어야 합니다.
+ErrorMsg.InvalidType='{0}'의 값은 반드시 {1}이어야 합니다.
+Date=일자
+Integer=전체번호
+Double=소수번호
+Currency=화폐단위
+GreaterThan=초과
+GreaterThanEqual=이상
+LessThan=미만
+LessThanEqual=이하
+Equal=동일한
+NotEqual=같지않은
+Validation.Text=오류
+
+# Tesco's Menu
+Menu.Item.Name.ViewDetails=기본정보&nbsp;조회
+Menu.Item.Tip.ViewDetails=회원의 기본정보 조회하기
+Menu.Item.Name.UpdateDetails=기본정보&nbsp;수정
+Menu.Item.Tip.UpdateDetails=회원의 기본정보 수정하기
+Menu.Item.Name.ViewCards=카드관리
+Menu.Item.Tip.ViewCards= 회원의 카드 조회 및 카드 재발급하기 
+Menu.Item.Name.Cards=카드
+Menu.Item.Tip.Cards= 회원의 카드정보 조회 및 수정하기
+Menu.Item.Name.Login=로그인
+Menu.Item.Tip.Login=훼밀리카드 시스템에 로그인하기
+Menu.Item.Name.Search=조회
+Menu.Item.Tip.Search=회원 조회하기
+Menu.Item.Name.Customer=회원
+Menu.Item.Tip.Customer=회원정보 조회 및 수정하기
+Menu.Item.Name.Points=포인트
+Menu.Item.Tip.Points=현재 잔여 포인트 조회하기
+Menu.Item.Name.Register=회원&nbsp;등록
+Menu.Item.Tip.Register=새로운 카드와 회원 등록하기
+Menu.Item.Name.Logoff=로그아웃
+Menu.Item.Tip.Logoff=훼밀리카드 시스템 로그아웃하기
+Menu.Item.Name.ViewPoints=포인트&nbsp;조회
+Menu.Item.Tip.ViewPoints=회원의 포인트 정보 조회하기
+Menu.Item.Name.ViewTransactions=거래내역&nbsp;조회
+Menu.Item.Tip.ViewTransactions=회원의 거래내역 조회하기
+Menu.Item.Name.AddTransaction=수기입력
+Menu.Item.Tip.AddTransaction=회원의 거래내역 수기로 입력하기
+Menu.Item.Name.ViewInformation=상세정보&nbsp;조회
+Menu.Item.Tip.ViewInformation=회원의 상세정보 조회 하기
+Menu.Item.Name.UpdateInformation=상세정보&nbsp;수정
+Menu.Item.Tip.UpdateInformation=회원의 상세정보 수정 하기
+
+# Rewards
+Menu.Item.Name.Rewards=현금쿠폰
+Menu.Item.Tip.Rewards=현금쿠폰 내역 조회하기
+Menu.Item.Name.ViewRewards=현금쿠폰&nbsp;조회
+Menu.Item.Tip.ViewRewards=회원의 현금쿠폰 발행내역 조회하기
+
+# Reward Group
+Menu.Item.Name.RewardGroup=포인트합산회원
+Menu.Item.Tip.RewardGroup=회원의 포인트 합산정보을 조회하고, 다른 회원과 포인트를 합산하기
+Menu.Item.Name.ViewGroup=합산회원&nbsp;조회
+Menu.Item.Tip.ViewGroup=포인트합산 회원을 조회하기
+Menu.Item.Name.Merge=포인트합산
+Menu.Item.Tip.Merge=특정회원을 포인트합산 회원으로 등록하기
+
+# Tesco's Headings
+Page.Header.HomeplusFamilyCardSystem=홈플러스 훼밀리카드 시스템
+Page.Caption.Tip=시스템 명칭
+Page.Header.HomeplusFamilyCardSystem.Tip= 홈플러스  훼밀리카드  시스템
+Page.Header.Date.Tip=일자
+Page.Header.UserName.Tip=사용자 ID
+
+# Customer Details Page
+Win.Header.CustomerDetails=회원 상세정보
+Menu.Header.CustomerDetails=회원 상세정보
+Form.Header.CustomerDetails=회원 상세정보 
+Form.ErrorHeader.CustomerDetails=상세정보가 유효하지 않습니다.
+
+# Customer Register Page
+Win.Header.CustomerRegister=회원 등록 
+Menu.Header.CustomerRegister=카드관리 - 신규카드 발급
+Form.Header.CardDetails=카드 상세정보
+
+# Logon Page
+Win.Header.Logon=로그인
+Menu.Header.Logon=훼밀리카드 시스템
+Form.Header.Logon=로그인
+
+# Customer Search Page
+Win.Header.CustomerSearch=회원 조회
+Menu.Header.CustomerSearch=회원 조회
+Form.Header.CustomerSearch=회원 조회
+
+# View Points
+Win.Header.ViewPoints=포인트 조회
+Menu.Header.ViewPoints=포인트 : 포인트 조회
+
+# View Points STPF Points (Also known as HSC Points). These are unique to Korea
+Phrase.PointsTableD1=제휴포인트
+Phrase.PointsTableD1.Tip=제휴포인트 내역
+
+
+# View Transaction
+Win.Header.ViewTransactions=거래내역 조회
+Menu.Header.ViewTransactions=포인트 : 거래내역 조회
+Phrase.Collection=<b>적립기간</b> {0} {1} - {2}
+Phrase.PreviousLink=&lt;&lt;이전
+Phrase.PreviousLink.Tip=이전 적립기간동안 거래내역을 조회합니다.
+Phrase.CurrentLink=다음
+Phrase.CurrentLink.Tip=다음 적립기간의 거래내역을 조회합니다.
+Phrase.CustomerLink=회원&nbsp;조회
+Phrase.CustomerLink.Tip=회원본인의 거래내역을 조회합니다.
+Phrase.HouseholdLink=포인트합산회원&nbsp;조회
+Phrase.HouseholdLink.Tip=포인트합산회원(본인포함)의 거래내역을 조회합니다.
+Phrase.Choice=<b>적립기간:</b> {0} - <b>거래내역:</b> {1}
+Phrase.Customer=회원
+Phrase.Household=포인트합산회원
+Phrase.Previous=이전
+Phrase.Current=현재
+Phrase.CurrentPrimaryCustomer=<b>현재 대표회원:</b> {0}
+Phrase.PreviousPrimaryCustomer=<b>과거 대표회원:</b> {0}
+TxnDetail=상세정보
+TxnDetail.Tip=상세 거래정보를 조회하려면 클릭하십시오.
+Form.Header.TxnDetails=거래내역 상세정보
+Group.Header.TransactionIdentification=거래내역
+Group.Header.Summary=포인트합산 회원의 포인트와 매출금액
+Group.Header.Label=조회 선택
+
+# Adjust Points
+Menu.Header.AddTransaction=포인트 : 수기입력
+Win.Header.AddTransaction=포인트 수기입력
+AdjustPointsForm.Transaction=포인트 수기입력
+AdjustPointsForm.Transaction.Tip=거래 상세내역을 입력하십시오.
+AdjustPointsForm.Store=점포
+AdjustPointsForm.Store.Tip=거래가 이루어진 점포
+AdjustPointsForm.Points=포인트
+AdjustPointsForm.NormalPoints=기본포인트
+AdjustPointsForm.WelcomePoints=웰컴포인트
+AdjustPointsForm.ProductPoints=상품포인트
+AdjustPointsForm.NormalPoints.Tip=수기로 입력하는 기본포인트
+AdjustPointsForm.WelcomePoints.Tip=수기로 입력하는 웰컴포인트
+AdjustPointsForm.ProductPoints.Tip=수기로 입력하는 상품포인트
+AdjustPointsForm.TotalPoints=포인트 합계
+AdjustPointsForm.Reason=수기입력 사유
+AdjustPointsForm.Reason.Tip=포인트를 수기입력 하는 사유
+AdjustPointsForm.SalesAmount=매출금액
+AdjustPointsForm.SalesAmount.Tip=수기로 입력하는 매출금액
+AdjustPointsButton.Cancel=취소
+AdjustPointsButton.Cancel.Tip=입력된 값을 취소합니다.
+AdjustPointsButton.Save=저장
+AdjustPointsButton.Save.Tip=입력된 사항을 저장합니다.
+AdjustPointsPopUp.Confirmation=확인
+AdjustPointsPopUp.Error=오류
+AdjustPointsPopUp.Warning=경고
+AdjustPointsPopUp.TransactionOk=입력된 사항이 저장되었습니다.
+AdjustPointsPopUp.TransactionFailed=입력된 사항이 저장되지 않았습니다. 다시 시도해보시고, 계속 오류가 발생할 경우 Help Desk로 연락바랍니다.
+AdjustPointsPopUp.SpendMandatory=반드시 매출금액을 입력하셔야 합니다.
+AdjustPointsPopUp.PositiveSpendNotAllowed=매출금액이 음수만 가능합니다.
+AdjustPointsPopUp.NegativeSpendNotAllowed=매출금액이 음수는 안됩니다.
+AdjustPointsPopUp.SpendPositivePointsNegative=포인트의 합계가 양수이면 매출금액도 양수이어야 합니다.
+AdjustPointsPopUp.SpendNegativePointsPositive=포인트의 합계가 음수이면 매출금액도 음수이어야 합니다.
+AdjustPointsPopUp.PositivePointsNotAllowed=포인트가 음수만 가능합니다.
+AdjustPointsPopUp.NegativePointsNotAllowed=포인트가 양수만 가능합니다.
+AdjustPointsPopUp.OutsidePointsLimit=포인트합계가 수기입력 가능한도를 넘었습니다.
+AdjustPointsPopUp.NoCurrentOffer=현재 적립기간이 존재하지 않아서 수기입력을 할 수 없습니다.
+AdjustPointsPopUp.CustomerLeftSchemeWarning=회원이 탈퇴하였습니다.
+AdjustPointsPopUp.CustomerDeceasedWarning=회원이 사망하였습니다.
+AdjustPointsPopUp.CustomerBannedError=회원상태가 금지인 경우 거래내역을 추가할 수 없습니다.
+AdjustPointsPopUp.CustomerSkeletonWarning=회원정보가 등록되지 않았습니다.
+AdjustPointsPopUp.CustomerCardWarning=선택된 회원카드는 사용할 수 없습니다.
+AdjustPointsPopUp.GeneralWarning=거래내역을 등록하시려면 '계속'을 누르시고, 아니면 '취소'버튼을 눌러주십시오.
+AdjustPointsPopUp.Button.Ok=계속
+AdjustPointsHeaderLabel.ItemsToBeFilledIn1=표시된 항목
+AdjustPointsHeaderLabel.ItemsToBeFilledIn2=<span class="formrequiredmarker">!</span>표시된 항목은 값을 입력해 주시기 바랍니다.
+AdjustPointsForm.PointsMessage=포인트항목 필수입력
+AdjustPointsForm.PointsMessage.Tip=1개 이상의 포인트항목 필히 입력
+
+# Timeout
+Win.Header.Timeout=로그아웃
+Page.Timeout.Message=보안상 허용된 사용시간이 경과하였습니다. 시스템을 사용하시려면 로그인을 다시 해주시기 바랍니다.
+Page.Timeout.Button.Ok=확인
+
+# Common Logon
+LogonPanel.PopUp.Error=오류
+
+# Logon
+NGCCSD.LogonPanel.FieldGroup.Language=사용언어 선택
+NGCCSD.LogonPanel.Flag.Primary.Tip=한국어를 사용하시려면 여기를 클릭하십시오.
+NGCCSD.LogonPanel.Flag.Secondary.Tip=영어를 사용하시려면 여기를 클릭하십시오.
+NGCCSD.LogonPanel.FieldGroup.Logon=로그인
+NGCCSD.LogonPanel.TextBox.User=사용자 ID
+NGCCSD.LogonPanel.TextBox.Password=비밀번호
+NGCCSD.LogonPanel.Header.Caption1=홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.
+NGCCSD.LogonPanel.Header.Caption2=고객서비스 데스크
+NGCCSD.LogonPanel.Button.Logon=로그인
+NGCCSD.LogonPanel.PopUp.Error=오류
+NGCCSD.LogonPanel.PopUp.Message.Attempt1-2=사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.
+NGCCSD.LogonPanel.PopUp.Message.Attempt3=로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.
+NGCCSD.LogonPanel.ValidationSummary.Message=오류
+NGCCSD.LogonPanel.TextBox.User.Tip=사용자 ID를 입력하십시오.
+NGCCSD.LogonPanel.TextBox.Password.Tip=비밀번호를 입력하십시오.
+NGCCSD.LogonPanel.Button.Logon.Tip=로그인하려면 클릭하십시오.
+
+# View Information
+Win.Header.ViewInformation=상세정보 조회
+Menu.Header.ViewInformation=회원 : 상세정보 조회
+ViewInformationPanel.Form.MembershipInformation=가입정보
+ViewInformationPanel.Form.DateJoined=가입일자
+ViewInformationPanel.Form.DateJoined.Tip=회원의 훼밀리카드 가입일자
+ViewInformationPanel.Form.TimeJoined=가입시각
+ViewInformationPanel.Form.TimeJoined.Tip=회원의 훼밀리카드 가입시각
+ViewInformationPanel.Form.HomeStoreHeader=가입점포
+ViewInformationPanel.Form.HomeStore=가입점포
+ViewInformationPanel.Form.HomeStore.Tip=회원의 훼밀리카드 가입점포
+ViewInformationPanel.Form.HomeStore.Unknown=알수없음
+ViewInformationPanel.Form.RegisteredBy=등록자
+ViewInformationPanel.Form.RegisteredBy.Tip=회원을 등록한 사용자 ID
+ViewInformationPanel.Form.FamilyInformation=가족정보
+ViewInformationPanel.Form.Income=소득구분
+ViewInformationPanel.Form.Income.Tip=회원가족의 월소득 수준
+ViewInformationPanel.Form.FamilyMember1=가족 1
+ViewInformationPanel.Form.FamilyMember2=가족 2
+ViewInformationPanel.Form.FamilyMember3=가족 3
+ViewInformationPanel.Form.FamilyMember4=가족 4
+ViewInformationPanel.Form.FamilyMember5=가족 5
+ViewInformationPanel.Form.FamilyMember6=가족 6
+ViewInformationPanel.Form.FamilyMember.Tip=가족 구성원
+ViewInformationPanel.Form.Age=연령
+ViewInformationPanel.Form.Age.Tip=회원가족 연령
+ViewInformationPanel.Form.Gender=성별
+ViewInformationPanel.Form.Gender.Tip=회원가족 성별
+ViewInformationPanel.Button.Edit=수정
+ViewInformationPanel.Button.Edit.Tip=회원의 상세정보를 수정하려면 클릭하십시오.
+ViewInformationPanel.Form.Segment=고객세분화 정보
+ViewInformationPanel.Form.SegmentName=명칭
+ViewInformationPanel.Form.SegmentName.Tip=고객세분화 명칭
+
+# View Details
+Win.Header.ViewDetails=기본정보 조회
+Menu.Header.ViewDetails=회원 : 기본정보 조회
+ViewDetailsPanel.Error.UnknownCrmId=포인트합산 회원ID를 찾을 수 없습니다.
+ViewDetailsPanel.Form.PersonalDetails=인적사항
+ViewDetailsPanel.Form.Name=성명
+ViewDetailsPanel.Form.Name.Tip=회원 성명
+ViewDetailsPanel.Form.DateOfBirth=생년월일
+ViewDetailsPanel.Form.DateOfBirth.Tip=회원 생년월일
+ViewDetailsPanel.Form.Gender=성별
+ViewDetailsPanel.Form.Gender.Tip=회원 성별
+ViewDetailsPanel.Form.SSNHeader=주민번호
+ViewDetailsPanel.Form.SSN=주민번호
+ViewDetailsPanel.Form.SSN.Tip=회원 주민등록번호
+ViewDetailsPanel.Form.ForeignCitizen=외국인 여부
+ViewDetailsPanel.Form.ForeignCitizen.Tip=회원이 외국인이면 체크
+ViewDetailsPanel.Form.ContactDetails=연락처
+ViewDetailsPanel.Form.Address1=주소 
+ViewDetailsPanel.Form.Address1.Tip=회원 주소
+ViewDetailsPanel.Form.Address2=상세주소
+ViewDetailsPanel.Form.Address2.Tip=회원 상세주소
+ViewDetailsPanel.Form.PostCode=우편번호
+ViewDetailsPanel.Form.PostCode.Tip=회원 우편번호
+ViewDetailsPanel.Form.PhoneDay=전화 : 자택
+ViewDetailsPanel.Form.PhoneDay.Tip=회원 자택전화번호
+ViewDetailsPanel.Form.PhoneEvening=전화 : 직장
+ViewDetailsPanel.Form.PhoneEvening.Tip=회원 직장전화번호
+ViewDetailsPanel.Form.PhoneMobile=휴대폰
+ViewDetailsPanel.Form.PhoneMobile.Tip=회원 휴대폰번호
+ViewDetailsPanel.Form.Email=E-mail
+ViewDetailsPanel.Form.Email.Tip=회원 전자우편주소
+ViewDetailsPanel.Form.PreferredContactMethod=연락방법
+ViewDetailsPanel.Form.PreferredContactMethod.Tip=회원에게 연락하는 방법
+ViewDetailsPanel.Form.Method=연락방법
+ViewDetailsPanel.Form.CollectionPeriodDates=적립기간
+ViewDetailsPanel.Form.CollectionPeriod=적립기간
+ViewDetailsPanel.Form.CollectionPeriod.Tip=포인트 적립기간
+ViewDetailsPanel.Form.Number=순번
+ViewDetailsPanel.Form.Number.Tip=포인트 적립기간의 순번
+ViewDetailsPanel.Form.Dates=일자
+ViewDetailsPanel.Form.Dates.Tip=포인트가 적립된 기간일자
+ViewDetailsPanel.Form.Previous=이전
+ViewDetailsPanel.Form.Previous.Tip=이전 적립기간 내역
+ViewDetailsPanel.Form.Current=현재
+ViewDetailsPanel.Form.Current.Tip=현재 적립기간 내역
+ViewDetailsPanel.Form.RewardsAndPoints=현금쿠폰 & 포인트
+ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod=현재 포인트
+ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod.Tip=현재까지 적립된 포인트
+ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod=최근 쿠폰발행금액
+ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod.Tip=이전 적립기간에 발행된 쿠폰발행금액 
+ViewDetailsPanel.Form.ContactMethodPreferences=연락방법 동의
+ViewDetailsPanel.Form.ContactMethodPreferences.Phone=전화
+ViewDetailsPanel.Form.ContactMethodPreferences.Group=그룹사
+ViewDetailsPanel.Form.ContactMethodPreferences.Mail=우편
+ViewDetailsPanel.Form.ContactMethodPreferences.3rdParty=그룹/제휴사
+ViewDetailsPanel.Button.Edit=수정
+ViewDetailsPanel.Button.Edit.Tip=회원의 기본정보를 수정하려면 클릭하십시오.
+ViewDetailsPanel.Form.DataProtectionMessage=연락방법 동의여부
+ViewDetailsPanel.Form.DataProtectionMessage.Tip=연락방법에 대한 회원동의 여부를 나타냅니다.
+
+# Customer Search 
+SearchPanel.Button.Search=회원조회
+SearchPanel.Button.Search.Tip=회원을 조회하려면 클릭하십시오.
+SearchPanel.Popup.Header.Error=오류
+SearchPanel.Popup.Header.Message=회원정보
+SearchPanel.Form.Search=회원조회
+SearchPanel.Form.CardNumber=카드번호
+SearchPanel.Form.CardNumber.Tip=조회할 카드번호를 입력하십시오.
+SearchPanel.Form.SSN=주민번호
+SearchPanel.Form.SSN.Tip=조회할 주민번호를 입력하십시오.
+SearchPanel.Form.SSN1=주민번호의 앞번호
+SearchPanel.Form.SSN1.Tip=앞번호 6자리
+SearchPanel.Form.SSN2=주민번호의 뒷번호
+SearchPanel.Form.SSN2.Tip=뒷번호 7자리
+SearchPanel.Form.Phone=전화
+SearchPanel.Form.Phone.Tip=조회할 전화번호(자택,직장,휴대폰)를 입력하십시오.
+SearchPanel.Form.Phone1=지역/휴대폰별 번호
+SearchPanel.Form.Phone1.Tip=지역번호/휴대폰번호
+SearchPanel.Form.Phone2=국 번호
+SearchPanel.Form.Phone2.Tip=국 번호
+SearchPanel.Form.Phone3=번호
+SearchPanel.Form.Phone3.Tip=전화번호
+SearchPanel.Form.Name=성명
+SearchPanel.Form.Name.Tip=조회할 회원의 성명을 입력하십시오.
+SearchPanel.Form.DateOfBirth=생년월일
+SearchPanel.Form.DateOfBirth.Tip=조회할 회원의 생년월일을 입력하십시오.
+SearchPanel.Form.DateOfBirth1=생년
+SearchPanel.Form.DateOfBirth1.Tip=해당연도
+SearchPanel.Form.DateOfBirth2=월
+SearchPanel.Form.DateOfBirth2.Tip=해당월
+SearchPanel.Form.DateOfBirth3=일
+SearchPanel.Form.DateOfBirth3.Tip=해당일
+SearchPanel.Form.PostCode=우편번호
+SearchPanel.Form.PostCode.Tip=조회할 회원의 우편번호를 입력하십시오.
+SearchPanel.Form.PostCode1=우편번호 앞번호
+SearchPanel.Form.PostCode1.Tip=앞번호 3자리
+SearchPanel.Form.PostCode2=우편번호 뒷번호
+SearchPanel.Form.PostCode2.Tip=뒷번호 3자리
+SearchPanel.Table.Name=성명
+SearchPanel.Table.Name.Tip=회원의 성명
+SearchPanel.Table.SSN=주민번호
+SearchPanel.Table.SSN.Tip=회원의 주민번호
+SearchPanel.Table.Postcode=우편번호
+SearchPanel.Table.Postcode.Tip=회원의 우편번호
+SearchPanel.Table.IsPrimary=대표회원 여부
+SearchPanel.Table.IsPrimary.Tip=회원의 대표회원 여부(현금쿠폰 발송대상)
+SearchPanel.Table.DateOfBirth=생년월일
+SearchPanel.Table.DateOfBirth.Tip=회원의 생년월일
+SearchPanel.Table.Select=조회
+SearchPanel.Table.Select.Tip=조회할 회원정보를 클릭하십시오.
+SearchPanel.Error.NoSearchCriteria=조회할 회원의 정보중 한가지 이상은 필히 입력해야 합니다.
+SearchPanel.Error.WildcardsInRestrictedFields='*'를 지원하지 않습니다. 수정하여 다시 시도하십시오.
+SearchPanel.Message.Wildcard='*'는 문자들을 대신하여 사용할 수 있습니다. (예:'홍길동'을 조회하려면, '홍길*')
+SearchPanel.Message.NoData=조회된 내용이 없습니다. 수정하여 다시 조회하십시오.
+SearchPanel.Message.TooManyCustomers=주어진 조건으로 조회된 회원이 많습니다. 수정하여 다시 조회하십시오.
+SearchPanel.Message.TooManyAddresses=주어진 조건으로 조회된 주소가 많습니다. 수정하여 다시 조회하십시오.
+SearchPanel.Message.Timeout=제한된 검색조건으로 조회하셨습니다. 조건을 수정하시어 다시 검색해 주십시오.
+
+# search for address panel
+SearchPanel.Form.Street=지역 (동/읍/면/리)
+SearchPanel.Form.Street.Tip=회원이 거주하는 지역(동/읍/면/리)을 입력하십시오.('*' 사용가능)
+SearchPanel.Table.Address1=주소
+SearchPanel.Table.Address1.Tip=조회할 회원의 주소(시/구/군/동)
+SearchPanel.Table.Address2=상세주소
+SearchPanel.Table.Address2.Tip=조회할 회원의 상세주소(동 이하)
+
+# Customer Update Details
+Win.Header.UpdateDetails=기본정보 수정
+Menu.Header.UpdateDetails=회원 : 기본정보 수정
+UpdateDetailsPanel.Form.PersonalDetails=인적사항
+UpdateDetailsPanel.Form.Name=성명
+UpdateDetailsPanel.Form.Name.Tip=회원 성명을 입력하십시오.
+UpdateDetailsPanel.Form.SSNHeader=주민번호
+UpdateDetailsPanel.Form.SSN=주민번호
+UpdateDetailsPanel.Form.SSN.Tip=회원 주민번호를 입력하십시오.
+UpdateDetailsPanel.Form.SSN.ErrorCaption=주민번호 (형태 XXXXXX-XXXXXXX)
+UpdateDetailsPanel.Form.ForeignCitizen=외국인
+UpdateDetailsPanel.Form.ForeignCitizen.Tip=회원이 외국인이면 체크하십시오.
+UpdateDetailsPanel.Form.DateOfBirth=생년월일
+UpdateDetailsPanel.Form.DateOfBirth.Tip=회원 생년월일을 입력하십시오.
+UpdateDetailsPanel.Form.Gender=성별
+UpdateDetailsPanel.Form.Gender.Tip=회원 성별을 입력하십시오.
+UpdateDetailsPanel.Form.ContactDetails=연락처
+UpdateDetailsPanel.Form.Address1=주소
+UpdateDetailsPanel.Form.Address1.Tip='주소 조회'버튼을 눌러서 우편번호와 주소를 선택하십시오.
+UpdateDetailsPanel.Form.Address2=상세주소
+UpdateDetailsPanel.Form.Address2.Tip='주소 조회'버튼을 눌러서 우편번호와 주소를 선택후 상세주소를 직접 입력하십시오.
+UpdateDetailsPanel.Form.Postcode=우편번호
+UpdateDetailsPanel.Form.Postcode.Tip='주소 조회'버튼을 먼저 눌러서 우편번호와 주소를 선택하십시오.
+UpdateDetailsPanel.Form.PhoneDay=전화&nbsp;:&nbsp;자택
+UpdateDetailsPanel.Form.PhoneDay.Tip=회원 자택전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneEve=전화&nbsp;:&nbsp;직장
+UpdateDetailsPanel.Form.PhoneEve.Tip=회원 직장전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneMob=휴대폰
+UpdateDetailsPanel.Form.PhoneMob.Tip=회원 휴대폰번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneDay.PhonePart1.Tip=자택 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneDay.PhonePart2.Tip=자택 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneDay.PhonePart3.Tip=자택 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneEve.PhonePart1.Tip=직장 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneEve.PhonePart2.Tip=직장 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneEve.PhonePart3.Tip=직장 전화번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneMob.PhonePart1.Tip=휴대폰 번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneMob.PhonePart2.Tip=휴대폰 번호를 입력하십시오.
+UpdateDetailsPanel.Form.PhoneMob.PhonePart3.Tip=휴대폰 번호를 입력하십시오.
+
+UpdateDetailsPanel.Form.Email=E-mail
+UpdateDetailsPanel.Form.Email.Tip=회원 E-mail을 입력하십시오.
+UpdateDetailsPanel.Form.PreferredContactMethod=연락방법
+UpdateDetailsPanel.Form.PreferredContactMethod.Caption=Option
+UpdateDetailsPanel.Form.PreferredContactMethod.Tip=회원에게 연락방법을 선택하십시오.
+UpdateDetailsPanel.Form.Method=연락방법
+UpdateDetailsPanel.Form.ChangedCustomerStatus=회원상태 변경
+UpdateDetailsPanel.Form.Status=상태
+UpdateDetailsPanel.Form.Status.Tip=회원상태를 선택하십시오.
+UpdateDetailsPanel.Form.DataProtectionPreferences=연락방법 동의
+UpdateDetailsPanel.Form.Phone=전화
+UpdateDetailsPanel.Form.Phone.Tip=전화로 연락가능 여부
+UpdateDetailsPanel.Form.Mail=우편
+UpdateDetailsPanel.Form.Mail.Tip=우편으로 연락가능 여부
+UpdateDetailsPanel.Form.Group=그룹사
+UpdateDetailsPanel.Form.Group.Tip=삼성테스코 그룹회사로부터 연락가능 여부
+UpdateDetailsPanel.Form.3rdParty=그룹/제휴사
+UpdateDetailsPanel.Form.3rdParty.Tip=삼성테스코 그룹회사 및 제휴사로부터 연락가능 여부
+UpdateDetailsPanel.Form.DataProtectionMessage='예'를 선택하면, 회원에게 연락하는 방법으로 사용됩니다.
+UpdateDetailsPanel.Form.Store=가입점포 선택
+UpdateDetailsPanel.Form.PreferredStore=가입점포
+UpdateDetailsPanel.Form.PreferredStore.Tip=회원이 가입점포 변경을 원할때만 변경하십시오.
+UpdateDetailsPanel.Form.PreferredStore.Unknown=미확인
+UpdateDetailsPanel.Button.Save=저장
+UpdateDetailsPanel.Button.Save.Tip=입력된 내용을 저장하려면 선택하십시오.
+UpdateDetailsPanel.Button.Reset=취소
+UpdateDetailsPanel.Button.Reset.Tip=입력된 내용을 초기화하려면 선택하십시오.
+UpdateDetailsPanel.Button.Search.Tip=조회하려면 클릭하십시오.
+UpdateDetailsPanel.Button.Cancel.Tip=취소하려면 클릭하십시오.
+UpdateDetailsPanel.PopupSaved.Header=저장 완료
+UpdateDetailsPanel.PopupSaved.Message1=입력된 내용이 저장되었습니다.<br>입력된 회원정보를 확인하십시오.
+UpdateDetailsPanel.PopupSaved.Button.Ok=확인
+UpdateDetailsPanel.Button.FindAddress=주소 조회
+UpdateDetailsPanel.Button.FindAddress.Tip=우편번호와 주소를 조회하려면 선택하십시오.
+UpdateDetailsPanel.AddressPopup.Header.Text=우편번호 및 주소 조회
+UpdateDetailsPanel.Form.PC1.Caption=우편번호
+UpdateDetailsPanel.Form.PC2.Caption=우편번호
+UpdateDetailsPanel.Form.dob1.Caption=생년월일의 해당년
+UpdateDetailsPanel.Form.dob2.Caption=생년월일의 해당월
+UpdateDetailsPanel.Form.dob3.Caption=생년월일의 해당일
+UpdateDetailsPanel.Form.SSN1.Caption=주민번호
+UpdateDetailsPanel.Form.SSN2.Caption=주민번호
+UpdateDetailsPanel.Form.PN.Caption=전화번호
+UpdateDetailsPanel.Error.DoBInFuture=생년월일이 현재보다 미래입니다.
+UpdateDetailsPanel.Error.DoBTooOld=생년월일이 너무 과거입니다.
+UpdateDetailsPanel.Error.OfficialIdInUse=입력한 주민번호가 이미 등록되어 있습니다. 수정하여 다시 시도하십시오.
+UpdateDetailsPanel.PopupError.Header=에러
+UpdateDetailsPanel.PopupError.Button.Ok=확인
+UpdateDetailsPanel.Form.Age=연령
+UpdateDetailsPanel.Form.Age.Tip=회원의 연령
+
+# Customer Update Information
+Win.Header.UpdateInformation=상세정보 수정
+Menu.Header.UpdateInformation=회원 : 상세정보 수정
+UpdateInformationPanel.Form.DietaryPreferences=Dietary Preferences
+UpdateInformationPanel.Form.Diabetic=Diabetic
+UpdateInformationPanel.Form.Diabetic.Tip=Is the customer diabetic?
+UpdateInformationPanel.Form.Teetotal=Teetotal
+UpdateInformationPanel.Form.Teetotal.Tip=Is the customer teetotal?
+UpdateInformationPanel.Form.Halal=Halal
+UpdateInformationPanel.Form.Halal.Tip=Does the customer follow a Halal diet?
+UpdateInformationPanel.Form.Kosher=Kosher
+UpdateInformationPanel.Form.Kosher.Tip=Does the customer follow a Kosher diet?
+UpdateInformationPanel.Form.Vegetarian=Vegetarian
+UpdateInformationPanel.Form.Vegetarian.Tip=Does the customer follow a Vegetarian diet?
+UpdateInformationPanel.Form.FamilyInformation=가족정보
+UpdateInformationPanel.Form.Income=소득구분
+UpdateInformationPanel.Form.Income.Tip=회원가족 월소득 수준을 선택하십시오.
+UpdateInformationPanel.Form.Member.Tip=가족정보
+UpdateInformationPanel.Form.Member1=가족 1
+UpdateInformationPanel.Form.Member2=가족 2
+UpdateInformationPanel.Form.Member3=가족 3
+UpdateInformationPanel.Form.Member4=가족 4
+UpdateInformationPanel.Form.Member5=가족 5
+UpdateInformationPanel.Form.Member6=가족 6
+UpdateInformationPanel.Form.DateOfBirth=생년월일
+UpdateInformationPanel.Form.DateOfBirth.Tip=회원가족 생년월일
+UpdateInformationPanel.Form.Gender=성별
+UpdateInformationPanel.Form.Gender.Tip=회원가족 성별
+UpdateInformationPanel.Button.Save=저장
+UpdateInformationPanel.Button.Save.Tip=입력된 내용을 저장하려면 클릭하십시오.
+UpdateInformationPanel.Button.Reset=취소
+UpdateInformationPanel.Button.Reset.Tip=입력된 내용을 초기화하려면 클릭하십시오.
+UpdateInformationPanel.PopupSaved.Header=저장완료
+UpdateInformationPanel.PopupSaved.Message1=입력된 내용이 저장되었습니다.
+UpdateInformationPanel.PopupSaved.Button.Ok=확인
+UpdateInformationPanel.Form.dob1.Caption=생년월일의 해당년
+UpdateInformationPanel.Form.dob2.Caption=생년월일의 해당월
+UpdateInformationPanel.Form.dob3.Caption=생년월일의 해당일
+UpdateInformationPanel.Error.DoBInFuture=입력한 생년월일이 현재일보다 이후 날짜입니다.
+UpdateInformationPanel.Error.DoBTooOld=입력한 생년월일이 현재일보다 너무 이전 날짜입니다.
+UpdateInformationPanel.PopupError.Header=오류
+UpdateInformationPanel.PopupError.Button.Ok=확인
+
+# Maintain Cards
+Win.Header.CardDetails=카드관리
+Menu.Header.CardDetails=카드 : 카드관리
+CardDetails.Button.Add=카드 재발급
+CardDetails.Button.Add.Tip=카드를 재발급하려면 클릭하십시오.
+CardDetails.Button.Select=대표카드 변경
+CardDetails.Button.Select.Tip=회원이 주로 사용하는 카드를 변경하려면 클릭하십시오.
+CardDetailsPanel.Table.CardNumber=카드번호
+CardDetailsPanel.Table.CardNumber.Tip=회원의 카드번호
+CardDetailsPanel.Table.Primary=대표카드
+CardDetailsPanel.Table.Primary.Tip=회원의 대표카드 여부
+CardDetailsPanel.Table.AccountType=카드유형
+CardDetailsPanel.Table.AccountType.Tip=회원 카드유형
+CardDetailsPanel.Table.IssuedDate=발급일자
+CardDetailsPanel.Table.IssuedDate.Tip=카드 발급일자
+CardDetailsPanel.Table.UpdatedDate=최근 거래일시
+CardDetailsPanel.Table..UpdatedDate.Tip=카드를 사용한 최근 일시
+CardDetailsPanel.Table.Status=상태
+CardDetailsPanel.Table.Status.Tip=회원 카드상태
+CardDetailsPanel.Table.EditStatus=상태 변경
+CardDetailsPanel.Table.EditStatus.Tip=회원 카드상태를 변경하려면 클릭하십시오.
+SelectPrimaryCardPopup.Header=대표카드 선택
+AddNewCardPopup.Header=재발급카드 번호입력
+EditCardStatusPopup.Header=카드상태 변경
+CardDetails.PopupAdd.Button.Text=확인
+CardDetails.PopupAdd.CardNumber.Tip=재발급하는 카드번호를 입력하십시오.
+CardDetails.PopupEdit.Button.Text=확인
+CardDetails.PopupSelect.Button.Text=확인
+CardDetails.Popup.Error=오류
+CardDetails.ErrorPopup.CardExists=카드번호가 이미 등록되어 있습니다.
+CardDetails.ErrorPopup.CardRangeError=카드번호가 유효범위를 넘었습니다.
+CardDetails.ErrorPopup.CardCheckDigit=카드번호가 유효하지 않습니다.
+CardDetails.ErrorPopup.CardNotNormal=대표카드는 카드상태가 정상만 가능합니다.
+CardDetails.ErrorPopup.NoSecondaryCard=다른 카드가 없어 대표카드를 선택할 수 없습니다.
+
+# Rewards
+Rewards.Status.HighReward=고액현금쿠폰
+Rewards.Status.Redeemed=회수
+Rewards.Status.Expired=기간만료
+Rewards.Status.ReIssueRequested=재발급요청
+Rewards.Status.ReIssued=재발급
+Rewards.Status.Issued=발급
+Rewards.Status.Unknown=알수없음
+Rewards.Status.NoRewards=미대상
+Rewards.Status.NotIssued=미발급
+
+# View Rewards
+Menu.Header.ViewRewards=현금쿠폰 : 현금쿠폰 조회
+ViewRewards.Table.CollectionPeriodDates=적립기간
+ViewRewards.Table.CollectionPeriodDates.Tip=적립기간의 일자
+ViewRewards.Table.CollectionPeriodDates.OutputFormat={0} - {1}
+ViewRewards.Table.RewardIssued=쿠폰발행
+ViewRewards.Table.RewardIssued.Tip=해당 적립기간으로부터 발행된 현금쿠폰금액
+ViewRewards.Table.PointsConverted=적립포인트
+ViewRewards.Table.PointsConverted.Tip=해당 적립기간동안 적립된 포인트 
+ViewRewards.Table.CarriedForward=이월포인트
+ViewRewards.Table.CarriedForward.Tip=해당 적립기간으로부터 이월된 포인트
+ViewRewards.Table.Status=상태
+ViewRewards.Table.Status.Tip=적립기간의 상태
+ViewRewards.Table.StatusChangeOn=변경일자
+ViewRewards.Table.StatusChangeOn.Tip=적립기간의 상태 변경일자
+ViewRewards.Table.ViewDetail=내역조회
+ViewRewards.Table.ViewDetail.Tip=현금쿠폰 상세내역 조회
+ViewRewards.Table.EmptyMessage=회원의 현쿠폰 발행내역이 없습니다.
+
+# Reward Detail
+Menu.Header.RewardDetail=현금쿠폰 : 현금쿠폰 상세내역
+RewardDetail.Form.RewardVouchers=현금쿠폰
+RewardDetail.Form.Status=상태
+RewardDetail.Form.Status.Tip=현금쿠폰 상태
+RewardDetail.Form.StatusChangeOn=변경일자
+RewardDetail.Form.StatusChangeOn.Tip=현금쿠폰 상태 변경일자
+RewardDetail.Table.Value=현금쿠폰금액
+RewardDetail.Table.Value.Tip=현금쿠폰금액
+RewardDetail.Table.ExpiryDate=종료일
+RewardDetail.Table.ExpiryDate.Tip=적립기간의 종료일
+RewardDetail.Table.RedeemedOn=회수일
+RewardDetail.Table.RedeemedOn.Tip=현금쿠폰 회수일자
+RewardDetail.Table.TransactionDetails=거래내역
+RewardDetail.Table.TransactionDetails.Tip=거래내역를 조회하려면 클릭하십시오.
+RewardDetail.Table.TransactionDetails.Link=내역조회
+RewardDetail.Table.Empty.Message=해당 적립기간의 현금쿠폰이 없습니다.
+RewardDetail.Form.ReIssue=재발급
+RewardDetail.Form.ReIssuedBy=재발급자
+RewardDetail.Form.ReIssuedBy.Tip=현금쿠폰을 재발급한 사용자명
+RewardDetail.Form.ReIssuedOn=재발급일자
+RewardDetail.Form.ReIssuedOn.Tip=현금쿠폰 재발급일자
+RewardDetail.Button.ReIssue=재발급
+RewardDetail.Button.ReIssue.Tip=현금쿠폰을 재발급하려면 클릭하십시오.
+RewardDetail.Button.OK=확인
+RewardDetail.PopupError.Header=오류
+RewardDetail.PopupError.Message.OutsideReIssuePeriod=재발급기간 초과
+RewardDetail.PopupError.Message.VoucherAlreadyRedeemed=하나이상의 현금쿠폰이 회수되어서 재발급할 수 없습니다.
+RewardDetail.PopupError.Message.InvalidUseStatus=회원이 금지 또는 탈퇴 상태이어서 재발급할 수 없습니다.
+RewardDetail.PopupError.Message.InvalidMailStatus=회원의 주소가 유효하지 않아서 재발급할 수 없습니다.
+RewardDetail.PopupDetail.TransactionDetails=거래 상세내역
+RewardDetail.PopupDetail.Customer=회원
+RewardDetail.PopupDetail.CustomerName=회원 성명
+RewardDetail.PopupDetail.CustomerName.Tip=회수된 현금쿠폰의 회원 성명
+RewardDetail.PopupDetail.CardNumber=카드번호
+RewardDetail.PopupDetail.CardNumber.Tip=회수된 현금쿠폰의 회원 카드번호
+RewardDetail.PopupDetail.TransactionIdentification=거래확인
+RewardDetail.PopupDetail.User=사용자
+RewardDetail.PopupDetail.User.Tip=거래내역을 로그인한 사용자
+RewardDetail.PopupDetail.CashierId=체커 ID
+RewardDetail.PopupDetail.CashierId.Tip=체커 ID
+RewardDetail.PopupDetail.TransactionType=거래유형
+RewardDetail.PopupDetail.TransactionType.Tip=거래유형
+RewardDetail.PopupDetail.Store=점포
+RewardDetail.PopupDetail.Store.Tip=거래가 일어난 점포
+RewardDetail.PopupDetail.PosNumber=POS번호
+RewardDetail.PopupDetail.PosNumber.Tip=거래가 일어난 POS 번호
+RewardDetail.PopupDetail.TransactionNumber=영수증번호
+RewardDetail.PopupDetail.TransactionNumber.Tip=거래가 일어난 영수증번호
+RewardDetail.PopupDetail.TransactionSource=거래출처
+RewardDetail.PopupDetail.TransactionSource.Tip=거래출처
+RewardDetail.PopupDetail.Reason=사유
+RewardDetail.PopupDetail.TransactionReason=거래사유
+RewardDetail.PopupDetail.TransactionReason.Tip=거래가 일어난 사유
+RewardDetail.PopupDetail.Date=날짜
+RewardDetail.PopupDetail.Date.Tip=거래 날짜
+RewardDetail.PopupDetail.Time=시각
+RewardDetail.PopupDetail.Time.Tip=거래 시각
+RewardDetail.PopupDetail.Points=포인트
+RewardDetail.PopupDetail.SalesAmount=매출금액
+RewardDetail.PopupDetail.SalesAmount.Tip=해당거래 매출금액
+RewardDetail.PopupDetail.NormalPoints=기본포인트
+RewardDetail.PopupDetail.NormalPoints.Tip=해당거래 기본포인트
+RewardDetail.PopupDetail.ProductPoints=상품포인트
+RewardDetail.PopupDetail.ProductPoints.Tip=해당거래 상품포인트
+RewardDetail.PopupDetail.BonusPoints=웰컴포인트
+RewardDetail.PopupDetail.BonusPoints.Tip=웰컴포인트
+RewardDetail.PopupDetail.TotalPoints=포인트합계
+RewardDetail.PopupDetail.TotalPoints.Tip=해당 거래내역의 포인트 합계
+NGCCSD.RewardDetail.Message.MissingVoucherRecord=거래내역이 조재하지 않습니다
+
+# RewardDetail STPF Points (Also known as HSC Points). These are unique to Korea
+RewardDetail.PopupDetail.STPFPoints=제휴포인트
+RewardDetail.PopupDetail.STPFPoints.Tip=해당거래 제휴포인트
+
+# Group
+Group.PrimaryCustomer=대표회원
+Group.AssociateCustomer=소속회원
+
+# View Reward Group
+Menu.Header.ViewRewardGroup=포인트합산 회원 : 포인트합산 회원조회
+ViewRewardGroup.Table.CustomerType=회원유형
+ViewRewardGroup.Table.CustomerType.Tip=회원의 유형
+ViewRewardGroup.Table.Name=성명
+ViewRewardGroup.Table.Name.Tip=회원의 성명
+ViewRewardGroup.Table.CustomerStatus=회원상태
+ViewRewardGroup.Table.CustomerStatus.Tip=회원의 현재 상태
+ViewRewardGroup.Table.MailStatus=우편상태
+ViewRewardGroup.Table.MailStatus.Tip=회원의 현재 우편상태
+ViewRewardGroup.Table.PrimaryCardNumber=대표 카드번호
+ViewRewardGroup.Table.PrimaryCardNumber.Tip=회원의 대표 카드번호
+ViewRewardGroup.Button.ChangePrimaryCustomer=대표회원 변경
+ViewRewardGroup.Button.ChangePrimaryCustomer.Tip=포인트합산회원의 대표회원을 변경하려면 클릭하십시오.
+ViewRewardGroup.Popup.ChooseNewPrimaryCustomer=신규 대표회원 선택
+ViewRewardGroup.Popup.List.Caption=카드번호
+ViewRewardGroup.Popup.List.Tip=신규 대표회원의 카드번호를 선택하십시오.
+ViewRewardGroup.Popup.Save=확인
+ViewRewardGroup.Popup.Cancel=취소
+ViewRewardGroup.PopupError.NoCurrentOffer=현재 적립기간이 없어 대표회원을 변경할 수 없습니다.
+
+# Merge
+Menu.Header.Merge=포인트합산 회원 : 포인트합산
+Merge.Label.Text=포인트를 합산할 대표회원을 조회합니다.
+Merge.Button.Search=조회
+Merge.Button.Search.Tip=포인트를 합산할 대표회원을 조회하려면 클릭하십시오.
+Merge.Table.Name=성명
+Merge.Table.Name.Tip=대표회원의 성명
+Merge.Table.SSN=주민번호
+Merge.Table.SSN.Tip=대표회원의 주민번호
+Merge.Table.Postcode=우편번호
+Merge.Table.Postcode.Tip=대표회원의 우편번호
+Merge.Table.DateOfBirth=생년월일
+Merge.Table.DateOfBirth.Tip=대표회원의 생년월일
+Merge.Table.Select=선택
+Merge.Table.Select.Tip=포인트를 합산할 대표회원을 선택하려면 클릭하십시오.
+Merge.Table.NoData=조회된 내용이 없습니다.
+Merge.PopupConfirmed.Header=확인
+Merge.PopupConfirmed.Message=포인트합산이 성공적으로 수행되었습니다.
+Merge.PopupConfirmed.Ok=확인
+Merge.PopupConfirmMerge.Header=포인트합산 확인
+Merge.PopupConfirmMerge.Message='{1}' 의 포인트 합산회원으로 '{0}' 회원의 포인트를 합산하겠습니까??
+Merge.PopupConfirmMerge.Yes=확인
+Merge.PopupConfirmMerge.No=취소
+Merge.PopupError.NoCurrentOffer=현재 적립기간이 없어 포인트합산을 할 수 없습니다.
+
+# High Reward Detail
+Menu.Header.HighRewardDetail=현금쿠폰 : 고액현금쿠폰 내역
+HighRewardDetail.Form.RewardVouchers=현금쿠폰
+HighRewardDetail.Form.Status=상태
+HighRewardDetail.Form.Status.Tip=회원의 상태
+HighRewardDetail.Form.Message1=고액현금쿠폰 회원입니다.
+HighRewardDetail.Form.Message2={0} 금액으로 현금쿠폰이 발급되었습니다.
+
+# Last Updated By
+LastUpdatedBy.LastUpdatedBy=최근 등록정보
+LastUpdatedBy.Colon=:
+LastUpdatedBy.At=@
+LastUpdatedBy.On=on
+LastUpdatedBy.Unknown=알수없음
+
+# Tesco's Data Items 
+Customer=회원
+TxnCustomer.Tip=거래한 회원 
+Name=성명
+NameLong=회원 성명
+DateOfBirth=생년월일
+Gender=성별
+DaytimePhoneNumber=자택 전화번호
+EveningPhoneNumber=직장 전화번호
+MobilePhoneNumber=휴대폰
+EmailAddress=E-mail
+CustomerStatus=회원상태
+MailableStatus=우편상태
+TescoOffers=Tesco 홍보
+OffersByMail=우편
+OffersByPhone=전화
+ThirdPartyOffers=그룹/제휴사
+AddressLine1=주소
+AddressLine2=상세주소
+PostalCode=우편번호
+JoinedDate=가입일자
+JoinedStore=가입점포 J
+SocialSecurityNumber=주민번호
+IncomeBand=월소득구분
+ContactMethod=연락방법
+PreferredStore=가입점포 P
+Vegetarian=채식주의자
+Teetotal=금주자
+Kosher=유기농애호가
+Halal=육식주의자
+Diabetic=당뇨병자
+CardAccountNumber=카드번호
+User=사용자 ID
+Password=비밀번호 
+TxnDate=일자
+TxnDate.Tip=거래일자
+TxnTime=시각
+TxnTime.Tip=거래시각
+TxnStore=점포
+TxnStore.Tip=거래점포
+TxnSpend=매출금액
+TxnSpend.Tip=거래가 이루어진 매출금액
+TxnNormalPoints=기본포인트
+TxnNormalPoints.Tip=해당거래 기본포인트
+TxnProductPoints=상품포인트
+TxnProductPoints.Tip=해당거래 상품포인트
+TxnBonusPoints=웰컴포인트
+TxnBonusPoints.Tip=웰컴포인트
+TxnTotalPoints=포인트 합계
+TxnTotalPoints.Tip=해당거래 포인트합계
+TxnPoints=포인트
+TxnPoints.Tip=해당거래 포인트합계
+CardNumber=카드번호
+TxnCardNumber.Tip=거래에 사용된 카드번호
+TxnReason=사유
+TxnReasonLong=거래사유
+TxnReason.Tip=해당거래 사유
+TxnUserName=사용자명
+TxnUserName.Tip=해당거래를 생성한 사용자명
+CashierId=체커 ID
+CashierId.Tip=거래한 체커 ID 
+TxnType=거래유형
+TxnType.Tip=거래의 유형
+PosId=POS번호
+PosId.Tip=거래가 이루어진 POS번호
+TxnNumber=영수증번호
+TxnNumber.Tip=해당거래에 대한 영수증번호
+TxnSource=거래출처
+TxnSource.Tip=거래가 이루어진 POS유형
+TxnAmountSpent=매출금액
+TxnAmountSpent.Tip=해당거래 매출금액
+CollectionTotalPoints=포인트 합계
+CollectionTotalPoints.Tip=해당 적립기간중 적립된 포인트 합산회원의 포인트합계
+CollectionAmountSpent=매출금액 합계
+CollectionAmountSpent.Tip=해당 적립기간중 거래한 포인트 합산회원의 매출금액합계 
+
+# View Points Elements
+Phrase.PointsTableA1=구분
+Phrase.PointsTableA1.Tip=포인트 구분
+Phrase.PointsTableB1=상품포인트
+Phrase.PointsTableB1.Tip=상품포인트 내역
+Phrase.PointsTableC1=웰컴포인트
+Phrase.PointsTableC1.Tip=웰컴포인트 내역
+Phrase.PointsTableE1=기본포인트
+Phrase.PointsTableE1.Tip=기본포인트 내역
+Phrase.PointsTableF1=합계
+Phrase.PointsTableF1.Tip=포인트합계
+Phrase.PointsTableA2=이전기간 적립포인트
+Phrase.PointsTableA2.Tip=이전 적립기간동안 적립된 포인트 내역 
+Phrase.PointsTableA3=이전기간 현금쿠폰 발행포인트
+Phrase.PointsTableA3.Tip=이전 적립기간동안 적립된 포인트중 현금쿠폰으로 발행된 포인트 내역 
+Phrase.PointsTableA4=이전기간으로부터 이월포인트
+Phrase.PointsTableA4.Tip=이전 적립기간으로부터 이월된 포인트 내역 
+Phrase.PointsTableA5=현재포인트 잔고
+Phrase.PointsTableA5.Tip=현재포인트 잔고내역 
+Phrase.PeriodTableA1=적립기간
+Phrase.PeriodTableA1.Tip=포인트 적립기간 
+Phrase.PeriodTableB1=순번
+Phrase.PeriodTableB1.Tip=적립기간 순번
+Phrase.PeriodTableC1=일자
+Phrase.PeriodTableC1.Tip=적립기간의 시작일과 종료일
+Phrase.PeriodTableA2=현재
+Phrase.PeriodTableA2.Tip=현재 적립기간 내역
+Phrase.PeriodTableA3=이전
+Phrase.PeriodTableA3.Tip=이전 적립기간 내역
+Phrase.NoTransactions=적립기간동안 거래가 없습니다.
+Format.DateRange={0} - {1}
+
+# Tesco's field markers
+ValidationErrorText= !
+MandatoryFieldMarker= * 
+
+# NGC POS Service fields
+POS.DefaultCustomerName=성명없음
+POS.NewSkeleton=공카드
+POS.InvalidCard=오류카드
+POS.ClosedCard=폐기카드
+POS.BannedCustomer=금지회원
+POS.DeceasedCustomer=사망회원
+POS.LeftScheme=탈퇴회원
+POS.ExistingSkeleton=회원정보없음
+POS.AddressError=주소오류
+
+# Customer Register
+Menu.Header.CustRegister=신규회원 등록
+CustRegister.Form.FieldSet.CustomerDetails=신규회원 정보
+CustRegister.Form.EnterCardNumber=카드번호
+CustRegister.Form.EnterCardNumber.ToolTip=등록할 카드번호를 입력하십시오.
+CustRegister.Form.CardNumber=카드번호
+CustRegister.Form.CardNumber.ToolTip=등록할 카드번호를 입력하십시오.
+CustRegister.Button.Register=확인
+CustRegister.Button.Register.ToolTip=등록하려면 클릭하십시오.
+CustRegister.Button.Cancel=취소
+CustRegister.Button.Cancel.ToolTip=취소하려면 클릭하십시오.
+CustRegister.Popup.Exists=오류
+CustRegister.Popup.Ok=확인
+CustRegister.Popup.Exists.Message=이미 등록된 회원입니다. 회원 조회를 선택하여 회원정보를 수정하십시오. 
+CustRegister.Popup.OutOfRange.Message=카드번호가 유효범위를 벗어났습니다. 
+CustRegister.Popup.CardInvalid.Message=카드번호가 유효하지 않습니다.
+CustRegister.Popup.OfficialIdExists.Message=주민번호가 이미 등록 된 고객 입니다. 고객조회에서 확인하십시오.
+
+# AdjustPoints 
+# STPF Points (Also known as HSC Points). These are unique to Korea
+AdjustPointsForm.STPFPoints=제휴포인트
+AdjustPointsForm.STPFPoints.Tip=수기로 입력하는 제휴포인트
+AdjustPointsPopUp.NoPointsSupplied=최소 한가지 이상의 포인트항목이 입력되어야 합니다.
+AdjustPointsPopUp.AllPointsNonZero=최소 한가지 이상의 포인트항목은 '0' 이 아니어야 합니다.
+
+# TransactionHistoryDetails
+# STPF Points (Also known as HSC Points). These are unique to Korea
+TxnSTPFPoints=제휴포인트
+TxnSTPFPoints.Tip=해당거래 제휴포인트
+
+# Auto Add Points
+Menu.Item.Name.AutoAddPoints=수기입력(스캔)
+Menu.Item.Tip.AutoAddPoints=스캔을 하여 포인트를 수기입력합니다.
+
+Menu.Header.AutoAddPoints=포인트 : 수기입력(스캔)
+Win.Header.AutoAddPoints=수기입력(스캔)
+NGCCSD.AutoAddPoints.Button.Reset=취소
+NGCCSD.AutoAddPoints.Button.Reset.ToolTip=취소하려면 클릭하십시오.
+NGCCSD.AutoAddPoints.Button.Save=확인
+NGCCSD.AutoAddPoints.Button.Save.ToolTip=저장하려면 클릭하십시오.
+NGCCSD.AutoAddPoints.FieldGroup.Barcodes=바코드 스캔
+NGCCSD.AutoAddPoints.Caption.Barcode1=1단 바코드
+NGCCSD.AutoAddPoints.Caption.Barcode1.ToolTip=1단 바코드를 입력하십시오.
+NGCCSD.AutoAddPoints.Caption.Barcode2=2단 바코드
+NGCCSD.AutoAddPoints.Caption.Barcode2.ToolTip=2단 바코드를 입력하십시오.
+NGCCSD.AutoAddPoints.Caption.Warning=경고
+NGCCSD.AutoAddPoints.Button.Continue=계속
+NGCCSD.AutoAddPoints.Button.Continue.ToolTip=수기입력을 계속하려면 클릭하십시오.
+NGCCSD.AutoAddPoints.Button.Cancel=취소
+NGCCSD.AutoAddPoints.Button.Cancel.ToolTip=수기입력을 취소하려면 클릭하십시오.
+NGCCSD.AutoAddPoints.Message.MissingBarcode1=1단 바코드를 입력하십시오.
+NGCCSD.AutoAddPoints.Message.MissingBarcode2=2단 바코드를 입력하십시오.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode1=1단 바코드를 다시 입력하십시오.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode2=2단 바코드를 다시 입력하십시오.
+NGCCSD.AutoAddPoints.Message.PointsAdded=포인트가 입력되었습니다.
+NGCCSD.AutoAddPoints.Message.NoCollectionPeriod=포인트가 입력되지 않았습니다. 적립기간이 없습니다.
+NGCCSD.AutoAddPoints.Message.CustomerBanned=포인트가 입력되지 않았습니다. 회원이 카드사용이 금지된 상태입니다.
+NGCCSD.AutoAddPoints.Message.InvalidStore=포인트가 입력되지 않았습니다. 영수증 발급점포가 유효하지 않습니다.
+NGCCSD.AutoAddPoints.Message.WarningUseStatus=회원이 현재 탈퇴 or 사망상태입니다.
+NGCCSD.AutoAddPoints.Message.WarningCardStatus=현재 카드 상태가 비정상입니다.
+NGCCSD.AutoAddPoints.Message.WarningMailStatus=회원 주소정보가 정확하지 않습니다.
+NGCCSD.AutoAddPoints.Message.TransactionFailed=포인트가 입력되지 않았습니다. 다시 입력하십시오.
+NGCCSD.AutoAddPoints.Message.Continue=계속하시겠습니까?
+NGCCSD.AutoAddPoints.Message.InvalidPoints=이단 바코드의 숫자가 잘못 입력되었습니다. 확인 후 재입력 바랍니다.
+NGCCSD.AutoAddPoints.Message.PointsAlreadyAdded=이미 포인트가 적립된 영수증입니다.
+NGCCSD.AutoAddPoints.Message.TransactionTooOld=포인트입력 가능 기간({0}일)이 만료된 영수증이어서, 포인트를 입력 할 수 없습니다
+
+############################################################
+##
+### NGCMarketing
+##
+############################################################
+
+# Menu
+Win.Header.ReportList=보고서 조회
+NGCMarketing.Menu.Item.RewardMailing=쿠폰발송
+NGCMarketing.Menu.Item.RewardMailing.Tip=쿠폰을 발송합니다.
+NGCMarketing.Menu.SubItem.RewardMailing=쿠폰발송
+NGCMarketing.Menu.SubItem.RewardMailing.Tip=쿠폰을 발송합니다.
+NGCMarketing.Menu.Item.Administer=관리자 모드
+NGCMarketing.Menu.Item.Administer.Tip=포인트 적립기간 및 수기입력 포인트한도를 설정합니다.
+NGCMarketing.Menu.SubItem.MaintainCollectionPeriods=적립기간&nbsp;관리
+NGCMarketing.Menu.SubItem.MaintainCollectionPeriods.Tip=포인트 적립기간을 관리합니다.
+NGCMarketing.Menu.SubItem.PointsLimit=포인트한도 관리
+NGCMarketing.Menu.SubItem.PointsLimit.Tip=S/C에서 수기 입력하는 포인트한도를 설정합니다.
+NGCMarketing.Menu.Item.Report=보고서
+NGCMarketing.Menu.Item.Report.Tip=보고서를 조회합니다.
+NGCMarketing.Menu.SubItem.Report=보고서&nbsp;조회
+NGCMarketing.Menu.SubItem.Report.Tip=보고서를 조회하려면 클릭하십시오.
+NGCMarketing.Menu.SubItem.MembershipReport=회원수&nbsp;보고서
+NGCMarketing.Menu.SubItem.MembershipReport.Tip=회원수 보고서를 조회합니다.
+NGCMarketing.Page.Header.HomeplusFamilyCardSystem=홈플러스 훼밀리카드 시스템 - 마케팅
+
+# Membership Report
+NGCMarketing.Report.Menu.Header=보고서 : 보고서 조회
+NGCMarketing.Report.Win.Header=보고서
+NGCMarketing.Report.Button.RunReport.Text=실행
+NGCMarketing.Report.Button.Download.Text=다운로드
+NGCMarketing.Report.NoDataFound=조회된 보고서가 없습니다.
+NGCMarketing.Report.Timeout=리포트 생성이 오래걸리고 있습니다. 조건을 조정하시고 재시도 해주십시오.
+NGCMarketing.Report.Button.ReportResult.Text=.
+
+# report panel captions
+NGCMarketing.ReportPanel.Form.From=시작일
+NGCMarketing.ReportPanel.Form.From.Tip=시작일자
+NGCMarketing.ReportPanel.Form.To=종료일
+NGCMarketing.ReportPanel.Form.To.Error=종료일은 시작일 이후이어야 합니다.
+
+NGCMarketing.ReportPanel.Form.To.Tip=종료일자
+NGCMarketing.ReportPanel.Form.Year=년
+NGCMarketing.ReportPanel.Form.Year.Tip=해당년
+NGCMarketing.ReportPanel.Form.Month=월
+NGCMarketing.ReportPanel.Form.Month.Tip=해당월
+NGCMarketing.ReportPanel.Form.Day=일
+NGCMarketing.ReportPanel.Form.Day.Tip=해당일
+NGCMarketing.ReportPanel.Form.Store=점포
+NGCMarketing.ReportPanel.Form.Store.Tip=해당점포
+NGCMarketing.ReportPanel.Form.CustomersManualTransaction=해당 수기입력 횟수를 초과한 회원
+NGCMarketing.ReportPanel.Form.CustomersManualTransaction.Tip=해당 수기입력 횟수를 초과한 회원을 조회합니다.
+NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints=해당 수기입력 포인트를 초과한 회원
+NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints.Tip=해당 수기입력 포인트를 초과한 회원을 조회합니다.
+NGCMarketing.ReportPanel.Form.ManualTransactionPoints=해당 포인트를 초과한 수기입력
+NGCMarketing.ReportPanel.Form.ManualTransactionPoints.Tip=해당 포인트를 초과한 수기입력건을 조회합니다.
+NGCMarketing.ReportPanel.Form.UsersManualTransactions=해당 수기입력 횟수를 초과 입력한 사용자 
+NGCMarketing.ReportPanel.Form.UsersManualTransactions.Tip=해당 수기입력 횟수를 초과 입력한 사용자를 조회합니다.
+NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal=해당 수기입력 포인트를 초과 입력한 사용자
+NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal.Tip=해당 수기입력 포인트를 초과 입력한 사용자을 조회합니다.
+NGCMarketing.ReportPanel.Form.User=사용자
+NGCMarketing.ReportPanel.Form.User.Tip=사용자
+NGCMarketing.ReportPanel.Form.CollectionPeriod=적립기간
+NGCMarketing.ReportPanel.Form.CollectionPeriod.Tip=적립기간
+
+#report names
+NGCMarketing.Report.CollectionPeriodSummary=기간별 실적현황
+NGCMarketing.Report.DataProtectionOptOuts=일별 회원탈퇴현황
+NGCMarketing.Report.FinancialLiability=재무보고서
+NGCMarketing.Report.ManualTransactions1=수기입력 1 - 수기입력 과다 횟수 회원
+NGCMarketing.Report.ManualTransactions2=수기입력 2 - 수기입력 과다 포인트 회원
+NGCMarketing.Report.ManualTransactions3=수기입력 3 - 과다 포인트 수기입력
+NGCMarketing.Report.ManualTransactions4=수기입력 4 - 수기입력 횟수 과다 입력 사용자
+NGCMarketing.Report.ManualTransactions5=수기입력 5 - 수기입력 포인트 과다 입력 사용자
+NGCMarketing.Report.ManualTransactions6=수기입력 6 - 특정 사용자의 수기입력
+NGCMarketing.Report.MembershipReport=주별 회원 수
+NGCMarketing.Report.PointsAndRewardsByStore=점별/일별 실적현황
+
+#report form heading
+NGCMarketing.ReportPanel.ChooseDates=기간 설정
+NGCMarketing.ReportPanel.ChooseDatesAndStore=기간 및 점포 설정
+NGCMarketing.ReportPanel.SetParameters=범위 설정
+NGCMarketing.ReportPanel.Option.Please Select=선택
+NGCMarketing.ReportPanel.Option.Unknown=알수없음
+
+
+#report list heading
+NGCMarketing.ReportList.Table.Description=보고서
+NGCMarketing.ReportList.Table.Description.Tip=보고서 종류
+NGCMarketing.ReportList.Table.Select=선택
+NGCMarketing.ReportList.Table.Select.Tip=보고서 선택
+
+ReportList.Menu.Header=보고서 : 보고서 조회
+
+#Manual transaction headering
+NGCMarketing.Reports.Heading.Customer=회원
+NGCMarketing.Reports.Heading.Card Number=카드번호
+NGCMarketing.Reports.Heading.User=사용자
+NGCMarketing.Reports.Heading.Store=점포
+NGCMarketing.Reports.Heading.Date/Time=날짜/시각
+NGCMarketing.Reports.Heading.No of Points=포인트
+NGCMarketing.Reports.Heading.Value of Spend=매출금액
+NGCMarketing.Reports.Heading.Value of Points=포인트금액
+
+# Points and rewards by store
+NGCMarketing.Reports.Heading.Date=날짜
+NGCMarketing.Reports.Heading.# Transactions=거래횟수
+NGCMarketing.Reports.Heading.Amount Spent=매출금액
+NGCMarketing.Reports.Heading.Ave Trans Value=객단가
+NGCMarketing.Reports.Heading.Points Given=적립포인트
+NGCMarketing.Reports.Heading.Value of Points Given=적립포인트 금액
+NGCMarketing.Reports.Heading.Value of Vouchers Redeemed=현금쿠폰 회수금액
+NGCMarketing.Reports.Heading.No Manual Transactions=수기입력 횟수
+NGCMarketing.Reports.Heading.% Manual Transactions=수기입력율
+
+# data protection opt outs
+NGCMarketing.Reports.Heading.Total number of Customers=총 회원수
+NGCMarketing.Reports.Heading.Customers who have opted out=탈퇴회원
+NGCMarketing.Reports.Heading.Group=그룹사
+NGCMarketing.Reports.Heading.3rd party=그룹/제휴사
+NGCMarketing.Reports.Heading.Phone=전화
+NGCMarketing.Reports.Heading.Mail=우편
+# financial liability
+NGCMarketing.Reports.Heading.# Points not yet converted=쿠폰미발행 포인트
+NGCMarketing.Reports.Heading.Value of points not yet converted=쿠폰미발행 포인트금액
+NGCMarketing.Reports.Heading.Value of rewards not yet redeemed=미회수 쿠폰금액
+# membership report
+NGCMarketing.Reports.Heading.Week=주
+NGCMarketing.Reports.Heading.# New Members=신규회원수
+NGCMarketing.Reports.Heading.# Normal Customers=일반회원수
+NGCMarketing.Reports.Heading.# Inactive Customers=비활성회원수
+NGCMarketing.Reports.Heading.# Banned Customers=금지회원수
+NGCMarketing.Reports.Heading.# Deceased Customers=사망회원수
+NGCMarketing.Reports.Heading.# Customers Left Scheme=탈퇴회원수
+NGCMarketing.Reports.Heading.New as % Normal=신규회원비율
+NGCMarketing.Reports.Heading.Primary Normal as % Normal=대표회원비율
+#collection period summary
+NGCMarketing.Reports.Heading.Collection Period=적립기간
+NGCMarketing.Reports.Heading.#Transactions=거래횟수
+#NGCMarketing.Reports.Heading.Amount Spent=매출금액
+#NGCMarketing.Reports.Heading.Points Given=적립포인트
+NGCMarketing.Reports.Heading.Points Converted=쿠폰발행 포인트
+NGCMarketing.Reports.Heading.Points Carried Forward=이월 포인트
+NGCMarketing.Reports.Heading.Rewards Given=현금쿠폰
+NGCMarketing.Reports.Heading.Rewards Redeemed=회수된 현금쿠폰
+NGCMarketing.Reports.Heading.(no.)=순번
+NGCMarketing.Reports.Heading.From=시작일
+NGCMarketing.Reports.Heading.To=종료일
+
+# Logon NGCMarketing
+NGCMarketing.LogonPanel.FieldGroup.Language=사용언어 선택
+NGCMarketing.LogonPanel.Flag.Primary.Tip=한국어를 사용하시려면 여기를 클릭하십시오.
+NGCMarketing.LogonPanel.Flag.Secondary.Tip=영어를 사용하시려면 여기를 클릭하십시오.
+NGCMarketing.LogonPanel.FieldGroup.Logon=로그인
+NGCMarketing.LogonPanel.TextBox.User=사용자 ID
+NGCMarketing.LogonPanel.TextBox.Password=비밀번호
+NGCMarketing.LogonPanel.Header.Caption1=홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.
+NGCMarketing.LogonPanel.Header.Caption2=마케팅 시스템
+NGCMarketing.LogonPanel.Button.Logon=로그인
+NGCMarketing.LogonPanel.PopUp.Error=오류
+NGCMarketing.LogonPanel.PopUp.Message.Attempt1-2=사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.
+NGCMarketing.LogonPanel.PopUp.Message.Attempt3=로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.
+NGCMarketing.LogonPanel.ValidationSummary.Message=오류
+NGCMarketing.LogonPanel.TextBox.User.Tip=사용자 ID를 입력하십시오.
+NGCMarketing.LogonPanel.TextBox.Password.Tip=비밀번호를 입력하십시오.
+NGCMarketing.LogonPanel.Button.Logon.Tip=로그인하려면 클릭하십시오.
+
+
+# Change Points Limit
+ChangePointsLimit.Menu.Header=관리자 모드 : 포인트한도 관리
+Win.Header.ChangePointsLimit=포인트한도 관리
+ChangePointsLimit.Button.Search=조회
+ChangePointsLimit.Button.Search.ToolTip=사용자그룹을 조회하려면 클릭하십시오.
+ChangePointsLimit.Error.NoSearchCriteria=사용자그룹 또는 사용자그룹명에 조회할 내용을 입력해야 합니다.
+ChangePointsLimit.Form.SearchForGroups=사용자그룹 조회
+ChangePointsLimit.Form.GroupName=사용자그룹
+ChangePointsLimit.Form.GroupName.Tip=조회할 사용자그룹을 입력하십시오.('*'사용가능)
+ChangePointsLimit.Form.GroupDescription=사용자그룹명
+ChangePointsLimit.Form.GroupDescription.Tip=조회할 사용자그룹명을 입력하십시오.('*'사용가능)
+ChangePointsLimit.PopupEdit.Title=포인트한도 설정
+ChangePointsLimit.PopupEdit.AddLimit=가산포인트 한도
+ChangePointsLimit.PopupEdit.AddLimit.Tip=사용자그룹별 포인트를 수기로 추가할 수 있는 최대한도
+ChangePointsLimit.PopupEdit.SubLimit=감산포인트 한도
+ChangePointsLimit.PopupEdit.SubLimit.Tip=사용자그룹별 포인트를 수기로 삭제할 수 있는 최대한도
+ChangePointsLimit.PopupEdit.Cancel=취소
+ChangePointsLimit.PopupEdit.Save=확인
+ChangePointsLimit.Table.GroupName=사용자그룹
+ChangePointsLimit.Table.GroupName.Tip=조회된 사용자그룹
+ChangePointsLimit.Table.GroupDescription=사용자그룹명
+ChangePointsLimit.Table.GroupDescription.Tip=조회된 사용자그룹명
+ChangePointsLimit.Table.AddLimit=가산 한도
+ChangePointsLimit.Table.AddLimit.Tip=사용자그룹별 포인트를 수기로 추가할 수 있는 최대한도
+ChangePointsLimit.Table.SubLimit=감산 한도
+ChangePointsLimit.Table.SubLimit.Tip=사용자그룹별 포인트를 수기로 삭제할 수 있는 최대한도
+ChangePointsLimit.Table.UpdateBy=등록자
+ChangePointsLimit.Table.UpdateBy.Tip=사용자그룹에 포인트한도를 설정한 관리자
+ChangePointsLimit.Table.UpdateAt=등록일시
+ChangePointsLimit.Table.UpdateAt.Tip=사용자그룹에 포인트한도를 설정한 일시
+ChangePointsLimit.Table.Select=내용변경
+ChangePointsLimit.Table.Select.Tip=사용자그룹에 설정된 포인트한도를 변경하려면 선택하십시오.
+
+# Maintain Collection Periods
+Win.Header.MaintainCollectionPeriods=적립기간 관리
+MaintainCollectionPeriods.Menu.Header=관리자 모드 : 적립기간 관리
+MaintainCollectionPeriods.Table.NoData=적립기간이 없습니다.
+MaintainCollectionPeriods.Table.Description=적립기간
+MaintainCollectionPeriods.Table.Description.Tip=해당 적립기간
+MaintainCollectionPeriods.Table.StartDate=시작일
+MaintainCollectionPeriods.Table.StartDate.Tip=해당 적립기간의 시작일
+MaintainCollectionPeriods.Table.EndDate=종료일
+MaintainCollectionPeriods.Table.EndDate.Tip=해당 적립기간의 종료일
+MaintainCollectionPeriods.Table.EditDetails=내용변경
+MaintainCollectionPeriods.Table.EditDetails.Tip=해당 적립기간의 내용을 변경합니다.
+MaintainCollectionPeriods.Table.Overview=발송개요
+MaintainCollectionPeriods.Table.Overview.Tip=쿠폰발송 개요를 조회합니다.
+MaintainCollectionPeriods.Table.ManageRewardMailing=쿠폰발송관리
+MaintainCollectionPeriods.Button.Add=등록
+MaintainCollectionPeriods.Button.Add.Tip=새로운 적립기간을 등록하려면 클릭하십시오.
+MaintainCollectionPeriods.Popup.EditCollectionPeriodDetails=적립기간 내용변경
+MaintainCollectionPeriods.Popup.AddCollectionPeriod=적립기간 신규등록
+MaintainCollectionPeriods.Popup.Description=적립기간명
+MaintainCollectionPeriods.Popup.Description.Tip=해당 적립기간의 명칭
+MaintainCollectionPeriods.Popup.StartDate=시작일
+MaintainCollectionPeriods.Popup.StartDate.Tip=해당 적립기간의 시작일
+MaintainCollectionPeriods.Popup.EndDate=종료일
+MaintainCollectionPeriods.Popup.EndDate.Tip=해당 적립기간의 종료일
+MaintainCollectionPeriods.Popup.ReIssueUntil=쿠폰재발행 종료일
+MaintainCollectionPeriods.Popup.ReIssueUntil.Tip=현금쿠폰 재발행할수 있는 일자
+MaintainCollectionPeriods.Popup.PointsThreshold=현금쿠폰 발행 최소포인트
+MaintainCollectionPeriods.Popup.PointsThreshold.Tip=현금쿠폰이 발행될 수 있는 최소포인트
+MaintainCollectionPeriods.Popup.MinimumVoucherValue=현금쿠폰 최소액면가
+MaintainCollectionPeriods.Popup.MinimumVoucherValue.Tip=현금쿠폰 발행 최소금액
+MaintainCollectionPeriods.Popup.StepBetweenVoucherValues=현금쿠폰 액면가단위
+MaintainCollectionPeriods.Popup.StepBetweenVoucherValues.Tip=현금쿠폰 액면가별 최소단위
+MaintainCollectionPeriods.Popup.MaximumVoucherValue=현금쿠폰 최대액면가
+MaintainCollectionPeriods.Popup.MaximumVoucherValue.Tip=현금쿠폰 발행 최대금액
+MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer=회원별 현금쿠폰 매수
+MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer.Tip=회원별 현금쿠폰 발행매수
+MaintainCollectionPeriods.Popup.PointsToRewardConversionRate=포인트의 현금쿠폰금액 전환율
+MaintainCollectionPeriods.Popup.PointsToRewardConversionRate.Tip=포인트를 현금쿠폰금액으로 전환시 비율
+MaintainCollectionPeriods.Popup.AmountToPointsConversionRate=포인트 적립율
+MaintainCollectionPeriods.Popup.AmountToPointsConversionRate.Tip=매출금액대비 포인트 적립율 
+MaintainCollectionPeriods.Popup.Button.Save=확인
+MaintainCollectionPeriods.Popup.Button.Delete=삭제
+MaintainCollectionPeriods.Popup.Button.Cancel=취소
+MaintainCollectionPeriods.Popup.Button.Ok=확인
+MaintainCollectionPeriods.Popup.Button.Yes=확인
+MaintainCollectionPeriods.Popup.Button.No=취소
+MaintainCollectionPeriods.Popup.Error=오류
+MaintainCollectionPeriods.Popup.Error.CollectionStartDateIsInvalid=적립기간의 시작일이 유효하지 않습니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.CollectionEndDateIsInvalid=적립기간의 종료일이 유효하지 않습니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.CollectionReissueDateIsInvalid=쿠폰재발행 종료일이 유효하지 않습니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.EndDateLessThanStartDate=종료일은 시작일보다 이후이어야 합니다. 수정하여 다시 입력하십시오.
+MaintainCollectionPeriods.Popup.Error.ReissueDateLessThanEndDate=쿠폰재발행 종료일는 적립기간 종료일보다 나중이어야 합니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.MinVoucherValueNotMultipleStepSize=현금쿠폰 액면가단위로 현금쿠폰 최소액면가를 구성할 수 없습니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.MinVoucherGreaterThanThresholdTimesPointsToReward=현금쿠폰 최소액면가는 현금쿠폰 발행 최소포인트보다 적거나 같아야 합니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.MaxVoucherValueNotMultipleStepSize=현금쿠폰 액면가단위로 최대 쿠폰액면가를 구성할 수 없습니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.MaxVoucherLessThan2TimesMinVoucher=현금쿠폰 최대액면가는 현금쿠폰 최소액면가보다 2배이상이어야 합니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Error.VoucherStepMustBeMultipleOfPointsToReward=현금쿠폰 금액들의 간격은 현금쿠폰으로 전환되는 포인트의 배수로 구성되어야 합니다. 수정하여 다시 시도하십시오.
+MaintainCollectionPeriods.Popup.Year.Caption=해당년
+MaintainCollectionPeriods.Popup.Month.Caption=해당월
+MaintainCollectionPeriods.Popup.Day.Caption=해당일
+MaintainCollectionPeriods.Popup.Error.OfferExists=동일한 조건의 적립 기간이 이미 등록되어 있습니다.
+MaintainCollectionPeriods.Popup.DeleteConfirm=삭제 확인
+MaintainCollectionPeriods.Popup.Message.ConfirmDelete=해당 적립기간을 삭제하시겠습니까?
+NGCMarketing.MaintainCollectionPeriods.Error.OfferAllocatedToPartitions=해당 적립기간은 삭제 할 수 없습니다. NGC 시스템 담당자에게 연락 바랍니다.
+NGCMarketing.MaintainCollectionPeriods.Message.RunAgePartitions=해당 적립기간은 활성화 할 수 없습니다.\\n\\nAge_partitions 실행이 시간이 부족하여 불가 합니다.\\n\\n해당 적립기간을 활성화 하시려면, NGC 시스템 담당자에게 연락 바랍니다.\\n\\n활성화가 안 되었을 경우 심각한 시스템 장애를 일으 킬 수 있습니다.
+
+# Reward Mailing Overview
+Win.Header.RewardMailing=쿠폰발송 관리
+MailingOverview.Menu.Header= 관리자 모드 : 적립기간 관리 : 쿠폰발송 관리
+MailingOverview.Error.MissingOfferDetails=쿠폰발송 개요가 없습니다.
+MailingOverview.Error.InvalidStates=쿠폰발송 개요가 올바르지 않습니다.
+MailingOverview.ConfirmMailingRequested=쿠폰발송이 요청되지 않았습니다. 
+MailingOverview.ConfirmMailingApproved=쿠폰발송이 승인되지 않았습니다.
+MailingOverview.CouponSetupLink.Text=설정
+MailingOverview.CouponSetupLink.ToolTip=상품우대권 유형을 설정합니다.
+MailingOverview.VoucherSetupLink.Text=설정
+MailingOverview.VoucherSetupLink.ToolTip=현금쿠폰 유형을 설정합니다.
+MailingOverview.CalculateRunLink.Text=실행
+MailingOverview.CalculateRunLink.ToolTip=쿠폰발송을 예정합니다.
+MailingOverview.CalculateRequestedLink.Text=요청
+MailingOverview.CalculateRequestedLink.ToolTip=쿠폰발송이 요청되었습니다.
+MailingOverview.ViewMailingLink.Text=조회
+MailingOverview.ViewMailingLink.ToolTip=쿠폰발송 보고서를 조회합니다.
+MailingOverview.ApproveMailingLink.Text=승인
+MailingOverview.ApproveMailingLink.ToolTip=쿠폰발송을 승인합니다.
+MailingOverview.Form.Header=적립기간
+MailingOverview.Form.Number=순번
+MailingOverview.Form.Number.Tip=적립기간 순번
+MailingOverview.Form.StartDate=시작일
+MailingOverview.Form.StartDate.Tip=적립기간의 시작일
+MailingOverview.Form.EndDate=종료일
+MailingOverview.Form.EndDate.Tip=적립기간의 종료일
+MailingOverview.PopupError.Header=오류
+MailingOverview.PopupMsg.Header=확인
+
+# Setup Coupon Types
+Win.Header.SetUpCouponTypes=상품우대권 설정
+SetUpCouponTypes.Menu.Header=관리자 모드 : 적립기간 관리 : 쿠폰발송 : 상품우대권 설정
+SetUpCouponTypes.Table.CouponDescription=상품우대권명
+SetUpCouponTypes.Table.CouponDescription.Tip=상품우대권의 명칭
+SetUpCouponTypes.Table.SkuBarcode=SKU 바코드
+SetUpCouponTypes.Table.SkuBarcode.Tip=SKU 바코드
+SetUpCouponTypes.Table.CouponDetailsBarcode=상품우대권 바코드
+SetUpCouponTypes.Table.CouponDetailsBarcode.Tip=상품우대권의 바코드
+SetUpCouponTypes.Table.Reward=현금쿠폰 발송회원
+SetUpCouponTypes.Table.Reward.Tip=현금쿠폰 발송 대상회원
+SetUpCouponTypes.Table.NonReward=현금쿠폰 비발송회원
+SetUpCouponTypes.Table.NonReward.Tip=현금쿠폰 발송 비대상회원
+SetUpCouponTypes.Table.Edit=내용변경
+SetUpCouponTypes.Table.Edit.Tip=해당 상품우대권 내용을 변경하려면 클릭하십시오.
+SetUpCouponTypes.Table.Delete=삭제
+SetUpCouponTypes.Table.Delete.Tip=해당 상품우대권을 삭제하려면 클릭하십시오.
+SetUpCouponTypes.Table.EmptyMessage=해당 적립기간동안 발행된 상품우대권이 없습니다.
+SetUpCouponTypes.Table.NoCollectionPeriod=모든 적립기간의 쿠폰발송이 승인되었습니다.
+SetUpCouponTypes.Table.InvalidCollectionPeriod=해당 적립기간이 유효하지 않습니다.
+SetUpCouponTypes.Button.Add=등록
+SetUpCouponTypes.Button.Add.Tip=상품우대권을 신규등록하려면 클릭하십시오.
+SetUpCouponTypes.Button.Return=발송개요 조회
+SetUpCouponTypes.Button.Return.Tip=쿠폰 발송개요를 조회하려면 클릭하십시오.
+SetUpCouponTypes.Popup.Edit=변경
+SetUpCouponTypes.Popup.Add=등록
+SetUpCouponTypes.Popup.EditCouponDetails=상품우대권 {0} 
+SetUpCouponTypes.Popup.CouponDescription=상품우대권명
+SetUpCouponTypes.Popup.CouponDescription.Tip=상품우대권의 명칭
+SetUpCouponTypes.Popup.SkuBarcode=SKU 바코드
+SetUpCouponTypes.Popup.SkuBarcode.Tip=SKU 바코드
+SetUpCouponTypes.Popup.CouponDetailsBarcode=상품우대권 바코드
+SetUpCouponTypes.Popup.CouponDetailsBarcode.Tip=상품우대권의 바코드
+SetUpCouponTypes.Popup.Reward=현금쿠폰 발송회원
+SetUpCouponTypes.Popup.Reward.Tip=현금쿠폰 발송 대상회원
+SetUpCouponTypes.Popup.NonReward=현금쿠폰 비발송회원
+SetUpCouponTypes.Popup.NonReward.Tip=현금쿠폰 발송 비대상회원
+SetUpCouponTypes.Popup.Save=확인
+SetUpCouponTypes.Popup.Cancel=취소
+SetUpCouponTypes.PopupMessage.Header.Confirmation=확인
+SetUpCouponTypes.PopupMessage.Header.Error=오류
+SetUpCouponTypes.PopupMessage.Yes=확인
+SetUpCouponTypes.PopupMessage.No=취소
+SetUpCouponTypes.PopupMessage.Ok=확인
+SetUpCouponTypes.PopupMessage.Message.RewardNonReward=현금쿠폰 발송회원 또는 비발송회원 중 하나 또는 모두를 선택해야 합니다.
+SetUpCouponTypes.PopupMessage.Message.ConfirmDelete=상품우대권 {0} 를 삭제하시겠습니까?
+
+# Setup Voucher Types
+Win.Header.SetUpVoucherTypes=현금쿠폰 설정
+SetUpVoucherTypes.Menu.Header=관리자 모드 : 적립기간 관리 : 쿠폰발송 : 현금쿠폰 설정
+SetUpVoucherTypes.Form.SetParameters=현금쿠폰 설정
+SetUpVoucherTypes.Form.StepSizeBetweenVouchers=현금쿠폰 액면가단위
+SetUpVoucherTypes.Form.StepSizeBetweenVouchers.Tip=현금쿠폰 액면가별 최소단위
+SetUpVoucherTypes.Form.PointsThreshold=현금쿠폰 발행 최소포인트
+SetUpVoucherTypes.Form.PointsThreshold.Tip=현금쿠폰이 발행될 수 있는 최소포인트
+SetUpVoucherTypes.Form.MinimumVoucherValue=현금쿠폰 최소액면가
+SetUpVoucherTypes.Form.MinimumVoucherValue.Tip=현금쿠폰 발행 최소금액
+SetUpVoucherTypes.Form.MaximumVoucherValue=현금쿠폰 최대액면가
+SetUpVoucherTypes.Form.MaximumVoucherValue.Tip=현금쿠폰 발행 최대금액
+SetUpVoucherTypes.Form.NumberOfVouchers=회원별 현금쿠폰 매수
+SetUpVoucherTypes.Form.NumberOfVouchers.Tip=회원별 현금쿠폰 발행매수
+SetUpVoucherTypes.Form.ExpiryDate=종료일
+SetUpVoucherTypes.Form.ExpiryDate.Tip=현금쿠폰 유효기간의 종료일
+SetUpVoucherTypes.Form.ExpiryDate.YYYY.Tip=해당년
+SetUpVoucherTypes.Form.ExpiryDate.MM.Tip=해당월
+SetUpVoucherTypes.Form.ExpiryDate.DD.Tip=해당일
+SetUpVoucherTypes.Button.Generate=등록
+SetUpVoucherTypes.Button.Generate.Tip=신규 현금쿠폰을 등록하려면 클릭하십시오.
+SetUpVoucherTypes.Button.Return=발송개요 조회
+SetUpVoucherTypes.Button.Return.Tip=쿠폰 발송개요로 조회하려면 클릭하십시오.
+SetUpVoucherTypes.Table.MonetaryValue=현금쿠폰 발행금액
+SetUpVoucherTypes.Table.MonetaryValue.Tip=현금쿠폰의 발행금액
+SetUpVoucherTypes.Table.Barcode=바코드
+SetUpVoucherTypes.Table.Barcode.Tip=현금쿠폰 바코드
+SetUpVoucherTypes.Table.Edit=변경
+SetUpVoucherTypes.Table.Edit.Tip=현금쿠폰 내용을 변경하려면 클릭하십시오.
+SetUpVoucherTypes.Table.NoCollectionPeriod=모든 적립기간의 쿠폰 발송이 승인되었습니다.
+SetUpVoucherTypes.Table.EmptyMessage=해당 적립기간동안 발행된 현금쿠폰이 없습니다.
+SetUpVoucherTypes.Table.InvalidCollectionPeriod=해당 적립기간이 유효하지 않습니다.
+SetUpVoucherTypes.Popup.Confirm=확인
+SetUpVoucherTypes.Popup.Confirm.Message=현금쿠폰 '{0}' 등록하시겠습니까?<br>등록하시면 기존 현금쿠폰은 삭제되고, 현금쿠폰 최대액면가는 {1} 이 됩니다.
+SetUpVoucherTypes.Popup.Confirm.Yes=확인
+SetUpVoucherTypes.Popup.Confirm.No=취소
+SetUpVoucherTypes.Popup.Edit=현금쿠폰 바코드 수정
+SetUpVoucherTypes.Popup.Edit.MonetaryValue=현금쿠폰 발행금액
+SetUpVoucherTypes.Popup.Edit.MonetaryValue.Tip=현금쿠폰의 발행금액
+SetUpVoucherTypes.Popup.Edit.Barcode=바코드
+SetUpVoucherTypes.Popup.Edit.Barcode.Tip=현금쿠폰 바코드
+SetUpVoucherTypes.Popup.Edit.Save=확인
+SetUpVoucherTypes.Popup.Edit.Cancel=취소
+SetUpVoucherTypes.Popup.Error=오류                              
+SetUpVoucherTypes.Popup.Error.MaxVoucherLessThan2TimesMinVoucher=현금쿠폰 최대 액면가는 현금쿠폰 최소 액면가의 2배 이상이어야 합니다.
+SetUpVoucherTypes.Popup.Error.MaxVoucherNotMultipleStepValue=현금쿠폰 최대액면가는 현금쿠폰 액면가단위의 배수이어야 합니다.
+SetUpVoucherTypes.Popup.Error.CollectionEndDateLaterThanExpiryDate=현금쿠폰의 유효기간 종료일은 적립기간의 종료일보다 나중이어야 합니다.
+SetUpVoucherTypes.Popup.Ok=확인
+
+# Setup Voucher Types
+Win.Header.ViewMailing=쿠폰발송 보고서 조회
+ViewMailing.Menu.Header=관리자 모드 : 적립기간 관리 : 쿠폰발송 : 쿠폰발송 보고서 조회
+ViewMailing.Table.Comparison.Cell.A1=구분
+ViewMailing.Table.Comparison.Cell.B1=현재 발송 {0} - {1}
+ViewMailing.Table.Comparison.Cell.B1.WithoutDates=현재 발송
+ViewMailing.Table.Comparison.Cell.C1=증감율
+ViewMailing.Table.Comparison.Cell.E1=이전 발송 {0} - {1}
+ViewMailing.Table.Comparison.Cell.E1.WithoutDates=이전 발송
+ViewMailing.Table.Comparison.Cell.F1=작년 동일회차 {0} - {1}
+ViewMailing.Table.Comparison.Cell.F1.WithoutDates=작년 동일회차
+ViewMailing.Table.Comparison.Cell.C2=이전 발송
+ViewMailing.Table.Comparison.Cell.D2=작년
+ViewMailing.Table.Comparison.Cell.A3=대표회원
+ViewMailing.Table.Comparison.Cell.A4=현금쿠폰 비발송 대표회원
+ViewMailing.Table.Comparison.Cell.A5=현금쿠폰 발송회원
+ViewMailing.Table.Comparison.Cell.A6=현금쿠폰 비대상 발송회원
+ViewMailing.Table.Comparison.Cell.A7=현금쿠폰 전환포인트
+ViewMailing.Table.Comparison.Cell.A8=이월포인트
+ViewMailing.Table.Comparison.Cell.A9=현금쿠폰 금액합계
+ViewMailing.Table.Comparison.Cell.A10=현금쿠폰 발송금액
+ViewMailing.Table.NotMailed.ExcludeTitle=상태별 발송불가 회원
+ViewMailing.Table.NotMailed.NotMailableTitle=미발송 고객 유형
+ViewMailing.Table.NotMailed.HighRewards=고액 현금쿠폰
+ViewMailing.Table.NotMailed.Banned=금지
+ViewMailing.Table.NotMailed.Inactive=비활성
+ViewMailing.Table.NotMailed.Deceased=사망
+ViewMailing.Table.NotMailed.LeftScheme=탈퇴
+ViewMailing.Table.NotMailed.Skeleton=정보부족
+ViewMailing.Table.NotMailed.AddressInError=주소오류
+ViewMailing.Table.NotMailed.NotMailable=발송불가 회원
+ViewMailing.Text.Na=n/a
+ViewMailing.Button.Return=발송개요 조회
+ViewMailing.Button.Return.Tip=발송개요를 조회하려면 클릭하십시오.
+
+############################################################
+##
+### NGCSSC
+##
+############################################################
+
+# Logon
+NGCSSC.LogonPanel.Flag.Primary.Tip=한국어를 사용하시려면 여기를 클릭하십시오.
+NGCSSC.LogonPanel.Flag.Secondary.Tip=영어를 사용하시려면 여기를 클릭하십시오.
+
+# Menu
+NGCSSC.Menu.Item.User=사용자
+NGCSSC.Menu.Item.User.Tip=시스템 사용자를 조회 또는 등록합니다.
+NGCSSC.Menu.SubItem.AddUser=사용자&nbsp;등록
+NGCSSC.Menu.SubItem.AddUser.Tip=시스템 사용자를 등록합니다.
+NGCSSC.Menu.SubItem.FindUser=사용자&nbsp;조회
+NGCSSC.Menu.SubItem.FindUser.Tip=시스템 사용자를 조회합니다.
+NGCSSC.Menu.Item.Group=사용자그룹
+NGCSSC.Menu.Item.Group.Tip=시스템 사용자그룹을 조회 또는 등록합니다.
+NGCSSC.Menu.SubItem.AddGroup=사용자그룹&nbsp;등록
+NGCSSC.Menu.SubItem.AddGroup.Tip=시스템 사용자그룹을 등록합니다.
+NGCSSC.Menu.SubItem.FindGroup=사용자그룹&nbsp;조회
+NGCSSC.Menu.SubItem.FindGroup.Tip=시스템 사용자그룹을 조회합니다.
+NGCSSC.Menu.Item.Administer=관리자
+NGCSSC.Menu.Item.Administer.Tip=점포등록 및 카드 Master를 생성합니다.
+NGCSSC.Menu.SubItem.EditStores=점포등록
+NGCSSC.Menu.SubItem.EditStores.Tip=점포를 조회 또는 등록합니다.
+NGCSSC.Menu.SubItem.EditCardRanges=카드&nbsp;Master&nbsp;생성
+NGCSSC.Menu.SubItem.EditCardRanges.Tip=유효한 카드번호를 생성합니다.
+NGCSSC.Menu.SubItem.EditCardTypes=카드&nbsp;유형
+NGCSSC.Menu.SubItem.EditCardTypes.Tip=카드유형을 관리합니다.
+
+# Logon NGCSSC
+NGCSSC.LogonPanel.FieldGroup.Language=사용언어 선택
+NGCSSC.LogonPanel.FieldGroup.Logon=로그인
+NGCSSC.LogonPanel.TextBox.User=사용자 ID
+NGCSSC.LogonPanel.TextBox.Password=비밀번호
+NGCSSC.LogonPanel.Header.Caption1=홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.
+NGCSSC.LogonPanel.Header.Caption2=Software Support Console
+NGCSSC.LogonPanel.Button.Logon=로그인
+NGCSSC.LogonPanel.PopUp.Error=오류
+NGCSSC.LogonPanel.PopUp.Message.Attempt1-2=사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.
+NGCSSC.LogonPanel.PopUp.Message.Attempt3=로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.
+NGCSSC.LogonPanel.ValidationSummary.Message=오류
+NGCSSC.LogonPanel.TextBox.User.Tip=사용자 ID를 입력하십시오.
+NGCSSC.LogonPanel.TextBox.Password.Tip=비밀번호를 입력하십시오.
+NGCSSC.LogonPanel.Button.Logon.Tip=로그인하려면 클릭하십시오.
+
+# Add User 
+NGCSSC.AddUser.Caption=사용자 : 사용자 등록
+AddUser.Popup.Header.Error=오류
+AddUser.Button.Add=등록
+AddUser.Button.Add.Tip=사용자를 등록합니다.
+AddUser.Form.AddUser=사용자 등록
+AddUser.Form.AddUser.Tip=시스템 사용자를 등록합니다.
+AddUser.Form.UserName=사용자ID
+AddUser.Form.UserName.Tip=등록할 사용자ID를 입력하십시오. 
+AddUser.Form.Description=사용자명
+AddUser.Form.Description.Tip=등록할 사용자명을 입력하십시오. 
+AddUser.Table.UserName=사용자ID
+AddUser.Table.UserName.Tip=등록된 사용자ID
+AddUser.Table.LastUpdatedBy=등록자
+AddUser.Table.LastUpdatedBy.Tip=해당 사용자ID를 등록한 관리자 
+AddUser.Table.LastUpdatedDate=등록일시
+AddUser.Table.LastUpdatedDate.Tip=해당 사용자ID를 등록한 날짜와 시간 
+AddUser.Table.Description=사용자명
+AddUser.Table.Description.Tip=등록된 사용자명
+AddUser.Table.ChangeGroupMembership=사용자그룹 등록
+AddUser.Table.ChangeGroupMembership.Tip=사용자가 속한 사용자그룹을 등록합니다.
+AddUser.Table.Status=상태
+AddUser.Table.Status.Tip= 사용자의 현재 상태 
+AddUser.Table.Edit=정보변경
+AddUser.Table.Edit.Tip= 사용자의 정보를 변경합니다.
+AddUser.Table.EditGroups=사용자그룹 변경
+AddUser.Popup.EditUser=사용자 정보변경
+AddUser.Popup.Username=사용자ID
+AddUser.Popup.Username.Tip=변경할 사용자ID 
+AddUser.Popup.Description=사용자명
+AddUser.Popup.Description.Tip=변경할 사용자명
+AddUser.Popup.Status=상태
+AddUser.Popup.Status.Tip=변경할 사용자 상태
+AddUser.Popup.Save=확인
+AddUser.Popup.Save.Tip=변경된 내용을 저장합니다.
+AddUser.Popup.Cancel=취소
+AddUser.Popup.Cancel.Tip=내용을 변경하지 않습니다.
+AddUser.Popup.Error.Message.Header=오류
+AddUser.Popup.Error.Message.ItemAlreadyExists=사용자ID가 이미 등록되어 있습니다. 수정하여 다시 시도하십시오. 
+
+# Find User 
+NGCSSC.FindUser.Caption=사용자 : 사용자 조회
+FindUser.Button.Search=조회
+FindUser.Button.Search.Tip=사용자를 조회합니다. 
+FindUser.Form.SearchForUsers=사용자 조회
+FindUser.Form.UserName=사용자ID
+FindUser.Form.UserName.Tip=조회할 사용자ID를 입력하십시오.('*' 사용가능)
+FindUser.Form.Description=사용자명
+FindUser.Form.Description.Tip=조회할 사용자명을 입력하십시오.('*' 사용가능)
+FindUser.Form.GroupName=사용자그룹
+FindUser.Form.GroupName.Tip=조회할 사용자그룹 입력하시면 등록된 사용자 전체를 조회합니다.('*' 사용가능)
+FindUser.Table.UserName=사용자ID
+FindUser.Table.userName.Tip=조회된 사용자ID
+FindUser.Table.Description=사용자명
+FindUser.Table.Description.Tip=조회된 사용자명 
+FindUser.Table.LastUpdatedBy=등록자
+FindUser.Table.LastUpdatedBy.Tip=사용자ID를 등록한 관리자
+FindUser.Table.LastUpdatedDate=등록일시
+FindUser.Table.LastUpdatedDate.Tip=등록한 날짜와 시간 
+FindUser.Table.ChangeGroupMembership=사용자그룹 등록
+FindUser.Table.ChangeGroupMembership.Tip=사용자가 속한 사용자그룹을 등록합니다.
+FindUser.Table.Status=상태
+FindUser.Table.Status.Tip=사용자의 현재 상태
+FindUser.Table.Edit=정보변경
+FindUser.Table.Edit.Tip=사용자의 정보를 변경합니다.
+FindUser.Table.Message.NoDataReturned= 조회된 내용이 없습니다. 다시 조회하십시오.
+FindUser.Popup.EditUser=사용자 정보변경
+FindUser.Popup.Username=사용자ID
+FindUser.Popup.Username.Tip=변경할 사용자ID
+FindUser.Popup.Description=사용자명
+FindUser.Popup.Description.Tip=변경할 사용자명
+FindUser.Popup.Status=상태
+FindUser.Popup.Status.Tip=변경할 사용자 상태
+FindUser.Popup.Save=확인
+FindUser.Popup.Save.Tip=변경된 내용을 저장합니다.
+FindUser.Popup.Cancel=취소
+FindUser.Popup.Error.Header=오류
+FindUser.Popup.Cancel.Tip=내용을 변경하지 않습니다.
+FindUser.Error.NoSearchCriteria= 조회할 내용을 한 글자이상 입력해야 합니다.
+FindUser.Error.MaximumRetrievalExceeded= 조회된 사용자가 너무 많습니다. 수정하여 다시 조회하십시오.
+
+# Edit Group Membership
+NGCSSC.EditGroupMembership.Caption=사용자 : 사용자 조회/등록 : 사용자 소속그룹 등록
+EditGroupMembership.Header= {0} : 사용자 소속그룹 등록
+EditGroupMembership.Header.Tip= 사용자가 사용자그룹에 등록됩니다. 
+EditGroupMembership.EditGroupMembership=사용자 소속그룹 등록
+EditGroupMembership.Table.GroupMembership=사용자 소속그룹
+EditGroupMembership.Table.GroupMembership.Tip=사용자가 등록된 사용자그룹입니다. 
+EditGroupMembership.Table.Remove=삭제
+EditGroupMembership.Table.Remove.Tip=사용자 소속그룹에서 해당사용자을 삭제합니다. 
+EditGroupMembership.Table.Message.NoEntries=사용자가 속한 사용자그룹이 없습니다.
+EditGroupMembership.Listbox.AddGroup=사용자그룹
+EditGroupMembership.Listbox.Tip=사용자가 등록될 사용자그룹을 선택하십시오. 
+EditGroupMembership.Listbox.Button.Add=등록
+EditGroupMembership.Listbox.Button.Add.Tip=선택된 사용자그룹에 사용자를 등록합니다. 
+EditGroupMembership.Popup.RemoveGroup=사용자 소속그룹 삭제
+EditGroupMembership.Popup.Message=사용자그룹 : '{1}' 에서 사용자 : '{0}'를 삭제하시겠습니까?
+EditGroupMembership.Popup.Yes=확인
+EditGroupMembership.Popup.No=취소
+EditGroupMembership.Popup.Message.ItemExists=사용자가 이미 사용자그룹에 등록되어 있습니다. 
+EditGroupMembership.Popup.Error=오류
+EditGroupMembership.Table.Delete=삭제
+
+# Edit Group Privileges
+NGCSSC.EditGroupPrivileges.Caption=사용자그룹 : 사용자그룹 조회/등록 : 사용자그룹 권한등록
+EditGroupPrivileges.Header= {0} : 사용자그룹 권한등록
+EditGroupPrivileges.Header.Tip=권한이 사용자그룹에 적용됩니다. 
+EditGroupPrivileges.EditScreens=사용자그룹 권한등록
+EditGroupPrivileges.Table.AccessibleScreens=권한등록
+EditGroupPrivileges.Table.AccessibleScreens.Tip=해당 사용자그룹에 속한 사용자가 사용할 수 있는 권한목록 
+EditGroupPrivileges.Table.Remove=삭제
+EditGroupPrivileges.Table.Remove.Tip=등록된 사용자그룹의 권한을 삭제합니다. 
+EditGroupPrivileges.Table.Message.NoEntries=해당 사용자그룹에 등록된 권한이 없습니다.
+EditGroupPrivileges.Button.Add=등록
+EditGroupPrivileges.Button.Add.Tip=선택된 권한을 사용자그룹에 등록합니다. 
+EditGroupPrivileges.EditPointsLimit=수기입력 포인트한도 설정
+EditGroupPrivileges.Form.AddLimit=가산포인트
+EditGroupPrivileges.Form.AddLimit.Tip=수기입력으로 포인트를 추가할 수 있는 최대포인트
+EditGroupPrivileges.Form.SubtractLimit= 감산포인트 
+EditGroupPrivileges.Form.SubtractLimit.Tip=수기입력으로 포인트를 삭제할 수 있는 최대포인트
+EditGroupPrivileges.Button.Save=확인
+EditGroupPrivileges.Button.Save.Tip=등록된 내용을 저장합니다
+EditGroupPrivileges.Button.Cancel=취소
+EditGroupPrivileges.Button.Cancel.Tip=내용을 변경하지 않습니다.
+EditGroupPrivileges.Popup.RemoveScreen=권한 삭제
+EditGroupPrivileges.Popup.RemoveScreen.Message={0} 사용자그룹의 권한을 삭제하시겠습니까?
+EditGroupPrivileges.Popup.RemoveScreen.Yes=확인
+EditGroupPrivileges.Popup.RemoveScreen.No=취소
+EditGroupPrivileges.Listbox.AddGroup=권한
+EditGroupPrivileges.Listbox.AddGroup.Tip=사용자그룹에 등록할 권한을 선택하십시오. 
+EditGroupPrivileges.Popup.Error=오류
+EditGroupPrivileges.Popup.Message.ItemExists=사용자그룹에 이미 등록된 권한입니다. 
+EditGroupPrivileges.Popup.Message.AddNegativeLimits=음수로 입력 불가합니다. 양수로 재입력 하십시오.
+EditGroupPrivileges.Popup.Message.SubNegativeLimits=음수로 입력 불가합니다. 양수로 재입력 하십시오.
+EditGroupPrivileges.Popup.Message.LimitsRequired=포인트 수기입력 가산 및 감산 입력한도 모두를 설정해야 합니다.
+EditGroupPrivileges.Table.Delete=삭제
+
+# Add Group
+NGCSSC.AddGroup.Caption=사용자그룹 : 사용자그룹 등록
+AddGroup.Button.Add=등록
+AddGroup.Button.Add.Tip=사용자그룹을 입력후 클릭하십시오.
+AddGroup.Form.AddGroup=사용자그룹 등록
+AddGroup.Form.GroupName=사용자그룹
+AddGroup.Form.GroupName.Tip=등록할 사용자그룹을 입력하십시오. 
+AddGroup.Form.Description=사용자그룹명
+AddGroup.Form.Description.Tip=등록할 사용자그룹명을 입력하십시오. 
+AddGroup.Table.GroupName=사용자그룹
+AddGroup.Table.GroupName.Tip=등록된 사용자그룹
+AddGroup.Table.Description=사용자그룹명
+AddGroup.Table.Description.Tip=등록된 사용자그룹명
+AddGroup.Table.LastUpdatedBy=등록자
+AddGroup.Table.LastUpdatedBy.Tip=해당 사용자그룹을 등록한 관리자 
+AddGroup.Table.LastUpdatedDate=등록일시
+AddGroup.Table.LastUpdatedDate.Tip=해당 사용자그룹을 등록한 날짜와 시간
+AddGroup.Table.EditgroupPrivileges=권한등록
+AddGroup.Table.EditgroupPrivileges.Tip=사용자그룹의 권한을 등록하려면 클릭하십시오.
+AddGroup.Table.Edit=정보변경
+AddGroup.Table.Edit.Tip=사용자그룹의 정보를 변경하려면 클릭하십시오.
+AddGroup.Table.Delete=삭제
+AddGroup.Table.Delete.Tip=사용자그룹을 삭제하려면 클릭하십시오.
+AddGroup.PopupEdit.EditGroup=사용자그룹 정보변경
+AddGroup.PopupEdit.GroupName=사용자그룹
+AddGroup.PopupEdit.GroupName.Tip=변경할 사용자그룹
+AddGroup.PopupEdit.Description=사용자그룹명
+AddGroup.PopupEdit.Description.Tip=변경할 사용자그룹명
+AddGroup.PopupEdit.Save=확인
+AddGroup.PopupEdit.Cancel=취소
+AddGroup.PopupConfirmation.DeleteGroup=사용자그룹 삭제
+AddGroup.PopupConfirmation.Message={0} 사용자그룹을 삭제하시겠습니까?
+AddGroup.PopupConfirmation.Yes=확인
+AddGroup.PopupConfirmation.No=취소
+AddGroup.Popup.Error.Header=오류
+AddGroup.PopupError.Error=오류
+AddGroup.PopupError.Message=사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다.
+AddGroup.PopupError.Ok=확인
+AddGroup.PopupError.Message.ItemAlreadyExists=사용자그룹이 이미 등록되어 있습니다. 수정하여 다시 시도하십시오.
+
+# Find Group
+NGCSSC.FindGroup.Caption= 사용자그룹 : 사용자그룹 조회
+FindGroup.Button.Add=조회
+FindGroup.Button.Add.Tip=조회할 사용자그룹을 입력한 후 클릭하시시오.
+FindGroup.Form.SearchForGroup=사용자그룹 조회
+FindGroup.Form.GroupName=사용자그룹
+FindGroup.Form.GroupName.Tip=조회할 사용자그룹을 입력하십시오.('*' 사용가능)
+FindGroup.Form.Description=사용자그룹명
+FindGroup.Form.Description.Tip= 조회할 사용자그룹명을 입력하십시오.('*' 사용가능)
+FindGroup.Table.GroupName=사용자그룹
+FindGroup.Table.GroupName.Tip=조회된 사용자그룹 
+FindGroup.Table.Description=사용자그룹명
+FindGroup.Table.Description.Tip=조회된 사용자그룹명
+FindGroup.Table.LastUpdatedBy=등록자
+FindGroup.Table.LastUpdatedBy.Tip=해당 사용자그룹을 등록한 관리자
+FindGroup.Table.LastUpdatedDate=등록일시
+FindGroup.Table.LastUpdatedDate.Tip=해당 사용자그룹을 등록한 날짜와 시간
+FindGroup.Table.EditgroupPrivileges=권한등록
+FindGroup.Table.EditgroupPrivileges.Tip=사용자그룹의 권한을 등록하려면 클릭하십시오. 
+FindGroup.Table.Edit=정보변경
+FindGroup.Table.Edit.Tip=사용자그룹의 정보를 변경하려면 클릭하십시오. 
+FindGroup.Table.Delete=삭제
+FindGroup.Table.Delete.Tip=사용자그룹을 삭제하려면 클릭하십시오.
+FindGroup.Table.Message.NoDataReturned=조회된 내용이 없습니다. 다시 조회하십시오. 
+FindGroup.PopupEdit.EditGroup=사용자그룹 정보변경
+FindGroup.PopupEdit.GroupName=사용자그룹
+FindGroup.PopupEdit.GroupName.Tip=변경할 사용자그룹
+FindGroup.PopupEdit.Description=사용자그룹명
+FindGroup.PopupEdit.Description.Tip=변경할 사용자그룹명
+FindGroup.PopupEdit.Save=확인
+FindGroup.PopupEdit.Cancel=취소
+FindGroup.PopupConfirmation.DeleteGroup=사용자그룹 삭제
+FindGroup.PopupConfirmation.Message={0} 사용자그룹을 삭제하시겠습니까?
+FindGroup.PopupConfirmation.Yes=확인
+FindGroup.PopupConfirmation.No=취소
+FindGroup.Popup.Error.Header=오류
+FindGroup.PopupError.DeleteGroup=사용자그룹 삭제
+FindGroup.PopupError.Message=사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다.
+FindGroup.PopupError.Ok=확인
+FindGroup.Error.NoSearchCriteria=한 글자이상의 조회할 내용을 입력해야 합니다. 
+FindGroup.Error.MaximumRetrievalExceeded=조회된 내용이 너무 많습니다. 수정하여 다시 시도하십시오.
+FindGroup.PopupError.Message.UsersStillPresent=사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다. 
+
+# Store Details
+NGCSSC.MaintainStore.Caption=관리자 : 점포등록
+MaintainStore.Form.Store=Store
+MaintainStore.Form.StoreNumber=점포코드
+MaintainStore.Table.Message.NoEntries=등록된 점포가 없습니다.
+MaintainStore.Table.ToolTip=점포리스트 
+MaintainStore.Table.StoreNumber=점포코드
+MaintainStore.Table.StoreNumber.ToolTip=점포별 해당코드
+MaintainStore.Table.StoreName=점포명
+MaintainStore.Table.StoreName.ToolTip=점포명칭
+MaintainStore.Table.Region=지역
+MaintainStore.Table.Region.ToolTip=점포의 해당지역
+MaintainStore.Table.Edit.ToolTip=점포정보를 변경하려면 클릭하십시오.
+MaintainStore.Table.Edit=정보변경
+MaintainStore.Table.EditCap=변경
+MaintainStore.Button.Add=등록
+MaintainStore.Button.Add.ToolTip=신규 점포를 등록하려면 클릭하십시오.
+MaintainStore.Popup.EditTitle=점포정보 변경
+MaintainStore.Popup.AddTitle=점포정보 등록
+MaintainStore.Popup.StoreNumber=점포코드
+MaintainStore.Popup.StoreNumber.ToolTip=점포별 해당코드
+MaintainStore.Popup.StoreName=점포명
+MaintainStore.Popup.StoreName.ToolTip=점포명칭
+MaintainStore.Popup.Region=지역
+MaintainStore.Popup.Region.ToolTip=점포의 해당지역
+MaintainStore.Popup.Button.Save=확인
+MaintainStore.Popup.Button.Save.ToolTip=변경된 정보를 저장합니다.
+MaintainStore.Popup.Button.Cancel=취소
+MaintainStore.Popup.Button.Cancel.ToolTip=변경된 정보를 저장하지 않습니다.
+MaintainStore.Ip.Divider=.
+MaintainStore.Popup.Error=오류
+MaintainStore.Error.InvalidStoreCode=해당 점포코드는 이미 등록되어 있습니다.
+MaintainStore.Error.InvalidStoreName=해당 점포명은 이미 등록되어 있습니다.
+
+# Maintain Card Ranges
+NGCSSC.MaintainCardRanges.Caption=관리자 : 카드 Master 생성
+MaintainCardRanges.Table.Message.NoEntries=카드번호가 등록되지 않았습니다.
+MaintainCardRanges.Table.ToolTip=카드번호 정보리스트
+MaintainCardRanges.Table.FromCardNumber=시작 카드번호
+MaintainCardRanges.Table.FromCardNumber.ToolTip=카드번호의 시작번호
+MaintainCardRanges.Table.ToCardNumber=종료 카드번호
+MaintainCardRanges.Table.ToCardNumber.ToolTip=카드번호의 종료번호
+MaintainCardRanges.Table.CardType=카드유형
+MaintainCardRanges.Table.CardType.ToolTip=카드의 유형
+MaintainCardRanges.Table.CardNoD=자릿수
+MaintainCardRanges.Table.CardNoD.ToolTip=생성된 카드번호의 자릿수
+MaintainCardRanges.Table.Edit.ToolTip=카드번호 범위를 변경 및 삭제하려면 클릭하십시오.
+MaintainCardRanges.Table.Edit=정보변경
+MaintainCardRanges.Table.EditCap=변경
+MaintainCardRanges.Button.Add=생성
+MaintainCardRanges.Button.Add.ToolTip=신규카드의 카드번호 범위를 생성합니다.
+MaintainCardRanges.Popup.EditTitle=카드정보 변경
+MaintainCardRanges.Popup.AddTitle=신규카드 정보생성
+MaintainCardRanges.Popup.FromCardNumber=시작 카드번호
+MaintainCardRanges.Popup.FromCardNumber.ToolTip=카드번호의 시작번호
+MaintainCardRanges.Popup.ToCardNumber=종료 카드번호
+MaintainCardRanges.Popup.ToCardNumber.ToolTip=카드번호의 종료번호
+MaintainCardRanges.Popup.CardType=카드유형
+MaintainCardRanges.Popup.CardType.ToolTip=카드의 유형
+MaintainCardRanges.Popup.Button.Save=확인
+MaintainCardRanges.Popup.Button.Save.ToolTip=변경된 정보를 저장합니다.
+MaintainCardRanges.Popup.Button.Delete=삭제
+MaintainCardRanges.Popup.Button.Delete.ToolTip=해당 정보를 삭제합니다.
+MaintainCardRanges.Popup.Button.Cancel=취소
+MaintainCardRanges.Popup.Button.Cancel.ToolTip=변경된 정보를 저장하지 않습니다.
+MaintainCardRanges.Popup.Error=오류
+MaintainCardRanges.Error.RangeOverlap=이미 생성된 카드번호와 중복됩니다.
+MaintainCardRanges.Error.IncorrectCardNumberLength=From and to card numbers should contain {0} digits for this type of card
+MaintainCardRanges.Error.MaxLessThanMin=종료 카드번호는 시작 카드번호보다 커야 합니다.
+
+NGCSSC.MaintainCardRanges.Caption.DateAdded=생성일자
+NGCSSC.MaintainCardRanges.Caption.DateAdded.Tip=카드번호를 시스템에 등록한 일자
+
+# Maintain Card Types
+NGCSSC.MaintainCardTypes.Caption.Page=관리자 : 카드유형
+NGCSSC.MaintainCardTypes.Button.Add=생성
+NGCSSC.MaintainCardTypes.Button.Add.Tip=새로운 카드유형을 생성하려면 클릭하십시오.
+NGCSSC.MaintainCardTypes.Message.Code=코드
+NGCSSC.MaintainCardTypes.Message.Code.Tip=카드유형별 코드
+NGCSSC.MaintainCardTypes.Message.Description=명칭
+NGCSSC.MaintainCardTypes.Message.Description.Tip=카드유형별 명칭
+NGCSSC.MaintainCardTypes.Message.Length=자릿수
+NGCSSC.MaintainCardTypes.Message.Length.Tip=카드유형별 자릿수
+NGCSSC.MaintainCardTypes.Message.HscFlag=신제휴카드
+NGCSSC.MaintainCardTypes.Message.HscFlag.Tip=신제휴카드입니까?
+NGCSSC.MaintainCardTypes.Table.NoData=카드유형이 없습니다.
+NGCSSC.MaintainCardTypes.Table.Edit=변경
+NGCSSC.MaintainCardTypes.Table.Edit.Tip=카드유형을 변경하려면 클릭하십시오.
+NGCSSC.MaintainCardTypes.Popup.Add=카드유형 생성
+NGCSSC.MaintainCardTypes.Popup.Edit=카드유형 변경
+NGCSSC.MaintainCardTypes.Popup.Error=에러
+NGCSSC.MaintainCardTypes.Popup.Save=확인
+NGCSSC.MaintainCardTypes.Popup.Save.Tip=저장하려면 클릭하십시오.
+NGCSSC.MaintainCardTypes.Popup.Cancel.Tip=취소하려면 클릭하십시오.
+NGCSSC.MaintainCardTypes.Error.DuplicateDescription=명칭이 이미 사용중입니다.
+
+############################################################
+##
+### KOREAN
+##
+############################################################
+
+# Register Customer (Korea Specific)
+CustRegister.Popup.SSNInvalid.Message=주민번호가 유효하지 않습니다. 수정하여 다시 시도하십시오.
+
+############################################################
+##
+### Batch Scripts
+##
+############################################################
+
+Batch.BatchRegisterNewCustomer.Replace.Name=성명없음

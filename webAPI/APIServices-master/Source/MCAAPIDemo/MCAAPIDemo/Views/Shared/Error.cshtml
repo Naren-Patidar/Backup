@@ -1,0 +1,77 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@model HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+    ViewBag.PageName = "Error";
+
+    var ShowExceptionMessage = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.ExceptionMessage.ToString()].ConfigurationValue1.ToString();
+}
+@if (ViewBag.IsSecurityCheckDone == "true")
+{
+    @section leftNavigation
+{
+        @Html.Partial("_LeftNavigation")
+    }
+}
+<div class="l-column padded-left">
+    <div>
+        <div class="container">
+            <h2>Sorry, we are currently experiencing problems with our system, please try again later.</h2>
+        </div>
+    </div>
+    <div>
+        @if (Model != null)
+        {
+            if (ShowExceptionMessage == "1")
+            { 
+            <h5>
+                Exception Message: @Html.DisplayFor(model => model.Exception.Message)
+            </h5>
+            <h5>
+                Stack Trace:
+            </h5>
+            @Html.DisplayFor(model => model.Exception.StackTrace)
+            }
+            else
+            {
+            @Html.DisplayFor(model => model.Exception.Data[ParameterNames.FRIENDLY_ERROR_MESSAGE])
+            <br />    
+            <br />   
+            @Html.Translate("DetailedErrorMsg500")
+            <br />
+            <br />
+            <ul>
+                <li>
+                    @Html.Translate("CorrectiveStep1_500")
+                </li>
+                <li>
+                    @Html.Translate("CorrectiveStep2_500")
+                </li>
+            </ul>
+            
+            }
+        }
+        else
+        { 
+            @Html.Translate("FriendlyErrorMsg404")
+            <br />
+            <br />
+            @Html.Translate("DetailedErrorMsg404") 
+            <br />
+            <br />
+            <div>
+                <ul>
+                    <li>
+                        @Html.Translate("CorrectiveStep1_404")
+                    </li>
+                    <li>
+                        @Html.Translate("CorrectiveStep2_404")
+                    </li>
+                </ul>
+            </div>   
+        }
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d0c33e63-2cfd-4fe0-bbfd-37bfc0e0f3f0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.21.149.229/CCOServices/CustomerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerService.disco" MetadataType="Disco" ID="f14465bf-3696-4d88-b198-f6fc9e75c29b" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?disco" />
+    <MetadataFile FileName="CustomerService.wsdl" MetadataType="Wsdl" ID="f0d9a1c8-a661-46f3-8753-004156c2ea86" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CustomerService.xsd" MetadataType="Schema" ID="8cced60e-9ece-4e36-9a08-0316e6e26f78" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CustomerService1.xsd" MetadataType="Schema" ID="d1e4bb10-d88e-4959-b6f7-69c2215c5153" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CustomerService2.xsd" MetadataType="Schema" ID="b0fe5b53-00b0-4434-aa24-f70cdfb5c0e7" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerService1.wsdl" MetadataType="Wsdl" ID="38879041-f116-4cf0-b8fb-8fff108c1718" SourceId="1" SourceUrl="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="DEV01\XG72dev" GeneratedFromPackageName="OfflineTransactions" GeneratedFromPackageID="{50A083EC-753E-4908-A7C7-FA3F787C3D04}" GeneratedDate="10/24/2012 12:30:22 PM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\Batch\Data\Log\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NGCConnectionString].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.21.149.228;User ID=sa;Initial Catalog=NGCR15;Provider=SQLOLEDB;Password=Tesco123</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NGCDataConnectionString].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.21.149.228;User ID=sa;Initial Catalog=NGCR15;Provider=SQLOLEDB;Password=Tesco123</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NGCReconciliationConnection].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.29.3.17;User ID=sa;Initial Catalog=ReconciliationDB;Provider=SQLOLEDB;Password=tesco123</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NGCServerPassword].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Tesco123</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\Batch\Data\Out\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::RejectedFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\Batch\Data\Rejected\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

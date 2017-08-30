@@ -1,0 +1,35 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.MCAViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+
+@{
+    ViewBag.Title = "MCADemo";
+    ViewBag.PageName = "Vouchers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="padded-left">
+    @if (ViewBag.Name == "Voucher Holding Page" || Model.vouchersViewModel.voucherRewardDetailsOverallSummaryModel == null || 
+            (Model.vouchersViewModel.voucherRewardDetailsOverallSummaryModel.TotalRewardIssued == 0 &&
+                Model.vouchersViewModel.voucherRewardDetailsOverallSummaryModel.TotalRewardLeftOver == 0 &&
+                Model.vouchersViewModel.voucherRewardDetailsOverallSummaryModel.TotalVoucherIssuedLastTwoYears == 0))
+    {
+        <h1 id="lblheader">@Html.Translate("MCA/Home", "lclVoucherHeader")</h1>
+    }
+    else
+    {
+        <h1 id="lblheader">@Html.Translate("MCA/Home", "lclVoucherHeader")</h1>
+           
+            <p>@Html.Translate("MCA/Home", "lclViewSummary")</p>    
+            
+        <h2>@Html.Translate("MCA/Home", "lclVoucherSumHeader")
+            
+        </h2>
+        @Html.Partial("_VouchersSummary", Model.vouchersViewModel.voucherRewardDetailsOverallSummaryModel)                
+    }
+    
+
+    @Html.Partial("_PersonalDetails", Model.personalDetailsViewModel)
+</div>

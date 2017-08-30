@@ -1,0 +1,13 @@
+GI|CGC|AVC,BAC,VIRC|Coupon Guillotine Check|Check coupons are removed from basestock|select top 1 m.HouseholdID,m.ClubcardID from MailableCustomers m Where m.HouseholdID IS NOT NULL
+COMMUNISIS|CGC|HVC,CSC|Coupon Guillotine Check|Check coupons are removed from basestock|select top 1 m.HouseholdID,m.ClubcardID from MailableCustomers m Where m.HouseholdID IS NOT NULL
+
+
+
+
+
+
+
+
+
+
+

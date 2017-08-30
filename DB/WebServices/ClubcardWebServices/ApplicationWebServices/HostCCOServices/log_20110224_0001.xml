@@ -1,0 +1,78 @@
+<message thread="3d8f8a03-3bc4-464e-85f0-1ff62fade0da" level="0" time="2011-02-24 14:49:47" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="3d8f8a03-3bc4-464e-85f0-1ff62fade0da" level="0" time="2011-02-24 14:49:47" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="3d8f8a03-3bc4-464e-85f0-1ff62fade0da" level="1" time="2011-02-24 14:49:47" type="Debug">SQLHelper.ExecuteDataset Time=15.261716223709996661586877700 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="3d8f8a03-3bc4-464e-85f0-1ff62fade0da" level="1" time="2011-02-24 14:49:47" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=18.287 ms</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="0" time="2011-02-24 14:53:24" type="Start">Entered Procedure Customer.Search</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="0" time="2011-02-24 14:53:24" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="1" time="2011-02-24 14:53:26" type="Debug">SQLHelper.ExecuteDataset Time=1479.3645561097849028298289308 CommandType=StoredProcedure CommandText=USP_GetCustomers</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="1" time="2011-02-24 14:53:26" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1480.004 ms</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="1" time="2011-02-24 14:53:26" type="Start">Entered Procedure Customer.Search for CustomerID0</message>
+<message thread="8abf2efb-9b1a-4e08-8755-c0379385fb76" level="2" time="2011-02-24 14:53:26" type="End">Exited Procedure Customer.Search for CustomerID0. Time=0.014 ms</message>
+<message thread="ab0c1130-cee2-4cf8-a7e6-4e830e0f21de" level="0" time="2011-02-24 18:18:33" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="ab0c1130-cee2-4cf8-a7e6-4e830e0f21de" level="0" time="2011-02-24 18:18:43" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="ab0c1130-cee2-4cf8-a7e6-4e830e0f21de" level="1" time="2011-02-24 18:18:43" type="Debug">SQLHelper.ExecuteDataset Time=28.873781444289707211391391900 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="ab0c1130-cee2-4cf8-a7e6-4e830e0f21de" level="1" time="2011-02-24 18:18:43" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=93.438 ms</message>
+<message thread="f040090a-a192-4414-a89d-cad832f5a81e" level="0" time="2011-02-24 18:20:58" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="f040090a-a192-4414-a89d-cad832f5a81e" level="0" time="2011-02-24 18:20:58" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="f040090a-a192-4414-a89d-cad832f5a81e" level="1" time="2011-02-24 18:20:58" type="Debug">SQLHelper.ExecuteDataset Time=1.20322554961594280837369000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="f040090a-a192-4414-a89d-cad832f5a81e" level="1" time="2011-02-24 18:20:58" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1.309 ms</message>
+<message thread="113f43f6-08a3-412f-855a-96dfe792e642" level="0" time="2011-02-24 18:38:20" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="113f43f6-08a3-412f-855a-96dfe792e642" level="0" time="2011-02-24 18:38:20" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="113f43f6-08a3-412f-855a-96dfe792e642" level="1" time="2011-02-24 18:38:20" type="Debug">SQLHelper.ExecuteDataset Time=1.0266667970370535920068053000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="113f43f6-08a3-412f-855a-96dfe792e642" level="1" time="2011-02-24 18:38:20" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1.081 ms</message>
+<message thread="833d84a0-2cdf-4abb-939f-5461b7ca73bc" level="0" time="2011-02-24 19:16:04" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="833d84a0-2cdf-4abb-939f-5461b7ca73bc" level="0" time="2011-02-24 19:16:04" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="833d84a0-2cdf-4abb-939f-5461b7ca73bc" level="1" time="2011-02-24 19:16:04" type="Debug">SQLHelper.ExecuteDataset Time=2.3019685462817201627581159000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="833d84a0-2cdf-4abb-939f-5461b7ca73bc" level="1" time="2011-02-24 19:16:04" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.402 ms</message>
+<message thread="6f61430c-91b0-4cf8-94fd-d7cda017ce67" level="0" time="2011-02-24 19:29:26" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="6f61430c-91b0-4cf8-94fd-d7cda017ce67" level="0" time="2011-02-24 19:29:26" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="6f61430c-91b0-4cf8-94fd-d7cda017ce67" level="1" time="2011-02-24 19:29:26" type="Debug">SQLHelper.ExecuteDataset Time=4.073143374367412618084142000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="6f61430c-91b0-4cf8-94fd-d7cda017ce67" level="1" time="2011-02-24 19:29:26" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=4.237 ms</message>
+<message thread="69430807-faa3-4e3d-89a3-22ab1bce8441" level="0" time="2011-02-24 19:30:14" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="69430807-faa3-4e3d-89a3-22ab1bce8441" level="0" time="2011-02-24 19:30:14" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="69430807-faa3-4e3d-89a3-22ab1bce8441" level="1" time="2011-02-24 19:30:14" type="Debug">SQLHelper.ExecuteDataset Time=1.7650287955592121345031282000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="69430807-faa3-4e3d-89a3-22ab1bce8441" level="1" time="2011-02-24 19:30:14" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1.838 ms</message>
+<message thread="f8344025-c904-4b0f-8e23-ddfac9f98d93" level="0" time="2011-02-24 19:34:58" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="f8344025-c904-4b0f-8e23-ddfac9f98d93" level="0" time="2011-02-24 19:34:58" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="f8344025-c904-4b0f-8e23-ddfac9f98d93" level="1" time="2011-02-24 19:34:58" type="Debug">SQLHelper.ExecuteDataset Time=1.3870477951806724038949084000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="f8344025-c904-4b0f-8e23-ddfac9f98d93" level="1" time="2011-02-24 19:34:58" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1.480 ms</message>
+<message thread="b1ded255-ab90-4d85-8794-2e826dbebc97" level="0" time="2011-02-24 20:03:08" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="b1ded255-ab90-4d85-8794-2e826dbebc97" level="0" time="2011-02-24 20:03:08" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="b1ded255-ab90-4d85-8794-2e826dbebc97" level="1" time="2011-02-24 20:03:08" type="Debug">SQLHelper.ExecuteDataset Time=2.2089399630399953066660707000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="b1ded255-ab90-4d85-8794-2e826dbebc97" level="1" time="2011-02-24 20:03:08" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.352 ms</message>
+<message thread="000235d3-21c9-48bd-bb17-5c382018d508" level="0" time="2011-02-24 20:04:26" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="000235d3-21c9-48bd-bb17-5c382018d508" level="0" time="2011-02-24 20:04:26" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="000235d3-21c9-48bd-bb17-5c382018d508" level="1" time="2011-02-24 20:04:26" type="Debug">SQLHelper.ExecuteDataset Time=3.0545781656607194489802475000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="000235d3-21c9-48bd-bb17-5c382018d508" level="1" time="2011-02-24 20:04:26" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=3.131 ms</message>
+<message thread="7d8f4c83-f733-45e4-97f6-c547180b3cc4" level="0" time="2011-02-24 20:14:57" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="7d8f4c83-f733-45e4-97f6-c547180b3cc4" level="0" time="2011-02-24 20:14:57" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="7d8f4c83-f733-45e4-97f6-c547180b3cc4" level="1" time="2011-02-24 20:14:57" type="Debug">SQLHelper.ExecuteDataset Time=2.0633907382083477089965345000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="7d8f4c83-f733-45e4-97f6-c547180b3cc4" level="1" time="2011-02-24 20:14:57" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.163 ms</message>
+<message thread="c813d728-ca32-4d08-92bf-d25dea27c50d" level="0" time="2011-02-24 20:16:21" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="c813d728-ca32-4d08-92bf-d25dea27c50d" level="0" time="2011-02-24 20:16:21" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="c813d728-ca32-4d08-92bf-d25dea27c50d" level="1" time="2011-02-24 20:16:21" type="Debug">SQLHelper.ExecuteDataset Time=2.4173463387106461854788807000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="c813d728-ca32-4d08-92bf-d25dea27c50d" level="1" time="2011-02-24 20:16:21" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.528 ms</message>
+<message thread="04f814ef-b9b5-40a2-98af-e7fc840a8baf" level="0" time="2011-02-24 20:19:41" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="04f814ef-b9b5-40a2-98af-e7fc840a8baf" level="0" time="2011-02-24 20:19:41" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="04f814ef-b9b5-40a2-98af-e7fc840a8baf" level="1" time="2011-02-24 20:19:41" type="Debug">SQLHelper.ExecuteDataset Time=2.4262860223855266521303685000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="04f814ef-b9b5-40a2-98af-e7fc840a8baf" level="1" time="2011-02-24 20:19:41" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.586 ms</message>
+<message thread="d4275dd6-5ded-49b7-b69f-6067b56adc68" level="0" time="2011-02-24 20:20:02" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="d4275dd6-5ded-49b7-b69f-6067b56adc68" level="0" time="2011-02-24 20:20:02" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="d4275dd6-5ded-49b7-b69f-6067b56adc68" level="1" time="2011-02-24 20:20:02" type="Debug">SQLHelper.ExecuteDataset Time=2.1784891655224337171344403000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="d4275dd6-5ded-49b7-b69f-6067b56adc68" level="1" time="2011-02-24 20:20:02" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.234 ms</message>
+<message thread="af225b16-fbf2-4157-88e5-0eaf75c07a83" level="0" time="2011-02-24 20:20:35" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="af225b16-fbf2-4157-88e5-0eaf75c07a83" level="0" time="2011-02-24 20:20:35" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="af225b16-fbf2-4157-88e5-0eaf75c07a83" level="1" time="2011-02-24 20:20:35" type="Debug">SQLHelper.ExecuteDataset Time=2.6148574749025364955601899000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="af225b16-fbf2-4157-88e5-0eaf75c07a83" level="1" time="2011-02-24 20:20:35" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.706 ms</message>
+<message thread="4877ad24-27c2-4c2b-9c9e-204706802940" level="0" time="2011-02-24 20:22:13" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="4877ad24-27c2-4c2b-9c9e-204706802940" level="0" time="2011-02-24 20:22:13" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="4877ad24-27c2-4c2b-9c9e-204706802940" level="1" time="2011-02-24 20:22:13" type="Debug">SQLHelper.ExecuteDataset Time=2.3760003017143240272157495000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="4877ad24-27c2-4c2b-9c9e-204706802940" level="1" time="2011-02-24 20:22:13" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=2.430 ms</message>
+<message thread="97f8c801-d0b5-48ce-b58c-cdfeef3cd5c6" level="0" time="2011-02-24 20:23:49" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="97f8c801-d0b5-48ce-b58c-cdfeef3cd5c6" level="0" time="2011-02-24 20:23:49" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="97f8c801-d0b5-48ce-b58c-cdfeef3cd5c6" level="1" time="2011-02-24 20:23:49" type="Debug">SQLHelper.ExecuteDataset Time=1.7041272005240889554398674000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="97f8c801-d0b5-48ce-b58c-cdfeef3cd5c6" level="1" time="2011-02-24 20:23:49" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=1.795 ms</message>
+<message thread="ed97d58f-954e-4f03-b1e1-62fa2de894be" level="0" time="2011-02-24 20:29:50" type="Start">Entered Procedure Customer.GetTitles</message>
+<message thread="ed97d58f-954e-4f03-b1e1-62fa2de894be" level="0" time="2011-02-24 20:29:50" type="Start">Entered Procedure SQLHelper.ExecuteDataset</message>
+<message thread="ed97d58f-954e-4f03-b1e1-62fa2de894be" level="1" time="2011-02-24 20:29:50" type="Debug">SQLHelper.ExecuteDataset Time=3.7406988877077952644819383000 CommandType=StoredProcedure CommandText=USP_Get_SecretQuestions</message>
+<message thread="ed97d58f-954e-4f03-b1e1-62fa2de894be" level="1" time="2011-02-24 20:29:50" type="End">Exited Procedure SQLHelper.ExecuteDataset. Time=3.796 ms</message>

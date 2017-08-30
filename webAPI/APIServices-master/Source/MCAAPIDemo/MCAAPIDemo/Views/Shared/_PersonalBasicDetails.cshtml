@@ -1,0 +1,98 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+    var HideConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Mandatory_fields];
+    var JoinConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.JoinEmailMandatory];
+    bool islocale = false;
+    islocale = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsLocale.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    var races = Races.List as List<Race>;
+    var langauges = ISOLanguages.List as List<ISOLanguage>;
+    var currentPage = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+}
+@if (!Model.IsJoinPage)
+{
+    <legend id="lblyourcontdtls">@Html.Translate("Shared/_PersonalDetails", "lclYourContDetails.Text")</legend>
+}
+@if (HideConfig[DbConfigurationItemNames.HideFirstName].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforFirstname">
+        <label for="fld_firstName" id="lblFname">@Html.Translate("Shared/_PersonalDetails", "lclFirstName.Text")</label>
+        @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].FirstName, new { id = "fld_firstName", name = "fld_firstName", autocomplete = "off" })
+        
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideSurName].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforLastname">
+        <label for="fld_lastName" id="lblLastname">@Html.Translate("Shared/_PersonalDetails", "lclSurName.Text")</label>
+        @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].LastName, new { id = "fld_lastName", name = "fld_lastName", autocomplete = "off" })    
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideDOB].ConfigurationValue1.Equals("0"))
+{
+    <fieldset class="inline">
+    <legend>@Html.Translate("Shared/_PersonalDetails", "lclDOB.Text")</legend>
+        <div class="form-row hide" id="divforDay">
+            <label for="fld_dayOfBirth" id="lblDayofBirth">
+                Day Of Birth</label>
+            @Html.DropDownListFor(model => model.DayOfBirth, new SelectList(GeneralUtility.GetDays(), "Key", "Value", Model.DayOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectDay.Text").ToString(), new { id = "fld_dayOfBirth" })
+        </div>
+        <div class="form-row hide" id="divforMonthofBirth">
+            <label for="fld_monthOfBirth" id="lblMonthofBirth">
+                Month Of Birth</label>
+            @Html.DropDownListFor(model => model.MonthOfBirth, new SelectList(GeneralUtility.GetMonthsList(), "Key", "Value", Model.MonthOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectMonth.Text").ToString(), new { id = "fld_monthOfBirth" })
+        </div>
+        <div class="form-row hide" id="divforYearofBirth">
+            <label for="fld_yearOfBirth" id="lblYearofBirth">
+                Year Of Birth</label>
+            @Html.DropDownListFor(model => model.YearOfBirth, new SelectList(GeneralUtility.GetYearsList(), "Key", "Value", Model.YearOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectYear.Text").ToString(), new { id = "fld_yearOfBirth" })
+        </div>        
+
+    </fieldset>
+}
+@if (HideConfig[DbConfigurationItemNames.HideMobilePhoneNo].ConfigurationValue1.Equals("0"))
+{  
+    <div class="form-row" id="divforMobile">
+        <label for="fld_Mobilenumber" id="lblMobile">@Html.Translate("Shared/_PersonalDetails", "lclMobilePhoneNo.Text")</label>
+        @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MobileNumber, new { id = "fld_Mobilenumber", name = "Mobilenumber", placeholder = @Html.Translate("Shared/_PersonalDetails", "lclMobilePhoneNoExampleResource1.Text"), autocomplete = "off" })       
+    </div>
+}
+
+@Html.HiddenFor(model => model.HiddenAddressLine1)
+@Html.HiddenFor(model => model.HiddenAddressLine2)
+@Html.HiddenFor(model => model.HiddenAddressLine3)
+@Html.HiddenFor(model => model.HiddenAddressLine4)
+@Html.HiddenFor(model => model.HiddenAddressLine5)
+@Html.HiddenFor(model => model.HiddenAddressLine6)
+@Html.HiddenFor(model => model.HiddenFirstName)
+@Html.HiddenFor(model => model.HiddenMidName)
+@Html.HiddenFor(model => model.HiddenSurname)
+@Html.HiddenFor(model => model.HiddenDOB)
+@Html.HiddenFor(model => model.HiddenSex)
+@Html.HiddenFor(model => model.HiddenEmail)
+@Html.HiddenFor(model => model.HiddenPostcode)
+@Html.HiddenFor(model => model.HiddenEveningPhoneNumber)
+@Html.HiddenFor(model => model.HiddenSSN)
+@Html.HiddenFor(model => model.HiddenMobileNumber)
+@Html.HiddenFor(model => model.HiddenRaceID)
+@Html.HiddenFor(model => model.HiddenPassportNo)
+@Html.HiddenFor(model => model.HiddenISOLanguageCode)
+@Html.HiddenFor(model => model.HiddenSendEmailForAllergy)
+@Html.HiddenFor(model => model.HiddenSentEmail)
+@Html.HiddenFor(model => model.HiddenSendEmailForDietary)
+@Html.HiddenFor(model => model.HiddenDietary)
+@Html.HiddenFor(model => model.HiddenAllergy)
+@Html.HiddenFor(model => model.HiddenDietaryPreferences)
+@Html.HiddenFor(model => model.HiddenAllergyPreferences)
+@Html.HiddenFor(model => model.HiddenEmailPref)
+@Html.HiddenFor(model => model.HiddenMobilePref)
+@Html.HiddenFor(model => model.HiddenPostPref)

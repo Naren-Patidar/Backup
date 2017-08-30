@@ -1,0 +1,33 @@
+############################################################
+##
+### Generic
+##
+############################################################
+Logon.PrimaryCultureURL=logon.aspx?culture=ko-KR 
+Logon.SecondaryCultureURL=logon.aspx?culture=en-GB 
+
+Format.Report.TransactionAmount=#,##0
+Format.ReportDownload.TransactionAmount=0
+
+Format.Currency.TransactionAmount=#,0
+Format.Currency=#,0
+Format.ShortDate=yyyy\\/MM\\/dd
+Format.GeneralDateTime=yyyy\\/MM\\/dd HH:mm
+
+Format.DateSequence=dateYear,dateSeparator,dateMonth,dateSeparator,dateDay
+Format.OfficialId.Type=multi
+Format.OfficialId.Width=140
+Format.PostCode.FieldType=multi
+
+
+############################################################
+##
+### NGCCSD
+##
+############################################################
+NGCCSD.CustomerSearch.MaxLength.PhonePart1=4
+NGCCSD.CustomerSearch.MaxLength.PhonePart2=4
+NGCCSD.CustomerSearch.MaxLength.PhonePart3=4
+NGCCSD.UpdateDetails.MaxLength.PhonePart1=4
+NGCCSD.UpdateDetails.MaxLength.PhonePart2=4
+NGCCSD.UpdateDetails.MaxLength.PhonePart3=4

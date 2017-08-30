@@ -1,0 +1,28 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[USP_UpdateOfflineSummary]    Script Date: 02/06/2013 12:27:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[USP_UpdateOfflineSummary]       
+@fileName VARCHAR(1000),
+@InsertedTxns INT,
+@DuplicateTxns INT,
+@StoreID VARCHAR(20)
+AS      
+BEGIN    
+      Insert into TempOfflineSummary VALUES(@fileName,@InsertedTxns,@DuplicateTxns,@StoreID)
+   
+     
+--  
+--INSERT INTO TempOfflineSummary (OfflineFileName,NoofInsertedTxns,NoofDuplicateTxns,)  
+--SELECT   
+--T.offline.query('Column1').value('.', 'Varchar(50)') AS OfflineFileName,  
+--T.offline.query('Column2').value('.', 'Varchar(10)') AS NoofInsertedTxns,    
+--T.offline.query('Column3').value('.', 'Varchar(10)') AS NoofDuplicateTxns    
+--FROM @XmlDoc.nodes('OfflineData/offline') AS T(offline);    
+ 
+     
+     
+END

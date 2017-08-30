@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.ClubcardProducts.MCA.API.ServiceAdapter</RootNamespace>
+    <AssemblyName>Tesco.ClubcardProducts.MCA.API.ServiceAdapter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\WebAPI\ServiceLibs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\WebAPI\ServiceLibs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\DummyLocatorServiceClient.cs" />
+    <Compile Include="Contracts\ReferenceLocator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ClubcardCouponServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClubcardService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CouponService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CustomerActivationServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\JoinLoyaltyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NGCUtilityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PreferenceServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RewardService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SmartVoucherServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BaseNGCAdapter.cs" />
+    <Compile Include="Services\ClubcardCouponServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\ClubcardServiceAdapter.cs" />
+    <Compile Include="Services\CustomerActivationServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\CustomerServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\JoinLoyaltyServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\LocatorSvcSDAAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\PreferenceServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\RewardServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\SmartVoucherServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\UtilityServiceAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Common\API.Common.csproj">
+      <Project>{F5D1C51F-0E34-4062-9D48-59FC06AED200}</Project>
+      <Name>API.Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAPI.Contracts\API.Contracts.csproj">
+      <Project>{8B685445-2146-44C7-A13D-2250C5212BB6}</Project>
+      <Name>API.Contracts</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.wsdl" />
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService1.wsdl" />
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.ClubcardCouponServices.CouponInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService.wsdl" />
+    <None Include="Service References\ClubcardService\ClubcardService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService1.wsdl" />
+    <None Include="Service References\ClubcardService\ClubcardService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.ClubcardService.GetFuelBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CouponService\CouponService.wsdl" />
+    <None Include="Service References\CouponService\CouponService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CouponService\CouponService1.wsdl" />
+    <None Include="Service References\CouponService\CouponService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ActivationServices5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerActivationServices\ClubcardOnlineService.wsdl" />
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.AccountCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.AccountDuplicateCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.AccountFindByClubcardNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.AccountLinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.AccountUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerActivationServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerActivationServices.ValidateClubcardAccountExistsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService.wsdl" />
+    <None Include="Service References\CustomerService\CustomerService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService1.wsdl" />
+    <None Include="Service References\CustomerService\CustomerService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerService.CouponResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerService\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.CustomerService.MembershipUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\service.wsdl" />
+    <None Include="Service References\JoinLoyaltyService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCUtilityService\service.wsdl" />
+    <None Include="Service References\NGCUtilityService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCUtilityService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\service.wsdl" />
+    <None Include="Service References\PreferenceServices\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.PreferenceServices.ClubDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PreferenceServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.PreferenceServices.CustomerPreference.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PreferenceServices\Tesco.com.ClubcardOnline.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RewardService\service.wsdl" />
+    <None Include="Service References\RewardService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RewardService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RewardService\service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\01.wsdl" />
+    <None Include="Service References\SmartVoucherServices\01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\service.wsdl" />
+    <None Include="Service References\SmartVoucherServices\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetRewardDtlsMilesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetRewardDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetUnusedVoucherDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetUsedVoucherDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetVoucherValAllCPSRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.ClubcardProducts.MCA.API.ServiceAdapter.SmartVoucherServices.GetVoucherValHHRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\Tesco.com.IntegrationServices.Messages.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ClubcardCouponServices\" />
+    <WCFMetadataStorage Include="Service References\ClubcardService\" />
+    <WCFMetadataStorage Include="Service References\CouponService\" />
+    <WCFMetadataStorage Include="Service References\CustomerActivationServices\" />
+    <WCFMetadataStorage Include="Service References\CustomerService\" />
+    <WCFMetadataStorage Include="Service References\JoinLoyaltyService\" />
+    <WCFMetadataStorage Include="Service References\NGCUtilityService\" />
+    <WCFMetadataStorage Include="Service References\PreferenceServices\" />
+    <WCFMetadataStorage Include="Service References\RewardService\" />
+    <WCFMetadataStorage Include="Service References\SmartVoucherServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\CustomerService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardService\ClubcardService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SmartVoucherServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SmartVoucherServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SmartVoucherServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CouponService\CouponService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CouponService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CouponService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CouponService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerActivationServices\ActivationServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerActivationServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerActivationServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerActivationServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JoinLoyaltyService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JoinLoyaltyService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JoinLoyaltyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NGCUtilityService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NGCUtilityService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NGCUtilityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PreferenceServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PreferenceServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PreferenceServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RewardService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RewardService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RewardService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardCouponServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardCouponServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClubcardCouponServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

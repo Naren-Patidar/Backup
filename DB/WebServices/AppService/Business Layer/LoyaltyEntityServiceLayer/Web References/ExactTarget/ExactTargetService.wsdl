@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://us.tescos.com/m025/integration/emailservice/v1/0" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://us.tescos.com/m025/integration/emailservice/v1/0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://us.tescos.com/m025/integration/emailservice/v1/0">
+      <s:element name="SendEmailRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="Details">
+                    <s:complexType>
+                      <s:attribute name="Name" type="s:string" />
+                      <s:attribute name="Value" type="s:string" />
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+                <s:attribute name="EmailType" type="s:string" />
+                <s:attribute name="EmailAddress" type="s:string" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendEmailRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailRequest" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExactTargetServiceSoap">
+    <wsdl:operation name="SendEmailRequest">
+      <wsdl:input message="tns:SendEmailRequestSoapIn" />
+      <wsdl:output message="tns:SendEmailRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExactTargetServiceHttpGet" />
+  <wsdl:portType name="ExactTargetServiceHttpPost" />
+  <wsdl:binding name="ExactTargetServiceSoap" type="tns:ExactTargetServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendEmailRequest">
+      <soap:operation soapAction="http://us.tescos.com/m025/integration/emailservice/v1/0/SendEmailRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExactTargetServiceSoap12" type="tns:ExactTargetServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendEmailRequest">
+      <soap12:operation soapAction="http://us.tescos.com/m025/integration/emailservice/v1/0/SendEmailRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExactTargetServiceHttpGet" type="tns:ExactTargetServiceHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="ExactTargetServiceHttpPost" type="tns:ExactTargetServiceHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="ExactTargetService">
+    <wsdl:port name="ExactTargetServiceSoap" binding="tns:ExactTargetServiceSoap">
+      <soap:address location="http://localhost/TOM.M025.NGCToExactTarget.WebService/ExactTargetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExactTargetServiceSoap12" binding="tns:ExactTargetServiceSoap12">
+      <soap12:address location="http://localhost/TOM.M025.NGCToExactTarget.WebService/ExactTargetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExactTargetServiceHttpGet" binding="tns:ExactTargetServiceHttpGet">
+      <http:address location="http://localhost/TOM.M025.NGCToExactTarget.WebService/ExactTargetService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExactTargetServiceHttpPost" binding="tns:ExactTargetServiceHttpPost">
+      <http:address location="http://localhost/TOM.M025.NGCToExactTarget.WebService/ExactTargetService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

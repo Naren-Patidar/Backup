@@ -1,0 +1,25 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Olt_BulkInsert_Txnfile]    Script Date: 02/06/2013 12:29:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+ALTER  PROCEDURE [dbo].[sp_Olt_BulkInsert_Txnfile]
+@Path Varchar(250),
+@FormatFilePath Varchar(250),
+@NoOfTxns varchar(10)
+AS
+BEGIN
+set	nocount on
+Declare @Query Varchar(2500)
+
+Truncate table TempOfflineData
+
+Set @Query = " BULK INSERT TempOfflineData FROM  '" + @Path   + "' WITH  (formatfile ='" + @FormatFilePath + "',FIELDTERMINATOR = '~', ROWTERMINATOR = '\n',LASTROW = " + @NoOfTxns + ",KEEPNULLS) "  
+print @Query
+Exec(@Query)
+End
+--EXEC  sp_bonuslink_validate_Offlinedata
+
+

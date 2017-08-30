@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="CampaignAnon">
+    <xs:annotation>
+      <xs:documentation>Anonimised output from Capaign Tool to Dunnhumby</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CampaignID" type="xs:int" />
+        <xs:element name="CampaignName" type="xs:string" />
+        <xs:element name="TotalRecordsForCampaign" type="xs:int" />
+        <xs:sequence maxOccurs="10000">
+          <xs:element name="Customer">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OfferID">
+                  <xs:annotation>
+                    <xs:documentation>What is format of offer ids?</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Loyalty" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Lapsing" />
+                      <xs:enumeration value="Gone Away" />
+                      <xs:enumeration value="Premium" />
+                      <xs:enumeration value="Valuable" />
+                      <xs:enumeration value="Potential" />
+                      <xs:enumeration value="Uncommitted" />
+                      <xs:enumeration value="" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:choice>
+                  <xs:sequence>
+                    <xs:element name="JoinedStore" type="xs:int" />
+                    <xs:element name="PreferredStore" type="xs:int" />
+                  </xs:sequence>
+                  <xs:element name="PreferredStore" type="xs:int" />
+                </xs:choice>
+                <xs:element name="PriceSensitivity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Up Market" />
+                      <xs:enumeration value="Mid Market" />
+                      <xs:enumeration value="Price Sensitive" />
+                      <xs:enumeration value="Unclassified" />
+                      <xs:enumeration value="" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Gender">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="M" />
+                      <xs:enumeration value="F" />
+                      <xs:enumeration value="U" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CustomerID" type="xs:int" />
+                <xs:element name="AverageWeeklySpendBand" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>What are the values for this? Is this needed for fulfillment house? </xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ContactMedium" maxOccurs="4">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="MediumType">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:enumeration value="Mail" />
+                            <xs:enumeration value="SMS" />
+                            <xs:enumeration value="EMail" />
+                            <xs:enumeration value="Telephone" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

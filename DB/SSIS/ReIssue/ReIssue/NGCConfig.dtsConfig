@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="DEV01\EZ08dev" GeneratedFromPackageName="pkgNGCReissueGenerateFileforSmartVouchers" GeneratedFromPackageID="{1876F979-CAF0-4A40-B9ED-AC0CF55D5E5D}" GeneratedDate="11/12/2013 6:44:01 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportingConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.149.228;User ID=sa;Password=Tesco123;Initial Catalog=TSMData;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-pkgNGCGenerateFileforSmartVouchers-{7E5CAB10-A38C-4BCE-B6C4-A1F1A3999297}NGCReportingConnectionString;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCTSMConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.48;User ID=sa;Password=Tesco123;Initial Catalog=TSMData;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-pkgNGCGenerateFileforSmartVouchers-{C6B0386B-C2CE-461C-A305-748478C8F6DF}NGCTSMConnectionString;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ArchiveFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Input\Archive\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>ReissueRequest</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Input\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::MailingNumber].Properties[Value]" ValueType="String">
+		<ConfiguredValue>001</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Path].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Output\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SVFileName_High].Properties[Value]" ValueType="String">
+		<ConfiguredValue>MailingFileHigh</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SVFileName_Normal].Properties[Value]" ValueType="String">
+		<ConfiguredValue>MailingFileNorm</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SVOutputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Projects\NGC_Statement\Data\Output\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::UserLogFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>NGCStatementSVAllocation_</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::UserLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Projects\NGC_Statement\Data\Log\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

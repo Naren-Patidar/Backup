@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pptxn>
+  <file_name>1_20120823_4.xml</file_name>
+  <sending_org>1</sending_org>
+  <date_created>20120823</date_created>
+  <time_created>023608</time_created>
+  <sequence_number>4</sequence_number>
+  <transaction_count>4</transaction_count>
+  <transaction>
+    <partner_number>1999</partner_number>
+    <partner_outlet_ref>0</partner_outlet_ref>
+    <partner_outlet_name/>
+    <card_account_number>634002400023396696</card_account_number>
+    <transaction_date>20120822</transaction_date>
+    <transaction_time>140251</transaction_time>
+    <spend>0.00</spend>
+    <partner_points>10</partner_points>
+    <partner_reference>1234567890</partner_reference>
+    <partner_pos_id>100</partner_pos_id>
+  </transaction>
+  <transaction>
+    <partner_number>1998</partner_number>
+    <partner_outlet_ref>0</partner_outlet_ref>
+    <partner_outlet_name/>
+    <card_account_number>634002400023396696</card_account_number>
+    <transaction_date>20120822</transaction_date>
+    <transaction_time>140252</transaction_time>
+    <spend>50.00</spend>
+    <partner_points>100</partner_points>
+    <partner_reference>1234567891</partner_reference>
+    <partner_pos_id>100</partner_pos_id>
+  </transaction>
+<transaction>
+    <partner_number>1997</partner_number>
+    <partner_outlet_ref>0</partner_outlet_ref>
+    <partner_outlet_name/>
+    <card_account_number>634002400023396696</card_account_number>
+    <transaction_date>20120822</transaction_date>
+    <transaction_time>140253</transaction_time>
+    <spend>0</spend>
+    <partner_points>-10</partner_points>
+    <partner_reference>1234567892</partner_reference>
+    <partner_pos_id>100</partner_pos_id>
+  </transaction>
+<transaction>
+    <partner_number>1997</partner_number>
+    <partner_outlet_ref>0</partner_outlet_ref>
+    <partner_outlet_name/>
+    <card_account_number>634002400023396696</card_account_number>
+    <transaction_date>20120822</transaction_date>
+    <transaction_time>140254</transaction_time>
+    <spend>-4.00</spend>
+    <partner_points>-100</partner_points>
+    <partner_reference>1234567893</partner_reference>
+    <partner_pos_id>100</partner_pos_id>
+  </transaction>
+  </pptxn>

@@ -1,0 +1,244 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "PosSocketsService"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                RootNamespace = "Fujitsu.eCrm.Seoul.PosSocketsService"
+                StartupObject = "Fujitsu.eCrm.Seoul.PosSocketsService.PosSocketsService"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = "PosSocketsService.xml"
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Lite Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\Lite Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.ServiceProcess"
+                    AssemblyName = "System.ServiceProcess"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.ServiceProcess.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Management"
+                    AssemblyName = "System.Management"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Management.dll"
+                />
+                <Reference
+                    Name = "System.Configuration.Install"
+                    AssemblyName = "System.Configuration.Install"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Configuration.Install.dll"
+                />
+                <Reference
+                    Name = "CrmServiceGeneric"
+                    AssemblyName = "CrmServiceGeneric"
+                    HintPath = "..\..\CrmServiceGeneric\bin\CrmServiceGeneric.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces"
+                    AssemblyName = "Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces"
+                    HintPath = "..\..\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ISharedUtils"
+                    AssemblyName = "ISharedUtils"
+                    HintPath = "..\..\ISharedUtils\bin\ISharedUtils.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SharedUtils"
+                    AssemblyName = "SharedUtils"
+                    HintPath = "..\..\SharedUtils\bin\SharedUtils.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.ApplicationBlocks.ExceptionManagement"
+                    AssemblyName = "Microsoft.ApplicationBlocks.ExceptionManagement"
+                    HintPath = "..\..\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ICrmConnect"
+                    AssemblyName = "ICrmConnect"
+                    HintPath = "..\..\ICrmConnect\bin\ICrmConnect.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ICrmGeneric"
+                    AssemblyName = "ICrmGeneric"
+                    HintPath = "..\..\ICrmGeneric\bin\ICrmGeneric.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ICrmReport"
+                    AssemblyName = "ICrmReport"
+                    HintPath = "..\..\ICrmReport\bin\ICrmReport.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ICrmTest"
+                    AssemblyName = "ICrmTest"
+                    HintPath = "..\..\ICrmTest\bin\ICrmTest.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "LocalizationLibrary"
+                    AssemblyName = "LocalizationLibrary"
+                    HintPath = "..\..\LocalizationLibrary\bin\LocalizationLibrary.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "IPosHandler"
+                    AssemblyName = "IPosHandler"
+                    HintPath = "..\IPosHandler\bin\IPosHandler.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "ICrmAdmin"
+                    AssemblyName = "ICrmAdmin"
+                    HintPath = "..\ICrmAdmin\bin\ICrmAdmin.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AssemblyVersionInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PosApplication.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PosListener.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PosListenerTable.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PosSocketsService.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PosSocketsService.resx"
+                    DependentUpon = "PosSocketsService.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PosSocketsService.exe.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "ProjectInstaller.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ProjectInstaller.resx"
+                    DependentUpon = "ProjectInstaller.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Resources\ErrorMessages.resx"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

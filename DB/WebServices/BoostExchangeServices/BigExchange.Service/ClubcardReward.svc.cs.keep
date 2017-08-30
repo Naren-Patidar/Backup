@@ -1,0 +1,413 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+
+namespace BigExchange.Service
+{
+    public class ClubcardReward : IClubcardReward
+    {
+
+        private InstoreClubcardReward.Business.Booking _bizBooking;
+        private InstoreClubcardReward.Business.VoucherCollection _bizVoucherColl;
+
+        /// <summary>
+        /// Returns a collection of categories by making a call to the GetCategories() method of InstoreClubcardReward.Business.CategoryCollection class
+        /// then parses the returned value into an object of BigExchange.CategoryCollection and finally returns it.
+        /// </summary>
+       
+       
+        private void ParseBookingDataToBiz(Booking bookingData)
+        {
+            //create objects from local business class
+            _bizBooking = new InstoreClubcardReward.Business.Booking();
+
+            _bizBooking.BookingId = bookingData.BookingId;
+            _bizBooking.StoreId = bookingData.StoreId;
+            _bizBooking.UserId = bookingData.UserId;
+            _bizBooking.TillId = bookingData.TillId;
+            _bizBooking.BookingType = bookingData.BookingType;
+            _bizBooking.Clubcard = bookingData.Clubcard;
+            _bizBooking.Change = bookingData.Change;
+            _bizBooking.PrintNumber = bookingData.PrintNumber;
+            _bizBooking.ErrorType = (InstoreClubcardReward.Business.ErrorTypes)bookingData.ErrorType;
+            _bizBooking.ReprintReason = bookingData.ReprintReason;
+            _bizBooking.TrainingMode = bookingData.TrainingMode;
+            _bizBooking.CreateDate = bookingData.CreateDate;
+            _bizBooking.Status = bookingData.Status;
+            _bizBooking.StatusDate = bookingData.StatusDate;
+
+            //create voucher collection on the booking biz object
+            #region Voucher
+            foreach (Voucher dataVoucher in bookingData.Vouchers)
+            {
+                InstoreClubcardReward.Business.Voucher bizVoucher = new InstoreClubcardReward.Business.Voucher();
+                bizVoucher.Alpha = dataVoucher.Alpha;
+                bizVoucher.Channel = dataVoucher.Channel;
+                bizVoucher.Clubcard = dataVoucher.Clubcard;
+                bizVoucher.Country = dataVoucher.Country;
+                bizVoucher.Ean = dataVoucher.Ean;
+                bizVoucher.ExpiryDate = dataVoucher.ExpiryDate;
+                bizVoucher.IsUsed = dataVoucher.IsUsed;
+                bizVoucher.ResponseClubcard = dataVoucher.ResponseClubcard;
+                bizVoucher.ResponseCode = dataVoucher.ResponseCode;
+                bizVoucher.ResponseValue = dataVoucher.ResponseValue;
+                bizVoucher.Status = (InstoreClubcardReward.Business.VoucherStatus)dataVoucher.Status;
+                bizVoucher.StoreNo = dataVoucher.StoreNo;
+                bizVoucher.Type = (InstoreClubcardReward.Business.VoucherTypes)dataVoucher.Type;
+                bizVoucher.UseDateTime = dataVoucher.UseDateTime;
+                bizVoucher.VirtualStore = dataVoucher.VirtualStore;
+                bizVoucher.VoucherId = dataVoucher.VoucherId;
+                _bizBooking.Vouchers.Add(bizVoucher);
+            }
+            #endregion
+
+            //create product collection on the booking biz object
+            //a product has 1 Category object
+            #region Product
+            InstoreClubcardReward.Business.Product bizProduct = new InstoreClubcardReward.Business.Product();
+            foreach (Product dataProduct in bookingData.Products)
+            {
+                #region category
+                bizProduct.Category = new InstoreClubcardReward.Business.Category();
+                bizProduct.Category.CategoryId = dataProduct.Category.CategoryId;
+                bizProduct.Category.Description = dataProduct.Category.Description;
+                bizProduct.Category.ImageFilename = dataProduct.Category.ImageFilename;
+                //TODO manage the recurrsion, a catagory has a parent which is also a category
+                //bizProduct.Category.Parent = dataProduct.Category.Parent;
+                bizProduct.Category.TokenValue = dataProduct.Category.TokenValue;
+                #endregion
+
+                bizProduct.Country = dataProduct.Country;
+                bizProduct.CustomerPrice = dataProduct.CustomerPrice;
+                bizProduct.Description = dataProduct.Description;
+                bizProduct.ImageFilename = dataProduct.ImageFilename;
+                bizProduct.LongDescription = dataProduct.LongDescription;
+                bizProduct.ProductCode = dataProduct.ProductCode;
+                bizProduct.ProductType = (InstoreClubcardReward.Business.ProductType)dataProduct.ProductType;
+                bizProduct.ShortDescription = dataProduct.ShortDescription;
+                bizProduct.TokenDescription = dataProduct.TokenDescription;
+                bizProduct.TokenTermsAndConditions = dataProduct.TokenTermsAndConditions;
+                bizProduct.TokenTitle = dataProduct.TokenTitle;
+                bizProduct.TokenType = (InstoreClubcardReward.Business.TokenType)dataProduct.TokenType;
+                bizProduct.TokenValue = dataProduct.TokenValue;
+                bizProduct.UsedByDate = dataProduct.UsedByDate;
+                bizProduct.ValidUntil = dataProduct.ValidUntil;
+                bizProduct.VendorCode = dataProduct.VendorCode;
+            }
+            #endregion
+
+            //create ProductLine collection - which conatins a collection of Tokens
+            #region Token
+
+            foreach (ProductLine dataProductLine in bookingData.ProductLines)
+            {
+                InstoreClubcardReward.Business.ProductLine bizProductLine = new InstoreClubcardReward.Business.ProductLine();
+                bizProductLine.ProductLineId = dataProductLine.ProductLineId;
+                bizProductLine.ProductNumber = dataProductLine.ProductNumber;
+
+                foreach (Token dataToken in dataProductLine.Tokens)  //null here
+                {
+                    InstoreClubcardReward.Business.Token bizToken = new InstoreClubcardReward.Business.Token();
+                    bizToken.Alpha = dataToken.Alpha;
+                    bizToken.CustomerDate = dataToken.CustomerDate;
+                    bizToken.EAN = dataToken.EAN;
+                    bizToken.EndDate = dataToken.EndDate;
+                    bizToken.ProductCode = dataToken.ProductCode;
+                    bizToken.ProductLineId = dataToken.ProductLineId;
+                    bizToken.ResponseCode = dataToken.ResponseCode;
+                    bizToken.SupplierTokenCodeId = dataToken.SupplierTokenCodeId;
+                    bizToken.SupplyDate = dataToken.SupplyDate;
+                    bizToken.TokenId = dataToken.TokenId;
+                    bizToken.TokenValue = dataToken.TokenValue;
+                    bizToken.UsedByDate = dataToken.UsedByDate;
+                    bizToken.VendorCode = dataToken.VendorCode;
+                    bizProductLine.Tokens.Add(bizToken); //add newloy created token to product line collection
+                }
+
+            }
+            #endregion
+
+        }
+
+        private void ParseVoucherDataToBiz(VoucherCollection voucherColl)
+        {
+            //create objects from local business class
+            _bizVoucherColl = new InstoreClubcardReward.Business.VoucherCollection();
+            //create voucher collection on the booking biz object
+            #region Voucher
+            foreach (Voucher dataVoucher in voucherColl)
+            {
+                InstoreClubcardReward.Business.Voucher bizVoucher = new InstoreClubcardReward.Business.Voucher();
+                bizVoucher.Alpha = dataVoucher.Alpha;
+                bizVoucher.Channel = dataVoucher.Channel;
+                bizVoucher.Clubcard = dataVoucher.Clubcard;
+                bizVoucher.Country = dataVoucher.Country;
+                bizVoucher.Ean = dataVoucher.Ean;
+                bizVoucher.ExpiryDate = dataVoucher.ExpiryDate;
+                bizVoucher.IsUsed = dataVoucher.IsUsed;
+                bizVoucher.ResponseClubcard = dataVoucher.ResponseClubcard;
+                bizVoucher.ResponseCode = dataVoucher.ResponseCode;
+                bizVoucher.ResponseValue = dataVoucher.ResponseValue;
+                bizVoucher.Status = (InstoreClubcardReward.Business.VoucherStatus)dataVoucher.Status;
+                bizVoucher.StoreNo = dataVoucher.StoreNo;
+                bizVoucher.Type = (InstoreClubcardReward.Business.VoucherTypes)dataVoucher.Type;
+                bizVoucher.UseDateTime = dataVoucher.UseDateTime;
+                bizVoucher.VirtualStore = dataVoucher.VirtualStore;
+                bizVoucher.VoucherId = dataVoucher.VoucherId;
+                _bizVoucherColl.Add(bizVoucher);
+            }
+            #endregion
+        }
+
+        public int GetBookingBalance(Booking booking)
+        {
+            int retVal = 0;
+            try
+            {
+                //setup our biz class with data
+                ParseBookingDataToBiz(booking);
+
+                //now execute the method and pass results back to caller
+                retVal = _bizBooking.GetBookingBalance();
+            }
+            catch (Exception ex)
+            {
+                CustomException objEx = new CustomException();
+                objEx.StatusCode = "Error in Funtion:GetBookingBalance()";
+                objEx.ErrorMessage = ex.Message;
+            }
+            return retVal;
+
+        }
+
+        /// <summary>
+        /// Returns a collection of products by making a call to the GetProducts() method of InstoreClubcardReward.Business.ProductCollection class
+        /// then parses the returned value into an object of BigExchange.ProductCollection and finally returns it.
+        /// </summary>
+        public ProductCollection GetProducts()
+        {
+            BigExchange.ProductCollection objBigExProdColl = new ProductCollection(); 
+            try
+            {
+                InstoreClubcardReward.Business.ProductCollection bizProductCollection = InstoreClubcardReward.Business.ProductCollection.GetProducts(true);
+                foreach (InstoreClubcardReward.Business.Product bizProduct in bizProductCollection)
+                {
+                    BigExchange.Product objBigExProd = new Product();
+                    objBigExProd.Description = bizProduct.Description;
+                    objBigExProd.StrippedDescription = bizProduct.StrippedDescription; 
+                    objBigExProd.ProductCode = bizProduct.ProductCode;
+                    objBigExProd.VendorCode = bizProduct.VendorCode;
+                    objBigExProd.CustomerPrice = bizProduct.CustomerPrice;
+                    objBigExProd.TokenValue = bizProduct.TokenValue;
+                    objBigExProd.Country = bizProduct.Country;
+                    objBigExProd.ValidUntil = bizProduct.ValidUntil;
+                    objBigExProd.UsedByDate = bizProduct.UsedByDate;
+                    objBigExProd.ImageFilename = bizProduct.ImageFilename;
+                    objBigExProd.ShortDescription = bizProduct.ShortDescription;
+                    objBigExProd.LongDescription = bizProduct.LongDescription;
+                    objBigExProd.ProductType = (BigExchange.ProductType)bizProduct.ProductType;
+                    objBigExProd.TokenType = (BigExchange.TokenType)bizProduct.TokenType;
+                    objBigExProd.TokenTitle = bizProduct.TokenTitle;
+                    objBigExProd.TokenDescription = bizProduct.TokenDescription;
+                    objBigExProd.TokenTermsAndConditions = bizProduct.TokenTermsAndConditions;
+
+                    //Category object
+                    objBigExProd.Category = new Category();
+                    objBigExProd.Category.CategoryId = bizProduct.Category.CategoryId;
+                    objBigExProd.Category.Description = bizProduct.Category.Description;
+                    objBigExProd.Category.ImageFilename = bizProduct.Category.ImageFilename;
+                    objBigExProd.Category.TokenValue = bizProduct.Category.TokenValue;
+                    objBigExProd.Category.Parent = null;
+
+                    objBigExProdColl.Add(objBigExProd);
+                }
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:GetProducts()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx,"Exception occured while getting the list of Products");
+            }
+            return objBigExProdColl; 
+        }
+
+        /// <summary>
+        /// Returns a collection of categories by making a call to the GetCategories() method of InstoreClubcardReward.Business.CategoryCollection class
+        /// then parses the returned value into an object of BigExchange.CategoryCollection and finally returns it.
+        /// </summary>
+        public CategoryCollection GetCategories()
+        {
+            BigExchange.CategoryCollection objBigExCategoryColl = new CategoryCollection();
+            try
+            {
+                InstoreClubcardReward.Business.CategoryCollection bizCategoryCollection = InstoreClubcardReward.Business.CategoryCollection.GetCategories(true);
+                foreach (InstoreClubcardReward.Business.Category bizCategory in bizCategoryCollection)
+                {
+                    BigExchange.Category objBigExCategory = new Category();
+                    objBigExCategory.CategoryId = bizCategory.CategoryId;
+                    objBigExCategory.Description = bizCategory.Description;
+                    objBigExCategory.ImageFilename = bizCategory.ImageFilename;
+                    objBigExCategory.TokenValue = bizCategory.TokenValue;
+                    objBigExCategory.Parent = null;
+                    objBigExCategoryColl.Add(objBigExCategory);
+                }
+                return objBigExCategoryColl;
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:GetCategories()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while getting the list of Categories");
+            }    
+        }
+
+        /// <summary>
+        /// Returns a collection of category collection  by making a call to the GetCategoryIncludes() method of InstoreClubcardReward.Business.GetCategoryIncludesCollection class
+        /// then parses the returned value into an object of BigExchange.CategoryIncludesCollection and finally returns it.
+        /// </summary>
+        public CategoryIncludesCollection GetCategoryIncludes(int categoryId)
+        {
+            BigExchange.CategoryIncludesCollection objBigExCatIncColl = new CategoryIncludesCollection();
+            try
+            {
+                InstoreClubcardReward.Business.CategoryIncludesCollection bizCatIncCollection = InstoreClubcardReward.Business.CategoryIncludesCollection.GetCategoryIncludes(categoryId,true);
+                foreach (InstoreClubcardReward.Business.CategoryIncludes bizCatInc in bizCatIncCollection)
+                {
+                    BigExchange.CategoryIncludes objBigExCatInc = new CategoryIncludes();
+                    objBigExCatInc.CategoryId = bizCatInc.CategoryId;
+                    objBigExCatInc.LineId = bizCatInc.LineId;
+                    objBigExCatInc.Description1 = bizCatInc.Description1;
+                    objBigExCatInc.Description2 = bizCatInc.Description2;
+                    objBigExCatInc.Description3 = bizCatInc.Description3;
+                    objBigExCatIncColl.Add(objBigExCatInc);
+                }
+                return objBigExCatIncColl;
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:CategoryIncludesCollection()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while getting the list of CategoryIncludesCollection");
+            }
+        }
+
+        /// <summary>
+        /// Returns a collection of PrintReasons  by making a call to the GetPrintReasons() method of InstoreClubcardReward.Business.PrintReasonCollection class
+        /// then parses the returned value into an object of BigExchange.PrintReasonCollection and finally returns it.
+        /// </summary>
+        public PrintReasonCollection GetPrintReasons()
+        {
+            BigExchange.PrintReasonCollection objBigExPrntRsnColl = new PrintReasonCollection();
+            try
+            {
+                InstoreClubcardReward.Business.PrintReasonCollection bizPrntRsnCollection = InstoreClubcardReward.Business.PrintReasonCollection.GetPrintReasons(true);
+                foreach (InstoreClubcardReward.Business.PrintReason bizPrntRsn in bizPrntRsnCollection)
+                {
+                    BigExchange.PrintReason objBigExPrntRsn = new PrintReason();
+                    objBigExPrntRsn.PrintReasonId = bizPrntRsn.PrintReasonId;
+                    objBigExPrntRsn.DisplayOrder = bizPrntRsn.DisplayOrder;
+                    objBigExPrntRsn.PrintReasonText = bizPrntRsn.PrintReasonText;
+                    objBigExPrntRsn.Enabled = bizPrntRsn.Enabled;
+                    objBigExPrntRsnColl.Add(objBigExPrntRsn);
+                }
+                return objBigExPrntRsnColl;
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:GetPrintReasons()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while getting the list of PrintReasons");
+            }
+        }
+
+ 
+        /// <summary>
+        /// Validates the given set of vouchers by making a call to SV webservice
+        /// </summary>
+        public void ValidateVouchers(VoucherCollection voucherColl, string clubcard, int agentId, string country)
+        {
+            try
+            {
+                 ParseVoucherDataToBiz(voucherColl);
+                 _bizVoucherColl.ValidateVouchers(clubcard, agentId, country);
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:ValidateVouchers()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while validating the voucher list");
+            }
+        }
+
+
+        /// <summary>
+        /// Validates the given set of vouchers by making a call to SV webservice
+        /// </summary>
+        public Boolean ProcessBooking(Booking bookingData)
+        {
+            Boolean lbFlag = false;
+            try
+            {
+               ParseBookingDataToBiz(bookingData);
+               lbFlag= _bizBooking.ProcessBooking();
+               return lbFlag;
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:ProcessBooking()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while processing the booking details");
+            }
+        }
+
+
+        public void SaveToBookingError(Booking bookingData, string error)
+        {
+            try
+            {
+                //ParseDataToBiz(bookingData);
+                _bizBooking = new InstoreClubcardReward.Business.Booking();
+                _bizBooking.BookingId = bookingData.BookingId;
+                _bizBooking.SaveToBookingError(error);
+
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:SaveToBookingError()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while storing errors to BookingError");
+            }
+        }
+        public void SaveToTraining(Booking bookingData, string locationDescription)
+        {
+            try
+            {
+                _bizBooking = new InstoreClubcardReward.Business.Booking();
+                _bizBooking.BookingId = bookingData.BookingId;
+                _bizBooking.StoreId = bookingData.StoreId;
+                _bizBooking.TillId = bookingData.TillId;
+                _bizBooking.UserId = bookingData.UserId;
+                _bizBooking.SaveToTraining(locationDescription);
+            }
+            catch (Exception ex)
+            {
+                CustomException objCustEx = new CustomException();
+                objCustEx.StatusCode = "Error in Funtion:SaveToTraining()";
+                objCustEx.ErrorMessage = ex.Message;
+                throw new FaultException<CustomException>(objCustEx, "Exception occured while storing data into Training table");
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<DirectoryRef Id="TARGETDIR">
+			<Component Id="cmp81D2AD1B89FB52EAD38300CEA29C5F51" Guid="{215C890D-8083-4AA6-BBA9-B6238E9C6E77}" KeyPath="yes">
+				<RegistryKey Action="createAndRemoveOnUninstall" Key="SYSTEM\ControlSet001\services\eventlog\ClubcardCoupons" Root="HKLM" />
+				<RegistryKey Action="createAndRemoveOnUninstall" Key="SYSTEM\ControlSet001\services\eventlog\ClubcardCoupons\CheckOutService" Root="HKLM" />
+				<RegistryKey Action="createAndRemoveOnUninstall" Key="SYSTEM\ControlSet001\services\eventlog\ClubcardCoupons\CouponCreationService" Root="HKLM" />
+				<RegistryKey Action="createAndRemoveOnUninstall" Key="SYSTEM\ControlSet001\services\eventlog\ClubcardCoupons\EnquiryService" Root="HKLM" />
+				<RegistryKey Action="createAndRemoveOnUninstall" Key="SYSTEM\ControlSet001\services\eventlog\ClubcardCoupons\AdHocCouponService" Root="HKLM" />
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+</Wix>

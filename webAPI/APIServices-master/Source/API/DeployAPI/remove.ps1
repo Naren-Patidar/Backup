@@ -1,0 +1,1 @@
+Remove-WebApplication -Site "Default Web Site" -Name "test/apigateway"

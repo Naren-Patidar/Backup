@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f7a20382-dca5-4d9a-9da2-948a4a9d3517" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56565/ClubcardReward.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClubcardReward.xsd" MetadataType="Schema" ID="c2bbd3c0-8c1b-4ef2-bcd6-ff7992a815aa" SourceId="1" SourceUrl="http://localhost:56565/ClubcardReward.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClubcardReward.wsdl" MetadataType="Wsdl" ID="eb0dae36-9363-44df-86ae-0e1acd7c1e6a" SourceId="1" SourceUrl="http://localhost:56565/ClubcardReward.svc?wsdl" />
+    <MetadataFile FileName="ClubcardReward1.xsd" MetadataType="Schema" ID="45309664-87f7-4851-af38-c506e4b2bddf" SourceId="1" SourceUrl="http://localhost:56565/ClubcardReward.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClubcardReward2.xsd" MetadataType="Schema" ID="5bda4900-452c-4d89-a6b0-68f34831ccb5" SourceId="1" SourceUrl="http://localhost:56565/ClubcardReward.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClubcardReward.disco" MetadataType="Disco" ID="d51b0741-067f-4215-9548-a0c8a58c7636" SourceId="1" SourceUrl="http://localhost:56565/ClubcardReward.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

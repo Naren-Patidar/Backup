@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPOSService", "IPOSService.csproj", "{4F7F0D0A-03A5-4796-8F51-1079FCE559D9}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {B379D6A8-D39E-4847-8E7C-9923DE9B4ED9}
+		SccProjectUniqueName1 = IPOSService.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4F7F0D0A-03A5-4796-8F51-1079FCE559D9}.Debug.ActiveCfg = Debug|.NET
+		{4F7F0D0A-03A5-4796-8F51-1079FCE559D9}.Debug.Build.0 = Debug|.NET
+		{4F7F0D0A-03A5-4796-8F51-1079FCE559D9}.Release.ActiveCfg = Release|.NET
+		{4F7F0D0A-03A5-4796-8F51-1079FCE559D9}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

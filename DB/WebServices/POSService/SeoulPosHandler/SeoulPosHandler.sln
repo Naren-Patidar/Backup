@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeoulPosHandler", "SeoulPosHandler.csproj", "{BF0418B4-BC79-4050-85A2-FE6A01A954A0}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SeoulPosHandler.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0418B4-BC79-4050-85A2-FE6A01A954A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0418B4-BC79-4050-85A2-FE6A01A954A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0418B4-BC79-4050-85A2-FE6A01A954A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0418B4-BC79-4050-85A2-FE6A01A954A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

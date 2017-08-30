@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="PosSocketsService.UnSupportedStoreIPAddress">
+		<value>The NGC port {0}:{1} does not support connection on remote port {2}:{3}</value>
+	</data>
+	<data name="PosSocketsService.SocketException">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} is not usable</value>
+	</data>
+	<data name="PosSocketsService.PosSet.DuplicateTransaction">
+		<value>Could not apply points as the transaction is a duplicate.  The transaction store is '{4}', date is '{5}', POS Number is '{6}' and Transaction Number is '{7}'.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{8}</value>
+	</data>
+	<data name="PosSocketsService.PosSet.InvalidCardNumber">
+		<value>Could not apply points as the card account number {4} is invalid.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{5}</value>
+	</data>
+	<data name="PosSocketsService.PosSet.FutureTransaction">
+		<value>Could not apply points as the transaction is too far in the future.  The transaction store is '{4}', date is '{5}', POS Number is '{6}' and Transaction Number is '{7}'.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{8}</value>
+	</data>
+	<data name="PosSocketsService.PosSet.PointsExceeded">
+		<value>Could not apply {5} points to Card Account {4} as the maximum points limit would be exceeded.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{6}</value>
+	</data>
+	<data name="PosSocketsService.PosVoucherRedeem.UnknownTransaction">
+		<value>Could not apply vouchers as the transaction is unknown.  The transaction store is '{4}', date is '{5}', POS Number is '{6}' and Transaction Number is '{7}'.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{8}</value>
+	</data>
+	<data name="PosSocketsService.TimeoutDataReceived">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has timed out waiting to receive data for longer than {4} milliseconds.</value>
+	</data>
+	<data name="PosSocketsService.TimeoutDataSent">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has timed out waiting to send data for longer than {4} milliseconds.  The data sent is:{5}</value>
+	</data>
+	<data name="PosSocketsService.IncompleteDataSent">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has sent incompleted data.  NGC Server only sent {5} bytes out of {4}.  The data sent is:\n{6}</value>
+	</data>
+	<data name="PosSocketsService.DataFormatError">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has received {4} in the wrong data.  The data sent is:{5}</value>
+	</data>
+	<data name="PosSocketsService.DataValueError">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has received {4} with the incorrect value {5}.  The data sent is:{6}</value>
+	</data>
+	<data name="PosSocketsService.DatabaseError">
+		<value>The connection between NGC port {0}:{1} and Store port {2}:{3} has sent data incompatible with the database causing the stored procedure {4} to return the result code {5}.  The data sent is:{6}</value>
+	</data>
+	<data name="PosSocketsService.UnexpectedException">
+		<value>Unexpected error occurred while handling the connection between NGC port {0}:{1} and Store port {2}:{3}.</value>
+	</data>
+	<data name="PosSocketsService.UnknownMessageType">
+		<value>The server could not identify the message type(s) to support on the connection between NGC port {0}:{1} and Store port {2}:{3}.</value>
+	</data>
+	<data name="PosSocketsService.DatabaseUnavailable">
+		<value>Could not process request as the Database is not available.  The request was sent via the connection between NGC port {0}:{1} and Store port {2}:{3}.  The data sent is:{4}</value>
+	</data>
+</root>

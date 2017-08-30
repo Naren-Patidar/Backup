@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Rob Bowman (Pearson Plc) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://schemas.tesco.com/groupit/ngc/customerattributes_v0.1" targetNamespace="http://schemas.tesco.com/groupit/ngc/customerattributes_v0.1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="CustomerAttributes">
+		<xs:annotation>
+			<xs:documentation>Additional information for definition of Campaign Tool customer segmentation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DataFeedID" type="xs:int">
+					<xs:annotation>
+						<xs:documentation>Identifies particular data feed, this may comprise several files</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TotalCustomersWithinDataFeed" type="xs:int"/>
+				<xs:element name="FileNumber" type="xs:int">
+					<xs:annotation>
+						<xs:documentation>Sequential number for the file of this particular feed eg a DataFeed of 1m records may comprise 10 files of 100k records each, the values of FileNumber would be 1 to 10</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Customers" maxOccurs="100000">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CustomerID" type="xs:int"/>
+							<xs:element name="AvgSpendPerVisit" type="xs:float"/>
+							<xs:element name="Loyalty" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="PR"/>
+										<xs:enumeration value="VL"/>
+										<xs:enumeration value="UN"/>
+										<xs:enumeration value="PO"/>
+										<xs:enumeration value="GO"/>
+										<xs:enumeration value="LP"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PrefStore" type="xs:int" minOccurs="0"/>
+							<xs:element name="PriceSensitivity">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="LA"/>
+										<xs:enumeration value="MM"/>
+										<xs:enumeration value="UM"/>
+										<xs:enumeration value="XX"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

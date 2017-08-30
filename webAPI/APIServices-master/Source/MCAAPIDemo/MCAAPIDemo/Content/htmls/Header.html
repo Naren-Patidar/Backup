@@ -1,0 +1,28 @@
+﻿<header id="page-header">
+    <div class="aspect cf">            
+        <h1 id="lblTescoClubcard"><a href="http://www.tesco.com/clubcard/" class="app-ident">Tesco Clubcard</a></h1>
+        <nav id="primary-utility" class="scrollable">
+            <div  id="profile">
+                <p>Welcome to Tesco Clubcard</p>
+
+                <a href='http://www.tesco.com/clubcard/deals/basket.aspx' id="basket-link" target='_blank' onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Basket']">Basket</a>
+            </div>
+            
+            <ul id="first-utility">
+                <li class="desktoponly" id="liAboutClubcard"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'About Clubcard']);" href='http://www.tesco.com/clubcard/about/'>About Clubcard</a></li>
+                <li class="desktoponly" id="liClubcardBoost"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Clubcard Boost']);" href='http://www.tesco.com/clubcard/deals/'>Clubcard <em>Boost</em></a></li>
+                <li class="desktoponly" id="liClubcardperks"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Clubcard Perks']);" href='http://www.tesco.com/clubcard/perks/'>Clubcard <em>Perks</em></a></li>
+                <li id="clubcard"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'My Clubcard Account']);" href='http://www.tesco.com/clubcard/myaccount/' class="desktoponly active">My Clubcard Account</a></li>
+            </ul>
+
+            <div id="secondary-utility">
+                <ul id="ul-secondaryutility">
+                    <li id="liSignout"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Sign out']);" href='../MCA/Signout'>Sign out</a></li>
+                    <li id="liEmailSignup"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Email sign up']);" href='http://www.tesco.com/clubcard/email-sign-up/' target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMEmailSignup) ? "_blank" : "_self")'>Email sign up</a></li>
+                    <li id="liWebsite"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Website Feedback']); oo_feedback.show();" href="javascript:void(0);">Website feedback</a></li>
+                    <li id="litescocom"><a href="http://www.tesco.com">Tesco.com</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>                
+</header> 

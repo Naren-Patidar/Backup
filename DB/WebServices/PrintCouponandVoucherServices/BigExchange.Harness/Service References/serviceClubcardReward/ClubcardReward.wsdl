@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClubcardReward" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56565/ClubcardReward.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56565/ClubcardReward.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BigExchange" />
+      <xsd:import schemaLocation="http://localhost:56565/ClubcardReward.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClubcardReward_GetProducts1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducts1" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetProducts1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducts1Response" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetProducts1_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q1:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProducts" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetProducts_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q2:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategories_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q3:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategoryIncludes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryIncludes" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategoryIncludes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryIncludesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetCategoryIncludes_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q4:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetPrintReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintReasons" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetPrintReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetPrintReasons_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q5:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ValidateVouchers_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateVouchers" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ValidateVouchers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ValidateVouchers_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q6:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessBooking" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessBooking_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q7:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingError_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToBookingError" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToBookingErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingError_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q8:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTraining_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToTraining" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTraining_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToTrainingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTraining_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q9:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetBookingsForClubcard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingsForClubcard" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetBookingsForClubcard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingsForClubcardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetBookingsForClubcard_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q10:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetReprintTillTokenScript_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReprintTillTokenScript" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetReprintTillTokenScript_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReprintTillTokenScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetReprintTillTokenScript_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q11:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetTillTokenScript_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTillTokenScript" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetTillTokenScript_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTillTokenScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_GetTillTokenScript_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q12:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_KioskEntryPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:KioskEntryPage" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_KioskEntryPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KioskEntryPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_KioskEntryPage_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q13:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTransError_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToTransError" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTransError_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToTransErrorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToTransError_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q14:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToBookingTable" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveToBookingTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveToBookingTable_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q15:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessVoucherBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessVoucherBooking" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessVoucherBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessVoucherBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_ProcessVoucherBooking_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q16:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsActiveVoucher_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsActiveVoucher" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsActiveVoucher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsActiveVoucherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsActiveVoucher_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q17:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsStatus1_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsStatus1" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsStatus1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsStatus1Response" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsStatus1_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q18:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsVerifiedTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsVerifiedTime" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsVerifiedTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTranDetailsVerifiedTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_UpdateTranDetailsVerifiedTime_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q19:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveUnusedVouchers_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUnusedVouchers" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveUnusedVouchers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUnusedVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_SaveUnusedVouchers_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q20:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_PrintVoucherKioskEntryPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintVoucherKioskEntryPage" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_PrintVoucherKioskEntryPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintVoucherKioskEntryPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardReward_PrintVoucherKioskEntryPage_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/BigExchange" name="detail" element="q21:CustomException" />
+  </wsdl:message>
+  <wsdl:portType name="IClubcardReward">
+    <wsdl:operation name="GetProducts1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetProducts1" message="tns:IClubcardReward_GetProducts1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetProducts1Response" message="tns:IClubcardReward_GetProducts1_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetProducts1CustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetProducts1_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetProducts" message="tns:IClubcardReward_GetProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetProductsResponse" message="tns:IClubcardReward_GetProducts_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetProductsCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetProducts_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetCategories" message="tns:IClubcardReward_GetCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetCategoriesResponse" message="tns:IClubcardReward_GetCategories_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetCategoriesCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetCategories_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryIncludes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetCategoryIncludes" message="tns:IClubcardReward_GetCategoryIncludes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetCategoryIncludesResponse" message="tns:IClubcardReward_GetCategoryIncludes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetCategoryIncludesCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetCategoryIncludes_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintReasons">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetPrintReasons" message="tns:IClubcardReward_GetPrintReasons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetPrintReasonsResponse" message="tns:IClubcardReward_GetPrintReasons_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetPrintReasonsCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetPrintReasons_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateVouchers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/ValidateVouchers" message="tns:IClubcardReward_ValidateVouchers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/ValidateVouchersResponse" message="tns:IClubcardReward_ValidateVouchers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/ValidateVouchersCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_ValidateVouchers_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/ProcessBooking" message="tns:IClubcardReward_ProcessBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/ProcessBookingResponse" message="tns:IClubcardReward_ProcessBooking_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/ProcessBookingCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_ProcessBooking_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveToBookingError">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingError" message="tns:IClubcardReward_SaveToBookingError_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingErrorResponse" message="tns:IClubcardReward_SaveToBookingError_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingErrorCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_SaveToBookingError_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveToTraining">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTraining" message="tns:IClubcardReward_SaveToTraining_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTrainingResponse" message="tns:IClubcardReward_SaveToTraining_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTrainingCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_SaveToTraining_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingsForClubcard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetBookingsForClubcard" message="tns:IClubcardReward_GetBookingsForClubcard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetBookingsForClubcardResponse" message="tns:IClubcardReward_GetBookingsForClubcard_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetBookingsForClubcardCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetBookingsForClubcard_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReprintTillTokenScript">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetReprintTillTokenScript" message="tns:IClubcardReward_GetReprintTillTokenScript_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetReprintTillTokenScriptResponse" message="tns:IClubcardReward_GetReprintTillTokenScript_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetReprintTillTokenScriptCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetReprintTillTokenScript_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTillTokenScript">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/GetTillTokenScript" message="tns:IClubcardReward_GetTillTokenScript_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/GetTillTokenScriptResponse" message="tns:IClubcardReward_GetTillTokenScript_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/GetTillTokenScriptCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_GetTillTokenScript_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KioskEntryPage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/KioskEntryPage" message="tns:IClubcardReward_KioskEntryPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/KioskEntryPageResponse" message="tns:IClubcardReward_KioskEntryPage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/KioskEntryPageCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_KioskEntryPage_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveToTransError">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTransError" message="tns:IClubcardReward_SaveToTransError_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTransErrorResponse" message="tns:IClubcardReward_SaveToTransError_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/SaveToTransErrorCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_SaveToTransError_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveToBookingTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingTable" message="tns:IClubcardReward_SaveToBookingTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingTableResponse" message="tns:IClubcardReward_SaveToBookingTable_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/SaveToBookingTableCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_SaveToBookingTable_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVoucherBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/ProcessVoucherBooking" message="tns:IClubcardReward_ProcessVoucherBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/ProcessVoucherBookingResponse" message="tns:IClubcardReward_ProcessVoucherBooking_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/ProcessVoucherBookingCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_ProcessVoucherBooking_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsActiveVoucher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsActiveVoucher" message="tns:IClubcardReward_UpdateTranDetailsActiveVoucher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsActiveVoucherResponse" message="tns:IClubcardReward_UpdateTranDetailsActiveVoucher_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsActiveVoucherCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_UpdateTranDetailsActiveVoucher_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsStatus1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsStatus1" message="tns:IClubcardReward_UpdateTranDetailsStatus1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsStatus1Response" message="tns:IClubcardReward_UpdateTranDetailsStatus1_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsStatus1CustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_UpdateTranDetailsStatus1_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsVerifiedTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsVerifiedTime" message="tns:IClubcardReward_UpdateTranDetailsVerifiedTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsVerifiedTimeResponse" message="tns:IClubcardReward_UpdateTranDetailsVerifiedTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/UpdateTranDetailsVerifiedTimeCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_UpdateTranDetailsVerifiedTime_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUnusedVouchers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/SaveUnusedVouchers" message="tns:IClubcardReward_SaveUnusedVouchers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/SaveUnusedVouchersResponse" message="tns:IClubcardReward_SaveUnusedVouchers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/SaveUnusedVouchersCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_SaveUnusedVouchers_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintVoucherKioskEntryPage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClubcardReward/PrintVoucherKioskEntryPage" message="tns:IClubcardReward_PrintVoucherKioskEntryPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClubcardReward/PrintVoucherKioskEntryPageResponse" message="tns:IClubcardReward_PrintVoucherKioskEntryPage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IClubcardReward/PrintVoucherKioskEntryPageCustomExceptionFault" name="CustomExceptionFault" message="tns:IClubcardReward_PrintVoucherKioskEntryPage_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IClubcardReward" type="tns:IClubcardReward">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProducts1">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetProducts1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetProducts">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryIncludes">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetCategoryIncludes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintReasons">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetPrintReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateVouchers">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/ValidateVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessBooking">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/ProcessBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveToBookingError">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/SaveToBookingError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveToTraining">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/SaveToTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingsForClubcard">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetBookingsForClubcard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReprintTillTokenScript">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetReprintTillTokenScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTillTokenScript">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/GetTillTokenScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="KioskEntryPage">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/KioskEntryPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveToTransError">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/SaveToTransError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveToBookingTable">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/SaveToBookingTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVoucherBooking">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/ProcessVoucherBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsActiveVoucher">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/UpdateTranDetailsActiveVoucher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsStatus1">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/UpdateTranDetailsStatus1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTranDetailsVerifiedTime">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/UpdateTranDetailsVerifiedTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUnusedVouchers">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/SaveUnusedVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PrintVoucherKioskEntryPage">
+      <soap:operation soapAction="http://tempuri.org/IClubcardReward/PrintVoucherKioskEntryPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClubcardReward">
+    <wsdl:port name="BasicHttpBinding_IClubcardReward" binding="tns:BasicHttpBinding_IClubcardReward">
+      <soap:address location="http://localhost:56565/ClubcardReward.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,77 @@
+Server to check the images:
+172.27.8.47
+
+CZ-Tesco\admin-bparakan, sayhi2me@55
+
+Path: I:\CE-MCA-ImageStore
+
+Browse below url in IE: make sure automatically detect setting are checked in
+---------------
+>>>>>>>>>>> https://czcsgw02.tesco-europe.com/Citrix/XenApp/auth/login.aspx
+
+Password:
+------------
+admin-bparakan, password above
+
+
+Open Google chrome within that and browse:
+--------------
+Google chrome from citrix:   
+
+>>>>>>>>>>>> http://czprgxnngc01:8081/iw/opendeploy/login
+
+cz-tesco\admin-bparakan, password above
+server:CZPR...
+role: admin
+
+Deployment group: til/
+deployment: select country
+
+Start deployment and view deployment
+
+==========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Click on RDP client
+
+pkumar13/puru@Tesco15July
+RDP -  CZPRGXNNGC01
+Domain- Cz-tesco
+Admin-pkumar13/ puru@Tesco15May
+Image location I:/ CE-MCA-ImageStore Drive
+
+
+Username - cz-tesco\admin-pkumar13
+Password - puru@Tesco15May

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <!--IIS Version 6 or higher check.-->
+  <!--
+  <PropertyRef Id="IISMAJORVERSION"/>
+  <Condition Message="This setup requires IIS 6 or later version installed.">
+    IISMAJORVERSION &gt;= "#6"
+  </Condition>
+
+  -->
+  <!-- .NET 4 Version Check -->
+  <!--
+  <PropertyRef Id="NETFRAMEWORK40FULL"/>
+  <Condition Message="This setup requires the .NET Framework 4.0 installed.">
+    Installed OR NETFRAMEWORK40FULL
+  </Condition>-->
+
+</Include>

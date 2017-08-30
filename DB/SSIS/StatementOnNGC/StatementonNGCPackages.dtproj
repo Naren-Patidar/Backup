@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.50.1600.1</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>StatementOnNGCPackages.database</Name>
+    <FullPath>StatementOnNGCPackages.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources />
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgXmasSaverOptOutCustomerHavingToppedUp.dtsx</Name>
+      <FullPath>pkgXmasSaverOptOutCustomerHavingToppedUp.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgCouponSummary.dtsx</Name>
+      <FullPath>pkgCouponSummary.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCAggregatePoints.dtsx</Name>
+      <FullPath>pkgNGCAggregatePoints.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCAssociateCustomerDetailsExtract.dtsx</Name>
+      <FullPath>pkgNGCAssociateCustomerDetailsExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCAudit.dtsx</Name>
+      <FullPath>pkgNGCAudit.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCCalculateCustomerTopUp.dtsx</Name>
+      <FullPath>pkgNGCCalculateCustomerTopUp.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCCalculateRewards.dtsx</Name>
+      <FullPath>pkgNGCCalculateRewards.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCContactHistoryUKandGroupExtract.dtsx</Name>
+      <FullPath>pkgNGCContactHistoryUKandGroupExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCCustomerIDandHouseHoldExtract.dtsx</Name>
+      <FullPath>pkgNGCCustomerIDandHouseHoldExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCEmailandSMSExtract.dtsx</Name>
+      <FullPath>pkgNGCEmailandSMSExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCExportCustomers.dtsx</Name>
+      <FullPath>pkgNGCExportCustomers.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCFreetimeExtract.dtsx</Name>
+      <FullPath>pkgNGCFreetimeExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCGenerateAllocationFile.dtsx</Name>
+      <FullPath>pkgNGCGenerateAllocationFile.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCGenerateFileforSmartVouchers.dtsx</Name>
+      <FullPath>pkgNGCGenerateFileforSmartVouchers.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCGenerateMailingFile.dtsx</Name>
+      <FullPath>pkgNGCGenerateMailingFile.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCPointSummaryExtract.dtsx</Name>
+      <FullPath>pkgNGCPointSummaryExtract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCProcessCouponAllocationFile.dtsx</Name>
+      <FullPath>pkgNGCProcessCouponAllocationFile.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCProcessVoucherAllocationFile.dtsx</Name>
+      <FullPath>pkgNGCProcessVoucherAllocationFile.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCTogetherforTrees.dtsx</Name>
+      <FullPath>pkgNGCTogetherforTrees.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCUnSpentVoucher.dtsx</Name>
+      <FullPath>pkgNGCUnSpentVoucher.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCUpdateCarriedForwardPoints.dtsx</Name>
+      <FullPath>pkgNGCUpdateCarriedForwardPoints.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCUpdateCarriedForwardPoints_Group.dtsx</Name>
+      <FullPath>pkgNGCUpdateCarriedForwardPoints_Group.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCUpdateCarriedForwardPoints_UK.dtsx</Name>
+      <FullPath>pkgNGCUpdateCarriedForwardPoints_UK.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgNGCUploadDunnhumbyFile.dtsx</Name>
+      <FullPath>pkgNGCUploadDunnhumbyFile.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgPointSummeryUpload.dtsx</Name>
+      <FullPath>pkgPointSummeryUpload.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="0">
+      <Name>pkgTopUpAmountMoreThan360.dtsx</Name>
+      <FullPath>pkgTopUpAmountMoreThan360.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

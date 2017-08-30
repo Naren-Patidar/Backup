@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" elementFormDefault="qualified" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://pvukccdevapp01.dev01.tesco.org/CCOServices/CustomerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="GetCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCustomerPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCustomerPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="level" type="q1:char" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerPreferencesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerPreferencesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchCustomerResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitlesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTitlesResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cultureCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticateUserResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConfigDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConfigDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consumer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateConfigResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPrintAtHomeDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateDS" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPrintAtHomeDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPrintAtHomeDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

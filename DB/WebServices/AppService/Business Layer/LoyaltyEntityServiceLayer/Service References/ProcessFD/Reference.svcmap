@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3fe6548b-f9af-498d-825f-8f550e2666f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://172.29.3.17:8010/NGCtoFDInterface/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f897cf94-d203-4a00-8edd-317f0cc9d714" SourceId="1" SourceUrl="net.tcp://172.29.3.17:8010/NGCtoFDInterface/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="a4fc7b01-4ce6-4975-bf63-325b978b5256" SourceId="1" SourceUrl="net.tcp://172.29.3.17:8010/NGCtoFDInterface/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9d6859e6-bf57-49c0-91be-6606806848c7" SourceId="1" SourceUrl="net.tcp://172.29.3.17:8010/NGCtoFDInterface/mex" />
+    <MetadataFile FileName="System.xsd" MetadataType="Schema" ID="a83ad0fd-165d-4621-a406-a2e0c37e5377" SourceId="1" SourceUrl="net.tcp://172.29.3.17:8010/NGCtoFDInterface/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

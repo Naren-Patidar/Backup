@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IBatchService</name>
+    </assembly>
+    <members>
+        <member name="T:Fujitsu.eCrm.Generic.BatchService.Output">
+            <department>Fujitsu, e-Innovation, eCRM</department>
+            <copyright>(c) Fujitsu Consulting, 2003</copyright>
+            <development>
+            	<version number="1.11" day="12" month="06" year="2003">
+            		<developer>Mark Hart</developer>
+            		<checker>Stuart Forbes</checker>
+            		<work_packet>WP/Barcelona/059</work_packet>
+            		<description>Removed parameter 'culture' from the Batch method.</description>
+            	</version>
+            	<version number="1.10" day="16" month="01" year="2003">
+            		<developer>Tom Bedwell</developer>
+            		<checker>Steve Lang</checker>
+            		<work_packet>WP/Barcelona/046</work_packet>
+            		<description>Namespaces conform to standards</description>
+            	</version>
+            	<version number="1.00" day="07" month="01" year="2003">
+            		<developer>Tom Bedwell</developer>
+            		<checker></checker>
+            		<work_packet>WP/Barcelona/042</work_packet>
+            		<description>Batch Interface definition </description>
+            	</version>
+            </development>
+            <summary>
+            Batch Interface definition
+            </summary>
+        </member>
+        <member name="T:Fujitsu.eCrm.Generic.BatchService.IBatchService">
+            <summary>
+            Batch service interface
+            </summary>
+        </member>
+        <member name="M:Fujitsu.eCrm.Generic.BatchService.IBatchService.BatchList(System.String[]@,System.String@)">
+            <summary>
+            Discover which scripts are available
+            </summary>
+            <param name="fileName">returned list of file names</param>
+            <param name="resultXml">returned result</param>
+            <returns>success</returns>
+        </member>
+        <member name="M:Fujitsu.eCrm.Generic.BatchService.IBatchService.Batch(System.String,System.String,System.String,System.String[],System.String@,System.String@)">
+            <summary>
+            run a script
+            </summary>
+            <param name="scriptName"></param>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="args"></param>
+            <param name="logFile"></param>
+            <param name="resultXml"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Fujitsu.eCrm.Generic.BatchService.ItBatchService">
+            <summary>
+            Batch service 
+            </summary>
+        </member>
+        <member name="M:Fujitsu.eCrm.Generic.BatchService.ItBatchService.BatchList(System.String[]@,System.String@)">
+            <summary>
+            Discover which scripts are available
+            </summary>
+            <param name="fileName">returned list of file names</param>
+            <param name="resultXml">returned result</param>
+            <returns>success</returns>
+        </member>
+        <member name="M:Fujitsu.eCrm.Generic.BatchService.ItBatchService.Batch(Fujitsu.eCrm.Generic.SharedUtils.ITrace,System.String,System.String,System.String,System.String[],Fujitsu.eCrm.Generic.BatchService.Output,Fujitsu.eCrm.Generic.BatchService.Output,System.String@)">
+            <summary>
+            run a script
+            </summary>
+            <param name="trace"></param>
+            <param name="scriptName"></param>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="args"></param>
+            <param name="standardOutput"></param>
+            <param name="errorOutput"></param>
+            <param name="resultXml"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

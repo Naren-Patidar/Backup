@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aviosMiles" xml:space="preserve">
+    <value>Equivalent Avios:</value>
+  </data>
+  <data name="BAmiles" xml:space="preserve">
+    <value>Equivalent BA Avios:</value>
+  </data>
+  <data name="lblClickHere" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="lblClubcardStatement" xml:space="preserve">
+    <value>Clubcard statement is</value>
+  </data>
+  <data name="lblClubcardSummary" xml:space="preserve">
+    <value>Your Clubcard points summary</value>
+  </data>
+  <data name="lblCurrentCollectionPeriod" xml:space="preserve">
+    <value>Current collection period</value>
+  </data>
+  <data name="lblCurrentPointsTotal" xml:space="preserve">
+    <value>My current points total:</value>
+  </data>
+  <data name="lblEasyEarn" xml:space="preserve">
+    <value>It's very easy to earn points.</value>
+  </data>
+  <data name="lblFinalDate" xml:space="preserve">
+    <value>The final date to collect points for your</value>
+  </data>
+  <data name="lblFrmTesco" xml:space="preserve">
+    <value>To find out how to get the most from your Tesco Clubcard, please</value>
+  </data>
+  <data name="lblLink" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="lblMyPoints" xml:space="preserve">
+    <value>My Points</value>
+  </data>
+  <data name="CurrencySymbol" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="lblUHaveCollected" xml:space="preserve">
+    <value>Here's a summary of the Clubcard points you have collected since</value>
+  </data>
+  <data name="stdVoucher" xml:space="preserve">
+    <value>Vouchers to spend now:</value>
+  </data>
+  <data name="virginMiles" xml:space="preserve">
+    <value>Equivalent Virgin Flying Club Miles:</value>
+  </data>
+  <data name="xmasmiles" xml:space="preserve">
+    <value>Total vouchers saved:</value>
+  </data>
+  <data name="AlphaSymbol" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclClickHereLink" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/#mca_points</value>
+  </data>
+  <data name="lclClickHereResource" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="lclDtlResource" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="lclMisPointsResource" xml:space="preserve">
+    <value>Missing Points?</value>
+  </data>
+  <data name="lclMissingPointsResource" xml:space="preserve">
+    <value>If you think you are missing any points, please </value>
+  </data>
+  <data name="lclPeriodcltedResource" xml:space="preserve">
+    <value>Collection Period</value>
+  </data>
+  <data name="lclSummaryResource" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="lclWhichCollectionPeriodResource" xml:space="preserve">
+    <value>To view your points, please select which collection period you are interested in.</value>
+  </data>
+  <data name="lclWudLikeResource" xml:space="preserve">
+    <value>What would you like to do?</value>
+  </data>
+  <data name="lnkViewDetailResource" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="addressLine2.valid" xml:space="preserve">
+    <value>Please enter a valid address line2</value>
+  </data>
+  <data name="addressLine3.valid" xml:space="preserve">
+    <value>Please enter a valid address line3</value>
+  </data>
+  <data name="babyToddlerPref.valid" xml:space="preserve">
+    <value>You are currently opted in to Baby &amp; Todler Club, 
+please change this preference before removing your Email</value>
+  </data>
+  <data name="changePref.valid" xml:space="preserve">
+    <value>You are currently opted in to receiving your 
+Clubcard statement, vouchers and coupons via Post, please change this preference before removing your address</value>
+  </data>
+  <data name="clickArrow.valid" xml:space="preserve">
+    <value>Click the arrow to select your home</value>
+  </data>
+  <data name="DayTimePhonenumber" xml:space="preserve">
+    <value>Please enter a valid daytime phone number</value>
+  </data>
+  <data name="ddlHouseholdYearResource1.Text" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="dobLessThan.valid" xml:space="preserve">
+    <value>Please enter a valid date of birth less than</value>
+  </data>
+  <data name="FamilyMemberDOB1" xml:space="preserve">
+    <value>Date of birth is required or not valid</value>
+  </data>
+  <data name="dueDate.valid" xml:space="preserve">
+    <value>Please enter a valid due date less than 9 months
+ in DD/MM/YYYY format or remove the child entry</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Please enter a valid Email address</value>
+  </data>
+  <data name="enterAge.valid" xml:space="preserve">
+    <value>Please enter an age between 0 and 99</value>
+  </data>
+  <data name="enterNo.valid" xml:space="preserve">
+    <value>Please enter a number between 1 and 99</value>
+  </data>
+  <data name="EveningPhonenumber" xml:space="preserve">
+    <value>Please enter a valid evening phone number.</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Please enter a valid First name</value>
+  </data>
+  <data name="format.valid" xml:space="preserve">
+    <value>years in DD/MM/YYYY format or remove the child entry</value>
+  </data>
+  <data name="gender.mismatch" xml:space="preserve">
+    <value>Sorry, the Gender selected doesn't match with the Title chosen.</value>
+  </data>
+  <data name="gender.valid" xml:space="preserve">
+    <value>Please select Gender</value>
+  </data>
+  <data name="Initial" xml:space="preserve">
+    <value>Please enter a valid middle name</value>
+  </data>
+  <data name="ISOLanguageCode" xml:space="preserve">
+    <value>Please enter a valid preferred language</value>
+  </data>
+  <data name="LandLine" xml:space="preserve">
+    <value>Please enter a valid landline phone number</value>
+  </data>
+  <data name="Landline.Valid" xml:space="preserve">
+    <value>Please enter a valid landline phone number</value>
+  </data>
+  <data name="language.valid" xml:space="preserve">
+    <value>Please select a valid language</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Please enter a valid surname</value>
+  </data>
+  <data name="lclAddress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lclAddressLine2.Text" xml:space="preserve">
+    <value>Address Line 2:</value>
+  </data>
+  <data name="lclAddressLine3.Text" xml:space="preserve">
+    <value>Address Line 3 :</value>
+  </data>
+  <data name="lclAddressLine4.Text" xml:space="preserve">
+    <value>Address Line 4:</value>
+  </data>
+  <data name="lclAddressLine5.Text" xml:space="preserve">
+    <value>Address Line 5:</value>
+  </data>
+  <data name="lclAddressLine6.Text" xml:space="preserve">
+    <value>Address Line 6:</value>
+  </data>
+  <data name="lclAge.Text" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="lclBabyAndToddler.Text" xml:space="preserve">
+    <value>of the Tesco Loves Baby Club</value>
+  </data>
+  <data name="lclBabyMessage1.Text" xml:space="preserve">
+    <value>You are now a member of our Tesco Loves Baby Club</value>
+  </data>
+  <data name="lclBabyMessage2.Text" xml:space="preserve">
+    <value>Please check the due date or birthdates of all children under the age of</value>
+  </data>
+  <data name="lclCantFindAddress.Text" xml:space="preserve">
+    <value>If you can’t find your address via our post code finder, please call &lt;b&gt;0800 591 688*&lt;/b&gt; or &lt;b&gt;0330 123 1688**&lt;/b&gt;</value>
+  </data>
+  <data name="lclCantFindAdressmsg.text" xml:space="preserve">
+    <value>Please ensure your post code is entered with correct character spacing e.g. AL7 1TW rather than AL71TW</value>
+  </data>
+  <data name="lclChild.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChooseAnAddress.Text" xml:space="preserve">
+    <value>Choose an Address:</value>
+  </data>
+  <data name="lclCountry.Text" xml:space="preserve">
+    <value>County:</value>
+  </data>
+  <data name="lclDayTimePhoneNo.Text" xml:space="preserve">
+    <value>Daytime phone number:</value>
+  </data>
+  <data name="lclDayTimePhoneNoExampleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclDietaryNeed.Text" xml:space="preserve">
+    <value>Your dietary needs</value>
+  </data>
+  <data name="lclDob.Text" xml:space="preserve">
+    <value>
+Date of birth:</value>
+  </data>
+  <data name="lclEmailAddress.Text" xml:space="preserve">
+    <value>Email address:</value>
+  </data>
+  <data name="lclEnterAge.Text" xml:space="preserve">
+    <value>Please enter the years of birth of the people in your household:</value>
+  </data>
+  <data name="lclEveningPhoneNoExampleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclEvnPhoneNo.Text" xml:space="preserve">
+    <value>Evening phone number:</value>
+  </data>
+  <data name="lclFemale.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="lclFindAddressMsgResource.text" xml:space="preserve">
+    <value>This may be due to incorrect character spacing e.g. AL71TW rather than AL7 1TW</value>
+  </data>
+  <data name="lclFirstName.Text" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="lclGender.Text" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lclHouseHoldDetails.Text" xml:space="preserve">
+    <value>Your household details</value>
+  </data>
+  <data name="lclHouseNo.Text" xml:space="preserve">
+    <value>House no/name</value>
+  </data>
+  <data name="lclHouseNoName.Text" xml:space="preserve">
+    <value>House no/name :</value>
+  </data>
+  <data name="lclHousenonameExampleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclLocality.Text" xml:space="preserve">
+    <value>Locality:</value>
+  </data>
+  <data name="lclMale.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="lclMiddleInitials.Text" xml:space="preserve">
+    <value>Middle initial(s):</value>
+  </data>
+  <data name="lclMobilePhoneNo.Text" xml:space="preserve">
+    <value>Phone number:</value>
+  </data>
+  <data name="lclMobilePhoneNoExampleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclMoreInfo.Text" xml:space="preserve">
+    <value>More information</value>
+  </data>
+  <data name="lclNoteText.Text" xml:space="preserve">
+    <value>To ensure we send you relevant information and 
+coupons, it is useful to have the following information on your household</value>
+  </data>
+  <data name="lclOptOut.Text" xml:space="preserve">
+    <value>Opt out</value>
+  </data>
+  <data name="lclPeople.Text" xml:space="preserve">
+    <value>How many people are there in your household 
+(including yourself)
+ ?</value>
+  </data>
+  <data name="lclPerson2.Text" xml:space="preserve">
+    <value>Person 2:</value>
+  </data>
+  <data name="lclPerson3.Text" xml:space="preserve">
+    <value>Person 3:</value>
+  </data>
+  <data name="lclPerson4.Text" xml:space="preserve">
+    <value>Person 4:</value>
+  </data>
+  <data name="lclPerson5.Text" xml:space="preserve">
+    <value>Person 5:</value>
+  </data>
+  <data name="lclPerson6.Text" xml:space="preserve">
+    <value>Person 6:</value>
+  </data>
+  <data name="lclPostCode.Text" xml:space="preserve">
+    <value>Postcode:</value>
+  </data>
+  <data name="lclPrefLanguage.Text" xml:space="preserve">
+    <value>Preferred language:</value>
+  </data>
+  <data name="lclPrimID.Text" xml:space="preserve">
+    <value>Primary ID(Social Security No):</value>
+  </data>
+  <data name="lclRace.Text" xml:space="preserve">
+    <value>Please select race:</value>
+  </data>
+  <data name="lclSecID.Text" xml:space="preserve">
+    <value>Secondary ID(passport,officer number):</value>
+  </data>
+  <data name="lclStreet.Text" xml:space="preserve">
+    <value>Street:</value>
+  </data>
+  <data name="lclSurName.Text" xml:space="preserve">
+    <value>Surname:</value>
+  </data>
+  <data name="lclTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lclTitleMsg.Text" xml:space="preserve">
+    <value>Please select a Title</value>
+  </data>
+  <data name="lclTown.Text" xml:space="preserve">
+    <value>Town/City:</value>
+  </data>
+  <data name="lclYourContDetails.Text" xml:space="preserve">
+    <value>Your contact details</value>
+  </data>
+  <data name="Len_DayTimePhonenumber" xml:space="preserve">
+    <value>Please enter a valid daytime phone number of appropriate length</value>
+  </data>
+  <data name="Len_EmailAddress" xml:space="preserve">
+    <value>Please enter an Email of valid length</value>
+  </data>
+  <data name="Len_EveningPhonenumber" xml:space="preserve">
+    <value>Please enter a valid evening phone number of appropriate length</value>
+  </data>
+  <data name="Len_FirstName" xml:space="preserve">
+    <value>Please enter a First Name of valid length</value>
+  </data>
+  <data name="Len_Initial" xml:space="preserve">
+    <value>Please enter a Middle Name of valid length</value>
+  </data>
+  <data name="Len_LastName" xml:space="preserve">
+    <value>Please enter a SurName of valid length</value>
+  </data>
+  <data name="Len_MailingAddressLine1" xml:space="preserve">
+    <value>Please enter a valid address length for  line1</value>
+  </data>
+  <data name="Len_MailingAddressLine2" xml:space="preserve">
+    <value>Please enter a valid length for address line2</value>
+  </data>
+  <data name="Len_MailingAddressLine3" xml:space="preserve">
+    <value>Please enter a valid lenght fo raddress line3</value>
+  </data>
+  <data name="Len_MailingAddressLine4" xml:space="preserve">
+    <value>Please enter a valid  length  for address line4</value>
+  </data>
+  <data name="Len_MailingAddressLine5" xml:space="preserve">
+    <value>Please enter a valid length for address line5</value>
+  </data>
+  <data name="Len_MailingAddressLine6" xml:space="preserve">
+    <value>Please enter a valid length for  address line6</value>
+  </data>
+  <data name="Len_MailingAddressPostCode" xml:space="preserve">
+    <value>Please enter a Postcode of valid length</value>
+  </data>
+  <data name="Len_MobilePhoneNumber" xml:space="preserve">
+    <value>Please enter a valid length for Mobile/Landline phone number</value>
+  </data>
+  <data name="Len_PassportNo" xml:space="preserve">
+    <value>Please enter valid secondary id of appropriate length</value>
+  </data>
+  <data name="Len_SSN" xml:space="preserve">
+    <value>Please enter valid primary id of appropriate length</value>
+  </data>
+  <data name="MailingAddressLine" xml:space="preserve">
+    <value>Please enter a valid house number</value>
+  </data>
+  <data name="MailingAddressLine1" xml:space="preserve">
+    <value>Please enter a valid address line1</value>
+  </data>
+  <data name="MailingAddressLine2" xml:space="preserve">
+    <value>Please enter a valid address line2</value>
+  </data>
+  <data name="MailingAddressLine3" xml:space="preserve">
+    <value>Please enter a valid address line3</value>
+  </data>
+  <data name="MailingAddressLine4" xml:space="preserve">
+    <value>Please enter a valid address line4</value>
+  </data>
+  <data name="MailingAddressLine5" xml:space="preserve">
+    <value>Please enter a valid address line5</value>
+  </data>
+  <data name="MailingAddressLine6" xml:space="preserve">
+    <value>Please enter a valid address line6</value>
+  </data>
+  <data name="MailingAddressPostCode" xml:space="preserve">
+    <value>Please enter a valid Postcode</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>Please enter a valid mobile phone number</value>
+  </data>
+  <data name="PassportNo" xml:space="preserve">
+    <value>Please enter valid secondary id</value>
+  </data>
+  <data name="pleaseTry.valid" xml:space="preserve">
+    <value>Please re-enter your details or contact us on 0800 591 688* or 0330 123 1688**</value>
+  </data>
+  <data name="primIdsecId.valid" xml:space="preserve">
+    <value>Please enter either primary id or secondary id</value>
+  </data>
+  <data name="RaceId" xml:space="preserve">
+    <value>Please enter a valid Race</value>
+  </data>
+  <data name="RegExPhone" xml:space="preserve">
+    <value>^[0-9]*$</value>
+  </data>
+  <data name="save.valid" xml:space="preserve">
+    <value>Your changes have been saved</value>
+  </data>
+  <data name="selectHouse.valid" xml:space="preserve">
+    <value>Please select your house</value>
+  </data>
+  <data name="selectprovince" xml:space="preserve">
+    <value>- Select province -</value>
+  </data>
+  <data name="sorry.valid" xml:space="preserve">
+    <value>Sorry, we are unable to find your postcode</value>
+  </data>
+  <data name="SSN" xml:space="preserve">
+    <value>Please enter valid primary id</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Please enter a valid title</value>
+  </data>
+  <data name="tooManyAges.valid" xml:space="preserve">
+    <value>Sorry, you have entered too many ages for the size 
+of the household. Please check and re-enter</value>
+  </data>
+  <data name="validDob.valid" xml:space="preserve">
+    <value>Date of birth is invalid</value>
+  </data>
+  <data name="errSorryFindAddress" xml:space="preserve">
+    <value>Sorry, we are unable to find your postcode. Please try again or contact us on 0800 591 688* or 0330 123 1688**</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Please select Gender</value>
+  </data>
+  <data name="errSorryFindAddress1" xml:space="preserve">
+    <value>Sorry, we are unable to find your postcode</value>
+  </data>
+  <data name="errSorryFindAddress2" xml:space="preserve">
+    <value>. Please try again or contact us on 0800 591 688* or 0330 123 1688**</value>
+  </data>
+  <data name="lclTitle1.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="lclTitle2.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="lclTitle3.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="lclTitle4.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="lclSelectTitle.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Find Address</value>
+  </data>
+  <data name="btnSaveAddressResource1.Text" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="lclSelectMonth.Text" xml:space="preserve">
+    <value>-Month-</value>
+  </data>
+  <data name="lclSelectYear.Text" xml:space="preserve">
+    <value>-Year-</value>
+  </data>
+  <data name="selectrace" xml:space="preserve">
+    <value>- Select race -</value>
+  </data>
+  <data name="ReplacementText" xml:space="preserve">
+    <value>Do you need a replacement card with your new name?</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+</root>

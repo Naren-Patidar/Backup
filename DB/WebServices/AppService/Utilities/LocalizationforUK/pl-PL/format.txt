@@ -1,0 +1,55 @@
+############################################################
+##
+### Generic
+##
+############################################################
+Logon.PrimaryCultureURL=logon.aspx?culture=th-TH 
+Logon.SecondaryCultureURL=logon.aspx?culture=en-GB
+
+Format.Report.TransactionAmount=#,##0.00
+Format.ReportDownload.TransactionAmount=0.00
+Format.Report.Integer=#,##0
+Format.ReportDownload.Integer=0
+
+
+
+
+Format.Currency.TransactionAmount=#,0.00
+Format.Currency=#,0
+Format.Points=#,0.##
+Format.Period=(#,0)
+Format.ShortDate=dd\\/MM\\/yyyy
+Format.GeneralDateTime=dd\\/MM\\/yyyy HH:mm
+Format.ShortTime=HH:mm
+Format.FullDateTimeWithFraction=yyyy-MM-ddTHH:mm:ss.fffffff
+Format.FullDateTime=f
+Format.Percentage=0
+
+Format.DateSequence=dateDay,dateSeparator,dateMonth,dateSeparator,dateYear
+
+Format.PostCode.FieldType=textbox
+
+Format.OfficialId.Type=textbox
+Format.OfficialId.Width=75
+
+
+############################################################
+##
+### NGCSSC
+##
+############################################################
+NGCSSC.MaintainStores.Format.StoreCode=00000
+
+############################################################
+##
+### NGCCSD
+##
+############################################################
+NGCCSD.CustomerSearch.MaxLength.PhonePart1=3
+NGCCSD.CustomerSearch.MaxLength.PhonePart2=3
+NGCCSD.CustomerSearch.MaxLength.PhonePart3=4
+NGCCSD.UpdateDetails.MaxLength.PhonePart1=3
+NGCCSD.UpdateDetails.MaxLength.PhonePart2=3
+NGCCSD.UpdateDetails.MaxLength.PhonePart3=4
+
+NGCCSD.CardDetailsTable.Affirmation.SortReverse=true

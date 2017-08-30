@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="DEV01\yf12" GeneratedFromPackageName="pkgCCOExtractCustomerUpdates" GeneratedFromPackageID="{CB61908B-A174-4DAD-AF43-CBA06924833D}" GeneratedDate="07/12/2010 11:00:06"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgBackupFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\NGC\Output</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.48;Initial Catalog=NGCR16;Provider=SQLOLEDB;User Id=sa;Password=Tesco123;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\NGC\Log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgOutputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\NGC\Output</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgUtilityLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\NGC\Log\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

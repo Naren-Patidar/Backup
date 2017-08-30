@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\XC54" GeneratedFromPackageName="pkgCCOUploadTrans" GeneratedFromPackageID="{7BBA4542-D07C-40F1-BA50-6570E143A2C2}" GeneratedDate="18/10/2012 13:39:05"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgBackupFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Backup\ClubcardTransaction</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+		<!--<ConfiguredValue>Data Source=172.21.159.148;Initial Catalog=NGCROI;Provider=SQLOLEDB;User Id=cconline;Password=cconline;</ConfiguredValue>-->
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=NGCROIC;Provider=SQLOLEDB;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString2].Properties[Value]" ValueType="String">
+		<!--<ConfiguredValue>Data Source=172.21.159.148;Initial Catalog=NGCROIT;Provider=SQLOLEDB;User Id=cconline;Password=cconline;</ConfiguredValue>-->
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=NGCROIT;Provider=SQLOLEDB;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UserLogs\Upload\ClubcardTransaction</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgSourceFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Input\OneTime</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgUtilityLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UtilityLogs\Upload\ClubcardTransaction\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="35bc4681-53c1-423b-8efd-119aaded96d2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ActivationServices.xsd" MetadataType="Schema" ID="f0c38934-a3b6-4313-af9e-9fefb3ebc215" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd3" />
+    <MetadataFile FileName="ActivationServices.disco" MetadataType="Disco" ID="93115b86-50d2-4e9e-b86d-e1f7de806bc9" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?disco" />
+    <MetadataFile FileName="ActivationServices1.xsd" MetadataType="Schema" ID="c601f967-424f-4a9f-b7fa-e2577365c9e4" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="ActivationServices2.xsd" MetadataType="Schema" ID="a3c4b353-b6aa-414c-9e82-cbd00f0d2733" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="ActivationServices3.xsd" MetadataType="Schema" ID="b15a5385-9942-463d-82d9-7bfe1a981b7e" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="ActivationServices4.xsd" MetadataType="Schema" ID="e3948b7e-3713-4224-8ccf-f0a632fe49ec" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClubcardOnlineService.wsdl" MetadataType="Wsdl" ID="6ce58933-c6f6-4473-a58d-077c09e1f175" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?wsdl" />
+    <MetadataFile FileName="ActivationServices5.xsd" MetadataType="Schema" ID="f6926e50-a854-4f6f-b3d9-d365274e2ef7" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

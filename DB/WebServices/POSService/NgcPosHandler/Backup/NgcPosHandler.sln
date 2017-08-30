@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NgcPosHandler", "NgcPosHandler.csproj", "{1B43F518-5948-48E0-87C1-E5B8214165BE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {896B62C6-F435-4F4A-BB25-DC6BE29F2DCC}
+		SccProjectUniqueName1 = NgcPosHandler.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1B43F518-5948-48E0-87C1-E5B8214165BE}.Debug.ActiveCfg = Debug|.NET
+		{1B43F518-5948-48E0-87C1-E5B8214165BE}.Debug.Build.0 = Debug|.NET
+		{1B43F518-5948-48E0-87C1-E5B8214165BE}.Release.ActiveCfg = Release|.NET
+		{1B43F518-5948-48E0-87C1-E5B8214165BE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

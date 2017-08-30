@@ -1,0 +1,145 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{1B43F518-5948-48E0-87C1-E5B8214165BE}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "NgcPosHandler"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                RootNamespace = "Fujitsu.eCrm.Seoul.PosSocketsService"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "ISharedUtils"
+                    AssemblyName = "ISharedUtils"
+                    HintPath = "..\..\..\..\Inetpub\wwwroot\ISharedUtils\bin\ISharedUtils.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces"
+                    AssemblyName = "Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces"
+                    HintPath = "..\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.ApplicationBlocks.ExceptionManagement"
+                    AssemblyName = "Microsoft.ApplicationBlocks.ExceptionManagement"
+                    HintPath = "..\ExceptionManagementApplicationBlock\Microsoft.ApplicationBlocks.ExceptionManagement\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SharedUtils"
+                    AssemblyName = "SharedUtils"
+                    HintPath = "..\SharedUtils\bin\SharedUtils.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "LocalizationLibrary"
+                    AssemblyName = "LocalizationLibrary"
+                    HintPath = "..\LocalizationLibrary\bin\LocalizationLibrary.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "IPosHandler"
+                    AssemblyName = "IPosHandler"
+                    HintPath = "..\IPOSHANDLER\bin\IPosHandler.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AssemblyVersionInfo.cs"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NgcPosDialog.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NgcPosHandler.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NgcPosHandler.snk"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

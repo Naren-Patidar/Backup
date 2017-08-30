@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubcardOnlineService", "ClubcardOnlineService\ClubcardOnlineService.csproj", "{8671F123-C86D-426F-BDAA-0F406912D66E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGCUtils", "..\..\Utilities\NGCUtils\NGCUtils.csproj", "{BF8248FF-BCB2-485E-8851-6F4D3E171C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGCSecurityServiceLayer", "..\..\Business Layer\NGCSecurityServiceLayer\NGCSecurityServiceLayer.csproj", "{4A9F333E-2687-47D5-807F-50DF86F5105D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGCDataAccessLayer", "..\..\Business Layer\NGCDataAccessLayer\NGCDataAccessLayer.csproj", "{487719F1-9B74-4581-A64E-52D10202A68A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGCTrace", "..\..\Business Layer\NGCTrace\NGCTrace.csproj", "{3729193C-69C1-420A-AA59-CDB06058F741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USLoyaltySecurityServiceLayer", "..\..\Business Layer\USLoyaltySecurityServiceLayer\USLoyaltySecurityServiceLayer\USLoyaltySecurityServiceLayer.csproj", "{327E289E-4587-435A-9875-9C7F85691CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyEntityServiceLayer", "..\..\Business Layer\LoyaltyEntityServiceLayer\LoyaltyEntityServiceLayer.csproj", "{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}"
+EndProject
+Global
+	GlobalSection(RationalClearCase) = preSolution
+		SourceControlProvider = RationalClearCase
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8671F123-C86D-426F-BDAA-0F406912D66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8671F123-C86D-426F-BDAA-0F406912D66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8671F123-C86D-426F-BDAA-0F406912D66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8671F123-C86D-426F-BDAA-0F406912D66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF8248FF-BCB2-485E-8851-6F4D3E171C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF8248FF-BCB2-485E-8851-6F4D3E171C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF8248FF-BCB2-485E-8851-6F4D3E171C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF8248FF-BCB2-485E-8851-6F4D3E171C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9F333E-2687-47D5-807F-50DF86F5105D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9F333E-2687-47D5-807F-50DF86F5105D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9F333E-2687-47D5-807F-50DF86F5105D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9F333E-2687-47D5-807F-50DF86F5105D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3729193C-69C1-420A-AA59-CDB06058F741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3729193C-69C1-420A-AA59-CDB06058F741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3729193C-69C1-420A-AA59-CDB06058F741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3729193C-69C1-420A-AA59-CDB06058F741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

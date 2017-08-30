@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+ 
+<script type="text/javascript">
+    var targetURL = '@ViewBag.Target';
+    targetURL = targetURL.replace(/&amp;/g, '&');
+    if (targetURL && targetURL.length > 10) {
+        window.location.href = targetURL;
+    }
+    else {
+        window.location.href = document.location.hostname;
+    }
+</script>
+ 
+<h2>You are being redirect now ....</h2>

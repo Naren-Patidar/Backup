@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+	<Product Id="ba1c5196-f93f-4f9a-ae53-34c0a5849b6e" Name="ClubcardCouponService" Language="1033" Version="1.1.0.0" Manufacturer="Tesco" UpgradeCode="ba36bd98-30a7-480f-9ccc-70c8bf157261">
+		<Package InstallerVersion="200" Compressed="yes" />
+
+    <?include PreReqCheck.wxi ?>
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <Property Id="REPORTING_CONNECTION_STRING" Value="Data Source=172.21.214.56;Initial Catalog=ClubcardCoupon;User Id=sa;Password=;"/>
+
+    <Property Id="OLTP_CONNECTION_STRING" Value="Data Source=172.21.214.56;Initial Catalog=ClubcardCoupon;User Id=sa;Password=;"/>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+
+        <!-- Enq Service Components. -->
+        <Directory Id="INSTALLLOCATION" Name="ClubcardCouponService">
+          <Directory Id="EnquiryServiceDir" Name="CouponEnquiryService">
+            <Component Id="EnquiryServiceVirtualDir" Guid="{A720C1C9-1D8D-4941-976D-FB1C5C9EF8BB}">
+              <CreateFolder />
+              <iis:WebVirtualDir Id='EnquiryServiceVirtualDir' Alias='CouponEnquiryService' Directory='EnquiryServiceDir'
+                                 WebSite='DefaultWebSite'>
+                <iis:WebApplication Id='CouponEnquiryService' Name='CouponEnquiryService'  WebAppPool='EnquiryServiceAppPool' Isolation='medium' />
+              </iis:WebVirtualDir>
+            </Component>
+          </Directory>
+
+          <Component Id="EnquiryServiceAppPool" Guid="{C274D1EA-70CA-403F-9251-D820C04CEFFC}" >
+            <CreateFolder />
+            <iis:WebAppPool Id="EnquiryServiceAppPool"
+                            Name="EnquiryServiceAppPool"
+                            Identity="localSystem" ManagedPipelineMode="integrated"
+                            ManagedRuntimeVersion="v4.0" />
+          </Component>
+
+          <!-- End of Enq Service Components. -->
+
+          <!-- Checkout Service Components. -->
+          <Directory Id="CheckOutServiceDir" Name="CouponCheckOutService">
+            <Component Id="CheckOutServiceVirtualDir" Guid="{9B3185A3-D1AE-4B44-B584-A2EACDC1B691}">
+              <CreateFolder />
+              <iis:WebVirtualDir Id='CheckOutServiceVirtualDir' Alias='CouponCheckOutService' Directory='CheckOutServiceDir'
+                                 WebSite='DefaultWebSite'>
+                <iis:WebApplication Id='CouponCheckOutService' Name='CouponCheckOutService'  WebAppPool='CheckOutServiceAppPool' Isolation='medium' />
+              </iis:WebVirtualDir>
+            </Component>
+          </Directory>
+
+          <Component Id="CheckOutServiceAppPool" Guid="{A63E37D3-9F5F-4CB7-BD80-5B7D0105F278}" >
+            <CreateFolder />
+            <iis:WebAppPool Id="CheckOutServiceAppPool"
+                            Name="CheckOutServiceAppPool"
+                            Identity="localSystem" ManagedPipelineMode="integrated"
+                            ManagedRuntimeVersion="v4.0" />
+          </Component>
+          <!--End of Checkout Service Components. -->
+
+
+          <!-- Creation Service Components. -->
+          <Directory Id="CreationServiceDir" Name="CouponCreationService">
+            <Component Id="CreationServiceVirtualDir" Guid="{9B3185A3-D1AE-4B44-B584-A2EACDC1B692}">
+              <CreateFolder />
+              <iis:WebVirtualDir Id='CreationServiceVirtualDir' Alias='CouponCreationService' Directory='CreationServiceDir'
+                                 WebSite='DefaultWebSite'>
+                <iis:WebApplication Id='CouponCreationService' Name='CouponCreationService'  WebAppPool='CreationServiceAppPool'  Isolation='medium' />
+              </iis:WebVirtualDir>
+            </Component>
+          </Directory>
+
+          <Component Id="CreationServiceAppPool" Guid="{A63E37D3-9F5F-4CB7-BD80-5B7D0105F277}" >
+            <CreateFolder />
+            <iis:WebAppPool Id="CreationServiceAppPool"
+                            Name="CreationServiceAppPool"
+                            Identity="localSystem" ManagedPipelineMode="integrated" 
+                            ManagedRuntimeVersion="v4.0" />
+          </Component>
+          <!--End of Creation Service Components. -->
+          
+					<!-- AdHoc Coupon  Service Components. -->
+					
+					<Directory Id="AdHocCouponServiceDir" Name="AdHocCouponService">
+						<Component Id="AdHocCouponServiceVirtualDir" Guid="{F24F80DE-B9AD-470E-A157-144DC9E7CF98}">
+							<CreateFolder />
+							<iis:WebVirtualDir Id='AdHocCouponServiceVirtualDir' Alias='AdHocCouponService' Directory='AdHocCouponServiceDir'
+											   WebSite='DefaultWebSite'>
+								<iis:WebApplication Id='AdHocCouponService' Name='AdHocCouponService'  WebAppPool='AdHocCouponServiceAppPool' Isolation='medium' />
+							</iis:WebVirtualDir>
+						</Component>
+					</Directory>
+
+					<Component Id="AdHocCouponServiceAppPool" Guid="{F90B55FB-F1C5-455F-B5D4-F947BE8F2E1A}" >
+						<CreateFolder />
+						<iis:WebAppPool Id="AdHocCouponServiceAppPool"
+										Name="AdHocCouponServiceAppPool"
+										Identity="localSystem" ManagedPipelineMode="integrated"
+										ManagedRuntimeVersion="v4.0" />
+					</Component>
+
+					<!-- End of AdHoc Coupon  Service Components. -->
+          <Directory Id="dir_5136D1C50F6A466F83AFDB67B6375BBB" Name="Logs">
+            <Component Id="comp_BD7A967F523F44288BABAEA54B0491DE" DiskId="1" KeyPath="yes"  Guid="CCF1B7DD-63C1-498D-9D41-00E10E0C6F2F">
+            </Component>
+          </Directory>
+
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <iis:WebSite Id='DefaultWebSite' Description='Default Web Site'>
+      <iis:WebAddress Id="AllUnassigned" Port="80"/>
+    </iis:WebSite>
+
+    <Feature Id="ProductFeature" Title="ClubcardCouponService" Level="1">
+      <!-- TODO: Remove the comments around this ComponentRef element and the Component above in order to add resources to this installer. -->
+      <!-- <ComponentRef Id="ProductComponent" /> -->
+
+			<!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. -->
+			<ComponentGroupRef Id="group_AdHoc_Coupon" />
+			<ComponentGroupRef Id="Product.Generated" />
+			<ComponentGroupRef Id="ServiceComponent" />
+			<ComponentGroupRef Id="CheckOutServiceComponent" />
+			<ComponentGroupRef Id="CreationServiceComp" />
+			<ComponentRef Id="CheckOutServiceAppPool" />
+			<ComponentRef Id="EnquiryServiceAppPool" />
+			<ComponentRef Id="CreationServiceAppPool" />
+			<ComponentRef Id="AdHocCouponServiceAppPool" />
+			<ComponentRef Id="ConnStringDlg" />
+			<ComponentRef Id="EnquiryServiceVirtualDir" />
+			<ComponentRef Id="CheckOutServiceVirtualDir" />
+			<ComponentRef Id="CreationServiceVirtualDir" />
+			<ComponentRef Id="AdHocCouponServiceVirtualDir" />
+			<ComponentRef Id="cmp81D2AD1B89FB52EAD38300CEA29C5F51" />
+			<!--registry component-->
+			<ComponentRef Id="comp_BD7A967F523F44288BABAEA54B0491DE" />
+			<!--registry component-->
+		</Feature>
+
+    <!--<Icon Id="WintellectIcon" SourceFile=".\wintellect.ico" />-->
+
+    <!-- Set up my license and bitmaps. -->
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+    <WixVariable Id='WixUIBannerBmp' Value='.\Bitmaps\Tesco_banner.bmp' />
+    <WixVariable Id='WixUIDialogBmp' Value='.\Bitmaps\Tesco_dlg.bmp' />
+    <!-- The WIXUI_INSTALLDIR property has to be set to the installation
+         directory so the user can change it in the WiXUI_InstallDir
+         sequence.-->
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+    <!-- If the user has document folder redirection enabled and the redirected
+     folder points to a network location, the default WiXUI_InstallDir
+     action is to disallow the install. By setting this property to 1,
+     WiXUI_InstallDir will not validate the directory. -->
+    <Property Id="WIXUI_DONTVALIDATEPATH" Value="1"/>
+
+    <UI Id ="MySetupUI">
+      <!--<UIRef Id="WixUI_Mondo" />-->
+      <UIRef Id="WixUI_ErrorProgressText" />
+      <UIRef Id="WixUI_InstallDir" />
+      <!--<UIRef Id="WixUI_Advanced" />-->
+      <DialogRef Id="ConnStringUI" />
+      <Publish Dialog="LicenseAgreementDlg" Control="Next" Event="NewDialog" Value="ConnStringUI" Order="2">LicenseAccepted = "1"</Publish>
+      <Publish Dialog="InstallDirDlg" Control="Back" Event="NewDialog" Value="ConnStringUI">1</Publish>
+    </UI>
+
+    <!--WixUI_Mondo
+    WixUI_Advanced
+    WixUI_FeatureTree
+    WixUI_InstallDir
+    WixUI_Minimal-->
+
+  </Product>
+</Wix>

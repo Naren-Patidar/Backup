@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBatchService", "IBatchService.csproj", "{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {93AAE136-23A7-46E8-8AD8-8539DE3A13A3}
+		SccProjectUniqueName1 = IBatchService.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Debug.ActiveCfg = Debug|.NET
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Debug.Build.0 = Debug|.NET
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Release.ActiveCfg = Release|.NET
+		{72A54637-B4BA-43FA-9958-1B3B8A0E4C5C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

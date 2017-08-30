@@ -1,0 +1,1 @@
+BULK INSERT LCMstaging FROM 'J:\Tesco\NGC\Output\NGCExportMailableLCM\MailableCustomers.txt' With (FIRSTROW=2,FIELDTERMINATOR = '|')

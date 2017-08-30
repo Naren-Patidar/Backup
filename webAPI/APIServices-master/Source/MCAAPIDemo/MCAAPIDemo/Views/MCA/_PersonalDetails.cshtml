@@ -1,0 +1,48 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+
+@{
+    bool dietaryPrefrence = false;
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.EmailNotification];
+    dietaryPrefrence = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DisableDiaetoryPreference.ToString()].ConfigurationValue1.ToUpper().Equals("FALSE");
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+    string dotcomCustID = ViewBag.DotcomCustomerId;
+}
+
+    <h1 id="lblheader">@Html.Translate("MCA/PersonalDetails", "lclMyPersonalDetails.Text")</h1>
+    <p id="lblPageDesc">@Html.Translate("MCA/PersonalDetails", "lclpageDesc1.Text")</p>
+
+    @using (Html.BeginForm("PersonalDetails", "MCA", FormMethod.Post, new { @class = "form cf", id = "MainForm", defaultbutton = "btnConfirm" }))
+    {
+        <fieldset id="lblvalidationmsgs">
+            @if (errorKeys.Contains("errSummary"))
+            {
+                <p class="error" id="errSummary">@Html.ValidationMessage("errSummary")</p>
+            }
+            @if (errorKeys.Contains("msgSummary"))
+            {
+                <p class="success" id="sm-saved">@Html.ValidationMessage("msgSummary")</p>
+            }
+            <p class="required" id="lblMandatorywarmsg">@Html.Translate("MCA/PersonalDetails", "lclRequireWarning.Text")</p>
+            @Html.Partial("_PersonalBasicDetails", Model)
+            @Html.Partial("_PersonalContactDetails", Model)
+        </fieldset>
+        <p id="lblbuttonsection">
+            <button class="button right" id="btnConfirm"  name="Command" value="@Html.Translate("MCA/PersonalDetails", "btnConfirmPersonalDtlsResource1.Text")" onclick="return TrackGAEvent('Confirm Submit');" >
+                @Html.Translate("MCA/PersonalDetails", "btnConfirmPersonalDtlsResource1.Text")</button>
+        </p>
+        <p id="lblFinalmsg">
+            <strong>
+                @Html.Translate("MCA/PersonalDetails", "lclFinalMessage.Text")
+            </strong>
+        </p>
+        <p id="lblCommmsg">
+            @Html.Translate("MCA/PersonalDetails", "lclCommunicateMsg1Resource1.Text")<br />
+            @Html.Translate("MCA/PersonalDetails", "lclCommunicateMsg2Resource1.Text")</p>
+    }

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.Tesco.com/SmartVouchers" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://www.tesco.com" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://www.Tesco.com/SmartVouchers" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.Tesco.com/SmartVouchers">
+      <s:import namespace="http://www.tesco.com" />
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="Validate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="posrequestXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateOffline">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="offLineSmartVoucherMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateOfflineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateOfflineResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseStatusChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="voucherIdentifier" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionDateStamp" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseStatusChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReverseStatusChangeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseStatusChangeEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="voucherIdentifier" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionDateStamp" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlineIndicator" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="redemptionChannel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseStatusChangeExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReverseStatusChangeExResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProvideHouseholdDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:householdRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProvideHouseholdDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:ProvideHouseholdDetailsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessVouchers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ghsFlag" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessVouchersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessVouchersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessVouchersEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dcSVReq" type="tns:DotComSmartVoucherRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DotComSmartVoucherRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Request" type="tns:DotComSmartVoucherRequestRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DotComSmartVoucherRequestRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlphaNumericID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClubcardNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryPostcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VirtualStore" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessVouchersExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessVouchersExResult" type="tns:DotComSmartVoucherResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DotComSmartVoucherResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDateTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionResponseCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Response" type="tns:DotComSmartVoucherResponseResponse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DotComSmartVoucherResponseResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResponseCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherDetails" type="tns:DotComSmartVoucherResponseResponseVoucherDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DotComSmartVoucherResponseResponseVoucherDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AlphaNumericID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClubcardNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpiryDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Value" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherUsage" type="tns:DotComSmartVoucherResponseResponseVoucherDetailsVoucherUsage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DotComSmartVoucherResponseResponseVoucherDetailsVoucherUsage">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StoreNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VirtualStore" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateTime" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessDoubleUp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="durequestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessDoubleUpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessDoubleUpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetRewardDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetRewardDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetRewardDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUnusedVoucherDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUnusedVoucherDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetUnusedVoucherDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUsedVoucherDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUsedVoucherDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetUsedVoucherDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CollectionPeriodNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CollectionPeriodNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetVoucherValueForHousehold">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Household_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPStartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPEndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetVoucherValueForHouseholdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetVoucherValueForHouseholdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRewardDetailsMiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReasonCode" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRewardDetailsMilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRewardDetailsMilesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetVoucherValueForAllCPS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Clubcard_Number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPStartDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPEndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClubcardOnlineGetVoucherValueForAllCPSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClubcardOnlineGetVoucherValueForAllCPSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.tesco.com">
+      <s:element name="householdRequest" type="s1:HouseholdRequest" />
+      <s:complexType name="HouseholdRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionDateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Request" type="s1:HouseholdDetailRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HouseholdDetailRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlphaNumericID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClubcardNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryPostcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StoreNo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Channel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VirtualStore" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProvideHouseholdDetailsResult" type="s1:HouseholdDetailResponse" />
+      <s:complexType name="HouseholdDetailResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionDateTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionResponseCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Response" type="s1:HouseholdDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HouseholdDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResponseCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OLAResponseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseholdStatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RewardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RewardTypeOptinDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerFlag" type="s1:CustomerFlag" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealStatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DealSpend" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="PreviousDealStatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreviousDealSpend" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainingDealsSpend" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="AverageWeeklyDealsSpend" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="SuppliedClubcardDetails" type="s1:ClubcardDetails" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumbers" type="s1:ArrayOfClubcardNumbers" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorSpecificDetails" type="s1:ArrayOfVendorSpecificDetails" />
+          <s:element minOccurs="1" maxOccurs="1" name="OldVoucherValueUnredeemed" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomerFlag">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContactforMarketResearch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactbyPhoneforMarketResearch" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactonlybyTesco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contactby3rdparties" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Diabetic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vegetarian" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Teetotal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Kosher" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Halal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Organic" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnicornExcl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HouseholdInPromotion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BabyClub" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToddlerClub" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KidsClub" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WineClub" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="future1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="future2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="future3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="future4" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClubcardDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SuppliedClubcardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SuppliedClubcardStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SuppliedClubcardType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SuppliedClubcardHolderDetails" type="s1:SuppliedClubcardHolderDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SuppliedClubcardHolderDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Forename" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Surname" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClubcardNumbers">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClubcardNumbers" nillable="true" type="s1:ClubcardNumbers" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClubcardNumbers">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ClubcardNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVendorSpecificDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VendorSpecificDetails" nillable="true" type="s1:VendorSpecificDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VendorSpecificDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VendorId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentPointsBalance" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrentPointsBalanceDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SmartVoucherDetails" type="s1:ArrayOfSmartVoucherDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSmartVoucherDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SmartVoucherDetails" nillable="true" type="s1:SmartVoucherDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SmartVoucherDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="VoucherNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlphaNumericID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Value" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpiryDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateSoapIn">
+    <wsdl:part name="parameters" element="tns:Validate" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateOfflineSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateOffline" />
+  </wsdl:message>
+  <wsdl:message name="ValidateOfflineSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateOfflineResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStatusChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:ReverseStatusChange" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStatusChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:ReverseStatusChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStatusChangeExSoapIn">
+    <wsdl:part name="parameters" element="tns:ReverseStatusChangeEx" />
+  </wsdl:message>
+  <wsdl:message name="ReverseStatusChangeExSoapOut">
+    <wsdl:part name="parameters" element="tns:ReverseStatusChangeExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProvideHouseholdDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ProvideHouseholdDetails" />
+  </wsdl:message>
+  <wsdl:message name="ProvideHouseholdDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ProvideHouseholdDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessVouchersSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessVouchers" />
+  </wsdl:message>
+  <wsdl:message name="ProcessVouchersSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessVouchersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessVouchersExSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessVouchersEx" />
+  </wsdl:message>
+  <wsdl:message name="ProcessVouchersExSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessVouchersExResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessDoubleUpSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessDoubleUp" />
+  </wsdl:message>
+  <wsdl:message name="ProcessDoubleUpSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessDoubleUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetRewardDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetRewardDetails" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetRewardDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetRewardDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUnusedVoucherDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUnusedVoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUnusedVoucherDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUnusedVoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUsedVoucherDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUsedVoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUsedVoucherDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUsedVoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumber" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumber" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetVoucherValueForHouseholdSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetVoucherValueForHousehold" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetVoucherValueForHouseholdSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetVoucherValueForHouseholdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRewardDetailsMilesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRewardDetailsMiles" />
+  </wsdl:message>
+  <wsdl:message name="GetRewardDetailsMilesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRewardDetailsMilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetVoucherValueForAllCPSSoapIn">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetVoucherValueForAllCPS" />
+  </wsdl:message>
+  <wsdl:message name="ClubcardOnlineGetVoucherValueForAllCPSSoapOut">
+    <wsdl:part name="parameters" element="tns:ClubcardOnlineGetVoucherValueForAllCPSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MessagingWebServiceSoap">
+    <wsdl:operation name="Validate">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Validates the incoming smart voucher particulars for a valid length, message source vendor type combination, checks its current status and updates its status to redeemed if its status is active or reserved</documentation>
+      <wsdl:input message="tns:ValidateSoapIn" />
+      <wsdl:output message="tns:ValidateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOffline">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Validates the incoming offline smart voucher array from RTS for a valid length, message source vendor type combination and performs a redemption or reversal as required.</documentation>
+      <wsdl:input message="tns:ValidateOfflineSoapIn" />
+      <wsdl:output message="tns:ValidateOfflineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseStatusChange">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Reverses the status of voucher which has been voided at till.</documentation>
+      <wsdl:input message="tns:ReverseStatusChangeSoapIn" />
+      <wsdl:output message="tns:ReverseStatusChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseStatusChangeEx">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Reverses the status of voucher which has been voided at till. Modified to accept online indicator and redemption channel.</documentation>
+      <wsdl:input message="tns:ReverseStatusChangeExSoapIn" />
+      <wsdl:output message="tns:ReverseStatusChangeExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvideHouseholdDetails">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Freetime - CCOLA Interface to provide household details.(BUC240)</documentation>
+      <wsdl:input message="tns:ProvideHouseholdDetailsSoapIn" />
+      <wsdl:output message="tns:ProvideHouseholdDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVouchers">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Gets DotComSmartVoucherRequest Xml and process each passed Vouchers based upon its request type &amp; returns details in DotComSmartVoucherResponse Xml.</documentation>
+      <wsdl:input message="tns:ProcessVouchersSoapIn" />
+      <wsdl:output message="tns:ProcessVouchersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVouchersEx">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Gets DotComSmartVoucherRequest Xml and process each passed Vouchers based upon its request type &amp; returns details in DotComSmartVoucherResponse Xml. Overloaded for type safety and performance. NOT IMPLEMENTED.</documentation>
+      <wsdl:input message="tns:ProcessVouchersExSoapIn" />
+      <wsdl:output message="tns:ProcessVouchersExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDoubleUp">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">This method will be used by freetime to set up new double up tokens/ cancel existing double up tokens as smart vouchers. This process will preceed voucher check and redemptions using process vouchers function.</documentation>
+      <wsdl:input message="tns:ProcessDoubleUpSoapIn" />
+      <wsdl:output message="tns:ProcessDoubleUpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetRewardDetails">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Recieves the Clubcard Number and returns various parameters of the household</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetRewardDetailsSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetRewardDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUnusedVoucherDetails">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Recieves the Clubcard Number and returns various parameters of the household</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetUnusedVoucherDetailsSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetUnusedVoucherDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUsedVoucherDetails">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Recieves the Clubcard Number and returns various parameters of the household</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetUsedVoucherDetailsSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetUsedVoucherDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumber">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Recieves the Clubcard Number and returns various parameters of the household</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumber">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Recieves the Clubcard Number and returns various parameters of the household</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetVoucherValueForHousehold">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Finds out the total Voucher Value of the Household in specific Collection Period</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetVoucherValueForHouseholdSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetVoucherValueForHouseholdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardDetailsMiles">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Finds out the total Voucher Value of the Household in specific Collection Period</documentation>
+      <wsdl:input message="tns:GetRewardDetailsMilesSoapIn" />
+      <wsdl:output message="tns:GetRewardDetailsMilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetVoucherValueForAllCPS">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">Finds out the total Voucher Value of the Household in all Collection Periods that lie between start and end dates passed as parameters</documentation>
+      <wsdl:input message="tns:ClubcardOnlineGetVoucherValueForAllCPSSoapIn" />
+      <wsdl:output message="tns:ClubcardOnlineGetVoucherValueForAllCPSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MessagingWebServiceSoap" type="tns:MessagingWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Validate">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/Validate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateOffline">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ValidateOffline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseStatusChange">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ReverseStatusChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseStatusChangeEx">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ReverseStatusChangeEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvideHouseholdDetails">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ProvideHouseholdDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVouchers">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ProcessVouchers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessVouchersEx">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ProcessVouchersEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDoubleUp">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ProcessDoubleUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetRewardDetails">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetRewardDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUnusedVoucherDetails">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetUnusedVoucherDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUsedVoucherDetails">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetUsedVoucherDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumber">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetUnusedVoucherDetailsBasedOnCPNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumber">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetUsedVoucherDetailsBasedOnCPNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetVoucherValueForHousehold">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetVoucherValueForHousehold" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardDetailsMiles">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/GetRewardDetailsMiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClubcardOnlineGetVoucherValueForAllCPS">
+      <soap:operation soapAction="http://www.Tesco.com/SmartVouchers/ClubcardOnlineGetVoucherValueForAllCPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MessagingWebService">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="MessagingWebServiceSoap" binding="tns:MessagingWebServiceSoap">
+      <soap:address location="http://192.168.208.43/NGCWebService/NGCUKMessagingService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

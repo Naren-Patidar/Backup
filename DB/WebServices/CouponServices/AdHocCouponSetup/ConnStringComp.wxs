@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+	<Fragment>
+		<DirectoryRef Id="INSTALLLOCATION">
+			<!-- Component handling the web.config -->
+			<Component Id="ConnStringDlg" Guid="FB3D2D0E-3F60-457E-8BBF-AE500AF40100">
+				<CreateFolder />
+				<!-- Copy web.config to MYWEBWEBSITE folder. -->
+				<!--<File Id="WebConfigFile" KeyPath="yes"
+          Source="..\WebApplication1\Web.config" Vital="yes" />-->
+
+				<util:XmlFile Id="ModifyConnectionString7"
+					   Action="setValue"
+					   Permanent="yes"
+					   ElementPath="/configuration/connectionStrings/add[\[]@name='ReportingServer'[\]]"
+					   Name="connectionString"
+					   File="[AdHocCouponServiceDir]Web.config"
+					   Value="[REPORTING_CONNECTION_STRING]"
+					   Sequence="1" />
+
+				<util:XmlFile Id="ModifyConnectionString8"
+					   Action="setValue"
+					   Permanent="yes"
+					   ElementPath="/configuration/connectionStrings/add[\[]@name='OLTPDbServer'[\]]"
+					   Name="connectionString"
+					   File="[AdHocCouponServiceDir]Web.config"
+					   Value="[OLTP_CONNECTION_STRING]"
+					   Sequence="1" />
+
+				<util:XmlFile Id="ModifyLogPath4"
+				   Action="setValue"
+				   Permanent="yes"
+				   ElementPath="/configuration/loggingConfiguration/listeners/add[\[]@name='AdHocCouponServiceLog'[\]]"
+				   Name="fileName"
+				   File="[AdHocCouponServiceDir]Web.config"
+				   Value="[INSTALLLOCATION]Logs\AdHocCouponService.log"
+				   Sequence="1" />
+				
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+</Wix>

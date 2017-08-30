@@ -1,0 +1,14 @@
+1) Code is strongly coupled with txt files. Insteed of cvc or text files I would suggest the use of xml files.
+   Reason: XML is standard way suggested by microsoft. will get good performance with dot net.
+           Easy to understand.
+           Easy for maintanace
+           Standard way to put all configuration entries.
+
+2) Error handling
+
+3) Application logs(LogWriter class is there but it is not good practice to write the user define funtions. Insteed of that we can use the log4net DDL)
+   Reason: Easy to use,
+           Programmer can maintain the logs for debug, error or even for warn. If required application send a mail to the prdefined group about the log information.
+           Log file shoul be part of the project.
+           Path is hard coded 
+                    

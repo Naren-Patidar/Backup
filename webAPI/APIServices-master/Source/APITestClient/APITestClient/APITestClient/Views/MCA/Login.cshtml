@@ -1,0 +1,31 @@
+﻿@model APITestClient.Helper.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="l-hector cf">
+        <div class="l-column">
+            <fieldset>
+                <legend>Login Form</legend>
+                <div class="form-row">
+                    <label for="fld_UserName" id="lblUserName">UserName</label>
+                    @Html.TextBoxFor(model => model.ClubcardNumber)
+                </div>
+                <div class="form-row">
+                    <label for="fld_Password" id="lblPassword">Password</label>
+                    @Html.PasswordFor(model => model.Password)
+                </div>
+                <div class="form-row">
+                    <label for="fld_DotcomID" id="lblPassword">DotcomID</label>
+                    @Html.TextBoxFor(model => model.DotcomCustomerId)
+                </div>
+            </fieldset>
+            <input type="submit" id="btnLogin" value="Login" />
+        </div>
+    </div>
+}

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollPartnerBatchService", "PollPartnerBatchService.csproj", "{76F7A6B7-F2B7-4C47-BA5D-75351E4D0072}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{76F7A6B7-F2B7-4C47-BA5D-75351E4D0072}.Debug.ActiveCfg = Debug|.NET
+		{76F7A6B7-F2B7-4C47-BA5D-75351E4D0072}.Debug.Build.0 = Debug|.NET
+		{76F7A6B7-F2B7-4C47-BA5D-75351E4D0072}.Release.ActiveCfg = Release|.NET
+		{76F7A6B7-F2B7-4C47-BA5D-75351E4D0072}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

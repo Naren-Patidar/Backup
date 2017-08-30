@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter</value>
+	</resheader>
+	<data name="ElementNotFound">
+		<value>The xpath {0} does not identify a valid element in the Xml template {1}</value>
+	</data>
+	<data name="Select">
+		<value>Choiser</value>
+	</data>
+	<data name="IsInvalid">
+		<value>'{0}' is invalid</value>
+	</data>
+	<data name="MissingMadatoryValue">
+		<value>You must enter a value for '{0}'</value>
+	</data>
+	<data name="InvalidRange">
+		<value>'{0}' is invalid. It should be a </value>
+	</data>
+	<data name="Minval">
+		<value>not less than {0}</value>
+	</data>
+	<data name="Maxval">
+		<value>not greater than {0}</value>
+	</data>
+	<data name="BetweenMinAndMax">
+		<value>between {0} and {1}</value>
+	</data>
+	<data name="NextPage">
+		<value>Next&gt;</value>
+	</data>
+	<data name="PrevPage">
+		<value>&lt;Prev</value>
+	</data>
+	<data name="January">
+		<value>Janvier</value>
+	</data>
+	<data name="February">
+		<value>Février</value>
+	</data>
+	<data name="March">
+		<value>Mars</value>
+	</data>
+	<data name="April">
+		<value>Avril</value>
+	</data>
+	<data name="May">
+		<value>Mai</value>
+	</data>
+	<data name="June">
+		<value>Juin</value>
+	</data>
+	<data name="July">
+		<value>Juillet</value>
+	</data>
+	<data name="August">
+		<value>Août</value>
+	</data>
+	<data name="September">
+		<value>Septembre</value>
+	</data>
+	<data name="October">
+		<value>Octobre</value>
+	</data>
+	<data name="November">
+		<value>Novembre</value>
+	</data>
+	<data name="December">
+		<value>Décembre</value>
+	</data>
+	<data name="end">
+		<value>fin</value>
+	</data>
+	<data name="today">
+		<value>aujourd'hui</value>
+	</data>
+	<data name="home">
+		<value>Home</value>
+	</data>
+	<data name="work">
+		<value>Bureau</value>
+	</data>
+	<data name="yes">
+		<value>oui</value>
+	</data>
+	<data name="no">
+		<value>non</value>
+	</data>
+	<data name="y">
+		<value>oui</value>
+	</data>
+	<data name="n">
+		<value>non</value>
+	</data>
+	<data name="true">
+		<value>true</value>
+	</data>
+	<data name="Update">
+		<value>Mettre à jour</value>
+	</data>
+	<data name="Delete">
+		<value>Supprimer</value>
+	</data>
+	<data name="Cancel">
+		<value>Annuler</value>
+	</data>
+	<data name="Insert">
+		<value>Insérer</value>
+	</data>
+	<data name="UnableToSubmit">
+		<value>Unable to Submit Form : </value>
+	</data>
+</root>

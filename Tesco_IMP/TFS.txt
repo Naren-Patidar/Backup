@@ -1,0 +1,30 @@
+--connect with 2010
+
+Connect to TFS by - URL:  http://tfsapp.dotcom.tesco.org:80/tfs (from Visual Studio) 
+or alternatively http://tfsapp.dotcom.tesco.org/tfs/web (from a browser)
+
+--Connect with 2008
+
+- Install Team Explorer 2008
+- Install Visual Studio 2008 SP1 (This will upgrade both VS2008 and Team Explorer 2008 to SP1)
+- Install VSTS 2008 Forward Compatibility Update
+URL: http://tfsapp.dotcom.tesco.org:80/tfs/Marketing
+New URL:   http://tfsapp.dotcom.tesco.org:80/tfs/41_DigitalClubcard
+
+http://tfsapp.dotcom.tesco.org/tfs/web/Index.aspx?pguid=29fa12e6-b227-4f41-a871-04fcca82458a
+http://tfsapp.dotcom.tesco.org/tfs/web/UI/Pages/Workitems/QueryResult.aspx?pguid=29fa12e6-b227-4f41-a871-04fcca82458a&path=Backlog%2fTeam+Queries%2fSprint+Planning%2fP
+
+VDI Link
+
+https://hscvdi2.ocset.net/Citrix/DesktopWeb/auth/silentDetection.aspx
+https://hscvdi2.ocset.net/Citrix/DesktopWeb/auth/login.aspx
+
+UW54/Tesco@@1234
+YH75/Tesco12016
+
+
+----------------------------------------------
+
+global dev
+
+http://tfsapp.dev.global.tesco.org/tfs

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyEntityServiceLayer", "LoyaltyEntityServiceLayer.csproj", "{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGCDataAccessLayer", "..\NGCDataAccessLayer\NGCDataAccessLayer.csproj", "{487719F1-9B74-4581-A64E-52D10202A68A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USLoyaltySecurityServiceLayer", "..\USLoyaltySecurityServiceLayer\USLoyaltySecurityServiceLayer\USLoyaltySecurityServiceLayer.csproj", "{327E289E-4587-435A-9875-9C7F85691CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISharedUtils", "..\..\Utilities\ISharedUtils\ISharedUtils.csproj", "{DA30DF0D-88D4-47DD-A38F-B628A79AC6DC}"
+EndProject
+Global
+	GlobalSection(RationalClearCase) = preSolution
+		SourceControlProvider = RationalClearCase
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89F8D2F-7266-475C-8C18-6C21DE7CAD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487719F1-9B74-4581-A64E-52D10202A68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327E289E-4587-435A-9875-9C7F85691CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA30DF0D-88D4-47DD-A38F-B628A79AC6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA30DF0D-88D4-47DD-A38F-B628A79AC6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA30DF0D-88D4-47DD-A38F-B628A79AC6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA30DF0D-88D4-47DD-A38F-B628A79AC6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

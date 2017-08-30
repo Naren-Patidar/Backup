@@ -1,0 +1,97 @@
+
+
+https://jira.global.tesco.org/browse/CCMCA-3238
+
+50	FontPath	D:\CCOHosting\Webapplication\ClubcardOnline.web\Fiokom\fonts\simsun.ttf	Null	N	
+
+value is hardcoded
+
+-------------------------------------
+
+http://172.28.152.7/Clubcard/CZ/Account/Login
+
+http://172.28.152.7/Clubcard/fiokom/Account/Login
+
+http://172.28.152.7/Clubcard/mojekonto/Account/Login
+
+http://172.28.152.7/Clubcard/SK/Account/Login
+
+
+Staging URL
+
+https://r.tesco.hu/hu-HU/?returnUrl=https://s.tesco.hu/STGClubcardHU/Fiokom/home</
+https://r.tesco.pl/pl-PL/?returnUrl=https://s.tesco.pl/STGClubcardPL/mojekonto/
+https://r.itesco.sk/sk-SK/?returnUrl=https://s.itesco.sk/STGclubacrdSK/ucet/home
+https://prihlaseni.itesco.cz/cs-CZ/?returnUrl=https://zabezpeceni.itesco.cz/STGClubcardCZ/Ucet/Home
+https://r.tescolotus.com/th-TH/?returnUrl=https://s.tescolotus.com/STGClubcardTH/myaccount/home
+https://secure.tesco.com/STGclubcard/myaccount/
+
+
+
+ASPX site urls
+
+https://r.tesco.hu/hu-HU/?returnUrl=https://s.tesco.hu/clubcardfiokom/fiokom/Home.aspx
+https://zabezpeceni.itesco.cz/MojeClubcard/Ucet/Home.aspx
+
+HU stagging account
+
+634009540024454334
+
+sam1984@abc.com
+
+sam1984abc
+
+-----------------------
+PL stagging
+vijaya.karukuri@in.tesco.com
+Tesco123 
+
+
+------------
+MY pp login
+
+https://r.tesco.com.my/en-GB/?returnUrl=https://s.tesco.com.my/STGClubCardMY/myaccount/
+
+
+ 1 opstesting7@tesco.my 634009480037545879   cco12345
+ 2 OpsTesting4@tesco.my 634009480023232359   cco12345
+ 3 opstesting8@tesco.my 634009480045183234   cco12345
+ 4 opsTesting6@tesco.my 634009480006682760   cco12345
+-----------------------------------------------------------
+
+TH PPE users
+
+Neeta.kewlani@in.tesco.com
+Tesco@123
+634009100014916485
+
+yogyata.nidhi@in.tesco.com
+Tesco@123
+634009100002936990
+-----------------------------------------------------------
+
+
+Mrinal web-ex
+https://tesco.webex.com/join/mrinal.chakrabortyin.tesco.com
+
+
+-------------------
+
+IP for Production box 192.168.185.225
+----------------------------
+tescoglobal\a-sz28	
+Tesco@Jul16
+----------------------------
+ppe\sz28
+Aug@2016
+
+
+
+ curl --header "X-Forwarded-For: 192.188.0.202" https://s.tescolotus.com/membercard/myaccount/test.html
+
+--------------------------------------------------------
+
+CSC UK ops
+
+https://clubcardadmin.ops.ukroi.tesco.org/clubcardadmin_uk/Default.aspx
+qx25adm/Tesco@@Aug

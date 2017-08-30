@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Rob Bowman (Pearson Plc) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CampaignCustomers">
+    <xs:annotation>
+      <xs:documentation>Dunhummby provide this data to NGC Campaign Tool</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DunnhumbyCampaignID">
+          <xs:annotation>
+            <xs:documentation>This will be different to the CampaignID held in the Campaign table of the NGC database</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="5"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="CampaignDescription">
+          <xs:annotation>
+            <xs:documentation>Will be presented to campaign tool users when selecting data set to use for the campaign</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="50"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="NumberOfCustomersWithinCampaign" type="xs:int">
+          <xs:annotation>
+            <xs:documentation>Enables recepient tool to determine when all files relating to a campaign have been processed</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Customers">
+          <xs:complexType>
+            <xs:sequence maxOccurs="10000">
+              <xs:element name="Customer">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CustomerID" type="xs:int">
+                      <xs:annotation>
+                        <xs:documentation>This is the CustomerID of the NGC Customer table</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="OfferID" type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>Identifies the reward to be presented to the customer</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

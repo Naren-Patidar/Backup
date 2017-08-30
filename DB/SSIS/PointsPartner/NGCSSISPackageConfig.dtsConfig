@@ -1,0 +1,76 @@
+<?xml version="1.0"?><DTSConfiguration><DTSConfigurationHeading><DTSConfigurationFileInfo GeneratedBy="DEV01\gb50dev" GeneratedFromPackageName="DunnhumbyCustomerFeed" GeneratedFromPackageID="{183D8DD5-9190-4EF2-9D1C-6009082E55F7}" GeneratedDate="2010-02-18 17:52:28"/></DTSConfigurationHeading>
+
+
+<!--Start:Poll Partner SSIS Package Configiration Details -->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCScriptConnection].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>Data Source=172.21.179.48;User ID=sa;Password=Tesco123;Initial Catalog=NGCR16;</ConfiguredValue>
+</Configuration>
+
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGC].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>Data Source=172.21.179.48;Initial Catalog=NGCR16;Provider=SQLOLEDB;User ID=sa;Password=Tesco123;Auto Translate=False;Application Name=SSIS-PointsPartnerImport-{101d62c0-79ce-4057-8335-8641bcd0e658}NGC;</ConfiguredValue></Configuration> 
+
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlatPP.csv].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Output\FlatPP.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlatPPOutput.csv].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Output\FlatPP.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlattenPP.xslt].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\XSD\FlattenPointsPartnerRequest.xslt</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[PointsPartnerRequest.xsd].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\XSD\PointsPartnerRequest.xsd</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[PPImport.xml].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Response.xml].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Output\Response.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[SMTP Connection Manager].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>192.168.208.45</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailID].Properties[Value]" ValueType="String">
+<ConfiguredValue>jenny.joy@in.tesco.com</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varFrom].Properties[Value]" ValueType="String">
+<ConfiguredValue>ramakant.sahu@in.tesco.com</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerArchiveFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Archive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerInputFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::IsCreate].Properties[Value]" ValueType="Boolean">
+<ConfiguredValue>True</ConfiguredValue>
+</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::IsValidate].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerLogFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Response</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PointsPartnerCurrentFileName].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PointsPartnerInputFileName].Properties[Value]" ValueType="String">
+<ConfiguredValue>*.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::NGCServerPassword].Properties[Value]" ValueType="String">
+<ConfiguredValue>Tesco123</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::RejectedFile].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Reject\*.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerRejectedFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>D:\PartnerPoints\Reject</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DefaultDataProtectionPreference].Properties[Value]" ValueType="Int32">
+<ConfiguredValue>1</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::BatchSize].Properties[Value]" ValueType="Int32">
+<ConfiguredValue>2</ConfiguredValue> 
+</Configuration>
+<!--End:Poll Partner SSIS Package Configiration Details -->
+</DTSConfiguration>

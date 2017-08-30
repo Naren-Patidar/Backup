@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosSocketsService", "PosSocketsService.csproj", "{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {96F9BA66-784F-47AA-8392-AA389B66CC19}
+		SccProjectUniqueName1 = PosSocketsService.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Lite Debug
+		ConfigName.2 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Debug.ActiveCfg = Debug|.NET
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Debug.Build.0 = Debug|.NET
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Lite Debug.ActiveCfg = Lite Debug|.NET
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Lite Debug.Build.0 = Lite Debug|.NET
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Release.ActiveCfg = Release|.NET
+		{8B9E8FAD-FB42-4829-8D58-330BD0CB80C2}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

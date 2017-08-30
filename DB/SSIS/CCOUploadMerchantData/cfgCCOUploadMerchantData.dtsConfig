@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\XC54" GeneratedFromPackageName="pkgCCOUploadMerchantData" GeneratedFromPackageID="{165B1678-0A0D-43D0-BD96-3A62E9ECCD41}" GeneratedDate="28/08/2010 11:00:41"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgBackupFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>J:\Tesco\NGC\Backup\Merchant</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=NGCROIC;Provider=SQLOLEDB;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>J:\Tesco\NGC\UserLogs\Upload\Merchant</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgSourceFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>J:\Tesco\NGC\Input</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgUtilityLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>J:\Tesco\NGC\UtilityLogs\Upload\Merchant\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

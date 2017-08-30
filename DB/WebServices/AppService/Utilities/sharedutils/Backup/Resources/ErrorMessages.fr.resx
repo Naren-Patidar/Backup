@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="1" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="UnknownMessage">
+		<value>999 - frThe '{0}' message is not known</value>
+	</data>
+	<data name="UnknownCulture">
+		<value>998 - frThe culture '{0}' is not recognised</value>
+	</data>
+	<data name="FormatError">
+		<value>001 - frFailed to format the '{0}' message '{1}'</value>
+	</data>
+	<data name="ConnectionError">
+		<value>002 - frFailed to connect to a data source using the description '{0}'</value>
+	</data>
+	<data name="IneligibleOffer">
+		<value>003 - frThe customer '{1}' is not eligible for the offer '{0}'</value>
+	</data>
+	<data name="DuplicateOffer">
+		<value>004 - frDuplicate customer_offers with id='{0}' are present in the source document.</value>
+	</data>
+	<data name="MissingXmlNode">
+		<value>005 - frMissing '{0}' Element from '{1}'</value>
+	</data>
+	<data name="InvalidDomainTable">
+		<value>006 - frThe Table name '{0}' does not exist in the Domain '{1}'</value>
+	</data>
+	<data name="MissingIdField">
+		<value>007 - frThe Table '{0}' has no id field</value>
+	</data>
+	<data name="InvalidFieldName">
+		<value>008 - frThe Field name '{0}' does not exist in the list of XmlField objects for the domain '{1}'</value>
+	</data>
+	<data name="InvalidWhereClause">
+		<value>009 - frInvalid 'Where' clause: '{0}'</value>
+	</data>
+	<data name="InvalidOperator">
+		<value>010 - frInvalid operator in Where clause : '{0}'</value>
+	</data>
+	<data name="ConnectionRefused">
+		<value>011 - frConnection refused, username/password not recognised</value>
+	</data>
+	<data name="UnknownDatabaseType">
+		<value>012 - frThe Database Type '{0}' is unknown to the CRM Server, amend Web.config</value>
+	</data>
+	<data name="InvalidServicePrivilege">
+		<value>013 - frThe Session cannot requested the Service '{0}'</value>
+	</data>
+	<data name="InvalidServiceViewPrivilege">
+		<value>014 - frThe Session cannot requested the Service '{0}' for the View '{1}.{2}'.  Possible reasons: (1) the domain does not exist, (2) the view does not exist, or (3) the session lacks necessary privileges</value>
+	</data>
+	<data name="XmlTableView.SetRecord.AddParentRecord">
+		<value>015 - frWhen the parent's update_type attribute is set to 'add' then the child's update_type should also be set to 'add'</value>
+	</data>
+	<data name="Parameter.Replace">
+		<value>016 - frAttempted to replace '{0}' in '{1}' with '{2}'</value>
+	</data>
+	<data name="Connection.Validate">
+		<value>017 - frThe Session '{0}' is not connected to the CRM Server</value>
+	</data>
+	<data name="XmlDomain.IsXmlVersionYoungerThanDbVersion">
+		<value>018 - frData is out of sync</value>
+	</data>
+	<data name="XmlApplication.GetXmlDomain">
+		<value>019 - frThe Domain '{0}' does not exist</value>
+	</data>
+	<data name="XmlDomain.GetXmlDomainView">
+		<value>020 - frThe View '{0}' does not exist within the Domain '{1}'</value>
+	</data>
+	<data name="XmlTable.GetXmlField">
+		<value>021 - frThe XML Field '{0}' does not exist within the XML Table '{1}'</value>
+	</data>
+	<data name="XmlField.GetDbField">
+		<value>022 - frThere is not a DB Field in the DB Table '{0}' mapped to the XML Field '{1}'</value>
+	</data>
+	<data name="XmlDomain.Construct">
+		<value>023 - frCould not extract details of the Domain '{0}'</value>
+	</data>
+	<data name="XmlTable.Construct">
+		<value>024 - frCould not extract details of the XML Table '{0}'</value>
+	</data>
+	<data name="XmlField.Construct">
+		<value>025 - frCould not extract details of the XML Field '{0}' in XML Table '{1}'</value>
+	</data>
+	<data name="XmlDomainView.Construct">
+		<value>026 - frCould not extract details of the View '{0}' in the Domain '{1}'</value>
+	</data>
+	<data name="XmlDomainView.ExtractAttribute">
+		<value>027 - frThe Required Attribute '{0}' is missing from the XML Node '{1}'</value>
+	</data>
+	<data name="XmlDomainView.GetForeignKeys">
+		<value>028 - frCould not find Foreign Keys where the Primary Key is '{0}' with the View '{1}.{2}'</value>
+	</data>
+	<data name="ExecutionError">
+		<value>029 - frFailed to execute the SQL statement '{0}'</value>
+	</data>
+	<data name="XmlValidationError">
+		<value>030 - frThe XSD '{0}' is invalid</value>
+	</data>
+	<data name="XmlDomainView.Set.InvalidXml">
+		<value>031 - frThe XML '{0}' is invalid for the Set Service</value>
+	</data>
+	<data name="NullParameter">
+		<value>032 - frThe Parameter '{1}' of Service '{0}' should not be null</value>
+	</data>
+	<data name="ServerNotInitialised">
+		<value>033 - frThe CRM Server '{0}' failed to initialise</value>
+	</data>
+	<data name="CSAControlLibrary.InvalidXPathString">
+		<value>034 - frThe XPath string '{0}' does not represent a valid Xml Element</value>
+		<source>Server</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.MissingConfigFile">
+		<value>035 - fr'{0}' control has missing ConfigFile attribute</value>
+		<source>Library</source>
+		<category>Configuration</category>
+	</data>
+	<data name="CSAControlLibrary.OpenConfigFileFailure">
+		<value>036 - frUnable to open ConfigFile '{0}'</value>
+		<source>Library</source>
+		<category>Configuration</category>
+	</data>
+	<data name="CSAControlLibrary.MissingUpdateType">
+		<value>037 - frThe 'update_type' attribute is missing in the Xml template '{0}'. The template is probably invalid.</value>
+		<source>Server</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.MissingMatchingAttribute">
+		<value>038 - frUnable to find the attribute '{0}' = '{1}'</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.UnsatisfiedXPath">
+		<value>039 - frXPath expression '{0}' returned null when applied to '{1}'</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.MissingAttribute">
+		<value>040 - frUnable to find the attribute '{0}' in '{1}'</value>
+		<source>Server</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.InvalidUpdateType">
+		<value>041 - frTemplate element contains unknown update type '{0}' in '{1}'</value>
+		<source>Server</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.ReadTemplateFailure">
+		<value>042 - frError {0} reading XML Template for Domain: {2} View: {3} from CRMServer : {1}</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.LoadDocFromFileFailure">
+		<value>043 - frFailure loading file {0} into XmlDocument</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.ElementNotFound">
+		<value>044 - frThe xpath {0} does not identify a valid element in the Xml template {1}</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.ContainerElementNotFound">
+		<value>045 - frCannot find the Xml Template container element for element {0} in document {2} </value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.TemplateMismatch">
+		<value>046 - frUnable to locate the element '{0}' in document {1}. Suspect a mismatch between the template and the CRMServer data</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="FindFailure">
+		<value>047 - frFind operation failed - Session: {0} Domain: '{1}' View: '{2}' Where clause: '{3}'</value>
+		<source>Server</source>
+		<category>Web Service</category>
+	</data>
+	<data name="GetFailure">
+		<value>048 - frGet operation failed - Session: {0} Domain: '{1}' View: '{2}' Object id: '{3}' Message: '{4}'</value>
+		<source>Server</source>
+		<category>Web Service</category>
+	</data>
+	<data name="CSAControlLibrary.ReferenceDataDomainMissing">
+		<value>049 - fr'referencedta' element must have a domain attribute</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.ReferenceDataMismatch">
+		<value>050 - frThe number of 'referencedta' items returned by 'textpath={0}' and 'valuepath={1}' do not match</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.MissingFieldNode">
+		<value>051 - frInvalid configuration XML - Expected node 'field' but found '{1}'</value>
+		<source>Library</source>
+		<category>Configuration</category>
+	</data>
+	<data name="CSAControlLibrary.InvalidControlTypeAttribute">
+		<value>052 - frInvalid configurationXML - configuration file element {1} has unrecognised 'type' attribute of '{0}' </value>
+		<source>Library</source>
+		<category>Configuration</category>
+	</data>
+	<data name="CSAControlLibrary.InvalidDataTypeAttribute">
+		<value>053 - frInvalid XML - configuration file element {1} has unrecognised 'dat'type' attribute of '{0}' </value>
+		<source>Library</source>
+		<category>Configuration</category>
+	</data>
+	<data name="DateStringParseFailure">
+		<value>054 - frError processing date string '{0}'</value>
+		<source>Server</source>
+		<category>Data</category>
+	</data>
+	<data name="CSAControlLibrary.MissingXPathAttribute">
+		<value>055 - frInvalid configuration XML - You must supply the xpath attribute for element {0}</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.MissingTableElement">
+		<value>056 - frTop-level element must be 'table' in {0}</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.IncompleteMessageArguments">
+		<value>057 - frThe arguments for message {0} are incomplete</value>
+		<source>Library</source>
+		<category>XML Error</category>
+	</data>
+	<data name="CSAControlLibrary.UnableToSubmit">
+		<value>058 - frUnable to submit form</value>
+		<source>Library</source>
+		<category>Web Service</category>
+	</data>
+	<data name="SetFailure">
+		<value>060 - frSet operation failed - Session: '{0}' Domain: '{1}' View: '{2}' Set XML: '{3}' Error msg: '{4}'</value>
+	</data>
+	<data name="WebApplication.ConnectionRefused">
+		<value>059 - frInvalid user or password has been entered, please try again.</value>
+	</data>
+	<data name="HttpException">
+		<value>061 - frAn HttpException has occured. Please retry action and if problem continues, contact system administrator.</value>
+	</data>
+	<data name="UnknownException">
+		<value>062 - frAn unknown exception has occured. Please retry action and if problem continues, contact system administrator.</value>
+	</data>
+	<data name="InvalidOperationException">
+		<value>063 - frAn InvalidOperationException has occured. Please retry the action and if problem continues, contact system administrator.</value>
+	</data>
+	<data name="WebSessionTimedOut">
+		<value>064 - frYour web session has timed out, please logon to the application again.</value>
+	</data>
+	<data name="ArgumentOutOfRangeException.LogonPanel">
+		<value>065 - frConnection refused, username/password not recognised. Please try again.</value>
+	</data>
+	<data name="AppSettingsMissing">
+		<value>066 - frThe '{0}' is missing from the web.config configuration.</value>
+	</data>
+	<data name="UnableToTransfer">
+		<value>067 - frUnable to transfer to the web page '{0}'. Check that this page does exist and is available.</value>
+	</data>
+	<data name="UnableToDetermineCulture.LogonPanel">
+		<value>068 - frUnable to determine culture</value>
+	</data>
+	<data name="MissingManifestResourceException">
+		<value>069 - frAn MissingManifestResourceException has occured. Please retry action and if problem continues, contact system administrator.</value>
+	</data>
+	<data name="WebUserControlLibrary.GenerateTemplate.UnableWriteTemplate">
+		<value>070 - frUnable to generate XML template file {0}</value>
+	</data>
+	<data name="WebUserControlLibrary.GenerateXsd.UnableWriteXsd">
+		<value>071 - frUnable to write XSD file {0}</value>
+	</data>
+	<data name="CSAControlLibrary.UnableToDetermineCulture">
+		<value>072 - frUnable to determine culture from Session variables using index '{0}'.</value>
+	</data>
+	<data name="XmlTemplate.LoadDocFromFileFailure">
+		<value>073 - frUnable to load XML from file '{0}'.</value>
+	</data>
+	<data name="XmlTemplate.LoadDocFromXmlFailure">
+		<value>074 - frUnable to load XML into document '{0}'.</value>
+	</data>
+	<data name="XmlTemplate.MissingUpdateType">
+		<value>075 - frMissing update type for '{0}'.</value>
+	</data>
+	<data name="XmlTemplate.MissingMatchingAttribute">
+		<value>076 - frMissing matching attribute for xpath '{0}' on XML '{1}'.</value>
+	</data>
+	<data name="XmlTemplate.MissingAttribute">
+		<value>077 - frMissing attribute for '{0}' on XML '{1}'.</value>
+	</data>
+	<data name="XmlTemplate.InvalidUpdateType">
+		<value>078 - frInvalid update type for value '{0}' on XML '{1}'.</value>
+	</data>
+	<data name="XmlTemplate.ElementNotFound">
+		<value>079 - frElement '{0}' not found in XML '{1}'.</value>
+	</data>
+	<data name="XmlTemplate.ContainerElementNotFound">
+		<value>080 - frContainer element not found for XML '{0}' and '{1}'.</value>
+	</data>
+	<data name="XmlTemplate.CrmServiceException">
+		<value>081 - frTemplate mismatch for key '{0}' and XML '{1}'.</value>
+	</data>
+	<data name="MissingXmlNode">
+		<value>082 - frThe {0} '{1}' is missing from XML '{2}'.</value>
+	</data>
+	<data name="ExtraXmlNode">
+		<value>083 - frThe {0} '{1}' should not be in XML '{2}'.</value>
+	</data>
+	<data name="IncorrectXmlNode">
+		<value>084 - frThe {0} '{1}' should not have the value '{2}' in XML '{3}'.  {4}</value>
+	</data>
+	<data name="WebApplication.SQLServerConnectionNotMade">
+		<value>085 - frConnection to the server/database has been lost. The system administrator has been notified. Please try again in 5 minutes.</value>
+	</data>
+	<data name="WebApplication.SQLExecutionError">
+		<value>086 - frAn unexpected error has occured. The system administrator has been informed. Please re-input the data or select another menu item.</value>
+	</data>
+	<data name="WebApplication.DefaultError">
+		<value>087 - frAn unexpected error has occured. The system administrator has been informed. Please re-input the data or select another menu item.</value>
+	</data>
+	<data name="InvalidXml">
+		<value>085 - frThe XML '{0}' is not vaid</value>
+	</data>
+	<data name="SProcMissingData">
+		<value>088 - frThe SQL query '{0}' did not return a value for setting a SProc's variable.</value>
+	</data>
+	<data name="SProcExtraData">
+		<value>089 - frThe SQL query '{0}' returned more than one value for setting a SProc's variable.</value>
+	</data>
+	<data name="CSA.CardAlreadyExists">
+		<value>301 - frThe card number already exists. Please check that the card number is entered correctly, otherwise navigate to the search page and attempt to locate the card.</value>
+	</data>
+	<data name="CSA.InvalidCardNumber">
+		<value>302 - frThe card number is invalid. Please check that the card number is entered correctly and try again.</value>
+	</data>
+	<data name="CSA.CreateSkeletonUnknownReturnCode">
+		<value>303 - frAn unknown return code has been generated by the Create Customer Skeleton stored procedure. Please contact system administrator.</value>
+	</data>
+	<data name="CSAControlLibrary.InvalidElementContent">
+		<value>090 - frThe content '{0}' of element '{1}' is invalid</value>
+	</data>
+	<data name="CSAControlLibrary.ColumnNotBeingUsed">
+		<value>091 - frThe column index '{0}' has not been assigned.</value>
+	</data>
+	<data name="CSAControlLibrary.MissingElement">
+		<value>092 - frThe element '{0}' must be supplied for '{1}'.</value>
+	</data>
+	<data name="CSAControlLibrary.InvalidElement">
+		<value>093 - frThe element '{0}' is invalid.</value>
+	</data>
+	<data name="Condition.InvalidXsd">
+		<value>094 - frThe XSD of condition_list is invalid.  {0}</value>
+	</data>
+	<data name="Condition.InvalidXml">
+		<value>095 - frThe XML of condition_list is invalid.  {0}</value>
+	</data>
+	<data name="Condition.UnknownField">
+		<value>096 - frThe XML of condition_list contains an unknown field '{0}'.</value>
+	</data>
+</root>

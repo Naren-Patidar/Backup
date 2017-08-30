@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="condition_list" targetNamespace="urn:Fujitsu.eCrm.Generic.CrmService/xsd/condition_list" elementFormDefault="qualified" xmlns="urn:Fujitsu.eCrm.Generic.CrmService/xsd/condition_list" xmlns:mstns="http://tempuri.org/ConditionList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="condition_list" type="conditionListType"></xs:element>
+	<xs:simpleType name="compType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="equals" />
+			<xs:enumeration value="not equal" />
+			<xs:enumeration value="is null" />
+			<xs:enumeration value="is not null" />
+			<xs:enumeration value="less than" />
+			<xs:enumeration value="not less than" />
+			<xs:enumeration value="greater than" />
+			<xs:enumeration value="not greater than" />
+			<xs:enumeration value="like" />
+			<xs:enumeration value="not like" />
+			<xs:enumeration value="in" />
+			<xs:enumeration value="not in" />
+			<xs:enumeration value="between" />
+			<xs:enumeration value="not between" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="opType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="and" />
+			<xs:enumeration value="or" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="conditionListType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="condition_list" type="conditionListType" />
+			<xs:element name="condition">
+				<xs:complexType>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="field" type="xs:string" />
+						<xs:element name="value" type="xs:string" />
+					</xs:choice>
+					<xs:attribute name="op" type="compType" />
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+		<xs:attribute name="op" type="opType" />
+		<xs:attribute name="not" type="xs:boolean" />
+	</xs:complexType>
+</xs:schema>

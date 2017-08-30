@@ -1,0 +1,2 @@
+            System.Net.ServicePointManager.ServerCertificateValidationCallback = 
+                ((senders, certificate, chain, sslPolicyErrors) => true);

@@ -1,0 +1,15 @@
+//--MCA router changes
+
+Goutham highlighted that only 3 router servers (MCA Live uk) request getting served. Currently only 4 servers are in live out of 6 servers, Can you please look into it.
+
+--------------
+Akamai changes
+
+I was working with the akamai team to get datacenter cookies created for us. this has been now done in 'staging akamai'
+This is what has been done
+1. Origin.aws1.mca-ppe.tesco.com has been pinned to certificate secure-Poe.tesco.com
+2. Datacenter cookies created so we can provide query param and force traffic to a particular dc. Example. . Http://secure-ppe.tesco.com/clubcard/myaccount/home/home?DCMCAPPE=SDC will keep it to sdc and =AWS will take the traffic to our AWS origin
+So, Can you please do a testing on this with SDC.  What you should see is when you login and check it should have dropped a cookie withe same name
+Thanks Mrinal
+---------------------------
+CZ - deployment on 27 apr

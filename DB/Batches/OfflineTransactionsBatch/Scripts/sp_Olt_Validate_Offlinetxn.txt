@@ -1,0 +1,258 @@
+USE [NGCData]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Olt_Validate_Offlinetxn]    Script Date: 02/06/2013 11:59:36 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[sp_Olt_Validate_Offlinetxn]
+@storeno int,
+@errmsg varchar(2) output,
+@Count_Skeleton bigint output,
+@temppath varchar(200)
+AS
+set @errmsg='0'
+
+SET IDENTITY_INSERT TempOfflineDataDuplicate  ON 
+insert into dbo.TempOfflineDataDuplicate(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id
+from tempofflinedata 
+where card_account_number in (select card_account_number from tempofflinedata Group by card_account_number,txn_date,store_code,till_number,reciept_number having count(1)>1)
+SET IDENTITY_INSERT TempOfflineDataDuplicate  OFF
+		
+delete from TempOfflineData where TempOfflineData.card_account_number in (select card_account_number from tempofflinedata Group by card_account_number,txn_date,store_code,till_number,reciept_number having count(1)>1)
+
+
+If(@storeno <> 999)
+Begin
+--store number in file and store number in transaction does not match
+SET IDENTITY_INSERT TempOfflineDataStoreNo  ON 
+insert into dbo.TempOfflineDataStoreNo(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id
+from tempofflinedata where store_code!=@storeno 
+SET IDENTITY_INSERT TempOfflineDataStoreNo  OFF
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDataStoreNo)
+End
+
+
+--To check card number is within the existing card range or not
+
+SET IDENTITY_INSERT TempOfflineDataOutOfRange  ON 
+insert into dbo.TempOfflineDataOutOfRange(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id
+from tempofflinedata 
+where card_account_number not in (select card_account_number from tempofflinedata T,ClubcardRange 
+where Convert(bigint,T.card_account_number) between Convert(bigint,MinCardNumber) and convert(bigint,MaxCardNumber) 
+And ClubcardRange.IsDeleted = 'N')
+SET IDENTITY_INSERT TempOfflineDataOutOfRange  OFF
+		
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDataOutOfRange)
+
+----To validate household head exists or not
+--
+--SET IDENTITY_INSERT TempOfflineDataHHeadmis  ON 
+--insert into dbo.TempOfflineDataHHeadmis(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+--select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id
+--from tempofflinedata where card_account_number not in 
+--(select card_account_number from card_account d, customer c where d.customer_crmid = c.customer_crmid and c.primary_customer_crmid is not null)
+--SET IDENTITY_INSERT TempOfflineDataHHeadmis  OFF
+
+--delete from TempOfflineData where card_account_number in 
+--(select card_account_number from card_account d, customer c where d.customer_crmid = c.primary_customer_crmid)
+
+--amount spent is negetive
+
+SET IDENTITY_INSERT TempOfflineDateAmtNeg  ON 
+insert into dbo.TempOfflineDateAmtNeg(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where amount_spend<0 and total_points>0
+SET IDENTITY_INSERT TempOfflineDateAmtNeg  OFF
+
+delete from tempofflinedata where amount_spend<0 and total_points>0
+
+--amoount spent is pasitive points is negetive
+
+SET IDENTITY_INSERT TempOfflineDatePointNeg  ON 
+insert into dbo.TempOfflineDatePointNeg(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where amount_spend>0 and total_points<0
+SET IDENTITY_INSERT TempOfflineDatePointNeg  OFF
+
+delete from tempofflinedata where amount_spend>0 and total_points<0
+
+--amount spent is zero
+
+SET IDENTITY_INSERT TempOfflineDateAmtzero  ON 
+insert into dbo.TempOfflineDateAmtzero(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where amount_spend=0 and total_points>0
+SET IDENTITY_INSERT TempOfflineDateAmtzero  OFF
+
+delete from tempofflinedata where amount_spend=0 and total_points>0
+
+--card_account number does not exists
+
+SET IDENTITY_INSERT TempOfflineDateFieldNull  ON 
+insert into dbo.TempOfflineDateFieldNull(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where card_account_number is null or txn_date is null or store_code is null or till_number is null or cashier_id is null or reciept_number is null or amount_spend is null or total_points is null
+SET IDENTITY_INSERT TempOfflineDateFieldNull  OFF 
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDateFieldNUll)
+
+/* Set Rejection Code to 3 if date format is wrong */
+
+SET IDENTITY_INSERT TempOfflineDateFormatWrong  ON 
+insert into dbo.TempOfflineDateFormatWrong(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where isdate(txn_date)<> 1 or datepart(ms,txn_date)>0
+SET IDENTITY_INSERT TempOfflineDateFormatWrong  OFF
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDateFormatWrong)
+
+/* Set Rejection Code to 4 if date is future date */
+
+SET IDENTITY_INSERT TempOfflineDateFuture  ON 
+insert into dbo.TempOfflineDateFuture(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id) 
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id from TempOfflineData
+where txn_date>getdate()
+SET IDENTITY_INSERT TempOfflineDateFuture  OFF
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDateFuture)
+
+/* Set Rejection Code to 15 if store is unknown */
+
+SET IDENTITY_INSERT TempOfflineStoreUnknown  ON 
+insert into dbo.TempOfflineStoreUnknown(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id) 
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id From TempOfflineData
+where TempOfflineData.store_code not in (select TescoStoreID from TescoStore (nolock))
+SET IDENTITY_INSERT TempOfflineStoreUnknown  OFF
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineStoreUnknown)
+
+/* Card Account status invalid */
+
+--SET IDENTITY_INSERT TempOfflineInvalidCardStatus  ON 
+--insert INTO TempOfflineInvalidCardStatus(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+--select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id From TempOfflineData 
+--WHERE TempOfflineData.card_account_number in
+--	(SELECT ClubcardID FROM Clubcard WHERE (ClubcardStatus in (1,2,3,4,5)))
+--SET IDENTITY_INSERT TempOfflineInvalidCardStatus  OFF
+
+--delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineInvalidCardStatus)
+ 
+/*Customer Use status Invalid */
+
+--SET IDENTITY_INSERT TempOfflineInvalidUseStatus  ON 
+--insert into TempOfflineInvalidUseStatus(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+--select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id From TempOfflineData 
+--WHERE TempOfflineData.card_account_number in
+--(SELECT ClubcardID
+--FROM Clubcard
+--	Inner Join customer 
+--		On customer.CustomerID = Clubcard.CustomerID
+--where  customer.CustomerUseStatusID in (2,3,4))
+--SET IDENTITY_INSERT TempOfflineInvalidUseStatus  OFF
+
+
+--delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineInvalidUseStatus)
+
+
+/* Transaction already present */
+
+insert into TempOfflineDupTxn(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select T.txn_date,T.card_account_number,T.store_code,till_number,T.cashier_id,reciept_number,amount_spend,T.total_points,temp_txn_id 
+from TempOfflineData T , ClubcardTransaction tx
+	Where
+	Convert(varchar(10),T.txn_date,103) = Convert(varchar(10),tx.TransactionDateTime,103)
+	And Cast(T.till_number As Int)=  Cast(tx.SourcePOSID As Int) 
+	And Cast(T.reciept_number As Int)  =  Cast(tx.SourceSystemTransactionID As Int) 
+	AND T.store_code = tx.TescoStoreID
+
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDupTxn)
+
+/* Invalid PosID or CashierID */
+
+SET IDENTITY_INSERT TempOfflineDataInvalidPos  ON 
+insert into TempOfflineDataInvalidPos(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points,temp_txn_id From TempOfflineData
+where (len(TempOfflineData.till_number)>=5 and TempOfflineData.till_number > 32767) or len(TempOfflineData.cashier_id)>=5
+SET IDENTITY_INSERT TempOfflineDataInvalidPos  OFF
+
+delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineDataInvalidPos)
+
+
+/* Skeleton customer needs to be created*/
+Truncate table TempOfflineSkeleton
+
+--SET IDENTITY_INSERT TempOfflineSkeleton  ON 
+insert into TempOfflineSkeleton(txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points)
+select txn_date,card_account_number,store_code,till_number,cashier_id,reciept_number,amount_spend,total_points From TempOfflineData
+where TempOfflineData.card_account_number not in (select ClubcardID from Clubcard (nolock))
+--SET IDENTITY_INSERT TempOfflineSkeleton  OFF
+
+--delete from TempOfflineData where TempOfflineData.temp_txn_id in (select temp_txn_id from TempOfflineSkeleton)
+
+SELECT @Count_Skeleton=count(1) from TempOfflineSkeleton
+IF(@Count_Skeleton>0)
+BEGIN
+DECLARE @Cmd varchar(1000)
+SET @temppath=@temppath + '\Skeleton.txt'
+SELECT @Cmd = 'bcp "Select txn_date,card_account_number,store_code From '+DB_NAME()+'.dbo.TempOfflineSkeleton " queryout ' + @temppath + ' -S ' + @@servername +  ' -c -T -t "	" '
+exec  master..xp_cmdshell @Cmd
+
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

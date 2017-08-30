@@ -1,0 +1,5 @@
+IF  NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TempCoupons]') AND type in (N'U'))
+BEGIN
+CREATE TABLE TempCoupons (HouseholdiD BIGINT,NumberofCoupons INT)
+INSERT INTO TempCoupons SELECT HouseholdID, Count(1)FROM DunnhumbyTargetStmt (nolock) GROUP BY HouseholdID
+END

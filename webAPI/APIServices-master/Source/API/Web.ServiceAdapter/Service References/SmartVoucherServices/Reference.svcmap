@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48e1b9cf-4d1e-45ce-805e-9191bfe9052d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="01.wsdl" MetadataType="Wsdl" ID="c9f37ad0-26f7-48db-994f-ad978b2dee11" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="4408f4a9-d0f4-41e3-b10b-1855ae069b36" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+    <MetadataFile FileName="01.xsd" MetadataType="Schema" ID="5ad741f8-3f15-4206-a4f5-9fec05fae1a6" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="6dae18ec-85e1-4b68-9a36-601b09a8820e" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+    <MetadataFile FileName="Tesco.com.IntegrationServices.Messages.xsd" MetadataType="Schema" ID="10db5489-2e51-4b92-84f1-5367740b2f27" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="34cb318c-f24f-424d-be00-97937decc3f6" SourceId="1" SourceUrl="https://clubcardwebservices.ukroi.tesco.org/SmartVoucherServices/SmartVoucherServices.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

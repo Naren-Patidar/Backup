@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClubcardService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IClubcardService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tesco.com/clubcardonline/datacontract/2010/01" location="http://pvuktstfeapp03.tst01.tesco.org/CCOServices/ClubcardService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="WSHttpBinding_IClubcardService" type="i0:IClubcardService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IClubcardService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddPrintAtHomeDetailsXMLInput">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddPrintAtHomeDetailsXMLInput" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelSaverPointsBalance">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetFuelSaverPointsBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsXmasClubMember">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsXmasClubMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasSaverSummary">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetChristmasSaverSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAccountDetails">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetMyAccountDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewOrderReplacementValid">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsNewOrderReplacementValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewOrderReplacement">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddNewOrderReplacement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHouseholdCustomers">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetHouseholdCustomers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClubcards">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcards" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClubcardsCustomer">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcardsCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsForAllCollPeriodByCustomer">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsForAllCollPeriodByCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTxnDetailsByCustomerAndOfferID">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByCustomerAndOfferID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTxnDetailsByHouseholdCustomerAndOfferID">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByHouseholdCustomerAndOfferID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsSummaryInfo">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsSummaryInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCustomerActivated">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckCustomerActivated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IGHSCheckCustomerActivated">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IGHSCheckCustomerActivated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckHouseholdStatusOfCustomer">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckHouseholdStatusOfCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPrimaryCard">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddPrimaryCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerStatus">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCustomerStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RollBackCustomerDetails">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/RollBackCustomerDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTokenCustomer">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ValidateTokenCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewCardRange">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCardRange">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewCardType">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCardRange">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCardRange">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/DeleteCardRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCardType">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCardType">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStores">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStoreRegion">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreRegion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStoreFormat">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreFormat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStores">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddStores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStores">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateStores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreNames">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetStoreNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClubcardService">
+    <wsdl:port name="WSHttpBinding_IClubcardService" binding="tns:WSHttpBinding_IClubcardService">
+      <soap12:address location="http://pvuktstfeapp03.tst01.tesco.org/CCOServices/ClubcardService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://pvuktstfeapp03.tst01.tesco.org/CCOServices/ClubcardService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DoubleUpResponse"
+    targetNamespace="http://tempuri.org/DoubleUpResponse.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/DoubleUpResponsee.xsd"
+    xmlns:mstns="http://tempuri.org/DoubleUpResponse.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="DoubleupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name ="TransactionID" type="xs:string" />
+        <xs:element name ="TransactionDateTime" type="xs:string" />
+        <xs:element name ="TransactionResponseCode" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="Response">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RequestID" type="xs:string" />
+              <xs:element name="ResponseCode" type="xs:string" />
+              <xs:element name="VoucherNo" type="xs:string" />
+              <xs:element name="AlphaNumericID" type="xs:string" />
+            </xs:sequence>         
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

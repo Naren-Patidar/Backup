@@ -1,0 +1,134 @@
+############################################################ 
+##
+### NGCMarketing
+##
+############################################################
+
+# Logon
+NGCMarketing.LogonPanel.Flag.Primary.Tip=Click here to select Korean language
+NGCMarketing.LogonPanel.Flag.Secondary.Tip=Click here to select English language
+
+############################################################
+##
+### NGCCSD
+##
+############################################################
+
+# Logon
+NGCCSD.LogonPanel.Flag.Primary.Tip=Click here to select Korean language
+NGCCSD.LogonPanel.Flag.Secondary.Tip=Click here to select English language
+
+# Register Customer
+CustRegister.Popup.SSNInvalid.Message=The SSN entered is invalid. Please re-enter and try again.
+CustRegister.Popup.OfficialIdExists.Message=This SSN already exists. If the customer has not registered their details, then choose find customer and update their details.
+
+
+# AdjustPoints 
+# STPF Points (Also known as HSC Points). These are unique to Korea
+AdjustPointsForm.STPFPoints=STPF Points
+AdjustPointsForm.STPFPoints.Tip=Enter the amount of STPF points
+AdjustPointsPopUp.NoPointsSupplied=At least one of normal points, welcome points, STPF points or product points must have an entry.
+AdjustPointsPopUp.AllPointsNonZero=At least one of normal points, welcome points, STPF points or product points must be non-zero.
+
+# TransactionHistoryDetails
+# STPF Points (Also known as HSC Points). These are unique to Korea
+TxnSTPFPoints=STPF Points
+TxnSTPFPoints.Tip=The number of STPF points awarded for this transaction
+
+
+# ViewPoints
+# STPF Points (Also known as HSC Points). These are unique to Korea
+Phrase.PointsTableD1=STPF Points
+Phrase.PointsTableD1.Tip=Number of STPF points awarded
+
+
+# RewardDetail
+# STPF Points (Also known as HSC Points). These are unique to Korea
+RewardDetail.PopupDetail.STPFPoints=STPF Points
+RewardDetail.PopupDetail.STPFPoints.Tip=The amount of STPF Points earned for the transaction
+
+# Update Details
+UpdateDetailsPanel.Error.OfficialIdInUse=The SSN supplied is already in use by another customer. Please amend and try again.
+UpdateDetailsPanel.Form.PhoneDay.PhonePart1.Tip=Enter the customer's daytime contact number. The first part of the phone number can be between 2 and 4 digits long
+UpdateDetailsPanel.Form.PhoneDay.PhonePart2.Tip=Enter the customer's daytime contact number. The second part of the phone number can be between 1 and 4 digits long
+UpdateDetailsPanel.Form.PhoneDay.PhonePart3.Tip=Enter the customer's daytime contact number. The third part of the phone number should be 4 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart1.Tip=Enter the customer's evening contact number. The first part of the phone number can be between 2 and 4 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart2.Tip=Enter the customer's evening contact number. The second part of the phone number can be between 1 and 4 digits long
+UpdateDetailsPanel.Form.PhoneEve.PhonePart3.Tip=Enter the customer's evening contact number. The third part of the phone number should be 4 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart1.Tip=Enter the customer's mobile contact number. The first part of the phone number can be between 2 and 4 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart2.Tip=Enter the customer's mobile contact number. The second part of the phone number can be between 1 and 4 digits long
+UpdateDetailsPanel.Form.PhoneMob.PhonePart3.Tip=Enter the customer's mobile contact number. The third part of the phone number should be 4 digits long
+
+# Auto Add Points
+Menu.Item.Name.AutoAddPoints=Auto&nbsp;Add&nbsp;Points
+Menu.Item.Tip.AutoAddPoints=Update points using barcodes from a receipt
+
+Menu.Header.AutoAddPoints=Points : Auto Add Points
+Win.Header.AutoAddPoints=Auto Add Points
+NGCCSD.AutoAddPoints.Button.Reset=Reset
+NGCCSD.AutoAddPoints.Button.Reset.ToolTip=Click here to reset the form and clear any current entries
+NGCCSD.AutoAddPoints.Button.Save=Save
+NGCCSD.AutoAddPoints.Button.Save.ToolTip=Click here to submit the transaction
+NGCCSD.AutoAddPoints.FieldGroup.Barcodes=Scan Barcodes to Enter Points
+NGCCSD.AutoAddPoints.Caption.Barcode1=Barcode 1
+NGCCSD.AutoAddPoints.Caption.Barcode1.ToolTip=Enter the first barcode
+NGCCSD.AutoAddPoints.Caption.Barcode2=Barcode 2
+NGCCSD.AutoAddPoints.Caption.Barcode2.ToolTip=Enter the second barcode
+NGCCSD.AutoAddPoints.Caption.Warning=Warning
+NGCCSD.AutoAddPoints.Button.Continue=Continue
+NGCCSD.AutoAddPoints.Button.Continue.ToolTip=Click here to continue the addition of points to the customer
+NGCCSD.AutoAddPoints.Button.Cancel=Cancel
+NGCCSD.AutoAddPoints.Button.Cancel.ToolTip=Click here to cancel the addition of points to the customer
+NGCCSD.AutoAddPoints.Message.MissingBarcode1=Please enter barcode 1.
+NGCCSD.AutoAddPoints.Message.MissingBarcode2=Please enter barcode 2.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode1=Please enter barcode 1 again.
+NGCCSD.AutoAddPoints.Message.InvalidBarcode2=Please enter barcode 2 again.
+NGCCSD.AutoAddPoints.Message.PointsAdded=Points Added
+NGCCSD.AutoAddPoints.Message.NoCollectionPeriod=Points have not been added. There is no current collection period.
+NGCCSD.AutoAddPoints.Message.CustomerBanned=Points have not been added. The customer is banned.
+NGCCSD.AutoAddPoints.Message.InvalidStore=Points have not been added. The issuing store code of the barcode is invalid.
+NGCCSD.AutoAddPoints.Message.WarningUseStatus=The customer use status is currently 'Left Scheme' or 'Deceased'.
+NGCCSD.AutoAddPoints.Message.WarningCardStatus=The customer card status is currently not 'Normal' or 'Lost'.
+NGCCSD.AutoAddPoints.Message.WarningMailStatus=The customer mail status is currently 'Skeleton'.
+NGCCSD.AutoAddPoints.Message.TransactionFailed=Points have not been added. Please try again. If the problem persists, please contact support.
+NGCCSD.AutoAddPoints.Message.Continue=Do you wish to continue?
+NGCCSD.AutoAddPoints.Message.InvalidPoints=Barcode 2 is incorrect. Please check and retype it.
+NGCCSD.AutoAddPoints.Message.PointsAlreadyAdded=Points have already been added.
+NGCCSD.AutoAddPoints.Message.TransactionTooOld=The points cannot be added - the transaction was more than {0} days ago.
+
+############################################################
+##
+### NGCSSC
+##
+############################################################
+
+# Logon
+NGCSSC.LogonPanel.Flag.Primary.Tip=Click here to select Korean language
+NGCSSC.LogonPanel.Flag.Secondary.Tip=Click here to select English language
+
+# Maintain Stores
+MaintainStore.Popup.TRANPort=TRAN Port
+MaintainStore.Popup.TRANPort.ToolTip=The NGC server TRAN Port for this store
+MaintainStore.Popup.IRTPort=IRT Port
+MaintainStore.Popup.IRTPort.ToolTip=The NGC server IRT Port for this store
+MaintainStore.Popup.TRANIp=TRAN IP
+MaintainStore.Popup.TRANIp.ToolTip=The NGC server TRAN IP address for this store
+MaintainStore.Popup.IRTIp=IRT IP
+MaintainStore.Popup.IRTIp.ToolTip=The NGC server IRT IP address for this store
+MaintainStore.IrtIp.Part1=First part of NGC server IRT IP address
+MaintainStore.IrtIp.Part2=Second part of NGC server IRT IP address
+MaintainStore.IrtIp.Part3=Third part of NGC server IRT IP address
+MaintainStore.IrtIp.Part4=Fourth part of NGC server IRT IP address
+MaintainStore.TranIp.Part1=First part of NGC server TRAN IP address
+MaintainStore.TranIp.Part2=Second part of NGC server TRAN IP address
+MaintainStore.TranIp.Part3=Third part of NGC server TRAN IP address
+MaintainStore.TranIp.Part4=Fourth part of NGC server TRAN IP address
+NGCSSC.MaintainStores.Message.IRTIP1InvalidIpAddressAllZero=Invalid NGC server IRT IP address, 0.0.0.0 is not allowed.
+NGCSSC.MaintainStores.Message.TRANIP1InvalidIpAddressAllZero=Invalid NGC server TRAN IP address, 0.0.0.0 is not allowed.
+
+# Batch
+# In Korean so that all unkown customers are in Korean in the database
+Batch.BatchRegisterNewCustomer.Replace.Name=성명없음
+
+# NGC POS Service fields
+POS.DefaultCustomerName=성명없음

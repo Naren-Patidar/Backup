@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="DEV01\MY36dev" GeneratedFromPackageName="calculaterewardprocess" GeneratedFromPackageID="{4CEC6B5C-3373-4189-B5E4-74C74F295701}" GeneratedDate="01/08/2012 14:26:44"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Batch\CalculateReward\Log\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OLTPDBConStr].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.49;User ID=ngcadmin;Initial Catalog=NGCV36_Dev;Password=Tesco123</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PreviousOfferID].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>119</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportDBConStr].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.49;User ID=ngcadmin;Initial Catalog=NGCV36;Password=Tesco123</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

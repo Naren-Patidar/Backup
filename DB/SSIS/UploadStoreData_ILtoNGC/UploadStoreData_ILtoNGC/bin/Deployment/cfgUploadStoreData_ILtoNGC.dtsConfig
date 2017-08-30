@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="IN\HJ20" GeneratedFromPackageName="pkgUploadStoreData_ILtoNGC" GeneratedFromPackageID="{80D3673B-A0A6-4A7E-8635-49598AF1FA3B}" GeneratedDate="12/10/2012 10:18:40 AM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.21.149.228;Initial Catalog=NGCR16;Provider=SQLOLEDB;User Id=sa;Password=Tesco123;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgInputFileName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>TescoStore.txt</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgSourceFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\Input\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgStoreBackupFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\Backup\Store\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgStoreLogFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\UserLogs\Upload\Store\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgStoreUtilityLogFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\Tesco\NGC\UtilityLogs\Upload\Store\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgStoreValueRange].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>2000</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="DEV01\MY36dev" GeneratedFromPackageName="calculaterewardprocess" GeneratedFromPackageID="{4CEC6B5C-3373-4189-B5E4-74C74F295701}" GeneratedDate="01/08/2012 11:21:00"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=192.168.0.232;User ID=sa;Initial Catalog=NGCV36Report;Password=Tesco123</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportingDBConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=192.168.160.179;User ID=sa;Initial Catalog=NGCV36;Password=Tesco123</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Name]" ValueType="String">
+		<ConfiguredValue>LogFilePath</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Batch\CalculateReward\Log\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::oLogFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CalculateRewardProcess_</ConfiguredValue>
+	</Configuration>	
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PreviousOfferID].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>264</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

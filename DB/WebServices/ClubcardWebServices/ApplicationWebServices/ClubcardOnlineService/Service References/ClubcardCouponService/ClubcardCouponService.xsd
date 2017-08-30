@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCouponInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CouponInformation" nillable="true" type="tns:CouponInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCouponInformation" nillable="true" type="tns:ArrayOfCouponInformation" />
+  <xs:complexType name="CouponInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CouponClass">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CouponIssuanceChannel" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="CouponStatusId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="HouseholdId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssuanceDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IssuanceStore" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="ListRedemptionInfo" nillable="true" type="tns:ArrayOfRedemptionInfo" />
+          <xs:element minOccurs="0" name="RedemptionUtilized" type="xs:short" />
+          <xs:element minOccurs="0" name="SmartAlphaNumeric" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SmartBarcode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CouponInformation" nillable="true" type="tns:CouponInformation" />
+  <xs:complexType name="CouponClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlphaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CouponDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CouponImageFull" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="CouponImageThumbnail" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="EANBarcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullImageName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsGenerateSmartCodes" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IssuanceChannel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssuanceEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssuanceEndTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssuanceStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssuanceStartTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ListCouponLineInfo" nillable="true" type="tns:ArrayOfCouponLineTextInfo" />
+      <xs:element minOccurs="0" name="MaxRedemptionLimit" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="RedemptionChannel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RedemptionEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StatementNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThumbnailImageName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TillCouponTemplateNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TriggerNumber" nillable="true" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CouponClass" nillable="true" type="tns:CouponClass" />
+  <xs:complexType name="ArrayOfCouponLineTextInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CouponLineTextInfo" nillable="true" type="tns:CouponLineTextInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCouponLineTextInfo" nillable="true" type="tns:ArrayOfCouponLineTextInfo" />
+  <xs:complexType name="CouponLineTextInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Barcode" type="ser:char" />
+      <xs:element minOccurs="0" name="Center" type="ser:char" />
+      <xs:element minOccurs="0" name="CharacterWeigth" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="CharacterWidth" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Italic" type="ser:char" />
+      <xs:element minOccurs="0" name="LineNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LineText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LineUsed" type="ser:char" />
+      <xs:element minOccurs="0" name="UnderLine" type="ser:char" />
+      <xs:element minOccurs="0" name="WhiteOnBlack" type="ser:char" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CouponLineTextInfo" nillable="true" type="tns:CouponLineTextInfo" />
+  <xs:complexType name="ArrayOfRedemptionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RedemptionInfo" nillable="true" type="tns:RedemptionInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRedemptionInfo" nillable="true" type="tns:ArrayOfRedemptionInfo" />
+  <xs:complexType name="RedemptionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CashierNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChannelCode" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ClubcardNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsOffline" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RedemptionDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RedemptionType" type="tns:RedeemType" />
+      <xs:element minOccurs="0" name="StoreNumber" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="TillId" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="TillType" nillable="true" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RedemptionInfo" nillable="true" type="tns:RedemptionInfo" />
+  <xs:simpleType name="RedeemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Redeem" />
+      <xs:enumeration value="UnRedeem" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RedeemType" nillable="true" type="tns:RedeemType" />
+</xs:schema>

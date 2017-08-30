@@ -1,0 +1,133 @@
+
+D:\RUN\Textfiles>dir
+ Volume in drive D is Personal_Data_Not_Backed_Up
+ Volume Serial Number is 3A8A-B258
+
+ Directory of D:\RUN\Textfiles
+
+04/26/2017  02:58 PM    <DIR>          .
+04/26/2017  02:58 PM    <DIR>          ..
+10/22/2016  04:31 PM             5,763 Live MCA URLs with login accounts.txt
+12/30/2015  02:48 PM             5,315 MCA URLs with login accounts 1.txt
+05/10/2017  08:26 PM             4,527 MCA URLs with login accounts.txt
+11/07/2016  08:19 PM             1,450 New Text Document (2).txt
+11/03/2016  07:39 PM             1,072 Open deployment details.txt
+05/12/2016  04:42 PM                64 Servers.txt
+               6 File(s)         18,191 bytes
+               2 Dir(s)  106,600,402,944 bytes free
+
+D:\RUN\Textfiles>dir > count.txt
+
+D:\RUN\Textfiles>for /F "tokens=1" %G in dir do echo %G>count.txt
+dir was unexpected at this time.
+
+D:\RUN\Textfiles>for /F "tokens=1" %G in (dir) do echo %G>count.txt
+The system cannot find the file dir.
+
+D:\RUN\Textfiles>for /F "tokens=1" %G in ('dir') do echo %G>count.txt
+
+D:\RUN\Textfiles>echo Volume 1>count.txt
+
+D:\RUN\Textfiles>echo Volume 1>count.txt
+
+D:\RUN\Textfiles>echo Directory 1>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>count.txt
+
+D:\RUN\Textfiles>echo 10/22/2016 1>count.txt
+
+D:\RUN\Textfiles>echo 12/30/2015 1>count.txt
+
+D:\RUN\Textfiles>echo 05/10/2017 1>count.txt
+
+D:\RUN\Textfiles>echo 11/07/2016 1>count.txt
+
+D:\RUN\Textfiles>echo 11/03/2016 1>count.txt
+
+D:\RUN\Textfiles>echo 05/12/2016 1>count.txt
+
+D:\RUN\Textfiles>echo 7 1>count.txt
+
+D:\RUN\Textfiles>echo 2 1>count.txt
+
+D:\RUN\Textfiles>for /F "tokens=1" %G in ('dir') do echo %G>>count.txt
+
+D:\RUN\Textfiles>echo Volume 1>>count.txt
+
+D:\RUN\Textfiles>echo Volume 1>>count.txt
+
+D:\RUN\Textfiles>echo Directory 1>>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>>count.txt
+
+D:\RUN\Textfiles>echo 06/15/2017 1>>count.txt
+
+D:\RUN\Textfiles>echo 10/22/2016 1>>count.txt
+
+D:\RUN\Textfiles>echo 12/30/2015 1>>count.txt
+
+D:\RUN\Textfiles>echo 05/10/2017 1>>count.txt
+
+D:\RUN\Textfiles>echo 11/07/2016 1>>count.txt
+
+D:\RUN\Textfiles>echo 11/03/2016 1>>count.txt
+
+D:\RUN\Textfiles>echo 05/12/2016 1>>count.txt
+
+D:\RUN\Textfiles>echo 7 1>>count.txt
+
+D:\RUN\Textfiles>echo 2 1>>count.txt
+
+D:\RUN\Textfiles>dir
+ Volume in drive D is Personal_Data_Not_Backed_Up
+ Volume Serial Number is 3A8A-B258
+
+ Directory of D:\RUN\Textfiles
+
+06/15/2017  08:29 PM    <DIR>          .
+06/15/2017  08:29 PM    <DIR>          ..
+06/15/2017  08:32 PM               144 count.txt
+10/22/2016  04:31 PM             5,763 Live MCA URLs with login accounts.txt
+12/30/2015  02:48 PM             5,315 MCA URLs with login accounts 1.txt
+05/10/2017  08:26 PM             4,527 MCA URLs with login accounts.txt
+11/07/2016  08:19 PM             1,450 New Text Document (2).txt
+11/03/2016  07:39 PM             1,072 Open deployment details.txt
+05/12/2016  04:42 PM                64 Servers.txt
+               7 File(s)         18,335 bytes
+               2 Dir(s)  106,600,398,848 bytes free
+
+D:\RUN\Textfiles>for /F "tokens=6" %G in ('dir') do echo %G>>count.txt
+
+D:\RUN\Textfiles>echo Personal_Data_Not_Backed_Up 1>>count.txt
+
+D:\RUN\Textfiles>echo MCA 1>>count.txt
+
+D:\RUN\Textfiles>echo URLs 1>>count.txt
+
+D:\RUN\Textfiles>echo URLs 1>>count.txt
+
+D:\RUN\Textfiles>echo Text 1>>count.txt
+
+D:\RUN\Textfiles>echo deployment 1>>count.txt
+
+D:\RUN\Textfiles>for /F "tokens=6" %G in ('dir') do echo %G>>count.txt
+
+D:\RUN\Textfiles>echo Personal_Data_Not_Backed_Up 1>>count.txt
+
+D:\RUN\Textfiles>echo MCA 1>>count.txt
+
+D:\RUN\Textfiles>echo URLs 1>>count.txt
+
+D:\RUN\Textfiles>echo URLs 1>>count.txt
+
+D:\RUN\Textfiles>echo Text 1>>count.txt
+
+D:\RUN\Textfiles>echo deployment 1>>count.txt
+
+D:\RUN\Textfiles>for /F "tokens=6" %G in ('dir') do echo %G>>count.txt

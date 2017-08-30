@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5D1C51F-0E34-4062-9D48-59FC06AED200}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.ClubcardProducts.MCA.Web.Common</RootNamespace>
+    <AssemblyName>Tesco.ClubcardProducts.MCA.Web.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.2\lib\net40\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Web.4.1\lib\net35\NLog.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PointsSummarySequencing">
+      <HintPath>..\packages\MCAReferenceDlls\PointsSummarySequencing.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.52\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Activation\Address.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\Clubcard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\ClubcardCustomer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\ContactDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\ContactPreference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\DietaryPreferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\EntityBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Activation\Household.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Address\AddressBook.cs" />
+    <Compile Include="Entities\Common\CustomerDisplayName.cs" />
+    <Compile Include="Entities\Address\Address.cs" />
+    <Compile Include="Entities\Address\AddressSummary.cs" />
+    <Compile Include="Entities\Common\CustomerPreference.cs" />
+    <Compile Include="Entities\ComparableEntity.cs" />
+    <Compile Include="Entities\Identity\ValidationDetails.cs" />
+    <Compile Include="Entities\Service\RestApiRequest.cs" />
+    <Compile Include="Entities\Service\RestApiResponse.cs" />
+    <Compile Include="Entities\Settings\EnterpriceServiceSettings.cs" />
+    <Compile Include="Entities\Settings\NameCasingEnum.cs" />
+    <Compile Include="Entities\Settings\OperationNames.cs" />
+    <Compile Include="Entities\VoucherandCouponDetails\VoucherandCouponDetails.cs" />
+    <Compile Include="Entities\Vouchers\VoucherUsageSummaryEnum.cs" />
+    <Compile Include="Logger\AuditLogData.cs" />
+    <Compile Include="Logger\AuditLoggingService.cs" />
+    <Compile Include="Logger\EventLogger.cs" />
+    <Compile Include="Logger\LogData.cs" />
+    <Compile Include="Models\AddressDetails.cs" />
+    <Compile Include="Models\BoostsViewModel.cs" />
+    <Compile Include="Models\ActivationViewModel.cs" />
+    <Compile Include="Models\ContactPreferencesModel.cs" />
+    <Compile Include="Models\CustomerAddressModel.cs" />
+    <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\JoinViewModel.cs" />
+    <Compile Include="Models\LoadHtmlModel.cs" />
+    <Compile Include="Models\ManageCardsViewModel.cs" />
+    <Compile Include="Models\MyLatestStatementViewModel.cs" />
+    <Compile Include="Models\OptionsAndBenefitsModel.cs" />
+    <Compile Include="Models\OrderAReplacementModel.cs" />
+    <Compile Include="Models\PersonalDetailsPreferences.cs" />
+    <Compile Include="Models\PersonalDetailsViewModel.cs" />
+    <Compile Include="Models\StampModel.cs" />
+    <Compile Include="Models\VoucherChristmasSaverSummaryModel.cs" />
+    <Compile Include="Models\XmasSaverHeaderViewModel.cs" />
+    <Compile Include="Models\XmasSaverSummaryViewModel.cs" />
+    <Compile Include="Models\XmasSaverTopUpViewModel.cs" />
+    <Compile Include="Models\XmasSaverViewModel.cs" />
+    <Compile Include="Models\XmasSaverVoucherSavedViewModel.cs" />
+    <Compile Include="Providers\LogConfigProvider.cs" />
+    <Compile Include="Providers\StatementFormatProvider.cs" />
+    <Compile Include="Entities\Activation\ActivationRequestStatusEnum.cs" />
+    <Compile Include="Entities\Activation\CustomerActivationDetails.cs" />
+    <Compile Include="Entities\Activation\CustomerActivationDetailsEnum.cs" />
+    <Compile Include="Entities\Activation\CustomerActivationStatusdetails.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Boost\BoostBackgroundTemplate.cs" />
+    <Compile Include="Entities\Boost\Reward.cs" />
+    <Compile Include="Entities\Boost\RewardAndPoints.cs" />
+    <Compile Include="Entities\Boost\RewardAndPointsEnum.cs" />
+    <Compile Include="Entities\Boost\RewardAndToken.cs" />
+    <Compile Include="Entities\Boost\RewardEnum.cs" />
+    <Compile Include="Entities\Boost\Token.cs" />
+    <Compile Include="Entities\Boost\TokenDetails.cs" />
+    <Compile Include="Entities\Boost\TokenEnum.cs" />
+    <Compile Include="Entities\ChristmasSaver\ChristmasSaverSummary.cs" />
+    <Compile Include="Entities\ChristmasSaver\ChristmasSaverSummaryEnum.cs" />
+    <Compile Include="Entities\Common\AccountDetails.cs" />
+    <Compile Include="Entities\Common\AccountDetailsEnum.cs" />
+    <Compile Include="Entities\Common\BusinessConstants.cs" />
+    <Compile Include="Entities\Common\Clubcard.cs" />
+    <Compile Include="Entities\Common\ClubcardEnum.cs" />
+    <Compile Include="Entities\Common\PdfBackgroundTemplate.cs" />
+    <Compile Include="Entities\Common\HouseholdCustomerDetails.cs" />
+    <Compile Include="Entities\Common\HouseholdCustomerDetailsEnum.cs" />
+    <Compile Include="Entities\Common\KVPair.cs" />
+    <Compile Include="Entities\Common\KVPairEnum.cs" />
+    <Compile Include="Entities\Common\MCACookie.cs" />
+    <Compile Include="Entities\Common\MCACookieEnum.cs" />
+    <Compile Include="Entities\Common\MCATrace.cs" />
+    <Compile Include="Entities\Common\Offer.cs" />
+    <Compile Include="Entities\Common\OfferDetails.cs" />
+    <Compile Include="Entities\Common\OfferDetailsEnum.cs" />
+    <Compile Include="Entities\Common\OffersEnum.cs" />
+    <Compile Include="Entities\Common\StatementTypesEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\AccountContext.cs" />
+    <Compile Include="Entities\CustomerDetails\AccountContextEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\AccountDuplicacyStatusEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\AddressByPostCode.cs" />
+    <Compile Include="Entities\CustomerDetails\AdressByPostCodeEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\BTClubPreference.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerDetails.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerFamilyMasterData.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerFamilyMasterDataUpdate.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerMailStatusEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerMasterData.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerMasterDataEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerMLS_PDF_DownloadDetails.cs" />
+    <Compile Include="Entities\CustomerDetails\CustomerMLS_PDF_DownloadDetailsEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\EmailProfaneTextContributor.cs" />
+    <Compile Include="Entities\CustomerDetails\EmptyProfaneTextContributor.cs" />
+    <Compile Include="Entities\CustomerDetails\FamilyMasterData.cs" />
+    <Compile Include="Entities\CustomerDetails\FamilyMasterDataEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\FindAddressForPostCodeControlsClass.cs" />
+    <Compile Include="Entities\CustomerDetails\ISOLanguage.cs" />
+    <Compile Include="Entities\CustomerDetails\ISOLanguageEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\MultipleProfaneTextContributor.cs" />
+    <Compile Include="Entities\CustomerDetails\ProfaneTextProvider.cs" />
+    <Compile Include="Entities\CustomerDetails\Province.cs" />
+    <Compile Include="Entities\CustomerDetails\ProvinceEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\Race.cs" />
+    <Compile Include="Entities\CustomerDetails\RaceEnum.cs" />
+    <Compile Include="Entities\CustomerDetails\SingleProfaneTextContributor.cs" />
+    <Compile Include="Entities\DBConfiguration\DBConfigurationManager.cs" />
+    <Compile Include="Entities\Ecoupon\CouponDetails.cs" />
+    <Compile Include="Entities\Ecoupon\CouponDetailsEnum.cs" />
+    <Compile Include="Entities\FuelSave\FuelSaverBalance.cs" />
+    <Compile Include="Entities\Global\BusinessContracts.cs" />
+    <Compile Include="Entities\OrderReplacement\OrderReplacementModel.cs" />
+    <Compile Include="Entities\OrderReplacement\OrderReplacementReason.cs" />
+    <Compile Include="Entities\OrderReplacement\OrderReplacementStatus.cs" />
+    <Compile Include="Entities\OrderReplacement\OrderReplacementStatusEnum.cs" />
+    <Compile Include="Entities\OrderReplacement\OrderReplacementTypeEnum.cs" />
+    <Compile Include="Entities\Points\CustomerTransactions.cs" />
+    <Compile Include="Entities\Points\PointsSummary.cs" />
+    <Compile Include="Entities\Points\PointsSummaryEnum.cs" />
+    <Compile Include="Entities\Points\TransactionDetails.cs" />
+    <Compile Include="Entities\Points\TransactionDetailsEnum.cs" />
+    <Compile Include="Entities\Preferences\ClubDetails.cs" />
+    <Compile Include="Entities\Preferences\BTMediaEnum.cs" />
+    <Compile Include="Entities\Preferences\PreferenceEnum.cs" />
+    <Compile Include="Entities\Preferences\UserPreference.cs" />
+    <Compile Include="Entities\Security\CustomerSecurityAttemptAudit.cs" />
+    <Compile Include="Entities\Security\CustomerSecurityAttemptContext.cs" />
+    <Compile Include="Entities\Security\CustomerSecurityBlockerStatus.cs" />
+    <Compile Include="Entities\Service\MCARequest.cs" />
+    <Compile Include="Entities\Service\MCAResponse.cs" />
+    <Compile Include="Entities\Settings\ActivationStatusType.cs" />
+    <Compile Include="Entities\Settings\AppConfigEnum.cs" />
+    <Compile Include="Entities\Settings\AppConfiguration.cs" />
+    <Compile Include="Entities\Settings\CustomerSpecificSecurityConfiguration.cs" />
+    <Compile Include="Entities\Settings\DbConfiguration.cs" />
+    <Compile Include="Entities\Settings\DbConfigurationItem.cs" />
+    <Compile Include="Entities\Settings\DbConfigurationItemEnum.cs" />
+    <Compile Include="Entities\Settings\DbConfigurationItemNames.cs" />
+    <Compile Include="Entities\Settings\DbConfigurationTypeEnum.cs" />
+    <Compile Include="Entities\Settings\DotcomEnvironmentSettingEnum.cs" />
+    <Compile Include="Entities\Settings\Locale.cs" />
+    <Compile Include="Entities\Settings\MenuConfigEnum.cs" />
+    <Compile Include="Entities\Settings\MenuConfiguration.cs" />
+    <Compile Include="Entities\Settings\ParameterNames.cs" />
+    <Compile Include="Entities\Vouchers\MilesRewardDetails.cs" />
+    <Compile Include="Entities\Vouchers\MilesRewardDetailsEnum.cs" />
+    <Compile Include="Entities\Vouchers\MilesRewardDetailsSummary.cs" />
+    <Compile Include="Entities\Vouchers\VoucherDetails.cs" />
+    <Compile Include="Entities\Vouchers\VoucherDetailsEnum.cs" />
+    <Compile Include="Entities\Vouchers\VoucherRewardDetails.cs" />
+    <Compile Include="Entities\Vouchers\VoucherRewardDetailsEnum.cs" />
+    <Compile Include="Models\CouponImageViewModel.cs" />
+    <Compile Include="Models\SecurityViewModel.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\VoucherRewardDetailsOverallSummaryModel.cs" />
+    <Compile Include="Entities\Vouchers\VoucherUsageSummary.cs" />
+    <Compile Include="Providers\ConfigurationProvider.cs" />
+    <Compile Include="Logger\ILoggingService.cs" />
+    <Compile Include="Logger\LoggingService .cs" />
+    <Compile Include="Models\PointsSummaryDetailsModel.cs" />
+    <Compile Include="Models\TescoPointsModel.cs" />
+    <Compile Include="Models\CouponBoxViewModel.cs" />
+    <Compile Include="Models\CouponViewModel.cs" />
+    <Compile Include="Models\PointsSummaryModel.cs" />
+    <Compile Include="Models\PointsViewModel.cs" />
+    <Compile Include="Models\VoucherRewardMilesModel.cs" />
+    <Compile Include="Models\VouchersUnUsedModel.cs" />
+    <Compile Include="Models\VouchersViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\CookieUtility.cs" />
+    <Compile Include="Utilities\CryptoUtility.cs" />
+    <Compile Include="Utilities\Extensions.cs" />
+    <Compile Include="Utilities\GeneralUtility.cs" />
+    <Compile Include="Utilities\ObjectExtensions.cs" />
+    <Compile Include="Utilities\RegexUtility.cs" />
+    <Compile Include="Utilities\Serializer.cs" />
+    <Compile Include="Utilities\StringUtility.cs" />
+    <Compile Include="Utilities\ValidateCaptcha.cs" />
+    <Compile Include="Utilities\ValidatorUtility.cs" />
+    <Compile Include="Validator\Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\ManageCards\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

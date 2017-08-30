@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationLibrary", "LocalizationLibrary.csproj", "{83ED0ADC-2F80-4D1E-9AB3-FA732D5BBAEB}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {7C0712E1-7EE8-49FF-9A8D-09FB574C94AF}
+		SccProjectUniqueName1 = LocalizationLibrary.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{83ED0ADC-2F80-4D1E-9AB3-FA732D5BBAEB}.Debug.ActiveCfg = Debug|.NET
+		{83ED0ADC-2F80-4D1E-9AB3-FA732D5BBAEB}.Debug.Build.0 = Debug|.NET
+		{83ED0ADC-2F80-4D1E-9AB3-FA732D5BBAEB}.Release.ActiveCfg = Release|.NET
+		{83ED0ADC-2F80-4D1E-9AB3-FA732D5BBAEB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

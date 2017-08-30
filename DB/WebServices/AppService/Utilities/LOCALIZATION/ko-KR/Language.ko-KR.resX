@@ -1,0 +1,4902 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<!-- 
+            Microsoft ResX Schema 
+        
+            Version 1.3
+                
+            The primary goals of this format is to allow a simple XML format 
+            that is mostly human readable. The generation and parsing of the 
+            various data types are done through the TypeConverter classes 
+            associated with the data types.
+        
+            Example:
+        
+                ... ado.net/XML headers & schema ...
+                <resheader name="resmimetype">text/microsoft-resx</resheader>
+                <resheader name="version">1.3</resheader>
+                <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+                <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+                <data name="Name1">this is my long string</data>
+                <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+                <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+                    [base64 mime encoded serialized .NET Framework object]
+                </data>
+                <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+                    [base64 mime encoded string representing a byte array form of the .NET Framework object]
+                </data>
+        
+            There are any number of "resheader" rows that contain simple 
+            name/value pairs.
+            
+            Each data row contains a name, and value. The row also contains a 
+            type or mimetype. Type corresponds to a .NET class that support 
+            text/value conversion through the TypeConverter architecture. 
+            Classes that don't support this are serialized and stored with the 
+            mimetype set.
+                     
+            The mimetype is used for serialized objects, and tells the 
+            ResXResourceReader how to depersist the object. This is currently not 
+            extensible. For a given mimetype the value must be set accordingly:
+        
+            Note - application/x-microsoft.net.object.binary.base64 is the format 
+                   that the ResXResourceWriter will generate, however the reader can 
+                   read any of the formats listed below.
+        
+            mimetype: application/x-microsoft.net.object.binary.base64
+            value   : The object must be serialized with 
+                    : System.Serialization.Formatters.Binary.BinaryFormatter
+                    : and then encoded with base64 encoding.
+        
+            mimetype: application/x-microsoft.net.object.soap.base64
+            value   : The object must be serialized with 
+                    : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+                    : and then encoded with base64 encoding.
+            mimetype: application/x-microsoft.net.object.bytearray.base64
+            value   : The object must be serialized into a byte array 
+                    : using a System.ComponentModel.TypeConverter
+                    : and then encoded with base64 encoding.
+        -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="NGCVersion">
+		<value>NGC Version 1.5</value>
+	</data>
+	<data name="Win.Header.SyncError">
+		<value>전송오류</value>
+	</data>
+	<data name="SyncError.Button.Continue">
+		<value>계속</value>
+	</data>
+	<data name="SyncError.Button.Continue.Tip">
+		<value>이전 화면을 새로운 정보로 고치려면 클릭하십시오.</value>
+	</data>
+	<data name="SyncError.Message">
+		<value>오류&lt;br&gt;이전화면을 변경하는 동안, 다른 사용자에 의해 동일정보가 업데이트되었습니다. 이전 화면을 새로운 정보로 고치려면 계속을 누르십시오.</value>
+	</data>
+	<data name="Win.Header.GeneralError">
+		<value>오류</value>
+	</data>
+	<data name="GeneralError.NA">
+		<value>N/A</value>
+	</data>
+	<data name="GeneralError.MachineName">
+		<value>시스템명칭</value>
+	</data>
+	<data name="GeneralError.DateAndTime">
+		<value>날짜 &amp; 시각</value>
+	</data>
+	<data name="GeneralError.ErrorID">
+		<value>오류 ID</value>
+	</data>
+	<data name="GeneralError.Button.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="GeneralError.Button.Logon.Tip">
+		<value>시스템에 재접속하려면 클릭하십시오.</value>
+	</data>
+	<data name="GeneralError.Messsage.Default">
+		<value>시스템에 오류가 발생하였습니다. 다시 시도해보시고, 계속 오류가 발생할 경우 Help Desk로 연락바랍니다.</value>
+	</data>
+	<data name="Phrase.Na">
+		<value>n/a</value>
+	</data>
+	<data name="Button.Update">
+		<value>수정</value>
+	</data>
+	<data name="Button.Update.ToolTip">
+		<value>변경된 내용을 저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Insert">
+		<value>삽입</value>
+	</data>
+	<data name="Button.Insert.ToolTip">
+		<value>추가된 내용을 저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="Button.Delete.ToolTip">
+		<value>내용을 삭제하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="Button.Ok.ToolTip">
+		<value>계속 진행하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="Button.Cancel.ToolTip">
+		<value>취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Save">
+		<value>저장</value>
+	</data>
+	<data name="Button.Save.ToolTip">
+		<value>저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="Button.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="Button.Language">
+		<value>언어선택</value>
+	</data>
+	<data name="Button.Reset">
+		<value>초기화</value>
+	</data>
+	<data name="List.TopElement">
+		<value>선택하세요.</value>
+	</data>
+	<data name="Divider.Dash">
+		<value>-</value>
+	</data>
+	<data name="Divider.ForwardSlash">
+		<value>/</value>
+	</data>
+	<data name="CheckBox.Checked">
+		<value>1</value>
+	</data>
+	<data name="CheckBox.Unchecked">
+		<value>0</value>
+	</data>
+	<data name="Trimmery.FindCustomer">
+		<value>회원조회</value>
+	</data>
+	<data name="Trimmery.Register">
+		<value>회원등록</value>
+	</data>
+	<data name="Trimmery.Logout">
+		<value>로그아웃</value>
+	</data>
+	<data name="Trimmery.Divider">
+		<value>- </value>
+	</data>
+	<data name="Trimmery.CustomerIsPrimary">
+		<value>대표회원&lt;br&gt;</value>
+	</data>
+	<data name="Trimmery.CustomerIsSecondary">
+		<value>소속회원&lt;br&gt;</value>
+	</data>
+	<data name="Trimmery.FindCustomer.Tip">
+		<value>회원을 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="Trimmery.Register.Tip">
+		<value>신규 회원을 등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="Trimmery.Customer.Tip">
+		<value>회원명과 카드번호</value>
+	</data>
+	<data name="Trimmery.Customer.Secondary.Tip">
+		<value>회원명과 카드번호</value>
+	</data>
+	<data name="Trimmery.CustomerType.Tip">
+		<value>대표회원여부</value>
+	</data>
+	<data name="Trimmery.CustomerUser.Tip">
+		<value>회원상태</value>
+	</data>
+	<data name="Trimmery.CustomerMail.Tip">
+		<value>DM발송오류</value>
+	</data>
+	<data name="Trimmery.Logout.Tip">
+		<value>시스템에서 로그아웃됩니다.</value>
+	</data>
+	<data name="January">
+		<value>1월</value>
+	</data>
+	<data name="February">
+		<value>2월</value>
+	</data>
+	<data name="March">
+		<value>3월</value>
+	</data>
+	<data name="April">
+		<value>4월</value>
+	</data>
+	<data name="May">
+		<value>5월</value>
+	</data>
+	<data name="June">
+		<value>6월</value>
+	</data>
+	<data name="July">
+		<value>7월</value>
+	</data>
+	<data name="August">
+		<value>8월</value>
+	</data>
+	<data name="September">
+		<value>9월</value>
+	</data>
+	<data name="October">
+		<value>10월</value>
+	</data>
+	<data name="November">
+		<value>11월</value>
+	</data>
+	<data name="December">
+		<value>12월</value>
+	</data>
+	<data name="NextPage">
+		<value>다음&gt;</value>
+	</data>
+	<data name="PrevPage">
+		<value>&lt;이전</value>
+	</data>
+	<data name="Select">
+		<value>선택</value>
+	</data>
+	<data name="Msg.UpdateComplete">
+		<value>성공적으로 수정되었습니다</value>
+	</data>
+	<data name="Msg.DataIsOutOfSync">
+		<value>오류</value>
+	</data>
+	<data name="Msg.CustomerRegistered">
+		<value>성공적으로 회원이 등록되었습니다</value>
+	</data>
+	<data name="Msg.LosingChanges">
+		<value>수정된 내용이 반영되었습니다. 이전 내용은 삭제됩니다.</value>
+	</data>
+	<data name="Message.DefaultError">
+		<value>Homeplus Family Card System.&lt;br&gt;심각한 오류가 발행하였습니다. 다시 시스템에 접속하시기 바랍니다.</value>
+	</data>
+	<data name="ExceptionMsg.SQLServerConnectionNotMade">
+		<value>서버/데이터베이스의 연결이 끊겼습니다. 시스템 운영자에게 통보되었습니다. 로그인 상태이면 로그아웃 하시고, 5분정도 후에 다시 로그인 하신 후 시도해 주십시오.</value>
+	</data>
+	<data name="ExceptionMsg.SQLExecutionError">
+		<value>예상치 못한 에러가 발생하였습니다. 시스템운영자에게 통보되었습니다. 자료를 다시 입력하시거나 다른 메뉴항목을 선택하여 주십시오.</value>
+	</data>
+	<data name="ExceptionMsg.ConnectionRefused">
+		<value>등록된 사용자 ID/비밀번호가 아닙니다. 접속이 거부되었으며, 확인 후 다시 시도해주시기 바랍니다.</value>
+	</data>
+	<data name="ExceptionMsg.DefaultError">
+		<value>예상치 못한 에러가 발생하였습니다. 시스템운영자에게 통보되었습니다. 자료를 다시 입력하거나 다른 메뉴항목을 선택하여 주십시오.</value>
+	</data>
+	<data name="ExceptionMsg.CardAlreadyExists">
+		<value>이미 등록된 카드번호입니다. 카드번호를 정확히 입력하였는지 확인하거나, 카드조회 메뉴로 이동하여 카드번호를 조회하십시오.</value>
+	</data>
+	<data name="ExceptionMsg.InvalidCardNumber">
+		<value>유효한 카드번호가 아닙니다. 카드번호를 정확히 입력하였는지 확인하고, 다시 입력해주십시오.</value>
+	</data>
+	<data name="ValidationSummary.Text">
+		<value>유효성 에러</value>
+	</data>
+	<data name="ErrorMsg.MissingMandatoryValue">
+		<value>'{0}'을/를 입력하셔야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.InvalidRange">
+		<value>'{0}'은/는 유효하지 않으며, {1}을/를 입력하셔야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.Minval">
+		<value>'{0}'은/는 유효하지 않으며, {2}미만의 {1}을/를 입력하셔야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.Maxval">
+		<value>'{0}'은/는 유효하지 않으며, {2}이하의 {1}을/를 입력하셔야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.BetweenMinAndMax">
+		<value>'{0}'은/는 유효하지 않으며, {2}와 {3} 사이의 {1}을 입력하셔야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.IsInvalid">
+		<value>'{0}'은/는 유효하지 않습니다.</value>
+	</data>
+	<data name="ErrorMsg.InvalidDifference">
+		<value>'{0}'의 값은 반드시 {1} {2} {3}이어야 합니다.</value>
+	</data>
+	<data name="ErrorMsg.InvalidType">
+		<value>'{0}'의 값은 반드시 {1}이어야 합니다.</value>
+	</data>
+	<data name="Date">
+		<value>일자</value>
+	</data>
+	<data name="Integer">
+		<value>전체번호</value>
+	</data>
+	<data name="Double">
+		<value>소수번호</value>
+	</data>
+	<data name="Currency">
+		<value>화폐단위</value>
+	</data>
+	<data name="GreaterThan">
+		<value>초과</value>
+	</data>
+	<data name="GreaterThanEqual">
+		<value>이상</value>
+	</data>
+	<data name="LessThan">
+		<value>미만</value>
+	</data>
+	<data name="LessThanEqual">
+		<value>이하</value>
+	</data>
+	<data name="Equal">
+		<value>동일한</value>
+	</data>
+	<data name="NotEqual">
+		<value>같지않은</value>
+	</data>
+	<data name="Validation.Text">
+		<value>오류</value>
+	</data>
+	<data name="Menu.Item.Name.ViewDetails">
+		<value>기본정보&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewDetails">
+		<value>회원의 기본정보 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.UpdateDetails">
+		<value>기본정보&amp;nbsp;수정</value>
+	</data>
+	<data name="Menu.Item.Tip.UpdateDetails">
+		<value>회원의 기본정보 수정하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewCards">
+		<value>카드관리</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewCards">
+		<value>회원의 카드 조회 및 카드 재발급하기 </value>
+	</data>
+	<data name="Menu.Item.Name.Cards">
+		<value>카드</value>
+	</data>
+	<data name="Menu.Item.Tip.Cards">
+		<value>회원의 카드정보 조회 및 수정하기</value>
+	</data>
+	<data name="Menu.Item.Name.Login">
+		<value>로그인</value>
+	</data>
+	<data name="Menu.Item.Tip.Login">
+		<value>훼밀리카드 시스템에 로그인하기</value>
+	</data>
+	<data name="Menu.Item.Name.Search">
+		<value>조회</value>
+	</data>
+	<data name="Menu.Item.Tip.Search">
+		<value>회원 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.Customer">
+		<value>회원</value>
+	</data>
+	<data name="Menu.Item.Tip.Customer">
+		<value>회원정보 조회 및 수정하기</value>
+	</data>
+	<data name="Menu.Item.Name.Points">
+		<value>포인트</value>
+	</data>
+	<data name="Menu.Item.Tip.Points">
+		<value>현재 잔여 포인트 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.Register">
+		<value>회원&amp;nbsp;등록</value>
+	</data>
+	<data name="Menu.Item.Tip.Register">
+		<value>새로운 카드와 회원 등록하기</value>
+	</data>
+	<data name="Menu.Item.Name.Logoff">
+		<value>로그아웃</value>
+	</data>
+	<data name="Menu.Item.Tip.Logoff">
+		<value>훼밀리카드 시스템 로그아웃하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewPoints">
+		<value>포인트&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewPoints">
+		<value>회원의 포인트 정보 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewTransactions">
+		<value>거래내역&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewTransactions">
+		<value>회원의 거래내역 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.AddTransaction">
+		<value>수기입력</value>
+	</data>
+	<data name="Menu.Item.Tip.AddTransaction">
+		<value>회원의 거래내역 수기로 입력하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewInformation">
+		<value>상세정보&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewInformation">
+		<value>회원의 상세정보 조회 하기</value>
+	</data>
+	<data name="Menu.Item.Name.UpdateInformation">
+		<value>상세정보&amp;nbsp;수정</value>
+	</data>
+	<data name="Menu.Item.Tip.UpdateInformation">
+		<value>회원의 상세정보 수정 하기</value>
+	</data>
+	<data name="Menu.Item.Name.Rewards">
+		<value>현금쿠폰</value>
+	</data>
+	<data name="Menu.Item.Tip.Rewards">
+		<value>현금쿠폰 내역 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewRewards">
+		<value>현금쿠폰&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewRewards">
+		<value>회원의 현금쿠폰 발행내역 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.RewardGroup">
+		<value>포인트합산회원</value>
+	</data>
+	<data name="Menu.Item.Tip.RewardGroup">
+		<value>회원의 포인트 합산정보을 조회하고, 다른 회원과 포인트를 합산하기</value>
+	</data>
+	<data name="Menu.Item.Name.ViewGroup">
+		<value>합산회원&amp;nbsp;조회</value>
+	</data>
+	<data name="Menu.Item.Tip.ViewGroup">
+		<value>포인트합산 회원을 조회하기</value>
+	</data>
+	<data name="Menu.Item.Name.Merge">
+		<value>포인트합산</value>
+	</data>
+	<data name="Menu.Item.Tip.Merge">
+		<value>특정회원을 포인트합산 회원으로 등록하기</value>
+	</data>
+	<data name="Page.Header.HomeplusFamilyCardSystem">
+		<value>홈플러스 훼밀리카드 시스템</value>
+	</data>
+	<data name="Page.Caption.Tip">
+		<value>시스템 명칭</value>
+	</data>
+	<data name="Page.Header.HomeplusFamilyCardSystem.Tip">
+		<value>홈플러스  훼밀리카드  시스템</value>
+	</data>
+	<data name="Page.Header.Date.Tip">
+		<value>일자</value>
+	</data>
+	<data name="Page.Header.UserName.Tip">
+		<value>사용자 ID</value>
+	</data>
+	<data name="Win.Header.CustomerDetails">
+		<value>회원 상세정보</value>
+	</data>
+	<data name="Menu.Header.CustomerDetails">
+		<value>회원 상세정보</value>
+	</data>
+	<data name="Form.Header.CustomerDetails">
+		<value>회원 상세정보 </value>
+	</data>
+	<data name="Form.ErrorHeader.CustomerDetails">
+		<value>상세정보가 유효하지 않습니다.</value>
+	</data>
+	<data name="Win.Header.CustomerRegister">
+		<value>회원 등록 </value>
+	</data>
+	<data name="Menu.Header.CustomerRegister">
+		<value>카드관리 - 신규카드 발급</value>
+	</data>
+	<data name="Form.Header.CardDetails">
+		<value>카드 상세정보</value>
+	</data>
+	<data name="Win.Header.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="Menu.Header.Logon">
+		<value>훼밀리카드 시스템</value>
+	</data>
+	<data name="Form.Header.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="Win.Header.CustomerSearch">
+		<value>회원 조회</value>
+	</data>
+	<data name="Menu.Header.CustomerSearch">
+		<value>회원 조회</value>
+	</data>
+	<data name="Form.Header.CustomerSearch">
+		<value>회원 조회</value>
+	</data>
+	<data name="Win.Header.ViewPoints">
+		<value>포인트 조회</value>
+	</data>
+	<data name="Menu.Header.ViewPoints">
+		<value>포인트 : 포인트 조회</value>
+	</data>
+	<data name="Phrase.PointsTableD1">
+		<value>제휴포인트</value>
+	</data>
+	<data name="Phrase.PointsTableD1.Tip">
+		<value>제휴포인트 내역</value>
+	</data>
+	<data name="Win.Header.ViewTransactions">
+		<value>거래내역 조회</value>
+	</data>
+	<data name="Menu.Header.ViewTransactions">
+		<value>포인트 : 거래내역 조회</value>
+	</data>
+	<data name="Phrase.Collection">
+		<value>&lt;b&gt;적립기간&lt;/b&gt; {0} {1} - {2}</value>
+	</data>
+	<data name="Phrase.PreviousLink">
+		<value>&amp;lt;&amp;lt;이전</value>
+	</data>
+	<data name="Phrase.PreviousLink.Tip">
+		<value>이전 적립기간동안 거래내역을 조회합니다.</value>
+	</data>
+	<data name="Phrase.CurrentLink">
+		<value>다음&amp;gt;&amp;gt;</value>
+	</data>
+	<data name="Phrase.CurrentLink.Tip">
+		<value>다음 적립기간의 거래내역을 조회합니다.</value>
+	</data>
+	<data name="Phrase.CustomerLink">
+		<value>회원&amp;nbsp;조회</value>
+	</data>
+	<data name="Phrase.CustomerLink.Tip">
+		<value>회원본인의 거래내역을 조회합니다.</value>
+	</data>
+	<data name="Phrase.HouseholdLink">
+		<value>포인트합산회원&amp;nbsp;조회</value>
+	</data>
+	<data name="Phrase.HouseholdLink.Tip">
+		<value>포인트합산회원(본인포함)의 거래내역을 조회합니다.</value>
+	</data>
+	<data name="Phrase.Choice">
+		<value>&lt;b&gt;적립기간:&lt;/b&gt; {0} - &lt;b&gt;거래내역:&lt;/b&gt; {1}</value>
+	</data>
+	<data name="Phrase.Customer">
+		<value>회원</value>
+	</data>
+	<data name="Phrase.Household">
+		<value>포인트합산회원</value>
+	</data>
+	<data name="Phrase.Previous">
+		<value>이전</value>
+	</data>
+	<data name="Phrase.Current">
+		<value>현재</value>
+	</data>
+	<data name="Phrase.CurrentPrimaryCustomer">
+		<value>&lt;b&gt;현재 대표회원:&lt;/b&gt; {0}</value>
+	</data>
+	<data name="Phrase.PreviousPrimaryCustomer">
+		<value>&lt;b&gt;과거 대표회원:&lt;/b&gt; {0}</value>
+	</data>
+	<data name="TxnDetail">
+		<value>상세정보</value>
+	</data>
+	<data name="TxnDetail.Tip">
+		<value>상세 거래정보를 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="Form.Header.TxnDetails">
+		<value>거래내역 상세정보</value>
+	</data>
+	<data name="Group.Header.TransactionIdentification">
+		<value>거래내역</value>
+	</data>
+	<data name="Group.Header.Summary">
+		<value>포인트합산 회원의 포인트와 매출금액</value>
+	</data>
+	<data name="Group.Header.Label">
+		<value>조회 선택</value>
+	</data>
+	<data name="Menu.Header.AddTransaction">
+		<value>포인트 : 수기입력</value>
+	</data>
+	<data name="Win.Header.AddTransaction">
+		<value>포인트 수기입력</value>
+	</data>
+	<data name="AdjustPointsForm.Transaction">
+		<value>포인트 수기입력</value>
+	</data>
+	<data name="AdjustPointsForm.Transaction.Tip">
+		<value>거래 상세내역을 입력하십시오.</value>
+	</data>
+	<data name="AdjustPointsForm.Store">
+		<value>점포</value>
+	</data>
+	<data name="AdjustPointsForm.Store.Tip">
+		<value>거래가 이루어진 점포</value>
+	</data>
+	<data name="AdjustPointsForm.Points">
+		<value>포인트</value>
+	</data>
+	<data name="AdjustPointsForm.NormalPoints">
+		<value>기본포인트</value>
+	</data>
+	<data name="AdjustPointsForm.WelcomePoints">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="AdjustPointsForm.ProductPoints">
+		<value>상품포인트</value>
+	</data>
+	<data name="AdjustPointsForm.NormalPoints.Tip">
+		<value>수기로 입력하는 기본포인트</value>
+	</data>
+	<data name="AdjustPointsForm.WelcomePoints.Tip">
+		<value>수기로 입력하는 웰컴포인트</value>
+	</data>
+	<data name="AdjustPointsForm.ProductPoints.Tip">
+		<value>수기로 입력하는 상품포인트</value>
+	</data>
+	<data name="AdjustPointsForm.TotalPoints">
+		<value>포인트 합계</value>
+	</data>
+	<data name="AdjustPointsForm.Reason">
+		<value>수기입력 사유</value>
+	</data>
+	<data name="AdjustPointsForm.Reason.Tip">
+		<value>포인트를 수기입력 하는 사유</value>
+	</data>
+	<data name="AdjustPointsForm.SalesAmount">
+		<value>매출금액</value>
+	</data>
+	<data name="AdjustPointsForm.SalesAmount.Tip">
+		<value>수기로 입력하는 매출금액</value>
+	</data>
+	<data name="AdjustPointsButton.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="AdjustPointsButton.Cancel.Tip">
+		<value>입력된 값을 취소합니다.</value>
+	</data>
+	<data name="AdjustPointsButton.Save">
+		<value>저장</value>
+	</data>
+	<data name="AdjustPointsButton.Save.Tip">
+		<value>입력된 사항을 저장합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.Confirmation">
+		<value>확인</value>
+	</data>
+	<data name="AdjustPointsPopUp.Error">
+		<value>오류</value>
+	</data>
+	<data name="AdjustPointsPopUp.Warning">
+		<value>경고</value>
+	</data>
+	<data name="AdjustPointsPopUp.TransactionOk">
+		<value>입력된 사항이 저장되었습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.TransactionFailed">
+		<value>입력된 사항이 저장되지 않았습니다. 다시 시도해보시고, 계속 오류가 발생할 경우 Help Desk로 연락바랍니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.SpendMandatory">
+		<value>반드시 매출금액을 입력하셔야 합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.PositiveSpendNotAllowed">
+		<value>매출금액이 음수만 가능합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.NegativeSpendNotAllowed">
+		<value>매출금액이 음수는 안됩니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.SpendPositivePointsNegative">
+		<value>포인트의 합계가 양수이면 매출금액도 양수이어야 합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.SpendNegativePointsPositive">
+		<value>포인트의 합계가 음수이면 매출금액도 음수이어야 합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.PositivePointsNotAllowed">
+		<value>포인트가 음수만 가능합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.NegativePointsNotAllowed">
+		<value>포인트가 양수만 가능합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.OutsidePointsLimit">
+		<value>포인트합계가 수기입력 가능한도를 넘었습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.NoCurrentOffer">
+		<value>현재 적립기간이 존재하지 않아서 수기입력을 할 수 없습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.CustomerLeftSchemeWarning">
+		<value>회원이 탈퇴하였습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.CustomerDeceasedWarning">
+		<value>회원이 사망하였습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.CustomerBannedError">
+		<value>회원상태가 금지인 경우 거래내역을 추가할 수 없습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.CustomerSkeletonWarning">
+		<value>회원정보가 등록되지 않았습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.CustomerCardWarning">
+		<value>선택된 회원카드는 사용할 수 없습니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.GeneralWarning">
+		<value>거래내역을 등록하시려면 '계속'을 누르시고, 아니면 '취소'버튼을 눌러주십시오.</value>
+	</data>
+	<data name="AdjustPointsPopUp.Button.Ok">
+		<value>계속</value>
+	</data>
+	<data name="AdjustPointsHeaderLabel.ItemsToBeFilledIn1">
+		<value>표시된 항목</value>
+	</data>
+	<data name="AdjustPointsHeaderLabel.ItemsToBeFilledIn2">
+		<value>&lt;span class="formrequiredmarker"&gt;!&lt;/span&gt;표시된 항목은 값을 입력해 주시기 바랍니다.</value>
+	</data>
+	<data name="AdjustPointsForm.PointsMessage">
+		<value>포인트항목 필수입력</value>
+	</data>
+	<data name="AdjustPointsForm.PointsMessage.Tip">
+		<value>1개 이상의 포인트항목 필히 입력</value>
+	</data>
+	<data name="Win.Header.Timeout">
+		<value>로그아웃</value>
+	</data>
+	<data name="Page.Timeout.Message">
+		<value>보안상 허용된 사용시간이 경과하였습니다. 시스템을 사용하시려면 로그인을 다시 해주시기 바랍니다.</value>
+	</data>
+	<data name="Page.Timeout.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="LogonPanel.PopUp.Error">
+		<value>오류</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.FieldGroup.Language">
+		<value>사용언어 선택</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Flag.Primary.Tip">
+		<value>한국어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Flag.Secondary.Tip">
+		<value>영어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.FieldGroup.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.TextBox.User">
+		<value>사용자 ID</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.TextBox.Password">
+		<value>비밀번호</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Header.Caption1">
+		<value>홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Header.Caption2">
+		<value>고객서비스 데스크</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Button.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.PopUp.Error">
+		<value>오류</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.PopUp.Message.Attempt1-2">
+		<value>사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.PopUp.Message.Attempt3">
+		<value>로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.ValidationSummary.Message">
+		<value>오류</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.TextBox.User.Tip">
+		<value>사용자 ID를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.TextBox.Password.Tip">
+		<value>비밀번호를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.LogonPanel.Button.Logon.Tip">
+		<value>로그인하려면 클릭하십시오.</value>
+	</data>
+	<data name="Win.Header.ViewInformation">
+		<value>상세정보 조회</value>
+	</data>
+	<data name="Menu.Header.ViewInformation">
+		<value>회원 : 상세정보 조회</value>
+	</data>
+	<data name="ViewInformationPanel.Form.MembershipInformation">
+		<value>가입정보</value>
+	</data>
+	<data name="ViewInformationPanel.Form.DateJoined">
+		<value>가입일자</value>
+	</data>
+	<data name="ViewInformationPanel.Form.DateJoined.Tip">
+		<value>회원의 훼밀리카드 가입일자</value>
+	</data>
+	<data name="ViewInformationPanel.Form.TimeJoined">
+		<value>가입시각</value>
+	</data>
+	<data name="ViewInformationPanel.Form.TimeJoined.Tip">
+		<value>회원의 훼밀리카드 가입시각</value>
+	</data>
+	<data name="ViewInformationPanel.Form.HomeStoreHeader">
+		<value>가입점포</value>
+	</data>
+	<data name="ViewInformationPanel.Form.HomeStore">
+		<value>가입점포</value>
+	</data>
+	<data name="ViewInformationPanel.Form.HomeStore.Tip">
+		<value>회원의 훼밀리카드 가입점포</value>
+	</data>
+	<data name="ViewInformationPanel.Form.HomeStore.Unknown">
+		<value>알수없음</value>
+	</data>
+	<data name="ViewInformationPanel.Form.RegisteredBy">
+		<value>등록자</value>
+	</data>
+	<data name="ViewInformationPanel.Form.RegisteredBy.Tip">
+		<value>회원을 등록한 사용자 ID</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyInformation">
+		<value>가족정보</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Income">
+		<value>소득구분</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Income.Tip">
+		<value>회원가족의 월소득 수준</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember1">
+		<value>가족 1</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember2">
+		<value>가족 2</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember3">
+		<value>가족 3</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember4">
+		<value>가족 4</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember5">
+		<value>가족 5</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember6">
+		<value>가족 6</value>
+	</data>
+	<data name="ViewInformationPanel.Form.FamilyMember.Tip">
+		<value>가족 구성원</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Age">
+		<value>연령</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Age.Tip">
+		<value>회원가족 연령</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Gender">
+		<value>성별</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Gender.Tip">
+		<value>회원가족 성별</value>
+	</data>
+	<data name="ViewInformationPanel.Button.Edit">
+		<value>수정</value>
+	</data>
+	<data name="ViewInformationPanel.Button.Edit.Tip">
+		<value>회원의 상세정보를 수정하려면 클릭하십시오.</value>
+	</data>
+	<data name="ViewInformationPanel.Form.Segment">
+		<value>고객세분화 정보</value>
+	</data>
+	<data name="ViewInformationPanel.Form.SegmentName">
+		<value>명칭</value>
+	</data>
+	<data name="ViewInformationPanel.Form.SegmentName.Tip">
+		<value>고객세분화 명칭</value>
+	</data>
+	<data name="Win.Header.ViewDetails">
+		<value>기본정보 조회</value>
+	</data>
+	<data name="Menu.Header.ViewDetails">
+		<value>회원 : 기본정보 조회</value>
+	</data>
+	<data name="ViewDetailsPanel.Error.UnknownCrmId">
+		<value>포인트합산 회원ID를 찾을 수 없습니다.</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PersonalDetails">
+		<value>인적사항</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Name">
+		<value>성명</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Name.Tip">
+		<value>회원 성명</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.DateOfBirth.Tip">
+		<value>회원 생년월일</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Gender">
+		<value>성별</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Gender.Tip">
+		<value>회원 성별</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.SSNHeader">
+		<value>주민번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.SSN">
+		<value>주민번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.SSN.Tip">
+		<value>회원 주민등록번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ForeignCitizen">
+		<value>외국인 여부</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ForeignCitizen.Tip">
+		<value>회원이 외국인이면 체크</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactDetails">
+		<value>연락처</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Address1">
+		<value>주소 </value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Address1.Tip">
+		<value>회원 주소</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Address2">
+		<value>상세주소</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Address2.Tip">
+		<value>회원 상세주소</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PostCode">
+		<value>우편번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PostCode.Tip">
+		<value>회원 우편번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneDay">
+		<value>전화 : 자택</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneDay.Tip">
+		<value>회원 자택전화번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneEvening">
+		<value>전화 : 직장</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneEvening.Tip">
+		<value>회원 직장전화번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneMobile">
+		<value>휴대폰</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PhoneMobile.Tip">
+		<value>회원 휴대폰번호</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Email">
+		<value>E-mail</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Email.Tip">
+		<value>회원 전자우편주소</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PreferredContactMethod">
+		<value>연락방법</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PreferredContactMethod.Tip">
+		<value>회원에게 연락하는 방법</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Method">
+		<value>연락방법</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.CollectionPeriodDates">
+		<value>적립기간</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.CollectionPeriod">
+		<value>적립기간</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.CollectionPeriod.Tip">
+		<value>포인트 적립기간</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Number">
+		<value>순번</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Number.Tip">
+		<value>포인트 적립기간의 순번</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Dates">
+		<value>일자</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Dates.Tip">
+		<value>포인트가 적립된 기간일자</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Previous">
+		<value>이전</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Previous.Tip">
+		<value>이전 적립기간 내역</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Current">
+		<value>현재</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.Current.Tip">
+		<value>현재 적립기간 내역</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.RewardsAndPoints">
+		<value>현금쿠폰 &amp; 포인트</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod">
+		<value>현재 포인트</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.PointsTotalThisCollectionPeriod.Tip">
+		<value>현재까지 적립된 포인트</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod">
+		<value>최근 쿠폰발행금액</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.RewardsIssuedLastCollectionPeriod.Tip">
+		<value>이전 적립기간에 발행된 쿠폰발행금액 </value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactMethodPreferences">
+		<value>연락방법 동의</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactMethodPreferences.Phone">
+		<value>전화</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactMethodPreferences.Group">
+		<value>그룹사</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactMethodPreferences.Mail">
+		<value>우편</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.ContactMethodPreferences.3rdParty">
+		<value>그룹/제휴사</value>
+	</data>
+	<data name="ViewDetailsPanel.Button.Edit">
+		<value>수정</value>
+	</data>
+	<data name="ViewDetailsPanel.Button.Edit.Tip">
+		<value>회원의 기본정보를 수정하려면 클릭하십시오.</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.DataProtectionMessage">
+		<value>연락방법 동의여부</value>
+	</data>
+	<data name="ViewDetailsPanel.Form.DataProtectionMessage.Tip">
+		<value>연락방법에 대한 회원동의 여부를 나타냅니다.</value>
+	</data>
+	<data name="SearchPanel.Button.Search">
+		<value>회원조회</value>
+	</data>
+	<data name="SearchPanel.Button.Search.Tip">
+		<value>회원을 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="SearchPanel.Popup.Header.Error">
+		<value>오류</value>
+	</data>
+	<data name="SearchPanel.Popup.Header.Message">
+		<value>회원정보</value>
+	</data>
+	<data name="SearchPanel.Form.Search">
+		<value>회원조회</value>
+	</data>
+	<data name="SearchPanel.Form.CardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="SearchPanel.Form.CardNumber.Tip">
+		<value>조회할 카드번호를 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.SSN">
+		<value>주민번호</value>
+	</data>
+	<data name="SearchPanel.Form.SSN.Tip">
+		<value>조회할 주민번호를 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.SSN1">
+		<value>주민번호의 앞번호</value>
+	</data>
+	<data name="SearchPanel.Form.SSN1.Tip">
+		<value>앞번호 6자리</value>
+	</data>
+	<data name="SearchPanel.Form.SSN2">
+		<value>주민번호의 뒷번호</value>
+	</data>
+	<data name="SearchPanel.Form.SSN2.Tip">
+		<value>뒷번호 7자리</value>
+	</data>
+	<data name="SearchPanel.Form.Phone">
+		<value>전화</value>
+	</data>
+	<data name="SearchPanel.Form.Phone.Tip">
+		<value>조회할 전화번호(자택,직장,휴대폰)를 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.Phone1">
+		<value>지역/휴대폰별 번호</value>
+	</data>
+	<data name="SearchPanel.Form.Phone1.Tip">
+		<value>지역번호/휴대폰번호</value>
+	</data>
+	<data name="SearchPanel.Form.Phone2">
+		<value>국 번호</value>
+	</data>
+	<data name="SearchPanel.Form.Phone2.Tip">
+		<value>국 번호</value>
+	</data>
+	<data name="SearchPanel.Form.Phone3">
+		<value>번호</value>
+	</data>
+	<data name="SearchPanel.Form.Phone3.Tip">
+		<value>전화번호</value>
+	</data>
+	<data name="SearchPanel.Form.Name">
+		<value>성명</value>
+	</data>
+	<data name="SearchPanel.Form.Name.Tip">
+		<value>조회할 회원의 성명을 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth.Tip">
+		<value>조회할 회원의 생년월일을 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth1">
+		<value>생년</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth1.Tip">
+		<value>해당연도</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth2">
+		<value>월</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth2.Tip">
+		<value>해당월</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth3">
+		<value>일</value>
+	</data>
+	<data name="SearchPanel.Form.DateOfBirth3.Tip">
+		<value>해당일</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode">
+		<value>우편번호</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode.Tip">
+		<value>조회할 회원의 우편번호를 입력하십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode1">
+		<value>우편번호 앞번호</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode1.Tip">
+		<value>앞번호 3자리</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode2">
+		<value>우편번호 뒷번호</value>
+	</data>
+	<data name="SearchPanel.Form.PostCode2.Tip">
+		<value>뒷번호 3자리</value>
+	</data>
+	<data name="SearchPanel.Table.Name">
+		<value>성명</value>
+	</data>
+	<data name="SearchPanel.Table.Name.Tip">
+		<value>회원의 성명</value>
+	</data>
+	<data name="SearchPanel.Table.SSN">
+		<value>주민번호</value>
+	</data>
+	<data name="SearchPanel.Table.SSN.Tip">
+		<value>회원의 주민번호</value>
+	</data>
+	<data name="SearchPanel.Table.Postcode">
+		<value>우편번호</value>
+	</data>
+	<data name="SearchPanel.Table.Postcode.Tip">
+		<value>회원의 우편번호</value>
+	</data>
+	<data name="SearchPanel.Table.IsPrimary">
+		<value>대표회원 여부</value>
+	</data>
+	<data name="SearchPanel.Table.IsPrimary.Tip">
+		<value>회원의 대표회원 여부(현금쿠폰 발송대상)</value>
+	</data>
+	<data name="SearchPanel.Table.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="SearchPanel.Table.DateOfBirth.Tip">
+		<value>회원의 생년월일</value>
+	</data>
+	<data name="SearchPanel.Table.Select">
+		<value>조회</value>
+	</data>
+	<data name="SearchPanel.Table.Select.Tip">
+		<value>조회할 회원정보를 클릭하십시오.</value>
+	</data>
+	<data name="SearchPanel.Error.NoSearchCriteria">
+		<value>조회할 회원의 정보중 한가지 이상은 필히 입력해야 합니다.</value>
+	</data>
+	<data name="SearchPanel.Error.WildcardsInRestrictedFields">
+		<value>'*'를 지원하지 않습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="SearchPanel.Message.Wildcard">
+		<value>'*'는 문자들을 대신하여 사용할 수 있습니다. (예:'홍길동'을 조회하려면, '홍길*')</value>
+	</data>
+	<data name="SearchPanel.Message.NoData">
+		<value>조회된 내용이 없습니다. 수정하여 다시 조회하십시오.</value>
+	</data>
+	<data name="SearchPanel.Message.TooManyCustomers">
+		<value>주어진 조건으로 조회된 회원이 많습니다. 수정하여 다시 조회하십시오.</value>
+	</data>
+	<data name="SearchPanel.Message.TooManyAddresses">
+		<value>주어진 조건으로 조회된 주소가 많습니다. 수정하여 다시 조회하십시오.</value>
+	</data>
+	<data name="SearchPanel.Message.Timeout">
+		<value>제한된 검색조건으로 조회하셨습니다. 조건을 수정하시어 다시 검색해 주십시오.</value>
+	</data>
+	<data name="SearchPanel.Form.Street">
+		<value>지역 (동/읍/면/리)</value>
+	</data>
+	<data name="SearchPanel.Form.Street.Tip">
+		<value>회원이 거주하는 지역(동/읍/면/리)을 입력하십시오.('*' 사용가능)</value>
+	</data>
+	<data name="SearchPanel.Table.Address1">
+		<value>주소</value>
+	</data>
+	<data name="SearchPanel.Table.Address1.Tip">
+		<value>조회할 회원의 주소(시/구/군/동)</value>
+	</data>
+	<data name="SearchPanel.Table.Address2">
+		<value>상세주소</value>
+	</data>
+	<data name="SearchPanel.Table.Address2.Tip">
+		<value>조회할 회원의 상세주소(동 이하)</value>
+	</data>
+	<data name="Win.Header.UpdateDetails">
+		<value>기본정보 수정</value>
+	</data>
+	<data name="Menu.Header.UpdateDetails">
+		<value>회원 : 기본정보 수정</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PersonalDetails">
+		<value>인적사항</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Name">
+		<value>성명</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Name.Tip">
+		<value>회원 성명을 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSNHeader">
+		<value>주민번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSN">
+		<value>주민번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSN.Tip">
+		<value>회원 주민번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSN.ErrorCaption">
+		<value>주민번호 (형태 XXXXXX-XXXXXXX)</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.ForeignCitizen">
+		<value>외국인</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.ForeignCitizen.Tip">
+		<value>회원이 외국인이면 체크하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.DateOfBirth.Tip">
+		<value>회원 생년월일을 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Gender">
+		<value>성별</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Gender.Tip">
+		<value>회원 성별을 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.ContactDetails">
+		<value>연락처</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Address1">
+		<value>주소</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Address1.Tip">
+		<value>'주소 조회'버튼을 눌러서 우편번호와 주소를 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Address2">
+		<value>상세주소</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Address2.Tip">
+		<value>'주소 조회'버튼을 눌러서 우편번호와 주소를 선택후 상세주소를 직접 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Postcode">
+		<value>우편번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Postcode.Tip">
+		<value>'주소 조회'버튼을 먼저 눌러서 우편번호와 주소를 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneDay">
+		<value>전화&amp;nbsp;:&amp;nbsp;자택</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneDay.Tip">
+		<value>회원 자택전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneEve">
+		<value>전화&amp;nbsp;:&amp;nbsp;직장</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneEve.Tip">
+		<value>회원 직장전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneMob">
+		<value>휴대폰</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneMob.Tip">
+		<value>회원 휴대폰번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneDay.PhonePart1.Tip">
+		<value>자택 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneDay.PhonePart2.Tip">
+		<value>자택 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneDay.PhonePart3.Tip">
+		<value>자택 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneEve.PhonePart1.Tip">
+		<value>직장 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneEve.PhonePart2.Tip">
+		<value>직장 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneEve.PhonePart3.Tip">
+		<value>직장 전화번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneMob.PhonePart1.Tip">
+		<value>휴대폰 번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneMob.PhonePart2.Tip">
+		<value>휴대폰 번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PhoneMob.PhonePart3.Tip">
+		<value>휴대폰 번호를 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Email">
+		<value>E-mail</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Email.Tip">
+		<value>회원 E-mail을 입력하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredContactMethod">
+		<value>연락방법</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredContactMethod.Caption">
+		<value>Option</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredContactMethod.Tip">
+		<value>회원에게 연락방법을 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Method">
+		<value>연락방법</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.ChangedCustomerStatus">
+		<value>회원상태 변경</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Status">
+		<value>상태</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Status.Tip">
+		<value>회원상태를 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.DataProtectionPreferences">
+		<value>연락방법 동의</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Phone">
+		<value>전화</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Phone.Tip">
+		<value>전화로 연락가능 여부</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Mail">
+		<value>우편</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Mail.Tip">
+		<value>우편으로 연락가능 여부</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Group">
+		<value>그룹사</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Group.Tip">
+		<value>삼성테스코 그룹회사로부터 연락가능 여부</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.3rdParty">
+		<value>그룹/제휴사</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.3rdParty.Tip">
+		<value>삼성테스코 그룹회사 및 제휴사로부터 연락가능 여부</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.DataProtectionMessage">
+		<value>'예'를 선택하면, 회원에게 연락하는 방법으로 사용됩니다.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Store">
+		<value>가입점포 선택</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredStore">
+		<value>가입점포</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredStore.Tip">
+		<value>회원이 가입점포 변경을 원할때만 변경하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PreferredStore.Unknown">
+		<value>미확인</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Save">
+		<value>저장</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Save.Tip">
+		<value>입력된 내용을 저장하려면 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Reset">
+		<value>취소</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Reset.Tip">
+		<value>입력된 내용을 초기화하려면 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Search.Tip">
+		<value>조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.Cancel.Tip">
+		<value>취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.PopupSaved.Header">
+		<value>저장 완료</value>
+	</data>
+	<data name="UpdateDetailsPanel.PopupSaved.Message1">
+		<value>입력된 내용이 저장되었습니다.&lt;br&gt;입력된 회원정보를 확인하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.PopupSaved.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.FindAddress">
+		<value>주소 조회</value>
+	</data>
+	<data name="UpdateDetailsPanel.Button.FindAddress.Tip">
+		<value>우편번호와 주소를 조회하려면 선택하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.AddressPopup.Header.Text">
+		<value>우편번호 및 주소 조회</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PC1.Caption">
+		<value>우편번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PC2.Caption">
+		<value>우편번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.dob1.Caption">
+		<value>생년월일의 해당년</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.dob2.Caption">
+		<value>생년월일의 해당월</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.dob3.Caption">
+		<value>생년월일의 해당일</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSN1.Caption">
+		<value>주민번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.SSN2.Caption">
+		<value>주민번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.PN.Caption">
+		<value>전화번호</value>
+	</data>
+	<data name="UpdateDetailsPanel.Error.DoBInFuture">
+		<value>생년월일이 현재보다 미래입니다.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Error.DoBTooOld">
+		<value>생년월일이 너무 과거입니다.</value>
+	</data>
+	<data name="UpdateDetailsPanel.Error.OfficialIdInUse">
+		<value>입력한 주민번호가 이미 등록되어 있습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="UpdateDetailsPanel.PopupError.Header">
+		<value>에러</value>
+	</data>
+	<data name="UpdateDetailsPanel.PopupError.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Age">
+		<value>연령</value>
+	</data>
+	<data name="UpdateDetailsPanel.Form.Age.Tip">
+		<value>회원의 연령</value>
+	</data>
+	<data name="Win.Header.UpdateInformation">
+		<value>상세정보 수정</value>
+	</data>
+	<data name="Menu.Header.UpdateInformation">
+		<value>회원 : 상세정보 수정</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.DietaryPreferences">
+		<value>Dietary Preferences</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Diabetic">
+		<value>Diabetic</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Diabetic.Tip">
+		<value>Is the customer diabetic?</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Teetotal">
+		<value>Teetotal</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Teetotal.Tip">
+		<value>Is the customer teetotal?</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Halal">
+		<value>Halal</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Halal.Tip">
+		<value>Does the customer follow a Halal diet?</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Kosher">
+		<value>Kosher</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Kosher.Tip">
+		<value>Does the customer follow a Kosher diet?</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Vegetarian">
+		<value>Vegetarian</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Vegetarian.Tip">
+		<value>Does the customer follow a Vegetarian diet?</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.FamilyInformation">
+		<value>가족정보</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Income">
+		<value>소득구분</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Income.Tip">
+		<value>회원가족 월소득 수준을 선택하십시오.</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member.Tip">
+		<value>가족정보</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member1">
+		<value>가족 1</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member2">
+		<value>가족 2</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member3">
+		<value>가족 3</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member4">
+		<value>가족 4</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member5">
+		<value>가족 5</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Member6">
+		<value>가족 6</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.DateOfBirth.Tip">
+		<value>회원가족 생년월일</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Gender">
+		<value>성별</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.Gender.Tip">
+		<value>회원가족 성별</value>
+	</data>
+	<data name="UpdateInformationPanel.Button.Save">
+		<value>저장</value>
+	</data>
+	<data name="UpdateInformationPanel.Button.Save.Tip">
+		<value>입력된 내용을 저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="UpdateInformationPanel.Button.Reset">
+		<value>취소</value>
+	</data>
+	<data name="UpdateInformationPanel.Button.Reset.Tip">
+		<value>입력된 내용을 초기화하려면 클릭하십시오.</value>
+	</data>
+	<data name="UpdateInformationPanel.PopupSaved.Header">
+		<value>저장완료</value>
+	</data>
+	<data name="UpdateInformationPanel.PopupSaved.Message1">
+		<value>입력된 내용이 저장되었습니다.</value>
+	</data>
+	<data name="UpdateInformationPanel.PopupSaved.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.dob1.Caption">
+		<value>생년월일의 해당년</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.dob2.Caption">
+		<value>생년월일의 해당월</value>
+	</data>
+	<data name="UpdateInformationPanel.Form.dob3.Caption">
+		<value>생년월일의 해당일</value>
+	</data>
+	<data name="UpdateInformationPanel.Error.DoBInFuture">
+		<value>입력한 생년월일이 현재일보다 이후 날짜입니다.</value>
+	</data>
+	<data name="UpdateInformationPanel.Error.DoBTooOld">
+		<value>입력한 생년월일이 현재일보다 너무 이전 날짜입니다.</value>
+	</data>
+	<data name="UpdateInformationPanel.PopupError.Header">
+		<value>오류</value>
+	</data>
+	<data name="UpdateInformationPanel.PopupError.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="Win.Header.CardDetails">
+		<value>카드관리</value>
+	</data>
+	<data name="Menu.Header.CardDetails">
+		<value>카드 : 카드관리</value>
+	</data>
+	<data name="CardDetails.Button.Add">
+		<value>카드 재발급</value>
+	</data>
+	<data name="CardDetails.Button.Add.Tip">
+		<value>카드를 재발급하려면 클릭하십시오.</value>
+	</data>
+	<data name="CardDetails.Button.Select">
+		<value>대표카드 변경</value>
+	</data>
+	<data name="CardDetails.Button.Select.Tip">
+		<value>회원이 주로 사용하는 카드를 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="CardDetailsPanel.Table.CardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="CardDetailsPanel.Table.CardNumber.Tip">
+		<value>회원의 카드번호</value>
+	</data>
+	<data name="CardDetailsPanel.Table.Primary">
+		<value>대표카드</value>
+	</data>
+	<data name="CardDetailsPanel.Table.Primary.Tip">
+		<value>회원의 대표카드 여부</value>
+	</data>
+	<data name="CardDetailsPanel.Table.AccountType">
+		<value>카드유형</value>
+	</data>
+	<data name="CardDetailsPanel.Table.AccountType.Tip">
+		<value>회원 카드유형</value>
+	</data>
+	<data name="CardDetailsPanel.Table.IssuedDate">
+		<value>발급일자</value>
+	</data>
+	<data name="CardDetailsPanel.Table.IssuedDate.Tip">
+		<value>카드 발급일자</value>
+	</data>
+	<data name="CardDetailsPanel.Table.UpdatedDate">
+		<value>최근 거래일시</value>
+	</data>
+	<data name="CardDetailsPanel.Table..UpdatedDate.Tip">
+		<value>카드를 사용한 최근 일시</value>
+	</data>
+	<data name="CardDetailsPanel.Table.Status">
+		<value>상태</value>
+	</data>
+	<data name="CardDetailsPanel.Table.Status.Tip">
+		<value>회원 카드상태</value>
+	</data>
+	<data name="CardDetailsPanel.Table.EditStatus">
+		<value>상태 변경</value>
+	</data>
+	<data name="CardDetailsPanel.Table.EditStatus.Tip">
+		<value>회원 카드상태를 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="SelectPrimaryCardPopup.Header">
+		<value>대표카드 선택</value>
+	</data>
+	<data name="AddNewCardPopup.Header">
+		<value>재발급카드 번호입력</value>
+	</data>
+	<data name="EditCardStatusPopup.Header">
+		<value>카드상태 변경</value>
+	</data>
+	<data name="CardDetails.PopupAdd.Button.Text">
+		<value>확인</value>
+	</data>
+	<data name="CardDetails.PopupAdd.CardNumber.Tip">
+		<value>재발급하는 카드번호를 입력하십시오.</value>
+	</data>
+	<data name="CardDetails.PopupEdit.Button.Text">
+		<value>확인</value>
+	</data>
+	<data name="CardDetails.PopupSelect.Button.Text">
+		<value>확인</value>
+	</data>
+	<data name="CardDetails.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="CardDetails.ErrorPopup.CardExists">
+		<value>카드번호가 이미 등록되어 있습니다.</value>
+	</data>
+	<data name="CardDetails.ErrorPopup.CardRangeError">
+		<value>카드번호가 유효범위를 넘었습니다.</value>
+	</data>
+	<data name="CardDetails.ErrorPopup.CardCheckDigit">
+		<value>카드번호가 유효하지 않습니다.</value>
+	</data>
+	<data name="CardDetails.ErrorPopup.CardNotNormal">
+		<value>대표카드는 카드상태가 정상만 가능합니다.</value>
+	</data>
+	<data name="CardDetails.ErrorPopup.NoSecondaryCard">
+		<value>다른 카드가 없어 대표카드를 선택할 수 없습니다.</value>
+	</data>
+	<data name="Rewards.Status.HighReward">
+		<value>고액현금쿠폰</value>
+	</data>
+	<data name="Rewards.Status.Redeemed">
+		<value>회수</value>
+	</data>
+	<data name="Rewards.Status.Expired">
+		<value>기간만료</value>
+	</data>
+	<data name="Rewards.Status.ReIssueRequested">
+		<value>재발급요청</value>
+	</data>
+	<data name="Rewards.Status.ReIssued">
+		<value>재발급</value>
+	</data>
+	<data name="Rewards.Status.Issued">
+		<value>발급</value>
+	</data>
+	<data name="Rewards.Status.Unknown">
+		<value>알수없음</value>
+	</data>
+	<data name="Rewards.Status.NoRewards">
+		<value>미대상</value>
+	</data>
+	<data name="Rewards.Status.NotIssued">
+		<value>미발급</value>
+	</data>
+	<data name="Menu.Header.ViewRewards">
+		<value>현금쿠폰 : 현금쿠폰 조회</value>
+	</data>
+	<data name="ViewRewards.Table.CollectionPeriodDates">
+		<value>적립기간</value>
+	</data>
+	<data name="ViewRewards.Table.CollectionPeriodDates.Tip">
+		<value>적립기간의 일자</value>
+	</data>
+	<data name="ViewRewards.Table.CollectionPeriodDates.OutputFormat">
+		<value>{0} - {1}</value>
+	</data>
+	<data name="ViewRewards.Table.RewardIssued">
+		<value>쿠폰발행</value>
+	</data>
+	<data name="ViewRewards.Table.RewardIssued.Tip">
+		<value>해당 적립기간으로부터 발행된 현금쿠폰금액</value>
+	</data>
+	<data name="ViewRewards.Table.PointsConverted">
+		<value>적립포인트</value>
+	</data>
+	<data name="ViewRewards.Table.PointsConverted.Tip">
+		<value>해당 적립기간동안 적립된 포인트 </value>
+	</data>
+	<data name="ViewRewards.Table.CarriedForward">
+		<value>이월포인트</value>
+	</data>
+	<data name="ViewRewards.Table.CarriedForward.Tip">
+		<value>해당 적립기간으로부터 이월된 포인트</value>
+	</data>
+	<data name="ViewRewards.Table.Status">
+		<value>상태</value>
+	</data>
+	<data name="ViewRewards.Table.Status.Tip">
+		<value>적립기간의 상태</value>
+	</data>
+	<data name="ViewRewards.Table.StatusChangeOn">
+		<value>변경일자</value>
+	</data>
+	<data name="ViewRewards.Table.StatusChangeOn.Tip">
+		<value>적립기간의 상태 변경일자</value>
+	</data>
+	<data name="ViewRewards.Table.ViewDetail">
+		<value>내역조회</value>
+	</data>
+	<data name="ViewRewards.Table.ViewDetail.Tip">
+		<value>현금쿠폰 상세내역 조회</value>
+	</data>
+	<data name="ViewRewards.Table.EmptyMessage">
+		<value>회원의 현쿠폰 발행내역이 없습니다.</value>
+	</data>
+	<data name="Menu.Header.RewardDetail">
+		<value>현금쿠폰 : 현금쿠폰 상세내역</value>
+	</data>
+	<data name="RewardDetail.Form.RewardVouchers">
+		<value>현금쿠폰</value>
+	</data>
+	<data name="RewardDetail.Form.Status">
+		<value>상태</value>
+	</data>
+	<data name="RewardDetail.Form.Status.Tip">
+		<value>현금쿠폰 상태</value>
+	</data>
+	<data name="RewardDetail.Form.StatusChangeOn">
+		<value>변경일자</value>
+	</data>
+	<data name="RewardDetail.Form.StatusChangeOn.Tip">
+		<value>현금쿠폰 상태 변경일자</value>
+	</data>
+	<data name="RewardDetail.Table.Value">
+		<value>현금쿠폰금액</value>
+	</data>
+	<data name="RewardDetail.Table.Value.Tip">
+		<value>현금쿠폰금액</value>
+	</data>
+	<data name="RewardDetail.Table.ExpiryDate">
+		<value>종료일</value>
+	</data>
+	<data name="RewardDetail.Table.ExpiryDate.Tip">
+		<value>적립기간의 종료일</value>
+	</data>
+	<data name="RewardDetail.Table.RedeemedOn">
+		<value>회수일</value>
+	</data>
+	<data name="RewardDetail.Table.RedeemedOn.Tip">
+		<value>현금쿠폰 회수일자</value>
+	</data>
+	<data name="RewardDetail.Table.TransactionDetails">
+		<value>거래내역</value>
+	</data>
+	<data name="RewardDetail.Table.TransactionDetails.Tip">
+		<value>거래내역를 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="RewardDetail.Table.TransactionDetails.Link">
+		<value>내역조회</value>
+	</data>
+	<data name="RewardDetail.Table.Empty.Message">
+		<value>해당 적립기간의 현금쿠폰이 없습니다.</value>
+	</data>
+	<data name="RewardDetail.Form.ReIssue">
+		<value>재발급</value>
+	</data>
+	<data name="RewardDetail.Form.ReIssuedBy">
+		<value>재발급자</value>
+	</data>
+	<data name="RewardDetail.Form.ReIssuedBy.Tip">
+		<value>현금쿠폰을 재발급한 사용자명</value>
+	</data>
+	<data name="RewardDetail.Form.ReIssuedOn">
+		<value>재발급일자</value>
+	</data>
+	<data name="RewardDetail.Form.ReIssuedOn.Tip">
+		<value>현금쿠폰 재발급일자</value>
+	</data>
+	<data name="RewardDetail.Button.ReIssue">
+		<value>재발급</value>
+	</data>
+	<data name="RewardDetail.Button.ReIssue.Tip">
+		<value>현금쿠폰을 재발급하려면 클릭하십시오.</value>
+	</data>
+	<data name="RewardDetail.Button.OK">
+		<value>확인</value>
+	</data>
+	<data name="RewardDetail.PopupError.Header">
+		<value>오류</value>
+	</data>
+	<data name="RewardDetail.PopupError.Message.OutsideReIssuePeriod">
+		<value>재발급기간 초과</value>
+	</data>
+	<data name="RewardDetail.PopupError.Message.VoucherAlreadyRedeemed">
+		<value>하나이상의 현금쿠폰이 회수되어서 재발급할 수 없습니다.</value>
+	</data>
+	<data name="RewardDetail.PopupError.Message.InvalidUseStatus">
+		<value>회원이 금지 또는 탈퇴 상태이어서 재발급할 수 없습니다.</value>
+	</data>
+	<data name="RewardDetail.PopupError.Message.InvalidMailStatus">
+		<value>회원의 주소가 유효하지 않아서 재발급할 수 없습니다.</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionDetails">
+		<value>거래 상세내역</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Customer">
+		<value>회원</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CustomerName">
+		<value>회원 성명</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CustomerName.Tip">
+		<value>회수된 현금쿠폰의 회원 성명</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CardNumber.Tip">
+		<value>회수된 현금쿠폰의 회원 카드번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionIdentification">
+		<value>거래확인</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.User">
+		<value>사용자</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.User.Tip">
+		<value>거래내역을 로그인한 사용자</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CashierId">
+		<value>체커 ID</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.CashierId.Tip">
+		<value>체커 ID</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionType">
+		<value>거래유형</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionType.Tip">
+		<value>거래유형</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Store">
+		<value>점포</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Store.Tip">
+		<value>거래가 일어난 점포</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.PosNumber">
+		<value>POS번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.PosNumber.Tip">
+		<value>거래가 일어난 POS 번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionNumber">
+		<value>영수증번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionNumber.Tip">
+		<value>거래가 일어난 영수증번호</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionSource">
+		<value>거래출처</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionSource.Tip">
+		<value>거래출처</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Reason">
+		<value>사유</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionReason">
+		<value>거래사유</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TransactionReason.Tip">
+		<value>거래가 일어난 사유</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Date">
+		<value>날짜</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Date.Tip">
+		<value>거래 날짜</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Time">
+		<value>시각</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Time.Tip">
+		<value>거래 시각</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.Points">
+		<value>포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.SalesAmount">
+		<value>매출금액</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.SalesAmount.Tip">
+		<value>해당거래 매출금액</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.NormalPoints">
+		<value>기본포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.NormalPoints.Tip">
+		<value>해당거래 기본포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.ProductPoints">
+		<value>상품포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.ProductPoints.Tip">
+		<value>해당거래 상품포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.BonusPoints">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.BonusPoints.Tip">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TotalPoints">
+		<value>포인트합계</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.TotalPoints.Tip">
+		<value>해당 거래내역의 포인트 합계</value>
+	</data>
+	<data name="NGCCSD.RewardDetail.Message.MissingVoucherRecord">
+		<value>거래내역이 조재하지 않습니다</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.STPFPoints">
+		<value>제휴포인트</value>
+	</data>
+	<data name="RewardDetail.PopupDetail.STPFPoints.Tip">
+		<value>해당거래 제휴포인트</value>
+	</data>
+	<data name="Group.PrimaryCustomer">
+		<value>대표회원</value>
+	</data>
+	<data name="Group.AssociateCustomer">
+		<value>소속회원</value>
+	</data>
+	<data name="Menu.Header.ViewRewardGroup">
+		<value>포인트합산 회원 : 포인트합산 회원조회</value>
+	</data>
+	<data name="ViewRewardGroup.Table.CustomerType">
+		<value>회원유형</value>
+	</data>
+	<data name="ViewRewardGroup.Table.CustomerType.Tip">
+		<value>회원의 유형</value>
+	</data>
+	<data name="ViewRewardGroup.Table.Name">
+		<value>성명</value>
+	</data>
+	<data name="ViewRewardGroup.Table.Name.Tip">
+		<value>회원의 성명</value>
+	</data>
+	<data name="ViewRewardGroup.Table.CustomerStatus">
+		<value>회원상태</value>
+	</data>
+	<data name="ViewRewardGroup.Table.CustomerStatus.Tip">
+		<value>회원의 현재 상태</value>
+	</data>
+	<data name="ViewRewardGroup.Table.MailStatus">
+		<value>우편상태</value>
+	</data>
+	<data name="ViewRewardGroup.Table.MailStatus.Tip">
+		<value>회원의 현재 우편상태</value>
+	</data>
+	<data name="ViewRewardGroup.Table.PrimaryCardNumber">
+		<value>대표 카드번호</value>
+	</data>
+	<data name="ViewRewardGroup.Table.PrimaryCardNumber.Tip">
+		<value>회원의 대표 카드번호</value>
+	</data>
+	<data name="ViewRewardGroup.Button.ChangePrimaryCustomer">
+		<value>대표회원 변경</value>
+	</data>
+	<data name="ViewRewardGroup.Button.ChangePrimaryCustomer.Tip">
+		<value>포인트합산회원의 대표회원을 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="ViewRewardGroup.Popup.ChooseNewPrimaryCustomer">
+		<value>신규 대표회원 선택</value>
+	</data>
+	<data name="ViewRewardGroup.Popup.List.Caption">
+		<value>카드번호</value>
+	</data>
+	<data name="ViewRewardGroup.Popup.List.Tip">
+		<value>신규 대표회원의 카드번호를 선택하십시오.</value>
+	</data>
+	<data name="ViewRewardGroup.Popup.Save">
+		<value>확인</value>
+	</data>
+	<data name="ViewRewardGroup.Popup.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="ViewRewardGroup.PopupError.NoCurrentOffer">
+		<value>현재 적립기간이 없어 대표회원을 변경할 수 없습니다.</value>
+	</data>
+	<data name="Menu.Header.Merge">
+		<value>포인트합산 회원 : 포인트합산</value>
+	</data>
+	<data name="Merge.Label.Text">
+		<value>포인트를 합산할 대표회원을 조회합니다.</value>
+	</data>
+	<data name="Merge.Button.Search">
+		<value>조회</value>
+	</data>
+	<data name="Merge.Button.Search.Tip">
+		<value>포인트를 합산할 대표회원을 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="Merge.Table.Name">
+		<value>성명</value>
+	</data>
+	<data name="Merge.Table.Name.Tip">
+		<value>대표회원의 성명</value>
+	</data>
+	<data name="Merge.Table.SSN">
+		<value>주민번호</value>
+	</data>
+	<data name="Merge.Table.SSN.Tip">
+		<value>대표회원의 주민번호</value>
+	</data>
+	<data name="Merge.Table.Postcode">
+		<value>우편번호</value>
+	</data>
+	<data name="Merge.Table.Postcode.Tip">
+		<value>대표회원의 우편번호</value>
+	</data>
+	<data name="Merge.Table.DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="Merge.Table.DateOfBirth.Tip">
+		<value>대표회원의 생년월일</value>
+	</data>
+	<data name="Merge.Table.Select">
+		<value>선택</value>
+	</data>
+	<data name="Merge.Table.Select.Tip">
+		<value>포인트를 합산할 대표회원을 선택하려면 클릭하십시오.</value>
+	</data>
+	<data name="Merge.Table.NoData">
+		<value>조회된 내용이 없습니다.</value>
+	</data>
+	<data name="Merge.PopupConfirmed.Header">
+		<value>확인</value>
+	</data>
+	<data name="Merge.PopupConfirmed.Message">
+		<value>포인트합산이 성공적으로 수행되었습니다.</value>
+	</data>
+	<data name="Merge.PopupConfirmed.Ok">
+		<value>확인</value>
+	</data>
+	<data name="Merge.PopupConfirmMerge.Header">
+		<value>포인트합산 확인</value>
+	</data>
+	<data name="Merge.PopupConfirmMerge.Message">
+		<value>'{1}' 의 포인트 합산회원으로 '{0}' 회원의 포인트를 합산하겠습니까??</value>
+	</data>
+	<data name="Merge.PopupConfirmMerge.Yes">
+		<value>확인</value>
+	</data>
+	<data name="Merge.PopupConfirmMerge.No">
+		<value>취소</value>
+	</data>
+	<data name="Merge.PopupError.NoCurrentOffer">
+		<value>현재 적립기간이 없어 포인트합산을 할 수 없습니다.</value>
+	</data>
+	<data name="Menu.Header.HighRewardDetail">
+		<value>현금쿠폰 : 고액현금쿠폰 내역</value>
+	</data>
+	<data name="HighRewardDetail.Form.RewardVouchers">
+		<value>현금쿠폰</value>
+	</data>
+	<data name="HighRewardDetail.Form.Status">
+		<value>상태</value>
+	</data>
+	<data name="HighRewardDetail.Form.Status.Tip">
+		<value>회원의 상태</value>
+	</data>
+	<data name="HighRewardDetail.Form.Message1">
+		<value>고액현금쿠폰 회원입니다.</value>
+	</data>
+	<data name="HighRewardDetail.Form.Message2">
+		<value>{0} 금액으로 현금쿠폰이 발급되었습니다.</value>
+	</data>
+	<data name="LastUpdatedBy.LastUpdatedBy">
+		<value>최근 등록정보</value>
+	</data>
+	<data name="LastUpdatedBy.Colon">
+		<value>:</value>
+	</data>
+	<data name="LastUpdatedBy.At">
+		<value>@</value>
+	</data>
+	<data name="LastUpdatedBy.On">
+		<value>on</value>
+	</data>
+	<data name="LastUpdatedBy.Unknown">
+		<value>알수없음</value>
+	</data>
+	<data name="Customer">
+		<value>회원</value>
+	</data>
+	<data name="TxnCustomer.Tip">
+		<value>거래한 회원 </value>
+	</data>
+	<data name="Name">
+		<value>성명</value>
+	</data>
+	<data name="NameLong">
+		<value>회원 성명</value>
+	</data>
+	<data name="DateOfBirth">
+		<value>생년월일</value>
+	</data>
+	<data name="Gender">
+		<value>성별</value>
+	</data>
+	<data name="DaytimePhoneNumber">
+		<value>자택 전화번호</value>
+	</data>
+	<data name="EveningPhoneNumber">
+		<value>직장 전화번호</value>
+	</data>
+	<data name="MobilePhoneNumber">
+		<value>휴대폰</value>
+	</data>
+	<data name="EmailAddress">
+		<value>E-mail</value>
+	</data>
+	<data name="CustomerStatus">
+		<value>회원상태</value>
+	</data>
+	<data name="MailableStatus">
+		<value>우편상태</value>
+	</data>
+	<data name="TescoOffers">
+		<value>Tesco 홍보</value>
+	</data>
+	<data name="OffersByMail">
+		<value>우편</value>
+	</data>
+	<data name="OffersByPhone">
+		<value>전화</value>
+	</data>
+	<data name="ThirdPartyOffers">
+		<value>그룹/제휴사</value>
+	</data>
+	<data name="AddressLine1">
+		<value>주소</value>
+	</data>
+	<data name="AddressLine2">
+		<value>상세주소</value>
+	</data>
+	<data name="PostalCode">
+		<value>우편번호</value>
+	</data>
+	<data name="JoinedDate">
+		<value>가입일자</value>
+	</data>
+	<data name="JoinedStore">
+		<value>가입점포 J</value>
+	</data>
+	<data name="SocialSecurityNumber">
+		<value>주민번호</value>
+	</data>
+	<data name="IncomeBand">
+		<value>월소득구분</value>
+	</data>
+	<data name="ContactMethod">
+		<value>연락방법</value>
+	</data>
+	<data name="PreferredStore">
+		<value>가입점포 P</value>
+	</data>
+	<data name="Vegetarian">
+		<value>채식주의자</value>
+	</data>
+	<data name="Teetotal">
+		<value>금주자</value>
+	</data>
+	<data name="Kosher">
+		<value>유기농애호가</value>
+	</data>
+	<data name="Halal">
+		<value>육식주의자</value>
+	</data>
+	<data name="Diabetic">
+		<value>당뇨병자</value>
+	</data>
+	<data name="CardAccountNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="User">
+		<value>사용자 ID</value>
+	</data>
+	<data name="Password">
+		<value>비밀번호 </value>
+	</data>
+	<data name="TxnDate">
+		<value>일자</value>
+	</data>
+	<data name="TxnDate.Tip">
+		<value>거래일자</value>
+	</data>
+	<data name="TxnTime">
+		<value>시각</value>
+	</data>
+	<data name="TxnTime.Tip">
+		<value>거래시각</value>
+	</data>
+	<data name="TxnStore">
+		<value>점포</value>
+	</data>
+	<data name="TxnStore.Tip">
+		<value>거래점포</value>
+	</data>
+	<data name="TxnSpend">
+		<value>매출금액</value>
+	</data>
+	<data name="TxnSpend.Tip">
+		<value>거래가 이루어진 매출금액</value>
+	</data>
+	<data name="TxnNormalPoints">
+		<value>기본포인트</value>
+	</data>
+	<data name="TxnNormalPoints.Tip">
+		<value>해당거래 기본포인트</value>
+	</data>
+	<data name="TxnProductPoints">
+		<value>상품포인트</value>
+	</data>
+	<data name="TxnProductPoints.Tip">
+		<value>해당거래 상품포인트</value>
+	</data>
+	<data name="TxnBonusPoints">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="TxnBonusPoints.Tip">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="TxnTotalPoints">
+		<value>포인트 합계</value>
+	</data>
+	<data name="TxnTotalPoints.Tip">
+		<value>해당거래 포인트합계</value>
+	</data>
+	<data name="TxnPoints">
+		<value>포인트</value>
+	</data>
+	<data name="TxnPoints.Tip">
+		<value>해당거래 포인트합계</value>
+	</data>
+	<data name="CardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="TxnCardNumber.Tip">
+		<value>거래에 사용된 카드번호</value>
+	</data>
+	<data name="TxnReason">
+		<value>사유</value>
+	</data>
+	<data name="TxnReasonLong">
+		<value>거래사유</value>
+	</data>
+	<data name="TxnReason.Tip">
+		<value>해당거래 사유</value>
+	</data>
+	<data name="TxnUserName">
+		<value>사용자명</value>
+	</data>
+	<data name="TxnUserName.Tip">
+		<value>해당거래를 생성한 사용자명</value>
+	</data>
+	<data name="CashierId">
+		<value>체커 ID</value>
+	</data>
+	<data name="CashierId.Tip">
+		<value>거래한 체커 ID </value>
+	</data>
+	<data name="TxnType">
+		<value>거래유형</value>
+	</data>
+	<data name="TxnType.Tip">
+		<value>거래의 유형</value>
+	</data>
+	<data name="PosId">
+		<value>POS번호</value>
+	</data>
+	<data name="PosId.Tip">
+		<value>거래가 이루어진 POS번호</value>
+	</data>
+	<data name="TxnNumber">
+		<value>영수증번호</value>
+	</data>
+	<data name="TxnNumber.Tip">
+		<value>해당거래에 대한 영수증번호</value>
+	</data>
+	<data name="TxnSource">
+		<value>거래출처</value>
+	</data>
+	<data name="TxnSource.Tip">
+		<value>거래가 이루어진 POS유형</value>
+	</data>
+	<data name="TxnAmountSpent">
+		<value>매출금액</value>
+	</data>
+	<data name="TxnAmountSpent.Tip">
+		<value>해당거래 매출금액</value>
+	</data>
+	<data name="CollectionTotalPoints">
+		<value>포인트 합계</value>
+	</data>
+	<data name="CollectionTotalPoints.Tip">
+		<value>해당 적립기간중 적립된 포인트 합산회원의 포인트합계</value>
+	</data>
+	<data name="CollectionAmountSpent">
+		<value>매출금액 합계</value>
+	</data>
+	<data name="CollectionAmountSpent.Tip">
+		<value>해당 적립기간중 거래한 포인트 합산회원의 매출금액합계 </value>
+	</data>
+	<data name="Phrase.PointsTableA1">
+		<value>구분</value>
+	</data>
+	<data name="Phrase.PointsTableA1.Tip">
+		<value>포인트 구분</value>
+	</data>
+	<data name="Phrase.PointsTableB1">
+		<value>상품포인트</value>
+	</data>
+	<data name="Phrase.PointsTableB1.Tip">
+		<value>상품포인트 내역</value>
+	</data>
+	<data name="Phrase.PointsTableC1">
+		<value>웰컴포인트</value>
+	</data>
+	<data name="Phrase.PointsTableC1.Tip">
+		<value>웰컴포인트 내역</value>
+	</data>
+	<data name="Phrase.PointsTableE1">
+		<value>기본포인트</value>
+	</data>
+	<data name="Phrase.PointsTableE1.Tip">
+		<value>기본포인트 내역</value>
+	</data>
+	<data name="Phrase.PointsTableF1">
+		<value>합계</value>
+	</data>
+	<data name="Phrase.PointsTableF1.Tip">
+		<value>포인트합계</value>
+	</data>
+	<data name="Phrase.PointsTableA2">
+		<value>이전기간 적립포인트</value>
+	</data>
+	<data name="Phrase.PointsTableA2.Tip">
+		<value>이전 적립기간동안 적립된 포인트 내역 </value>
+	</data>
+	<data name="Phrase.PointsTableA3">
+		<value>이전기간 현금쿠폰 발행포인트</value>
+	</data>
+	<data name="Phrase.PointsTableA3.Tip">
+		<value>이전 적립기간동안 적립된 포인트중 현금쿠폰으로 발행된 포인트 내역 </value>
+	</data>
+	<data name="Phrase.PointsTableA4">
+		<value>이전기간으로부터 이월포인트</value>
+	</data>
+	<data name="Phrase.PointsTableA4.Tip">
+		<value>이전 적립기간으로부터 이월된 포인트 내역 </value>
+	</data>
+	<data name="Phrase.PointsTableA5">
+		<value>현재포인트 잔고</value>
+	</data>
+	<data name="Phrase.PointsTableA5.Tip">
+		<value>현재포인트 잔고내역 </value>
+	</data>
+	<data name="Phrase.PeriodTableA1">
+		<value>적립기간</value>
+	</data>
+	<data name="Phrase.PeriodTableA1.Tip">
+		<value>포인트 적립기간 </value>
+	</data>
+	<data name="Phrase.PeriodTableB1">
+		<value>순번</value>
+	</data>
+	<data name="Phrase.PeriodTableB1.Tip">
+		<value>적립기간 순번</value>
+	</data>
+	<data name="Phrase.PeriodTableC1">
+		<value>일자</value>
+	</data>
+	<data name="Phrase.PeriodTableC1.Tip">
+		<value>적립기간의 시작일과 종료일</value>
+	</data>
+	<data name="Phrase.PeriodTableA2">
+		<value>현재</value>
+	</data>
+	<data name="Phrase.PeriodTableA2.Tip">
+		<value>현재 적립기간 내역</value>
+	</data>
+	<data name="Phrase.PeriodTableA3">
+		<value>이전</value>
+	</data>
+	<data name="Phrase.PeriodTableA3.Tip">
+		<value>이전 적립기간 내역</value>
+	</data>
+	<data name="Phrase.NoTransactions">
+		<value>적립기간동안 거래가 없습니다.</value>
+	</data>
+	<data name="Format.DateRange">
+		<value>{0} - {1}</value>
+	</data>
+	<data name="ValidationErrorText">
+		<value>!</value>
+	</data>
+	<data name="MandatoryFieldMarker">
+		<value>* </value>
+	</data>
+	<data name="POS.DefaultCustomerName">
+		<value>성명없음</value>
+	</data>
+	<data name="POS.NewSkeleton">
+		<value>공카드</value>
+	</data>
+	<data name="POS.InvalidCard">
+		<value>오류카드</value>
+	</data>
+	<data name="POS.ClosedCard">
+		<value>폐기카드</value>
+	</data>
+	<data name="POS.BannedCustomer">
+		<value>금지회원</value>
+	</data>
+	<data name="POS.DeceasedCustomer">
+		<value>사망회원</value>
+	</data>
+	<data name="POS.LeftScheme">
+		<value>탈퇴회원</value>
+	</data>
+	<data name="POS.ExistingSkeleton">
+		<value>회원정보없음</value>
+	</data>
+	<data name="POS.AddressError">
+		<value>주소오류</value>
+	</data>
+	<data name="Menu.Header.CustRegister">
+		<value>신규회원 등록</value>
+	</data>
+	<data name="CustRegister.Form.FieldSet.CustomerDetails">
+		<value>신규회원 정보</value>
+	</data>
+	<data name="CustRegister.Form.EnterCardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="CustRegister.Form.EnterCardNumber.ToolTip">
+		<value>등록할 카드번호를 입력하십시오.</value>
+	</data>
+	<data name="CustRegister.Form.CardNumber">
+		<value>카드번호</value>
+	</data>
+	<data name="CustRegister.Form.CardNumber.ToolTip">
+		<value>등록할 카드번호를 입력하십시오.</value>
+	</data>
+	<data name="CustRegister.Button.Register">
+		<value>확인</value>
+	</data>
+	<data name="CustRegister.Button.Register.ToolTip">
+		<value>등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="CustRegister.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="CustRegister.Button.Cancel.ToolTip">
+		<value>취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="CustRegister.Popup.Exists">
+		<value>오류</value>
+	</data>
+	<data name="CustRegister.Popup.Ok">
+		<value>확인</value>
+	</data>
+	<data name="CustRegister.Popup.Exists.Message">
+		<value>이미 등록된 회원입니다. 회원 조회를 선택하여 회원정보를 수정하십시오. </value>
+	</data>
+	<data name="CustRegister.Popup.OutOfRange.Message">
+		<value>카드번호가 유효범위를 벗어났습니다. </value>
+	</data>
+	<data name="CustRegister.Popup.CardInvalid.Message">
+		<value>카드번호가 유효하지 않습니다.</value>
+	</data>
+	<data name="CustRegister.Popup.OfficialIdExists.Message">
+		<value>주민번호가 이미 등록 된 고객 입니다. 고객조회에서 확인하십시오.</value>
+	</data>
+	<data name="AdjustPointsForm.STPFPoints">
+		<value>제휴포인트</value>
+	</data>
+	<data name="AdjustPointsForm.STPFPoints.Tip">
+		<value>수기로 입력하는 제휴포인트</value>
+	</data>
+	<data name="AdjustPointsPopUp.NoPointsSupplied">
+		<value>최소 한가지 이상의 포인트항목이 입력되어야 합니다.</value>
+	</data>
+	<data name="AdjustPointsPopUp.AllPointsNonZero">
+		<value>최소 한가지 이상의 포인트항목은 '0' 이 아니어야 합니다.</value>
+	</data>
+	<data name="TxnSTPFPoints">
+		<value>제휴포인트</value>
+	</data>
+	<data name="TxnSTPFPoints.Tip">
+		<value>해당거래 제휴포인트</value>
+	</data>
+	<data name="Menu.Item.Name.AutoAddPoints">
+		<value>수기입력(스캔)</value>
+	</data>
+	<data name="Menu.Item.Tip.AutoAddPoints">
+		<value>스캔을 하여 포인트를 수기입력합니다.</value>
+	</data>
+	<data name="Menu.Header.AutoAddPoints">
+		<value>포인트 : 수기입력(스캔)</value>
+	</data>
+	<data name="Win.Header.AutoAddPoints">
+		<value>수기입력(스캔)</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Reset">
+		<value>취소</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Reset.ToolTip">
+		<value>취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Save">
+		<value>확인</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Save.ToolTip">
+		<value>저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.FieldGroup.Barcodes">
+		<value>바코드 스캔</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Caption.Barcode1">
+		<value>1단 바코드</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Caption.Barcode1.ToolTip">
+		<value>1단 바코드를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Caption.Barcode2">
+		<value>2단 바코드</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Caption.Barcode2.ToolTip">
+		<value>2단 바코드를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Caption.Warning">
+		<value>경고</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Continue">
+		<value>계속</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Continue.ToolTip">
+		<value>수기입력을 계속하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Button.Cancel.ToolTip">
+		<value>수기입력을 취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.MissingBarcode1">
+		<value>1단 바코드를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.MissingBarcode2">
+		<value>2단 바코드를 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.InvalidBarcode1">
+		<value>1단 바코드를 다시 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.InvalidBarcode2">
+		<value>2단 바코드를 다시 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.PointsAdded">
+		<value>포인트가 입력되었습니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.NoCollectionPeriod">
+		<value>포인트가 입력되지 않았습니다. 적립기간이 없습니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.CustomerBanned">
+		<value>포인트가 입력되지 않았습니다. 회원이 카드사용이 금지된 상태입니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.InvalidStore">
+		<value>포인트가 입력되지 않았습니다. 영수증 발급점포가 유효하지 않습니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.WarningUseStatus">
+		<value>회원이 현재 탈퇴 or 사망상태입니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.WarningCardStatus">
+		<value>현재 카드 상태가 비정상입니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.WarningMailStatus">
+		<value>회원 주소정보가 정확하지 않습니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.TransactionFailed">
+		<value>포인트가 입력되지 않았습니다. 다시 입력하십시오.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.Continue">
+		<value>계속하시겠습니까?</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.InvalidPoints">
+		<value>이단 바코드의 숫자가 잘못 입력되었습니다. 확인 후 재입력 바랍니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.PointsAlreadyAdded">
+		<value>이미 포인트가 적립된 영수증입니다.</value>
+	</data>
+	<data name="NGCCSD.AutoAddPoints.Message.TransactionTooOld">
+		<value>포인트입력 가능 기간({0}일)이 만료된 영수증이어서, 포인트를 입력 할 수 없습니다</value>
+	</data>
+	<data name="Win.Header.ReportList">
+		<value>보고서 조회</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.RewardMailing">
+		<value>쿠폰발송</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.RewardMailing.Tip">
+		<value>쿠폰을 발송합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.RewardMailing">
+		<value>쿠폰발송</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.RewardMailing.Tip">
+		<value>쿠폰을 발송합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.Administer">
+		<value>관리자 모드</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.Administer.Tip">
+		<value>포인트 적립기간 및 수기입력 포인트한도를 설정합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.MaintainCollectionPeriods">
+		<value>적립기간&amp;nbsp;관리</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.MaintainCollectionPeriods.Tip">
+		<value>포인트 적립기간을 관리합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.PointsLimit">
+		<value>포인트한도 관리</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.PointsLimit.Tip">
+		<value>S/C에서 수기 입력하는 포인트한도를 설정합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.Report">
+		<value>보고서</value>
+	</data>
+	<data name="NGCMarketing.Menu.Item.Report.Tip">
+		<value>보고서를 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.Report">
+		<value>보고서&amp;nbsp;조회</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.Report.Tip">
+		<value>보고서를 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.MembershipReport">
+		<value>회원수&amp;nbsp;보고서</value>
+	</data>
+	<data name="NGCMarketing.Menu.SubItem.MembershipReport.Tip">
+		<value>회원수 보고서를 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.Page.Header.HomeplusFamilyCardSystem">
+		<value>홈플러스 훼밀리카드 시스템 - 마케팅</value>
+	</data>
+	<data name="NGCMarketing.Report.Menu.Header">
+		<value>보고서 : 보고서 조회</value>
+	</data>
+	<data name="NGCMarketing.Report.Win.Header">
+		<value>보고서</value>
+	</data>
+	<data name="NGCMarketing.Report.Button.RunReport.Text">
+		<value>실행</value>
+	</data>
+	<data name="NGCMarketing.Report.Button.Download.Text">
+		<value>다운로드</value>
+	</data>
+	<data name="NGCMarketing.Report.NoDataFound">
+		<value>조회된 보고서가 없습니다.</value>
+	</data>
+	<data name="NGCMarketing.Report.Timeout">
+		<value>리포트 생성이 오래걸리고 있습니다. 조건을 조정하시고 재시도 해주십시오.</value>
+	</data>
+	<data name="NGCMarketing.Report.Button.ReportResult.Text">
+		<value>.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.From">
+		<value>시작일</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.From.Tip">
+		<value>시작일자</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.To">
+		<value>종료일</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.To.Error">
+		<value>종료일은 시작일 이후이어야 합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.To.Tip">
+		<value>종료일자</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Year">
+		<value>년</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Year.Tip">
+		<value>해당년</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Month">
+		<value>월</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Month.Tip">
+		<value>해당월</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Day">
+		<value>일</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Day.Tip">
+		<value>해당일</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Store">
+		<value>점포</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.Store.Tip">
+		<value>해당점포</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CustomersManualTransaction">
+		<value>해당 수기입력 횟수를 초과한 회원</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CustomersManualTransaction.Tip">
+		<value>해당 수기입력 횟수를 초과한 회원을 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints">
+		<value>해당 수기입력 포인트를 초과한 회원</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CustomersManualTransactionPoints.Tip">
+		<value>해당 수기입력 포인트를 초과한 회원을 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.ManualTransactionPoints">
+		<value>해당 포인트를 초과한 수기입력</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.ManualTransactionPoints.Tip">
+		<value>해당 포인트를 초과한 수기입력건을 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.UsersManualTransactions">
+		<value>해당 수기입력 횟수를 초과 입력한 사용자 </value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.UsersManualTransactions.Tip">
+		<value>해당 수기입력 횟수를 초과 입력한 사용자를 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal">
+		<value>해당 수기입력 포인트를 초과 입력한 사용자</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.UsersManualTransactionPointsTotal.Tip">
+		<value>해당 수기입력 포인트를 초과 입력한 사용자을 조회합니다.</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.User">
+		<value>사용자</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.User.Tip">
+		<value>사용자</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CollectionPeriod">
+		<value>적립기간</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Form.CollectionPeriod.Tip">
+		<value>적립기간</value>
+	</data>
+	<data name="NGCMarketing.Report.CollectionPeriodSummary">
+		<value>기간별 실적현황</value>
+	</data>
+	<data name="NGCMarketing.Report.DataProtectionOptOuts">
+		<value>일별 회원탈퇴현황</value>
+	</data>
+	<data name="NGCMarketing.Report.FinancialLiability">
+		<value>재무보고서</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions1">
+		<value>수기입력 1 - 수기입력 과다 횟수 회원</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions2">
+		<value>수기입력 2 - 수기입력 과다 포인트 회원</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions3">
+		<value>수기입력 3 - 과다 포인트 수기입력</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions4">
+		<value>수기입력 4 - 수기입력 횟수 과다 입력 사용자</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions5">
+		<value>수기입력 5 - 수기입력 포인트 과다 입력 사용자</value>
+	</data>
+	<data name="NGCMarketing.Report.ManualTransactions6">
+		<value>수기입력 6 - 특정 사용자의 수기입력</value>
+	</data>
+	<data name="NGCMarketing.Report.MembershipReport">
+		<value>주별 회원 수</value>
+	</data>
+	<data name="NGCMarketing.Report.PointsAndRewardsByStore">
+		<value>점별/일별 실적현황</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.ChooseDates">
+		<value>기간 설정</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.ChooseDatesAndStore">
+		<value>기간 및 점포 설정</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.SetParameters">
+		<value>범위 설정</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Option.Please Select">
+		<value>선택</value>
+	</data>
+	<data name="NGCMarketing.ReportPanel.Option.Unknown">
+		<value>알수없음</value>
+	</data>
+	<data name="NGCMarketing.ReportList.Table.Description">
+		<value>보고서</value>
+	</data>
+	<data name="NGCMarketing.ReportList.Table.Description.Tip">
+		<value>보고서 종류</value>
+	</data>
+	<data name="NGCMarketing.ReportList.Table.Select">
+		<value>선택</value>
+	</data>
+	<data name="NGCMarketing.ReportList.Table.Select.Tip">
+		<value>보고서 선택</value>
+	</data>
+	<data name="ReportList.Menu.Header">
+		<value>보고서 : 보고서 조회</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Customer">
+		<value>회원</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Card Number">
+		<value>카드번호</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.User">
+		<value>사용자</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Store">
+		<value>점포</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Date/Time">
+		<value>날짜/시각</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.No of Points">
+		<value>포인트</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of Spend">
+		<value>매출금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of Points">
+		<value>포인트금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Date">
+		<value>날짜</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Transactions">
+		<value>거래횟수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Amount Spent">
+		<value>매출금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Ave Trans Value">
+		<value>객단가</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Points Given">
+		<value>적립포인트</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of Points Given">
+		<value>적립포인트 금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of Vouchers Redeemed">
+		<value>현금쿠폰 회수금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.No Manual Transactions">
+		<value>수기입력 횟수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.% Manual Transactions">
+		<value>수기입력율</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Total number of Customers">
+		<value>총 회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Customers who have opted out">
+		<value>탈퇴회원</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Group">
+		<value>그룹사</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.3rd party">
+		<value>그룹/제휴사</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Phone">
+		<value>전화</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Mail">
+		<value>우편</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Points not yet converted">
+		<value>쿠폰미발행 포인트</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of points not yet converted">
+		<value>쿠폰미발행 포인트금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Value of rewards not yet redeemed">
+		<value>미회수 쿠폰금액</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Week">
+		<value>주</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# New Members">
+		<value>신규회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Normal Customers">
+		<value>일반회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Inactive Customers">
+		<value>비활성회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Banned Customers">
+		<value>금지회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Deceased Customers">
+		<value>사망회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.# Customers Left Scheme">
+		<value>탈퇴회원수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.New as % Normal">
+		<value>신규회원비율</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Primary Normal as % Normal">
+		<value>대표회원비율</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Collection Period">
+		<value>적립기간</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.#Transactions">
+		<value>거래횟수</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Points Converted">
+		<value>쿠폰발행 포인트</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Points Carried Forward">
+		<value>이월 포인트</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Rewards Given">
+		<value>현금쿠폰</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.Rewards Redeemed">
+		<value>회수된 현금쿠폰</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.(no.)">
+		<value>순번</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.From">
+		<value>시작일</value>
+	</data>
+	<data name="NGCMarketing.Reports.Heading.To">
+		<value>종료일</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.FieldGroup.Language">
+		<value>사용언어 선택</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Flag.Primary.Tip">
+		<value>한국어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Flag.Secondary.Tip">
+		<value>영어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.FieldGroup.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.TextBox.User">
+		<value>사용자 ID</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.TextBox.Password">
+		<value>비밀번호</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Header.Caption1">
+		<value>홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Header.Caption2">
+		<value>마케팅 시스템</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Button.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.PopUp.Error">
+		<value>오류</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.PopUp.Message.Attempt1-2">
+		<value>사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.PopUp.Message.Attempt3">
+		<value>로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.ValidationSummary.Message">
+		<value>오류</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.TextBox.User.Tip">
+		<value>사용자 ID를 입력하십시오.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.TextBox.Password.Tip">
+		<value>비밀번호를 입력하십시오.</value>
+	</data>
+	<data name="NGCMarketing.LogonPanel.Button.Logon.Tip">
+		<value>로그인하려면 클릭하십시오.</value>
+	</data>
+	<data name="ChangePointsLimit.Menu.Header">
+		<value>관리자 모드 : 포인트한도 관리</value>
+	</data>
+	<data name="Win.Header.ChangePointsLimit">
+		<value>포인트한도 관리</value>
+	</data>
+	<data name="ChangePointsLimit.Button.Search">
+		<value>조회</value>
+	</data>
+	<data name="ChangePointsLimit.Button.Search.ToolTip">
+		<value>사용자그룹을 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="ChangePointsLimit.Error.NoSearchCriteria">
+		<value>사용자그룹 또는 사용자그룹명에 조회할 내용을 입력해야 합니다.</value>
+	</data>
+	<data name="ChangePointsLimit.Form.SearchForGroups">
+		<value>사용자그룹 조회</value>
+	</data>
+	<data name="ChangePointsLimit.Form.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="ChangePointsLimit.Form.GroupName.Tip">
+		<value>조회할 사용자그룹을 입력하십시오.('*'사용가능)</value>
+	</data>
+	<data name="ChangePointsLimit.Form.GroupDescription">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="ChangePointsLimit.Form.GroupDescription.Tip">
+		<value>조회할 사용자그룹명을 입력하십시오.('*'사용가능)</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.Title">
+		<value>포인트한도 설정</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.AddLimit">
+		<value>가산포인트 한도</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.AddLimit.Tip">
+		<value>사용자그룹별 포인트를 수기로 추가할 수 있는 최대한도</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.SubLimit">
+		<value>감산포인트 한도</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.SubLimit.Tip">
+		<value>사용자그룹별 포인트를 수기로 삭제할 수 있는 최대한도</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="ChangePointsLimit.PopupEdit.Save">
+		<value>확인</value>
+	</data>
+	<data name="ChangePointsLimit.Table.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="ChangePointsLimit.Table.GroupName.Tip">
+		<value>조회된 사용자그룹</value>
+	</data>
+	<data name="ChangePointsLimit.Table.GroupDescription">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="ChangePointsLimit.Table.GroupDescription.Tip">
+		<value>조회된 사용자그룹명</value>
+	</data>
+	<data name="ChangePointsLimit.Table.AddLimit">
+		<value>가산 한도</value>
+	</data>
+	<data name="ChangePointsLimit.Table.AddLimit.Tip">
+		<value>사용자그룹별 포인트를 수기로 추가할 수 있는 최대한도</value>
+	</data>
+	<data name="ChangePointsLimit.Table.SubLimit">
+		<value>감산 한도</value>
+	</data>
+	<data name="ChangePointsLimit.Table.SubLimit.Tip">
+		<value>사용자그룹별 포인트를 수기로 삭제할 수 있는 최대한도</value>
+	</data>
+	<data name="ChangePointsLimit.Table.UpdateBy">
+		<value>등록자</value>
+	</data>
+	<data name="ChangePointsLimit.Table.UpdateBy.Tip">
+		<value>사용자그룹에 포인트한도를 설정한 관리자</value>
+	</data>
+	<data name="ChangePointsLimit.Table.UpdateAt">
+		<value>등록일시</value>
+	</data>
+	<data name="ChangePointsLimit.Table.UpdateAt.Tip">
+		<value>사용자그룹에 포인트한도를 설정한 일시</value>
+	</data>
+	<data name="ChangePointsLimit.Table.Select">
+		<value>내용변경</value>
+	</data>
+	<data name="ChangePointsLimit.Table.Select.Tip">
+		<value>사용자그룹에 설정된 포인트한도를 변경하려면 선택하십시오.</value>
+	</data>
+	<data name="Win.Header.MaintainCollectionPeriods">
+		<value>적립기간 관리</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Menu.Header">
+		<value>관리자 모드 : 적립기간 관리</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.NoData">
+		<value>적립기간이 없습니다.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.Description">
+		<value>적립기간</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.Description.Tip">
+		<value>해당 적립기간</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.StartDate">
+		<value>시작일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.StartDate.Tip">
+		<value>해당 적립기간의 시작일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.EndDate">
+		<value>종료일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.EndDate.Tip">
+		<value>해당 적립기간의 종료일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.EditDetails">
+		<value>내용변경</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.EditDetails.Tip">
+		<value>해당 적립기간의 내용을 변경합니다.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.Overview">
+		<value>발송개요</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.Overview.Tip">
+		<value>쿠폰발송 개요를 조회합니다.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Table.ManageRewardMailing">
+		<value>쿠폰발송관리</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Button.Add.Tip">
+		<value>새로운 적립기간을 등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.EditCollectionPeriodDetails">
+		<value>적립기간 내용변경</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.AddCollectionPeriod">
+		<value>적립기간 신규등록</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Description">
+		<value>적립기간명</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Description.Tip">
+		<value>해당 적립기간의 명칭</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.StartDate">
+		<value>시작일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.StartDate.Tip">
+		<value>해당 적립기간의 시작일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.EndDate">
+		<value>종료일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.EndDate.Tip">
+		<value>해당 적립기간의 종료일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.ReIssueUntil">
+		<value>쿠폰재발행 종료일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.ReIssueUntil.Tip">
+		<value>현금쿠폰 재발행할수 있는 일자</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.PointsThreshold">
+		<value>현금쿠폰 발행 최소포인트</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.PointsThreshold.Tip">
+		<value>현금쿠폰이 발행될 수 있는 최소포인트</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.MinimumVoucherValue">
+		<value>현금쿠폰 최소액면가</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.MinimumVoucherValue.Tip">
+		<value>현금쿠폰 발행 최소금액</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.StepBetweenVoucherValues">
+		<value>현금쿠폰 액면가단위</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.StepBetweenVoucherValues.Tip">
+		<value>현금쿠폰 액면가별 최소단위</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.MaximumVoucherValue">
+		<value>현금쿠폰 최대액면가</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.MaximumVoucherValue.Tip">
+		<value>현금쿠폰 발행 최대금액</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer">
+		<value>회원별 현금쿠폰 매수</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.NumberOfVouchersPerCustomer.Tip">
+		<value>회원별 현금쿠폰 발행매수</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.PointsToRewardConversionRate">
+		<value>포인트의 현금쿠폰금액 전환율</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.PointsToRewardConversionRate.Tip">
+		<value>포인트를 현금쿠폰금액으로 전환시 비율</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.AmountToPointsConversionRate">
+		<value>포인트 적립율</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.AmountToPointsConversionRate.Tip">
+		<value>매출금액대비 포인트 적립율 </value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.Save">
+		<value>확인</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.Ok">
+		<value>확인</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.Yes">
+		<value>확인</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Button.No">
+		<value>취소</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.CollectionStartDateIsInvalid">
+		<value>적립기간의 시작일이 유효하지 않습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.CollectionEndDateIsInvalid">
+		<value>적립기간의 종료일이 유효하지 않습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.CollectionReissueDateIsInvalid">
+		<value>쿠폰재발행 종료일이 유효하지 않습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.EndDateLessThanStartDate">
+		<value>종료일은 시작일보다 이후이어야 합니다. 수정하여 다시 입력하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.ReissueDateLessThanEndDate">
+		<value>쿠폰재발행 종료일는 적립기간 종료일보다 나중이어야 합니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.MinVoucherValueNotMultipleStepSize">
+		<value>현금쿠폰 액면가단위로 현금쿠폰 최소액면가를 구성할 수 없습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.MinVoucherGreaterThanThresholdTimesPointsToReward">
+		<value>현금쿠폰 최소액면가는 현금쿠폰 발행 최소포인트보다 적거나 같아야 합니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.MaxVoucherValueNotMultipleStepSize">
+		<value>현금쿠폰 액면가단위로 최대 쿠폰액면가를 구성할 수 없습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.MaxVoucherLessThan2TimesMinVoucher">
+		<value>현금쿠폰 최대액면가는 현금쿠폰 최소액면가보다 2배이상이어야 합니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.VoucherStepMustBeMultipleOfPointsToReward">
+		<value>현금쿠폰 금액들의 간격은 현금쿠폰으로 전환되는 포인트의 배수로 구성되어야 합니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Year.Caption">
+		<value>해당년</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Month.Caption">
+		<value>해당월</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Day.Caption">
+		<value>해당일</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Error.OfferExists">
+		<value>동일한 조건의 적립 기간이 이미 등록되어 있습니다.</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.DeleteConfirm">
+		<value>삭제 확인</value>
+	</data>
+	<data name="MaintainCollectionPeriods.Popup.Message.ConfirmDelete">
+		<value>해당 적립기간을 삭제하시겠습니까?</value>
+	</data>
+	<data name="NGCMarketing.MaintainCollectionPeriods.Error.OfferAllocatedToPartitions">
+		<value>해당 적립기간은 삭제 할 수 없습니다. NGC 시스템 담당자에게 연락 바랍니다.</value>
+	</data>
+	<data name="NGCMarketing.MaintainCollectionPeriods.Message.RunAgePartitions">
+		<value>해당 적립기간은 활성화 할 수 없습니다.\n\nAge_partitions 실행이 시간이 부족하여 불가 합니다.\n\n해당 적립기간을 활성화 하시려면, NGC 시스템 담당자에게 연락 바랍니다.\n\n활성화가 안 되었을 경우 심각한 시스템 장애를 일으 킬 수 있습니다.</value>
+	</data>
+	<data name="Win.Header.RewardMailing">
+		<value>쿠폰발송 관리</value>
+	</data>
+	<data name="MailingOverview.Menu.Header">
+		<value>관리자 모드 : 적립기간 관리 : 쿠폰발송 관리</value>
+	</data>
+	<data name="MailingOverview.Error.MissingOfferDetails">
+		<value>쿠폰발송 개요가 없습니다.</value>
+	</data>
+	<data name="MailingOverview.Error.InvalidStates">
+		<value>쿠폰발송 개요가 올바르지 않습니다.</value>
+	</data>
+	<data name="MailingOverview.ConfirmMailingRequested">
+		<value>쿠폰발송이 요청되지 않았습니다. </value>
+	</data>
+	<data name="MailingOverview.ConfirmMailingApproved">
+		<value>쿠폰발송이 승인되지 않았습니다.</value>
+	</data>
+	<data name="MailingOverview.CouponSetupLink.Text">
+		<value>설정</value>
+	</data>
+	<data name="MailingOverview.CouponSetupLink.ToolTip">
+		<value>상품우대권 유형을 설정합니다.</value>
+	</data>
+	<data name="MailingOverview.VoucherSetupLink.Text">
+		<value>설정</value>
+	</data>
+	<data name="MailingOverview.VoucherSetupLink.ToolTip">
+		<value>현금쿠폰 유형을 설정합니다.</value>
+	</data>
+	<data name="MailingOverview.CalculateRunLink.Text">
+		<value>실행</value>
+	</data>
+	<data name="MailingOverview.CalculateRunLink.ToolTip">
+		<value>쿠폰발송을 예정합니다.</value>
+	</data>
+	<data name="MailingOverview.CalculateRequestedLink.Text">
+		<value>요청</value>
+	</data>
+	<data name="MailingOverview.CalculateRequestedLink.ToolTip">
+		<value>쿠폰발송이 요청되었습니다.</value>
+	</data>
+	<data name="MailingOverview.ViewMailingLink.Text">
+		<value>조회</value>
+	</data>
+	<data name="MailingOverview.ViewMailingLink.ToolTip">
+		<value>쿠폰발송 보고서를 조회합니다.</value>
+	</data>
+	<data name="MailingOverview.ApproveMailingLink.Text">
+		<value>승인</value>
+	</data>
+	<data name="MailingOverview.ApproveMailingLink.ToolTip">
+		<value>쿠폰발송을 승인합니다.</value>
+	</data>
+	<data name="MailingOverview.Form.Header">
+		<value>적립기간</value>
+	</data>
+	<data name="MailingOverview.Form.Number">
+		<value>순번</value>
+	</data>
+	<data name="MailingOverview.Form.Number.Tip">
+		<value>적립기간 순번</value>
+	</data>
+	<data name="MailingOverview.Form.StartDate">
+		<value>시작일</value>
+	</data>
+	<data name="MailingOverview.Form.StartDate.Tip">
+		<value>적립기간의 시작일</value>
+	</data>
+	<data name="MailingOverview.Form.EndDate">
+		<value>종료일</value>
+	</data>
+	<data name="MailingOverview.Form.EndDate.Tip">
+		<value>적립기간의 종료일</value>
+	</data>
+	<data name="MailingOverview.PopupError.Header">
+		<value>오류</value>
+	</data>
+	<data name="MailingOverview.PopupMsg.Header">
+		<value>확인</value>
+	</data>
+	<data name="Win.Header.SetUpCouponTypes">
+		<value>상품우대권 설정</value>
+	</data>
+	<data name="SetUpCouponTypes.Menu.Header">
+		<value>관리자 모드 : 적립기간 관리 : 쿠폰발송 : 상품우대권 설정</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.CouponDescription">
+		<value>상품우대권명</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.CouponDescription.Tip">
+		<value>상품우대권의 명칭</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.SkuBarcode">
+		<value>SKU 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.SkuBarcode.Tip">
+		<value>SKU 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.CouponDetailsBarcode">
+		<value>상품우대권 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.CouponDetailsBarcode.Tip">
+		<value>상품우대권의 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Reward">
+		<value>현금쿠폰 발송회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Reward.Tip">
+		<value>현금쿠폰 발송 대상회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.NonReward">
+		<value>현금쿠폰 비발송회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.NonReward.Tip">
+		<value>현금쿠폰 발송 비대상회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Edit">
+		<value>내용변경</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Edit.Tip">
+		<value>해당 상품우대권 내용을 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.Delete.Tip">
+		<value>해당 상품우대권을 삭제하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.EmptyMessage">
+		<value>해당 적립기간동안 발행된 상품우대권이 없습니다.</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.NoCollectionPeriod">
+		<value>모든 적립기간의 쿠폰발송이 승인되었습니다.</value>
+	</data>
+	<data name="SetUpCouponTypes.Table.InvalidCollectionPeriod">
+		<value>해당 적립기간이 유효하지 않습니다.</value>
+	</data>
+	<data name="SetUpCouponTypes.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="SetUpCouponTypes.Button.Add.Tip">
+		<value>상품우대권을 신규등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpCouponTypes.Button.Return">
+		<value>발송개요 조회</value>
+	</data>
+	<data name="SetUpCouponTypes.Button.Return.Tip">
+		<value>쿠폰 발송개요를 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Edit">
+		<value>변경</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Add">
+		<value>등록</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.EditCouponDetails">
+		<value>상품우대권 {0} </value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.CouponDescription">
+		<value>상품우대권명</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.CouponDescription.Tip">
+		<value>상품우대권의 명칭</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.SkuBarcode">
+		<value>SKU 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.SkuBarcode.Tip">
+		<value>SKU 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.CouponDetailsBarcode">
+		<value>상품우대권 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.CouponDetailsBarcode.Tip">
+		<value>상품우대권의 바코드</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Reward">
+		<value>현금쿠폰 발송회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Reward.Tip">
+		<value>현금쿠폰 발송 대상회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.NonReward">
+		<value>현금쿠폰 비발송회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.NonReward.Tip">
+		<value>현금쿠폰 발송 비대상회원</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Save">
+		<value>확인</value>
+	</data>
+	<data name="SetUpCouponTypes.Popup.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Header.Confirmation">
+		<value>확인</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Header.Error">
+		<value>오류</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Yes">
+		<value>확인</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.No">
+		<value>취소</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Ok">
+		<value>확인</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Message.RewardNonReward">
+		<value>현금쿠폰 발송회원 또는 비발송회원 중 하나 또는 모두를 선택해야 합니다.</value>
+	</data>
+	<data name="SetUpCouponTypes.PopupMessage.Message.ConfirmDelete">
+		<value>상품우대권 {0} 를 삭제하시겠습니까?</value>
+	</data>
+	<data name="Win.Header.SetUpVoucherTypes">
+		<value>현금쿠폰 설정</value>
+	</data>
+	<data name="SetUpVoucherTypes.Menu.Header">
+		<value>관리자 모드 : 적립기간 관리 : 쿠폰발송 : 현금쿠폰 설정</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.SetParameters">
+		<value>현금쿠폰 설정</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.StepSizeBetweenVouchers">
+		<value>현금쿠폰 액면가단위</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.StepSizeBetweenVouchers.Tip">
+		<value>현금쿠폰 액면가별 최소단위</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.PointsThreshold">
+		<value>현금쿠폰 발행 최소포인트</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.PointsThreshold.Tip">
+		<value>현금쿠폰이 발행될 수 있는 최소포인트</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.MinimumVoucherValue">
+		<value>현금쿠폰 최소액면가</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.MinimumVoucherValue.Tip">
+		<value>현금쿠폰 발행 최소금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.MaximumVoucherValue">
+		<value>현금쿠폰 최대액면가</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.MaximumVoucherValue.Tip">
+		<value>현금쿠폰 발행 최대금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.NumberOfVouchers">
+		<value>회원별 현금쿠폰 매수</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.NumberOfVouchers.Tip">
+		<value>회원별 현금쿠폰 발행매수</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.ExpiryDate">
+		<value>종료일</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.ExpiryDate.Tip">
+		<value>현금쿠폰 유효기간의 종료일</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.ExpiryDate.YYYY.Tip">
+		<value>해당년</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.ExpiryDate.MM.Tip">
+		<value>해당월</value>
+	</data>
+	<data name="SetUpVoucherTypes.Form.ExpiryDate.DD.Tip">
+		<value>해당일</value>
+	</data>
+	<data name="SetUpVoucherTypes.Button.Generate">
+		<value>등록</value>
+	</data>
+	<data name="SetUpVoucherTypes.Button.Generate.Tip">
+		<value>신규 현금쿠폰을 등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Button.Return">
+		<value>발송개요 조회</value>
+	</data>
+	<data name="SetUpVoucherTypes.Button.Return.Tip">
+		<value>쿠폰 발송개요로 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.MonetaryValue">
+		<value>현금쿠폰 발행금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.MonetaryValue.Tip">
+		<value>현금쿠폰의 발행금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.Barcode">
+		<value>바코드</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.Barcode.Tip">
+		<value>현금쿠폰 바코드</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.Edit">
+		<value>변경</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.Edit.Tip">
+		<value>현금쿠폰 내용을 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.NoCollectionPeriod">
+		<value>모든 적립기간의 쿠폰 발송이 승인되었습니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.EmptyMessage">
+		<value>해당 적립기간동안 발행된 현금쿠폰이 없습니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Table.InvalidCollectionPeriod">
+		<value>해당 적립기간이 유효하지 않습니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Confirm">
+		<value>확인</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Confirm.Message">
+		<value>현금쿠폰 '{0}' 등록하시겠습니까?&lt;br&gt;등록하시면 기존 현금쿠폰은 삭제되고, 현금쿠폰 최대액면가는 {1} 이 됩니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Confirm.Yes">
+		<value>확인</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Confirm.No">
+		<value>취소</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit">
+		<value>현금쿠폰 바코드 수정</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.MonetaryValue">
+		<value>현금쿠폰 발행금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.MonetaryValue.Tip">
+		<value>현금쿠폰의 발행금액</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.Barcode">
+		<value>바코드</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.Barcode.Tip">
+		<value>현금쿠폰 바코드</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.Save">
+		<value>확인</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Edit.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Error">
+		<value>오류                              </value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Error.MaxVoucherLessThan2TimesMinVoucher">
+		<value>현금쿠폰 최대 액면가는 현금쿠폰 최소 액면가의 2배 이상이어야 합니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Error.MaxVoucherNotMultipleStepValue">
+		<value>현금쿠폰 최대액면가는 현금쿠폰 액면가단위의 배수이어야 합니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Error.CollectionEndDateLaterThanExpiryDate">
+		<value>현금쿠폰의 유효기간 종료일은 적립기간의 종료일보다 나중이어야 합니다.</value>
+	</data>
+	<data name="SetUpVoucherTypes.Popup.Ok">
+		<value>확인</value>
+	</data>
+	<data name="Win.Header.ViewMailing">
+		<value>쿠폰발송 보고서 조회</value>
+	</data>
+	<data name="ViewMailing.Menu.Header">
+		<value>관리자 모드 : 적립기간 관리 : 쿠폰발송 : 쿠폰발송 보고서 조회</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A1">
+		<value>구분</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.B1">
+		<value>현재 발송 {0} - {1}</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.B1.WithoutDates">
+		<value>현재 발송</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.C1">
+		<value>증감율</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.E1">
+		<value>이전 발송 {0} - {1}</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.E1.WithoutDates">
+		<value>이전 발송</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.F1">
+		<value>작년 동일회차 {0} - {1}</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.F1.WithoutDates">
+		<value>작년 동일회차</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.C2">
+		<value>이전 발송</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.D2">
+		<value>작년</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A3">
+		<value>대표회원</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A4">
+		<value>현금쿠폰 비발송 대표회원</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A5">
+		<value>현금쿠폰 발송회원</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A6">
+		<value>현금쿠폰 비대상 발송회원</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A7">
+		<value>현금쿠폰 전환포인트</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A8">
+		<value>이월포인트</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A9">
+		<value>현금쿠폰 금액합계</value>
+	</data>
+	<data name="ViewMailing.Table.Comparison.Cell.A10">
+		<value>현금쿠폰 발송금액</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.ExcludeTitle">
+		<value>상태별 발송불가 회원</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.NotMailableTitle">
+		<value>미발송 고객 유형</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.HighRewards">
+		<value>고액 현금쿠폰</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.Banned">
+		<value>금지</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.Inactive">
+		<value>비활성</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.Deceased">
+		<value>사망</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.LeftScheme">
+		<value>탈퇴</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.Skeleton">
+		<value>정보부족</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.AddressInError">
+		<value>주소오류</value>
+	</data>
+	<data name="ViewMailing.Text.Na">
+		<value>n/a</value>
+	</data>
+	<data name="ViewMailing.Button.Return">
+		<value>발송개요 조회</value>
+	</data>
+	<data name="ViewMailing.Button.Return.Tip">
+		<value>발송개요를 조회하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Flag.Primary.Tip">
+		<value>한국어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Flag.Secondary.Tip">
+		<value>영어를 사용하시려면 여기를 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.User">
+		<value>사용자</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.User.Tip">
+		<value>시스템 사용자를 조회 또는 등록합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.AddUser">
+		<value>사용자&amp;nbsp;등록</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.AddUser.Tip">
+		<value>시스템 사용자를 등록합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.FindUser">
+		<value>사용자&amp;nbsp;조회</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.FindUser.Tip">
+		<value>시스템 사용자를 조회합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.Group">
+		<value>사용자그룹</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.Group.Tip">
+		<value>시스템 사용자그룹을 조회 또는 등록합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.AddGroup">
+		<value>사용자그룹&amp;nbsp;등록</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.AddGroup.Tip">
+		<value>시스템 사용자그룹을 등록합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.FindGroup">
+		<value>사용자그룹&amp;nbsp;조회</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.FindGroup.Tip">
+		<value>시스템 사용자그룹을 조회합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.Administer">
+		<value>관리자</value>
+	</data>
+	<data name="NGCSSC.Menu.Item.Administer.Tip">
+		<value>점포등록 및 카드 Master를 생성합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditStores">
+		<value>점포등록</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditStores.Tip">
+		<value>점포를 조회 또는 등록합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditCardRanges">
+		<value>카드&amp;nbsp;Master&amp;nbsp;생성</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditCardRanges.Tip">
+		<value>유효한 카드번호를 생성합니다.</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditCardTypes">
+		<value>카드&amp;nbsp;유형</value>
+	</data>
+	<data name="NGCSSC.Menu.SubItem.EditCardTypes.Tip">
+		<value>카드유형을 관리합니다.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.FieldGroup.Language">
+		<value>사용언어 선택</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.FieldGroup.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.TextBox.User">
+		<value>사용자 ID</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.TextBox.Password">
+		<value>비밀번호</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Header.Caption1">
+		<value>홈플러스 훼밀리카드 시스템에 오신 것을 환영합니다.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Header.Caption2">
+		<value>Software Support Console</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Button.Logon">
+		<value>로그인</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.PopUp.Error">
+		<value>오류</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.PopUp.Message.Attempt1-2">
+		<value>사용자 ID 또는 비밀번호가 부정확합니다. 확인하시고 다시 로그인해 주십시오.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.PopUp.Message.Attempt3">
+		<value>로그인이 실패하였습니다. Help Desk에 문의하시기 바랍니다.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.ValidationSummary.Message">
+		<value>오류</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.TextBox.User.Tip">
+		<value>사용자 ID를 입력하십시오.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.TextBox.Password.Tip">
+		<value>비밀번호를 입력하십시오.</value>
+	</data>
+	<data name="NGCSSC.LogonPanel.Button.Logon.Tip">
+		<value>로그인하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.AddUser.Caption">
+		<value>사용자 : 사용자 등록</value>
+	</data>
+	<data name="AddUser.Popup.Header.Error">
+		<value>오류</value>
+	</data>
+	<data name="AddUser.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="AddUser.Button.Add.Tip">
+		<value>사용자를 등록합니다.</value>
+	</data>
+	<data name="AddUser.Form.AddUser">
+		<value>사용자 등록</value>
+	</data>
+	<data name="AddUser.Form.AddUser.Tip">
+		<value>시스템 사용자를 등록합니다.</value>
+	</data>
+	<data name="AddUser.Form.UserName">
+		<value>사용자ID</value>
+	</data>
+	<data name="AddUser.Form.UserName.Tip">
+		<value>등록할 사용자ID를 입력하십시오. </value>
+	</data>
+	<data name="AddUser.Form.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="AddUser.Form.Description.Tip">
+		<value>등록할 사용자명을 입력하십시오. </value>
+	</data>
+	<data name="AddUser.Table.UserName">
+		<value>사용자ID</value>
+	</data>
+	<data name="AddUser.Table.UserName.Tip">
+		<value>등록된 사용자ID</value>
+	</data>
+	<data name="AddUser.Table.LastUpdatedBy">
+		<value>등록자</value>
+	</data>
+	<data name="AddUser.Table.LastUpdatedBy.Tip">
+		<value>해당 사용자ID를 등록한 관리자 </value>
+	</data>
+	<data name="AddUser.Table.LastUpdatedDate">
+		<value>등록일시</value>
+	</data>
+	<data name="AddUser.Table.LastUpdatedDate.Tip">
+		<value>해당 사용자ID를 등록한 날짜와 시간 </value>
+	</data>
+	<data name="AddUser.Table.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="AddUser.Table.Description.Tip">
+		<value>등록된 사용자명</value>
+	</data>
+	<data name="AddUser.Table.ChangeGroupMembership">
+		<value>사용자그룹 등록</value>
+	</data>
+	<data name="AddUser.Table.ChangeGroupMembership.Tip">
+		<value>사용자가 속한 사용자그룹을 등록합니다.</value>
+	</data>
+	<data name="AddUser.Table.Status">
+		<value>상태</value>
+	</data>
+	<data name="AddUser.Table.Status.Tip">
+		<value>사용자의 현재 상태 </value>
+	</data>
+	<data name="AddUser.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="AddUser.Table.Edit.Tip">
+		<value>사용자의 정보를 변경합니다.</value>
+	</data>
+	<data name="AddUser.Table.EditGroups">
+		<value>사용자그룹 변경</value>
+	</data>
+	<data name="AddUser.Popup.EditUser">
+		<value>사용자 정보변경</value>
+	</data>
+	<data name="AddUser.Popup.Username">
+		<value>사용자ID</value>
+	</data>
+	<data name="AddUser.Popup.Username.Tip">
+		<value>변경할 사용자ID </value>
+	</data>
+	<data name="AddUser.Popup.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="AddUser.Popup.Description.Tip">
+		<value>변경할 사용자명</value>
+	</data>
+	<data name="AddUser.Popup.Status">
+		<value>상태</value>
+	</data>
+	<data name="AddUser.Popup.Status.Tip">
+		<value>변경할 사용자 상태</value>
+	</data>
+	<data name="AddUser.Popup.Save">
+		<value>확인</value>
+	</data>
+	<data name="AddUser.Popup.Save.Tip">
+		<value>변경된 내용을 저장합니다.</value>
+	</data>
+	<data name="AddUser.Popup.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="AddUser.Popup.Cancel.Tip">
+		<value>내용을 변경하지 않습니다.</value>
+	</data>
+	<data name="AddUser.Popup.Error.Message.Header">
+		<value>오류</value>
+	</data>
+	<data name="AddUser.Popup.Error.Message.ItemAlreadyExists">
+		<value>사용자ID가 이미 등록되어 있습니다. 수정하여 다시 시도하십시오. </value>
+	</data>
+	<data name="NGCSSC.FindUser.Caption">
+		<value>사용자 : 사용자 조회</value>
+	</data>
+	<data name="FindUser.Button.Search">
+		<value>조회</value>
+	</data>
+	<data name="FindUser.Button.Search.Tip">
+		<value>사용자를 조회합니다. </value>
+	</data>
+	<data name="FindUser.Form.SearchForUsers">
+		<value>사용자 조회</value>
+	</data>
+	<data name="FindUser.Form.UserName">
+		<value>사용자ID</value>
+	</data>
+	<data name="FindUser.Form.UserName.Tip">
+		<value>조회할 사용자ID를 입력하십시오.('*' 사용가능)</value>
+	</data>
+	<data name="FindUser.Form.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="FindUser.Form.Description.Tip">
+		<value>조회할 사용자명을 입력하십시오.('*' 사용가능)</value>
+	</data>
+	<data name="FindUser.Form.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="FindUser.Form.GroupName.Tip">
+		<value>조회할 사용자그룹 입력하시면 등록된 사용자 전체를 조회합니다.('*' 사용가능)</value>
+	</data>
+	<data name="FindUser.Table.UserName">
+		<value>사용자ID</value>
+	</data>
+	<data name="FindUser.Table.userName.Tip">
+		<value>조회된 사용자ID</value>
+	</data>
+	<data name="FindUser.Table.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="FindUser.Table.Description.Tip">
+		<value>조회된 사용자명 </value>
+	</data>
+	<data name="FindUser.Table.LastUpdatedBy">
+		<value>등록자</value>
+	</data>
+	<data name="FindUser.Table.LastUpdatedBy.Tip">
+		<value>사용자ID를 등록한 관리자</value>
+	</data>
+	<data name="FindUser.Table.LastUpdatedDate">
+		<value>등록일시</value>
+	</data>
+	<data name="FindUser.Table.LastUpdatedDate.Tip">
+		<value>등록한 날짜와 시간 </value>
+	</data>
+	<data name="FindUser.Table.ChangeGroupMembership">
+		<value>사용자그룹 등록</value>
+	</data>
+	<data name="FindUser.Table.ChangeGroupMembership.Tip">
+		<value>사용자가 속한 사용자그룹을 등록합니다.</value>
+	</data>
+	<data name="FindUser.Table.Status">
+		<value>상태</value>
+	</data>
+	<data name="FindUser.Table.Status.Tip">
+		<value>사용자의 현재 상태</value>
+	</data>
+	<data name="FindUser.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="FindUser.Table.Edit.Tip">
+		<value>사용자의 정보를 변경합니다.</value>
+	</data>
+	<data name="FindUser.Table.Message.NoDataReturned">
+		<value>조회된 내용이 없습니다. 다시 조회하십시오.</value>
+	</data>
+	<data name="FindUser.Popup.EditUser">
+		<value>사용자 정보변경</value>
+	</data>
+	<data name="FindUser.Popup.Username">
+		<value>사용자ID</value>
+	</data>
+	<data name="FindUser.Popup.Username.Tip">
+		<value>변경할 사용자ID</value>
+	</data>
+	<data name="FindUser.Popup.Description">
+		<value>사용자명</value>
+	</data>
+	<data name="FindUser.Popup.Description.Tip">
+		<value>변경할 사용자명</value>
+	</data>
+	<data name="FindUser.Popup.Status">
+		<value>상태</value>
+	</data>
+	<data name="FindUser.Popup.Status.Tip">
+		<value>변경할 사용자 상태</value>
+	</data>
+	<data name="FindUser.Popup.Save">
+		<value>확인</value>
+	</data>
+	<data name="FindUser.Popup.Save.Tip">
+		<value>변경된 내용을 저장합니다.</value>
+	</data>
+	<data name="FindUser.Popup.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="FindUser.Popup.Error.Header">
+		<value>오류</value>
+	</data>
+	<data name="FindUser.Popup.Cancel.Tip">
+		<value>내용을 변경하지 않습니다.</value>
+	</data>
+	<data name="FindUser.Error.NoSearchCriteria">
+		<value>조회할 내용을 한 글자이상 입력해야 합니다.</value>
+	</data>
+	<data name="FindUser.Error.MaximumRetrievalExceeded">
+		<value>조회된 사용자가 너무 많습니다. 수정하여 다시 조회하십시오.</value>
+	</data>
+	<data name="NGCSSC.EditGroupMembership.Caption">
+		<value>사용자 : 사용자 조회/등록 : 사용자 소속그룹 등록</value>
+	</data>
+	<data name="EditGroupMembership.Header">
+		<value>{0} : 사용자 소속그룹 등록</value>
+	</data>
+	<data name="EditGroupMembership.Header.Tip">
+		<value>사용자가 사용자그룹에 등록됩니다. </value>
+	</data>
+	<data name="EditGroupMembership.EditGroupMembership">
+		<value>사용자 소속그룹 등록</value>
+	</data>
+	<data name="EditGroupMembership.Table.GroupMembership">
+		<value>사용자 소속그룹</value>
+	</data>
+	<data name="EditGroupMembership.Table.GroupMembership.Tip">
+		<value>사용자가 등록된 사용자그룹입니다. </value>
+	</data>
+	<data name="EditGroupMembership.Table.Remove">
+		<value>삭제</value>
+	</data>
+	<data name="EditGroupMembership.Table.Remove.Tip">
+		<value>사용자 소속그룹에서 해당사용자을 삭제합니다. </value>
+	</data>
+	<data name="EditGroupMembership.Table.Message.NoEntries">
+		<value>사용자가 속한 사용자그룹이 없습니다.</value>
+	</data>
+	<data name="EditGroupMembership.Listbox.AddGroup">
+		<value>사용자그룹</value>
+	</data>
+	<data name="EditGroupMembership.Listbox.Tip">
+		<value>사용자가 등록될 사용자그룹을 선택하십시오. </value>
+	</data>
+	<data name="EditGroupMembership.Listbox.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="EditGroupMembership.Listbox.Button.Add.Tip">
+		<value>선택된 사용자그룹에 사용자를 등록합니다. </value>
+	</data>
+	<data name="EditGroupMembership.Popup.RemoveGroup">
+		<value>사용자 소속그룹 삭제</value>
+	</data>
+	<data name="EditGroupMembership.Popup.Message">
+		<value>사용자그룹 : '{1}' 에서 사용자 : '{0}'를 삭제하시겠습니까?</value>
+	</data>
+	<data name="EditGroupMembership.Popup.Yes">
+		<value>확인</value>
+	</data>
+	<data name="EditGroupMembership.Popup.No">
+		<value>취소</value>
+	</data>
+	<data name="EditGroupMembership.Popup.Message.ItemExists">
+		<value>사용자가 이미 사용자그룹에 등록되어 있습니다. </value>
+	</data>
+	<data name="EditGroupMembership.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="EditGroupMembership.Table.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="NGCSSC.EditGroupPrivileges.Caption">
+		<value>사용자그룹 : 사용자그룹 조회/등록 : 사용자그룹 권한등록</value>
+	</data>
+	<data name="EditGroupPrivileges.Header">
+		<value>{0} : 사용자그룹 권한등록</value>
+	</data>
+	<data name="EditGroupPrivileges.Header.Tip">
+		<value>권한이 사용자그룹에 적용됩니다. </value>
+	</data>
+	<data name="EditGroupPrivileges.EditScreens">
+		<value>사용자그룹 권한등록</value>
+	</data>
+	<data name="EditGroupPrivileges.Table.AccessibleScreens">
+		<value>권한등록</value>
+	</data>
+	<data name="EditGroupPrivileges.Table.AccessibleScreens.Tip">
+		<value>해당 사용자그룹에 속한 사용자가 사용할 수 있는 권한목록 </value>
+	</data>
+	<data name="EditGroupPrivileges.Table.Remove">
+		<value>삭제</value>
+	</data>
+	<data name="EditGroupPrivileges.Table.Remove.Tip">
+		<value>등록된 사용자그룹의 권한을 삭제합니다. </value>
+	</data>
+	<data name="EditGroupPrivileges.Table.Message.NoEntries">
+		<value>해당 사용자그룹에 등록된 권한이 없습니다.</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Add.Tip">
+		<value>선택된 권한을 사용자그룹에 등록합니다. </value>
+	</data>
+	<data name="EditGroupPrivileges.EditPointsLimit">
+		<value>수기입력 포인트한도 설정</value>
+	</data>
+	<data name="EditGroupPrivileges.Form.AddLimit">
+		<value>가산포인트</value>
+	</data>
+	<data name="EditGroupPrivileges.Form.AddLimit.Tip">
+		<value>수기입력으로 포인트를 추가할 수 있는 최대포인트</value>
+	</data>
+	<data name="EditGroupPrivileges.Form.SubtractLimit">
+		<value>감산포인트 </value>
+	</data>
+	<data name="EditGroupPrivileges.Form.SubtractLimit.Tip">
+		<value>수기입력으로 포인트를 삭제할 수 있는 최대포인트</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Save">
+		<value>확인</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Save.Tip">
+		<value>등록된 내용을 저장합니다</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="EditGroupPrivileges.Button.Cancel.Tip">
+		<value>내용을 변경하지 않습니다.</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.RemoveScreen">
+		<value>권한 삭제</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.RemoveScreen.Message">
+		<value>{0} 사용자그룹의 권한을 삭제하시겠습니까?</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.RemoveScreen.Yes">
+		<value>확인</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.RemoveScreen.No">
+		<value>취소</value>
+	</data>
+	<data name="EditGroupPrivileges.Listbox.AddGroup">
+		<value>권한</value>
+	</data>
+	<data name="EditGroupPrivileges.Listbox.AddGroup.Tip">
+		<value>사용자그룹에 등록할 권한을 선택하십시오. </value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.Message.ItemExists">
+		<value>사용자그룹에 이미 등록된 권한입니다. </value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.Message.AddNegativeLimits">
+		<value>음수로 입력 불가합니다. 양수로 재입력 하십시오.</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.Message.SubNegativeLimits">
+		<value>음수로 입력 불가합니다. 양수로 재입력 하십시오.</value>
+	</data>
+	<data name="EditGroupPrivileges.Popup.Message.LimitsRequired">
+		<value>포인트 수기입력 가산 및 감산 입력한도 모두를 설정해야 합니다.</value>
+	</data>
+	<data name="EditGroupPrivileges.Table.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="NGCSSC.AddGroup.Caption">
+		<value>사용자그룹 : 사용자그룹 등록</value>
+	</data>
+	<data name="AddGroup.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="AddGroup.Button.Add.Tip">
+		<value>사용자그룹을 입력후 클릭하십시오.</value>
+	</data>
+	<data name="AddGroup.Form.AddGroup">
+		<value>사용자그룹 등록</value>
+	</data>
+	<data name="AddGroup.Form.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="AddGroup.Form.GroupName.Tip">
+		<value>등록할 사용자그룹을 입력하십시오. </value>
+	</data>
+	<data name="AddGroup.Form.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="AddGroup.Form.Description.Tip">
+		<value>등록할 사용자그룹명을 입력하십시오. </value>
+	</data>
+	<data name="AddGroup.Table.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="AddGroup.Table.GroupName.Tip">
+		<value>등록된 사용자그룹</value>
+	</data>
+	<data name="AddGroup.Table.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="AddGroup.Table.Description.Tip">
+		<value>등록된 사용자그룹명</value>
+	</data>
+	<data name="AddGroup.Table.LastUpdatedBy">
+		<value>등록자</value>
+	</data>
+	<data name="AddGroup.Table.LastUpdatedBy.Tip">
+		<value>해당 사용자그룹을 등록한 관리자 </value>
+	</data>
+	<data name="AddGroup.Table.LastUpdatedDate">
+		<value>등록일시</value>
+	</data>
+	<data name="AddGroup.Table.LastUpdatedDate.Tip">
+		<value>해당 사용자그룹을 등록한 날짜와 시간</value>
+	</data>
+	<data name="AddGroup.Table.EditgroupPrivileges">
+		<value>권한등록</value>
+	</data>
+	<data name="AddGroup.Table.EditgroupPrivileges.Tip">
+		<value>사용자그룹의 권한을 등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="AddGroup.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="AddGroup.Table.Edit.Tip">
+		<value>사용자그룹의 정보를 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="AddGroup.Table.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="AddGroup.Table.Delete.Tip">
+		<value>사용자그룹을 삭제하려면 클릭하십시오.</value>
+	</data>
+	<data name="AddGroup.PopupEdit.EditGroup">
+		<value>사용자그룹 정보변경</value>
+	</data>
+	<data name="AddGroup.PopupEdit.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="AddGroup.PopupEdit.GroupName.Tip">
+		<value>변경할 사용자그룹</value>
+	</data>
+	<data name="AddGroup.PopupEdit.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="AddGroup.PopupEdit.Description.Tip">
+		<value>변경할 사용자그룹명</value>
+	</data>
+	<data name="AddGroup.PopupEdit.Save">
+		<value>확인</value>
+	</data>
+	<data name="AddGroup.PopupEdit.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="AddGroup.PopupConfirmation.DeleteGroup">
+		<value>사용자그룹 삭제</value>
+	</data>
+	<data name="AddGroup.PopupConfirmation.Message">
+		<value>{0} 사용자그룹을 삭제하시겠습니까?</value>
+	</data>
+	<data name="AddGroup.PopupConfirmation.Yes">
+		<value>확인</value>
+	</data>
+	<data name="AddGroup.PopupConfirmation.No">
+		<value>취소</value>
+	</data>
+	<data name="AddGroup.Popup.Error.Header">
+		<value>오류</value>
+	</data>
+	<data name="AddGroup.PopupError.Error">
+		<value>오류</value>
+	</data>
+	<data name="AddGroup.PopupError.Message">
+		<value>사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다.</value>
+	</data>
+	<data name="AddGroup.PopupError.Ok">
+		<value>확인</value>
+	</data>
+	<data name="AddGroup.PopupError.Message.ItemAlreadyExists">
+		<value>사용자그룹이 이미 등록되어 있습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="NGCSSC.FindGroup.Caption">
+		<value>사용자그룹 : 사용자그룹 조회</value>
+	</data>
+	<data name="FindGroup.Button.Add">
+		<value>조회</value>
+	</data>
+	<data name="FindGroup.Button.Add.Tip">
+		<value>조회할 사용자그룹을 입력한 후 클릭하시시오.</value>
+	</data>
+	<data name="FindGroup.Form.SearchForGroup">
+		<value>사용자그룹 조회</value>
+	</data>
+	<data name="FindGroup.Form.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="FindGroup.Form.GroupName.Tip">
+		<value>조회할 사용자그룹을 입력하십시오.('*' 사용가능)</value>
+	</data>
+	<data name="FindGroup.Form.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="FindGroup.Form.Description.Tip">
+		<value>조회할 사용자그룹명을 입력하십시오.('*' 사용가능)</value>
+	</data>
+	<data name="FindGroup.Table.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="FindGroup.Table.GroupName.Tip">
+		<value>조회된 사용자그룹 </value>
+	</data>
+	<data name="FindGroup.Table.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="FindGroup.Table.Description.Tip">
+		<value>조회된 사용자그룹명</value>
+	</data>
+	<data name="FindGroup.Table.LastUpdatedBy">
+		<value>등록자</value>
+	</data>
+	<data name="FindGroup.Table.LastUpdatedBy.Tip">
+		<value>해당 사용자그룹을 등록한 관리자</value>
+	</data>
+	<data name="FindGroup.Table.LastUpdatedDate">
+		<value>등록일시</value>
+	</data>
+	<data name="FindGroup.Table.LastUpdatedDate.Tip">
+		<value>해당 사용자그룹을 등록한 날짜와 시간</value>
+	</data>
+	<data name="FindGroup.Table.EditgroupPrivileges">
+		<value>권한등록</value>
+	</data>
+	<data name="FindGroup.Table.EditgroupPrivileges.Tip">
+		<value>사용자그룹의 권한을 등록하려면 클릭하십시오. </value>
+	</data>
+	<data name="FindGroup.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="FindGroup.Table.Edit.Tip">
+		<value>사용자그룹의 정보를 변경하려면 클릭하십시오. </value>
+	</data>
+	<data name="FindGroup.Table.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="FindGroup.Table.Delete.Tip">
+		<value>사용자그룹을 삭제하려면 클릭하십시오.</value>
+	</data>
+	<data name="FindGroup.Table.Message.NoDataReturned">
+		<value>조회된 내용이 없습니다. 다시 조회하십시오. </value>
+	</data>
+	<data name="FindGroup.PopupEdit.EditGroup">
+		<value>사용자그룹 정보변경</value>
+	</data>
+	<data name="FindGroup.PopupEdit.GroupName">
+		<value>사용자그룹</value>
+	</data>
+	<data name="FindGroup.PopupEdit.GroupName.Tip">
+		<value>변경할 사용자그룹</value>
+	</data>
+	<data name="FindGroup.PopupEdit.Description">
+		<value>사용자그룹명</value>
+	</data>
+	<data name="FindGroup.PopupEdit.Description.Tip">
+		<value>변경할 사용자그룹명</value>
+	</data>
+	<data name="FindGroup.PopupEdit.Save">
+		<value>확인</value>
+	</data>
+	<data name="FindGroup.PopupEdit.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="FindGroup.PopupConfirmation.DeleteGroup">
+		<value>사용자그룹 삭제</value>
+	</data>
+	<data name="FindGroup.PopupConfirmation.Message">
+		<value>{0} 사용자그룹을 삭제하시겠습니까?</value>
+	</data>
+	<data name="FindGroup.PopupConfirmation.Yes">
+		<value>확인</value>
+	</data>
+	<data name="FindGroup.PopupConfirmation.No">
+		<value>취소</value>
+	</data>
+	<data name="FindGroup.Popup.Error.Header">
+		<value>오류</value>
+	</data>
+	<data name="FindGroup.PopupError.DeleteGroup">
+		<value>사용자그룹 삭제</value>
+	</data>
+	<data name="FindGroup.PopupError.Message">
+		<value>사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다.</value>
+	</data>
+	<data name="FindGroup.PopupError.Ok">
+		<value>확인</value>
+	</data>
+	<data name="FindGroup.Error.NoSearchCriteria">
+		<value>한 글자이상의 조회할 내용을 입력해야 합니다. </value>
+	</data>
+	<data name="FindGroup.Error.MaximumRetrievalExceeded">
+		<value>조회된 내용이 너무 많습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="FindGroup.PopupError.Message.UsersStillPresent">
+		<value>사용자그룹에 등록된 사용자가 있어서 삭제가 안됩니다. </value>
+	</data>
+	<data name="NGCSSC.MaintainStore.Caption">
+		<value>관리자 : 점포등록</value>
+	</data>
+	<data name="MaintainStore.Form.Store">
+		<value>Store</value>
+	</data>
+	<data name="MaintainStore.Form.StoreNumber">
+		<value>점포코드</value>
+	</data>
+	<data name="MaintainStore.Table.Message.NoEntries">
+		<value>등록된 점포가 없습니다.</value>
+	</data>
+	<data name="MaintainStore.Table.ToolTip">
+		<value>점포리스트 </value>
+	</data>
+	<data name="MaintainStore.Table.StoreNumber">
+		<value>점포코드</value>
+	</data>
+	<data name="MaintainStore.Table.StoreNumber.ToolTip">
+		<value>점포별 해당코드</value>
+	</data>
+	<data name="MaintainStore.Table.StoreName">
+		<value>점포명</value>
+	</data>
+	<data name="MaintainStore.Table.StoreName.ToolTip">
+		<value>점포명칭</value>
+	</data>
+	<data name="MaintainStore.Table.Region">
+		<value>지역</value>
+	</data>
+	<data name="MaintainStore.Table.Region.ToolTip">
+		<value>점포의 해당지역</value>
+	</data>
+	<data name="MaintainStore.Table.Edit.ToolTip">
+		<value>점포정보를 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="MaintainStore.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="MaintainStore.Table.EditCap">
+		<value>변경</value>
+	</data>
+	<data name="MaintainStore.Button.Add">
+		<value>등록</value>
+	</data>
+	<data name="MaintainStore.Button.Add.ToolTip">
+		<value>신규 점포를 등록하려면 클릭하십시오.</value>
+	</data>
+	<data name="MaintainStore.Popup.EditTitle">
+		<value>점포정보 변경</value>
+	</data>
+	<data name="MaintainStore.Popup.AddTitle">
+		<value>점포정보 등록</value>
+	</data>
+	<data name="MaintainStore.Popup.StoreNumber">
+		<value>점포코드</value>
+	</data>
+	<data name="MaintainStore.Popup.StoreNumber.ToolTip">
+		<value>점포별 해당코드</value>
+	</data>
+	<data name="MaintainStore.Popup.StoreName">
+		<value>점포명</value>
+	</data>
+	<data name="MaintainStore.Popup.StoreName.ToolTip">
+		<value>점포명칭</value>
+	</data>
+	<data name="MaintainStore.Popup.Region">
+		<value>지역</value>
+	</data>
+	<data name="MaintainStore.Popup.Region.ToolTip">
+		<value>점포의 해당지역</value>
+	</data>
+	<data name="MaintainStore.Popup.Button.Save">
+		<value>확인</value>
+	</data>
+	<data name="MaintainStore.Popup.Button.Save.ToolTip">
+		<value>변경된 정보를 저장합니다.</value>
+	</data>
+	<data name="MaintainStore.Popup.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="MaintainStore.Popup.Button.Cancel.ToolTip">
+		<value>변경된 정보를 저장하지 않습니다.</value>
+	</data>
+	<data name="MaintainStore.Ip.Divider">
+		<value>.</value>
+	</data>
+	<data name="MaintainStore.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="MaintainStore.Error.InvalidStoreCode">
+		<value>해당 점포코드는 이미 등록되어 있습니다.</value>
+	</data>
+	<data name="MaintainStore.Error.InvalidStoreName">
+		<value>해당 점포명은 이미 등록되어 있습니다.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardRanges.Caption">
+		<value>관리자 : 카드 Master 생성</value>
+	</data>
+	<data name="MaintainCardRanges.Table.Message.NoEntries">
+		<value>카드번호가 등록되지 않았습니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Table.ToolTip">
+		<value>카드번호 정보리스트</value>
+	</data>
+	<data name="MaintainCardRanges.Table.FromCardNumber">
+		<value>시작 카드번호</value>
+	</data>
+	<data name="MaintainCardRanges.Table.FromCardNumber.ToolTip">
+		<value>카드번호의 시작번호</value>
+	</data>
+	<data name="MaintainCardRanges.Table.ToCardNumber">
+		<value>종료 카드번호</value>
+	</data>
+	<data name="MaintainCardRanges.Table.ToCardNumber.ToolTip">
+		<value>카드번호의 종료번호</value>
+	</data>
+	<data name="MaintainCardRanges.Table.CardType">
+		<value>카드유형</value>
+	</data>
+	<data name="MaintainCardRanges.Table.CardType.ToolTip">
+		<value>카드의 유형</value>
+	</data>
+	<data name="MaintainCardRanges.Table.CardNoD">
+		<value>자릿수</value>
+	</data>
+	<data name="MaintainCardRanges.Table.CardNoD.ToolTip">
+		<value>생성된 카드번호의 자릿수</value>
+	</data>
+	<data name="MaintainCardRanges.Table.Edit.ToolTip">
+		<value>카드번호 범위를 변경 및 삭제하려면 클릭하십시오.</value>
+	</data>
+	<data name="MaintainCardRanges.Table.Edit">
+		<value>정보변경</value>
+	</data>
+	<data name="MaintainCardRanges.Table.EditCap">
+		<value>변경</value>
+	</data>
+	<data name="MaintainCardRanges.Button.Add">
+		<value>생성</value>
+	</data>
+	<data name="MaintainCardRanges.Button.Add.ToolTip">
+		<value>신규카드의 카드번호 범위를 생성합니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.EditTitle">
+		<value>카드정보 변경</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.AddTitle">
+		<value>신규카드 정보생성</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.FromCardNumber">
+		<value>시작 카드번호</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.FromCardNumber.ToolTip">
+		<value>카드번호의 시작번호</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.ToCardNumber">
+		<value>종료 카드번호</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.ToCardNumber.ToolTip">
+		<value>카드번호의 종료번호</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.CardType">
+		<value>카드유형</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.CardType.ToolTip">
+		<value>카드의 유형</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Save">
+		<value>확인</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Save.ToolTip">
+		<value>변경된 정보를 저장합니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Delete">
+		<value>삭제</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Delete.ToolTip">
+		<value>해당 정보를 삭제합니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Cancel">
+		<value>취소</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Button.Cancel.ToolTip">
+		<value>변경된 정보를 저장하지 않습니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Popup.Error">
+		<value>오류</value>
+	</data>
+	<data name="MaintainCardRanges.Error.RangeOverlap">
+		<value>이미 생성된 카드번호와 중복됩니다.</value>
+	</data>
+	<data name="MaintainCardRanges.Error.IncorrectCardNumberLength">
+		<value>From and to card numbers should contain {0} digits for this type of card</value>
+	</data>
+	<data name="MaintainCardRanges.Error.MaxLessThanMin">
+		<value>종료 카드번호는 시작 카드번호보다 커야 합니다.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardRanges.Caption.DateAdded">
+		<value>생성일자</value>
+	</data>
+	<data name="NGCSSC.MaintainCardRanges.Caption.DateAdded.Tip">
+		<value>카드번호를 시스템에 등록한 일자</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Caption.Page">
+		<value>관리자 : 카드유형</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Button.Add">
+		<value>생성</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Button.Add.Tip">
+		<value>새로운 카드유형을 생성하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Code">
+		<value>코드</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Code.Tip">
+		<value>카드유형별 코드</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Description">
+		<value>명칭</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Description.Tip">
+		<value>카드유형별 명칭</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Length">
+		<value>자릿수</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.Length.Tip">
+		<value>카드유형별 자릿수</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.HscFlag">
+		<value>신제휴카드</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Message.HscFlag.Tip">
+		<value>신제휴카드입니까?</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Table.NoData">
+		<value>카드유형이 없습니다.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Table.Edit">
+		<value>변경</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Table.Edit.Tip">
+		<value>카드유형을 변경하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Add">
+		<value>카드유형 생성</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Edit">
+		<value>카드유형 변경</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Error">
+		<value>에러</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Save">
+		<value>확인</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Save.Tip">
+		<value>저장하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Popup.Cancel.Tip">
+		<value>취소하려면 클릭하십시오.</value>
+	</data>
+	<data name="NGCSSC.MaintainCardTypes.Error.DuplicateDescription">
+		<value>명칭이 이미 사용중입니다.</value>
+	</data>
+	<data name="CustRegister.Popup.SSNInvalid.Message">
+		<value>주민번호가 유효하지 않습니다. 수정하여 다시 시도하십시오.</value>
+	</data>
+	<data name="Batch.BatchRegisterNewCustomer.Replace.Name">
+		<value>성명없음</value>
+	</data>
+	<data name="ViewMailing.Table.NotMailed.NotMailable">
+		<value>발송불가 회원</value>
+	</data>
+	<data name="NGCMarketing.Report.Headers.NumberofNonRevenuePoints">
+		<value>Non Revenue Points Given</value>
+	</data>	
+<data name="NGCMarketing.Report.Headers.ValueofNonRevenuePoints">
+		<value>Value of Non Revenue Points Given</value>
+	</data>
+</root>

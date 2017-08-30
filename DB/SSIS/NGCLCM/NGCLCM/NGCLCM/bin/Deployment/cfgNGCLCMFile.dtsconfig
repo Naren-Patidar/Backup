@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\JC57" GeneratedFromPackageName="BasestockCountReport" GeneratedFromPackageID="{FEEBE06B-0DBE-427A-9A89-D2AB5AC5B5EB}" GeneratedDate="10/31/2012 12:17:14 PM"/>
+	</DTSConfigurationHeading>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[LCMConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=TSMData;Trusted_Connection=Yes;Max Pool Size=600;Provider=SQLOLEDB;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=NGCOPSC;Trusted_Connection=Yes;Max Pool Size=600;Provider=SQLOLEDB;</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::strConnectionString].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.21.181.93;Initial Catalog=TSMData;Trusted_Connection=Yes;Max Pool Size=600;Provider=SQLOLEDB;</ConfiguredValue>
+  </Configuration>
+  
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[BasestockCountReport].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>L:\Tesco\NGC\Output\BasestockCountReport.csv</ConfiguredValue>
+  </Configuration>  
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[AllocationFile].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input\Processed_MF.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGC LCM System Log].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Log\LCMExport_20121031113001.txt</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[TSMLCMConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\MailableCustomers.txt</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[TSMLCMOutput].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\LCMExport_111.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::IsMultipleFileRequire].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::sFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>LCMExport_</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::strTSMLogFile].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Log\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::strTSMOutputFile].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ThresholdValue].Properties[Value]" ValueType="Int64">
+		<ConfiguredValue>1000</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varNoofCoupons].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>24</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varProcessedFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Processed_MF.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varProcessedInputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input\Processed_MF.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varCountry].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UK</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[CCAllocationFile].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[DHFile].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input\adhoc.txt</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property" Path="\Package.Variables[User::CCOutputPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DHArchivePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Archive</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DHInputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::MailingNumber].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CG3</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[CouponIssuanceReportConnection].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\CouponIssuanceReport.csv</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\UserLogs\CustomerPrefUpdates\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Output\</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::TemplateFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Template\</ConfiguredValue>
+	</Configuration>	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[LCMInputFile].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input\DunnhumbyPref.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GPLCMInputFile].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Input\DunnhumbyPrefGP.txt</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varpkgArchivePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Archive</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgErrLogFilenameWithPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\UserLogs\CustomerPrefUpdates\Customer.20100510.063959.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\UserLogs\CustomerPrefUpdates</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgRejectedFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Tesco\NGC\Rejected\</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::NoofCustomerPerCCFile].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>1000000</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::IsCCMultipleFileRequire].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ProceseedCCInputPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>L:\Projects\LCM\JanuaryLCM\Data\Input</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ProcessedCCFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Processed*.*</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varLCMHeaderName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Tesco January LCM</ConfiguredValue>
+	</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varDatabaseName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>NGCOPSC</ConfiguredValue>
+	</Configuration>
+
+</DTSConfiguration>

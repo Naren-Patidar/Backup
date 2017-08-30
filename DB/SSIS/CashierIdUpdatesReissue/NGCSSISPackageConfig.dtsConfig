@@ -1,0 +1,141 @@
+<?xml version="1.0"?><DTSConfiguration><DTSConfigurationHeading><DTSConfigurationFileInfo GeneratedBy="DEV01\gb50dev" GeneratedFromPackageName="DunnhumbyCustomerFeed" GeneratedFromPackageID="{183D8DD5-9190-4EF2-9D1C-6009082E55F7}" GeneratedDate="2010-02-18 17:52:28"/></DTSConfigurationHeading>
+<!-- Start : Common Connection String and Variable name for all SSIS packages -->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataConnectionString].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>Data Source=172.30.78.112;Initial Catalog=NGCData;Provider=SQLNCLI.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[CampaignDataConnectionString].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>Data Source=172.30.40.195;Initial Catalog=CampaignData;Provider=SQLNCLI.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportingDBConnectionString].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>Data Source=172.30.40.195;Initial Catalog=NGCReport;Provider=SQLNCLI.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ArchiveFilePath].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\Archive\</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFilePath].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\Out\</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputFilePath].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\In\</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\Log\</ConfiguredValue></Configuration><Configuration ConfiguredType="Property" Path="\Package.Variables[User::RejectedFilePath].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\Rejected\</ConfiguredValue></Configuration>
+<!-- End : Common Connection String and Variable name for all SSIS packages -->
+<!-- Start : Dunnhumby Customer Feed XSD Connection String Varible-->
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::XSDDHCustomerFeed].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\DunnhumbyCustomerFeed.xsd</ConfiguredValue></Configuration>
+<!-- End : Dunnhumby Customer Feed XSD Connection String Varible-->
+<!-- Start : Customer Geocode Extract XSD Connection String Varible-->
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::XSDCustGeocodeExtract].Properties[Value]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\GeocodeRequest.xsd</ConfiguredValue></Configuration>
+<!-- End : Customer Geocode Extract XSD Connection String Varible-->
+<!-- Start :Dunnhumby Campign Feed XSD Connection String Varible-->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[CsvFileConnection].Properties[ConnectionString]" ValueType="String">
+  <ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\DunnhumbyCampaignFeed.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[DunnhumbyCampaignFeed.csv].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\DunnhumbyCampaignFeed.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[DunnhumbyCampaignFeed.xslt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\DunnhumbyCampaignFeed.xslt</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[DunnhumbyCustomerSelectionv0.1.xsd].Properties[ConnectionString]" ValueType="String">
+   <ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\DunnhumbyCustomerSelectionv0.1.xsd</ConfiguredValue>
+</Configuration>
+<!-- End :Dunnhumby Campign Feed XSD Connection String Varible-->
+<!-- Start: Generate Campign File Varible-->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCCampaign.xsd].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\NGCCampaign.xsd</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Stepsize].Properties[Value]" ValueType="Int32"><ConfiguredValue>5000000</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCCampaignAnonymise.xsd].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\NGCCampaignAnonymise.xsd</ConfiguredValue></Configuration>
+<!-- End: Generate Campign File Varible-->
+
+<!-- Start : Cashier ID Update SSIS Package Connection String -->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportingDBConnectionString].Properties[ConnectionString]" ValueType="String">
+ <ConfiguredValue>Data Source=172.30.40.195;Initial Catalog=NGCReport;Provider=SQLNCLI.1;Integrated Security=SSPI;User ID=ngcadmin;</ConfiguredValue> 
+</Configuration>
+
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataConnectionString].Properties[ConnectionString]" ValueType="String">
+ <ConfiguredValue>Data Source=THADSRDIKBHO101;Initial Catalog=NGCData;Provider=SQLNCLI.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue> 
+</Configuration>
+
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputDatabase].Properties[Value]" ValueType="String">
+  <ConfiguredValue>NGCData</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputServer].Properties[Value]" ValueType="String">
+  <ConfiguredValue>THADSRDIKBHO101</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataSource].Properties[ConnectionString]" ValueType="String">
+  <ConfiguredValue>Data Source=THADSRDIKBHO101;Initial Catalog=NGCData;Provider=SQLNCLI.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportDestination].Properties[ConnectionString]" ValueType="String">
+  <ConfiguredValue>Data Source=THARNGCHO110;Initial Catalog=NGCReport;Provider=SQLNCLI.1;Integrated Security=SSPI;User ID=ngcadmin;</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DestinationDatabase].Properties[Value]" ValueType="String">
+  <ConfiguredValue>NGCData</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SourceDatabase].Properties[Value]" ValueType="String">
+  <ConfiguredValue>NGCData</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportDestination].Properties[SqlServerName]" ValueType="String">
+  <ConfiguredValue>THARNGCHO110</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCDataSource].Properties[SqlServerName]" ValueType="String">
+  <ConfiguredValue>THADSRDIKBHO101</ConfiguredValue> 
+</Configuration>
+
+<!--End :Cashier ID Update SSIS Package Connection String -->
+
+
+
+<!-- Start : Custoer Geocode Feed SSIS Package XSD ConnectionString Variable-->
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::XSDCustGeocodeFeed].Properties[Value]" ValueType="String">
+  <ConfiguredValue>C:\Program Files\Common Files\NGC\XSD\GeocodeResponse.xsd</ConfiguredValue> 
+  </Configuration>
+<!--End : Custoer Geocode Feed -->
+
+
+
+<!--Start:Poll Partner SSIS Package Configiration Details -->
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCScriptConnection].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>Data Source=172.21.149.228;User ID=sa;Initial Catalog=NGCR15;User Id=sa;Password=Tesco123;Application Name=SSIS-PointsPartnerImport-{1625FD68-A24D-4CFE-9842-829869F04EBB}NGCScriptConnection;</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlatPP.csv].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Output\FlatPP.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlatPPOutput.csv].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Output\FlatPP.csv</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[FlattenPP.xslt].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\XSD\FlattenPointsPartnerRequest.xslt</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[NGC].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>Data Source=172.21.149.228;User ID=sa;Initial Catalog=NGCR15;User Id=sa;Password=Tesco123;Application Name=SSIS-PointsPartnerImport-{1625FD68-A24D-4CFE-9842-829869F04EBB}NGCScriptConnection;</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[PointsPartnerRequest.xsd].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\XSD\PointsPartnerRequest.xsd</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[PPImport.xml].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Response.xml].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Output\Response.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[SMTP Connection Manager].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>SmtpServer=thasmtpho101.th-tesco.org;UseWindowsAuthentication=True;EnableSsl=False;</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerArchiveFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Archive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerInputFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::IsCreate].Properties[Value]" ValueType="Boolean">
+<ConfiguredValue>-1</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerLogFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Response</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PointsPartnerCurrentFileName].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Receive</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PointsPartnerInputFileName].Properties[Value]" ValueType="String">
+<ConfiguredValue>*.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::RejectedFile].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Reject\Report.xml</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PartnerRejectedFilePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>\\172.21.149.228\PartnerPoints\Reject</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DefaultDataProtectionPreference].Properties[Value]" ValueType="Int32">
+<ConfiguredValue>1</ConfiguredValue> 
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::BatchSize].Properties[Value]" ValueType="Int32">
+<ConfiguredValue>2</ConfiguredValue> 
+</Configuration>
+<!--End:Poll Partner SSIS Package Configiration Details -->
+</DTSConfiguration>

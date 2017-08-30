@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedUtils", "SharedUtils.csproj", "{C1F9626B-7F70-4B1A-80D7-C77B3C3B8601}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {C44824C7-DCDF-453E-B613-E73A431010D5}
+		SccProjectUniqueName1 = SharedUtils.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C1F9626B-7F70-4B1A-80D7-C77B3C3B8601}.Debug.ActiveCfg = Debug|.NET
+		{C1F9626B-7F70-4B1A-80D7-C77B3C3B8601}.Debug.Build.0 = Debug|.NET
+		{C1F9626B-7F70-4B1A-80D7-C77B3C3B8601}.Release.ActiveCfg = Release|.NET
+		{C1F9626B-7F70-4B1A-80D7-C77B3C3B8601}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

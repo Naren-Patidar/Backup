@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="IN\NV11" GeneratedFromPackageName="ReportVoucher" GeneratedFromPackageID="{CE6314B4-E6E5-4E75-9CA5-9FB31A2D061C}" GeneratedDate="11/15/2012 6:59:47 PM"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SMTP Connection Manager].Properties[SmtpServer]" ValueType="String">
+    <ConfiguredValue>172.29.13.163 </ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varConnectionString].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Data Source=172.21.214.38;User ID=ICCRSQLUSER;Password=Tesco123;Initial Catalog=PrintVouchers_KioskDB;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varEnableExtraLogs].Properties[Value]" ValueType="Byte">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::vaReportQuery].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Exec Usp_GenerateVoucherReport</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varEventLogKey].Properties[Value]" ValueType="String">
+    <ConfiguredValue>VoucherReport|CV</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varHeader].Properties[Value]" ValueType="String">
+    <ConfiguredValue>        日期    |店数|独特的触摸屏的用户的数目|检查的凭证屏幕，独特的触摸屏用户数|独特的触摸屏打印出优惠券的用户数|獨特的觸摸屏的用戶的數目</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varLogPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>C:\Documents and Settings\nv11\Desktop\New Folder\Reports\ReportC_V\Output</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varMailBody].Properties[Value]" ValueType="String">
+    <ConfiguredValue>My Body</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varMailSubject].Properties[Value]" ValueType="String">
+    <ConfiguredValue>My Subject</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varOutputPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>C:\Documents and Settings\nv11\Desktop\New Folder\Reports\ReportC_V\Output</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varReportName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>券报告</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::varSheetName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>券表</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Variables[User::varMailFrom].Properties[Value]" ValueType="String">
+    <ConfiguredValue>no-reply@in.tesco.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Variables[User::varMailTo].Properties[Value]" ValueType="String">
+    <ConfiguredValue>tripurari.prasadsingh@in.tesco.com</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="DEV01\SJ03dev" GeneratedFromPackageName="PkgReissueMailPack" GeneratedFromPackageID="{56F8C995-685E-486B-8C12-D00AAF1E70CC}" GeneratedDate="11/5/2013 12:29:14 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NGCReportingConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.48;User ID=sa;Password=Tesco123;Initial Catalog=NGCR16;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-GenerateMailingFile-{2af5e9cb-3861-4c1a-8bec-c8dd591f0869}NGCReportingConnectionString;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[TSMDataConnectionString].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=172.21.179.48;User ID=sa;Password=Tesco123;Initial Catalog=TSMData;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-PkgReissueMailPack-{C74E3185-8AFC-409F-86FE-382A4278AE90}172.21.179.48.TSMData.sa;Auto Translate=False;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ArchiveFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\Vouchars\ProcessedFile\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Processed_216_22032013_22032013_22032013_MailingFileReissue_0.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\Vouchars\SV_Files\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::UserLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\NGC\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varChrimasBaseStock].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CSC</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::VarChrismasMailPack].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>3</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varHighBaseStock].Properties[Value]" ValueType="String">
+		<ConfiguredValue>HVC</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varHighMailPack].Properties[Value]" ValueType="String">
+		<ConfiguredValue>2</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varIsChristmasConversion].Properties[Value]" ValueType="String">
+		<ConfiguredValue>True</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varMailingFileName].Properties[Value]" ValueType="String">
+		<ConfiguredValue>NGC_Loy_Mailing_GI_MailingFile</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varStandardBaseStock].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PROC</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varStandardMailPack].Properties[Value]" ValueType="String">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varStatementHeader].Properties[Value]" ValueType="String">
+		<ConfiguredValue>NGC Statement Header</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varStatementMailingOutputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>D:\Tesco\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="CampaignData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CampaignID" type="xs:int" />
+        <xs:element name="CampaignName" type="xs:string" />
+        <xs:element name="TotalRecordsForCampaign" type="xs:int" />
+        <xs:sequence maxOccurs="10000">
+          <xs:element name="Customer">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OfferID">
+                  <xs:annotation>
+                    <xs:documentation>What is format of offer ids?</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Loyalty" type="Loyalty" minOccurs="0" />
+		<xs:element name="JoinedStore" type="xs:int" minOccurs="0" />
+                <xs:element name="PreferredStore" type="xs:int" />
+                <xs:element name="Name1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                      <xs:minLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Name2">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                      <xs:minLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Name3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PriceSensitivity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Up Market" />
+                      <xs:enumeration value="Mid Market" />
+                      <xs:enumeration value="Price Sensitive" />
+                      <xs:enumeration value="Unclassified" />
+                      <xs:enumeration value="" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Salutation">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Gender">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="M" />
+                      <xs:enumeration value="F" />
+                      <xs:enumeration value="U" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ClubcardNumber" type="xs:long"/>
+                <xs:element name="AverageWeeklySpendBand" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>What are the values for this? Is this needed for fulfillment house? </xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:choice>
+                  <xs:element name="Mail">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Address1" minOccurs="0">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="160" />                              
+                              <xs:minLength value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Address2" minOccurs="0">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="160" />                             
+                              <xs:minLength value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Address3" type="AddressLine" minOccurs="0" />
+                        <xs:element name="Address4" minOccurs="0">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="160" />                             
+                              <xs:minLength value="1" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Address5" type="AddressLine" minOccurs="0" />
+                        <xs:element name="Address6" type="AddressLine" minOccurs="0" />
+                        <xs:element name="Postcode" minOccurs="0">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="10" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="GeocodeLatitude" type="GeocodeCoordinate" minOccurs="0" />
+                        <xs:element name="GeocodeLongitude" type="GeocodeCoordinate" minOccurs="0" />
+                        <xs:element name="GeocodeConfidence" minOccurs="0">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                              <xs:minInclusive value="0" />
+                              <xs:maxInclusive value="10" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="SMS">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="MobilePhoneNumber" type="PhoneNumber" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="EMail">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="EMailAddress">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="Telephone">
+                    <xs:complexType>
+                      <xs:choice>
+                        <xs:sequence>
+                          <xs:element name="DaytimePhoneNumber" type="PhoneNumber" />
+                          <xs:element name="EveningPhoneNumber" type="PhoneNumber" minOccurs="0" />
+                        </xs:sequence>
+                        <xs:element name="EveningPhoneNumber" type="PhoneNumber" />
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:element name="FileDataRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="GeocodeCoordinate">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="-999.999999" />
+      <xs:maxInclusive value="999.999999" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Loyalty">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Lapsing" />
+      <xs:enumeration value="Gone Away" />
+      <xs:enumeration value="Premium" />
+      <xs:enumeration value="Valuable" />
+      <xs:enumeration value="Potential" />
+      <xs:enumeration value="Uncommitted" />
+      <xs:enumeration value="" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AddressLine">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="160" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PhoneNumber">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+      <xs:pattern value="[0-9]{2}(-[0-9]*)|[0-9]{3}(-[0-9]*)" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

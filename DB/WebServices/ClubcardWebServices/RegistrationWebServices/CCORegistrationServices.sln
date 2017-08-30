@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCORegistrationServices", "CCOServices\CCORegistrationServices.csproj", "{CED0C98C-92B6-424B-AED7-CB41B080E7FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubcardOnlineEntities", "ClubcardOnlineEntities\ClubcardOnlineEntities.csproj", "{3A29F949-52E7-4875-BC28-8259E12DA808}"
+EndProject
+Global
+	GlobalSection(RationalClearCase) = preSolution
+		SourceControlProvider = RationalClearCase
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED0C98C-92B6-424B-AED7-CB41B080E7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED0C98C-92B6-424B-AED7-CB41B080E7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED0C98C-92B6-424B-AED7-CB41B080E7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED0C98C-92B6-424B-AED7-CB41B080E7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A29F949-52E7-4875-BC28-8259E12DA808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A29F949-52E7-4875-BC28-8259E12DA808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A29F949-52E7-4875-BC28-8259E12DA808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A29F949-52E7-4875-BC28-8259E12DA808}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="WakeUpCall">
+        <s:complexType />
+      </s:element>
+      <s:element name="WakeUpCallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WakeUpCallResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerformAuthorisation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceSystem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PerformAuthorisationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PerformAuthorisationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WakeUpCallSoapIn">
+    <wsdl:part name="parameters" element="tns:WakeUpCall" />
+  </wsdl:message>
+  <wsdl:message name="WakeUpCallSoapOut">
+    <wsdl:part name="parameters" element="tns:WakeUpCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="PerformAuthorisationSoapIn">
+    <wsdl:part name="parameters" element="tns:PerformAuthorisation" />
+  </wsdl:message>
+  <wsdl:message name="PerformAuthorisationSoapOut">
+    <wsdl:part name="parameters" element="tns:PerformAuthorisationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AuthoriseSoap">
+    <wsdl:operation name="WakeUpCall">
+      <wsdl:input message="tns:WakeUpCallSoapIn" />
+      <wsdl:output message="tns:WakeUpCallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PerformAuthorisation">
+      <wsdl:input message="tns:PerformAuthorisationSoapIn" />
+      <wsdl:output message="tns:PerformAuthorisationSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AuthoriseSoap" type="tns:AuthoriseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WakeUpCall">
+      <soap:operation soapAction="http://tempuri.org/WakeUpCall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PerformAuthorisation">
+      <soap:operation soapAction="http://tempuri.org/PerformAuthorisation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Authorise">
+    <wsdl:port name="AuthoriseSoap" binding="tns:AuthoriseSoap">
+      <soap:address location="http://192.168.208.41/tesco.pos.authgateway.central/authorise.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

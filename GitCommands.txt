@@ -1,0 +1,44 @@
+$ git clone https://github.dev.global.tesco.org/36-DigitalClubCard/MCA.git
+
+$ git checkout CCMCA-4211
+
+$ git branch test
+
+$ git status
+
+$ git add 
+
+$ git commit
+
+$ git push origin test
+
+$ git checkout master
+
+$ git merge test
+
+$ git push origin master
+
+
+Create the branch on your local machine and switch in this branch :
+
+$ git checkout -b [name_of_your_new_branch]
+Push the branch on github :
+
+$ git push origin [name_of_your_new_branch]
+
+
+-----------
+
+It's not a Git error message, it's the editor as git uses your default editor.
+
+To solve this:
+
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+
+
+
+

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCOHostIntegrationService", "CCOHostIntegrationService.csproj", "{7474AD1E-55C6-4EA6-A6AC-D3A65ADE77EF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SmartVoucherService", "..\SmartVoucherService\SmartVoucherService.vdproj", "{99471503-36AF-4F8A-BF13-1AB991F1491C}"
+EndProject
+Global
+	GlobalSection(RationalClearCase) = preSolution
+		SourceControlProvider = RationalClearCase
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7474AD1E-55C6-4EA6-A6AC-D3A65ADE77EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7474AD1E-55C6-4EA6-A6AC-D3A65ADE77EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7474AD1E-55C6-4EA6-A6AC-D3A65ADE77EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7474AD1E-55C6-4EA6-A6AC-D3A65ADE77EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99471503-36AF-4F8A-BF13-1AB991F1491C}.Debug|Any CPU.ActiveCfg = Debug
+		{99471503-36AF-4F8A-BF13-1AB991F1491C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

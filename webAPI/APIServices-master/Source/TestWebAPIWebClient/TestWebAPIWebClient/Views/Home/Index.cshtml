@@ -1,0 +1,140 @@
+﻿@using TestWebAPIWebClient.Models;
+@model HomeData
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MCA APIGateway Tester</title>
+	<!-- Bootstrap -->
+    <link href="~/scripts/css/bootstrap.min.css" rel="stylesheet">	
+</head>
+<body>
+		<script src="~/Scripts/js/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			function FillOperations() {
+				$('#operationDD').empty(); 
+				$('#SelectedOperation').empty(); 
+				$.ajax({
+					type: "GET",
+					url: "@Url.Action("GetOperations", "home")",
+					datatype: "application/json",
+					data: { service: $('#SelectedService').val() },
+					success: function (data) {
+						$.each(data, function (index, value) {
+							$('#operationDD').append('<option value="'+ value.Id +'">' + value.name + '</option>');
+							$('#SelectedOperation').append('<option value="'+ value.Id +'">' + value.name + '</option>');
+						});
+						var selectedOp = '@Html.Raw(Model.SelectedOperation)';
+						console.log(selectedOp);
+						FillRequestBody();
+					},
+					error: function(jqXHR, exception){
+						console.log('Error:' +  jqXHR);
+					}
+				});
+			}
+
+			function FillRequestBody() {
+				$('#RequestBody').html(''); 
+				$.ajax({
+					type: "GET",
+					url: "@Url.Action("GetRequestBody", "home")",
+					datatype: "application/json",
+					data: { service: $('#SelectedService').val(), operation: $('#operationDD option:selected').text() },
+					success: function (data) {
+						$('#RequestBody').html(JSON.stringify(data));						
+					},
+					error: function(jqXHR, exception){
+						console.log('Error:' +  jqXHR);
+					}
+				});
+			}
+
+			$(document).ready(function(){
+				var selectedServ = $('#SelectedService').val();
+				if(selectedServ != ""){
+					FillOperations();
+				}
+			});
+
+		</script>
+		
+		
+		@using (Html.BeginForm("Index", "Home"))
+        {
+		<div class="container">
+			<div class="row well">
+				@Html.LabelFor(m => m.APIGatewayURL, new {@class = "col-sm-2"})
+				@Html.TextBoxFor(m => m.APIGatewayURL, new {@class = "col-sm-10"})
+			</div>
+	
+			<div class="row well">
+				<div class="col-sm-4">
+					@Html.CheckBoxFor(m => m.RequireIdentityCheck, new {@class = "col-sm-1"})
+					@Html.LabelFor(m => m.RequireIdentityCheck, new {@class = "col-sm-11"})
+				</div>
+
+				<div class="col-sm-4">
+					@Html.LabelFor(m => m.UserName, new {@class = "col-sm-4"})
+					@Html.TextBoxFor(m => m.UserName, new {@class = "col-sm-8"})
+				</div>
+
+				<div class="col-sm-4">
+					@Html.LabelFor(m => m.Password, new {@class = "col-sm-4"})
+					@Html.PasswordFor(m => m.Password, new {@class = "col-sm-8"})
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					@Html.Label("Service")
+					@Html.DropDownListFor(m => m.SelectedService, 
+										new SelectList(Model.gatewayMetadata.Metadata, "Key", "Key", Model.SelectedService), 
+										"Select Service",
+										new { @onchange="FillOperations()" })
+				</div>
+
+				<div class="col-sm-4">
+					@Html.Label("Operation")
+					<select id="operationDD" name="operationDD" onchange="FillRequestBody()">
+						<option value="">Select Operation</option>
+					</select>
+
+					@Html.DropDownListFor(m => m.SelectedOperation, Enumerable.Empty<SelectListItem>(), "Select Operation")
+
+				</div>
+
+				<div class="col-sm-4">
+					<input type="submit" value="Test" class="btn btn-block btn-lg btn-primary col-md-2" />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						@Html.LabelFor(m => m.RequestBody)
+					</div>
+					<div class="row">
+						@Html.TextAreaFor(m => m.RequestBody, new {@class = "col-sm-12", rows = 15})
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						@Html.LabelFor(m => m.Response)
+					</div>
+					<div class="row">
+						@Html.TextAreaFor(m => m.Response, new {@class = "col-sm-12", rows = 15})
+					</div>
+				</div>
+			</div>
+		</div>
+		}
+	
+</body>
+</html>

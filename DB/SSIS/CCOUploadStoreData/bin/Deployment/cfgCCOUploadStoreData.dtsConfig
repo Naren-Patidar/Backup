@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="IN\XC54"
+								  GeneratedFromPackageName="pkgCCOUploadStoreData"
+								  GeneratedFromPackageID="{04E4CDA7-D8BB-41F2-96C5-69FC52EC4A13}"
+								  GeneratedDate="27/08/2010 15:58:27"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Variables[User::varPkgBackupFilePath].Properties[Value]"
+				   ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Backup\Store</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Variables[User::varPkgConnectionString].Properties[Value]" ValueType="String">
+		<!--<ConfiguredValue>Data Source=172.21.159.148;Initial Catalog=NGCROI;Provider=SQLOLEDB;User Id=cconline;Password=cconline;</ConfiguredValue>-->
+		<ConfiguredValue>Data Source=172.21.176.74;Initial Catalog=NGCLIVEC;Provider=SQLOLEDB;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UserLogs\Upload\Store</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgSourceFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\Input\OneTime</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::varPkgUtilityLogFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>E:\Tesco\NGC\UtilityLogs\Upload\Store\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

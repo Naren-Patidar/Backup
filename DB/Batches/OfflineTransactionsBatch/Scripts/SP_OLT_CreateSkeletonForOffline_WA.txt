@@ -1,0 +1,72 @@
+USE [NGCData]
+GO
+ Object  StoredProcedure [dbo].[SP_OLT_CreateSkeletonForOffline_WA]    Script Date 02062013 122614 
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author		Ranjithkumar Yella
+-- Create date 2012-11-18
+-- Description	For creating Skeleton Cards in Offline Batch - Workaround
+-- =============================================
+ALTER PROCEDURE [dbo].[SP_OLT_CreateSkeletonForOffline_WA] 
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+	--DECLARE VARIABLES
+	DECLARE @UserId SMALLINT
+	DECLARE @CustomerName NVARCHAR(100)
+	DECLARE @ClubcardId BIGINT
+	DECLARE @IsExistsCount SMALLINT
+	DECLARE @TescoStoreID INT
+	DECLARE @TransactionDateTime DATETIME
+	DECLARE @DefaultDataProtection SMALLINT
+	DECLARE @CustID BIGINT
+	DECLARE @SkeletonCount INT
+
+	--SET DEFAULT VALUES
+	SET @CustomerName='Offline File'
+	SET @SkeletonCount=0
+	SET @DefaultDataProtection = 1
+	SET @IsExistsCount=0
+	SELECT @UserId=UserID FROM ApplicationUser(NOLOCK) WHERE UserName='System'
+
+
+	--DECLARE & EXECUTE CURSOR 
+
+	DECLARE Create_Skeleton_Cursor_Offline CURSOR FOR
+	SELECT Card_Account_Number,Store_Code,Txn_Date FROM TempOfflineSkeleton
+
+	OPEN Create_Skeleton_Cursor_Offline
+
+	FETCH NEXT FROM Create_Skeleton_Cursor_Offline INTO @ClubcardID,@TescoStoreID,@TransactionDateTime
+
+	WHILE @@FETCH_STATUS = 0 
+	BEGIN
+	SELECT @IsExistsCount=COUNT(1) from Clubcard WHERE ClubcardID=@ClubcardId
+		IF @IsExistsCount=0
+		BEGIN
+			SET @CustomerName='Offline File '+CONVERT(VARCHAR,@SkeletonCount)
+			EXEC USP_CreateCustomerSkeleton 
+						@UserId, 
+						@CustomerName,
+						@ClubcardId,
+						@TescoStoreID,
+						@TransactionDateTime ,
+						@DefaultDataProtection,
+						@CustID OUTPUT 
+			SET @SkeletonCount=@SkeletonCount+1
+		END	
+		print @ClubcardId
+		print @SkeletonCount
+		FETCH NEXT FROM Create_Skeleton_Cursor_Offline INTO @ClubcardID,@TescoStoreID,@TransactionDateTime
+	END
+	CLOSE Create_Skeleton_Cursor_Offline
+	DEALLOCATE Create_Skeleton_Cursor_Offline
+
+
+END
+

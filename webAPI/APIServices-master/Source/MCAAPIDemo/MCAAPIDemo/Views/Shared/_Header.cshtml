@@ -1,0 +1,32 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+<header id="page-header">
+    <div class="aspect cf">            
+        <h1 id="lblTescoClubcard"><a href="@Resources.ConfigLinks.AAPBack" class="app-ident">Tesco Clubcard</a></h1>
+        <nav id="primary-utility" class="scrollable">
+            <div  id="profile">
+                <p>Welcome to Tesco Clubcard</p>
+
+                <a href='@Resources.ConfigLinks.SMBasket' id="basket-link" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMBasket) ? "_blank" : "_self")' onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Basket']);">Basket</a>
+            </div>
+            
+            <ul id="first-utility">
+                <li class="desktoponly" id="liAboutClubcard"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'About Clubcard']);" href='@Resources.ConfigLinks.SMSpendandCollect'>About Clubcard</a></li>
+                <li class="desktoponly" id="liClubcardBoost"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Clubcard Boost']);" href='@Resources.ConfigLinks.SMExchangeandRewards'>Clubcard <em>Boost</em></a></li>
+                <li class="desktoponly" id="liClubcardperks"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Clubcard Perks']);" href='@Resources.ConfigLinks.SMCCPerks'>Clubcard <em>Perks</em></a></li>
+                <li id="clubcard"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'My Clubcard Account']);" href='@Resources.ConfigLinks.SMMyClubcardAccount' class="desktoponly active">My Clubcard Account</a></li>
+            </ul>
+
+            <div id="secondary-utility">
+                <ul id="ul-secondaryutility">
+                    <li id="liSignout">@Html.ActionLink("Sign out", "Signout", new { controller = "Account" }, new { onclick = "_gaq.push(['_trackEvent', 'Header', 'Click', 'Sign out']);" })</li>
+                    <li id="liEmailSignup"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Email sign up']);" href='@Resources.ConfigLinks.SMEmailSignup' target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMEmailSignup) ? "_blank" : "_self")'>Email sign up</a></li>
+                    <li id="liWebsite"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Website Feedback']); oo_feedback.show();" href="javascript:void(0);">Website feedback</a></li>
+                    <li id="litescocom"><a href="http://www.tesco.com">Tesco.com</a></li>
+                    <li id="liFacebook"><a class="icon icon-facebook" href="@Resources.ConfigLinks.SMFacebook" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMFacebook) ? "_blank" : "_self")'><span class="visuallyhidden">Facebook</span></a></li>
+                    <li id="liTwitter"><a class="icon icon-twitter" href='@Resources.ConfigLinks.SMTwitter' target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMTwitter) ? "_blank" : "_self")'><span class="visuallyhidden">Twitter</span></a></li>
+                    <li id="liYouTube"><a class="icon icon-youtube" href="@Resources.ConfigLinks.SMYouTube" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.SMYouTube) ? "_blank" : "_self")'><span class="visuallyhidden">Youtube</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>                
+</header> 

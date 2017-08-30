@@ -1,0 +1,7 @@
+﻿@model decimal
+@using Tesco.ClubcardProducts.MCA.Web.Common
+
+<dl class="paired-list standalone my-points equal">
+    <dt id="lblVouchersSent">@Html.Translate("Shared/_Vouchers", "lclVouchersSent")</dt>
+    <dd><span id="CurrSymbolss">@Html.Translate("Shared/_Vouchers","CurrencySymbol") @Model @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")</span></dd>
+</dl>

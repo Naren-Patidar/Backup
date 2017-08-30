@@ -1,0 +1,21 @@
+<pptxn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Mahesh\PollPartnerBatchService\PollPartnerBatch\Xsd\partnertxn.xsd">
+	<file_name>1001100000_20060109</file_name>
+	<sending_org>1001100000</sending_org>
+	<date_created>2006-01-09</date_created>
+	<time_created>09:00:00</time_created>
+	<sequence_number>1</sequence_number>
+	<transaction_count>1</transaction_count>
+	<transaction>
+		<partner_number>1001100000</partner_number>
+		<partner_outlet_ref>87987987987987</partner_outlet_ref>
+		<partner_outlet_name>mahesh test</partner_outlet_name>
+		<card_account_number>634007010017199000</card_account_number>
+		<official_id>7108222056011</official_id>
+		<transaction_date>2006-01-01</transaction_date>
+		<transaction_time>10:00:00</transaction_time>
+		<spend>3.14159</spend>
+		<partner_points>3.141592</partner_points>
+		<partner_reference>87987987987987</partner_reference>
+		<partner_pos_id>12</partner_pos_id>
+	</transaction>
+</pptxn>

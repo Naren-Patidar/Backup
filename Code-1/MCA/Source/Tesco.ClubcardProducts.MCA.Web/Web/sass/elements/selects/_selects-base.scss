@@ -1,0 +1,80 @@
+.ddl-select {
+    background: $ddl-input-background;
+    border: 1px solid $ddl-input-border-colour;
+    box-sizing: border-box;
+    color: $ddl-black2;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    em {
+        font-style: normal;
+        
+        &:after {
+            content: '\e008';
+            display: block;
+            font-family: 'icons';
+            font-size: 12px;
+            height: 48px;
+            line-height: 48px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 48px;
+            color: $ddl-black2;
+        }
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        border: none;
+        background: none;
+        position: relative;
+        width: 100%;
+        padding: 0 40px 0 12px;
+        color: $ddl-grey2;
+        font-size: 1.6rem;
+        height: 48px;
+        line-height: 48px;
+        font-family: 'tescobold';
+        font-style: italic;
+        z-index: 2;
+
+        &:focus {
+            color: $ddl-black2;
+            outline: none;
+
+            + em {
+
+                &:after {
+                    content: '\e602';
+                }
+            }
+        }
+    }
+        
+    &:disabled {
+        background: $ddl-input-background-disabled;
+    }
+}
+
+.ddl-error {
+
+    .ddl-select select {
+        border-color: $form-error;
+    }
+
+    p {
+        margin: 0;
+        color: $form-error;
+    }
+}

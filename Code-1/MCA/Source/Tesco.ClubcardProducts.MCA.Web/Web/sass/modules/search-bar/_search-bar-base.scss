@@ -1,0 +1,63 @@
+.search-bar {
+	background: $category-1;
+	padding: 20px;
+	margin-bottom: 20px;
+
+	fieldset {
+		margin-bottom: 0;
+
+		legend {
+			display: block;
+			padding-bottom: 10px;
+			color: $ddl-white1;
+			font-size: 2.8rem;
+		}
+
+		.ddl-form-field {
+			display: block;
+			margin-bottom: 10px;
+			padding-bottom: 0;
+
+			.ddl-input, .ddl-select {
+				margin-bottom: 0;
+			}
+		}
+
+		.ddl-button {
+			float: right;
+		}
+	}
+}
+
+.ddl-search-bar {
+	padding: 20px;
+	margin: 0 20px 20px 20px;
+	text-align: center;
+	border: 1px solid $ddl-grey3;
+
+	fieldset {
+		margin-bottom: 0;
+
+		legend {
+			display: block;
+			padding-bottom: 10px;
+			font-size: 2.8rem;
+			color: $ddl-black1;
+		}
+
+		.ddl-form-field {
+			display: block;
+			margin-bottom: 10px;
+			padding-bottom: 0;
+
+			.ddl-input, .ddl-select {
+				margin-bottom: 0;
+				text-align: center;
+
+				select {
+					text-align: center;//Doesn't work
+				}
+			}
+		}
+	}
+}

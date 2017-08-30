@@ -1,0 +1,80 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality];
+    var pageName = ViewBag.PageName;
+}
+		<nav id="secondary-navigation">
+		<h3 class="ddl-icon-before ddl-icon-left nav-header">@Html.ActionLink("My Clubcard Account", "Home", new { controller = "Home" }, new { @class = "landing-page-link" })</h3>
+<ul id="tertiary-utility" class="accordion">
+	<li>
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclHome").ToString(), "Home", new { controller = "Home" },
+                    new { @class = pageName.Equals("Home") ? "active" : "" })
+    </li>
+    
+    <li><a href="#" class="ddl-icon-after ddl-icon-right accordion-header  @(pageName.Equals("PersonalDetails") || pageName.Equals("ContactPreferences") ||
+                                        pageName.Equals("VoucherSchemes") || pageName.Equals("ClubcardsOnAccount") ||
+                                        pageName.Equals("OrderANewCard") ? "current-page" : "")" id='accountManagementLink'>@Html.Translate("Shared/_LeftNavigation", "lclMyAccountDetails")</a>
+
+	 <nav class="accordion-content @(pageName.Equals("PersonalDetails") || pageName.Equals("ContactPreferences") ||
+                                        pageName.Equals("VoucherSchemes") || pageName.Equals("ClubcardsOnAccount") ||
+                                        pageName.Equals("OrderANewCard") ? "current-page" : "")">
+                                            <h4 class="ddl-icon-before ddl-icon-left nav-header">@Html.Translate("Shared/_LeftNavigation", "lclMyAccountDetails")</h4>
+        <ul class="@(pageName.Equals("PersonalDetails") || pageName.Equals("ContactPreferences") ||
+                                        pageName.Equals("VoucherSchemes") || pageName.Equals("ClubcardsOnAccount") ||
+                                        pageName.Equals("OrderANewCard") ? "active" : "")">
+            <li style="@(HideConfig[DbConfigurationItemNames.HidePersonalDetails].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+                @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMyPersonalDetails").ToString(), "PersonalDetails", new { controller = "AccountManagement" },
+                            new { @class = pageName.Equals("PersonalDetails") ? "active" : "" })
+            </li>
+            <li style="@(HideConfig[DbConfigurationItemNames.HidePreferencesPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+                @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMyContactPreference").ToString(), "ContactPreferences", new { controller = "AccountManagement" },
+                            new { @class = pageName.Equals("ContactPreferences") ? "active" : "" })
+            </li>
+            <li style="@(HideConfig[DbConfigurationItemNames.HideOptionsandBenefits].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+                @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclOptionsNBenefits").ToString(), "VoucherSchemes", new { controller = "AccountManagement" },
+                            new { @class = pageName.Equals("VoucherSchemes") ? "active" : "" })
+            </li>
+            <li style="@(HideConfig[DbConfigurationItemNames.HideManageCardsPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+                @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclVMC").ToString(), "ClubcardsOnAccount", new { controller = "AccountManagement" },
+                            new { @class = pageName.Equals("ClubcardsOnAccount") ? "active" : "" })
+            </li>
+            <li style="@(HideConfig[DbConfigurationItemNames.HideOrderAReplacementPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+                @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclOAR").ToString(), "OrderANewCard", new { controller = "AccountManagement" },
+                                     new { @class = pageName.Equals("OrderANewCard") ? "active" : "" })
+            </li>
+        </ul>
+		</nav>
+    </li>
+    <li style="@(HideConfig[DbConfigurationItemNames.HidePointsPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMyPoints").ToString(), "Home", new { controller = "Points" },
+                                      new { @class = pageName.Equals("Points") || pageName.Equals("TransactionHistory") || pageName.Equals("PointsStatement") ? "active" : "" })
+                    
+    </li>
+    <li style="@(HideConfig[DbConfigurationItemNames.HideVouchersPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMyvouchers").ToString(), "Home", new { controller = "Vouchers" },
+                    new { @class = pageName.Equals("Vouchers") ? "active" : "" })
+    </li>
+    <li style="@(HideConfig[DbConfigurationItemNames.HideeCouponPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMycoupons").ToString(), "Home", new { controller = "Coupons" },
+                    new { @class = pageName.Equals("Coupons") ? "active" : "" })
+    </li>
+    <li style="@(HideConfig[DbConfigurationItemNames.HideLatestStatementPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")">
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclMLS").ToString(), "Home", new { controller = "LatestStatement" },
+                    new { @class = pageName.Equals("LatestStatement") ? "active" : "" })
+    </li>
+    <li style="@(HideConfig[DbConfigurationItemNames.HideChristmasSaversPage].ConfigurationValue1.Equals("1") ? "display:none" : "display:block")" id="christmasSaverLink">
+        @Html.ActionLink(Html.Translate("Shared/_LeftNavigation", "lclChristmasSaver").ToString(), "Home", new { controller = "ChristmasSavers" },
+                    new { @class = pageName.Equals("ChristmasSavers") ? "active" : "" })
+    </li>
+
+
+</ul>
+</nav>
+
+@using (Html.BeginScripts())
+{
+<script src="@Url.Content("~/Scripts/v_xdfgkeuryt.js")" type="text/javascript"></script>
+}

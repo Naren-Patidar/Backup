@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dvdcccoweb006uk.dev.global.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" />
+  <xs:import schemaLocation="http://dvdcccoweb006uk.dev.global.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" />
+  <xs:element name="ValidateClubcardAccountExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClubcardNumber" type="xs:long" />
+        <xs:element minOccurs="0" name="PostCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateClubcardAccountExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="ValidateClubcardAccountExistsResult" nillable="true" type="q1:ValidateClubcardAccountExistsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountFindByClubcardNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClubcardNumber" type="xs:long" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" minOccurs="0" name="customer" nillable="true" type="q2:ClubcardCustomer" />
+        <xs:element minOccurs="0" name="dsConfig" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountFindByClubcardNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountFindByClubcardNumberResult" nillable="true" type="q3:AccountFindByClubcardNumberResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountFindByClubcardNumberXmlParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClubcardNumber" type="xs:long" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" minOccurs="0" name="customer" nillable="true" type="q4:ClubcardCustomer" />
+        <xs:element minOccurs="0" name="ConfigXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountFindByClubcardNumberXmlParameterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountFindByClubcardNumberXmlParameterResult" nillable="true" type="q5:AccountFindByClubcardNumberResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountDuplicateCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" minOccurs="0" name="customer" nillable="true" type="q6:ClubcardCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountDuplicateCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountDuplicateCheckResult" nillable="true" type="q7:AccountDuplicateCheckResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dotcomCustomerID" type="xs:long" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" minOccurs="0" name="customer" nillable="true" type="q8:ClubcardCustomer" />
+        <xs:element minOccurs="0" name="source" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isDuplicate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountCreateResult" nillable="true" type="q9:AccountCreateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dotcomCustomerID" type="xs:long" />
+        <xs:element minOccurs="0" name="clubCardNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountLinkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountLinkResult" nillable="true" type="q10:AccountLinkResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IGHSAccountLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dotcomCustomerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clubCardNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IGHSAccountLinkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="IGHSAccountLinkResult" nillable="true" type="q11:AccountLinkResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dotcomCustomerID" type="xs:long" />
+        <xs:element minOccurs="0" name="clubCardNumber" type="xs:long" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" minOccurs="0" name="customer" nillable="true" type="q12:ClubcardCustomer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccountUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" minOccurs="0" name="AccountUpdateResult" nillable="true" type="q13:AccountUpdateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendActivationEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strTo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendActivationEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendActivationEmailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendJoinConfirmationEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="custName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clubcardID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendJoinConfirmationEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendJoinConfirmationEmailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

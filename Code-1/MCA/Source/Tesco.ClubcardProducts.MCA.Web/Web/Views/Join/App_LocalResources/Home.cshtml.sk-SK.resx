@@ -1,0 +1,2194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmJoinResource1.Text" xml:space="preserve">
+    <value>Odoslať</value>
+  </data>
+  <data name="btnConfirmJoinResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfirmJoinResource2.Text" xml:space="preserve">
+    <value>Odoslať</value>
+  </data>
+  <data name="btnConfirmJoinResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Najít adresu</value>
+  </data>
+  <data name="btnFindAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource2.Text" xml:space="preserve">
+    <value>Najít adresu</value>
+  </data>
+  <data name="btnFindAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cblDietaryNeedsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cblDietaryNeedsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDayResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonthResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlRaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlRaceResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYearResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="errClickArrow" xml:space="preserve">
+    <value>Pro výběr vašeho domova klikněte na šipku</value>
+  </data>
+  <data name="errCorrectInformation" xml:space="preserve">
+    <value>Prosím, opravte nasledujúci údaj</value>
+  </data>
+  <data name="errDBCardError" xml:space="preserve">
+    <value>Naša databáza ukazuje, že členom Clubcard už ste. Ak ste Clubcard stratili, máte ju poškodenú alebo ju potrebujete vymeniť, kontaktujte nás na čísle 0800 222 333. O body neprídete, budú Vám presunuté na novú kartu. </value>
+  </data>
+  <data name="errMsg to99" xml:space="preserve">
+    <value>Prosím zadejte věk v rozmezí 0 až 99 let</value>
+  </data>
+  <data name="errMsg1to99" xml:space="preserve">
+    <value>Prosím, zadajte číslo v rozmedzí 1 až 99</value>
+  </data>
+  <data name="errMsgEitherSecondaryId" xml:space="preserve">
+    <value>Prosím vyplňte buť základní nebo sekundární IČ</value>
+  </data>
+  <data name="errMsgNoHHPersons" xml:space="preserve">
+    <value>Prosím zadejte méně než 7 členů domácnosti</value>
+  </data>
+  <data name="errMsgNoHHPersonstoMany" xml:space="preserve">
+    <value>Omlouvám se,</value>
+  </data>
+  <data name="errMsgSecondaryId" xml:space="preserve">
+    <value>Prosím vyplňte platné sekundární IČ</value>
+  </data>
+  <data name="errPostcodeFindAddress" xml:space="preserve">
+    <value>Prosím vyplňte PSČ, klikněte na ikonu "Najít adresu" a vyberte Vaši adresu</value>
+  </data>
+  <data name="errPostcodeRequired" xml:space="preserve">
+    <value>Je vyžadováno PSČ nebo PSČ není platné</value>
+  </data>
+  <data name="errRegistration" xml:space="preserve">
+    <value>Došlo k problému s vaší registrací. Zkontrolujte prosím, že informace, které jste zadali, jsou správné. Pokud budete potřebovat další pomoc, obraťte se na zákaznickou podporu na čísle 0800 59 16 88.</value>
+  </data>
+  <data name="errRequiredDOB" xml:space="preserve">
+    <value>Je vyžadováno datum narození nebo datum narození není platné</value>
+  </data>
+  <data name="errSelectGender" xml:space="preserve">
+    <value>Prosím, zadajte pohlavie</value>
+  </data>
+  <data name="errSorryFindAddress1" xml:space="preserve">
+    <value>Omlouváme se, ale nejsme schopni najít vaše poštovní směrovací číslo</value>
+  </data>
+  <data name="errSorryFindAddress2" xml:space="preserve">
+    <value>Prosím zkuste ještě jednou nebo nás kontaktujte na tel. Č. 0800 59 16 88</value>
+  </data>
+  <data name="errSorryGender" xml:space="preserve">
+    <value>Je nám líto, ale vámi zvolené pohlaví neodpovídá zvolenému titulu</value>
+  </data>
+  <data name="errVaildEnterPostcode" xml:space="preserve">
+    <value>Nevyplnili jste PSČ</value>
+  </data>
+  <data name="errValid18Clubcard" xml:space="preserve">
+    <value>Prosím ujistěte se, že je vám více než 18 let, aby jste se mohli stát členy ClubCard</value>
+  </data>
+  <data name="errValidAddressline2" xml:space="preserve">
+    <value> Prosím, zadajte platné číslo domu</value>
+  </data>
+  <data name="errValidAddressline2length" xml:space="preserve">
+    <value>Prosím, zadejte platné popisné číslo</value>
+  </data>
+  <data name="errValidAddressline3" xml:space="preserve">
+    <value>Prosím zadejte platný 3. řádek vaší adresy</value>
+  </data>
+  <data name="errValidAddressline3length" xml:space="preserve">
+    <value>Prosím zadejte platný 3. řádek vaší adresy ve vhodné délce</value>
+  </data>
+  <data name="errValidAddressline4" xml:space="preserve">
+    <value>Prosím, zadajte platný názov mesta</value>
+  </data>
+  <data name="errValidAddressline4length" xml:space="preserve">
+    <value>Prosím, zadejte platné Mesto</value>
+  </data>
+  <data name="errValidAddressline5" xml:space="preserve">
+    <value> Prosím, zadajte platný 5. riadok Vašej adresy</value>
+  </data>
+  <data name="errValidAddressline5length" xml:space="preserve">
+    <value>Prosím zadejte platný 5. řádek vaší adresy ve vhodné délce</value>
+  </data>
+  <data name="errValidDayPhoneNumber" xml:space="preserve">
+    <value>Prosím zadejte platné telefonní číslo, na kterém jste k zastižení přes den</value>
+  </data>
+  <data name="errValidDOB" xml:space="preserve">
+    <value>Prosím, zadajte platný dátum narodenia</value>
+  </data>
+  <data name="errValideCode" xml:space="preserve">
+    <value>Tento kód není platný, prosím zkontrolujte a zkuste to znovu</value>
+  </data>
+  <data name="errValidEmail" xml:space="preserve">
+    <value>Prosím, zadajte platnú emailovú adresu.</value>
+  </data>
+  <data name="errValidEveningPhoneNumber" xml:space="preserve">
+    <value>Prosím zadejte platné telefonní číslo, na kterém jste k zastižení večer</value>
+  </data>
+  <data name="errValidFirstName" xml:space="preserve">
+    <value>Prosím, zadajte krstné meno</value>
+  </data>
+  <data name="errValidHouseNumber" xml:space="preserve">
+    <value>Prosím, zadajte platný názov ulice</value>
+  </data>
+  <data name="errValidHouseNumberLength" xml:space="preserve">
+    <value>Prosím, zadejte platné ulici</value>
+  </data>
+  <data name="errValidLanguage" xml:space="preserve">
+    <value>Prosím zadejte platný jazyk</value>
+  </data>
+  <data name="errValidLenghPrimaryID" xml:space="preserve">
+    <value>Prosím zadejte platné primání ID ve vhodné délce</value>
+  </data>
+  <data name="errValidLenghSecondaryID" xml:space="preserve">
+    <value>Prosím zadejte platné sekundární ID ve vhodné délce</value>
+  </data>
+  <data name="errValidLetter" xml:space="preserve">
+    <value>Prosím zadejte platné písmeno</value>
+  </data>
+  <data name="errValidMobilePhoneNumber" xml:space="preserve">
+    <value>Prosím, zadajte číslo mobilného telefónu</value>
+  </data>
+  <data name="errValidPostCode" xml:space="preserve">
+    <value>Prosím, zadajte poštové smerovacie číslo</value>
+  </data>
+  <data name="errValidPrimaryID" xml:space="preserve">
+    <value>Prosím zadejte platné primární ID</value>
+  </data>
+  <data name="errValidRace" xml:space="preserve">
+    <value>Prosím vyberte platnou rasu</value>
+  </data>
+  <data name="errValidSurname" xml:space="preserve">
+    <value>Prosím, zadajte priezvisko</value>
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="lblSuccessMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource2.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="lblSuccessMessageResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAddressline2Resource1.Text" xml:space="preserve">
+    <value>Číslo popisné:</value>
+  </data>
+  <data name="lclAddressline2Resource2.Text" xml:space="preserve">
+    <value>Číslo popisné:</value>
+  </data>
+  <data name="lclAddressline3Resource1.Text" xml:space="preserve">
+    <value>Dopňujúce informácie:</value>
+  </data>
+  <data name="lclAddressline3Resource2.Text" xml:space="preserve">
+    <value>Dopňujúce informácie:</value>
+  </data>
+  <data name="lclAddressline4Resource1.Text" xml:space="preserve">
+    <value>Mesto:</value>
+  </data>
+  <data name="lclAddressline4Resource2.Text" xml:space="preserve">
+    <value>Mesto:</value>
+  </data>
+  <data name="lclAddressline5Resource1.Text" xml:space="preserve">
+    <value>Štát:    (napr. Slovensko) </value>
+  </data>
+  <data name="lclAddressline5Resource2.Text" xml:space="preserve">
+    <value>Štát:   (napr. Slovensko) </value>
+  </data>
+  <data name="lclAge1Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge1Resource2.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge2Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge2Resource2.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge3Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge3Resource2.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge4Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAge4Resource2.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclAgeResource1.Text" xml:space="preserve">
+    <value>Vek:</value>
+  </data>
+  <data name="lclAgeResource2.Text" xml:space="preserve">
+    <value>Vek:</value>
+  </data>
+  <data name="lclageshouseholdResource1.Text" xml:space="preserve">
+    <value>Prosím, zadajte vek ďalších ľudí vo Vašej domácnosti (ak máte dieťa mladšie ako 1 rok, vpíšte 0)</value>
+  </data>
+  <data name="lclageshouseholdResource2.Text" xml:space="preserve">
+    <value>Prosím, zadajte vek ďalších ľudí vo Vašej domácnosti (ak máte dieťa mladšie ako 1 rok, vpíšte 0)</value>
+  </data>
+  <data name="lclCaptcha1Resource1.Text" xml:space="preserve">
+    <value>Zadali jste text nesprávně, zkuste to prosím znova</value>
+  </data>
+  <data name="lclCaptcha1Resource2.Text" xml:space="preserve">
+    <value>Zadali jste text nesprávně, zkuste to prosím znova</value>
+  </data>
+  <data name="lclCaptcha2Resource1.Text" xml:space="preserve">
+    <value>Prosím, zadejte znaky, které vidíte, v pořadí, v jakém se zobrazují výše.</value>
+  </data>
+  <data name="lclCaptcha2Resource2.Text" xml:space="preserve">
+    <value>Prosím, zadejte znaky, které vidíte, v pořadí, v jakém se zobrazují výše.</value>
+  </data>
+  <data name="lclCaptcha3Resource1.Text" xml:space="preserve">
+    <value>Nezáleží na velikosti písmen.</value>
+  </data>
+  <data name="lclCaptcha3Resource2.Text" xml:space="preserve">
+    <value>Nezáleží na velikosti písmen.</value>
+  </data>
+  <data name="lclChooseanAddresResource1.Text" xml:space="preserve">
+    <value>Vyberte adresu:</value>
+  </data>
+  <data name="lclChooseanAddresResource2.Text" xml:space="preserve">
+    <value>Vyberte adresu:</value>
+  </data>
+  <data name="lclChooseContact1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChooseContact1Resource2.Text" xml:space="preserve">
+    <value>Čas od času bychom vás chtěli kontaktovat s nabídkami a informacemi o produktech a službách, které by mohly zajímat vás a vaši rodinu.</value>
+  </data>
+  <data name="lclChooseContact2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChooseContact2Resource2.Text" xml:space="preserve">
+    <value>Ak zaškrtnene políčka nižšie nebudeme Vám môcť zasielať ďalšie skvele ponuky a informácie.</value>
+  </data>
+  <data name="lclChooseContactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChooseContactResource2.Text" xml:space="preserve">
+    <value>Vyberte si, kvůli čemu vás budeme kontaktovat</value>
+  </data>
+  <data name="lclConfirmation1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcltermsAccept.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lclConfirmation1Resource2.Text" xml:space="preserve">
+    <value>Kliknutím na príslušné políčko a odoslaním formulára súhlasím so všeobecnými podmienkami členstva vo vernostnom programe Tesco Clubcard, ako aj so spracúvaním mojich osobných údajov uvedených v tomto formulári  na účel členstva vo vernostnom programe Tesco Clubcard v rozsahu Pravidiel ochrany osobných údajov. </value>
+  </data>
+  <data name="lclConfirmation2Resource1.Text" xml:space="preserve">
+    <value>Prehlasujem, že som všetky údaje vyplnil/ a správne a pravdivo.</value>
+  </data>
+  <data name="lclConfirmation2Resource2.Text" xml:space="preserve">
+    <value>Všeobecnými obchodními podmínkami</value>
+  </data>
+  <data name="lclConfirmation3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclConfirmation3Resource2.Text" xml:space="preserve">
+    <value>a přijímate podmínky</value>
+  </data>
+  <data name="lclConfirmation4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclConfirmation4Resource2.Text" xml:space="preserve">
+    <value>Prehlasujem, že som všetky údaje vyplnil/ a správne a pravdivo.</value>
+  </data>
+  <data name="lclConfirmation5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclConfirmation5Resource2.Text" xml:space="preserve">
+    <value>Kliknutím na "Potvrzuji" souhlasíte se</value>
+  </data>
+  <data name="lclConfirmationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclConfirmationResource2.Text" xml:space="preserve">
+    <value>Souhlasím s použitím osobních údajů uvedených výše a s</value>
+  </data>
+  <data name="lclDataProtectionMatrix1Resource1.Text" xml:space="preserve">
+    <value>Označte toto políčko, ak si prajete dostávať ponuky a informácie o produktoch poskytovanými našimi partnermi.</value>
+  </data>
+  <data name="lclDataProtectionMatrix1Resource2.Text" xml:space="preserve">
+    <value>Prosím, zaškrtnite, ak nechcete aby Vám spoločnosť Tesco zasielala ponuky a informácie o produktoch a službách, ktoré ponúkajú naši partnery:</value>
+  </data>
+  <data name="lclDataProtectionMatrix2Resource1.Text" xml:space="preserve">
+    <value>Označte toto políčko, . ak si prajete aby Vás Tesco kontaktovalo za účelom zákaznického výzkumu.</value>
+  </data>
+  <data name="lclDataProtectionMatrix2Resource2.Text" xml:space="preserve">
+    <value>Prosím, zaškrtnite, ak nechcete byť kontaktovaný spoločnosťou Tesco pre účely zákazníckych prieskumov:</value>
+  </data>
+  <data name="lclDataProtectionMatrixResource1.Text" xml:space="preserve">
+    <value>Označte toto políčko, ak si prajete dostávať ponuky a informácie o produktoch spoločnosti Tesco.</value>
+  </data>
+  <data name="lclDataProtectionMatrixResource2.Text" xml:space="preserve">
+    <value>Prosím, zaškrtnite ak nechcete dostávať ponuky a informácie o produktoch a službách spoločnosti Tesco: </value>
+  </data>
+  <data name="lclDataProtectionResource1.Text" xml:space="preserve">
+    <value>Prosím potvrďte, že súhlasíte so Všeobcnými obchodnými podmienkami a potvrďte prosím spracovanie osobých údajov.</value>
+  </data>
+  <data name="lclDataProtectionResource2.Text" xml:space="preserve">
+    <value>Prosím potvrďte, že súhlasíte so Všeobcnými obchodnými podmienkami a potvrďte prosím spracovanie osobých údajov.</value>
+  </data>
+  <data name="lclDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>Telefónne číslo, na ktorom ste zastihnuteľný počas dňa:</value>
+  </data>
+  <data name="lclDaytimePhoneNumberResource2.Text" xml:space="preserve">
+    <value>Telefónne číslo, na ktorom ste zastihnuteľný počas dňa</value>
+  </data>
+  <data name="lclDietaryReqResource1.Text" xml:space="preserve">
+    <value>Prosím, zaškrtnite, ak máte niektoré z nasledujúcich požiadavkov na stravovanie:</value>
+  </data>
+  <data name="lclDietaryReqResource2.Text" xml:space="preserve">
+    <value>Prosím, zaškrtnite, ak máte niektoré z nasledujúcich požiadavkov na stravovanie:</value>
+  </data>
+  <data name="lclDOBResource1.Text" xml:space="preserve">
+    <value>Dátum narodenia:</value>
+  </data>
+  <data name="lclDOBResource2.Text" xml:space="preserve">
+    <value>Dátum narodenia:</value>
+  </data>
+  <data name="lcldvMoneyTobeSavedForBonus1Resource1.Text" xml:space="preserve">
+    <value>Vstúpte do sveta Clubcard ešte dnes! </value>
+  </data>
+  <data name="lcldvMoneyTobeSavedForBonus1Resource2.Text" xml:space="preserve">
+    <value>Vstúpte do sveta Clubcard ešte dnes!</value>
+  </data>
+  <data name="lclEmailAddressResource1.Text" xml:space="preserve">
+    <value>Emailová adresa:</value>
+  </data>
+  <data name="lclEmailAddressResource2.Text" xml:space="preserve">
+    <value>Emailová adresa:</value>
+  </data>
+  <data name="lclEmailResource1.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lclEmailResource2.Text" xml:space="preserve">
+    <value>Emailová adresa:</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Večerní telefonní číslo:</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource2.Text" xml:space="preserve">
+    <value>Večerní telefonní číslo:</value>
+  </data>
+  <data name="lclFemaleResource1.Text" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="lclFemaleResource2.Text" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="lclFirstNameResource1.Text" xml:space="preserve">
+    <value>Krstné meno:</value>
+  </data>
+  <data name="lclFirstNameResource2.Text" xml:space="preserve">
+    <value>Krstné meno:</value>
+  </data>
+  <data name="lclGenderResource1.Text" xml:space="preserve">
+    <value>Pohlavie:</value>
+  </data>
+  <data name="lclGenderResource2.Text" xml:space="preserve">
+    <value>Pohlavie:</value>
+  </data>
+  <data name="lclhouseholdnumberResource1.Text" xml:space="preserve">
+    <value>Koľko osôb žije vo Vašej domácnosti (vrátane Vás)?</value>
+  </data>
+  <data name="lclhouseholdnumberResource2.Text" xml:space="preserve">
+    <value>Koľko osôb žije vo Vašej domácnosti (vrátane Vás)?</value>
+  </data>
+  <data name="lclHousenameResource1.Text" xml:space="preserve">
+    <value>Ulica:</value>
+  </data>
+  <data name="lclHousenameResource2.Text" xml:space="preserve">
+    <value>Ulica:</value>
+  </data>
+  <data name="lclHousenonameResource1.Text" xml:space="preserve">
+    <value>nebo č.p.:</value>
+  </data>
+  <data name="lclHousenonameResource2.Text" xml:space="preserve">
+    <value>nebo č.p.:</value>
+  </data>
+  <data name="lclLocalityResource1.Text" xml:space="preserve">
+    <value>Lokalita:</value>
+  </data>
+  <data name="lclLocalityResource2.Text" xml:space="preserve">
+    <value>Lokalita:</value>
+  </data>
+  <data name="lclMailResource1.Text" xml:space="preserve">
+    <value>Pošta</value>
+  </data>
+  <data name="lclMailResource2.Text" xml:space="preserve">
+    <value>Pošta</value>
+  </data>
+  <data name="lclMaleResource1.Text" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="lclMaleResource2.Text" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="lclMiddleInitialResource1.Text" xml:space="preserve">
+    <value>Iniciála druhého jména:</value>
+  </data>
+  <data name="lclMiddleInitialResource2.Text" xml:space="preserve">
+    <value>Iniciála druhého jména:</value>
+  </data>
+  <data name="lclMobilePhoneNumberResource1.Text" xml:space="preserve">
+    <value>Mobilné telefónne číslo: (napr.00421111222333)</value>
+  </data>
+  <data name="lclMobilePhoneNumberResource2.Text" xml:space="preserve">
+    <value>Mobilné telefónne číslo: (napr.00421111222333)</value>
+  </data>
+  <data name="lclOptionalInformation1Resource1.Text" xml:space="preserve">
+    <value>Aby sme Vám mohli zaslať ponuky, kupóny a informácie týkajúce sa Vás a Vašej rodiny</value>
+  </data>
+  <data name="lclOptionalInformation1Resource2.Text" xml:space="preserve">
+    <value>Aby sme Vám mohli zaslať ponuky, kupóny a informácie týkajúce sa Vás a Vašej rodiny</value>
+  </data>
+  <data name="lclOptionalInformation2Resource1.Text" xml:space="preserve">
+    <value>Aby sme zaistili, že Vám budú zasielané relevantné informácie a kupóny, je užitočné mať nasledujúce informácie o Vašej domácnosti.</value>
+  </data>
+  <data name="lclOptionalInformation2Resource2.Text" xml:space="preserve">
+    <value>Aby sme zaistili, že Vám budú zasielané relevantné informácie a kupóny, je užitočné mať nasledujúce informácie o Vašej domácnosti.</value>
+  </data>
+  <data name="lclOptionalInformationResource1.Text" xml:space="preserve">
+    <value>Nepovinný údaj</value>
+  </data>
+  <data name="lclOptionalInformationResource2.Text" xml:space="preserve">
+    <value>Nepovinný údaj</value>
+  </data>
+  <data name="lclPageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclPageResource2.Text" xml:space="preserve">
+    <value>strana</value>
+  </data>
+  <data name="lclPartnerthirdpartyResource1.Text" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="lclPartnerthirdpartyResource2.Text" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="lclPhoneResource1.Text" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="lclPhoneResource2.Text" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="lclPostcode1Resource1.Text" xml:space="preserve">
+    <value>Poštové smerovacie číslo:</value>
+  </data>
+  <data name="lclPostcode1Resource2.Text" xml:space="preserve">
+    <value>Poštové smerovacie číslo:</value>
+  </data>
+  <data name="lclPostcodeResource1.Text" xml:space="preserve">
+    <value>Poštové smerovacie číslo:</value>
+  </data>
+  <data name="lclPostcodeResource2.Text" xml:space="preserve">
+    <value>Poštové smerovacie číslo:</value>
+  </data>
+  <data name="lclPreferredResource1.Text" xml:space="preserve">
+    <value>Preferovaný jazyk:</value>
+  </data>
+  <data name="lclPreferredResource2.Text" xml:space="preserve">
+    <value>Preferovaný jazyk:</value>
+  </data>
+  <data name="lclPromotionalCode1Resource1.Text" xml:space="preserve">
+    <value>Máte-li propagační kód, zadejte ho prosím zde:</value>
+  </data>
+  <data name="lclPromotionalCode1Resource2.Text" xml:space="preserve">
+    <value>Máte-li propagační kód, zadejte ho prosím zde:</value>
+  </data>
+  <data name="lclPromotionalCodeResource1.Text" xml:space="preserve">
+    <value>Propagační kód</value>
+  </data>
+  <data name="lclPromotionalCodeResource2.Text" xml:space="preserve">
+    <value>Propagační kód</value>
+  </data>
+  <data name="lclRaceResource1.Text" xml:space="preserve">
+    <value>Vyberte závod:</value>
+  </data>
+  <data name="lclRaceResource2.Text" xml:space="preserve">
+    <value>Vyberte závod:</value>
+  </data>
+  <data name="lclResearchResource1.Text" xml:space="preserve">
+    <value>Spotřebitelský výzkum</value>
+  </data>
+  <data name="lclResearchResource2.Text" xml:space="preserve">
+    <value>Spotřebitelský výzkum</value>
+  </data>
+  <data name="lclSecondaryIDResource1.Text" xml:space="preserve">
+    <value>Sekundární IČ - OP/pas</value>
+  </data>
+  <data name="lclSecondaryIDResource2.Text" xml:space="preserve">
+    <value>Sekundární IČ - OP/pas</value>
+  </data>
+  <data name="lclSecuritycheckResource1.Text" xml:space="preserve">
+    <value>Potvrdenie a odoslanie formulára.
+
+
+
+
+
+
+
+
+Potvrdením a odoslaním súhlasím s nižšie uvedeným.</value>
+  </data>
+  <data name="lclSecuritycheckResource2.Text" xml:space="preserve">
+    <value>Potvrdenie a odoslanie formulára.
+
+
+
+
+Potvrdením a odoslaním súhlasím s nižšie uvedeným.</value>
+  </data>
+  <data name="lclSMSResource1.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclSMSResource2.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclSSNResource1.Text" xml:space="preserve">
+    <value>Základní IČ - rodné číslo</value>
+  </data>
+  <data name="lclSSNResource2.Text" xml:space="preserve">
+    <value>Základní IČ - rodné číslo</value>
+  </data>
+  <data name="lclstreetResource1.Text" xml:space="preserve">
+    <value>Ulica:</value>
+  </data>
+  <data name="lclstreetResource2.Text" xml:space="preserve">
+    <value>Ulica:</value>
+  </data>
+  <data name="lclSurnameResource1.Text" xml:space="preserve">
+    <value>Priezvisko:</value>
+  </data>
+  <data name="lclSurnameResource2.Text" xml:space="preserve">
+    <value>Priezvisko:</value>
+  </data>
+  <data name="lclTermsnConditionsResource1.Text" xml:space="preserve">
+    <value>Všeobecné obchodní podmínky</value>
+  </data>
+  <data name="lclTermsnConditionsResource2.Text" xml:space="preserve">
+    <value>Všeobecnými obchodními podmínkami.</value>
+  </data>
+  <data name="lclTescogrpResource1.Text" xml:space="preserve">
+    <value>Tesco obchodní nabídky</value>
+  </data>
+  <data name="lclTescogrpResource2.Text" xml:space="preserve">
+    <value>Tesco obchodní nabídky</value>
+  </data>
+  <data name="lclTitleErrorResource1.Text" xml:space="preserve">
+    <value>Prosím vyberte titul</value>
+  </data>
+  <data name="lclTitleErrorResource2.Text" xml:space="preserve">
+    <value>Prosím vyberte titul</value>
+  </data>
+  <data name="lclTitleResource1.Text" xml:space="preserve">
+    <value>Titul:</value>
+  </data>
+  <data name="lclTitleResource2.Text" xml:space="preserve">
+    <value>Titul:</value>
+  </data>
+  <data name="lcltittleErrMsgResource1.Text" xml:space="preserve">
+    <value>Prosím vyberte titul</value>
+  </data>
+  <data name="lclTownCityResource1.Text" xml:space="preserve">
+    <value>Obec/město:</value>
+  </data>
+  <data name="lclTownCityResource2.Text" xml:space="preserve">
+    <value>Obec/město:</value>
+  </data>
+  <data name="ListItemResource1 .Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource1 .Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource2 .Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource2 .Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource3 .Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource3 .Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="ListItemResource4 .Text" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource4 .Value" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Slečna</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>Slečna</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>Slečna</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>Slečna</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource45.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource46.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource47.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource48.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource49.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource49.Value" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource5 .Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource5 .Value" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>Paní</value>
+  </data>
+  <data name="ListItemResource51.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource51.Value" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource52.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource52.Value" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource53.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource53.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource54.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource54.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource55.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource55.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource56.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource56.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource57.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource57.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource58.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource58.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource59.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource59.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource6 .Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource6 .Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Deň</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource61.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource61.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource62.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource62.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource63.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource63.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource64.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource64.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource65.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource65.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource66.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource66.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource67.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource67.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource68.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource68.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource69.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource69.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource7 .Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource7 .Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource71.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource71.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource72.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource72.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource73.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource73.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource74.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource74.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Localize1 Resource1.Text" xml:space="preserve">
+    <value>Zákaznická Listina a Zásady ochrany osobních údajů</value>
+  </data>
+  <data name="Localize1 Resource2.Text" xml:space="preserve">
+    <value>Zákaznická Listina a Zásady ochrany osobních údajů</value>
+  </data>
+  <data name="Localize1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize1Resource2.Text" xml:space="preserve">
+    <value>Stačí ak vyplníte nižšie uvedený formulár. Prosím, venujte pozornosť pri vypĺňaní vašich údajov, iba tak vás budeme vedieť správne kontaktovať ponukou, ktorá vas bude skutočne zaujímať.</value>
+  </data>
+  <data name="Localize2Resource1.Text" xml:space="preserve">
+    <value>Stačí ak vyplníte nižšie uvedený formulár. Prosím, venujte pozornosť pri vypĺňaní vašich údajov, iba tak vás budeme vedieť správne kontaktovať ponukou, ktorá vas bude skutočne zaujímať. </value>
+  </data>
+  <data name="Localize2Resource2.Text" xml:space="preserve">
+    <value>Čím bližší informace nám poskytnete, tím více nám umožníte zasílat vám produktové nabídky, které si myslíme, že se vám budou líbit.</value>
+  </data>
+  <data name="Localize3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize3Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize4Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize5Resource1.Text" xml:space="preserve">
+    <value>Vaše údaje</value>
+  </data>
+  <data name="Localize5Resource2.Text" xml:space="preserve">
+    <value>Vaše údaje</value>
+  </data>
+  <data name="Localize6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize6Resource2.Text" xml:space="preserve">
+    <value> Čím úplnejšie informácie nám poskytnete, tým jednoduchšie sa s vami budeme môsť skontaktovať a zasielať vám ponuky presne pre Vás</value>
+  </data>
+  <data name="Localize7Resource1.Text" xml:space="preserve">
+    <value>Označuje povinné údaje</value>
+  </data>
+  <data name="Localize7Resource2.Text" xml:space="preserve">
+    <value>Označuje povinné údaje</value>
+  </data>
+  <data name="Localize8Resource1.Text" xml:space="preserve">
+    <value>Kraj:</value>
+  </data>
+  <data name="Localize8Resource2.Text" xml:space="preserve">
+    <value>Kraj:</value>
+  </data>
+  <data name="Localize9Resource1.Text" xml:space="preserve">
+    <value>Radi by sme vám zasielali ponuky a informácie o výrobkoch a službách spoločnosti Tesco, ako aj jej obchodných partnerov a občas vás telefonicky kontaktovali z dôvodu spotrebiteľských prieskumov.</value>
+  </data>
+  <data name="Localize9Resource2.Text" xml:space="preserve">
+    <value>Rádi bychom vás ujistili, že Vaše údaje jsou u nás v bezpečí a nikdy nebudou předány dalším společnostem mimo skupinu Tesco. Pro více informací si prohlédněte naši</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Vstúpiť</value>
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value>Vstúpiť</value>
+  </data>
+  <data name="Panel1Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemaleResource1.Text" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="radioFemaleResource1.ToolTip" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="radioFemaleResource2.Text" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="radioFemaleResource2.ToolTip" xml:space="preserve">
+    <value>žena</value>
+  </data>
+  <data name="radioMaleResource1.Text" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="radioMaleResource1.ToolTip" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="radioMaleResource2.Text" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="radioMaleResource2.ToolTip" xml:space="preserve">
+    <value>muž</value>
+  </data>
+  <data name="rdoLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoLanguageResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuccessMessage" xml:space="preserve">
+    <value>Prosím, opravte nasledujúce informácie.</value>
+  </data>
+  <data name="TableCellResource1 .Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource1 .ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource11.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource12.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource13.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource14.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource15.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource16.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource17.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource18.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource19.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2 .Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2 .ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource21.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource22.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource23.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource24.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource25.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource26.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource27.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource28.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource28.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource29.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3 .Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3 .ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource31.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource32.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource33.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource34.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource35.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource35.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource36.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource37.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource38.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource4.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource5.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource6.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource7.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource8.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource9.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize10Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize10Resource2.Text" xml:space="preserve">
+    <value>Zásada ochrany osobných údajov</value>
+  </data>
+  <data name="lclConfirmation3Resource3" xml:space="preserve">
+    <value> ile </value>
+  </data>
+  <data name="lclConfirmation6Resource1" xml:space="preserve">
+    <value>linklerini tıklayın</value>
+  </data>
+  <data name="ddlMonthResource1" xml:space="preserve">
+    <value>Mesiac</value>
+  </data>
+  <data name="ddlYearResource1" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="ddlDayResource1" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="errAcceptPolicy" xml:space="preserve">
+    <value>Pre pokračovanie musíte súhlasiť so Všeobecnými obchodnými  podmienkami a potvrdiť spracovanie osobných údajov podľa Ochrany osobných údajov.</value>
+  </data>
+  <data name="lclprivacyAccept.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclClosedBrace.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="lclSelectMonth.Text" xml:space="preserve">
+    <value>-Selected Month-</value>
+  </data>
+  <data name="lclSelectYear.Text" xml:space="preserve">
+    <value>-Year-</value>
+  </data>
+  <data name="lcltollfree1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcltollfree1starResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcltollfree2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcltollfree2starResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclCommunicateMsg1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclCommunicateMsg2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclJoinBottomResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclTandCResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="errMsg0to99" xml:space="preserve">
+    <value>Prosím, zadajte vek v rozmedzí 0 až 99 rokov</value>
+  </data>
+  <data name="errPromotion" xml:space="preserve">
+    <value>This code is not valid, please check and try again.</value>
+  </data>
+  <data name="lcltollfree1Resource1.Text1" xml:space="preserve">
+    <value>0800 591 688</value>
+  </data>
+  <data name="lcltollfree1starResource1.Text1" xml:space="preserve">
+    <value>* or</value>
+  </data>
+  <data name="lcltollfree2Resource2.Text1" xml:space="preserve">
+    <value>0330 123 1688</value>
+  </data>
+  <data name="lcltollfree2starResource2.Text1" xml:space="preserve">
+    <value>**</value>
+  </data>
+  <data name="Localize2Resource1.Text1" xml:space="preserve">
+    <value>Stačí ak vyplníte nižšie uvedený formulár. Prosím, venujte pozornosť pri vypĺňaní vašich údajov, iba tak vás budeme vedieť správne kontaktovať ponukou, ktorá vas bude skutočne zaujímať.</value>
+  </data>
+  <data name="Localize2Resource2.Text1" xml:space="preserve">
+    <value>If you have any questions or would like to register your temporary Clubcard, please contact us or call us on 0800 59 16 88*</value>
+  </data>
+  <data name="Localize2Resource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize2Resource4.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize3Resource1.Text1" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize3Resource2.Text1" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize4Resource1.Text1" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="Localize4Resource2.Text1" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="lclCommunicateMsg1Resource1.Text1" xml:space="preserve">
+    <value>* Free from BT landlines. Other providers vary. Calls may be recorded.</value>
+  </data>
+  <data name="lclCommunicateMsg2Resource1.Text1" xml:space="preserve">
+    <value>** Charged at local rate from mobiles and private telephones.</value>
+  </data>
+  <data name="lclClosedBrace.Text1" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="correctFollowing.valid" xml:space="preserve">
+    <value>Please correct the following information</value>
+  </data>
+  <data name="dob.valid" xml:space="preserve">
+    <value>Please enter a valid Date of birth</value>
+  </data>
+  <data name="errRegistration1" xml:space="preserve">
+    <value>There was a problem with your registration. Please check that the information you have entered is correct. If you require further assistance, please contact the customer helpdesk on 0800 59 16 88.</value>
+  </data>
+  <data name="houseNo.valid" xml:space="preserve">
+    <value>Please enter a valid house number</value>
+  </data>
+  <data name="over18.valid" xml:space="preserve">
+    <value>Please note you must be over 18 to be a member of Clubcard</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="lclSelectMonth.Text1" xml:space="preserve">
+    <value>-Selected Month-</value>
+  </data>
+  <data name="lclSelectYear.Text1" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="lclConfirmResource1.Text" xml:space="preserve">
+    <value>Pravidlá ochrany osobných údajov.</value>
+  </data>
+  <data name="lclRequireWarning.Text" xml:space="preserve">
+    <value>Označuje povinné údaje</value>
+  </data>
+  <data name="LegalPolicyErrorMessage" xml:space="preserve">
+    <value>Pre pokračovanie musíte súhlasiť so Všeobecnými obchodnými podmienkami a potvrdiť spracovanie osobných údajov podľa Ochrany osobných údajov.</value>
+  </data>
+  <data name="LegalPolicyHeader" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LegalPolicyOpt1" xml:space="preserve">
+    <value>&lt;a href='http://www.tesco.sk/clubcard/vseobecne-podmienky-clubcard/'&gt;&lt;u&gt;
+                                                    Pravidlá ochrany osobných údajov.&lt;/u&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="LegalPolicyOpt2" xml:space="preserve">
+    <value>&lt;a href='http://www.tesco.sk/ochrana-sukromia/'&gt;&lt;u&gt;
+                                                    Prehlasujem, že som všetky údaje vyplnil/ a správne a pravdivo.&lt;/u&gt;&lt;/a&gt;</value>
+  </data>
+</root>

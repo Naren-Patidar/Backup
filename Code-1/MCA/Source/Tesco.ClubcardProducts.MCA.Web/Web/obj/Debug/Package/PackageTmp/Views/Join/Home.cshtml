@@ -1,0 +1,220 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    ViewBag.Title = @Html.Translate("PageResource2.Title");
+    ViewBag.dtmTitle = @Html.Translate("dtmPageTitle");
+    ViewBag.PageName = "Join";
+    ViewBag.EnableLeftNavigation = "FALSE";
+    ViewBag.IsGrayBackGround = "TRUE";
+    bool dietaryPrefrence = false;
+    dietaryPrefrence = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DisableDiaetoryPreference.ToString()].ConfigurationValue1.ToUpper().Equals("FALSE");
+    var appSettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    DbConfigurationItem hideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality]["HideMarketingPreference"];
+    DbConfigurationItem isPrivacyPolicyVisible = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings]["IsPrivacyPolicyVisibleForPreference"];
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+}
+@section head {
+    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+}
+@if (!Model.IsConfirmation)
+{
+    <div class="row">
+        <div class="gr-12">
+            <div class="copy-wrapper">
+                <h1 class="ddl-h2-like">
+                    @Html.Translate("Join/Home", "PageResource2.Title")
+                </h1>
+                <p id="lblJoinHeader">
+                    @Html.Translate("Join/Home", "Localize2Resource1.Text1")
+                    @if (Html.Translate("Localize2Resource4.Text").ToString().Length > 0)
+                    { <a href="@Resources.ConfigLinks.JMTescoCC" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.JMTescoCC) ? "_blank" : "_self"'>
+                        <u>@Html.Translate("Join/Home", "Localize2Resource4.Text")</u> </a>
+                    }
+                    @if (Html.Translate("Localize2Resource3.Text").ToString().Length > 0)
+                    { 
+                        @Html.Translate("Join/Home", "Localize2Resource3.Text")
+                    }
+                    @if (Html.Translate("lcltollfree1Resource1.Text").ToString().Length > 0)
+                    { 
+                        <b>@Html.Translate("Join/Home", "lcltollfree1Resource1.Text")</b>
+                    }
+                    @if (Html.Translate("lcltollfree1starResource1.Text").ToString().Length > 0)
+                    { 
+                        @Html.Translate("Join/Home", "lcltollfree1starResource1.Text")
+                    }
+                    @if (Html.Translate("lcltollfree2Resource2.Text").ToString().Length > 0)
+                    { 
+                        <b>@Html.Translate("Join/Home", "lcltollfree2Resource2.Text")</b>
+                    }
+                    @if (Html.Translate("lcltollfree2starResource2.Text").ToString().Length > 0)
+                    { 
+                        @Html.Translate("Join/Home", "lcltollfree2starResource2.Text")<br />
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="gr-12">
+            @using (@Html.BeginForm("Home", "Join", FormMethod.Post, new { @class = "ddl-form", id = "MainForm", defaultbutton = "btnConfirm" }))
+            {
+                @Html.AntiForgeryToken()
+                <fieldset class="ddl-fieldset">
+                    @if (Html.Translate("Localize5Resource2.Text").ToString().Length > 0)
+                    { 
+                        <legend class="ddl-h4-like">@Html.Translate("Join/Home", "Localize5Resource2.Text")</legend>
+                    }
+                    @if (Html.Translate("Localize6Resource1.Text").ToString().Length > 0)
+                    { 
+                        <div class="copy-wrapper">
+                            <p id="provideAddress">@Html.Translate("Join/Home", "Localize6Resource1.Text").</p>
+                        </div>
+                        }
+                    <div id="cpmessages">
+                        <p class="message-level-2 message-success" id="sm-saved" style='@("display:" + (errorKeys.Contains("msgSummary") ? "block;" : "none;"))'>@Html.ValidationMessage("msgSummary")</p>
+                        <p class="message-level-2 message-error" id="errSummary" style='@("display:" + (errorKeys.Contains("errSummary") ? "block;" : "none;"))'>@Html.ValidationMessage("errSummary")</p>
+                    </div>
+                    @Html.Partial("_PersonalBasicDetails")
+                    @Html.Partial("_PersonalContactDetails")
+                </fieldset>
+
+                if (hideConfig != null && !hideConfig.ConfigurationValue1.Equals("1") && !hideConfig.IsDeleted)
+                {
+                <fieldset class="ddl-fieldset">
+                    @Html.EditorFor(model => model.OptIns, "OptInsModel")
+                    @if ((isPrivacyPolicyVisible != null && isPrivacyPolicyVisible.ConfigurationValue1.Equals("1")))
+                    {
+                        <ul class="no-bullet">
+                            <li><a href='@Resources.ConfigLinks.PHTerms' style="cursor: hand" id="aTnC" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHTerms) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-arrow-right">@Html.Translate("/Shared/EditorTemplates/OptInsModel", "lblTnC")</a></li>
+
+                            <li><a href='@Resources.ConfigLinks.PHCharter' style="cursor: hand" id="aCustomerCharter" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHCharter) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-arrow-right">@Html.Translate("/Shared/EditorTemplates/OptInsModel", "lblCustomerCharter")</a></li>
+                        </ul>
+                    }
+                    @if (!Model.OptIns.IsCustomerJoined)
+                    { 
+                        <p id="lblJoinNote">@Html.Translate("/Shared/EditorTemplates/OptInsModel", "FooterNoteJoin")
+                        </p>
+                    }
+                   
+                </fieldset>
+                }
+
+                if (dietaryPrefrence)
+                {
+                <fieldset class="ddl-fieldset">
+                    @Html.Partial("_PersonalHouseholdDetails")
+                </fieldset>
+                    if (Model.PersonalDetailsPreferences != null && Model.PersonalDetailsPreferences.Count > 0)
+                    {
+                <fieldset class="ddl-fieldset">
+                    @Html.Partial("_PersonalDietaryPreferences")
+                </fieldset>
+                    }
+                }
+
+                    if (appSettings[AppConfigEnum.IsCaptchaEnabled.ToString()].ConfigurationValue1.ToString() == "TRUE")
+                    {
+                <fieldset class="ddl-fieldset">
+                    @Html.Partial("_JoinCaptcha", Model)
+                </fieldset>
+                    }
+                    if (HideConfig[DbConfigurationItemNames.HideLegalPolicy].ConfigurationValue1.Equals("1"))
+                    {
+                <fieldset class="ddl-fieldset">
+                    <legend id="lblTermsAndConditions" class="ddl-h4-like">@Html.Translate("Join/Home", "lclConfirmation1Resource1.Text")</legend>
+                    <p id="lblConfirmation">
+                        @Html.Translate("Join/Home", "lclConfirmation5Resource1.Text")
+                        <a href="@Resources.ConfigLinks.JMTescoPrivacy" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.JMTescoPrivacy) ? "_blank" : "_self"'
+                                    style="cursor: hand" class="ddl-icon-after">
+                            @Html.Translate("Join/Home", "lclConfirmation4Resource1.Text")
+                        </a>
+                    </p>
+                    <p id="lblTnC">
+                        <strong>@Html.Translate("Join/Home", "lclConfirmationResource1.Text")
+                            <a href="@Resources.ConfigLinks.JMTescoTerm" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.JMTescoTerm) ? "_blank" : "_self"'
+                                    style="cursor: hand" class="ddl-icon-after">
+                                @Html.Translate("Join/Home", "lclConfirmResource1.Text")
+                            </a>
+                            @Html.Translate("Join/Home", "lclPageResource1.Text")
+                        </strong>
+                    </p>
+                </fieldset>
+                    }
+                if (HideConfig[DbConfigurationItemNames.HideLegalPolicy].ConfigurationValue1.Equals("0"))
+                {                            
+                <fieldset class="ddl-fieldset">
+                    <legend id="lblLegalPolicyHeader" class="ddl-h4-like" id="lblyourdtls">@Html.Translate("Join/Home", "LegalPolicyHeader")</legend>
+                    <div class="form-row @(Model.IsLegalPolicyError ? "ddl-error" : "")" id="oi-saved">
+                        @if (Model.IsLegalPolicyError)
+                        {
+                            <p>@Html.Translate("Join/Home", "LegalPolicyErrorMessage")</p>
+                        }
+                        <div class="ddl-form-field ddl-checkbox" id="LegalPolicyOpt1">
+                            <label id="lblDietaryPreferencelclDesc" for="Kosher" class="ddl-label">@Html.Translate("Join/Home", "LegalPolicyOpt1")</label>
+                            <span class="ddl-checkbox">
+                                @Html.CheckBoxFor(model => model.OptLegalPolicy1)
+                                <em></em></span>
+                        </div>
+                        <div class="ddl-form-field ddl-checkbox" id="LegalPolicyOpt2">
+                            <label id="lblDietaryPreferencelclDesc" for="Kosher" class="ddl-label">@Html.Translate("Join/Home", "LegalPolicyOpt2")</label>
+                            <span class="ddl-checkbox">
+                                @Html.CheckBoxFor(model => model.OptLegalPolicy2)
+                                <em></em></span>
+                        </div>
+                    </div>
+                </fieldset> 
+                    }
+                <div id="lblbuttonsection">
+                    <button class="ddl-button" id="btnConfirm" name="Command" value="@Html.Translate("Join/Home", "btnConfirmJoinResource2.Text")" onclick="return TrackGAEvent('Confirm Join');" >
+                        @Html.Translate("Join/Home", "btnConfirmJoinResource2.Text")</button>
+                </div>
+                <div class="row">
+                    <div class="gr-12">
+                        <div class="copy-wrapper">
+                        <br />
+                            <p id="lblCallRates">@Html.Translate("Join/Home", "lclCommunicateMsg1Resource1.Text")<br />
+                                @Html.Translate("Join/Home", "lclCommunicateMsg2Resource1.Text")<br /> 
+                    @Html.Translate("/Shared/EditorTemplates/OptInsModel", "FooterNote")</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    using (@Html.BeginForm())
+    {
+         @Html.AntiForgeryToken()
+        ViewBag.Title = Html.Translate("Shared/_Confirmation", "ConfirmationTitle");
+        ViewBag.dtmTitle = Html.Translate("Shared/_Confirmation", "ConfirmationTitle");
+        ViewBag.EnableLeftNavigation = "FALSE";
+        ViewBag.IsGrayBackGround = "FALSE";
+        ViewBag.IsFullPage = "TRUE";
+        @Html.HiddenFor(m => m.IsConfirmation);
+        @Html.HiddenFor(m => m.Clubcard);
+        @Html.Partial("_Confirmation", Model);
+    }
+}
+@section scripts
+{
+    <script type="text/javascript">
+        function TrackGAEvent(ClickEvent) {
+            if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+                _gaq.push(['_trackEvent', 'Join', 'Click', ClickEvent]);
+            }
+        }
+        $(document).ready(function () {
+            setTimeout(function () { $('#JoinCaptcha_ReloadIcon').click(); }, 5000);
+        });      
+    </script>
+    @Scripts.Render("~/bundles/personaldetails")
+}

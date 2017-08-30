@@ -1,0 +1,86 @@
+.js {
+
+	.tabbed-content {
+		position: relative;
+		border: none;
+		padding: 0;
+		margin-bottom: 20px;
+
+		.tab-control {
+			list-style: none;
+			margin: 0 0 20px 0;
+			padding: 0;
+			width: 100%;
+			border-bottom: 1px solid $ddl-border-color-1;
+
+			li {
+				cursor: pointer;
+				position: relative;
+				color: $ddl-blue2;
+				display: block;
+				margin: 0 10px 0 0;
+				font-size: 1.6rem;
+				padding: 16px 10px;
+				text-align: center;
+				cursor: pointer;
+				text-align: center;
+				border-width: 1px 1px 0 1px;
+				font-weight: normal;
+				background: $ddl-grey4;
+
+				&.active {
+					z-index: 10;
+					background: #fff;
+					border: 1px solid $ddl-border-color-1;
+					font-family: 'tescobold';
+
+					&:before {
+						display: none;
+						content: " ";
+						display: block;
+						width: 100%;
+						height: 4px;
+						background: $ddl-white1;
+						position: absolute;
+						bottom: -2px;
+						left: 0;
+					}
+
+					&:after {
+						display: block;
+						content: " ";
+						display: block;
+						width: 92%;
+						height: 4px;
+						background: $ddl-blue2;
+						position: absolute;
+						bottom: 0px;
+						left: 0px;
+						margin: 0 4%;
+					}
+				}
+			}
+		}
+		
+		.tab {
+			margin: 0;
+			width: 100%;
+			overflow: hidden;
+			max-height: 0;
+			transition: max-height .7s ease-in-out;
+			position: relative;
+			z-index: 9;
+			padding: 6px 6px 0 6px;
+
+			.tab-inner {
+
+			}	
+
+			&.active {
+				background: white;
+				max-height: 5000px;
+			}
+		}
+		
+	}
+}

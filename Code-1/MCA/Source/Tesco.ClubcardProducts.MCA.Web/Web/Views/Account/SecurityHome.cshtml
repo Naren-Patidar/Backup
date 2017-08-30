@@ -1,0 +1,261 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@section scripts
+{
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+}
+@model SecurityViewModel
+@{
+    ViewBag.Title = @Html.Translate("Account/SecurityHome", "PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("Account/SecurityHome", "dtmPageTitle");
+    ViewBag.PageName = "Security";
+    ViewBag.EnableLeftNavigation = "FALSE";
+    DBConfigurations OrderReplacementConfiguration = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality];
+    DbConfigurationItem OrderReplacement = OrderReplacementConfiguration.GetConfigurationItem(DbConfigurationItemNames.HideOrderAReplacementPage);
+    string isOrderReplacementrequire = OrderReplacement.ConfigurationValue1;
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality];
+    bool isVirtualLock = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.VirtualLockout.ToString()].ConfigurationValue1.Equals("1");
+
+    bool bIsblocked = Model.IsBlocked;
+    bool bErrorlog1 = Model.showErrorLabel1;
+    bool bErrorlog2 = Model.showErrorLabel2;
+    bool bErrorlog3 = Model.showErrorLabel3;
+    var version = TempData["Target"] as String;
+    bool isSuccessful = Model.isSuccessful;
+   
+}
+@if (isVirtualLock)
+{ 
+    
+    @Html.Partial("_VirtualLockout", Model)
+}
+else
+{
+    if (bIsblocked && !isSuccessful)
+    {        
+    <div class="ddl-button-banner ddl-button-banner-error without-button" id="errMaximumAttemp">
+        <h2 id="maxAttempt1" class="ddl-h5-like">@Html.Translate("lclMaxAttemptsMsg1")</h2>
+        <p id="maxAttemptMsg2">@Html.Translate("lclMaxAttemptsMsg2")</p>
+        @if (Html.Translate("lclMaxAttemptsMsg3").ToString().Length > 0)
+        { 
+            <p id="maxAttemptMsg3">@Html.Translate("lclMaxAttemptsMsg3")<br />
+            </p>
+        }
+    </div>         
+    }
+    else
+    {
+    <div class="row">
+        <div class="gr-12">
+            <div class="copy-wrapper">
+                <h2 id="lblAccountVerification">@Html.Translate("lclPageHead")</h2>
+                <p id="lblpageHead1">@Html.Translate("lclPageHead1")</p>
+                <p id="lblHeaderMsg">@Html.Translate("lclHeaderMsg")</p>
+                @if (!bIsblocked && !isSuccessful)
+                {         
+                    <p>
+                        <span class="message-level-2 message-error" id="errMsgHead">
+                            @Html.Translate("lclErrorMsgHead")
+                        </span>
+                    </p>       
+                }
+            </div>
+        </div>
+    </div>
+    }
+}
+<div class="row">
+    <div class="gr-12">
+        @using (Html.BeginForm("SecurityHome", "Account", new { @target = version, @from = Request.QueryString["from"], @returnUrl = Request.QueryString["returnUrl"] },
+                                                                        FormMethod.Post, new { @class = "ddl-form", id = "account-verification" }))
+        {
+            @Html.AntiForgeryToken()
+            if (!bIsblocked)
+            {
+            <div id="cards">
+                <img alt="Clubcards" src="../Content/images/card1.jpg" />
+                <img alt="Clubcards" src="../Content/images/card2.jpg" />
+            </div>
+            }
+            <fieldset class="ddl-fieldset gr-12">
+                <fieldset class="ddl-fieldset">
+                    @if (!bIsblocked)
+                    {
+            
+                        <legend class="ddl-visually-hidden">Please enter the digits below</legend>
+    
+                        <div class="form-row">
+                            @if (!bErrorlog1)
+                            {
+                                <div id="security1" class="ddl-form-field">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.firstSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.firstSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtfirstSecureDigit, new { @type="tel",@class = "ddl-input", autofocus = "autofocus", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", id = "txtSecurityAnswer1", onkeyup = "return SetFocus('txtSecAns2');", onkeypress = "return restrictCharacters(this,event);" })
+                                </div>}
+                            else
+                            { 
+                                <div id="security1" class="ddl-form-field ddl-error">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.firstSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.firstSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtfirstSecureDigit, new { @type="tel",@class = "ddl-input", autofocus = "autofocus", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", id = "txtSecurityAnswer1", onkeyup = "return SetFocus('txtSecAns2');", onkeypress = "return restrictCharacters(this,event);" })
+                                    <p id="errormsg1">@Html.ValidationMessage("requiredmsg1")</p>
+                                </div>
+                            }
+                        </div>
+                        <div class="form-row">
+                            @if (!bErrorlog2)
+                            {
+                                <div id="security2" class="ddl-form-field">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.secondSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.secondSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtsecondSecureDigit, new { @type="tel",@class = "ddl-input", id = "txtSecurityAnswer2", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('txtSecAns3');", onkeypress = "return restrictCharacters(this,event);" })
+                                </div>
+                            }
+                            else
+                            { 
+                                <div id="security2" class="ddl-form-field ddl-error">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.secondSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.secondSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtsecondSecureDigit, new { @type="tel",@class = "ddl-input", id = "txtSecurityAnswer2", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('txtSecAns3');", onkeypress = "return restrictCharacters(this,event);" })
+                                    <p id="errormsg2">@Html.ValidationMessage("requiredmsg2")</p>
+                                </div>
+                            }
+                        </div>
+                        <div class="form-row">
+                            @if (!bErrorlog3)
+                            {
+                                <div id="security3" class="ddl-form-field">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.thirdSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.thirdSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtthirdSecureDigit, new { @type="tel",@class = "ddl-input", id = "txtSecurityAnswer3", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('btnSbmtNumber');", onkeypress = "return restrictCharacters(this,event);" })
+                                </div>}
+                            else
+                            { 
+                                <div id="security3" class="ddl-form-field ddl-error">
+                                    <label class="ddl-label" for="option-1">
+                                        @Model.thirdSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+                                    </label>
+                                    @Html.HiddenFor(model => model.thirdSecureDigitEncrypt)
+                                    @Html.TextBoxFor(model => model.txtthirdSecureDigit, new { @type="tel",@class = "ddl-input", id = "txtSecurityAnswer3", oncopy = "return false", oncut = "return false", onpaste = "return false", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('btnSbmtNumber');", onkeypress = "return restrictCharacters(this,event);" })
+                                    <p id="errormsg3">@Html.ValidationMessage("requiredmsg3")</p>
+                                </div>
+                            }
+                        </div>
+                    }
+                </fieldset>
+            </fieldset>
+                    if (Model.ShowCaptcha)
+                    {
+            <div class="g-recaptcha" data-sitekey=@Model.SiteKey>
+            </div>
+                        if (Model.showCaptchaError)
+                        {
+            <p class="ddl-error" id="errMsgHead">
+                "Please verify you are not a robot"</p>
+                        }
+                    }
+            <div class="gr-12 gr-1@large">
+            </div>
+          
+                      
+                    if (!bIsblocked)
+                    {
+            <div id="divbtnSbmtnumbers" class="ddl-button-group ddl-button-group-left">
+                <input type="submit" value="@Html.Translate("btnSubmitResource")"
+            class="ddl-button" id="btnSbmtNumbers"/>
+            </div>
+                    }
+        }
+    </div>
+</div>
+<div id="divClickOrderReplacecment" class="ddl-button-banner">
+    <div class="ddl-button-banner-column">
+        <h2 class="ddl-h5-like">
+            @Html.Translate("lclOrderReplacementHeader")
+        </h2>
+        <p>
+            @Html.Translate("lclOrderReplacementLink")
+            @Html.Translate("lclOrderReplacementLink2")
+        </p>
+    </div>
+    <div class="ddl-button-banner-column">
+        <a href="../AccountManagement/OrderANewCard" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+            @Html.Translate("lclClickHere")</a>
+    </div>
+</div>
+@if (!bIsblocked)
+{
+    <p>@Html.Translate("lclspnFooterMsg")</p>
+ 
+    <p class="ddl-t5">@Html.Translate("lclCommunicateMsg1Resource1")</p>
+    <p class="ddl-t5">@Html.Translate("lclCommunicateMsg2Resource1")</p>
+}
+@if (bIsblocked && !isSuccessful)
+{   
+    <div class="copy-wrapper ddl-text-left">
+        <p class="ddl-t5">
+            <sup>@Html.Translate("lclContactref1")</sup> @Html.Translate("lclContactrefMsg1")</p>
+        <p class="ddl-t5">
+            <sup>@Html.Translate("lclContactref2")</sup> @Html.Translate("lclContactrefMsg2")</p>
+    </div>
+}
+<script type="text/javascript">
+
+    function SetFocus(Index) {
+
+
+        if (Index == 'txtSecAns2' && document.getElementById('txtSecurityAnswer1').value != "") {
+
+            var errmsg1 = document.getElementById('errormsg1');
+
+            document.getElementById('txtSecurityAnswer2').focus();
+            if (errmsg1) {
+                document.getElementById('errormsg1').style.display = "none";
+            }
+        }
+
+        else if (Index == 'txtSecAns3' && document.getElementById('txtSecurityAnswer2').value != "") {
+
+            var errmsg2 = document.getElementById('errormsg2');
+            document.getElementById('txtSecurityAnswer3').focus();
+            if (errmsg2) {
+                document.getElementById('errormsg2').style.display = "none";
+            }
+        }
+        else if (Index == 'btnSbmtNumber' && document.getElementById('txtSecurityAnswer3').value != "") {
+            var errmsg3 = document.getElementById('errormsg3');
+            document.getElementById('btnSbmtNumbers').focus();
+            if (errmsg3) {
+                document.getElementById('errormsg3').style.display = "none";
+            }
+        }
+    };
+
+    function restrictCharacters(myfield, e) {
+        var digitsOnly = /[1234567890]/g;
+        if (!e) var e = window.event
+        if (e.keyCode) code = e.keyCode;
+        else if (e.which) code = e.which;
+        var character = String.fromCharCode(code);
+
+        if (!e.ctrlKey && code != 9 && code != 8 && (code != 39 || (code == 39 && character == "'"))) {
+            if (character.match(digitsOnly)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+</script>

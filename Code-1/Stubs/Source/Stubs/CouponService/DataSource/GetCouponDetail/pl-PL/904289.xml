@@ -1,0 +1,13 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICouponService/GetCouponDetailResponse</a:Action>
+    <a:RelatesTo>urn:uuid:61fb37b3-44e5-40a2-8697-b370be56b8ea</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCouponDetailResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCouponDetailResult>true</GetCouponDetailResult>
+      <serrorXml />
+      <sresultXml>&lt;NewDataSet /&gt;</sresultXml>
+    </GetCouponDetailResponse>
+  </s:Body>
+</s:Envelope>

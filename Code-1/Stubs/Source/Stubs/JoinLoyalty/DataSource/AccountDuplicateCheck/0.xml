@@ -1,0 +1,22 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tempuri.org/IJoinLoyaltyService/AccountDuplicateCheckResponse</a:Action>
+		<a:RelatesTo>urn:uuid:e63513fa-75ff-4110-897f-135b354e6eb3</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<AccountDuplicateCheckResponse xmlns="http://tempuri.org/">
+			<AccountDuplicateCheckResult>true</AccountDuplicateCheckResult>
+			<resultXml>
+				<NewDataSet>
+				<Duplicate>
+				<IsAlternateIDDuplicate>0</IsAlternateIDDuplicate>
+				<PromotionCodeExist>0</PromotionCodeExist>
+				<ISDuplicate>0</ISDuplicate>
+				<DuplicateCustomerID>0</DuplicateCustomerID>
+				<DuplicateAltCustomerID>0</DuplicateAltCustomerID>
+				</Duplicate>
+				</NewDataSet>
+			</resultXml>
+		</AccountDuplicateCheckResponse>
+	</s:Body>
+</s:Envelope>

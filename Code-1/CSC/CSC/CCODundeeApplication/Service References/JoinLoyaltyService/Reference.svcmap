@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="245985fc-4f6d-4953-bc8d-787b73bc323a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.27.8.30/JoinService/JoinLoyaltyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JoinLoyaltyService.disco" MetadataType="Disco" ID="1808ab8d-b2e0-4fee-83d6-73af1b5863a8" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/JoinService/JoinLoyaltyService.svc?disco" />
+    <MetadataFile FileName="JoinLoyaltyService.wsdl" MetadataType="Wsdl" ID="80471ffb-f0e4-4944-bc66-087d11c08484" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/JoinService/JoinLoyaltyService.svc?wsdl" />
+    <MetadataFile FileName="JoinLoyaltyService.xsd" MetadataType="Schema" ID="04c55478-91af-47c0-bf4d-6df64a5548d4" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/JoinService/JoinLoyaltyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="JoinLoyaltyService1.xsd" MetadataType="Schema" ID="a10dfa9c-1126-42ed-b122-3d527203ed6b" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/JoinService/JoinLoyaltyService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

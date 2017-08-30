@@ -1,0 +1,171 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Preferences
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@model ContactModel
+@Html.HiddenFor(model => model.CustomerIDEncr)
+@Html.HiddenFor(model => model.IsEMailContactVisible)
+@Html.HiddenFor(model => model.IsMobileSMSVisisble)
+@Html.HiddenFor(model => model.IsPostContactVisisble)
+@Html.HiddenFor(model => model.IsPostLargePrintVisisble)
+@Html.HiddenFor(model => model.PreviousSelectedPreferenceID)
+@Html.HiddenFor(model => model.PostalAddress)
+@Html.HiddenFor(model => model.InvalidMobile)
+@Html.HiddenFor(model => model.InvalidEMail)
+@Html.HiddenFor(model => model.CompareMobile)
+@Html.HiddenFor(model => model.CompareEMail)
+@Html.HiddenFor(model => model.MobilePrefixes)
+@Html.HiddenFor(model => model.MobileMinLength)
+@Html.HiddenFor(model => model.MobileMaxLength)
+@Html.HiddenFor(model => model.Braille)
+@Html.HiddenFor(model => model.ROMobile)
+@Html.HiddenFor(model => model.ROEmail)
+@Html.HiddenFor(model => model.ROBraille)
+
+
+@if (Model.IsEMailContactVisible || Model.IsMobileSMSVisisble || Model.IsPostContactVisisble)
+{
+    <div class="row">
+	    <div class="gr-12">
+            <div class="ddl-form">
+                <fieldset class="ddl-fieldset">       
+                    <legend id='lblHeading' class="ddl-h4-like">@Html.Translate("HeaderText")</legend> 
+                    <div id="cpmessages" class="copy-wrapper">
+	                    <p class="message-level-2 message-success" id="sm-saved" style='@("display:" + (Model.IsSaved ? "block;" : "none;"))'>@Html.Translate("MessageDataSaved")</p>
+                        <p class="message-level-2 message-error" id="sm-error" style='@("display:" + (!Model.IsValid ? "block;" : "none;"))'>@Model.ErrorMessage</p>        
+                    </div>
+                    <div id="divContactPrefs" class="form-row">
+                        @* <p class="required" id="lblMandatorywarmsg">
+                                @Html.Translate("lclRequireWarningText")</p> *@
+                        <fieldset class="ddl-fieldset" id="contact-preferences">
+                        <legend id='lblDescription'>@Html.Translate("DescriptionText")</legend>
+                            @if (Model.IsEMailContactVisible)
+                            {
+			                    <div class="form-row">		
+				                    <div class="ddl-form-field ddl-radio">
+						                    <label for="email" class='ddl-label' id="lblEmailHeading">@Html.Translate("lblPrefEmail")</label>
+						                    <span class='ddl-radio'>
+                                        @Html.RadioButtonFor(model => model.SelectedPreferenceID, (short)PreferenceEnum.E_Mail_Contact, new { GroupName = "ContactPreference", id = "email", tabIndex = "1",data_contentTrigger="1" })
+					                    <em></em>
+						                    </span>
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.IsMobileSMSVisisble)
+                            {
+                                <div class="form-row">		
+				                    <div class="ddl-form-field ddl-radio">
+					                    <label for="mobile" class='ddl-label' id="lblTextHeading">@Html.Translate("lblPrefText")</label>
+					                    <span class='ddl-radio'>
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, (short)PreferenceEnum.Mobile_SMS, new { GroupName = "ContactPreference", id = "mobile", tabIndex = "2",data_contentTrigger="2"})
+						                    <em></em>   
+					                    </span>                      
+                                    </div>
+                                </div>
+                            }
+                            @if (Model.IsPostContactVisisble)
+                            {
+                                <div class="form-row">		
+				                    <div class="ddl-form-field ddl-radio">
+					                    <label for="post" class='ddl-label'>@Html.Translate("lblPrefPost")</label>
+					                    <span class='ddl-radio'>
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, (short)PreferenceEnum.Post_Contact, new { GroupName = "ContactPreference", id = "post", tabIndex = "3",data_contentTrigger="3" })
+						                    <em></em>
+					                    </span>                      
+                                    </div>
+                                </div>
+                            }    
+                        </fieldset>
+                        <div class="conditional-content">
+                                <div class="copy-wrapper" data-conditionalContent= "1">
+                                    <fieldset class="ddl-fieldset">
+                                        <div class="form-row">
+                                             <div class="ddl-form-field" id="fld_email_wrapper">
+                                                <label form="fld_email" class="ddl-label">@Html.Translate("lblEnterEmail")</label>
+                                                @Html.TextBoxFor(model => model.Email, new { name = "fld_email", id = "fld_email", @class = "ddl-input", autocomplete = "off" })
+							                    <p id="email_validation" style="display:none">@Html.Translate("errMessageEmail")</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="ddl-form-field" id="fld_Confirm_email_wrapper">
+                                                <label for="fld_Confirm_email" class="ddl-label">@Html.Translate("lblConfirmEmail")</label>
+                                                @Html.TextBoxFor(model => model.ConfirmEmail, new { name = "fld_Confirm_email", id = "fld_Confirm_email", autocomplete = "off", @class = "ddl-input ddl-error" })
+							                    <p id="confirm_email_validation_mismatch" style="display:none">@Html.Translate("errCompareEmail")</p>
+												<p id="confirm_email_validation_invalid" style="display:none">@Html.Translate("errMessageEmail")</p>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+									
+									<div class="copy-wrapper">
+										<p id="lblEmailDescription">@Html.Translate("lblEmailDesc")</p>
+										<p><strong id="lblEmailDescription1">@Html.Translate("lblEmailDesc1")</strong></p>
+										<p id="lblEmailDescription2">@Html.Translate("lblDesc") <a href="@Resources.ConfigLinks.PHTermsConditions" style="cursor: hand" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHTermsConditions) ? "_blank" : "_self"'>@Html.Translate("lnkTnC")</a></p>
+									</div>
+                                </div>
+                                <div class="copy-wrapper" data-conditionalContent="2">
+                                    <fieldset class="ddl-fieldset">
+                                        <div class="form-row">
+											<div class="ddl-form-field" id="fld_mobile_wrapper">
+                                                <label data-label="Please enter your mobile number" class="ddl-label">@Html.Translate("lblEnterMobile")</label>
+                                                @Html.TextBoxFor(model => model.Mobile, new { @type="tel",name = "fld_mobile", id = "fld_mobile", placeholder = @Html.Translate("lclMobileNumberExampleResource"), autocomplete = "off", MaxLength = (Model.MobileMaxLength > 0 ? Model.MobileMaxLength.ToString() : string.Empty), @class = "ddl-input" })
+							                    <p id="mobile_validation" style="display:none">@Html.Translate("errMessageMobile")</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class= "ddl-form-field" id="fld_confirm_mobile_wrapper">
+                                                <label data-label="Please confirm your mobile number" class="ddl-label">@Html.Translate("lblConfirmMobile")</label>
+                                                @Html.TextBoxFor(model => model.ConfirmMobile, new { @type="tel",name = "fld_confirm_mobile", id = "fld_confirm_mobile", autocomplete = "off", MaxLength = Model.MobileMaxLength, @class = "ddl-input" })
+							                    <p id="confirm_mobile_validation_invalid" style="display:none">@Html.Translate("errMessageMobile")</p>
+												<p id="confirm_mobile_validation_mismatch" style="display:none">@Html.Translate("errMessageConfirmMobile")</p>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+									<div class="copy-wrapper">
+										<p id="lblTextDesc">@Html.Translate("lblTextDesc")</p>
+										<p><strong id="lblTextDesc1">@Html.Translate("lblTextDesc1")</strong></p>
+										<p id="lblTextDesc2">@Html.Translate("lblDesc") <a href="@Resources.ConfigLinks.PHTermsConditions" style="cursor: hand" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHTermsConditions) ? "_blank" : "_self"'>@Html.Translate("lnkTnC")</a></p>
+									</div>
+                                </div>
+                                <div class="copy-wrapper" data-conditionalContent="3">                                            
+                                    <p>@Html.Translate("lblCheckAddress")<strong> @Html.DisplayFor(model => model.PostalAddress)</strong></p>
+                                    <p id ="lblPostDesc">@Html.Translate("lblPostDesc") <a href='@Url.Action("PersonalDetails", "AccountManagement")'>@Html.Translate("lnkMyPersonalDetails")</a></p>
+                                   @* <p id="lblPostDesc1">@Html.Translate("lblPostDesc1")</p> *@
+                                    @if (@Html.Translate("lblDesc3").ToString().Length > 0) 
+                                   {
+                                    <p id="lblPostDesc2">@Html.Translate("lblDesc3") <a href="@Resources.ConfigLinks.PHTermsConditions" style="cursor: hand" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHTermsConditions) ? "_blank" : "_self"'>@Html.Translate("lnkTnC")</a></p>
+                                   }
+                                   else
+                                   {
+                                    <p id="lblPostDesc2">@Html.Translate("lblDesc") <a href="@Resources.ConfigLinks.PHTermsConditions" style="cursor: hand" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHTermsConditions) ? "_blank" : "_self"'>@Html.Translate("lnkTnC")</a></p>
+                                   }
+                                </div>
+                            </div>
+                        
+                        @* <p>
+                            @Html.Translate("lblDesc1")<br />
+                            @Html.Translate("lblDesc2")
+                        </p> *@
+                    </div> 
+                </fieldset>
+                <input type="submit" value='@Html.Translate("lblConfirm")' class="ddl-button" name="ConfirmPreferences" id="btnSaveContactPrefs" onclick="return ValidateContactPref()" />
+	        </div>
+        </div>
+    </div>
+
+	if (Model.IsPostLargePrintVisisble)
+	{ 
+	    <div class="row">
+	        <div class="gr-12">
+	            <div class="ddl-button-banner">
+				<div class="ddl-button-banner-column">
+ 		                <h2 class="ddl-h5-like">@Html.Translate("lblBraille")</h2>
+                        <p>@Html.Translate(Model.IsPostLargePrintOpted ? "lblLargeprintOpted" : Model.IsBrailleOpted ? "lblBrailleOpted" : "lblBrailleStatementNotOptIn")</p>
+	                    @*	@Html.TextBoxFor(model => model.Braille, new { disabled = "true", name = "fld_Braille", id = "fld_Braille", @class="ddl-input" }) *@												
+		               @* <p>@Html.Translate("lblBrailleDesc")</p> *@
+					</div>
+	            </div>
+	        </div>
+	    </div>	
+	}      
+}

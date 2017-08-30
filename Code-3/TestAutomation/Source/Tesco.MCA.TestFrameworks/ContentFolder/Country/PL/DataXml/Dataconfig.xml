@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestingData>
+	<TestData_AccountDetails ID="DBT">
+		<Clubcard>634009520000000020</Clubcard>
+                <BlockedClubcard>634009520000000038</BlockedClubcard>
+<NoActiveCouponClubcard>634009528001013000</NoActiveCouponClubcard>
+ <ClubcardforDate>634009528001013002</ClubcardforDate>
+
+
+		<Password>cco1234</Password>
+		<EmailID/>
+	</TestData_AccountDetails> 
+	<TestData_AccountDetails ID="PPE">
+		<Clubcard>634009528000000072</Clubcard>
+    <Clubcard1>634004024022388518</Clubcard1>
+    <Clubcard2>634004024022388518</Clubcard2>
+    <BlockedClubcard>634004850161090915</BlockedClubcard>
+    <Password></Password>
+    <EmailID></EmailID>
+	</TestData_AccountDetails> 
+	<TestData_Activation ID="DBT">
+		<Clubcard>634004850161090915</Clubcard>
+		<SpecialChars>spec!@l</SpecialChars>
+    <CSCUsername>SVC-HU-IIS-NGC-APP</CSCUsername>
+    <CSCPassword>NCQU8V7f5q</CSCPassword>
+		<SpaceChar> </SpaceChar>
+		<AlphabetChar>ALPHABET</AlphabetChar>
+		<Numbers>123456</Numbers>
+	</TestData_Activation>
+  <TestData_JoinDetails ID="DBT">
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>auto</Name1>
+    <Name2>Sr</Name2>
+    <Name3>testowanie</Name3>
+    <MailingAddressPostCode>AL74F</MailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <EveningPhoneNumber>0</EveningPhoneNumber>
+    <MobilePhoneNumber>0</MobilePhoneNumber>
+    <DayTimePhoneNumber>0</DayTimePhoneNumber>
+    <MailingAddressLine1>Poste Polonaise</MailingAddressLine1>
+    <MailingAddressLine2>18/6</MailingAddressLine2>
+    <MailingAddressLine4>Bureau du trafic international</MailingAddressLine4>
+    <MailingAddressLine5>WARSZAWA</MailingAddressLine5>
+    <PromotionalCodeStartingToday>Sand</PromotionalCodeStartingToday>
+    <PromotionalCodeExpiringToday>Sand</PromotionalCodeExpiringToday>
+    <InvalidPromotionalCode>IN01VALID</InvalidPromotionalCode>
+    <PromotionalCodeStartingTommorow></PromotionalCodeStartingTommorow>
+    <ExpiredPromotionalCode>comp10</ExpiredPromotionalCode>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2></ProfaneName2>
+    <InvalidName1>Invalid1!*</InvalidName1>
+    <ProfaneName1></ProfaneName1>
+    <InvalidName3>1!*Invalid#</InvalidName3>
+    <ProfaneName3></ProfaneName3>
+    <ProfaneHouseName></ProfaneHouseName>
+    <InvalidMailingAddressPostCode>@#$%^</InvalidMailingAddressPostCode>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <InvalidEveningPhoneNumber>ABC</InvalidEveningPhoneNumber>
+    <InvalidMobilePhoneNumber>ABC</InvalidMobilePhoneNumber>
+    <InvalidDayTimePhoneNumber>ABC</InvalidDayTimePhoneNumber>
+    <ProfaneMailingAddressLine1></ProfaneMailingAddressLine1>
+    <ProfaneMailingAddressLine2></ProfaneMailingAddressLine2>
+    <ProfaneMailingAddressLine4></ProfaneMailingAddressLine4>
+    <ProfaneMailingAddressLine5></ProfaneMailingAddressLine5>
+    <InvalidMailingAddressLine1>InvalMail^53%$6</InvalidMailingAddressLine1>
+    <InvalidMailingAddressLine2>InvalMail^53%$6</InvalidMailingAddressLine2>
+    <InvalidMailingAddressLine4>InvalMail^53%$6</InvalidMailingAddressLine4>
+    <InvalidMailingAddressLine5>InvalMail^53%$6</InvalidMailingAddressLine5>
+  </TestData_JoinDetails>
+  <TestData_JoinDetails ID="GD">
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>auto</Name1>
+    <Name2>Sr</Name2>
+    <Name3>testowanie</Name3>
+    <MailingAddressPostCode>AL74F</MailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <EveningPhoneNumber>0</EveningPhoneNumber>
+    <MobilePhoneNumber>0</MobilePhoneNumber>
+    <DayTimePhoneNumber>0</DayTimePhoneNumber>
+    <MailingAddressLine1>Poste Polonaise</MailingAddressLine1>
+    <MailingAddressLine2>18/6</MailingAddressLine2>
+    <MailingAddressLine4>Bureau du trafic international</MailingAddressLine4>
+    <MailingAddressLine5>WARSZAWA</MailingAddressLine5>
+    <PromotionalCodeStartingToday>Sand</PromotionalCodeStartingToday>
+    <PromotionalCodeExpiringToday>Sand</PromotionalCodeExpiringToday>
+    <InvalidPromotionalCode>IN01VALID</InvalidPromotionalCode>
+    <PromotionalCodeStartingTommorow></PromotionalCodeStartingTommorow>
+    <ExpiredPromotionalCode>comp10</ExpiredPromotionalCode>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2></ProfaneName2>
+    <InvalidName1>Invalid1!*</InvalidName1>
+    <ProfaneName1></ProfaneName1>
+    <InvalidName3>1!*Invalid#</InvalidName3>
+    <ProfaneName3></ProfaneName3>
+    <ProfaneHouseName></ProfaneHouseName>
+    <InvalidMailingAddressPostCode>@#$%^</InvalidMailingAddressPostCode>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <InvalidEveningPhoneNumber>ABC</InvalidEveningPhoneNumber>
+    <InvalidMobilePhoneNumber>ABC</InvalidMobilePhoneNumber>
+    <InvalidDayTimePhoneNumber>ABC</InvalidDayTimePhoneNumber>
+    <ProfaneMailingAddressLine1></ProfaneMailingAddressLine1>
+    <ProfaneMailingAddressLine2></ProfaneMailingAddressLine2>
+    <ProfaneMailingAddressLine4></ProfaneMailingAddressLine4>
+    <ProfaneMailingAddressLine5></ProfaneMailingAddressLine5>
+    <InvalidMailingAddressLine1>InvalMail^53%$6</InvalidMailingAddressLine1>
+    <InvalidMailingAddressLine2>InvalMail^53%$6</InvalidMailingAddressLine2>
+    <InvalidMailingAddressLine4>InvalMail^53%$6</InvalidMailingAddressLine4>
+    <InvalidMailingAddressLine5>InvalMail^53%$6</InvalidMailingAddressLine5>
+  </TestData_JoinDetails>
+  <TestData_Activation ID="PPE">
+    <Email>box</Email>
+    <Password>abcd@1234</Password>
+    <Repassword>abcd@1234</Repassword>
+  </TestData_Activation>
+  <TestData_HomeSecurity ID="DBT">
+	  <SpecialChars>#</SpecialChars>
+    <SpaceChar> </SpaceChar>
+	  <AlphabetChar>A</AlphabetChar>
+    </TestData_HomeSecurity>
+  <TestData_Voucher ID="DBT">
+    <ActiveClubcard>634009528001013002</ActiveClubcard>
+    <TopUpClubcard>634009528001013002</TopUpClubcard>
+    <BonusClubCard>634009528001013002</BonusClubCard>
+    <RedeemedClubCard>634009528001013002</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher> 
+  <TestData_Voucher ID="GD">
+    <ActiveClubcard>634009528001013002</ActiveClubcard>
+    <TopUpClubcard>634009528001013002</TopUpClubcard>
+    <BonusClubCard>634009528001013002</BonusClubCard>
+    <RedeemedClubCard>634009528001013002</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher>
+</TestingData>

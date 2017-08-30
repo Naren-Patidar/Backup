@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01/Imports">
+      <xsd:import namespace="http://tesco.com/clubcardonline/datacontract/2010/01" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClubcardService_IsXmasClubMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsXmasClubMember" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_IsXmasClubMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsXmasClubMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetChristmasSaverSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChristmasSaverSummary" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetChristmasSaverSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChristmasSaverSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetMyAccountDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAccountDetails" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetMyAccountDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyAccountDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_IsNewOrderReplacementValid_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsNewOrderReplacementValid" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_IsNewOrderReplacementValid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsNewOrderReplacementValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddNewOrderReplacement_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewOrderReplacement" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddNewOrderReplacement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewOrderReplacementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetHouseholdCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHouseholdCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetHouseholdCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHouseholdCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetClubcards_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClubcards" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetClubcards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClubcardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetClubcardsCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClubcardsCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetClubcardsCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClubcardsCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetPointsForAllCollPeriodByCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsForAllCollPeriodByCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetPointsForAllCollPeriodByCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsForAllCollPeriodByCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetTxnDetailsByCustomerAndOfferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTxnDetailsByCustomerAndOfferID" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetTxnDetailsByCustomerAndOfferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTxnDetailsByCustomerAndOfferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetTxnDetailsByHouseholdCustomerAndOfferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTxnDetailsByHouseholdCustomerAndOfferID" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetTxnDetailsByHouseholdCustomerAndOfferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTxnDetailsByHouseholdCustomerAndOfferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetPointsSummaryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsSummaryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetPointsSummaryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsSummaryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_CheckCustomerActivated_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckCustomerActivated" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_CheckCustomerActivated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckCustomerActivatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_CheckHouseholdStatusOfCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckHouseholdStatusOfCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_CheckHouseholdStatusOfCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckHouseholdStatusOfCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddPrimaryCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPrimaryCard" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddPrimaryCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPrimaryCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCustomerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerStatus" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCustomerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_RollBackCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:RollBackCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_RollBackCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RollBackCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ValidateTokenCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTokenCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ValidateTokenCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTokenCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewCardRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCardRange" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewCardRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCardRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCardRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardRange" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCardRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewCardType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCardType" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewCardType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddCardRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCardRange" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddCardRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCardRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_DeleteCardRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCardRange" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_DeleteCardRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCardRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddCardType_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCardType" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddCardType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCardType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardType" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateCardType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStores_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStores" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStoreRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStoreRegion" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStoreRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStoreRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStoreFormat_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStoreFormat" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_ViewStoreFormat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewStoreFormatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddStores_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStores" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_AddStores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateStores_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStores" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_UpdateStores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetStoreNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreNames" />
+  </wsdl:message>
+  <wsdl:message name="IClubcardService_GetStoreNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreNamesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IClubcardService">
+    <wsdl:operation name="IsXmasClubMember">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsXmasClubMember" message="tns:IClubcardService_IsXmasClubMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsXmasClubMemberResponse" message="tns:IClubcardService_IsXmasClubMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasSaverSummary">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetChristmasSaverSummary" message="tns:IClubcardService_GetChristmasSaverSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetChristmasSaverSummaryResponse" message="tns:IClubcardService_GetChristmasSaverSummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyAccountDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetMyAccountDetails" message="tns:IClubcardService_GetMyAccountDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetMyAccountDetailsResponse" message="tns:IClubcardService_GetMyAccountDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNewOrderReplacementValid">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsNewOrderReplacementValid" message="tns:IClubcardService_IsNewOrderReplacementValid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsNewOrderReplacementValidResponse" message="tns:IClubcardService_IsNewOrderReplacementValid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewOrderReplacement">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddNewOrderReplacement" message="tns:IClubcardService_AddNewOrderReplacement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddNewOrderReplacementResponse" message="tns:IClubcardService_AddNewOrderReplacement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHouseholdCustomers">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetHouseholdCustomers" message="tns:IClubcardService_GetHouseholdCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetHouseholdCustomersResponse" message="tns:IClubcardService_GetHouseholdCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClubcards">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcards" message="tns:IClubcardService_GetClubcards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcardsResponse" message="tns:IClubcardService_GetClubcards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClubcardsCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcardsCustomer" message="tns:IClubcardService_GetClubcardsCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetClubcardsCustomerResponse" message="tns:IClubcardService_GetClubcardsCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsForAllCollPeriodByCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsForAllCollPeriodByCustomer" message="tns:IClubcardService_GetPointsForAllCollPeriodByCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsForAllCollPeriodByCustomerResponse" message="tns:IClubcardService_GetPointsForAllCollPeriodByCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTxnDetailsByCustomerAndOfferID">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByCustomerAndOfferID" message="tns:IClubcardService_GetTxnDetailsByCustomerAndOfferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByCustomerAndOfferIDResponse" message="tns:IClubcardService_GetTxnDetailsByCustomerAndOfferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTxnDetailsByHouseholdCustomerAndOfferID">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByHouseholdCustomerAndOfferID" message="tns:IClubcardService_GetTxnDetailsByHouseholdCustomerAndOfferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByHouseholdCustomerAndOfferIDResponse" message="tns:IClubcardService_GetTxnDetailsByHouseholdCustomerAndOfferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsSummaryInfo">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsSummaryInfo" message="tns:IClubcardService_GetPointsSummaryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetPointsSummaryInfoResponse" message="tns:IClubcardService_GetPointsSummaryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCustomerActivated">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckCustomerActivated" message="tns:IClubcardService_CheckCustomerActivated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckCustomerActivatedResponse" message="tns:IClubcardService_CheckCustomerActivated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckHouseholdStatusOfCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckHouseholdStatusOfCustomer" message="tns:IClubcardService_CheckHouseholdStatusOfCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/CheckHouseholdStatusOfCustomerResponse" message="tns:IClubcardService_CheckHouseholdStatusOfCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPrimaryCard">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddPrimaryCard" message="tns:IClubcardService_AddPrimaryCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddPrimaryCardResponse" message="tns:IClubcardService_AddPrimaryCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCustomerStatus" message="tns:IClubcardService_UpdateCustomerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCustomerStatusResponse" message="tns:IClubcardService_UpdateCustomerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RollBackCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/RollBackCustomerDetails" message="tns:IClubcardService_RollBackCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/RollBackCustomerDetailsResponse" message="tns:IClubcardService_RollBackCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTokenCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ValidateTokenCustomer" message="tns:IClubcardService_ValidateTokenCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ValidateTokenCustomerResponse" message="tns:IClubcardService_ValidateTokenCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCardRange">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardRange" message="tns:IClubcardService_ViewCardRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardRangeResponse" message="tns:IClubcardService_ViewCardRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCardRange">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardRange" message="tns:IClubcardService_UpdateCardRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardRangeResponse" message="tns:IClubcardService_UpdateCardRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCardType">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardType" message="tns:IClubcardService_ViewCardType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewCardTypeResponse" message="tns:IClubcardService_ViewCardType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCardRange">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardRange" message="tns:IClubcardService_AddCardRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardRangeResponse" message="tns:IClubcardService_AddCardRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCardRange">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/DeleteCardRange" message="tns:IClubcardService_DeleteCardRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/DeleteCardRangeResponse" message="tns:IClubcardService_DeleteCardRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCardType">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardType" message="tns:IClubcardService_AddCardType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddCardTypeResponse" message="tns:IClubcardService_AddCardType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCardType">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardType" message="tns:IClubcardService_UpdateCardType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateCardTypeResponse" message="tns:IClubcardService_UpdateCardType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStores">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStores" message="tns:IClubcardService_ViewStores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoresResponse" message="tns:IClubcardService_ViewStores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStoreRegion">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreRegion" message="tns:IClubcardService_ViewStoreRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreRegionResponse" message="tns:IClubcardService_ViewStoreRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStoreFormat">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreFormat" message="tns:IClubcardService_ViewStoreFormat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/ViewStoreFormatResponse" message="tns:IClubcardService_ViewStoreFormat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStores">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddStores" message="tns:IClubcardService_AddStores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/AddStoresResponse" message="tns:IClubcardService_AddStores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStores">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateStores" message="tns:IClubcardService_UpdateStores_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/UpdateStoresResponse" message="tns:IClubcardService_UpdateStores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreNames">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetStoreNames" message="tns:IClubcardService_GetStoreNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetStoreNamesResponse" message="tns:IClubcardService_GetStoreNames_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,40 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>285830518</CustomerID>
+            <ClubcardID>634002400020149122</ClubcardID>
+            <CardIssuedDate>2010-03-30T00:00:00+01:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Caroledjfsdh</Name1>
+            <Name2 />
+            <Name3>Tennantdffdsf</Name3>
+            <MailingAddressLine1>12 ROY</MailingAddressLine1>
+            <MailingAddressLine2>FAIRFIELD ROAD</MailingAddressLine2>
+            <MailingAddressLine3>NORTHWICH</MailingAddressLine3>
+            <MailingAddressLine4 />
+            <MailingAddressLine5 />
+            <MailingAddressPostCode>CW9 8BX</MailingAddressPostCode>
+            <CurrentPointsBalanceQty>600</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>240</PreviousPointsBalanceQty>
+            <JoinedDate>1999-06-10T00:00:00+01:00</JoinedDate>
+            <HouseHoldID>275661713</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteID>4</JoinRouteID>
+            <JoinRouteDesc>Privilegecards</JoinRouteDesc>
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

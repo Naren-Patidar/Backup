@@ -1,0 +1,132 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.HomeViewModel
+@{
+    bool hideVoucherLockOnHome = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality][DbConfigurationItemNames.HideVoucherLock.ToString()].ConfigurationValue1.Equals("1");
+    bool hideCouponBanner = !DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HideCouponBanner].ConfigurationValue1.Equals("0");
+    string strAction = string.Empty;
+    var IsMyMessageBoxVisible = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsMyMessageBoxVisible.ToString()].ConfigurationValue1.ToString();
+    var IsVoucherStripVisible = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsVoucherStripVisible.ToString()].ConfigurationValue1.ToString();
+    bool isVoucherValueVisible = Model.IsSecurityCheckDone || hideVoucherLockOnHome;
+}
+<div class="row">
+
+    @Html.EditorFor(model => model.PointsStrip, "PointsBannerModel")
+    
+    @Html.EditorFor(model => model.VoucherStrip, "VouchersBanner") 
+    @if (IsVoucherStripVisible == "1" && Model.OptedSchemeId != 0)
+    {  
+        <div class="gr-12">
+            <label id='lblVoucherCountURL' style='display: none;'>@Url.Action("GetUnusedVoucherRewardsCount", "Vouchers")</label>
+            <label id="lblIsVoucherValueVisible" style='display: none;'>@isVoucherValueVisible</label>
+
+            <a id="vouchersCountStrip" href="@Url.Action("Home", "Vouchers")" class="hide">
+                <div class="table-wrapper points-callout points-callout-link points-callout-secondary ddl-icon-before ddl-icon-vouchers">
+                    <table>
+                        <thead class="ddl-visually-hidden">
+                            <tr>
+                                <th class="ddl-text-left">
+                                    Type of points
+                                </th>
+                                <th class="ddl-text-centre">
+                                    Amount of points
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="vouchersLeftText">
+                                    <h2>@Html.Translate("Shared/_Points", "historicalVouchers")</h2>
+                                </td>
+                                <td id="vouhersLeft" class="ddl-no-wrap">                                  
+                                    @Html.Translate("Shared/_Points", "CurrencySymbol") Alpha @Html.Translate("Shared/_Points", "AlphaSymbol")
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        </div>
+    }
+    @if (!hideCouponBanner)
+    {
+        <label id='couponlink' style='display: none;'>@Url.Action("AvailableCoupon", "Coupons")</label>
+        <div class="gr-12" id="couponsStrip" style="display: none">
+            <a id="couponsLink" href="@Url.Action("Home", "Coupons")">
+                <div class="table-wrapper points-callout points-callout-link points-callout-secondary ddl-icon-before ddl-icon-coupons">
+                    <table>
+                        <thead class="ddl-visually-hidden">
+                            <tr>
+                                <th class="ddl-text-left">
+                                    Type of points
+                                </th>
+                                <th class="ddl-text-centre">
+                                    Amount of points
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="couponsText">
+                                    <h2>@Html.Translate("Shared/_CouponsBox", "CouponAvailableLable")</h2>
+                                </td>
+                                <td id="couponsTotal" class="ddl-no-wrap">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+@if (IsMyMessageBoxVisible == "1")
+{
+    <div class="row">
+        <div class="gr-12">
+            <div class="ddl-button-banner">
+                @switch (Model.MyMessageHeader)
+                {
+                    case "PointsError":
+                    <div class="ddl-button-banner-column">
+                        <h2 id="messageHeader" class="ddl-h5-like">
+                            @Html.Translate("Home/Home", "PointsMessage")
+                        </h2>
+                        <p id="lblPointsMessage">@Html.Translate("Home/Home", "MyAccountVariableProcessingMessage")</p>
+                    </div>
+                    <div class="ddl-button-banner-column">
+                        <a href="@Url.Action("Home", "Points")" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+                            View latest transactions</a>
+                    </div>
+                            break;
+                    case "Preference":
+                    <div class="ddl-button-banner-column">
+                        <h2 id="messageHeader" class="ddl-h5-like">
+                            @Html.Translate("Home/Home", "PreferenceMessage")</h2>
+                        <p id="lblPreferenceMessage">@Html.Translate("Home/Home", "MyAccountVariablePreferenceMessage")</p>
+                    </div>
+                    <div class="ddl-button-banner-column">
+                        <a href="@Url.Action("ContactPreferences", "AccountManagement")" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+                            Change contact preferences</a>
+                    </div>
+                            break;
+                    case "AddressError":
+                    <div class="ddl-button-banner-column">
+                        <h2 id="messageHeader" class="ddl-h5-like">
+                            @Html.Translate("Home/Home", "MyAddressErrorHeader")</h2>
+                        <p id="lblAddressError">@Html.Translate("Home/Home", "MyAccountAddressError")</p>
+                    </div>
+                    <div class="ddl-button-banner-column">
+                        <a href="@Url.Action("PersonalDetails", "AccountManagement")" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+                            Update adress</a>
+                    </div>
+                            break;
+                }
+            </div>
+        </div>
+    </div>
+}

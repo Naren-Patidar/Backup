@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnFindCouponResource1.Text" xml:space="preserve">
+    <value>Vyhľadať kupón</value>
+  </data>
+  <data name="btnFindCouponResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBarcodeNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBarcodeNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClubcardNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClubcardNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCouponDescrResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCouponDescrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCouponStatusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCouponStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExpDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExpDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssuanceChannelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssuanceChannelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssueDateTimeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssueDateTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssueStoreResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIssueStoreResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOnlineCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOnlineCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedemdPlaceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedemdPlaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedemtnDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedemtnDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedmtnsRemainResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRedmtnsRemainResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTotalRedmtnsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTotalRedmtnsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTransTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTransTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclBarNumberResource1.Text" xml:space="preserve">
+    <value>Číslo čiarového kódu</value>
+  </data>
+  <data name="lclClubNumResource1.Text" xml:space="preserve">
+    <value>Číslo karty Clubcard</value>
+  </data>
+  <data name="lclCouponBacodeResource1.Text" xml:space="preserve">
+    <value>Čiarový kód kupónu:</value>
+  </data>
+  <data name="lclCouponStatusResource1.Text" xml:space="preserve">
+    <value>Stav kupónu</value>
+  </data>
+  <data name="lclDatetimeofRedemResource1.Text" xml:space="preserve">
+    <value>Dátum a čas uplatnenia</value>
+  </data>
+  <data name="lclExpDateResource1.Text" xml:space="preserve">
+    <value>Dátum konca platnosti</value>
+  </data>
+  <data name="lclFindCouponResource1.Text" xml:space="preserve">
+    <value>Vyhľadať kupón</value>
+  </data>
+  <data name="lclFullDescResource1.Text" xml:space="preserve">
+    <value>Úplný opis kupónu</value>
+  </data>
+  <data name="lclIssueChanelResource1.Text" xml:space="preserve">
+    <value>Spôsob vydania</value>
+  </data>
+  <data name="lclIssueDatetimeResource1.Text" xml:space="preserve">
+    <value>Dátum a čas vydania</value>
+  </data>
+  <data name="lclIssueStoreResource1.Text" xml:space="preserve">
+    <value>Vydávajúci obchod</value>
+  </data>
+  <data name="lclOnlineCdResource1.Text" xml:space="preserve">
+    <value>Online kód :</value>
+  </data>
+  <data name="lclOnlineCodeResource1.Text" xml:space="preserve">
+    <value>Online kód</value>
+  </data>
+  <data name="lclPlaceRedmdResource1.Text" xml:space="preserve">
+    <value>Miesto uplatnenia</value>
+  </data>
+  <data name="lclRedemRemainingResource1.Text" xml:space="preserve">
+    <value>Uplatnené položky – zostávajúce</value>
+  </data>
+  <data name="lclTtlRedemResource1.Text" xml:space="preserve">
+    <value>Uplatnené položky spolu</value>
+  </data>
+  <data name="lclTxnTypeResource1.Text" xml:space="preserve">
+    <value>Typ transakcie</value>
+  </data>
+  <data name="lclValidBarcodeResource1.Text" xml:space="preserve">
+    <value>Zadajte platný čiarový kód kupónu alebo online kód</value>
+  </data>
+  <data name="ltrCouponDtlResource1.Text" xml:space="preserve">
+    <value>Údaje kupónu</value>
+  </data>
+  <data name="ltrCouponIssuanceResource1.Text" xml:space="preserve">
+    <value>Vydanie kupónu</value>
+  </data>
+  <data name="ltrCpnRedmtnResource1.Text" xml:space="preserve">
+    <value>Uplatnenie kupónu</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Vyhľadať kupón</value>
+  </data>
+  <data name="txtCouponBarcodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCouponBarcodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOnlineCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOnlineCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

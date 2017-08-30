@@ -1,0 +1,42 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>804862</CustomerID>
+            <ClubcardID>634009528001013002</ClubcardID>
+            <CardIssuedDate>2010-06-07T19:15:00+02:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Clubcard</Name1>
+            <Name2 />
+            <Name3>King</Name3>
+            <MailingAddressLine1>PÉTERFY SÁNDOR UTCA</MailingAddressLine1>
+            <MailingAddressLine2>19.  FSZT/1</MailingAddressLine2>
+            <MailingAddressLine3 />
+            <MailingAddressLine4>BUDAPEST</MailingAddressLine4>
+            <MailingAddressLine5>HUNGARY</MailingAddressLine5>
+            <MailingAddressPostCode>1076</MailingAddressPostCode>
+            <DateOfBirth>1957-12-18T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>1803</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>1566</PreviousPointsBalanceQty>
+            <JoinedDate>2010-06-03T00:00:00+02:00</JoinedDate>
+            <HouseHoldID>804862</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+            <AmendBy>System</AmendBy>
+            <AmendDateTime>03/03/2015 06:01</AmendDateTime>
+          </Customer>
+        </NewDataSet>
+      </resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

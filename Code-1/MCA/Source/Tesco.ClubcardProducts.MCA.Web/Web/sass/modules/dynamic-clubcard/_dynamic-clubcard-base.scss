@@ -1,0 +1,163 @@
+.ddl-dynamic-clubcard-wrapper {
+	position: relative;
+	margin: 0 10px 20px 10px;
+	height: 230px;
+	max-width: 360px;
+	z-index: 1;
+	perspective: 1000;
+
+	.ddl-dynamic-clubcard {
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transition: all .5s linear;
+
+		.face {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			background: pink;
+			border-radius: 20px;
+			text-align: center;
+			background: #6eb7df;
+			background: linear-gradient(to bottom,  #6eb7df 0%,#124b7d 100%);
+			color: #fff !important;
+			overflow: hidden;
+			display: table;
+
+			.card-screen, .card-screen-fixed {
+				width: 100%;
+				height: 100%;
+				padding: 10px 20px 0 20px;
+				display: table-cell;
+				vertical-align: middle;
+
+				.ddl-icon-close, .ddl-icon-right {
+					position: absolute;
+					top: 10px;
+					right: 35px;
+				}
+
+				.ddl-icon-right {
+					right: auto;
+					left: 5px;
+				}
+			}
+
+			.card-screen {
+				width: 100%;
+				height: 100%;
+				padding: 20px 30px 0 20px;
+				position: absolute;
+				top: 0;
+				left: 9999px;
+
+				&.active {
+					left: 0;
+				}
+
+			}
+
+
+			h2, h3, p {
+				color: #fff;				
+			}
+
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 5px;
+
+				span {
+					display: block;
+					font-size: 2.8rem;
+					font-weight: normal;
+				}
+
+				strong {
+					display: block;
+					font-size: 5rem;
+					padding: 20px 0;
+				}
+			}
+
+			h3 {
+
+				strong {
+					display: block;
+					font-size: 3.6rem;
+					margin: 20px auto;
+				}
+			}
+
+			img {
+				width: 120px;
+				margin: 20px auto;
+			}
+
+
+
+			.ddl-button {
+				display: block;
+				margin-bottom: 20px;
+				border-color: #fff;
+				color: #fff;
+			}
+		}
+
+		.face.back {
+			transform: rotateY(180deg);
+		}
+	}
+
+	&.active .ddl-dynamic-clubcard {
+	  transform: rotateY(180deg);
+	}
+
+}
+
+#camera {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999999;
+	background: #000 url(/images/site/receipt.jpg) no-repeat bottom left;
+	background-size: 100%;
+
+	.ddl-button {
+		background: #fff;
+		position: absolute;
+		bottom: 22px;
+		left: 50%;
+		margin-left: -30px;
+		width: 62px;
+		height: 62px;
+		text-indent: -9999px;
+		border-radius: 50px;
+	}
+
+	&.flash {
+
+		&:before {
+			content: ' ';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background: rgba(255,255,255,.8);
+		}
+	}
+}
+
+
+
+
+
+
+
+

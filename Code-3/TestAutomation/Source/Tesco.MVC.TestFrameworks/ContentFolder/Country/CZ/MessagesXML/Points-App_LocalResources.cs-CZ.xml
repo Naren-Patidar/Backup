@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Points-App_LocalResources>
+  <Home.cshtml.cs-CZ.resx>
+  <Data key="lblSeparator" value="-" />
+		<Data key="lclCallCustomerSrvice" value="Call customer services on &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:08005916881&quot; &gt;0800 591 688&lt;/a&gt;* or &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:033012316882&quot; &gt;0330 123 1688&lt;/a&gt;** ." />		
+		<Data key="CommunicateMsg1Resource1" value="*Free from BT landlines. Other providers vary. Calls may be recorded." />
+		<Data key="CommunicateMsg2Resource1" value="**Charged at local rate from mobiles and private telephones." />
+    <Data key="PointsHomeError" value="There's some error fetching your Points Detail. Please try later." />
+	 <Data key="aviosMiles" value="Equivalent Avios:" />
+    <Data key="BAmiles" value="Equivalent BA Avios:" />
+    <Data key="lblClickHere" value="Klikněte zde" />
+    <Data key="lblClubcardStatement" value=", k datu" />
+    <Data key="lblClubcardSummary" value="Přehled Clubcard bodů" />
+    <Data key="lblCurrentCollectionPeriod" value="Aktuální zúčtovací období" />
+    <Data key="lblCurrentPointsTotal" value="Současný stav bodů:" />
+    <Data key="lblEasyEarn" value="Získat body je tak snadné." />
+    <Data key="lblFinalDate" value="Další uzávěrka Clubcard bodů je připravena na" />
+    <Data key="lblFrmTesco" value="Chcete-li zjistit, jak získat co nejvíce z vašeho Tesco Clubcard, prosím" />
+    <Data key="lblLink" value="#" />
+    <Data key="lblMyPoints" value="Moje body" />
+    <Data key="AlphaSymbol" value="Kč" />
+    <Data key="lblUHaveCollected" value="Zde najdete souhrn Clubcard bodů, které jste nasbírali od" />
+    <Data key="stdVoucher" value="Platné Clubcard poukázky:" />
+    <Data key="virginMiles" value="Equivalent Virgin Flying Club Miles:" />
+    <Data key="xmasmiles" value="Celkem uloženo poukázek" />
+    <Data key="CurrencySymbol" value="" />
+    <Data key="lclClickHereResource" value="Klikněte zde" />
+    <Data key="lclDtlResource" value="Podrobnosti" />
+    <Data key="lclMisPointsResource" value="Chybějící body?" />
+    <Data key="lclMissingPointsResource" value="Pokud si myslíte, že vám chybí nějaké body, prosím" />
+    <Data key="lclPeriodcltedResource" value="Nasbírané body v období:" />
+    <Data key="lclSummaryResource" value="Přehled" />
+    <Data key="lclWhichCollectionPeriodResource" value="Zvolte období, abyste si mohli prohlédnout vaše body." />
+    <Data key="lclWudLikeResource" value="Přehled vašich bodů za minulá období" />
+    <Data key="lnkViewDetailResource" value="Zobrazit" />
+    <Data key="PageTitle" value="Moje body" />
+  </Home.cshtml.cs-CZ.resx>
+  <PointsDetail.cshtml.cs-CZ.resx>
+    <Data key="btnCloseThisWindowResource1AlternateText" value="zavřit toto okno" />
+    <Data key="btnCloseThisWindowResource1ToolTip" value="" />
+    <Data key="btnCloseThisWindowResource2AlternateText" value="zavřit toto okno" />
+    <Data key="btnCloseThisWindowResource2ToolTip" value="" />
+    <Data key="btnClearSelection" value="Zrušit výběr" />
+    <Data key="ButtonResource1ToolTip" value="" />
+    <Data key="btnClearSelectionText" value="Zrušit výběr" />
+    <Data key="ButtonResource2ToolTip" value="" />
+    <Data key="ddlCardNumbersResource1ToolTip" value="" />
+    <Data key="ddlCardNumbersResource2ToolTip" value="" />
+    <Data key="ddlTransactionTypesResource1ToolTip" value="" />
+    <Data key="ddlTransactionTypesResource2ToolTip" value="" />
+    <Data key="grdTransactionsResource1Caption" value="" />
+    <Data key="grdTransactionsResource1EmptyDataText" value="" />
+    <Data key="grdTransactionsResource1ToolTip" value="" />
+    <Data key="grdTransactionsResource2Caption" value="" />
+    <Data key="grdTransactionsResource2EmptyDataText" value="" />
+    <Data key="grdTransactionsResource2ToolTip" value="" />
+    <Data key="lblShow0PtsMsgResource1Text" value="Nyní máte na kartě 0 bodů. Nezapomeňte použít vaši Clubcard při vašem dalším nákupu." />
+    <Data key="lblShow0PtsMsgResource1ToolTip" value="" />
+    <Data key="lblShow0PtsMsgResource2Text" value="Nyní máte na kartě 0 bodů. Nezapomeňte použít vaši Clubcard při vašem dalším nákupu." />
+    <Data key="lblShow0PtsMsgResource2ToolTip" value="" />
+    <Data key="lclAmtSpndResource1Text" value="Utracená částka" />
+    <Data key="lblCouldNotFindAnyTransactions" value="Nelze najít žádné transakce" />
+    <Data key="lblUseOptions" value="Získané body můžete zkontrolovat zadáním čísla karty nebo detailu nákupu" />
+    <Data key="lblSearch" value="Vyhledávání podle:" />
+    <Data key="lblCardNumber" value="Card number:" />
+    <Data key="lblTransaction" value="Detaily nákupu" />
+    <Data key="lblBackToPointsPage" value="Zpět na stránku Moje body" />
+    <Data key="lblNote" value="" />
+    <Data key="Localize5Resource1Text" value="detaily transakce" />
+    <Data key="Localize6Resource1Text" value="Číslo karty" />
+    <Data key="Localize7Resource1Text" value="datum transakce" />
+    <Data key="Localize8Resource1Text" value="typ transakce" />
+    <Data key="Localize9Resource1Text" value="Celkový počet bodů" />
+    <Data key="lblCurrentCollectionTransaction" value="Aktuální detaily transakcí" />
+    <Data key="ltrBlueHeadResource2Text" value="Aktuální detaily transakcí" />
+    <Data key="lblPageDescription" value="Máte-li společný nebo sloučený účet, uvidíte pouze body získané z Clubcard účtu, na který jste se přihlásili." />
+    <Data key="ltrpagedescResource2Text" value="Máte-li společný nebo sloučený účet, uvidíte pouze body získané z Clubcard účtu, na který jste se přihlásili." />
+    <Data key="lblPointsCollection" value="Zde se můžete podrobněji podívat na to, kde jste nasbírali vaše body." />
+    <Data key="ltrPageDesResource2Text" value="Zde se můžete podrobněji podívat na to, kde jste nasbírali vaše body." />
+    <Data key="ltrPageTitleResource1Text" value="Aktuální informace o stavu bodů" />
+    <Data key="lblCurrentPoints" value="Aktuální informace o stavu bodů" />
+    <Data key="PageTitle" value="Moje Body" />
+    <Data key="PageResource2Title" value="points" />
+    <Data key="TemplateFieldResource1AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource1FooterText" value="" />
+    <Data key="tblHeaderCardNumber" value="Číslo karty" />
+    <Data key="TemplateFieldResource10AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource10FooterText" value="" />
+    <Data key="TemplateFieldResource10HeaderText" value="Body celkem" />
+    <Data key="TemplateFieldResource2AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource2FooterText" value="" />
+    <Data key="tblHeaderDatePoints" value="Datum" />
+    <Data key="TemplateFieldResource3AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource3FooterText" value="" />
+    <Data key="tblHeaderTransactionDetails" value="Detaily nákupu" />
+    <Data key="TemplateFieldResource4AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource4FooterText" value="" />
+    <Data key="tblHeaderTransactionValue" value="Hodnota nákupu" />
+    <Data key="TemplateFieldResource5AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource5FooterText" value="" />
+    <Data key="tblHeaderTotalPoints" value="Body celkem" />
+    <Data key="TemplateFieldResource6AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource6FooterText" value="" />
+    <Data key="TemplateFieldResource6HeaderText" value="Číslo karty" />
+    <Data key="TemplateFieldResource7AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource7FooterText" value="" />
+    <Data key="TemplateFieldResource7HeaderText" value="Datum" />
+    <Data key="TemplateFieldResource8AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource8FooterText" value="" />
+    <Data key="TemplateFieldResource8HeaderText" value="Detaily nákupu" />
+    <Data key="TemplateFieldResource9AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource9FooterText" value="" />
+    <Data key="TemplateFieldResource9HeaderText" value="Hodnota nákupu" />
+    <Data key="CurrencySymbol" value="" />
+    <Data key="lblstrCouldNotFindAnyTransactions" value="Nelze najít žádné transakce" />
+    <Data key="ItemSelect" value="vybrat" />
+    <Data key="CurrencyAlphaSymbol" value="Kč" />
+    <Data key="TemplateFieldResource11AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource11FooterText" value="" />
+    <Data key="tblHeaderBonusPoints" value="Hodnota nákupu" />
+    <Data key="lblVisaulize" value="" />
+    <Data key="lnkBackLink" value="Home" />
+    <Data key="lnkVisualizeLink" value="#" />
+    <Data key="lblFromDateSeparatorToDate" value="-" />
+    <Data key="ddlClubcard" value="vybrat" />
+    <Data key="ddlTransaction" value="vybrat" />
+    <Data key="lblYourTransactionDetailsFrom" value="" />
+  </PointsDetail.cshtml.cs-CZ.resx>
+  <PointsSummaryView.cshtml.cs-CZ.resx>
+    <Data key="AviosTtl" value="Avios total CZ" />
+    <Data key="AvsAwded" value="Avios awarded" />
+    <Data key="AvsPptsCnvted" value="Points converted to Avios" />
+    <Data key="BonusVuchers" value="Bonus voucher total" />
+    <Data key="ChangePntsFromBoost" value="Points change from Clubcard Boost" />
+    <Data key="ClickHerePointResource" value="click here" />
+    <Data key="ClubcardVouchersTotal" value="Clubcard voucher total" />
+    <Data key="ClubMilePptsCnvted" value="Points converted to Flying Club miles" />
+    <Data key="ClubMilesAwded" value="Flying Club miles awarded" />
+    <Data key="EndXmasTtl" value=" total is" />
+    <Data key="FlyingClubTtl" value="Flying Club miles total" />
+    <Data key="PntsCarriedForwardXmas" value="Total points carried forward towards your Christmas" />
+    <Data key="PntsCltedFrom" value="Points collected from " />
+    <Data key="PntsCltedTo" value="to" />
+    <Data key="PointCarriedforwordPrevious" value="Points carried forward from previous statement" />
+    <Data key="PointsCarried" value="Total points carried forward to your next statement" />
+    <Data key="PointsCollectedFromTesco" value="Points collected with Tesco" />
+    <Data key="PointsCollectedFromTescoBank" value="Points collected with Tesco Bank" />
+    <Data key="PointsConvertedAndCarried" value="Total points not converted and carried forward to your next statement" />
+    <Data key="PointsTescoBankResource" value="Clubcard points from Tesco Bank" />
+    <Data key="PointsTescoResource" value="Clubcard points from Tesco" />
+    <Data key="PreStmtCarryForward" value="Points carried forward from previous statement" />
+    <Data key="ReviewSummary" value="To review a summary of the previous collection period " />
+    <Data key="StartTextFarXmas" value="Your Christmas Savers " />
+    <Data key="StatementTitleResource" value="Statement Summary" />
+    <Data key="Stmt" value="statement" />
+    <Data key="TecsoBankVucherTtl" value="Tesco Bank voucher total" />
+    <Data key="TescoBankCarriedForward" value="Tesco Bank points carried forward" />
+    <Data key="TescoPointsCariedforword" value="Tesco points carried forward" />
+    <Data key="TescoVucherTtl" value="Tesco voucher totals" />
+    <Data key="TopupVouchers" value="Top-up voucher total" />
+    <Data key="TotalPointsCollected" value="Total points" />
+    <Data key="TotalRewardLabelNonXmas" value="Voucher total" />
+    <Data key="TotalRewardLabelXmas" value="Voucher total" />
+    <Data key="TotalTescoBnkPnts" value="Total Tesco Bank points" />
+    <Data key="TotalTescoPnts" value="Total Tesco points" />
+    <Data key="VucherTtl" value="Voucher total CZ" />
+    <Data key="CurrencyAlphaSymbol" value="Kč" />
+    <Data key="CurrencySymbol" value="" />
+    <Data key="PageTitle" value="Moje body" />
+    <Data key="Nutri" value="The Nutri Centre" />
+    <Data key="Other" value="Other" />
+  </PointsSummaryView.cshtml.cs-CZ.resx>
+</Points-App_LocalResources>

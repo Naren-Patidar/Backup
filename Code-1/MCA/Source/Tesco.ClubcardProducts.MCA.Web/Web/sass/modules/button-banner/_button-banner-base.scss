@@ -1,0 +1,64 @@
+.ddl-button-banner {
+	position: relative;
+	background: $ddl-grey4;
+	padding: 24px 12px;
+	margin-bottom: 20px;
+
+	form {
+		height: 100%;
+
+		input {
+			height: 0px;
+			top: 30%;
+		}
+	}
+
+	h2 {
+		padding: 0!important;
+	}
+
+	p {
+		margin-bottom: 1.6rem;
+		padding-top: 1rem;
+
+		a {
+			font-family: 'tescobold';
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.ddl-button-group {
+
+		.ddl-button {
+			float: none;
+		}
+	}
+
+	&.ddl-button-banner-error {
+
+		h2, p {
+			color: $ddl-red2;
+		}
+
+		&:before {
+			background: $ddl-red2;
+		}
+
+	}
+}
+
+
+// Temporary measure to demonstrate Sequence for multiple step sequence of Button Banner - Should be removed 
+
+
+#details-correct-step-1 {
+	display: block;
+}
+
+#details-correct-step-2 {
+	display: none;
+}

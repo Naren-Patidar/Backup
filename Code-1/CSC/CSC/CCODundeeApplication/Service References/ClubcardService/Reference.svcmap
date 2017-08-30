@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e9065924-af8a-478b-a25d-b7e351988016" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.27.8.30/CCOServiceCR/ClubcardService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClubcardService.xsd" MetadataType="Schema" ID="a0f8a0eb-27c4-44b0-9d26-596097abe4dd" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClubcardService.wsdl" MetadataType="Wsdl" ID="40b514f6-593a-4649-9e85-2a70ed4d09aa" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?wsdl" />
+    <MetadataFile FileName="ClubcardService1.xsd" MetadataType="Schema" ID="5bd2964d-b9de-4e48-aa2b-0adad89d1bb4" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClubcardService1.wsdl" MetadataType="Wsdl" ID="4e5a8f9d-ac7c-4952-b88d-66c7e13e547e" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ClubcardService2.xsd" MetadataType="Schema" ID="cdceee72-8e82-484a-a46a-813452b2c395" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClubcardService3.xsd" MetadataType="Schema" ID="cf5a078c-8690-44b0-a88d-5f40003c5aba" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClubcardService.disco" MetadataType="Disco" ID="bce2ca77-f636-4f18-9a0f-1ca87b6c4d95" SourceId="1" SourceUrl="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/ClubcardService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

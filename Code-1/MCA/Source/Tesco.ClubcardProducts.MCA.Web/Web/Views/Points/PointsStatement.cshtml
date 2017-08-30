@@ -1,0 +1,461 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@{
+    ViewBag.Title = @Html.Translate("Points/PointsStatement", "PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("Points/PointsStatement", "dtmPageTitle");
+    ViewBag.PageName = "PointsStatement";
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation")
+}
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PointsSummaryModel
+@{
+    var PointsDetails = Model.PointsDetails as Tesco.ClubcardProducts.MCA.Web.Common.Models.PointsSummaryDetailsModel;
+}
+<div class="row" id="div-main-row">
+                               
+<div class="gr-12" id="div-main-col">
+
+    @if (Model.IsHoldingPage)
+    {
+        <div class="copy-wrapper" id="div-content-holding">
+            <h1 id="h1-heading-holding" class="ddl-h2-like">
+                @GeneralUtility.GetMonthYear(PointsDetails.EndDate, GeneralUtility.GetCollectionPeriodMonth())
+                <span id="lblStmt-holding">@Html.Translate("Points/PointsStatement", "Stmt")</span>
+            </h1>
+            @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/PointsHoldingPage.html" })
+        </div>
+        <!-- Div end div-content-holding -->
+    }
+    else
+    {
+        <div class="copy-wrapper" id="div-top-main">
+            <h1 id="h1-heading-main" class="ddl-h2-like">
+                @GeneralUtility.GetMonthYear(@PointsDetails.EndDate, GeneralUtility.GetCollectionPeriodMonth())
+                <span id="lblStmt">@Html.Translate("Points/PointsStatement", "Stmt")</span>
+            </h1>
+            <p class="ddl-t2" id="p-top-summary">
+                <span id="lblStmtStartdate">@Html.Translate("Points/PointsStatement", "PntsCltedFrom") @PointsDetails.StartDateTime</span>
+                <span id="lblstmtEnddate">@Html.Translate("Points/PointsStatement", "PntsCltedTo") @PointsDetails.EndDateTime</span>
+            </p>
+            <!-- P end p-top-summary -->
+        </div>
+        <!-- Div end div-top-main -->
+        
+        <div class="table-wrapper points-callout points-callout-tertiary" id="div_Stmttypes">
+        <table id="table-1">
+            <thead class="ddl-visually-hidden">
+                <tr>
+                    <th class="ddl-text-left">Type of coupons</th>
+                    <th class="ddl-text-centre">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (PointsDetails.StatementType == StatementTypesEnum.XmasSavers)
+            {
+            <tr>
+            <td>
+                @if (@PointsDetails.OfferID != 81)
+                {
+                                @Html.Translate("Points/PointsStatement", "StartTextFarXmas")
+                                @GeneralUtility.GetColYear(@PointsDetails.EndDate)
+                                @Html.Translate("Points/PointsStatement", "EndXmasTtl")
+                }
+                else
+                {
+                                @Html.Translate("Points/PointsStatement", "VucherTtl")
+                }
+             </td>
+                <td class="ddl-no-wrap" id="lblTescoTotalRewardXmas">
+                    @Html.Translate("Points/PointsStatement", "CurrencySymbol")@PointsDetails.TescoTotalRewardXmas @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                </td>
+            </tr>
+            }
+            else if (@PointsDetails.StatementType == StatementTypesEnum.NonReward || @PointsDetails.StatementType == StatementTypesEnum.Reward)
+            {
+                <tr>
+                    <td>@Html.Translate("Points/PointsStatement", "VucherTtl")
+                    </td>
+                    <td id="ltrttlvouchersasperpref" class="ddl-no-wrap">
+                        @Html.Translate("Points/PointsStatement", "CurrencySymbol")
+                        @PointsDetails.TotalCCVoucher
+                        @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                    </td>
+                </tr> 
+            }
+            @if (PointsDetails.StatementType == StatementTypesEnum.AirmilesReward
+                        || PointsDetails.StatementType == StatementTypesEnum.BAmilesReward ||
+            PointsDetails.StatementType == StatementTypesEnum.VirginMilesReward)
+        {
+            <tr>
+        <td id="lblPptsCnvted">
+        @switch (@PointsDetails.StatementType)
+        {
+            case StatementTypesEnum.AirmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsPptsCnvted")
+                           break;
+            case StatementTypesEnum.BAmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsPptsCnvted")
+                           break;
+            case StatementTypesEnum.VirginMilesReward:
+                                @Html.Translate("Points/PointsStatement", "ClubMilePptsCnvted")
+                           break;
+        }
+        </td>
+        <td class="ddl-no-wrap">
+        <span id="lblPtsConvertedToMiles">@PointsDetails.PtsConvertedToMiles</span>
+        </td>
+        </tr>
+            <tr>
+            <td id="lblAwded">
+               @switch (@PointsDetails.StatementType)
+               {
+                   case StatementTypesEnum.AirmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsAwded")
+                           break;
+                   case StatementTypesEnum.BAmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsAwded")
+                           break;
+                   case StatementTypesEnum.VirginMilesReward:
+                                @Html.Translate("Points/PointsStatement", "ClubMilesAwded")
+                           break;
+               }
+            </td>
+            <td class="ddl-no-wrap">
+            <span id="lblMilesAwarded">@PointsDetails.MilesAwarded</span>
+            </td>
+            </tr>
+        }
+                @if (PointsDetails.StatementType == StatementTypesEnum.XmasSavers)
+                {
+                    <tr>
+                    <td id="lblClubcardVouchersTotal">@Html.Translate("Points/PointsStatement", "ClubcardVouchersTotal")</td>
+                    <td class="ddl-no-wrap">
+                    <span id="ltrTotalCCVoucher">
+                            @Html.Translate("Points/PointsStatement", "CurrencySymbol")@PointsDetails.TotalCCVoucher
+                            @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                        </span>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td id="lblTopupVouchers">@Html.Translate("Points/PointsStatement", "TopupVouchers")</td>
+                    <td class="ddl-no-wrap"><span id="ltrtopupvouchers">
+                                @Html.Translate("Points/PointsStatement", "CurrencySymbol")@PointsDetails.TopUpVouchers
+                                @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                            </span></td>
+                    </tr>
+                    <tr>
+                    <td id="lblBonusVuchers">@Html.Translate("Points/PointsStatement", "BonusVuchers")</td>
+                    <td class="ddl-no-wrap"><span id="ltrBonusVuchers">
+                                @Html.Translate("Points/PointsStatement", "CurrencySymbol")@PointsDetails.BonusVouchers
+                                @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                            </span></td>
+                    </tr>
+                    
+                }
+            </tbody>
+        </table>
+        </div>
+        <div class="table-wrapper points-callout points-callout-tertiary points-callout-tertiary-dark">
+            <table id="table-2">
+                <thead class="ddl-visually-hidden">
+                <tr>
+                    <th class="ddl-text-left">Type of coupons</th>
+                    <th class="ddl-text-centre">Value</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td id="lblPointsCollFromTesco">@Html.Translate("Points/PointsStatement", "PointsCollectedFromTesco")
+                        </td>
+                        <td class="ddl-no-wrap"><span id="ltrTescoPoints">@PointsDetails.TescoPoints</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="lblPointsCollFromTescoBank">@Html.Translate("Points/PointsStatement", "PointsCollectedFromTescoBank")
+                        </td>
+                        <td class="ddl-no-wrap"><span id="ltrTescoBankPoints">@PointsDetails.TescoBankPoints</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="lblTotalPointsCollected">@Html.Translate("Points/PointsStatement", "TotalPointsCollected")
+                        </td>
+                        <td class="ddl-no-wrap">
+                            <span id="ltrTescoTotalPoints">@PointsDetails.TotalPoints</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        if (PointsDetails.StatementType != StatementTypesEnum.XmasSavers)
+        {
+        <div class="table-wrapper points-callout points-callout-tertiary points-callout-tertiary-dark">
+        <table id="table-3">
+        <thead class="ddl-visually-hidden">
+                <tr>
+                    <th class="ddl-text-left">Type of coupons</th>
+                    <th class="ddl-text-centre">Value</th>
+                </tr>
+            </thead>
+        <tbody>
+                <tr>
+                <td>
+                @if (@PointsDetails.OfferID == 81 && @PointsDetails.StatementType == StatementTypesEnum.XmasSavers)
+                {
+                                @Html.Translate("Points/PointsStatement", "PntsCarriedForwardXmas")
+                                @GeneralUtility.GetColYear(@PointsDetails.EndDate.AddYears(1))
+                                @Html.Translate("Points/PointsStatement", "Stmt")
+                }
+                else
+                {
+                    switch (@PointsDetails.StatementType)
+                    {
+                        case StatementTypesEnum.AirmilesReward:
+                        case StatementTypesEnum.BAmilesReward:
+                        case StatementTypesEnum.VirginMilesReward:
+                                @Html.Translate("Points/PointsStatement", "PointsConvertedAndCarried")
+                           break;
+                        case StatementTypesEnum.Reward:
+                        case StatementTypesEnum.XmasSavers:
+                        case StatementTypesEnum.NonReward:
+                                @Html.Translate("Points/PointsStatement", "PointsCarried")
+                           break;
+                    }
+                }
+                </td>
+                <td id="ltrcarriedfrwpts" class="ddl-no-wrap">
+                <strong >@PointsDetails.TotalCarriedForwardPoints</strong>
+                </td>
+                </tr>
+        </tbody>
+        </table>
+        </div>
+        }
+        <div class="copy-wrapper">
+        <h2 class="ddl-h5-like" id="lblPointsTescoResource">
+                        @Html.Translate("Points/PointsStatement", "PointsTescoResource")</h2>
+        </div>
+        <div class="table-wrapper">
+        <table id="table-tesco-points">
+            <thead>
+                <tr>
+                    <th class="ddl-text-left">
+                        @Html.Translate("Points/PointsStatement", "lblWhere")
+                    </th>
+                    <th class="ddl-text-right">
+                        @Html.Translate("Points/PointsStatement", "PageTitle")
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var tescoPointsModel in Model.TescoPointsModelList)
+            {
+                if (tescoPointsModel.ImageURL != null && tescoPointsModel.TotalPoints != null)
+                {
+                    if (tescoPointsModel.ImageURL == "icentre.jpg" && tescoPointsModel.TotalPoints != null)
+                    {
+                                <tr><td><span id="lblTescobankpointsmdl">@Html.Translate("Points/PointsStatement", "Nutri")</span></td>
+                                <td class="ddl-no-wrap ddl-text-right"><span id="ltrttlptls">@tescoPointsModel.TotalPoints</span></td></tr>
+                    }
+                    else if (tescoPointsModel.ImageURL == "other.jpg")
+                    {
+                                <tr><td><span id="lblTescobankpointsmdl">@Html.Translate("Points/PointsStatement", "Other")</span></td>
+                                <td class="ddl-no-wrap ddl-text-right"><span id="ltrttlptls">@tescoPointsModel.TotalPoints</span></td></tr>
+                    }
+                    else
+                    {
+                                <tr><td><span id="lblTescobankpointsmdl">@tescoPointsModel.ImageAlt</span></td>
+                                <td class="ddl-no-wrap ddl-text-right"><span id="ltrttlptls">@tescoPointsModel.TotalPoints</span></td></tr>
+                    }
+                }
+                else if (tescoPointsModel.TotalPoints != null)
+                {
+                            <tr><td><span id="lblTescobankpointsmdl">@tescoPointsModel.LabelText</span></td>
+                            <td class="ddl-no-wrap ddl-text-right"><span id="ltrttlptls">@tescoPointsModel.TotalPoints</span></td></tr>
+                }
+            }
+                <tr class="prominent">
+                    <td id="lblPreStmtCarryForward">@Html.Translate("Points/PointsStatement", "PreStmtCarryForward")
+                    </td>
+                    <td id="ltrBroughtForwardPoints" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoBroughtForwardPoints
+                    </td>
+                </tr>
+                <tr class="prominent">
+                    <td id="lblChangePntsFromBoost">@Html.Translate("Points/PointsStatement", "ChangePntsFromBoost")
+                    </td>
+                    <td id="ltrsChangeFromRewards" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoPointsChangeFromRewards
+                    </td>
+                </tr>
+                <tr class="prominent">
+                    <td id="lblTotalTescoPnts">@Html.Translate("Points/PointsStatement", "TotalTescoPnts")
+                    </td>
+                    <td id="ltrTescoTotalPointss" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoTotalPoints
+                    </td>
+                </tr>
+                <tr>
+                    <td id="lblpointdtlstype">
+                        @switch (@PointsDetails.StatementType)
+                        {
+                            case StatementTypesEnum.AirmilesReward:
+                            @Html.Translate("Points/PointsStatement", "AvsAwded")
+                       break;
+                            case StatementTypesEnum.BAmilesReward:
+                            @Html.Translate("Points/PointsStatement", "AvsAwded")
+                       break;
+                            case StatementTypesEnum.VirginMilesReward:
+                            @Html.Translate("Points/PointsStatement", "ClubMilesAwded")
+                       break;
+                            case StatementTypesEnum.Reward:
+                            case StatementTypesEnum.NonReward:
+                            case StatementTypesEnum.XmasSavers:
+                            @Html.Translate("Points/PointsStatement", "TescoVucherTtl")
+                       break;
+                        }
+                    </td>
+                    <td id="ltrttlpartnervuchers" class="ddl-no-wrap ddl-text-right">
+                        @switch (@PointsDetails.StatementType)
+                        {
+                            case StatementTypesEnum.AirmilesReward:
+                            case StatementTypesEnum.BAmilesReward:
+                            case StatementTypesEnum.VirginMilesReward:
+                            @PointsDetails.TescoRewardMiles
+                       break;
+                            case StatementTypesEnum.Reward:
+                            case StatementTypesEnum.NonReward:
+                            case StatementTypesEnum.XmasSavers:
+                            @Html.Translate("Points/PointsStatement", "CurrencySymbol")
+                            @PointsDetails.TescoTotalRewards
+                            @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                       break;
+                        }
+                    </td>
+                </tr>
+                <tr class="prominent">
+                    <td id="lblTescoPointsCariedforword">@Html.Translate("Points/PointsStatement", "TescoPointsCariedforword")
+                    </td>
+                    <td id="ltrTescoCarriedForwardPoints" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoCarriedForwardPoints
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="copy-wrapper">
+        <h2 class="ddl-h5-like" id="lblPointsTescoBank">
+                        @Html.Translate("Points/PointsStatement", "PointsTescoBankResource")</h2>
+        </div>
+        <div class="table-wrapper">
+            <table id="table-tescobank-points">
+                <thead>
+                    <tr>
+                        <th class="ddl-text-left">
+                            @Html.Translate("Points/PointsStatement", "lblWhere")
+                        </th>
+                        <th class="ddl-text-right">
+                            @Html.Translate("Points/PointsStatement", "PageTitle")
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                    @foreach (var tescoPointsModel in Model.TescoBankPointsModelList)
+                    {
+                        if (tescoPointsModel.ImageURL != null && tescoPointsModel.TotalPoints != null)
+                        {
+                            if (tescoPointsModel.ImageURL == "icentre.jpg")
+                            {                                
+                                <tr><td><span id="lblTescobankpointsmdl">@Html.Translate("Points/PointsStatement", "Nutri")</span></td>
+                                <td id="ltrpointsmdlttlpts" class="ddl-no-wrap ddl-text-right">@tescoPointsModel.TotalPoints</td></tr>
+                            }
+                            else if (tescoPointsModel.ImageURL == "other.jpg")
+                            {
+                                <tr><td><span id="lblTescobankpointsmdl">@Html.Translate("Points/PointsStatement", "Other")</span></td>
+                                <td id="ltrpointsmdlttlpts" class="ddl-no-wrap ddl-text-right">@tescoPointsModel.TotalPoints</td></tr>
+                            }
+                            else
+                            {
+                                <tr><td><span id="lblTescobankpointsmdl">@tescoPointsModel.ImageAlt</span> </td> 
+                                <td id="ltrpointsmdlttlpts" class="ddl-no-wrap ddl-text-right">@tescoPointsModel.TotalPoints</td></tr>                                     
+                            }
+                        }
+                        else if (tescoPointsModel.TotalPoints != null)
+                        {
+                            <tr><td><span id="lblTescobankpointsmdl">@tescoPointsModel.LabelText</span></td>
+                            <td id="ltrpointsmdlttlpts" class="ddl-no-wrap ddl-text-right">@tescoPointsModel.TotalPoints</td></tr>
+                        }
+                    }                
+                <tr class="prominent">
+                    <td id="lblptscarriedprev">@Html.Translate("Points/PointsStatement", "PointCarriedforwordPrevious")
+                    </td>
+                    <td id="ltrtescobankcarriedpts" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoBankBroughtForwardPoints
+                    </td>
+                </tr>
+                <tr class="prominent">
+                    <td id="lblttltescpbankpts">@Html.Translate("Points/PointsStatement", "TotalTescoBnkPnts")
+                    </td>
+                    <td id="ltrtescobnkptss" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoBankTotalPoints
+                    </td>
+                </tr>
+                <tr>
+                    <td id="lblPreferenAwarded">
+                        @switch (@PointsDetails.StatementType)
+                        {
+                            case StatementTypesEnum.AirmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsAwded")
+                           break;
+                            case StatementTypesEnum.BAmilesReward:
+                                @Html.Translate("Points/PointsStatement", "AvsAwded")
+                           break;
+                            case StatementTypesEnum.VirginMilesReward:
+                                @Html.Translate("Points/PointsStatement", "ClubMilesAwded")
+                           break;
+                            case StatementTypesEnum.Reward:
+                            case StatementTypesEnum.NonReward:
+                            case StatementTypesEnum.XmasSavers:
+                                @Html.Translate("Points/PointsStatement", "TecsoBankVucherTtl")
+                           break;
+                        }
+                    </td>
+                    <td id="ltrttlTescobankvuchers" class="ddl-no-wrap ddl-text-right">
+                        @switch (@PointsDetails.StatementType)
+                        {
+                            case StatementTypesEnum.AirmilesReward:
+                            case StatementTypesEnum.BAmilesReward:
+                            case StatementTypesEnum.VirginMilesReward:
+                                    @PointsDetails.TescoBankRewardMiles
+                               break;
+                            case StatementTypesEnum.Reward:
+                            case StatementTypesEnum.NonReward:
+                            case StatementTypesEnum.XmasSavers:
+                                    @Html.Translate("Points/PointsStatement", "CurrencySymbol")
+                                    @PointsDetails.TescoBankTotalRewards
+                                    @Html.Translate("Points/PointsStatement", "CurrencyAlphaSymbol")
+                               break;
+                        }
+                    </td>
+                </tr>
+                 <tr class="prominent">
+                    <td id="lblTescoBnkCariedforwd">@Html.Translate("Points/PointsStatement", "TescoBankCarriedForward")
+                    </td>
+                    <td id="ltrTescoBankCarriedpts" class="ddl-no-wrap ddl-text-right">@PointsDetails.TescoBankCarriedForwardPoints
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p id="lblPreviousofferidSummary">
+            @Html.Translate("Points/PointsStatement", "ReviewSummary") @Html.ActionLink(@Html.Translate("Points/PointsStatement", "ClickHerePointResource").ToString(),
+"PointsStatement", "Points", new { offerid = MCACookie.Cookie[MCACookieEnum.PrevOfferID] }, null)
+        </p>
+    }
+
+</div>
+<!-- End div-main-col-->
+</div>
+<!-- End div-main-row-->

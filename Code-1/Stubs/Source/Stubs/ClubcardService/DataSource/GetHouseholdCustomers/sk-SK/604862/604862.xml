@@ -1,0 +1,30 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>false</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+    <NewDataSet>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>604862</PrimaryCustomerID>
+        <CustomerID>604862</CustomerID>
+        <TitleEnglish>Mr</TitleEnglish>
+        <Name1>Clubcard</Name1>
+        <Name2 />
+        <Name3>King</Name3>
+        <MailingAddressLine1>PÉTERFY SÁNDOR UTCA</MailingAddressLine1>
+        <MailingAddressPostCode>1076</MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+        <BusinessType>0</BusinessType>
+        <BusinessName />
+        <BusinessRegistrationNumber />
+        <BusinessAddressLine1 />
+        <BusinessAddressLine2 />
+        <BusinessAddressLine3 />
+        <BusinessAddressLine4 />
+        <BusinessAddressLine5 />
+        <BusinessAddressLine6 />
+        <BusinessAddressPostCode />
+      </HouseholdCustomers>
+    </NewDataSet>
+  </resultXml>
+</GetHouseholdCustomersResponse>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblExchangeTokensResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblExchangeTokensResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTxt1Resource1.Text" xml:space="preserve">
+    <value>Now printing...</value>
+  </data>
+  <data name="lblTxt1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTxt2Resource1.Text" xml:space="preserve">
+    <value>Clubcard Coupons </value>
+  </data>
+  <data name="lblTxt2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CouponText1" xml:space="preserve">
+    <value>Clubcard Coupon</value>
+  </data>
+  <data name="CouponText2" xml:space="preserve">
+    <value>For use online at Tesco.com/groceries at the online grocery checkout enter</value>
+  </data>
+  <data name="CouponText3" xml:space="preserve">
+    <value>These terms and conditions are in addition to the clubcard Terms and Conditions. Points from extra points coupons will be added to your next statement. Coupons can only be redeemed once and must be redeemed by the person to whom they were issued, alongside the corresponding Clubcard. Clubcard coupons have no cash redemption value, are not to be transferred, bought, sold or in any way traded or published, and are valid in the UK and IOM only.Coppied, damaged or defaced coupons will not be accepted eCoupons can only be redeemed online and only once. Ecoupon starting X or TDX is valid per transaction. See online for eCoupon terms and conditions. Excludes tobacco products, Tesco and Esso fuels,stamps, saving stamps, cafe, lottery products, prescription medicines, infant formula milk, gift cards, travel money, E-top up, Tesco direct in store desk (unless otherwise stated) - other products may also be excluded at the discretion of Tesco.Age restrictions apply to certain product ranges. Members must be 18 years or over to purchase or recieve alcohol.</value>
+  </data>
+  <data name="VoucherText2" xml:space="preserve">
+    <value>printed at Touchscreen</value>
+  </data>
+  <data name="VoucherText4" xml:space="preserve">
+    <value>Clubcard rewards</value>
+  </data>
+  <data name="VoucherText6" xml:space="preserve">
+    <value>Valid Until : </value>
+  </data>
+  <data name="imgTescoClubcardLogoResource1.AlternateText" xml:space="preserve">
+    <value>img Tesco Clubcard Logo</value>
+  </data>
+  <data name="imgTescoClubcardLogoResource1.ImageUrl" xml:space="preserve">
+    <value>~/Images/TescoClubcardLogo.gif</value>
+  </data>
+  <data name="lblScanYourClubcardHeaderTextResource.Text" xml:space="preserve">
+    <value>Print out your Clubcard vouchers and coupons</value>
+  </data>
+  <data name="imgCrumbHeader.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgCrumbHeader.ImageUrl" xml:space="preserve">
+    <value>~/Images/crumb4.png</value>
+  </data>
+  <data name="LogoImagePath" xml:space="preserve">
+    <value>Templates\\TescoLogo.jpg</value>
+  </data>
+</root>

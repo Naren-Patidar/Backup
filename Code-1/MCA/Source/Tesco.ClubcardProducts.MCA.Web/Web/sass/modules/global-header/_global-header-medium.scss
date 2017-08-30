@@ -1,0 +1,153 @@
+
+#ddl-global-header {
+	background: $ddl-global-header-background;
+	border-bottom: 4px solid $ddl-global-header-bordercolour;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+	z-index: 999999999;
+
+	ul {
+
+		li {
+			margin: 0;
+			font-size: 1.4rem;
+			line-height: 1.6rem;
+			padding: 7px 24px 9px 24px;
+			border-left: 1px solid rgba(255,255,255,.2) !important;
+
+			&:last-child{
+				border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+			}
+
+			a {
+
+				font-size: 1.4rem;
+				font-weight: normal;
+				line-height: 1.6rem;
+				padding: 0;
+				font-family: 'tescoregular';
+			}
+		}
+	}
+}
+
+#global-nav {
+	display: inline;
+	text-align: right;
+	border: none;
+	background: none;
+
+	li {
+
+		h2 {
+			padding: 0;
+			font-size: 1.4rem;
+		}
+
+		&.ddl-icon-before {
+			padding-left: 40px;
+
+			&:before {
+				top: 7px;
+				left: 20px;
+			}
+
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+
+	.accordion-header {
+		padding: 7px 20px 9px;
+		font-size: 1.4rem;
+		font-weight: normal;
+		line-height: normal;
+
+		&:after {
+			padding: 0;
+			line-height: 1.6rem;
+			color: $ddl-white1;
+			background: none;
+			display: inline-block;
+			border: none;
+			content: "\e008";
+			margin: 2px 0 0 8px;
+			transition: all .3s ease-in-out;
+		}
+
+		&:hover {
+			text-decoration: none;
+
+			&:after {
+				transform: rotate(180deg);
+			}
+
+			+ .accordion-content {
+				max-height: 1000px;
+			}
+		}
+
+		&.active {
+
+			&:after {
+				content: "\e602";
+			}
+		}
+	}
+
+	.accordion-content {
+		position: absolute;
+		top: 32px;
+		left: 0;
+		width: 200px;
+		background: $ddl-global-header-background;
+		text-align: left;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .5s;
+
+		&.active {
+			max-height: 1000px;
+		}
+	}
+
+	li {
+		display: inline-block;
+		border: none !important;
+		position: relative;
+		border: none;
+
+		a {
+			display: inline-block;
+			border-bottom: none;
+		}
+
+		li {
+			display: block;
+		}
+	}
+}
+
+
+.no-js {
+
+	#global-nav {
+
+		li {
+
+			&:hover {
+
+				.accordion-content {
+					max-height: 1000px;
+				}
+			}
+			a {
+				font-family: 'tescoregular';
+			}
+		}
+	}
+}

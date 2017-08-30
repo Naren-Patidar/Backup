@@ -1,0 +1,45 @@
+.ddl-form {
+	padding: 40px 24px;
+	margin-bottom: 20px;
+	background: $ddl-white2;
+
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+.vital-form-journey {
+		background: $ddl-grey4;
+    padding-top: 40px !important;
+
+	.ddl-form {
+		background: $ddl-white1;
+
+
+	}
+}
+
+.message-level-2 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 0;
+
+  &.message-warning {
+  	color: $warning;
+  }
+
+  &.message-error {
+  	color: $error;
+  }
+
+  &.message-inform {
+  	color: $inform;
+  }
+
+  &.message-success {
+  	color: $success;
+  }
+
+}

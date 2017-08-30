@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+<%@ Import Namespace="System.IO" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Bootstrap Core CSS -->
+    <link href="content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="content/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+    <!-- Timeline CSS -->
+    <link href="content/dist/css/timeline.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="content/dist/css/sb-admin-2.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="content/bower_components/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="content/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="content/bower_components/jquery/dist/jquery.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="content/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="content/bower_components/metisMenu/dist/metisMenu.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="content/bower_components/raphael/raphael-min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="content/dist/js/sb-admin-2.js" type="text/javascript" language="javascript"></script>
+    
+    <script src="content/js/JQuery-UI.js" type="text/javascript" language="javascript"></script>
+    <script src="content/js/main.js" type="text/javascript" language="javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand list-inline" href="Dashboard.aspx"><img src="content/images/logo.png" /> </a> 
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">                
+                <!-- /.dropdown -->               
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>                        
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                            <asp:TextBox ID="txtQuery" runat="server" CssClass="form-control"  ></asp:TextBox>                                
+                                <span class="input-group-btn">                                
+                                <asp:LinkButton ID="btnSearch" runat="server" CssClass="btn btn-default" 
+                                    onclick="btnSearch_Click" ><i class="fa fa-search"></i></asp:LinkButton>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="Dashboard.aspx"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                          <li>
+                            <a href="Aggregate.aspx"><i class="fa fa-dashboard fa-fw"></i> Aggregate</a>
+                        </li>
+                        <asp:Repeater ID="rCountriesLinks" runat="server"  onitemdatabound="rCountriesLinks_ItemDataBound" >
+                            <ItemTemplate>
+                                <li>
+                                    <a href="#"><i class="fa fa-files-o fa-fw"></i> <%# Container.DataItem %><span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <asp:Repeater ID="rCategoriesLinks" runat="server"   onitemdatabound="rCategoriesLinks_ItemDataBound">
+                                            <ItemTemplate>
+                                                <li>
+                                                    <a href="#"> <%# Container.DataItem.ToString().Split('|')[1] %><span class="fa arrow"></span></a>                                    
+                                                    <ul class="nav nav-third-level" data="<%# Container.DataItem %>" runat="server" id="ulReports">
+                                                        <asp:Repeater ID="rReportLinks" runat="server" >
+                                                            <ItemTemplate>
+                                                                <li>
+                                                                    <%--<asp:LinkButton ID="btnFetchReport" runat="server" Text="<%# Path.GetFileName(Container.DataItem.ToString()).Split('_').ToList().LastOrDefault() %>"/>--%>
+                                                                    <a href="<%# Container.DataItem %>" target="_blank"> <%# GenericHelper.GetReportDisplayName(Container.DataItem.ToString()) %></a> 
+                                                                </li>                                                                                           
+                                                            </ItemTemplate>
+                                                        </asp:Repeater>
+                                                    
+                                                    </ul>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ul>
+                                 </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        
+                       
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Archived Reports<span class="fa arrow"></span></a>  
+                            <ul class="nav nav-second-level">
+                             <asp:Repeater ID="rArchived" runat="server" onitemdatabound="rArchived_ItemDataBound">
+                             <ItemTemplate>
+                             <li>
+                             <a href="#"><i class="fa fa-files-o fa-fw"></i> <%# Eval("ReportDate") %><span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                    <asp:Repeater ID="rArchivedCountries" runat="server" onitemdatabound="rArchivedCountries_ItemDataBound">
+                                    <ItemTemplate>
+                                    <li>
+                                    <a href="#"><i class="fa fa-files-o fa-fw"></i> <%# Eval("Name")%><span class="fa arrow"></span></a>
+                                    <ul class="nav nav-fourth-level">
+                                    <asp:Repeater ID="rArchivedCategories" runat="server" onitemdatabound="rArchivedCategories_ItemDataBound">
+                                    <ItemTemplate>
+                                    <li>
+                                    <a href="#"><i class="fa fa-files-o fa-fw"></i> <%# Eval("Name")%><span class="fa arrow"></span></a>
+                                    <ul class="nav nav-fifth-level">
+                                    <asp:Repeater ID="rArchivedReport" runat="server" onitemdatabound="rArchivedReport_ItemDataBound">
+                                    <ItemTemplate>
+                                    <a href="<%# Eval("DetailLink") %>" target="_blank" > <%# GenericHelper.GetReportDisplayName(Eval("DisplayName").ToString()) %></a>
+                                    </ItemTemplate>
+                                    </asp:Repeater>
+                                    </ul>
+                                    </li>
+                                    </ItemTemplate>
+                                    </asp:Repeater>
+                                    </ul>
+                                    </li>
+                                    </ItemTemplate>
+                                    </asp:Repeater>
+                             </ul>
+                             </li>
+                             </ItemTemplate>
+                             </asp:Repeater>
+                            </ul>                          
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <asp:ContentPlaceHolder ID="cpDashboard" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="row">
+                <asp:ContentPlaceHolder ID="cpSearch" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+   
+    </form>
+</body>
+</html>

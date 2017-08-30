@@ -1,0 +1,59 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@{
+    bool isFacebookRequired = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.IsFacebookRequired].ConfigurationValue1.TryParse<bool>();
+    bool isTwitterRequired = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.IsTwitterRequired].ConfigurationValue1.TryParse<bool>();
+}
+@if (isFacebookRequired || isTwitterRequired)
+{
+    <div class="row">
+        <div class="gr-12">
+            <div class="copy-wrapper">
+                <h2 class="ddl-h3-like" id="lblFBtwtHeader">@Html.Translate("Shared/_Vouchers", "lclFBtwtHeader")</h2>
+                <h3 class="ddl-h4-like" id="lblTellfriends">@Html.Translate("Shared/_Vouchers", "lclTellfriends")</h3>
+                <p id="lblFBtwtShareMessage">@Html.Translate("Shared/_Vouchers", "lclFBtwtShareMessage")</p>
+                <div class="row">
+                <em></em>
+                    @if (isTwitterRequired)
+                    {
+                        <li><a id="twitterImg" class="icon icon-twitter" href="#"><span class="visuallyhidden">
+                            Twitter</span></a> </li>
+                    }
+                    @if (isFacebookRequired)
+                    {
+                        <li><a id="facebookImg" class="icon icon-facebook" href="#"><span class="visuallyhidden">
+                            Facebook</span></a> </li>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    
+}
+<script type="text/javascript" src="https://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript">
+    FB.init({ appId: 494720700591406, status: true, cookie: true });
+    function checkTwitter() {
+
+        window.open("https://twitter.com/share?original_referer=&text=I%27ve just discovered Tesco %23Clubcard vouchers I didn%27t know I had! Find your unspent vouchers at &url=http%3A%2F%2Fwww.tesco.com%2Fclubcard", "Twitter", "resizable=No,scrollbars=No,width=700,height=465");
+
+    }
+    //Facebook API code
+    function checkDoesLike() {
+
+        // calling the API ...
+        var obj = {
+            method: 'feed',
+            link: 'http://www.tesco.com/clubcard/clubcard/facebook.asp',
+            message: 'I\'ve just discovered Tesco Clubcard vouchers I didn\'t know I had!',
+            picture: '',
+            name: 'Facebook - Clubcard - Tesco.com',
+            caption: 'www.tesco.com',
+            description: 'Find your unspent Clubcard vouchers under \'My Clubcard Account\' at www.tesco.com/clubcard'
+
+        };
+        FB.ui(obj);
+    };
+    //Facebook API code
+</script>

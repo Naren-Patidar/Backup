@@ -1,0 +1,29 @@
+﻿<GetUsedVoucherDtlsRsp xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.IntegrationServices.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+          <ErrorLogID />
+          <ErrorMessage />
+          <ErrorStatusCode />
+          <dsResponse>
+            <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="en-GB">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="Table">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Household_ID" type="xs:long" minOccurs="0" />
+                          <xs:element name="Period_Name" type="xs:string" minOccurs="0" />
+                          <xs:element name="Value" type="xs:decimal" minOccurs="0" />
+                          <xs:element name="When_x0020_Used" type="xs:string" minOccurs="0" />
+                          <xs:element name="Where_x0020_Used" type="xs:string" minOccurs="0" />
+                          <xs:element name="Change_x0020_Given" type="xs:string" minOccurs="0" />
+                          <xs:element name="Any_x0020_add_x0020_info" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+          </dsResponse>
+      </GetUsedVoucherDtlsRsp>

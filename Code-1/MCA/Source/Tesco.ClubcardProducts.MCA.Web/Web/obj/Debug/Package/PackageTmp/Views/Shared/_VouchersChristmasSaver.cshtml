@@ -1,0 +1,51 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.ChristmasSaver
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@model List<ChristmasSaverSummary>
+@{
+    string isDecimalDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableCurrencyDecimal].ConfigurationValue1.TryParse<string>();
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisplayDateFormat].ConfigurationValue1.TryParse<string>();
+}
+<div class="table-wrapper" id="div_XmasSaver">
+    <div class="table-wrapper-inner" id="div_XmassaverSummary">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th id="lblXMasDateToppedUp">@Html.Translate("Shared/_Vouchers", "lclXMasDateToppedUp")
+                    </th>
+                    <th id="lblXMasAmountToppedUp">@Html.Translate("Shared/_Vouchers", "lclXMasAmountToppedUp")
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var xmasSaver in Model)
+                {
+                    <tr>
+                        <td class="text-centre">
+                            @if (xmasSaver.TransactionDateTime == DateTime.MinValue)
+                            {
+                                @Html.Translate("Shared/_XmasSaver", "DateNotAvailable")
+                            }
+                            else
+                            {
+                                @Convert.ToDateTime(xmasSaver.TransactionDateTime).ToString(dateFormat)
+                            }
+                        </td>
+                        @if (xmasSaver.AmountSpent != null)
+                        {
+                            if (isDecimalDisabled.ToLower() == "true")
+                            {
+                                xmasSaver.AmountSpent = GeneralUtility.GetDecimalTrimmedCurrencyVal(xmasSaver.AmountSpent);
+                            }
+                            <td id="lblXmasAmountspent" class="text-centre">@Html.Translate("Shared/_Vouchers", "CurrencySymbol")
+                                @xmasSaver.AmountSpent @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")
+                            </td>
+                        }
+                    </tr>                      
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

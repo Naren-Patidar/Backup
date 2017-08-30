@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace Tesco.ClubcardProducts.MCA.Web.Common.Entities
+{
+    [Serializable]
+    public class KVPair
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+
+        public KVPair()
+        {
+        }
+        
+        public KVPair( int id, string name)
+        {
+            ID = id;
+            Name = name;
+        }
+    }
+}

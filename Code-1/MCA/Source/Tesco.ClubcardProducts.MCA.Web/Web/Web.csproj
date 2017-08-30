@@ -1,0 +1,1732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A62BA60-F281-445F-9BDF-E32439510B6B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.ClubcardProducts.MCA.Web</RootNamespace>
+    <AssemblyName>Tesco.ClubcardProducts.MCA.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IsCompassProject>True</IsCompassProject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\MCAReferenceDlls\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect, Version=3.0.18.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Captcha.3.0.18.0\lib\net40\BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect.Web.UI.Mvc, Version=3.0.18.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Captcha.3.0.18.0\lib\net40\BotDetect.Web.UI.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\MCAReferenceDlls\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement">
+      <HintPath>..\MCAReferenceDlls\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces">
+      <HintPath>..\MCAReferenceDlls\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\MCAReferenceDlls\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <HintPath>..\MCAReferenceDlls\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
+      <HintPath>..\MCAReferenceDlls\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\MCAReferenceDlls\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>..\MCAReferenceDlls\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NGCTrace">
+      <HintPath>..\MCAReferenceDlls\NGCTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NLog.4.2.2\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended">
+      <HintPath>..\packages\NLog.Extended.4.0.0.1\lib\net40-full\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NLog.Web.4.1\lib\net35\NLog.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="PointsSummarySequencing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\MCAReferenceDlls\PointsSummarySequencing.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\MCAReferenceDlls\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\MCAReferenceDlls\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Security.Cryptography">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Security.ReferenceMonitor">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Security.ReferenceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Security.Tokens">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Security.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Services.Configuration">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Services.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Services.Security.AccessControl.Auditing">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Services.Security.AccessControl.Auditing.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Services.Security.AccessControl.Authorisation">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Services.Security.AccessControl.Authorisation.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Services.Security.AccessControl.Identification">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Services.Security.AccessControl.Identification.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Framework.Services.Security.KeyManagement.MaterialStore">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Framework.Services.Security.KeyManagement.MaterialStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Security.Encryption">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Security.Encryption.dll</HintPath>
+    </Reference>
+    <Reference Include="Tesco.Com.Security.Tokenisation">
+      <HintPath>..\MCAReferenceDlls\Tesco.Com.Security.Tokenisation.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\ConfigLinks.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigLinks.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.en-GB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigLinks.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.en-MY.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigLinks.en-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.sk-SK.designer.cs">
+      <DependentUpon>ConfigLinks.sk-SK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.cs-CZ.designer.cs">
+      <DependentUpon>ConfigLinks.cs-CZ.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.hu-HU.designer.cs">
+      <DependentUpon>ConfigLinks.hu-HU.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.pl-PL.designer.cs">
+      <DependentUpon>ConfigLinks.pl-PL.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ConfigLinks.th-TH.designer.cs">
+      <DependentUpon>ConfigLinks.th-TH.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.pl-PL.designer.cs">
+      <DependentUpon>GenerateVouchersPDF.pl-PL.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.th-TH.designer.cs">
+      <DependentUpon>Messages.th-TH.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.th-TH.designer.cs">
+      <DependentUpon>GenerateVouchersPDF.th-TH.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateVouchersPDF.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.en-GB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateVouchersPDF.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.sk-SK.designer.cs">
+      <DependentUpon>GenerateVouchersPDF.sk-SK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.cs-CZ.designer.cs">
+      <DependentUpon>GenerateVouchersPDF.cs-CZ.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.sk-SK.designer.cs">
+      <DependentUpon>Messages.sk-SK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.cs-CZ.designer.cs">
+      <DependentUpon>Messages.cs-CZ.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GenerateVouchersPDF.en-MY.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateVouchersPDF.en-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.en-GB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Messages.en-MY.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.en-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnityBootStrapper.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivationController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BoostsAtTescoController.cs" />
+    <Compile Include="Controllers\ChristmasSaversController.cs" />
+    <Compile Include="Controllers\JoinController.cs" />
+    <Compile Include="Controllers\CouponsController.cs" />
+    <Compile Include="Controllers\EmailDownloadController.cs" />
+    <Compile Include="Controllers\MCAErrorController.cs" />
+    <Compile Include="Controllers\LatestStatementController.cs" />
+    <Compile Include="Controllers\OrderAReplacementController.cs" />
+    <Compile Include="Controllers\AccountManagementController.cs" />
+    <Compile Include="Controllers\PersonalDetailsController.cs" />
+    <Compile Include="Controllers\PointsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VouchersController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MVCAttributes\ActivationCheckAttribute.cs" />
+    <Compile Include="MVCAttributes\AjaxOnlyActionAttribute.cs" />
+    <Compile Include="MVCAttributes\AuthorizeUserAttribute.cs" />
+    <Compile Include="MVCAttributes\HttpParamActionAttribute.cs" />
+    <Compile Include="MVCAttributes\SecurityCheckAttribute.cs" />
+    <Compile Include="MVCAttributes\PageAuthorizationAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Home.cshtml.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\dbConfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\css\styles\main.css" />
+    <Content Include="Content\fonts\icon\tesco-icons.svg" />
+    <Content Include="Content\fonts\tesco\tesco-webfont.svg" />
+    <Content Include="Content\fonts\tesco\tescob-webfont.svg" />
+    <Content Include="Content\fonts\tesco\tescoi-webfont.svg" />
+    <Content Include="Content\htmls\BoostAtTescoHoldingPage.html" />
+    <Content Include="Content\htmls\ChristmasSaversHoldingPage.html" />
+    <Content Include="Content\htmls\CouponHoldingPage.html" />
+    <Content Include="Content\htmls\Error.html" />
+    <Content Include="Content\htmls\Footer.html" />
+    <Content Include="Content\htmls\HomeTest.html" />
+    <Content Include="Content\htmls\MyLatestStatementHoldingPage.html" />
+    <Content Include="Content\htmls\OrderANewcardHoldingpage.html" />
+    <Content Include="Content\htmls\OrderAReplacementHoldingPage.html" />
+    <Content Include="Content\images\ad.jpg" />
+    <Content Include="Content\images\arrow.gif" />
+    <Content Include="Content\images\Avios.jpg" />
+    <Content Include="Content\images\avios_logo.jpg" />
+    <Content Include="Content\images\baavios.jpg" />
+    <Content Include="Content\images\banner.jpg" />
+    <Content Include="Content\images\card1.jpg" />
+    <Content Include="Content\images\card2.jpg" />
+    <Content Include="Content\images\ccemails.jpg" />
+    <Content Include="Content\images\christmassavers.jpg" />
+    <Content Include="Content\images\clubcard.gif" />
+    <Content Include="Content\images\congratulations.png" />
+    <Content Include="Content\images\couponimages\UAT_121_T.jpg" />
+    <Content Include="Content\images\couponimages\D26_100_F.jpg" />
+    <Content Include="Content\images\couponimages\D26_100_T.jpg" />
+    <Content Include="Content\images\couponimages\UAT_120_F.jpg" />
+    <Content Include="Content\images\couponimages\UAT_121_F.jpg" />
+    <Content Include="Content\images\email.jpg" />
+    <Content Include="Content\images\Exchange_Tokens.jpg" />
+    <Content Include="Content\images\facebook_logo.jpg" />
+    <Content Include="Content\images\join-header.jpg" />
+    <Content Include="Content\images\post.jpg" />
+    <Content Include="Content\images\print-icon.gif" />
+    <Content Include="Content\images\PrintatHomeClubcard.jpg" />
+    <Content Include="Content\images\receipt-icon.gif" />
+    <Content Include="Content\images\rollover-baby-club.jpg" />
+    <Content Include="Content\images\rollover-bat.jpg" />
+    <Content Include="Content\images\rollover-flying-schemes.jpg" />
+    <Content Include="Content\images\rollover-fs.jpg" />
+    <Content Include="Content\images\rollover-mls.jpg" />
+    <Content Include="Content\images\rollover-my-coupons.jpg" />
+    <Content Include="Content\images\rollover-my-points.jpg" />
+    <Content Include="Content\images\rollover-my-vouchers.jpg" />
+    <Content Include="Content\images\rollover-personal-details.jpg" />
+    <Content Include="Content\images\rollover-replacement.jpg" />
+    <Content Include="Content\images\rollover-xmas-savers.jpg" />
+    <Content Include="Content\images\sms.jpg" />
+    <Content Include="Content\images\Tesco Bank Credit Card logo.png" />
+    <Content Include="Content\images\Tesco Bank Current Account logo.png" />
+    <Content Include="Content\images\till-icon.gif" />
+    <Content Include="Content\images\Virginatlantic.jpg" />
+    <Content Include="Content\images\Vouchers_AMX.jpg" />
+    <Content Include="Content\images\Vouchers_Bonus.jpg" />
+    <Content Include="Content\images\Vouchers_Reward.jpg" />
+    <Content Include="Content\images\Twitter.png" />
+    <Content Include="Content\images\VirginFlyingClublogo.jpg" />
+    <Content Include="Content\images\Vouchers_TopUp.jpg" />
+    <Content Include="Content\js\contactPreferences-1.0.0.js" />
+    <Content Include="Content\js\modal-1.0.0.js" />
+    <Content Include="Content\js\oo_engine.min.js" />
+    <Content Include="Content\js\personalDetails-1.0.0.js" />
+    <Content Include="Content\js\preferences-1.0.0.js" />
+    <Content Include="Content\js\coupon-1.0.0.js" />
+    <Content Include="Content\js\main-1.0.0.js" />
+    <Content Include="Content\mls\FooterContents\A-footer.html" />
+    <Content Include="Content\mls\FooterContents\B-footer.html" />
+    <Content Include="Content\mls\FooterContents\C-footer.html" />
+    <Content Include="Content\mls\FooterContents\D-footer.html" />
+    <Content Include="Content\mls\FooterContents\E-footer.html" />
+    <Content Include="Content\mls\FooterContents\F-footer.html" />
+    <Content Include="Content\mls\FooterContents\G-footer.html" />
+    <Content Include="Content\mls\FooterContents\H-footer.html" />
+    <Content Include="Content\mls\FooterContents\I-footer.html" />
+    <Content Include="Content\mls\FooterContents\J-footer.html" />
+    <Content Include="Content\mls\FooterContents\K-footer.html" />
+    <Content Include="Content\mls\FooterContents\L-footer.html" />
+    <Content Include="Content\mls\FooterContents\M-footer.html" />
+    <Content Include="Content\mls\LetterContents\A-letter.html" />
+    <Content Include="Content\mls\LetterContents\B-letter.html" />
+    <Content Include="Content\mls\LetterContents\C-letter.html" />
+    <Content Include="Content\mls\LetterContents\D-letter.html" />
+    <Content Include="Content\mls\LetterContents\E-letter.html" />
+    <Content Include="Content\mls\LetterContents\F-letter.html" />
+    <Content Include="Content\mls\LetterContents\G-letter.html" />
+    <Content Include="Content\mls\LetterContents\H-letter.html" />
+    <Content Include="Content\mls\LetterContents\I-letter.html" />
+    <Content Include="Content\mls\LetterContents\J-letter.html" />
+    <Content Include="Content\mls\LetterContents\K-letter.html" />
+    <Content Include="Content\mls\LetterContents\L-letter.html" />
+    <Content Include="Content\mls\LetterContents\M-letter.html" />
+    <Content Include="Content\mls\MarketingImages\A.jpg" />
+    <Content Include="Content\mls\MarketingImages\B.jpg" />
+    <Content Include="Content\mls\MarketingImages\C.jpg" />
+    <Content Include="Content\mls\MarketingImages\D.jpg" />
+    <Content Include="Content\mls\MarketingImages\E.jpg" />
+    <Content Include="Content\mls\MarketingImages\F.jpg" />
+    <Content Include="Content\mls\MarketingImages\G.jpg" />
+    <Content Include="Content\mls\MarketingImages\H.jpg" />
+    <Content Include="Content\mls\MarketingImages\I.jpg" />
+    <Content Include="Content\mls\MarketingImages\J.jpg" />
+    <Content Include="Content\mls\MarketingImages\K.jpg" />
+    <Content Include="Content\mls\MarketingImages\L.jpg" />
+    <Content Include="Content\mls\MarketingImages\M.jpg" />
+    <Content Include="Content\mls\MiscellaneousImages\cs-panel.jpg" />
+    <Content Include="Content\mls\MiscellaneousImages\cta-banner-xmas.gif" />
+    <Content Include="Content\mls\MiscellaneousImages\cta-banner.gif" />
+    <Content Include="Content\mls\MiscellaneousImages\intro-banner.gif" />
+    <Content Include="Content\mls\MiscellaneousImages\tesco-every-helps.gif" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\images\creditcard.png" />
+    <Content Include="Content\images\currentaccount.png" />
+    <Content Include="Content\images\dealsgiftcard.png" />
+    <Content Include="Content\images\Donation_to_charity.gif" />
+    <Content Include="Content\images\eon.jpg" />
+    <Content Include="Content\images\esso.png" />
+    <Content Include="Content\images\greenclubcardpoints.jpg" />
+    <Content Include="Content\images\nutricentre.gif" />
+    <Content Include="Content\images\Other_points.gif" />
+    <Content Include="Content\images\Other_points.png" />
+    <Content Include="Content\images\tescobbphone.jpg" />
+    <Content Include="Content\images\tescocreditcard.jpg" />
+    <Content Include="Content\images\tescodiets.jpg" />
+    <Content Include="Content\images\tescodirect.jpg" />
+    <Content Include="Content\images\tescodirect.png" />
+    <Content Include="Content\images\tescodotcom.jpg" />
+    <Content Include="Content\images\tescodotcom.png" />
+    <Content Include="Content\images\tescomobile.jpg" />
+    <Content Include="Content\images\tescomobile.png" />
+    <Content Include="Content\images\Tesco_fuel.gif" />
+    <Content Include="Content\images\Tesco_fuel.png" />
+    <Content Include="Content\images\togetherfortrees.gif" />
+    <Content Include="Content\images\togetherfortrees.png" />
+    <Content Include="Content\htmls\PointsHoldingPage.html" />
+    <Content Include="Content\htmls\VoucherHoldingPage.html" />
+    <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\LoginCheck-clean.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\v_xdfgkeuryt.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="StatementFormats\1.xml" />
+    <Content Include="StatementFormats\10.xml" />
+    <Content Include="StatementFormats\100.xml" />
+    <Content Include="StatementFormats\111.xml" />
+    <Content Include="StatementFormats\114.xml" />
+    <Content Include="StatementFormats\126.xml" />
+    <Content Include="StatementFormats\132.xml" />
+    <Content Include="StatementFormats\14.xml" />
+    <Content Include="StatementFormats\143.xml" />
+    <Content Include="StatementFormats\148.xml" />
+    <Content Include="StatementFormats\150.xml" />
+    <Content Include="StatementFormats\153.xml" />
+    <Content Include="StatementFormats\17.xml" />
+    <Content Include="StatementFormats\170.xml" />
+    <Content Include="StatementFormats\181.xml" />
+    <Content Include="StatementFormats\19.xml" />
+    <Content Include="StatementFormats\199.xml" />
+    <Content Include="StatementFormats\200.xml" />
+    <Content Include="StatementFormats\201.xml" />
+    <Content Include="StatementFormats\21.xml" />
+    <Content Include="StatementFormats\211.xml" />
+    <Content Include="StatementFormats\212.xml" />
+    <Content Include="StatementFormats\216.xml" />
+    <Content Include="StatementFormats\5.xml" />
+    <Content Include="StatementFormats\51.xml" />
+    <Content Include="StatementFormats\8.xml" />
+    <Content Include="StatementFormats\81.xml" />
+    <Content Include="StatementFormats\83.xml" />
+    <Content Include="StatementFormats\87.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="XMLs\xmlGroupMonths.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.rb" />
+    <Content Include="Config\Unity.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\wcfbehaviors.config" />
+    <Content Include="Config\wcfclientendpoints.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\wcfstandardbinding.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\NLog.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\culture.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Content\css\gridle" />
+    <None Include="Content\css\styles" />
+    <None Include="Content\fonts\icon\.DS_Store" />
+    <None Include="Content\fonts\icon\tesco-icons.eot" />
+    <None Include="Content\fonts\icon\tesco-icons.ttf" />
+    <None Include="Content\fonts\icon\tesco-icons.woff" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Vouchers\Home.cshtml" />
+    <Content Include="Views\Shared\_LeftNavigation.cshtml" />
+    <Content Include="Views\Shared\_VouchersSummary.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_VouchersUnUsed.cshtml" />
+    <Content Include="Views\Points\Home.cshtml" />
+    <Content Include="Views\Coupons\Home.cshtml" />
+    <Content Include="Views\Shared\_VouchersRewardLeftOver.cshtml" />
+    <Content Include="Views\Shared\_VouchersRewardUsed.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_VouchersIssued.cshtml" />
+    <Content Include="Views\Shared\_PointCollectionPeriod.cshtml" />
+    <Content Include="Views\Shared\_PointsSummary.cshtml" />
+    <Content Include="Views\Shared\_CouponsBox.cshtml" />
+    <Content Include="Views\Shared\_VouchersUsed.cshtml" />
+    <Content Include="Views\Points\PointsStatement.cshtml" />
+    <Content Include="Views\Shared\_CouponsAvailable.cshtml" />
+    <Content Include="Views\Shared\_CouponsUsed.cshtml" />
+    <Content Include="Views\Shared\_VouchersAviosSummary.cshtml" />
+    <Content Include="Views\Shared\_VouchersVirginSummary.cshtml" />
+    <Content Include="Views\Points\TransactionHistory.cshtml" />
+    <Content Include="Views\Shared\_VouchersChristmasSaver.cshtml" />
+    <Content Include="Views\Shared\_CouponHowToUse.cshtml" />
+    <Content Include="Views\Security\SecurityHome.cshtml" />
+    <Content Include="Views\Shared\_VouchersSocial.cshtml" />
+    <Content Include="Views\Shared\_LoadHTML.cshtml" />
+    <Content Include="Views\PersonalDetails\Home.cshtml" />
+    <Content Include="Views\Shared\_PersonalBasicDetails.cshtml" />
+    <Content Include="Views\Shared\_PersonalContactDetails.cshtml" />
+    <Content Include="Views\Shared\_PersonalDietaryPreferences.cshtml" />
+    <Content Include="Views\Shared\_PersonalHouseholdDetails.cshtml" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\ChristmasSavers\Home.cshtml" />
+    <Content Include="Views\Shared\_XmasTotalSavings.cshtml" />
+    <Content Include="Views\Shared\_XmasSaverSummary.cshtml" />
+    <Content Include="Views\Shared\_XmasTopupSavings.cshtml" />
+    <Content Include="Views\Coupons\CouponPreview.cshtml" />
+    <Content Include="Views\Shared\_BoostOnlineTokens.cshtml" />
+    <Content Include="Views\Shared\_BoostInstoreTokens.cshtml" />
+    <Content Include="Views\LatestStatement\Home.cshtml" />
+    <Content Include="Views\OrderAReplacement\Home.cshtml" />
+    <Content Include="Views\Shared\_XmasVoucherSaved.cshtml" />
+    <Content Include="Views\Activation\Home.cshtml" />
+    <Content Include="Views\Shared\_ActivationConfirmDetails.cshtml" />
+    <Content Include="Views\Account\SecurityHome.cshtml" />
+    <Content Include="Views\Shared\_MLSSummary.cshtml" />
+    <Content Include="Views\AccountManagement\VoucherSchemes.cshtml" />
+    <Content Include="Views\Shared\_LoadHTML.cshtml" />
+    <Content Include="Views\BoostsAtTesco\Home.cshtml" />
+    <Content Include="Views\Shared\_HomeStamps.cshtml" />
+    <Content Include="Views\AccountManagement\ContactPreferences.cshtml" />
+    <Content Include="Views\Join\Home.cshtml" />
+    <Content Include="Views\Shared\_JoinCaptcha.cshtml" />
+    <Content Include="Views\Shared\_JoinPersonalDetails.cshtml" />
+    <Content Include="Views\Shared\_JoinHousehold.cshtml" />
+    <Content Include="Views\Shared\_HomeUpper.cshtml" />
+    <Content Include="Views\Activation\ActivationStatus.cshtml" />
+    <Content Include="Views\AccountManagement\ClubcardsOnAccount.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\OptInsModel.cshtml" />
+    <Content Include="Views\Shared\_Confirmation.cshtml" />
+    <Content Include="Views\Shared\_PrintClubcard.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ContactModel.cshtml" />
+    <Content Include="Views\Account\DotcomLogin.cshtml" />
+    <Content Include="Views\Shared\_SecurityMVTV1.cshtml" />
+    <Content Include="Views\Shared\_SecurityMVTV4.cshtml" />
+    <Content Include="Views\Shared\_SecurityMVTV3.cshtml" />
+    <Content Include="Views\Shared\_SecurityMVTV2.cshtml" />
+    <Content Include="Views\Account\RedirectTo.cshtml" />
+    <None Include="Content\fonts\tescobold\Tesco_W_Bd.eot" />
+    <None Include="Content\fonts\tescobold\Tesco_W_Bd.ttf" />
+    <None Include="Content\fonts\tescobold\Tesco_W_Bd.woff" />
+    <None Include="Content\fonts\tescobold\Tesco_W_Bd.woff2" />
+    <None Include="Content\fonts\tescomodernbold\TESCOModern-Bold-web.eot" />
+    <None Include="Content\fonts\tescomodernbold\TESCOModern-Bold-web.svg" />
+    <None Include="Content\fonts\tescomodernbold\TESCOModern-Bold-web.ttf" />
+    <None Include="Content\fonts\tescomodernbold\TESCOModern-Bold-web.woff" />
+    <None Include="Content\fonts\tescomodernbold\TESCOModern-Bold-web.woff2" />
+    <None Include="Content\fonts\tescomodernregular\TESCOModern-Regular-web.eot" />
+    <None Include="Content\fonts\tescomodernregular\TESCOModern-Regular-web.svg" />
+    <None Include="Content\fonts\tescomodernregular\TESCOModern-Regular-web.ttf" />
+    <None Include="Content\fonts\tescomodernregular\TESCOModern-Regular-web.woff" />
+    <None Include="Content\fonts\tescomodernregular\TESCOModern-Regular-web.woff2" />
+    <None Include="Content\fonts\tescoregular\Tesco_W_Rg.eot" />
+    <None Include="Content\fonts\tescoregular\Tesco_W_Rg.ttf" />
+    <None Include="Content\fonts\tescoregular\Tesco_W_Rg.woff" />
+    <None Include="Content\fonts\tescoregular\Tesco_W_Rg.woff2" />
+    <None Include="Content\fonts\tesco\tesco-webfont.eot" />
+    <None Include="Content\fonts\tesco\tesco-webfont.ttf" />
+    <None Include="Content\fonts\tesco\tesco-webfont.woff" />
+    <None Include="Content\fonts\tesco\tescob-webfont.eot" />
+    <None Include="Content\fonts\tesco\tescob-webfont.ttf" />
+    <None Include="Content\fonts\tesco\tescob-webfont.woff" />
+    <None Include="Content\fonts\tesco\tescoi-webfont.eot" />
+    <None Include="Content\fonts\tesco\tescoi-webfont.ttf" />
+    <None Include="Content\fonts\tesco\tescoi-webfont.woff" />
+    <None Include="sass\components\button-groups\_button-groups-base.scss" />
+    <None Include="sass\components\form-fields\_form-fields-base.scss" />
+    <None Include="sass\components\form-fields\_form-fields-small.scss" />
+    <None Include="sass\components\inline-list\_inline-list-base.scss" />
+    <None Include="sass\components\inline-list\_inline-list-small.scss" />
+    <None Include="sass\components\paired-list\_paired-list-base.scss" />
+    <None Include="sass\components\paired-list\_paired-list-small.scss" />
+    <None Include="sass\components\panels\_panels-base.scss" />
+    <None Include="sass\elements\buttons\_buttons-base.scss" />
+    <None Include="sass\elements\buttons\_buttons-print.scss" />
+    <None Include="sass\elements\buttons\_buttons-small.scss" />
+    <None Include="sass\elements\checkboxes\_checkboxes-base.scss" />
+    <None Include="sass\elements\date-of-birth\_date-of-birth-base.scss" />
+    <None Include="sass\elements\fieldsets\_fieldsets-base.scss" />
+    <None Include="sass\elements\forms\_forms-base.scss" />
+    <None Include="sass\elements\forms\_forms-medium.scss" />
+    <None Include="sass\elements\forms\_forms-small.scss" />
+    <None Include="sass\elements\forms\_forms-smallest.scss" />
+    <None Include="sass\elements\hrs\_hrs-base.scss" />
+    <None Include="sass\elements\inputs\_inputs-base.scss" />
+    <None Include="sass\elements\inputs\_inputs-small.scss" />
+    <None Include="sass\elements\labels\_labels-base.scss" />
+    <None Include="sass\elements\labels\_labels-small.scss" />
+    <None Include="sass\elements\postcode\_postcode-base.scss" />
+    <None Include="sass\elements\radios\_radios-base.scss" />
+    <None Include="sass\elements\search\_search-base.scss" />
+    <None Include="sass\elements\selects\_selects-base.scss" />
+    <None Include="sass\elements\selects\_selects-small.scss" />
+    <None Include="sass\elements\tables\_tables-base.scss" />
+    <None Include="sass\elements\tables\_tables-medium.scss" />
+    <None Include="sass\elements\tables\_tables-small.scss" />
+    <None Include="sass\elements\textareas\_textareas-base.scss" />
+    <None Include="sass\elements\textareas\_textareas-small.scss" />
+    <None Include="sass\fonts\icon\tesco-icons.eot" />
+    <None Include="sass\fonts\icon\tesco-icons.svg" />
+    <None Include="sass\fonts\icon\tesco-icons.ttf" />
+    <None Include="sass\fonts\icon\tesco-icons.woff" />
+    <None Include="sass\fonts\tescobold\Tesco_W_Bd.eot" />
+    <None Include="sass\fonts\tescobold\Tesco_W_Bd.ttf" />
+    <None Include="sass\fonts\tescobold\Tesco_W_Bd.woff" />
+    <None Include="sass\fonts\tescobold\Tesco_W_Bd.woff2" />
+    <None Include="sass\fonts\tescomodernbold\TESCOModern-Bold-web.eot" />
+    <None Include="sass\fonts\tescomodernbold\TESCOModern-Bold-web.svg" />
+    <None Include="sass\fonts\tescomodernbold\TESCOModern-Bold-web.ttf" />
+    <None Include="sass\fonts\tescomodernbold\TESCOModern-Bold-web.woff" />
+    <None Include="sass\fonts\tescomodernbold\TESCOModern-Bold-web.woff2" />
+    <None Include="sass\fonts\tescomodernregular\TESCOModern-Regular-web.eot" />
+    <None Include="sass\fonts\tescomodernregular\TESCOModern-Regular-web.svg" />
+    <None Include="sass\fonts\tescomodernregular\TESCOModern-Regular-web.ttf" />
+    <None Include="sass\fonts\tescomodernregular\TESCOModern-Regular-web.woff" />
+    <None Include="sass\fonts\tescomodernregular\TESCOModern-Regular-web.woff2" />
+    <None Include="sass\fonts\tescoregular\Tesco_W_Rg.eot" />
+    <None Include="sass\fonts\tescoregular\Tesco_W_Rg.ttf" />
+    <None Include="sass\fonts\tescoregular\Tesco_W_Rg.woff" />
+    <None Include="sass\fonts\tescoregular\Tesco_W_Rg.woff2" />
+    <None Include="sass\fonts\tesco\tesco-webfont.eot" />
+    <None Include="sass\fonts\tesco\tesco-webfont.svg" />
+    <None Include="sass\fonts\tesco\tesco-webfont.ttf" />
+    <None Include="sass\fonts\tesco\tesco-webfont.woff" />
+    <None Include="sass\fonts\tesco\tescob-webfont.eot" />
+    <None Include="sass\fonts\tesco\tescob-webfont.svg" />
+    <None Include="sass\fonts\tesco\tescob-webfont.ttf" />
+    <None Include="sass\fonts\tesco\tescob-webfont.woff" />
+    <None Include="sass\fonts\tesco\tescoi-webfont.eot" />
+    <None Include="sass\fonts\tesco\tescoi-webfont.svg" />
+    <None Include="sass\fonts\tesco\tescoi-webfont.ttf" />
+    <None Include="sass\fonts\tesco\tescoi-webfont.woff" />
+    <None Include="sass\foundation\breakpoints\_breakpoints-base.scss" />
+    <None Include="sass\foundation\colours\_colours-base.scss" />
+    <None Include="sass\foundation\colours\_colours-TH.scss" />
+    <None Include="sass\foundation\custom-fonts\_custom-fonts-base.scss" />
+    <None Include="sass\foundation\layouts\_layouts-base.scss" />
+    <None Include="sass\foundation\reset\_reset-base.scss" />
+    <None Include="sass\foundation\typography\_typography-base.scss" />
+    <None Include="sass\foundation\typography\_typography-small.scss" />
+    <None Include="sass\foundation\utilities\_utilities-base.scss" />
+    <None Include="sass\gridle\grid-flex.scss" />
+    <None Include="sass\gridle\grid-mixins.scss" />
+    <None Include="sass\gridle\grid.scss" />
+    <None Include="sass\gridle\gridle\_api.scss" />
+    <None Include="sass\gridle\gridle\_default-states.scss" />
+    <None Include="sass\gridle\gridle\_driver-default.scss" />
+    <None Include="sass\gridle\gridle\_driver-flex.scss" />
+    <None Include="sass\gridle\gridle\_flexbox.scss" />
+    <None Include="sass\gridle\gridle\_functions.scss" />
+    <None Include="sass\gridle\gridle\_generate-mixins.scss" />
+    <None Include="sass\gridle\gridle\_gridle-flex.scss" />
+    <None Include="sass\gridle\gridle\_gridle.scss" />
+    <None Include="sass\gridle\gridle\_init.scss" />
+    <None Include="sass\gridle\gridle\_mixins.scss" />
+    <None Include="sass\gridle\gridle\_settings-mixins.scss" />
+    <None Include="sass\gridle\gridle\_settings.scss" />
+    <None Include="sass\gridle\style.scss" />
+    <None Include="sass\gridle\tests.scss" />
+    <None Include="sass\gridle\tools\_reset.scss" />
+    <None Include="sass\gridle\_grid-settings-flex.scss" />
+    <None Include="sass\gridle\_grid-settings.scss" />
+    <None Include="sass\gridle\_variables.scss" />
+    <None Include="sass\modules\2LA\_2LA-base.scss" />
+    <None Include="sass\modules\accordion\_accordion-base.scss" />
+    <None Include="sass\modules\accordion\_accordion-small.scss" />
+    <None Include="sass\modules\account-verification\_account-verfication-base.scss" />
+    <None Include="sass\modules\account-verification\_account-verification-small.scss" />
+    <None Include="sass\modules\advert-banner\_advert-banner-base.scss" />
+    <None Include="sass\modules\advert-banner\_advert-banner-small.scss" />
+    <None Include="sass\modules\banner\_banner-base.scss" />
+    <None Include="sass\modules\banner\_banner-small.scss" />
+    <None Include="sass\modules\button-banner\_button-banner-base.scss" />
+    <None Include="sass\modules\button-banner\_button-banner-medium.scss" />
+    <None Include="sass\modules\button-banner\_button-banner-small.scss" />
+    <None Include="sass\modules\carousel\_carousel-base.scss" />
+    <None Include="sass\modules\cookie-notification\_cookie-notification-base.scss" />
+    <None Include="sass\modules\coupons-table\_coupons-table-base.scss" />
+    <None Include="sass\modules\coupons-table\_coupons-table-small.scss" />
+    <None Include="sass\modules\currency-list\_currency-list-base.scss" />
+    <None Include="sass\modules\currency-list\_currency-list-small.scss" />
+    <None Include="sass\modules\currency-overview\_currency-overview-base.scss" />
+    <None Include="sass\modules\currency-statement\_currency-statement-base.scss" />
+    <None Include="sass\modules\currency-statement\_currency-statement-small.scss" />
+    <None Include="sass\modules\dynamic-clubcard\_dynamic-clubcard-base.scss" />
+    <None Include="sass\modules\dynamic-clubcard\_dynamic-clubcard-small.scss" />
+    <None Include="sass\modules\filter\_filter-base.scss" />
+    <None Include="sass\modules\filter\_filter-medium.scss" />
+    <None Include="sass\modules\flyout\_flyout-base.scss" />
+    <None Include="sass\modules\flyout\_flyout-medium.scss" />
+    <None Include="sass\modules\flyout\_flyout-small.scss" />
+    <None Include="sass\modules\footer\_footer-base.scss" />
+    <None Include="sass\modules\footer\_footer-larger.scss" />
+    <None Include="sass\modules\footer\_footer-medium.scss" />
+    <None Include="sass\modules\global-header\_global-header-base.scss" />
+    <None Include="sass\modules\global-header\_global-header-medium.scss" />
+    <None Include="sass\modules\global-header\_global-header-small.scss" />
+    <None Include="sass\modules\heading-group\_heading-group-base.scss" />
+    <None Include="sass\modules\image-callout\image-callout-base.scss" />
+    <None Include="sass\modules\image-callout\image-callout-small.scss" />
+    <None Include="sass\modules\login\_login-base.scss" />
+    <None Include="sass\modules\login\_login-medium.scss" />
+    <None Include="sass\modules\message\_message-base.scss" />
+    <None Include="sass\modules\modal\_modal-base.scss" />
+    <None Include="sass\modules\modal\_modal-small.scss" />
+    <None Include="sass\modules\notification-bar\_notification-bar-base.scss" />
+    <None Include="sass\modules\notification-bar\_notification-bar-medium.scss" />
+    <None Include="sass\modules\numbered-steps\_numbered-steps-base.scss" />
+    <None Include="sass\modules\page-body\_page-body-base.scss" />
+    <None Include="sass\modules\page-body\_page-body-medium.scss" />
+    <None Include="sass\modules\page-body\_page-body-small.scss" />
+    <None Include="sass\modules\page-header\_page-header-base.scss" />
+    <None Include="sass\modules\page-header\_page-header-large.scss" />
+    <None Include="sass\modules\page-header\_page-header-medium.scss" />
+    <None Include="sass\modules\page-header\_page-header-small.scss" />
+    <None Include="sass\modules\points-callout\_points-callout-base.scss" />
+    <None Include="sass\modules\points-callout\_points-callout-small.scss" />
+    <None Include="sass\modules\points-callout\_points-conversion-callout-base.scss" />
+    <None Include="sass\modules\primary-navigation\back-up-primary-navigation.scss" />
+    <None Include="sass\modules\primary-navigation\_primary-navigation-base.scss" />
+    <None Include="sass\modules\primary-navigation\_primary-navigation-large.scss" />
+    <None Include="sass\modules\primary-navigation\_primary-navigation-medium.scss" />
+    <None Include="sass\modules\primary-navigation\_primary-navigation-small.scss" />
+    <None Include="sass\modules\rules-box\_rules-box-base.scss" />
+    <None Include="sass\modules\search-bar\_search-bar-base.scss" />
+    <None Include="sass\modules\search-bar\_search-bar-small.scss" />
+    <None Include="sass\modules\secondary-navigation\_secondary-navigation-base.scss" />
+    <None Include="sass\modules\secondary-navigation\_secondary-navigation-medium.scss" />
+    <None Include="sass\modules\settings-list\_settings-list-base.scss" />
+    <None Include="sass\modules\settings-list\_settings-list-small.scss" />
+    <None Include="sass\modules\skinny-banner\_skinny-banner-base.scss" />
+    <None Include="sass\modules\skinny-banner\_skinny-banner-medium.scss" />
+    <None Include="sass\modules\stamps\_stamps-base.scss" />
+    <None Include="sass\modules\stamps\_stamps-small.scss" />
+    <None Include="sass\modules\tabbed-content\_tabbed-content-base.scss" />
+    <None Include="sass\modules\tabbed-content\_tabbed-content-medium.scss" />
+    <None Include="sass\modules\tabbed-content\_tabbed-content-small.scss" />
+    <None Include="sass\modules\tooltip\_tooltip-base.scss" />
+    <None Include="sass\modules\voucher-coupon-list\_voucher-coupon-list-base.scss" />
+    <None Include="sass\styles\main.scss" />
+    <None Include="sass\styles\_pattern-library.scss" />
+    <Content Include="Views\Shared\_CustomerDetailsBanner.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\OrderANewCard.cshtml" />
+    <Content Include="Views\AccountManagement\PersonalDetails.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\CustomerEmail.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\VouchersBanner.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\PointsBanner.cshtml" />
+    <None Include="Views\Shared\_ModalPaperless.cshtml" />
+    <None Include="Views\Shared\_PersonalDetailsModal.cshtml" />
+    <None Include="Views\Shared\_PopUp.cshtml" />
+    <None Include="Views\Shared\_VirtualLockout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Business\Web.Business.csproj">
+      <Project>{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}</Project>
+      <Name>Web.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.Common\Web.Common.csproj">
+      <Project>{F5D1C51F-0E34-4062-9D48-59FC06AED200}</Project>
+      <Name>Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.ServiceAdapter\Web.ServiceAdapter.csproj">
+      <Project>{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}</Project>
+      <Name>Web.ServiceAdapter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\ConfigLinks.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.en-GB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ConfigLinks.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Messages.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.en-GB.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Messages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\App_LocalResources\Login.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\App_LocalResources\Login.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\App_LocalResources\Login.cshtml.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.en-MY.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.sk-SK.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsStatement.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsStatement.cshtml.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.fr-FR.resx" />
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_LeftNavigation.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.en-GB.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Security\App_LocalResources\SecurityHome.cshtml.pl-PL.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.tr-TR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.tr-TR.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.tr-TR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.tr-TR.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\TransactionHistory.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.hu-HU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_Points.cshtml.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.sk-SK.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.en-MY.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsSummaryView.cshtml.hu-HU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.hu-HU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.sk-SK.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\Home.cshtml.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.en-IE.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.en-MY.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Points\App_LocalResources\TransactionHistory.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.sk-SK.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.th-TH.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.en-MY.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.cs-CZ.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.en-MY.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.hu-HU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.sk-SK.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetails.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.th-TH.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.en-IE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.sk-SK.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.pl-PL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PersonalDetails\App_LocalResources\Home.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.pl-PL.resx" />
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.pl-PL.resx" />
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.pl-PL.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Activation\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="App_GlobalResources\Messages.en-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.en-MY.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ConfigLinks.en-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.en-MY.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.en-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.en-MY.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.sk-SK.resx" />
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Account\App_LocalResources\Login.cshtml.sk-SK.resx" />
+    <Content Include="App_GlobalResources\ConfigLinks.sk-SK.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.sk-SK.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ConfigLinks.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.cs-CZ.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Messages.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.cs-CZ.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Messages.sk-SK.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.sk-SK.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.cs-CZ.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.sk-SK.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.sk-SK.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.en-GB.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.hu-HU.resx" />
+    <Content Include="App_GlobalResources\ConfigLinks.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.pl-PL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ConfigLinks.hu-HU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.hu-HU.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Account\App_LocalResources\Login.cshtml.th-TH.resx" />
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.th-TH.resx" />
+    <Content Include="App_GlobalResources\ConfigLinks.th-TH.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ConfigLinks.th-TH.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.th-TH.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.th-TH.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Messages.th-TH.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Messages.th-TH.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GenerateVouchersPDF.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GenerateVouchersPDF.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\OrderANewCard.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\OrderANewCard.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\PersonalDetails.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\PersonalDetails.cshtml.resx" />
+    <EmbeddedResource Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Home.cshtml.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\Error.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Vouchers\App_LocalResources\Home.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\BoostsAtTesco\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_BoostsAtTesco.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.cs-CZ.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.fr-FR-.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.ms-MY.resx" />
+    <Content Include="Views\Points\App_LocalResources\PointsDetail.cshtml.zh-CN.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.ms-MY.resx" />
+    <Content Include="Views\Security\App_LocalResources\SecurityHome.cshtml.resx" />
+    <Content Include="Views\Security\App_LocalResources\SecurityHome.cshtml.en-GB.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\VoucherSchemes.cshtml.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\VoucherSchemes.cshtml.en-GB.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.en-IE.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.cs-CZ.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.sk-SK.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.pl-PL.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.tr-TR.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.hu-HU.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.en-MY.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\OptionsAndBenefits.cshtml.th-TH.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.ms-MY.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.zh-CN.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.tr-TR.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\ChristmasSavers\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\OrderAReplacement\App_LocalResources\Home.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.en-GB.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.pl-PL.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_MyLatestStatement.cshtml.hu-HU.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.pl-PL.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Home\App_LocalResources\Home.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\ContactPreferences.cshtml.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.en-IE.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.ms-MY.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.tr-TR.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.zh-CN.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ContactPreferences.cshtml.en-GB.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\ClubcardsOnAccount.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\ClubcardsOnAccount.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.en-IE.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.en-MY.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.th-TH.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.ms-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.zh-CN.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\ContactModel.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\Error.cshtml.en-GB.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.en-GB.resx" />
+    <Content Include="Views\Account\App_LocalResources\SecurityHome.cshtml.en-MY.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\MyContactPreferences.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.en-MY.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.sk-SK.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\MyContactPreferences.cshtml.cs-CZ.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\MyContactPreferences.cshtml.sk-SK.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.sk-SK.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\MyContactPreferences.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.sk-SK.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.sk-SK.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_Vouchers.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.pl-PL.resx" />
+    <Content Include="Views\Join\App_LocalResources\Home.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_Confirmation.cshtml.pl-PL.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\ViewMyCards.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\Error.cshtml.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\App_LocalResources\Error.cshtml.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\OptInsModel.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.en-MY.resx" />
+    <Content Include="Views\LatestStatement\App_LocalResources\Home.cshtml.cs-CZ.resx" />
+    <Content Include="Views\AccountManagement\App_LocalResources\MyContactPreferences.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_XmasSaver.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_VouchersUsed.cshtml.th-TH.resx" />
+    <Content Include="Views\Coupons\App_LocalResources\Home.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponHowToUse.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsAvailable.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsBox.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CouponsUsed.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_CustomerDetailsBanner.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_Header.cshtml.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\CustomerEmail.cshtml.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\CustomerEmail.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.pl-PL .resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.sk-SK.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_ModalPaperless.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.cs-CZ.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.en-GB.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.en-IE.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.en-MY.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.hu-HU.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.pl-PL.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.th-TH.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.cshtml.tr-TR.resx" />
+    <Content Include="Views\Shared\App_LocalResources\_PersonalDetailsModal.sk-SK.resx" />
+    <Content Include="Views\Shared\EditorTemplates\App_LocalResources\PointsBanner.cshtml.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64014</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

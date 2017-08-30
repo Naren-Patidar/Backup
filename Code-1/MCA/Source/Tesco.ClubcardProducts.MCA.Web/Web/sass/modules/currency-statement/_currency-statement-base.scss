@@ -1,0 +1,46 @@
+.currency-statement {
+	margin: 40px 0;
+
+	&.accordion {
+		border: none !important;
+	}
+
+	p {
+		font-size: 1.8rem;
+
+		strong {
+			margin: 0 0 0 10px;
+
+			a:after {
+				border: 1px solid $ddl-link-colour;
+				border-radius: 30px;
+				padding: 5px;
+				font-size: 12px;
+
+			}
+
+			em {
+				font-size: 2em;
+				font-style: normal;
+			}
+		}
+
+		&.accordion-header {
+			padding: 0 !important;
+			border: none !important;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				line-height: 20px;
+			}
+		}
+
+	}
+
+	.accordion-content {
+		border: none !important;
+	}
+}

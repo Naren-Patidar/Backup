@@ -1,0 +1,56 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>true</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+    <NewDataSet>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>123812559</PrimaryCustomerID>
+        <CustomerID>123812559</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>JENNIE              </Name1>
+        <Name2 xml:space="preserve">  </Name2>
+        <Name3>FERRIER                  </Name3>
+        <MailingAddressLine1>48 OZONIA AVENUE              </MailingAddressLine1>
+        <MailingAddressPostCode>SS12 0PJ </MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>1</CustomerMailStatus>
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>123812559</PrimaryCustomerID>
+        <CustomerID>1095617845</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>JENNIE              </Name1>
+        <Name2 xml:space="preserve">  </Name2>
+        <Name3>FERRIER                  </Name3>
+        <MailingAddressLine1>48 OZONIA AVENUE              </MailingAddressLine1>
+        <MailingAddressPostCode>SS12 0PJ </MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>1</CustomerMailStatus>
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>123812559</PrimaryCustomerID>
+        <CustomerID>1095635224</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>JENNIE              </Name1>
+        <Name2 xml:space="preserve">  </Name2>
+        <Name3>FERRIER                  </Name3>
+        <MailingAddressLine1>48 OZONIA AVENUE              </MailingAddressLine1>
+        <MailingAddressPostCode>SS12 0PJ </MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>1</CustomerMailStatus>
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>123812559</PrimaryCustomerID>
+        <CustomerID>1095652603</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>JENNIE              </Name1>
+        <Name2 xml:space="preserve">  </Name2>
+        <Name3>FERRIER                  </Name3>
+        <MailingAddressLine1>48 OZONIA AVENUE              </MailingAddressLine1>
+        <MailingAddressPostCode>SS12 0PJ </MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>1</CustomerMailStatus>
+      </HouseholdCustomers>
+    </NewDataSet>
+	</resultXml>
+</GetHouseholdCustomersResponse>

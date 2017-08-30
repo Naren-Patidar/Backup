@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnPrintTokens" xml:space="preserve">
+    <value>Print my tokens</value>
+  </data>
+  <data name="lblShowErrorMsg" xml:space="preserve">
+    <value>To print your Clubcard Boost tokens</value>
+  </data>
+  <data name="lblShowErrorMsgResource" xml:space="preserve">
+    <value>Please select tokens and try again. Thank you</value>
+  </data>
+  <data name="lclDateOrdResource" xml:space="preserve">
+    <value>Date ordered</value>
+  </data>
+  <data name="lclDescResource" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lclExcTokensprint" xml:space="preserve">
+    <value>Select the Clubcard Boost tokens to print</value>
+  </data>
+  <data name="lclExcTokenStore" xml:space="preserve">
+    <value>Print your Clubcard Boost tokens to use in store</value>
+  </data>
+  <data name="lclExpDateResource" xml:space="preserve">
+    <value>Expiry date</value>
+  </data>
+  <data name="lclInfo1" xml:space="preserve">
+    <value>Please ensure your Clubcard Boost tokens have printed clearly on white paper, before taking into store. Unfortunately, smudged or unclear barcodes are unable to be scanned at the till.</value>
+  </data>
+  <data name="lclInfo2" xml:space="preserve">
+    <value>Clubcard Boost tokens will be accepted printed in black &amp; white or in colour.  If you are worried your printout might not be clear enough, try printing it our again, (Clubcard Boost tokens can be printed more than once), or write down the 22 digit barcode number that is next to the barcode and take this into store with your printed Clubcard Boost tokens.  If your barcode does not scan, checkout staff can type in the barcode number at the till to redeem your Clubcard Boost tokens.</value>
+  </data>
+  <data name="lclInfo3" xml:space="preserve">
+    <value>Please note: Clubcard Boost tokens will display their original expiry date.</value>
+  </data>
+  <data name="lclmsg1" xml:space="preserve">
+    <value>These are the Boost token you ordered to spend in store (but not at Tesco Direct 
+                                    desks).  See your email to check where you can spend them if you are not sure.</value>
+  </data>
+  <data name="lclmsg2" xml:space="preserve">
+    <value>Follow the instructions below to print your Clubcard Boost tokens to spend in store.</value>
+  </data>
+  <data name="lclmsg3" xml:space="preserve">
+    <value>Any Clubcard Boost tokens ordered in store will not be listed below.</value>
+  </data>
+  <data name="lclmsg4" xml:space="preserve">
+    <value>Please note: Clubcard Boost tokens can only be used once.</value>
+  </data>
+  <data name="lclOnlineCodes" xml:space="preserve">
+    <value>Token codes (eCoupons)</value>
+  </data>
+  <data name="lclOnlineDateOrdered" xml:space="preserve">
+    <value>Date ordered</value>
+  </data>
+  <data name="lclOnlineDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lclOnlineExpiryDate" xml:space="preserve">
+    <value>Expiry date</value>
+  </data>
+  <data name="lclOnlineOrderStatus" xml:space="preserve">
+    <value>Order status</value>
+  </data>
+  <data name="lclOnlineValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="lclOrdStatusResource" xml:space="preserve">
+    <value>Order status</value>
+  </data>
+  <data name="lclPrintTokens" xml:space="preserve">
+    <value>Click 'Print my tokens'</value>
+  </data>
+  <data name="lclSelectAllTokens" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="lclSelectTokenResource" xml:space="preserve">
+    <value>Select tokens</value>
+  </data>
+  <data name="lclStoreExcCodes" xml:space="preserve">
+    <value>In Store Boost token codes</value>
+  </data>
+  <data name="lclValResource" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="lclWantto" xml:space="preserve">
+    <value>I want to:</value>
+  </data>
+</root>

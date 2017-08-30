@@ -1,0 +1,198 @@
+.points-callout {
+	border: none;
+	margin-top: 0;
+	background: $ddl-link-colour;
+	padding: 6px 0 6px 12px;
+
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+	}
+
+	&:before, &:after {
+		display: block;
+		font-family: "icons";
+		font-size: 14px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		position: absolute;
+		border-radius: 40px;
+		background: $ddl-white1;
+		color: $ddl-link-colour;
+		top: 50%;
+		margin-top: -20px;
+		left: 12px;
+	}
+
+	&.points-callout-multiline {
+
+		&:before {
+			top: 32px;
+			left: 16px;
+		}
+	}
+
+	table {
+
+		tbody tr {
+			display: table-row;
+			border: none;
+
+			&:nth-child(even){
+				
+				th, td {
+					background: none;
+				}
+			}
+
+			td {
+				display: table-cell;
+				padding: 16px 8px;
+				font-size: 1.8rem;
+				color: $ddl-white2;
+				border-bottom: none;
+				float: none !important;
+				clear: none;
+				font-family: "tescobold";
+
+
+				h2 {
+					font-size: 1.8rem;
+					color: $ddl-white2;
+					padding: 0 0 0 44px;
+					line-height: normal;
+				}
+
+				a {
+					color: $ddl-white1;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				&:nth-child(2){
+					text-align: right;
+					font-size: 2.8rem;
+					font-family: "tescobold";
+					padding: 16px;
+				}
+			}
+		}
+	}
+
+	&.points-callout-link {
+		padding-right: 70px;
+
+		&:after {
+			display: block;
+			content: "\e605" !important;
+			left: auto;
+			top: 50%;
+			margin-top: -20px;
+			right: 12px;
+		    text-align: left;
+		    text-indent: 15px;
+		}
+
+		tbody tr {
+
+			td {
+
+				&:nth-child(2){
+					padding: 16px 0;
+				}
+			}
+		}
+	}
+
+	&.points-callout-secondary {
+		background: $ddl-grey6;
+
+		&:before, &:after {
+			background: $ddl-link-colour;
+			color: $ddl-white1;
+		}
+
+
+		table {
+
+			tbody tr td {
+				color: $ddl-black2;
+
+				h2, a {
+					color: $ddl-black2;
+				}
+			}
+		}
+
+	}
+
+	&.points-callout-tertiary {
+		background: $ddl-grey6;
+		padding: 6px 12px;
+
+		&:before, &:after {
+			display: none;
+		}
+
+
+		table {
+
+			th, tr {
+				padding: 16px;
+				background: none;
+				font-size: 1.8rem;
+			}
+
+			th {
+				border: none;
+				padding-bottom: 0;
+			}
+
+			tbody tr {
+
+				td {
+					color: $ddl-black2;
+					border-bottom: 1px solid $ddl-grey3;
+
+					a {
+						color: $ddl-black2;
+					}
+				}
+
+				&:nth-child(even){
+					background: none;
+				}
+
+				&:last-child {
+
+					td {
+						border-bottom: none;
+
+					}
+				}
+			}
+		}
+
+		&.points-callout-tertiary-dark {
+			background: $ddl-link-colour;
+		
+			table {
+
+				th, td {
+					color: $ddl-white1;
+				}
+
+				tbody tr {
+
+					td {
+						border-color: $ddl-white1;
+					}
+				}
+			}
+		}
+
+	}
+}

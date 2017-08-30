@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5c0cc4c6-3f9b-4f7e-8503-b0e9277efaf2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PreferenceService.xsd" MetadataType="Schema" ID="67d8ee6a-a6bd-4406-936f-7e72eb264f8e" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PreferenceService1.xsd" MetadataType="Schema" ID="2ac32413-f939-48c9-aa54-5470ad61d9cd" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PreferenceService.disco" MetadataType="Disco" ID="324bc0a1-a3a9-421c-b1c9-4705152b59a0" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?disco" />
+    <MetadataFile FileName="PreferenceService2.xsd" MetadataType="Schema" ID="92954378-09b1-4180-83c4-f42ec497cfa6" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PreferenceService.wsdl" MetadataType="Wsdl" ID="6b326500-d55b-4f99-9a5e-716733d3278b" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?wsdl" />
+    <MetadataFile FileName="PreferenceService3.xsd" MetadataType="Schema" ID="dc886cac-9659-4ad6-8a7e-2223816f4502" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/Preferences_Exalt/PreferenceService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

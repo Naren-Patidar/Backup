@@ -1,0 +1,45 @@
+{
+  "UserId": "trn:tesco:uid:uuid:5535ad5d-d4e6-423c-9492-7cb7330d6468",
+  "Status": "VALID",
+  "Claims": [
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/clientid",
+      "value": "trn:tesco:cid:190d5cba-3581-4270-9b44-676d6efbebbb"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/scope",
+      "value": "oob"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/userkey",
+      "value": "trn:tesco:uid:uuid:5535ad5d-d4e6-423c-9492-7cb7330d6468"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/confidencelevel",
+      "value": "12"
+    },
+    {
+      "claimType": "http://schemas.microsoft.com/ws/2008/06/identity/claims/expiration",
+      "value": "1467955871"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/martini_id",
+      "value": "3000374268"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/secure_user_id",
+      "value": "120085"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/dxsh_customer_id",
+      "value": "30131268"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/merged",
+      "values": [
+        "trn:tesco:uid:uuid:44dfaa45-ec67-4bfe-aa69-ee2551ea0fcb",
+        "trn:tesco:uid:uuid:b49384b7-b107-4df7-a94d-5982ee7f4d0f"
+      ]
+    }
+  ]
+}

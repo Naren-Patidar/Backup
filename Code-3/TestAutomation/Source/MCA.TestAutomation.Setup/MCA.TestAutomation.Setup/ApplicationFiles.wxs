@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<!-- The name of this fragment -->
+	<Fragment Id ="AppFiles">
+		<!-- The directory reference of your main project -->
+		
+		<DirectoryRef Id="INSTALLMYACCOUNT">
+			<Directory Id="Framework" Name="Framework">
+				<Component Id="Framework" Guid="898EF751-4E1B-45DD-AC15-8027D8721FFF" DiskId="1" KeyPath="yes">
+					<File Id="Framework_0" Name="WebDriver.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\WebDriver.dll" Vital="yes" />
+					<File Id="Framework_1" Name="Tesco.Framework.UITesting.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.UITesting.dll" Vital="yes" />
+					<File Id="Framework_2" Name="Tesco.Framework.UITesting.Services.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.UITesting.Services.dll" Vital="yes" />
+					<File Id="Framework_3" Name="Tesco.Framework.Common.Logging.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.Common.Logging.dll" Vital="yes" />
+					<File Id="Framework_4" Name="Tesco.Framework.Common.Utilities.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.Common.Utilities.dll" Vital="yes" />
+					<File Id="Framework_5" Name="log4net.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\log4net.dll" Vital="yes" />
+					<File Id="Framework_6" Name="Selenium.WebDriverBackedSelenium.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Selenium.WebDriverBackedSelenium.dll" Vital="yes" />
+					<File Id="Framework_7" Name="ThoughtWorks.Selenium.Core.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\ThoughtWorks.Selenium.Core.dll" Vital="yes" />
+					<File Id="Framework_9" Name="Tesco.Framework.UITesting.GC.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.UITesting.dll" Vital="yes" />
+					<File Id="Framework_10" Name="Tesco.Framework.UITesting.MF.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.UITesting.dll" Vital="yes" />
+					<File Id="Framework_11" Name="Tesco.Framework.UITesting.S.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Tesco.Framework.UITesting.dll" Vital="yes" />
+					<File Id="Framework_12" Name="Tesco.Framework.UITesting.dll.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.GD.config" Vital="yes" />
+					<File Id="Framework_13" Name="Tesco.Framework.UITesting.GC.dll.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.GD.config" Vital="yes" />
+					<File Id="Framework_14" Name="Tesco.Framework.UITesting.MF.dll.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.GD.config" Vital="yes" />
+					<File Id="Framework_15" Name="Tesco.Framework.UITesting.S.dll.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.GD.config" Vital="yes" />
+					<File Id="Framework_16" Name="Newtonsoft.Json.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\bin\Release\Newtonsoft.Json.dll" Vital="yes" />
+
+				</Component>
+
+			</Directory>
+			<Directory Id="Config" Name="Config">
+
+				<Component Id="Config" Guid="562E0BE3-9227-4DF3-A9A4-E1B5CF8D8EB0" DiskId="1" KeyPath="yes">
+					<File Id="Config0" Name="Tesco.Framework.UITesting.dll.GD.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.GD.config" Vital="yes" />
+					<File Id="Config1" Name="Tesco.Framework.UITesting.dll.UKGD.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.UKGD.config" Vital="yes" />
+					<File Id="Config2" Name="Tesco.Framework.UITesting.dll.STG.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Config\Tesco.Framework.UITesting.dll.STG.config" Vital="yes" />
+				</Component>
+			</Directory>
+			<Directory Id="Driver" Name="Driver">
+
+
+				<Component Id="Driver" Guid="017BDDD3-67B7-4298-B898-6A37E72A5752" DiskId="1" KeyPath="yes">
+					<File Id="DriverFile0" Name="chromedriver.exe" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Driver\chromedriver.exe" Vital="yes" />
+					<File Id="DriverFile1" Name="IEDriverServer.exe" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Driver\IEDriverServer.exe" Vital="yes" />
+					<File Id="DriverFile2" Name="log4net.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Driver\log4net.config" Vital="yes" />
+					<File Id="DriverFile3" Name="SafariDriver.safariextz" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Driver\SafariDriver.safariextz" Vital="yes" />
+				</Component>
+			</Directory>
+			<Directory Id="ContentFolder" Name="ContentFolder">
+				<Directory Id="ControlsXML" Name="ControlsXML">
+
+					<Component Id="ControlsXML" Guid="5B0017E4-F024-411F-A0D5-9F629D2EF4C6" DiskId="1" KeyPath="yes">
+						<File Id="ControlsXML0" Name="Controls.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\ControlsXML\Controls.xml" Vital="yes" />
+					</Component>
+				</Directory>
+
+				<Directory Id="Country" Name="Country">
+					<Directory Id="CZ" Name="CZ">
+						<Component Id="CZ" Guid="888479F4-BD8C-4E02-B9BD-19B424E9BFAC" DiskId="1" KeyPath="yes">
+							<File Id="CZFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\DBConfiguration.xml" Vital="yes" />
+							<File Id="CZFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml" Name="DataXml">
+							<Component Id="DataXml" Guid="C7A2CFF1-5E80-4D1A-81A3-D5EACAF543A3" DiskId="1" KeyPath="yes">
+								<File Id="DataXmlFile0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML" Name="HTML">
+							<Component Id="HTML" Guid="763CC928-1219-44B4-8AB1-9AD3279A3AB1" DiskId="1" KeyPath="yes">
+								<File Id="HTMLFile0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\Error.html" Vital="yes" />
+								<File Id="HTMLFile4" Name="Footer.cs-CZ.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\Footer.cs-CZ.html" Vital="yes" />
+								<File Id="HTMLFile5" Name="Header.cs-CZ.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\Header.cs-CZ.html" Vital="yes" />
+								<File Id="HTMLFile6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTMLFile9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML" Name="MessagesXML">
+							<Component Id="MessagesXML" Guid="829105D4-9E87-4743-9A50-DB76C941CEA1" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXMLFile0" Name="Activation-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Activation-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile1" Name="BoostsAtTesco-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\BoostsAtTesco-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile2" Name="ChristmasSaver-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\ChristmasSaver-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile3" Name="ClubcardOnline.Web-App_GlobalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\ClubcardOnline.Web-App_GlobalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile4" Name="ClubcardOnline.Web-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\ClubcardOnline.Web-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile5" Name="Controls-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Controls-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile6" Name="eCoupon-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\eCoupon-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile7" Name="Home-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Home-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile8" Name="Join-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Join-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile9" Name="LatestStatement-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\LatestStatement-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile10" Name="ManageCards-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\ManageCards-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile11" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXMLFile12" Name="MyLatestStatement-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\MyLatestStatement-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile13" Name="OrderAReplacement-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\OrderAReplacement-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile14" Name="PersonalDetails-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\PersonalDetails-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile15" Name="Points-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Points-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile16" Name="Preferences-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Preferences-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile17" Name="SecurityStage-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\SecurityStage-App_LocalResources.cs-CZ.xml" Vital="yes" />
+								<File Id="MessagesXMLFile18" Name="Vouchers-App_LocalResources.cs-CZ.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\CZ\MessagesXML\Vouchers-App_LocalResources.cs-CZ.xml" Vital="yes" />
+							</Component>
+						</Directory>
+					</Directory>
+					<Directory Id="HU" Name="HU">
+						<Component Id="HU" Guid="4E3EE0A1-C659-4126-BCE5-B9D237CC1C4F" DiskId="1" KeyPath="yes">
+							<File Id="HUFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\DBConfiguration.xml" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_1" Name="DataXml">
+							<Component Id="DataXml_1" Guid="68DCE0F4-1480-4834-80B4-E1C7A3624A2C" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_1File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_1" Name="HTML">
+							<Component Id="HTML_1" Guid="04A35CB3-E1BB-4620-9FAA-F51E62FC78B2" DiskId="1" KeyPath="yes">
+								<File Id="HTML_1File0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_1File4" Name="Footer.hu-HU.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\Footer.hu-HU.html" Vital="yes" />
+								<File Id="HTML_1File5" Name="Header.hu-HU.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\Header.hu-HU.html" Vital="yes" />
+								<File Id="HTML_1File6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_1File9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_1" Name="MessagesXML">
+							<Component Id="MessagesXML_1" Guid="DDC20D36-EAD6-41D4-B248-1619914522BE" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_1File0" Name="Activation-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Activation-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File1" Name="Controls-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Controls-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File2" Name="eCoupon-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\eCoupon-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File3" Name="Home-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Home-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File4" Name="Join-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Join-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File5" Name="ManageCards-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\ManageCards-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File6" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_1File7" Name="OrderAReplacement-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\OrderAReplacement-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File8" Name="PersonalDetails-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\PersonalDetails-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File9" Name="Points-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Points-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File10" Name="Preferences-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Preferences-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File11" Name="Resource_Files-App_GlobalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Resource_Files-App_GlobalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File12" Name="Resource_Files-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Resource_Files-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File13" Name="SecurityStage-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\SecurityStage-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File14" Name="Vouchers-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\Vouchers-App_LocalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File15" Name="ClubcardOnline.Web-App_GlobalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\ClubcardOnline.Web-App_GlobalResources.hu-HU.xml" Vital="yes" />
+								<File Id="MessagesXML_1File16" Name="ClubcardOnline.Web-App_LocalResources.hu-HU.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\HU\MessagesXML\ClubcardOnline.Web-App_LocalResources.hu-HU.xml" Vital="yes" />
+							</Component>
+						</Directory>
+					</Directory>
+					<Directory Id="SK" Name="SK">
+						<Component Id="SK" Guid="0B2D99F4-FFA9-477D-BF89-9FF9C5C09923" DiskId="1" KeyPath="yes">
+
+							<File Id="SKFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\DBConfiguration.xml" Vital="yes" />
+							<File Id="SKFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_4" Name="DataXml">
+							<Component Id="DataXml_4" Guid="997AB457-E3F9-4218-87EE-E3BD425675F5" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_4File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_4" Name="HTML">
+							<Component Id="HTML_4" Guid="15C466A6-C215-42B4-A2E5-89B7B908257A" DiskId="1" KeyPath="yes">
+								<File Id="HTML_4File0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_4File4" Name="Footer.sk-SK.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\Footer.sk-SK.html" Vital="yes" />
+								<File Id="HTML_4File5" Name="Header.sk-SK.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\Header.sk-SK.html" Vital="yes" />
+								<File Id="HTML_4File6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_4File9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_4" Name="MessagesXML">
+							<Component Id="MessagesXML_4" Guid="3266A39D-924B-46BB-A763-3034A648CF73" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_4File0" Name="Activation-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Activation-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File1" Name="BoostsAtTesco-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\BoostsAtTesco-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File2" Name="ChristmasSaver-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\ChristmasSaver-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File3" Name="ClubcardOnline.Web-App_GlobalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\ClubcardOnline.Web-App_GlobalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File4" Name="ClubcardOnline.Web-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\ClubcardOnline.Web-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File5" Name="Controls-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Controls-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File6" Name="eCoupon-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\eCoupon-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File7" Name="Home-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Home-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File8" Name="Join-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Join-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File9" Name="ManageCards-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\ManageCards-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File10" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_4File11" Name="MyLatestStatement-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\MyLatestStatement-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File12" Name="OrderAReplacement-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\OrderAReplacement-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File13" Name="PersonalDetails-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\PersonalDetails-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File14" Name="Points-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Points-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File15" Name="Preferences-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Preferences-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File16" Name="SecurityStage-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\SecurityStage-App_LocalResources.sk-SK.xml" Vital="yes" />
+								<File Id="MessagesXML_4File17" Name="Vouchers-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Vouchers-App_LocalResources.sk-SK.xml" Vital="yes" />
+							</Component>
+							<Directory Id="Other_1" Name="Other">
+								<Component Id="Other_1" Guid="88BBFE44-656C-49E7-A31B-8965672AFCE2" DiskId="1" KeyPath="yes">
+									<File Id="Other_1File0" Name="LatestStatement-App_LocalResources.sk-SK.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\SK\MessagesXML\Other\LatestStatement-App_LocalResources.sk-SK.xml" Vital="yes" />
+								</Component>
+							</Directory>
+						</Directory>
+					</Directory>
+					<Directory Id="PL" Name="PL">
+						<Component Id="PL" Guid="6202D663-E8C5-403E-9BBC-416BA670D30A" DiskId="1" KeyPath="yes">
+							<File Id="PLFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\DBConfiguration.xml" Vital="yes" />
+							<File Id="PLFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_3" Name="DataXml">
+							<Component Id="DataXml_3" Guid="D1F00007-5A9A-480A-B843-E42217CF5CE3" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_3File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_3" Name="HTML">
+							<Component Id="HTML_3" Guid="34A1A886-8217-4095-A84A-DC87573D86BA" DiskId="1" KeyPath="yes">
+								<File Id="HTML_3File0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_3File4" Name="Footer.pl-PL.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\Footer.pl-PL.html" Vital="yes" />
+								<File Id="HTML_3File5" Name="Header.pl-PL.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\Header.pl-PL.html" Vital="yes" />
+								<File Id="HTML_3File6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_3File9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_3" Name="MessagesXML">
+							<Component Id="MessagesXML_3" Guid="54D5C32B-BEAF-4E5B-A8BE-A4CF3BF5684F" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_3File0" Name="Activation-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Activation-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File1" Name="ClubcardOnline.Web-App_GlobalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\ClubcardOnline.Web-App_GlobalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File2" Name="ClubcardOnline.Web-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\ClubcardOnline.Web-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File3" Name="Controls-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Controls-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File4" Name="eCoupon-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\eCoupon-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File5" Name="Home-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Home-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File6" Name="Join-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Join-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File7" Name="ManageCards-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\ManageCards-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File8" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_3File9" Name="OrderAReplacement-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\OrderAReplacement-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File10" Name="PersonalDetails-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\PersonalDetails-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File11" Name="Points-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Points-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File12" Name="Preferences-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Preferences-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File13" Name="SecurityStage-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\SecurityStage-App_LocalResources.pl-PL.xml" Vital="yes" />
+								<File Id="MessagesXML_3File14" Name="Vouchers-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Vouchers-App_LocalResources.pl-PL.xml" Vital="yes" />
+							</Component>
+							<Directory Id="Other" Name="Other">
+								<Component Id="Other" Guid="DCA5D153-8FD8-469B-BF18-D13C2274142B" DiskId="1" KeyPath="yes">
+									<File Id="OtherFile0" Name="LatestStatement-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Other\LatestStatement-App_LocalResources.pl-PL.xml" Vital="yes" />
+									<File Id="OtherFile1" Name="Options-benefits-App_LocalResources.pl-PL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\PL\MessagesXML\Other\Options-benefits-App_LocalResources.pl-PL.xml" Vital="yes" />
+								</Component>
+							</Directory>
+						</Directory>
+					</Directory>
+					<Directory Id="UK" Name="UK">
+						<Component Id="UK" Guid="CABBEF26-2075-4138-A6BC-D07291D7A920" DiskId="1" KeyPath="yes">
+							<File Id="UKFile0" Name="dbConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\dbConfiguration.xml" Vital="yes" />
+							<File Id="UKFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_6" Name="DataXml">
+							<Component Id="DataXml_6" Guid="071A0F02-1D7B-41AF-864D-70B802546499" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_6File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_6" Name="HTML">
+							<Component Id="HTML_6" Guid="ED28008B-5F4D-4786-A393-570FB741D199" DiskId="1" KeyPath="yes">
+								<File Id="HTML_6File0" Name="A-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\A-footer.html" Vital="yes" />
+								<File Id="HTML_6File1" Name="A-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\A-letter.html" Vital="yes" />
+								<File Id="HTML_6File2" Name="B-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\B-footer.html" Vital="yes" />
+								<File Id="HTML_6File3" Name="B-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\B-letter.html" Vital="yes" />
+								<File Id="HTML_6File4" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File5" Name="C-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\C-footer.html" Vital="yes" />
+								<File Id="HTML_6File6" Name="C-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\C-letter.html" Vital="yes" />
+								<File Id="HTML_6File7" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File8" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File9" Name="D-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\D-footer.html" Vital="yes" />
+								<File Id="HTML_6File10" Name="D-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\D-letter.html" Vital="yes" />
+								<File Id="HTML_6File11" Name="E-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\E-footer.html" Vital="yes" />
+								<File Id="HTML_6File12" Name="E-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\E-letter.html" Vital="yes" />
+								<File Id="HTML_6File13" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_6File14" Name="F-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\F-footer.html" Vital="yes" />
+								<File Id="HTML_6File15" Name="F-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\F-letter.html" Vital="yes" />
+								<File Id="HTML_6File16" Name="Footer.en-GB.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\Footer.en-GB.html" Vital="yes" />
+								<File Id="HTML_6File17" Name="G-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\G-footer.html" Vital="yes" />
+								<File Id="HTML_6File18" Name="G-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\G-letter.html" Vital="yes" />
+								<File Id="HTML_6File19" Name="H-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\H-footer.html" Vital="yes" />
+								<File Id="HTML_6File20" Name="H-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\H-letter.html" Vital="yes" />
+								<File Id="HTML_6File21" Name="Header.en-GB.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\Header.en-GB.html" Vital="yes" />
+								<File Id="HTML_6File22" Name="I-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\I-footer.html" Vital="yes" />
+								<File Id="HTML_6File23" Name="I-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\I-letter.html" Vital="yes" />
+								<File Id="HTML_6File24" Name="J-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\J-footer.html" Vital="yes" />
+								<File Id="HTML_6File25" Name="J-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\J-letter.html" Vital="yes" />
+								<File Id="HTML_6File26" Name="K-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\K-footer.html" Vital="yes" />
+								<File Id="HTML_6File27" Name="K-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\K-letter.html" Vital="yes" />
+								<File Id="HTML_6File28" Name="L-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\L-footer.html" Vital="yes" />
+								<File Id="HTML_6File29" Name="L-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\L-letter.html" Vital="yes" />
+								<File Id="HTML_6File30" Name="M-footer.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\M-footer.html" Vital="yes" />
+								<File Id="HTML_6File31" Name="M-letter.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\M-letter.html" Vital="yes" />
+								<File Id="HTML_6File32" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File33" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File34" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_6File35" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_7" Name="MessagesXML">
+							<Component Id="MessagesXML_7" Guid="F3DF8D12-65CA-4B7C-8D9E-99D326053D04" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_7File0" Name="Activation-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Activation-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File1" Name="BoostsAtTesco-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\BoostsAtTesco-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File2" Name="ChristmasSavers-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\ChristmasSavers-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File3" Name="ClubcardOnline.Web-App_GlobalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\ClubcardOnline.Web-App_GlobalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File4" Name="ClubcardOnline.Web-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\ClubcardOnline.Web-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File5" Name="Controls-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Controls-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File6" Name="eCoupon-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\eCoupon-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File7" Name="FuelSave_remove-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\FuelSave_remove-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File8" Name="Home-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Home-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File9" Name="Join-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Join-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File10" Name="LatestStatement-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\LatestStatement-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File11" Name="ManageCards-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\ManageCards-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File12" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_7File13" Name="Options-benefits-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Options-benefits-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File14" Name="OrderAReplacement-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\OrderAReplacement-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File15" Name="PersonalDetails-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\PersonalDetails-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File16" Name="Points-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Points-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File17" Name="Preferences-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Preferences-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File18" Name="SecurityStage-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\SecurityStage-App_LocalResources.en-GB.xml" Vital="yes" />
+								<File Id="MessagesXML_7File19" Name="SecurityStage-App_LocalResources.en-GB_n.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\SecurityStage-App_LocalResources.en-GB_n.xml" Vital="yes" />
+								<File Id="MessagesXML_7File20" Name="Vouchers-App_LocalResources.en-GB.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\MessagesXML\Vouchers-App_LocalResources.en-GB.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="StatementFormats" Name="StatementFormats">
+							<Component Id="StatementFormats" Guid="D6726E9B-4170-4778-AC7E-B8275BB620F1" DiskId="1" KeyPath="yes">
+								<File Id="StatementFormatsFile0" Name="17.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\StatementFormats\17.xml" Vital="yes" />
+								<File Id="StatementFormatsFile1" Name="21.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\StatementFormats\21.xml" Vital="yes" />
+								<File Id="StatementFormatsFile2" Name="211.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\UK\StatementFormats\211.xml" Vital="yes" />
+							</Component>
+						</Directory>
+					</Directory>
+					<Directory Id="MY" Name="MY">
+						<Component Id="MY" Guid="15EE3154-3A12-4209-B0DD-C73322774830" DiskId="1" KeyPath="yes">
+							<File Id="MYFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\DBConfiguration.xml" Vital="yes" />
+							<File Id="MYFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_2" Name="DataXml">
+							<Component Id="DataXml_2" Guid="4F8C49DC-3387-42A5-9187-A1C80EDC96B2" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_2File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_2" Name="HTML">
+							<Component Id="HTML_2" Guid="697D7502-04D3-42B1-A597-095E78AB3D59" DiskId="1" KeyPath="yes">
+								<File Id="HTML_2File0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_2File4" Name="Footer.en-MY.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\Footer.en-MY.html" Vital="yes" />
+								<File Id="HTML_2File5" Name="Header.en-MY.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\Header.en-MY.html" Vital="yes" />
+								<File Id="HTML_2File6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_2File9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_2" Name="MessagesXML">
+							<Component Id="MessagesXML_2" Guid="FD1E4F27-80C5-4B1B-9575-825DD7D3A8D1" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_2File0" Name="Activation-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Activation-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File1" Name="BoostsAtTesco-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\BoostsAtTesco-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File2" Name="ChristmasSaver-App_LocalResources.en-MY.XML" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\ChristmasSaver-App_LocalResources.en-MY.XML" Vital="yes" />
+								<File Id="MessagesXML_2File3" Name="ClubcardOnline.Web-App_GlobalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\ClubcardOnline.Web-App_GlobalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File4" Name="ClubcardOnline.Web-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\ClubcardOnline.Web-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File5" Name="Controls-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Controls-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File6" Name="eCoupon-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\eCoupon-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File7" Name="Home-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Home-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File8" Name="Join-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Join-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File9" Name="LatestStatement-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\LatestStatement-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File10" Name="ManageCards-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\ManageCards-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File11" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_2File12" Name="Options-benefits-App_LocalResources.en-MY.XML" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Options-benefits-App_LocalResources.en-MY.XML" Vital="yes" />
+								<File Id="MessagesXML_2File13" Name="OrderAReplacement-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\OrderAReplacement-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File14" Name="PersonalDetails-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\PersonalDetails-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File15" Name="Points-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Points-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File16" Name="Preferences-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Preferences-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File17" Name="SecurityStage-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\SecurityStage-App_LocalResources.en-MY.xml" Vital="yes" />
+								<File Id="MessagesXML_2File18" Name="Vouchers-App_LocalResources.en-MY.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\MY\MessagesXML\Vouchers-App_LocalResources.en-MY.xml" Vital="yes" />
+							</Component>
+						</Directory>
+					</Directory>
+					<Directory Id="TH" Name="TH">
+						<Component Id="TH" Guid="6E93E1F5-46D8-4223-A2F9-DC04439F5018" DiskId="1" KeyPath="yes">
+							<File Id="THFile0" Name="DBConfiguration.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\DBConfiguration.xml" Vital="yes" />
+							<File Id="THFile1" Name="Web.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\Web.config" Vital="yes" />
+						</Component>
+						<Directory Id="DataXml_5" Name="DataXml">
+							<Component Id="DataXml_5" Guid="A8EA41D0-BF8D-4CFB-B9BD-E2AB1C8DD42D" DiskId="1" KeyPath="yes">
+								<File Id="DataXml_5File0" Name="Dataconfig.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\DataXml\Dataconfig.xml" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="HTML_5" Name="HTML">
+							<Component Id="HTML_5" Guid="8E4ED4E2-8BBB-46F6-8E78-2BCFA920EE16" DiskId="1" KeyPath="yes">
+								<File Id="HTML_5File0" Name="BoostAtTescoHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\BoostAtTescoHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File1" Name="ChristmasSaversHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\ChristmasSaversHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File2" Name="CouponHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\CouponHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File3" Name="Error.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\Error.html" Vital="yes" />
+								<File Id="HTML_5File4" Name="Footer.th-TH.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\Footer.th-TH.html" Vital="yes" />
+								<File Id="HTML_5File5" Name="Header.th-TH.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\Header.th-TH.html" Vital="yes" />
+								<File Id="HTML_5File6" Name="MyLatestStatementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\MyLatestStatementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File7" Name="OrderAReplacementHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\OrderAReplacementHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File8" Name="PointsHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\PointsHoldingPage.html" Vital="yes" />
+								<File Id="HTML_5File9" Name="VoucherHoldingPage.html" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\HTML\VoucherHoldingPage.html" Vital="yes" />
+							</Component>
+						</Directory>
+						<Directory Id="MessagesXML_5" Name="MessagesXML">
+							<Component Id="MessagesXML_5" Guid="0380BFFA-B850-4CDC-ABA3-2FF094CCEAFD" DiskId="1" KeyPath="yes">
+								<File Id="MessagesXML_5File0" Name="Activation-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Activation-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File1" Name="ClubcardOnline.Web-App_GlobalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\ClubcardOnline.Web-App_GlobalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File2" Name="ClubcardOnline.Web-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\ClubcardOnline.Web-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File3" Name="Controls-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Controls-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File4" Name="eCoupon-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\eCoupon-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File5" Name="Home-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Home-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File6" Name="Join-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Join-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File7" Name="ManageCards-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\ManageCards-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File8" Name="Message.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Message.xml" Vital="yes" />
+								<File Id="MessagesXML_5File9" Name="OrderAReplacement-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\OrderAReplacement-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File10" Name="PersonalDetails-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\PersonalDetails-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File11" Name="Points-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Points-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File12" Name="Preferences-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Preferences-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File13" Name="SecurityStage-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\SecurityStage-App_LocalResources.th-TH.xml" Vital="yes" />
+								<File Id="MessagesXML_5File14" Name="Vouchers-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Vouchers-App_LocalResources.th-TH.xml" Vital="yes" />
+							</Component>
+							<Directory Id="Others" Name="Others">
+								<Component Id="Others" Guid="FAA285A6-B377-4A58-90EC-2E4705016BE8" DiskId="1" KeyPath="yes">
+									<File Id="OthersFile0" Name="BoostsAtTesco-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Others\BoostsAtTesco-App_LocalResources.th-TH.xml" Vital="yes" />
+									<File Id="OthersFile1" Name="ChristmasSavers-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Others\ChristmasSavers-App_LocalResources.th-TH.xml" Vital="yes" />
+									<File Id="OthersFile2" Name="LatestStatement-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Others\LatestStatement-App_LocalResources.th-TH.xml" Vital="yes" />
+									<File Id="OthersFile3" Name="Options-benefits-App_LocalResources.th-TH.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\Country\TH\MessagesXML\Others\Options-benefits-App_LocalResources.th-TH.xml" Vital="yes" />
+								</Component>
+							</Directory>
+						</Directory>
+					</Directory>
+					<Directory Id="TR" Name="TR">
+						<Component Id="TR" Guid="D518BA8D-CE2A-4C87-8020-2E558CD1F088" DiskId="1" KeyPath="yes">
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="LinkXML" Name="LinkXML">
+					<Component Id="LinkXML" Guid="AE9AF5EA-6FD5-43AE-9D0A-BDED6FD8C006" DiskId="1" KeyPath="yes">
+						<File Id="LinkXMLFile0" Name="URL.xml" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\LinkXML\URL.xml" Vital="yes" />
+					</Component>
+				</Directory>
+			</Directory>
+			<Directory Id="Executables" Name="Executables">
+
+			<!--	<Directory Id="CZ_GD" Name="CZ_GD">
+					<Directory Id="BasicFunctionality" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality" Guid="4791DEF2-D834-4580-A142-F2DAECB70A54" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionalityFile0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionalityFile1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionalityFile2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionalityFile3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory> 
+					<Directory Id="Pa" Name="P0">
+						<Component Id="Pa" Guid="4EBC3C31-7ABA-463A-83B9-27791DDB7674" DiskId="1" KeyPath="yes">
+							<File Id="PaFile0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="PaFile1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="PaFile2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="PaFile3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P0\P0.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb" Name="P1">
+						<Component Id="Pb" Guid="26DF9E55-2C71-4FAB-B403-34E2A6D17D1C" DiskId="1" KeyPath="yes">
+							<File Id="PbFile0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="PbFile1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="PbFile2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="PbFile3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P1\P1.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc" Name="P2">
+						<Component Id="Pc" Guid="2AC63460-3BAE-4A60-BC3C-3657AF573825" DiskId="1" KeyPath="yes">
+							<File Id="PcFile0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="PcFile1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="PcFile2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="PcFile3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\P2\P2.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity" Name="Sanity">
+						<Component Id="Sanity" Guid="E125C04D-A979-4C73-92BA-6186155F0FE7" DiskId="1" KeyPath="yes">
+							<File Id="SanityFile0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="SanityFile1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="SanityFile2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="SanityFile3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="CZ_STG" Name="CZ_STG">
+					<Directory Id="BasicFunctionality_1" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_1" Guid="E9B74156-265C-4875-AAA6-5C0F1CA612DA" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_1File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_1File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_1File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_1File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_1" Name="P0">
+						<Component Id="Pa_1" Guid="63AA1923-634C-400A-BCCF-01E68927A4DA" DiskId="1" KeyPath="yes">
+							<File Id="Pa_1File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_1File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_1File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_1File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_1" Name="P1">
+						<Component Id="Pb_1" Guid="11256119-0377-441B-9CB7-AD9AE5ABDC76" DiskId="1" KeyPath="yes">
+							<File Id="Pb_1File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_1File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_1File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_1File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_1" Name="P2">
+						<Component Id="Pc_1" Guid="DEFE65D3-9967-48B5-AE79-F88F2F990E92" DiskId="1" KeyPath="yes">
+							<File Id="Pc_1File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_1File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_1File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_1File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_1" Name="Sanity">
+						<Component Id="Sanity_1" Guid="FD5DD767-C344-42A7-894E-3A86395F3C4A" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_1File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_1File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_1File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_1File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\CZ_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory> 
+				<Directory Id="HU_GD" Name="HU_GD">
+					<Directory Id="BasicFunctionality_2" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_2" Guid="2362828E-826A-40A2-B33D-1FDF9D83A286" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_2File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_2File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_2File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_2File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_2" Name="P0">
+						<Component Id="Pa_2" Guid="8D6DB670-FB66-4553-ABEB-4B5BEABBFDB6" DiskId="1" KeyPath="yes">
+							<File Id="Pa_2File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_2File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_2File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_2File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P0\P0.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_2" Name="P1">
+						<Component Id="Pb_2" Guid="740DD656-86B0-457A-8FD0-8911DE62698B" DiskId="1" KeyPath="yes">
+							<File Id="Pb_2File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_2File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_2File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_2File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P1\P1.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_2" Name="P2">
+						<Component Id="Pc_2" Guid="404A2AE2-0247-4A18-B6CB-6903BDCD998C" DiskId="1" KeyPath="yes">
+							<File Id="Pc_2File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_2File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_2File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_2File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\P2\P2.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_2" Name="Sanity">
+						<Component Id="Sanity_2" Guid="3290BC5F-7872-4B7C-9065-B3BC46328E58" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_2File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_2File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_2File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_2File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="HU_STG" Name="HU_STG">
+					<Directory Id="BasicFunctionality_3" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_3" Guid="6A8E4A24-DD90-45C2-A070-C5EDC4939236" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_3File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_3File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_3File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_3File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_3" Name="P0">
+						<Component Id="Pa_3" Guid="B82AF87C-306C-4846-80D3-F4D4721D3C48" DiskId="1" KeyPath="yes">
+							<File Id="Pa_3File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_3File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_3File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_3File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_3" Name="P1">
+						<Component Id="Pb_3" Guid="5F30BB65-761C-4404-81D2-8D50966CD5AD" DiskId="1" KeyPath="yes">
+							<File Id="Pb_3File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_3File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_3File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_3File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_3" Name="P2">
+						<Component Id="Pc_3" Guid="1B560C2A-C872-48B2-A1A5-37BCA2EAD45B" DiskId="1" KeyPath="yes">
+							<File Id="Pc_3File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_3File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_3File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_3File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_3" Name="Sanity">
+						<Component Id="Sanity_3" Guid="37BFD28A-E9DE-471A-A429-954E2F444C8F" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_3File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_3File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_3File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_3File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\HU_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="MY_GD" Name="MY_GD">
+					<Directory Id="BasicFunctionality_4" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_4" Guid="B6E36E3B-47CE-4235-83D1-0B8B431AF663" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_4File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_4File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_4File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_4File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory> 
+					<Directory Id="Pa_4" Name="P0">
+						<Component Id="Pa_4" Guid="522CF71B-80CF-4C90-A1BB-BDA12D2C6EDF" DiskId="1" KeyPath="yes">
+							<File Id="Pa_4File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_4File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_4File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0.S.GD.bat" Vital="yes" />
+							<File Id="Pa_4File4" Name="P0Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File5" Name="P0Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File6" Name="P0Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File7" Name="P0Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File8" Name="P0Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set5.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File9" Name="P0Set6.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set6.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File10" Name="P0Set7.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set7.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File11" Name="P0Set8.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set8.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_4File12" Name="P0Set9.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P0\P0Set9.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_4" Name="P1">
+						<Component Id="Pb_4" Guid="3B2FA9E1-0C85-4B91-AC0A-DEDBC5B0B8B5" DiskId="1" KeyPath="yes">
+							<File Id="Pb_4File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_4File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_4File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_4File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1.S.GD.bat" Vital="yes" />
+							<File Id="Pb_4File4" Name="P1Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_4File5" Name="P1Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_4File6" Name="P1Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_4File7" Name="P1Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_4File8" Name="P1Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P1\P1Set5.GC.GD.bat" Vital="yes" />
+						
+						</Component>
+					</Directory>
+					<Directory Id="Pc_4" Name="P2">
+						<Component Id="Pc_4" Guid="57D72E4D-4FC6-40D2-BA2F-C9C128C9D228" DiskId="1" KeyPath="yes">
+							<File Id="Pc_4File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_4File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_4File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_4File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P2\P2.S.GD.bat" Vital="yes" />
+							<File Id="Pc_4File4" Name="P2Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\P2\P2Set1.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_4" Name="Sanity">
+						<Component Id="Sanity_4" Guid="850EA9C1-43D8-4E4E-90AC-BA6AD5900F26" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_4File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_4File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_4File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_4File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="MY_STG" Name="MY_STG">
+					<Directory Id="BasicFunctionality_5" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_5" Guid="CD78AACE-DED8-4B31-9079-2A51FFB86A5C" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_5File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_5File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_5File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_5File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_5" Name="P0">
+						<Component Id="Pa_5" Guid="4E227E1E-732D-4B83-BBDC-0F4782C8F3F5" DiskId="1" KeyPath="yes">
+							<File Id="Pa_5File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_5File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_5File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_5File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_5" Name="P1">
+						<Component Id="Pb_5" Guid="18B97585-4B99-4EEC-9929-5E16E683BA1D" DiskId="1" KeyPath="yes">
+							<File Id="Pb_5File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_5File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_5File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_5File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_5" Name="P2">
+						<Component Id="Pc_5" Guid="36232B77-7096-470E-ACEA-E47FF2898F90" DiskId="1" KeyPath="yes">
+							<File Id="Pc_5File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_5File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_5File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_5File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_5" Name="Sanity">
+						<Component Id="Sanity_5" Guid="FDC5E19C-39BB-4B3C-820E-329447D4CA49" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_5File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_5File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_5File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_5File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\MY_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="PL_GD" Name="PL_GD">
+					<Directory Id="BasicFunctionality_6" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_6" Guid="47BCE2DB-212E-4360-BCE5-982B8F82BA96" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_6File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_6File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_6File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_6File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_6" Name="P0">
+						<Component Id="Pa_6" Guid="CCC24EA4-BE28-4604-950A-A26009B0C8ED" DiskId="1" KeyPath="yes">
+							<File Id="Pa_6File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_6File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_6File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0.S.GD.bat" Vital="yes" />
+							<File Id="Pa_6File4" Name="P0Set1.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File5" Name="P0Set2.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File6" Name="P0Set3.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File7" Name="P0Set4.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File8" Name="P0Set5.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set5.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File9" Name="P0Set6.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set6.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File10" Name="P0Set7.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set7.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File11" Name="P0Set8.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set8.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_6File12" Name="P0Set9.GC.GD.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P0\P0Set9.GC.GD.bat" Vital="yes" />
+							
+						</Component>
+					</Directory>
+					<Directory Id="Pb_6" Name="P1">
+						<Component Id="Pb_6" Guid="B512021F-45EA-4910-9B4B-6A451A9089A3" DiskId="1" KeyPath="yes">
+							<File Id="Pb_6File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_6File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_6File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_6File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1.S.GD.bat" Vital="yes" />
+							<File Id="Pb_6File4" Name="P1Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_6File5" Name="P1Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_6File6" Name="P1Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_6File7" Name="P1Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_6File8" Name="P1Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P1\P1Set5.GC.GD.bat" Vital="yes" />
+						
+						</Component>
+					</Directory>
+					<Directory Id="Pc_6" Name="P2">
+						<Component Id="Pc_6" Guid="CE5FF86D-18C7-408C-A4A0-C7B00415BF0C" DiskId="1" KeyPath="yes">
+							<File Id="Pc_6File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_6File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_6File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_6File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P2\P2.S.GD.bat" Vital="yes" />
+							<File Id="Pc_6File4" Name="P2Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\P2\P2Set1.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_6" Name="Sanity">
+						<Component Id="Sanity_6" Guid="6EB2D2BC-18D1-4BDB-B24C-C0A77A4336D0" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_6File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_6File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_6File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_6File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="PL_STG" Name="PL_STG">
+					<Directory Id="BasicFunctionality_7" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_7" Guid="FBDF901F-B428-493F-80CD-F295B7254184" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_7File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_7File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_7File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_7File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_7" Name="P0">
+						<Component Id="Pa_7" Guid="2FED41F1-CAA9-41D4-91B8-350DA5A323C8" DiskId="1" KeyPath="yes">
+							<File Id="Pa_7File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_7File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_7File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_7File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_7" Name="P1">
+						<Component Id="Pb_7" Guid="1B0C4AC1-A811-4985-AA5E-45450B2067B3" DiskId="1" KeyPath="yes">
+							<File Id="Pb_7File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_7File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_7File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_7File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_7" Name="P2">
+						<Component Id="Pc_7" Guid="B5F400C4-288E-49A2-9DF9-00E9661D416B" DiskId="1" KeyPath="yes">
+							<File Id="Pc_7File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_7File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_7File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_7File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_7" Name="Sanity">
+						<Component Id="Sanity_7" Guid="EEAD8BB3-0518-4B64-B42F-4767EF841CF9" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_7File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_7File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_7File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_7File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\PL_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="SK_GD" Name="SK_GD">
+					<Directory Id="BasicFunctionality_8" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_8" Guid="71F37E00-F886-4852-8076-9D4293400E44" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_8File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_8File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_8File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_8File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_8" Name="P0">
+						<Component Id="Pa_8" Guid="55A7F4C9-71B7-4B89-A83A-0254AEF0586E" DiskId="1" KeyPath="yes">
+							<File Id="Pa_8File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_8File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_8File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0.S.GD.bat" Vital="yes" />
+							<File Id="Pa_8File4" Name="P0Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File5" Name="P0Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File6" Name="P0Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File7" Name="P0Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File8" Name="P0Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set5.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File9" Name="P0Set6.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set6.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File10" Name="P0Set7.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set7.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File11" Name="P0Set8.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set8.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_8File12" Name="P0Set9.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P0\P0Set9.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_8" Name="P1">
+						<Component Id="Pb_8" Guid="4E021FA5-2F31-4BBC-BCAB-42B997D4D7F4" DiskId="1" KeyPath="yes">
+							<File Id="Pb_8File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_8File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_8File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_8File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1.S.GD.bat" Vital="yes" />
+							<File Id="Pb_8File4" Name="P1Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_8File5" Name="P1Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_8File6" Name="P1Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_8File7" Name="P1Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_8File8" Name="P1Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P1\P1Set5.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_8" Name="P2">
+						<Component Id="Pc_8" Guid="F384F630-C99F-469C-87A6-23EF7FFBBBAD" DiskId="1" KeyPath="yes">
+							<File Id="Pc_8File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_8File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_8File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_8File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P2\P2.S.GD.bat" Vital="yes" />
+							<File Id="Pc_8File4" Name="P2Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\P2\P2Set1.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_8" Name="Sanity">
+						<Component Id="Sanity_8" Guid="2DEC1E28-10B8-4638-B93C-CC8AD3910EA6" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_8File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_8File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_8File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_8File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="SK_STG" Name="SK_STG">
+					<Directory Id="BasicFunctionality_9" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_9" Guid="01F8942B-00A1-411A-BFC8-5252E22D61EA" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_9File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_9File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_9File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_9File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_9" Name="P0">
+						<Component Id="Pa_9" Guid="5A2F1698-3150-4667-B1EB-0ACFFEB9C417" DiskId="1" KeyPath="yes">
+							<File Id="Pa_9File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_9File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_9File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_9File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_9" Name="P1">
+						<Component Id="Pb_9" Guid="8AC3D752-D4B8-48B7-85B2-B1FCA73FBA23" DiskId="1" KeyPath="yes">
+							<File Id="Pb_9File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_9File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_9File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_9File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_9" Name="P2">
+						<Component Id="Pc_9" Guid="196FAAFB-4CD5-4ADE-AAD2-E93D7D39D5C9" DiskId="1" KeyPath="yes">
+							<File Id="Pc_9File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_9File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_9File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_9File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_9" Name="Sanity">
+						<Component Id="Sanity_9" Guid="39B43C32-DEB2-41C5-B6FA-6FD0F0834BFF" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_9File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_9File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_9File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_9File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\SK_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="TH_GD" Name="TH_GD">
+					<Directory Id="BasicFunctionality_10" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_10" Guid="5AB5BF6D-B575-4361-98C0-E1E6B4CACBA6" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_10File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_10File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_10File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_10File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_10" Name="P0">
+						<Component Id="Pa_10" Guid="E9F3DA36-EB15-42E9-A944-25A9EC69E17D" DiskId="1" KeyPath="yes">
+							<File Id="Pa_10File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_10File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_10File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0.S.GD.bat" Vital="yes" />
+							<File Id="Pa_10File4" Name="P0Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File5" Name="P0Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File6" Name="P0Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File7" Name="P0Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File8" Name="P0Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set5.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File9" Name="P0Set6.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set6.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File10" Name="P0Set7.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set7.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File11" Name="P0Set8.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set8.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_10File12" Name="P0Set9.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P0\P0Set9.GC.GD.bat" Vital="yes" />
+							
+						</Component>
+					</Directory>
+					<Directory Id="Pb_10" Name="P1">
+						<Component Id="Pb_10" Guid="F5C64767-F19D-4BB7-AB61-90788C21A2B4" DiskId="1" KeyPath="yes">
+							<File Id="Pb_10File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_10File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_10File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_10File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1.S.GD.bat" Vital="yes" />
+							<File Id="Pb_10File4" Name="P1Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_10File5" Name="P1Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_10File6" Name="P1Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_10File7" Name="P1Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_10File8" Name="P1Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P1\P1Set5.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_10" Name="P2">
+						<Component Id="Pc_10" Guid="E2272AEB-9AD6-4C44-A4A2-30D8EE5F5DA1" DiskId="1" KeyPath="yes">
+							<File Id="Pc_10File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_10File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_10File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_10File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P2\P2.S.GD.bat" Vital="yes" />
+							<File Id="Pc_10File4" Name="P2Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\P2\P2Set1.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_10" Name="Sanity">
+						<Component Id="Sanity_10" Guid="8BFF9357-9F3C-4089-A35F-A6975B3961B1" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_10File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_10File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_10File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_10File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="TH_STG" Name="TH_STG">
+					<Directory Id="BasicFunctionality_11" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_11" Guid="54FF6CD4-604F-411A-B3F1-D6CD64A98A2F" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_11File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_11File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_11File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_11File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_11" Name="P0">
+						<Component Id="Pa_11" Guid="320B7393-248B-44C2-AC2E-2F081321F66F" DiskId="1" KeyPath="yes">
+							<File Id="Pa_11File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_11File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_11File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_11File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P0\P0.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pb_11" Name="P1">
+						<Component Id="Pb_11" Guid="DA30827A-5239-42DF-AC52-2A2F5B97DBA4" DiskId="1" KeyPath="yes">
+							<File Id="Pb_11File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_11File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_11File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_11File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P1\P1.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_11" Name="P2">
+						<Component Id="Pc_11" Guid="BC4443EC-2B47-43E9-80CC-7766334B0D4C" DiskId="1" KeyPath="yes">
+							<File Id="Pc_11File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_11File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_11File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_11File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\P2\P2.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_11" Name="Sanity">
+						<Component Id="Sanity_11" Guid="3754B9E9-16B2-423B-A1CF-D642C96905C6" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_11File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_11File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_11File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_11File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\TH_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>-->
+				<Directory Id="UK_GD" Name="UK_GD">
+					<Directory Id="BasicFunctionality_12" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_12" Guid="CC14EF17-C233-46AB-AA2F-D550CDCAAFB9" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_12File0" Name="BasicFunctionality.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\BasicFunctionality\BasicFunctionality.GC.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_12File1" Name="BasicFunctionality.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\BasicFunctionality\BasicFunctionality.IE.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_12File2" Name="BasicFunctionality.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\BasicFunctionality\BasicFunctionality.MF.GD.bat" Vital="yes" />
+							<File Id="BasicFunctionality_12File3" Name="BasicFunctionality.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\BasicFunctionality\BasicFunctionality.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_12" Name="P0">
+						<Component Id="Pa_12" Guid="3A7C82E8-5CA7-4A27-ADE6-646D1B972D32" DiskId="1" KeyPath="yes">
+							<File Id="Pa_12File0" Name="P0.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0\P0.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File1" Name="P0.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0\P0.IE.GD.bat" Vital="yes" />
+							<File Id="Pa_12File2" Name="P0.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0\P0.MF.GD.bat" Vital="yes" />
+							<File Id="Pa_12File3" Name="P0.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0\P0.S.GD.bat" Vital="yes" />
+							<File Id="Pa_12File4" Name="P0Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set1\P0Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File5" Name="P0Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set2\P0Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File6" Name="P0Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set3\P0Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File7" Name="P0Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set4\P0Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File8" Name="P0Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set5\P0Set5.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File9" Name="P0Set6.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set6\P0Set6.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File10" Name="P0Set7.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set7\P0Set7.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File11" Name="P0Set8.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set8\P0Set8.GC.GD.bat" Vital="yes" />
+							<File Id="Pa_12File12" Name="P0Set9.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P0Set9\P0Set9.GC.GD.bat" Vital="yes" />
+							
+						</Component>
+					</Directory>
+					<Directory Id="Pb_12" Name="P1">
+						<Component Id="Pb_12" Guid="A02ADE81-E261-42D1-ADB1-FE7C7B2A8C8C" DiskId="1" KeyPath="yes">
+							<File Id="Pb_12File0" Name="P1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1\P1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_12File1" Name="P1.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1\P1.IE.GD.bat" Vital="yes" />
+							<File Id="Pb_12File2" Name="P1.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1\P1.MF.GD.bat" Vital="yes" />
+							<File Id="Pb_12File3" Name="P1.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1\P1.S.GD.bat" Vital="yes" />
+							<File Id="Pb_12File4" Name="P1Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1Set1\P1Set1.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_12File5" Name="P1Set2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1Set2\P1Set2.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_12File6" Name="P1Set3.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1Set3\P1Set3.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_12File7" Name="P1Set4.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1Set4\P1Set4.GC.GD.bat" Vital="yes" />
+							<File Id="Pb_12File8" Name="P1Set5.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P1Set5\P1Set5.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_12" Name="P2">
+						<Component Id="Pc_12" Guid="90AAB91F-ADFC-49DF-8A0A-2E7062EFD49A" DiskId="1" KeyPath="yes">
+							<File Id="Pc_12File0" Name="P2.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P2\P2.GC.GD.bat" Vital="yes" />
+							<File Id="Pc_12File1" Name="P2.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P2\P2.IE.GD.bat" Vital="yes" />
+							<File Id="Pc_12File2" Name="P2.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P2\P2.MF.GD.bat" Vital="yes" />
+							<File Id="Pc_12File3" Name="P2.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P2\P2.S.GD.bat" Vital="yes" />
+							<File Id="Pc_12File4" Name="P2Set1.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\P2Set1\P2Set1.GC.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_12" Name="Sanity">
+						<Component Id="Sanity_12" Guid="25DF20C8-EC85-4F03-9832-FE00127D1231" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_12File0" Name="Sanity.GC.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\Sanity\Sanity.GC.GD.bat" Vital="yes" />
+							<File Id="Sanity_12File1" Name="Sanity.IE.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\Sanity\Sanity.IE.GD.bat" Vital="yes" />
+							<File Id="Sanity_12File2" Name="Sanity.MF.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\Sanity\Sanity.MF.GD.bat" Vital="yes" />
+							<File Id="Sanity_12File3" Name="Sanity.S.GD.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_GD\Sanity\Sanity.S.GD.bat" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+				<Directory Id="UK_STG" Name="UK_STG">
+					<Directory Id="BasicFunctionality_13" Name="BasicFunctionality">
+						<Component Id="BasicFunctionality_13" Guid="829033C2-21C9-42AA-B493-5660149BD0FD" DiskId="1" KeyPath="yes">
+							<File Id="BasicFunctionality_13File0" Name="BasicFunctionality.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\BasicFunctionality\BasicFunctionality.GC.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_13File1" Name="BasicFunctionality.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\BasicFunctionality\BasicFunctionality.IE.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_13File2" Name="BasicFunctionality.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\BasicFunctionality\BasicFunctionality.MF.STG.bat" Vital="yes" />
+							<File Id="BasicFunctionality_13File3" Name="BasicFunctionality.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\BasicFunctionality\BasicFunctionality.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pa_13" Name="P0">
+						<Component Id="Pa_13" Guid="A04C2D51-F9A5-4636-8F91-111046C460FE" DiskId="1" KeyPath="yes">
+							<File Id="Pa_13File0" Name="P0.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0\P0.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File1" Name="P0.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0\P0.IE.STG.bat" Vital="yes" />
+							<File Id="Pa_13File2" Name="P0.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0\P0.MF.STG.bat" Vital="yes" />
+							<File Id="Pa_13File3" Name="P0.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0\P0.S.STG.bat" Vital="yes" />
+							<File Id="Pa_13File4" Name="P0Set1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set1\P0Set1.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File5" Name="P0Set2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set2\P0Set2.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File6" Name="P0Set3.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set3\P0Set3.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File7" Name="P0Set4.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set4\P0Set4.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File8" Name="P0Set5.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set5\P0Set5.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File9" Name="P0Set6.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set6\P0Set6.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File10" Name="P0Set7.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set7\P0Set7.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File11" Name="P0Set8.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set8\P0Set8.GC.STG.bat" Vital="yes" />
+							<File Id="Pa_13File12" Name="P0Set9.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P0Set9\P0Set9.GC.STG.bat" Vital="yes" />	
+							
+						</Component>
+					</Directory>
+					<Directory Id="Pb_13" Name="P1">
+						<Component Id="Pb_13" Guid="DBDC56F9-89BF-4BA7-9258-E8C0D91B3C78" DiskId="1" KeyPath="yes">
+							<File Id="Pb_13File0" Name="P1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1\P1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_13File1" Name="P1.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1\P1.IE.STG.bat" Vital="yes" />
+							<File Id="Pb_13File2" Name="P1.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1\P1.MF.STG.bat" Vital="yes" />
+							<File Id="Pb_13File3" Name="P1.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1\P1.S.STG.bat" Vital="yes" />
+							<File Id="Pb_13File4" Name="P1Set1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1Set1\P1Set1.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_13File5" Name="P1Set2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1Set2\P1Set2.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_13File6" Name="P1Set3.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1Set3\P1Set3.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_13File7" Name="P1Set4.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1Set4\P1Set4.GC.STG.bat" Vital="yes" />
+							<File Id="Pb_13File8" Name="P1Set5.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P1Set5\P1Set5.GC.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Pc_13" Name="P2">
+						<Component Id="Pc_13" Guid="8CC6F035-2422-421B-99AF-4AFF14B31170" DiskId="1" KeyPath="yes">
+							<File Id="Pc_13File0" Name="P2.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P2\P2.GC.STG.bat" Vital="yes" />
+							<File Id="Pc_13File1" Name="P2.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P2\P2.IE.STG.bat" Vital="yes" />
+							<File Id="Pc_13File2" Name="P2.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P2\P2.MF.STG.bat" Vital="yes" />
+							<File Id="Pc_13File3" Name="P2.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P2\P2.S.STG.bat" Vital="yes" />
+							<File Id="Pc_13File4" Name="P2Set1.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\P2Set1\P2Set1.GC.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="Sanity_13" Name="Sanity">
+						<Component Id="Sanity_13" Guid="C3100FB4-2593-4E21-9D09-A7E41ED42468" DiskId="1" KeyPath="yes">
+							<File Id="Sanity_13File0" Name="Sanity.GC.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\Sanity\Sanity.GC.STG.bat" Vital="yes" />
+							<File Id="Sanity_13File1" Name="Sanity.IE.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\Sanity\Sanity.IE.STG.bat" Vital="yes" />
+							<File Id="Sanity_13File2" Name="Sanity.MF.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\Sanity\Sanity.MF.STG.bat" Vital="yes" />
+							<File Id="Sanity_13File3" Name="Sanity.S.STG.bat" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\ContentFolder\BatchFiles\UK_STG\Sanity\Sanity.S.STG.bat" Vital="yes" />
+						</Component>
+					</Directory>
+
+				</Directory>
+			</Directory>
+			<Directory Id="Services" Name="Services">
+				<Component Id="Services" Guid="6BC913D0-90F5-4B9F-BAA6-452284057BA8" DiskId="1" KeyPath="yes">					
+					<File Id="ServicesFile0" Name="MongoReporting.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Services\MongoReporting.dll" Vital="yes" />
+					<File Id="ServicesFile1" Name="MongoReportingExe.exe" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Services\MongoReportingExe.exe" Vital="yes" />
+					<File Id="ServicesFile2" Name="MongoReportingExe.exe.config" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Services\MongoReportingExe.exe.config" Vital="yes" />
+					<File Id="ServicesFile3" Name="Tesco.ClubcardProducts.MCA.Web.RestClient.dll" Source="$(var.SolutionDir)..\Tesco.MVC.TestFrameworks\Services\Tesco.ClubcardProducts.MCA.Web.RestClient.dll" Vital="yes" />
+				</Component>
+			</Directory>
+		</DirectoryRef>
+		<ComponentGroup Id="ApplicationFiles">
+			<ComponentRef Id="Framework" />
+			<ComponentRef Id="ControlsXML" />
+			<ComponentRef Id="Config" />
+			<ComponentRef Id="Driver" />
+			<ComponentRef Id="Services" />
+			<ComponentRef Id="CZ" />
+			<ComponentRef Id="DataXml" />
+			<ComponentRef Id="HTML" />
+			<ComponentRef Id="MessagesXML" />
+			<ComponentRef Id="HU" />
+			<ComponentRef Id="DataXml_1" />
+			<ComponentRef Id="HTML_1" />
+			<ComponentRef Id="MessagesXML_1" />
+			<ComponentRef Id="SK" />
+			<ComponentRef Id="DataXml_3" />
+			<ComponentRef Id="DataXml_4" />
+			<ComponentRef Id="HTML_4" />
+			<ComponentRef Id="MessagesXML_4" />
+			<ComponentRef Id="Other_1" />
+			<ComponentRef Id="PL" />
+			<ComponentRef Id="DataXml_3" />
+			<ComponentRef Id="HTML_3" />
+			<ComponentRef Id="MessagesXML_3" />
+			<ComponentRef Id="Other" />
+			<ComponentRef Id="UK" />
+			<ComponentRef Id="DataXml_6" />
+			<ComponentRef Id="HTML_6" />
+			<ComponentRef Id="MessagesXML_7" />
+			<ComponentRef Id="StatementFormats" />
+			<ComponentRef Id="LinkXML" />
+			<ComponentRef Id="MY" />
+			<ComponentRef Id="DataXml_2" />
+			<ComponentRef Id="HTML_2" />
+			<ComponentRef Id="MessagesXML_2" />
+			<ComponentRef Id="TH" />
+			<ComponentRef Id="DataXml_5" />
+			<ComponentRef Id="HTML_5" />
+			<ComponentRef Id="MessagesXML_5" />
+			<ComponentRef Id="Others" />
+			<ComponentRef Id="TR" />
+		<!--	<ComponentRef Id="BasicFunctionality" />
+			<ComponentRef Id="Pa" />
+			<ComponentRef Id="Pb" />
+			<ComponentRef Id="Pc" />
+			<ComponentRef Id="Sanity" />
+			<ComponentRef Id="BasicFunctionality_1" />
+			<ComponentRef Id="Pa_1" />
+			<ComponentRef Id="Pb_1" />
+			<ComponentRef Id="Pc_1" />
+			<ComponentRef Id="Sanity_1" />
+			<ComponentRef Id="BasicFunctionality_2" />
+			<ComponentRef Id="Pa_2" />
+			<ComponentRef Id="Pb_2" />
+			<ComponentRef Id="Pc_2" />
+			<ComponentRef Id="Sanity_2" />
+			<ComponentRef Id="BasicFunctionality_3" />
+			<ComponentRef Id="Pa_3" />
+			<ComponentRef Id="Pb_3" />
+			<ComponentRef Id="Pc_3" />
+			<ComponentRef Id="Sanity_3" />
+			<ComponentRef Id="BasicFunctionality_4" />
+			<ComponentRef Id="Pa_4" />
+			<ComponentRef Id="Pb_4" />
+			<ComponentRef Id="Pc_4" />
+			<ComponentRef Id="Sanity_4" />
+			<ComponentRef Id="BasicFunctionality_5" />
+			<ComponentRef Id="Pa_5" />
+			<ComponentRef Id="Pb_5" />
+			<ComponentRef Id="Pc_5" />
+			<ComponentRef Id="Sanity_5" />
+			<ComponentRef Id="BasicFunctionality_6" />
+			<ComponentRef Id="Pa_6" />
+			<ComponentRef Id="Pb_6" />
+			<ComponentRef Id="Pc_6" />
+			<ComponentRef Id="Sanity_6" />
+			<ComponentRef Id="BasicFunctionality_7" />
+			<ComponentRef Id="Pa_7" />
+			<ComponentRef Id="Pb_7" />
+			<ComponentRef Id="Pc_7" />
+			<ComponentRef Id="Sanity_7" />
+			<ComponentRef Id="BasicFunctionality_8" />
+			<ComponentRef Id="Pa_8" />
+			<ComponentRef Id="Pb_8" />
+			<ComponentRef Id="Pc_8" />
+			<ComponentRef Id="Sanity_8" />
+			<ComponentRef Id="BasicFunctionality_9" />
+			<ComponentRef Id="Pa_9" />
+			<ComponentRef Id="Pb_9" />
+			<ComponentRef Id="Pc_9" />
+			<ComponentRef Id="Sanity_9" />
+			<ComponentRef Id="BasicFunctionality_10" />
+			<ComponentRef Id="Pa_10" />
+			<ComponentRef Id="Pb_10" />
+			<ComponentRef Id="Pc_10" />
+			<ComponentRef Id="Sanity_10" />
+			<ComponentRef Id="BasicFunctionality_11" />
+			<ComponentRef Id="Pa_11" />
+			<ComponentRef Id="Pb_11" />
+			<ComponentRef Id="Pc_11" />
+			<ComponentRef Id="Sanity_11" />-->
+			<ComponentRef Id="BasicFunctionality_12" />
+			<ComponentRef Id="Pa_12" />
+			<ComponentRef Id="Pb_12" />
+			<ComponentRef Id="Pc_12" />
+			<ComponentRef Id="Sanity_12" />
+			<ComponentRef Id="BasicFunctionality_13" />
+			<ComponentRef Id="Pa_13" />
+			<ComponentRef Id="Pb_13" />
+			<ComponentRef Id="Pc_13" />
+			<ComponentRef Id="Sanity_13" />
+		</ComponentGroup>
+	</Fragment>
+</Wix>

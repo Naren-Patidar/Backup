@@ -1,0 +1,187 @@
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Points
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.ConfigurationProvider
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities;
+@using System.Globalization
+@model Tesco.ClubcardProducts.MCA.Web.Common.Entities.Points.CustomerTransactions
+@{
+    ViewBag.Title = @Html.Translate("Points/TransactionHistory", "PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("Points/TransactionHistory", "dtmPageTitle");
+    ViewBag.PageName = "TransactionHistory";
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+@{
+    var OfferDetails = Model.Offer as Tesco.ClubcardProducts.MCA.Web.Common.Entities.OfferDetails;
+    var transactions = ViewBag.ClubcardTransactions as List<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Points.TransactionDetails>;
+    var appsettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];
+    int total = 0;
+    var note = Html.Translate("Points/TransactionHistory", "lblNote").ToString();
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h1 id="lblCurrPoints" class="ddl-h2-like">
+                @Html.Translate("Points/TransactionHistory", "lblCurrentPoints")</h1>
+            <p id="lblPntsCollection">@Html.Translate("Points/TransactionHistory", "lblPointsCollection")</p>
+            @if (ViewBag.Period == "CURRENT")
+            {
+                <h2 class="ddl-h3-like" id="lblCurrCollTrans">@Html.Translate("Points/TransactionHistory", "lblCurrentCollectionTransaction")</h2> 
+            }
+            else
+            {
+                <h2 class="ddl-h3-like" id="lbltxnsdetailsfromdaterange">@Html.Translate("Points/TransactionHistory", "lblYourTransactionDetailsFrom")
+                    @OfferDetails.StartDateTime.Value.ToString(appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1, CultureInfo.InvariantCulture)
+                    @Html.Translate("Points/TransactionHistory", "lblFromDateSeparatorToDate") @OfferDetails.EndDateTime.Value.ToString(appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1, CultureInfo.InvariantCulture)
+                </h2>  
+            }
+            <p id="lbllblUseOption">
+                <strong>@Html.Translate("Points/TransactionHistory", "lblUseOptions")</strong></p>
+        </div>
+        @using (Html.BeginForm("TransactionHistory", "Points", new { offerid = ViewBag.OfferId, period = ViewBag.Period }, FormMethod.Post, new { @class = "ddl-form ddl-filter" }))
+        {
+            @Html.AntiForgeryToken()
+            <fieldset class="ddl-fieldset">
+                <legend class="ddl-h4-like ddl-visually-hidden" id="lblSearchforPointdtls">@Html.Translate("Points/TransactionHistory", "lblSearch")</legend>
+                <div class="form-row gr-12 gr-5@small" id="div_PointsdetailsSearch">
+                    <div class="ddl-form-field">
+                        <label class="ddl-label" id="lblClubCard">@Html.Translate("Points/TransactionHistory", "lblCardNumber")
+                        </label>
+                        <span class="ddl-select">
+                            @Html.DropDownList("ClubcardId", (List<SelectListItem>)ViewBag.SelectedClubcard, new
+                   {
+                       value = ViewBag.ClubcardId,
+                       onchange = "submit();",
+                       id = "ddlClubcardNumber"
+                   })
+                            <em></em></span>
+                    </div>
+                </div>
+                <div class="form-row gr-12 gr-5@small">
+                    <div class="ddl-form-field">
+                        <label class="ddl-label" id="lblTxnsDtls">
+                            @Html.Translate("Points/TransactionHistory", "lblTransaction")
+                        </label>
+                        <span class="ddl-select">
+                            @Html.DropDownList("TransactionDescription", (List<SelectListItem>)ViewBag.SelectedTransaction, new
+                   {
+                       value = ViewBag.TransactionDescription,
+                       onchange = "submit();",
+                       id = "ddlTxnDtls"
+                   })
+                            <em></em></span>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="ddl-button-group ddl-button-group-left">
+                <input type="submit" value="@Html.Translate("Points/TransactionHistory", "btnClearSelection")" name="@Html.Translate("Points/TransactionHistory", "btnClearSelection")" class="ddl-button" id="btnClearSelection" />
+            </div>
+        }
+        <div class="table-wrapper table-bordered">
+            @if (transactions != null && transactions.Count > 0)
+            {
+                using (Html.BeginForm())
+                {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span id="tblHeaderClubcard">@Html.Translate("Points/TransactionHistory", "tblHeaderCardNumber")</span>
+                            </th>
+                            <th>
+                                 <span id="tblHeaderDatePts">@Html.Translate("Points/TransactionHistory", "tblHeaderDatePoints")</span>
+                            </th>
+                            <th>
+                                <span id="tblHeaderTransDetails">@Html.Translate("Points/TransactionHistory", "tblHeaderTransactionDetails")</span>
+                            </th>
+                            <th>
+                                <span id="tblHeaderTransValue">@Html.Translate("Points/TransactionHistory", "tblHeaderTransactionValue")</span>
+                            </th>
+                            @if (appsettings[AppConfigEnum.DisableBonusPoints.ToString()].ConfigurationValue1.Equals("1"))
+                            {
+                                <th>
+                                    <span id="tblHeaderBonusPts">@Html.Translate("Points/TransactionHistory", "tblHeaderBonusPoints")</span>
+                                </th>
+                            }
+                            <th>
+                                <span id="tblHeaderTotalpts">@Html.Translate("Points/TransactionHistory", "tblHeaderTotalPoints")</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            @if (appsettings[AppConfigEnum.DisableBonusPoints.ToString()].ConfigurationValue1.Equals("1"))
+                            { 
+                                <td id="" colspan="4">
+                                </td>
+                            }
+                            else
+                            {
+                                <td id="" colspan="4">@Html.Translate("Points/TransactionHistory", "tblHeaderTotalPoints")
+                                </td>
+                            }
+                            <td id="ltritemttl">
+                                @foreach (var itemtotal in transactions)
+                                {
+                                    total += Convert.ToInt32(itemtotal.TotalPoints);
+                                }
+                                @total
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in transactions)
+                        {
+                            <tr>
+                                <td id="ltrClubcard">
+                                    @item.ClubcardId
+                                </td>
+                                <td id="ltrtxndatetime">
+                                    @item.TransactionDateTime.AsDateTime().ToString(appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1, CultureInfo.InvariantCulture)
+                                </td>
+                                <td id="ltrtxnDesc">
+                                    @item.TransactionDescription
+                                </td>
+                                <td id="ltrAmountSpent">
+                                    @Html.Translate("Points/TransactionHistory", "CurrencySymbol") @item.AmountSpent @Html.Translate("Points/TransactionHistory", "CurrencyAlphaSymbol")
+                                </td>
+                                @if (appsettings[AppConfigEnum.DisableBonusPoints.ToString()].ConfigurationValue1.Equals("1"))
+                                {
+                                    <td id="ltrBonusptls" data-mobileheader= '@Html.Translate("Points/TransactionHistory", "tblHeaderTotalPoints")'>
+                                        @item.BonusPoints
+                                    </td>
+                                }
+                                <td id="ltrttlptls" data-mobileheader='@Html.Translate("Points/TransactionHistory", "tblHeaderTotalPoints")'>
+                                    @item.TotalPoints
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                }
+            }
+            else
+            {
+                <h3 id="lblnotrans">@Html.Translate("Points/TransactionHistory", "lblCouldNotFindAnyTransactions")</h3>   
+            }
+        </div>
+        <div class="row">
+            <div class="gr-12">
+                <div class="copy-wrapper">
+                    <a href='@Url.Action("/Home")' id="lnkpointhomepage" class="ddl-button ddl-icon-before ddl-icon-chevron">@Html.Translate("Points/TransactionHistory", "lblBackToPointsPage")</a>
+                    @if (note.Length > 0)
+                    {
+                        <p>@Html.Translate("Points/TransactionHistory", "lblNote")</p>
+                    }
+                    <p>
+                        <span id="lblPageDesc">@Html.Translate("Points/TransactionHistory", "lblPageDescription")</span>
+                        <span id="lblWarning">@Html.Translate("Points/TransactionHistory", "lblWarningMsg")</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

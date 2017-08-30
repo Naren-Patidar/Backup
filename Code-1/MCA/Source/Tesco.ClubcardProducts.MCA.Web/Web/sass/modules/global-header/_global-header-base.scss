@@ -1,0 +1,130 @@
+
+#ddl-global-header {
+	background: $ddl-global-header-background-handheld;
+	z-index: 4;
+
+	.container {
+		position: static !important;
+		padding: 0;
+	}
+
+	.accordion-header {
+		font-size: 1.6rem;
+		color: $ddl-white1 !important;
+		line-height: 33px;
+
+		&:after {
+			margin-top: 0;
+			color: $ddl-global-header-background-handheld;
+			background: $ddl-white1;
+		}
+	}
+
+	.accordion-content {
+		border: none;
+	}
+
+	ul {
+		position: relative;
+		margin: 0;
+		z-index: 99;
+
+		li {
+			margin: 0;
+			padding: 0;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			color: $ddl-white1;
+
+			a {
+				display: inline-block;
+				padding: 12px;
+				font-size: 1.6rem;
+				line-height: 2.4rem;
+				color: $ddl-global-header-color;
+				text-decoration: none;
+				white-space: nowrap;
+				font-family: 'tescoregular';
+
+				&:before {
+					position: absolute;
+					top: 10px;
+					left: 0;
+					color: $ddl-white1;
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+		}
+	}
+}
+
+#global-nav {
+	background: $ddl-global-header-background-handheld;
+	border-bottom: 400px solid #333;
+	margin: 0;
+	position: relative;
+	z-index: 99;
+
+	li {
+		margin: 0;
+		padding: 0;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		color: $ddl-global-header-color;
+
+		&.ddl-icon-before {
+
+			&:before {
+				position: absolute;
+				top: 12px;
+				left: 10px;
+				color: $ddl-white1;
+				font-size: 14px;
+			}
+
+			a {
+				padding-left: 30px;
+				font-family: 'tescoregular';
+			}
+		}
+
+		a, h2 {
+			display: block;
+			padding: 12px;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			color: $ddl-global-header-color;
+			text-decoration: none;
+			white-space: nowrap;
+			border-bottom: 1px solid $ddl-trans-dark;
+			font-family: 'tescoregular';
+
+			&:after {
+				color: $ddl-global-header-background-handheld;
+				background: $ddl-white1;
+			}
+		}
+
+		h2 {
+			border-bottom: none;
+			padding-bottom: 0;
+			font-size: 1.6rem;
+			line-height: normal;
+			float: left;
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		.accordion-content {
+			border: none;
+			padding: 0 !important;
+		}
+
+	}
+}

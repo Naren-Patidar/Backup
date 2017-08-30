@@ -1,0 +1,1417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03FEFCCE-7E16-40CA-B605-A28B01AEF076}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClubcardService</RootNamespace>
+    <AssemblyName>ClubcardService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClubcardService.svc" />
+    <Content Include="CustomerService.svc" />
+    <Content Include="DataSource\AddNewOrderReplacement\IsNewOrderReplacementValid.xml" />
+    <Content Include="DataSource\AddPrintAtHomeDetails\AddPrintAtHomeDetails.xml" />
+    <Content Include="DataSource\DeLinkingDotcomAccounts\result.xml" />
+    <Content Include="DataSource\GetAlternativeIds\904289.xml" />
+    <Content Include="DataSource\GetAlternativeIds\285830518.xml" />
+    <Content Include="DataSource\GetAlternativeIds\26852162.xml" />
+    <Content Include="DataSource\GetAlternativeIds\704860.xml" />
+    <Content Include="DataSource\GetAlternativeIds\704861.xml" />
+    <Content Include="DataSource\GetAlternativeIds\704862.xml" />
+    <Content Include="DataSource\GetAlternativeIds\804860.xml" />
+    <Content Include="DataSource\GetAlternativeIds\804861.xml" />
+    <Content Include="DataSource\GetAlternativeIds\804862.xml" />
+    <Content Include="DataSource\GetAlternativeIds\904862.xml" />
+    <Content Include="DataSource\GetAlternativeIds\904860.xml" />
+    <Content Include="DataSource\GetAlternativeIds\604862.xml" />
+    <Content Include="DataSource\GetAlternativeIds\604861.xml" />
+    <Content Include="DataSource\GetAlternativeIds\604860.xml" />
+    <Content Include="DataSource\GetAlternativeIds\104862.xml" />
+    <Content Include="DataSource\GetAlternativeIds\104861.xml" />
+    <Content Include="DataSource\GetAlternativeIds\104860.xml" />
+    <Content Include="DataSource\GetAlternativeIds\2048392.xml" />
+    <Content Include="DataSource\GetAlternativeIds\8199.xml" />
+    <Content Include="DataSource\GetAlternativeIds\15803.xml" />
+    <Content Include="DataSource\GetAlternativeIds\124693531.xml" />
+    <Content Include="DataSource\GetAlternativeIds\124693530.xml" />
+    <Content Include="DataSource\GetAlternativeIds\124693532.xml" />
+    <Content Include="DataSource\GetAlternativeIds\517650076.xml" />
+    <Content Include="DataSource\GetAlternativeIds\1043886713.xml" />
+    <Content Include="DataSource\GetAlternativeIds\38575321.xml" />
+    <Content Include="DataSource\GetAlternativeIds\431275636.xml" />
+    <Content Include="DataSource\GetAlternativeIds\223981236.xml" />
+    <Content Include="DataSource\GetAlternativeIds\64654958.xml" />
+    <Content Include="DataSource\GetAlternativeIds\123812559.xml" />
+    <Content Include="DataSource\GetAlternativeIds\64303732.xml" />
+    <Content Include="DataSource\GetAlternativeIds\60013333.xml" />
+    <Content Include="DataSource\GetAlternativeIds\567890.xml" />
+    <Content Include="DataSource\GetAlternativeIds\27557697.xml" />
+    <Content Include="DataSource\GetAlternativeIds\41698456.xml" />
+    <Content Include="DataSource\GetAlternativeIds\152433170.xml" />
+    <Content Include="DataSource\GetAlternativeIds\671969397.xml" />
+    <Content Include="DataSource\GetAlternativeIds\171267062.xml" />
+    <Content Include="DataSource\GetAlternativeIds\38520870.xml" />
+    <Content Include="DataSource\GetAlternativeIds\587774688.xml" />
+    <Content Include="DataSource\GetAlternativeIds\37831590.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\cs-CZ\26852162\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\26852162\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\285830518\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\37831590\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\60013333\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\431275636\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\38575321\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\1043886713\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\517650076\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\123456789\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\4567890\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\234567890\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\567890\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\587774688\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\64303732\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\123812559\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\64654958\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\223981236\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\987654321\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\171267062\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\671969397\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\152433170\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\41698456\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\27557697\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\124693532\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\124693530\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\124693531\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\124693533\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\124693534\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-IE\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\sk-SK\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\cs-CZ\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\pl-PL\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\hu-HU\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\tr-TR\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\th-TH\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-MY\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetChristmasSaverSummary\en-GB\34567890\GetChristmasSaverSummary.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095609983.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095610118.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095627362.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095627497.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095644741.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1095644876.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\153709077.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\15803.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\1943149.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\2048392.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\26852162.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\8199.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\870004.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\904289.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\cs-CZ\952587.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\26852162.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709077.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\285830518.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\37831590.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095648218.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\60013333.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095630839.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\587774688.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095622874.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095640253.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095657632.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\64303732.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\206390465.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095615744.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095620395.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095633123.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095637774.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095650502.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095655153.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\38520870.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095614051.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095631430.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095648809.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\123812559.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095617845.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095635224.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095652603.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\64654958.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\223981236.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095620699.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\431275636.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095621923.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095639302.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095656681.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095614367.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095649125.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1043886713.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095626806.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095644185.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095631746.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\38575321.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\517650076.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095622414.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095639793.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095657172.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\123456789.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\34567890.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\4567890.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\567890.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\234567890.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095661564.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\987654321.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\171267062.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095619700.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095637079.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095654458.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\671969397.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095623438.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095640817.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095658196.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\152433170.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095618947.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095636326.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095653705.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\41698456.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095632431.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095615052.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095649810.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\27557697.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095612591.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095629970.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095647349.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\952587.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095609983.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095610118.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095627362.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095627497.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095644741.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1095644876.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\124693532.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709008.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709009.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\124693531.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\124693530.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709007.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\123456.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\1085609983.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\124693533.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\124693534.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709011.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\153709010.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-IE\904289.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-MY\153709082.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-MY\104860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-MY\104861.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-MY\104862.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\hu-HU\904860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\hu-HU\904862.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\pl-PL\153709081.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\pl-PL\804860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\pl-PL\804861.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\pl-PL\804862.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\153709077.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\604862.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\604861.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\604860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\904289.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\604863.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\153709078.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\sk-SK\604864.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\153709079.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\153709080.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\704860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\704861.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\704862.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\th-TH\704863.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\tr-TR\153709083.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\tr-TR\204860.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\tr-TR\204861.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\tr-TR\204862.xml" />
+    <Content Include="DataSource\GetConfigDetails\pl-PL\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-MY\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\cs-CZ\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\th-TH\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\tr-TR\7.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\1943149.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\26852162.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\285830518.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\634009540000604860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\634009540000803074.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\870004.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\8199.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\15803.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\2048392.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\634009550000000118.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\Copy of 634009540000803074.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024037002278.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\26852162.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634002400020149122.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\285830518.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\37831590.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024057524755.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\60013333.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022109453098.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006432126.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\64303732.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024022388518.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\38520870.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022757820812.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\123812559.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\587774688.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024093742262.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\64654958.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\6340049021040566.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\223981236.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022813428873.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\431275636.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024189312566.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\38575321.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004025016032558.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\1043886713.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004000663993873.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\517650076.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126094000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\123456789.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126099000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\234567890.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126269000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126278000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\34567890.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126368309.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\6340049003867800.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\987654321.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\567890.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\4567890.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126099771.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126094715.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\171267062.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\671969397.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126269176.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\152433170.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024126278177.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\41698456.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\27557697.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\124693532.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006785259.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006785250.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\124693530.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006785251.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\124693531.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022010553359.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\123456.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006785260.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024006785261.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\124693533.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\124693534.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-GB\Copy of 26852162.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-IE\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-IE\634004022010553358.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-IE\634004024007890751.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-IE\904289.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-MY\634009480000000000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-MY\634009480000000001.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-MY\634009480000000002.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-MY\104860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-MY\104861.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-MY\104862.xml" />
+    <Content Include="DataSource\GetCustomerDetails\hu-HU\634009549930000000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\hu-HU\634009549930000002.xml" />
+    <Content Include="DataSource\GetCustomerDetails\hu-HU\904860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\hu-HU\904862.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\804860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\804861.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\804862.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\634009528001013000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\634009528001013001.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\634009528001013002.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\604862.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\604861.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\604860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634009507000000000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634009507000000001.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634009507000000002.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\604863.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\6340095070000003.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634009507000000004.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\604864.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\704860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\704861.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\704862.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\704863.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\634009199999999000.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\634009199999999001.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\634009199999999002.xml" />
+    <Content Include="DataSource\GetCustomerDetails\th-TH\634009199999999003.xml" />
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\634009507000000010.xml" />
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\634009507000000011.xml" />
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\634009507000000012.xml" />
+    <Content Include="DataSource\GetCustomerDetails\pl-PL\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\hu-HU\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\cs-CZ\904289.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634004022010553358.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\634004024007890751.xml" />
+    <Content Include="DataSource\GetCustomerDetails\sk-SK\904289.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\en-MY\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022010553358.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024007890751.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\904289.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\204860.xml" />
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\204861.xml" />
+    <Content Include="DataSource\GetCustomerDetails\tr-TR\204862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\1043886713.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\123456789.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\123812559.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\152433170.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\15803.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\171267062.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\1943149.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\2048392.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\223981236.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\234567890.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\26852162.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\27557697.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\285830518.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\34567890.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\37831590.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\38520870.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\38575321.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\41698456.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\431275636.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\4567890.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\517650076.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\567890.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\587774688.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\60013333.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\604860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\604861.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\604862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\604863.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\64303732.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\64654958.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\671969397.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\704860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\704861.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\704862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\704863.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\8199.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\870004.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\904289.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\987654321.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\804860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\804861.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\804862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\904860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\904862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\104860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\104861.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\104862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\204860.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\204861.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\204862.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\124693532.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\124693531.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\124693530.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\604864.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\123456.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\124693533.xml" />
+    <Content Include="DataSource\GetCustomerVerificationDetails\124693534.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\26852162\26852162.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\904289\904289.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\8199\8199.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\15803\15803.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\870004\870004.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\2048392\2048392.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\cs-CZ\1943149\1943149.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\26852162\26852162.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\285830518\285830518.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\37831590\37831590.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\60013333\60013333.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\587774688\587774688.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\64303732\64303732.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\38520870\38520870.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\64654958\64654958.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\223981236\223981236.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\431275636\431275636.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\38575321\38575321.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\1043886713\1043886713.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\517650076\517650076.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\234567890\234567890.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\34567890\34567890.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\4567890\4567890.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\567890\567890.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\987654321\987654321.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\123456789\123456789.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\123812559\123812559.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\171267062\171267062.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\671969397\671969397.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\152433170\152433170.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\41698456\41698456.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\27557697\27557697.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\124693532\124693532.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\124693531\124693531.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\124693530\124693530.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\123456\123456.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\124693534\124693534.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\124693533\124693533.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-MY\104860\104860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-MY\104861\104861.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-MY\104862\104862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\hu-HU\904860\904860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\hu-HU\904862\904862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\pl-PL\804860\804860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\pl-PL\804861\804861.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\pl-PL\804862\804862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\sk-SK\604862\604862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\sk-SK\604861\604861.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\sk-SK\604860\604860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\sk-SK\604863\604863.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\sk-SK\604864\604864.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\th-TH\704860\704860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\th-TH\704861\704861.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\th-TH\704862\704862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\th-TH\704863\704863.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\tr-TR\204860\204860.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\tr-TR\204861\204861.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\tr-TR\204862\204862.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-IE\904289.xml" />
+    <Content Include="DataSource\GetHouseholdCustomers\en-GB\904289\904289.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\26852162.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\15803.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\8199.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\870004.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\1943149.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\2048392.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\26852162.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\285830518.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\37831590.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\60013333.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\64303732.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\38520870.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\123812559.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\64654958.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\223981236.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\431275636.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\38575321.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\1043886713.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\517650076.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\234567890.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\34567890.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\4567890.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\567890.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\587774688.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\123456789.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\171267062.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\671969397.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\152433170.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\41698456.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\27557697.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\904289.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\124693532.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\124693530.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\124693531.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\123456.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\124693533.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-GB\124693534.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-MY\104860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-MY\104861.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-MY\104862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\hu-HU\904860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\hu-HU\904862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\pl-PL\804860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\pl-PL\804861.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\pl-PL\804862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\sk-SK\604862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\sk-SK\604861.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\sk-SK\604860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\sk-SK\604863.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\sk-SK\604864.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\th-TH\704860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\th-TH\704861.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\th-TH\704862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\th-TH\704863.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\tr-TR\204860.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\tr-TR\204861.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\tr-TR\204862.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\cs-CZ\904289.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-IE\904289.xml" />
+    <Content Include="DataSource\GetMyAccountDetails\en-MY\64654958.xml" />
+    <Content Include="DataSource\GetClubcardsCustomer\en-GB\904289.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\26852162.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\904289.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\8199.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\15803.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\2048392.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\1943149.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\870004.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\26852162.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\285830518.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\37831590.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\587774688.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\60013333.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\64303732.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\38520870.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\123812559.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\64654958.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\223981236.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\431275636.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\38575321.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\1043886713.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\517650076.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\234567890.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\34567890.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\4567890.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\987654321.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\567890.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\123456789.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\671969397.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\152433170.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\41698456.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\27557697.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\171267062.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\124693532.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\124693531.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\124693530.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\123456.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\124693533.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\124693534.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-MY\104860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-MY\104861.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-MY\104862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-MY\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\hu-HU\904860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\hu-HU\904862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\hu-HU\Copy of 904860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\hu-HU\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\pl-PL\804860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\pl-PL\804861.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\pl-PL\804862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\pl-PL\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\604862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\604861.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\604860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\604863.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\604864.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\th-TH\704860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\th-TH\704861.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\th-TH\704862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\th-TH\704863.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\tr-TR\204860.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\tr-TR\204861.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\tr-TR\204862.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\tr-TR\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\th-TH\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\sk-SK\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\cs-CZ\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-IE\GetPointsForAllCollPeriodByCustomer.xml" />
+    <Content Include="DataSource\GetPointsForAllCollPeriodByCustomer\en-GB\904289.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\26852162\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\26852162\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\26852162\Copy of 21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\8199\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\8199\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\8199\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\904289\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\904289\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\152433170\1.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\171267062\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\26852162\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\27557697\1.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\285830518\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\41698456\1.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\517650076\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\517650076\1.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\517650076\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\671969397\1.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\904289\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\904289\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\285830518\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\285830518\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\37831590\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\37831590\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\60013333\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\60013333\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\587774688\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\587774688\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\64303732\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\64303732\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\38520870\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\38520870\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123812559\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123812559\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\64654958\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\64654958\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\223981236\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\223981236\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\431275636\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\431275636\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\38575321\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\38575321\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\1043886713\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\1043886713\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\517650076\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\517650076\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123456789\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123456789\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\987654321\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\987654321\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\234567890\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\234567890\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\34567890\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\34567890\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\4567890\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\4567890\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\567890\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\567890\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\171267062\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\171267062\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\671969397\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\671969397\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\152433170\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\152433170\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\41698456\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\41698456\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\27557697\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\27557697\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693532\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693532\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693532\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693530\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693530\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693530\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693531\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693531\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693531\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123456\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\123456\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693533\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693533\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693533\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693534\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693534\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\124693534\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-IE\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-IE\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104861\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104861\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104861\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104862\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104862\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104862\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104860\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104860\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\104860\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904860\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904860\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904860\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904862\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904862\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\904862\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804861\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804861\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804861\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804862\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804862\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804862\211.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804860\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804860\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\804860\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\sk-SK\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\sk-SK\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\cs-CZ\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\hu-HU\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\pl-PL\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\sk-SK\904860\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\sk-SK\904860\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\sk-SK\904860\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\th-TH\704860\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\th-TH\704860\199.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\th-TH\704860\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\tr-TR\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\tr-TR\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\th-TH\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\th-TH\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\17.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-MY\21.xml" />
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\26852162\1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetPointsSummaryInfo\en-GB\26852162\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\2048392\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\2048392\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\26852162\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\26852162\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\26852162\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\26852162\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\26852162\Copy of 1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\904289\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\904289\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\904289\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\8199\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\8199\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\8199\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\15803\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\1943149\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\1943149\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\1943149\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\2048392\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\2048392\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\2048392\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\870004\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\870004\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\cs-CZ\870004\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\152433170\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\26852162\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\26852162\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\26852162\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\26852162\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\27557697\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\41698456\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\517650076\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\904289\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\904289\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\904289\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\26852162\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\285830518\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\285830518\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\285830518\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\37831590\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\37831590\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\37831590\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\60013333\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\60013333\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\60013333\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\587774688\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\587774688\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\587774688\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64303732\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64303732\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64303732\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38520870\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38520870\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38520870\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123812559\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123812559\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123812559\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64654958\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64654958\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\64654958\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\223981236\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\223981236\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\223981236\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\431275636\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\431275636\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\431275636\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38575321\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38575321\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\38575321\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\1043886713\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\1043886713\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\1043886713\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\517650076\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\517650076\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\517650076\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\904289\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\987654321\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\987654321\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\987654321\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\34567890\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\34567890\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\34567890\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\4567890\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\4567890\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\4567890\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\567890\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\567890\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\567890\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456789\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456789\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456789\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\234567890\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\234567890\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\234567890\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\171267062\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\171267062\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\171267062\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\671969397\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\671969397\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\671969397\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\152433170\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\152433170\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\152433170\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\41698456\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\41698456\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\41698456\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\27557697\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\27557697\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\27557697\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693532\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693532\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693532\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693532\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693532\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693530\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693530\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693530\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693530\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693530\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693531\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693531\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693531\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693531\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693531\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\123456\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693533\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693533\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693533\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693533\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693533\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693534\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693534\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693534\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693534\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-GB\124693534\211.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-IE\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-IE\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-IE\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104860\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104860\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104861\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\en-MY\104862\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904860\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904860\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\hu-HU\904862\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804860\17.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804861\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804861\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804861\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804861\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804861\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\pl-PL\804862\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604862\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604861\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604861\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604861\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604861\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604861\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604860\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604863\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604863\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604863\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604864\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604864\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\sk-SK\604864\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704860\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704860\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704861\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704862\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704863\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704863\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704863\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\th-TH\704863\211.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204860\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204860\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204860\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204861\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204861\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204861\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204861\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204861\21_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\0.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\1.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\17.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\17_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\20_old.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\21.xml" />
+    <Content Include="DataSource\GetTxnDetailsByCustomerAndOfferID\tr-TR\204862\21_old.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-IE\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-IE\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\sk-SK\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\sk-SK\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\cs-CZ\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\cs-CZ\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\hu-HU\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\hu-HU\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\pl-PL\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\pl-PL\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\tr-TR\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\tr-TR\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\th-TH\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\th-TH\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-MY\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-MY\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-GB\Copy of IGHSCheckCustomerActivated.xml" />
+    <Content Include="DataSource\IGHSCheckCustomerActivated\en-GB\IGHSCheckCustomerActivated.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\IsNewOrderReplacementValid\1043886713.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\104860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\104861.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\104862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\123456789.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\123812559.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\124693530.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\124693531.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\124693532.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\152433170.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\15803.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\171267062.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\1943149.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\2048392.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\204860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\204861.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\204862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\223981236.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\234567890.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\26852162.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\27557697.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\285830518.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\34567890.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\37831590.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\38520870.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\38575321.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\41698456.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\431275636.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\4567890.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\517650076.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\567890.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\587774688.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\60013333.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\604860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\604861.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\604862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\604863.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\64303732.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\64654958.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\671969397.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\704860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\704861.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\704862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\704863.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\804860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\804861.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\804862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\8199.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\870004.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\904289.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\904860.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\904862.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\987654321.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\604864.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\123456.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\124693533.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\124693534.xml" />
+    <Content Include="DataSource\IsNewOrderReplacementValid\IsNewOrderReplacementValid.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\8199.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\15803.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\2048392.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\1943149.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\870004.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\37831590.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\60013333.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\38520870.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\64654958.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\123812559.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\223981236.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\431275636.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\1043886713.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\38575321.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\517650076.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\987654321.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\234567890.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\34567890.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\4567890.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\123456789.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\567890.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\171267062.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\671969397.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\152433170.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\41698456.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\27557697.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\124693532.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\124693530.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\124693531.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\123456.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\124693533.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\124693534.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-MY\104860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-MY\104861.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-MY\104862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\hu-HU\904860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\hu-HU\904862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\pl-PL\804860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\pl-PL\804861.xml" />
+    <Content Include="DataSource\IsXmasClubMember\pl-PL\804862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\604862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\1943149.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\604861.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\604860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\870004.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\604863.xml" />
+    <Content Include="DataSource\IsXmasClubMember\sk-SK\604864.xml" />
+    <Content Include="DataSource\IsXmasClubMember\th-TH\704860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\th-TH\704861.xml" />
+    <Content Include="DataSource\IsXmasClubMember\th-TH\704862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\th-TH\704863.xml" />
+    <Content Include="DataSource\IsXmasClubMember\th-TH\904289.xml" />
+    <Content Include="DataSource\IsXmasClubMember\tr-TR\204860.xml" />
+    <Content Include="DataSource\IsXmasClubMember\tr-TR\204861.xml" />
+    <Content Include="DataSource\IsXmasClubMember\tr-TR\204862.xml" />
+    <Content Include="DataSource\IsXmasClubMember\tr-TR\904289.xml" />
+    <Content Include="DataSource\IsXmasClubMember\cs-CZ\904289.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-IE\904289.xml" />
+    <Content Include="DataSource\IsXmasClubMember\en-GB\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\26852162\26852162.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\904289\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\8199\8199.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\15803\15803.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\1943149\1943149.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\2048392\2048392.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\870004\870004.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\26852162\26852162.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\285830518\285830518.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\37831590\37831590.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\60013333\60013333.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\587774688\587774688.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\64303732\64303732.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\38520870\38520870.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\123812559\123812559.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\64654958\64654958.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\223981236\223981236.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\431275636\431275636.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\38575321\38575321.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\1043886713\1043886713.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\123456789\123456789.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\987654321\987654321.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\234567890\234567890.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\34567890\34567890.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\567890\567890.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\517650076\517650076.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\4567890\4567890.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\171267062\171267062.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\671969397\671969397.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\152433170\152433170.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\41698456\41698456.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\27557697\27557697.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\124693532\124693532.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\124693531\124693531.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\124693530\124693530.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\123456\123456.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\124693533\124693533.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\124693534\124693534.xml" />
+    <Content Include="DataSource\SearchCustomer\en-MY\104860\104860.xml" />
+    <Content Include="DataSource\SearchCustomer\en-MY\104861\104861.xml" />
+    <Content Include="DataSource\SearchCustomer\en-MY\104862\104862.xml" />
+    <Content Include="DataSource\SearchCustomer\hu-HU\904860\904860.xml" />
+    <Content Include="DataSource\SearchCustomer\hu-HU\904862\904862.xml" />
+    <Content Include="DataSource\SearchCustomer\pl-PL\804860\804860.xml" />
+    <Content Include="DataSource\SearchCustomer\pl-PL\804861\804861.xml" />
+    <Content Include="DataSource\SearchCustomer\pl-PL\804862\804862.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\604862\604862.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\1943149\1943149.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\604861\604861.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\604860\604860.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\870004\870004.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\604863\604863.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\604864\604864.xml" />
+    <Content Include="DataSource\SearchCustomer\th-TH\704860\704860.xml" />
+    <Content Include="DataSource\SearchCustomer\th-TH\704861\704861.xml" />
+    <Content Include="DataSource\SearchCustomer\th-TH\704862\704862.xml" />
+    <Content Include="DataSource\SearchCustomer\th-TH\704863\704863.xml" />
+    <Content Include="DataSource\SearchCustomer\tr-TR\204860\204860.xml" />
+    <Content Include="DataSource\SearchCustomer\tr-TR\204861\204861.xml" />
+    <Content Include="DataSource\SearchCustomer\tr-TR\204862\204862.xml" />
+    <Content Include="DataSource\SearchCustomer\cs-CZ\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\sk-SK\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\en-IE\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\904289\904289.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClubcardService.svc.cs">
+      <DependentUpon>ClubcardService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerService.svc.cs">
+      <DependentUpon>CustomerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\AccountIDType.cs" />
+    <Compile Include="Entities\Balance.cs" />
+    <Compile Include="Entities\BalanceByExpiry.cs" />
+    <Compile Include="Entities\ConsumerSource.cs" />
+    <Compile Include="Entities\CouponClass.cs" />
+    <Compile Include="Entities\CouponInformation.cs" />
+    <Compile Include="Entities\CouponLineTextInfo.cs" />
+    <Compile Include="Entities\CouponRequest.cs" />
+    <Compile Include="Entities\CouponResponse.cs" />
+    <Compile Include="Entities\CustomerCouponRequest.cs" />
+    <Compile Include="Entities\GetBalanceResponce.cs" />
+    <Compile Include="Entities\GetFuelBalanceRequest.cs" />
+    <Compile Include="Entities\GetFuelBalanceResponse.cs" />
+    <Compile Include="Entities\MembershipUser.cs" />
+    <Compile Include="Entities\RedeemType.cs" />
+    <Compile Include="Entities\RedemptionInfo.cs" />
+    <Compile Include="IClubcardService.cs" />
+    <Compile Include="ICustomerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\ClubcardServiceProvider.cs" />
+    <Compile Include="Provider\CustomerServiceProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceUtility\ServiceUtility.csproj">
+      <Project>{C71BE56F-960E-48A4-86AA-5B995349E106}</Project>
+      <Name>ServiceUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17219</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

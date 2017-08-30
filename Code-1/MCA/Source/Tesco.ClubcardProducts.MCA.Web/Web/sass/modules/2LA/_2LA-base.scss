@@ -1,0 +1,27 @@
+	
+.twoLA.ddl-inline-fieldset {
+
+	.ddl-form-field {
+		width: 30%;
+		margin-right: 4.5%;
+		display: inline-block;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		label.ddl-label {
+			display: block;
+		}
+
+		input.ddl-input {
+			min-width: 0;
+		}
+	}
+
+	img {
+		display: block;
+		width: 200px;
+		margin: 20px auto;
+	}
+}

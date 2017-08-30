@@ -1,0 +1,522 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetConfigDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:6b86620f-04e6-4cfb-836a-f840d8407e01</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetConfigDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetConfigDetailsResult>true</GetConfigDetailsResult>
+      <errorXml />
+      <resultXml>
+        <NewDataSet>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>PtsSummaryDates</ConfigurationName>
+            <ConfigurationValue1>Oct 22 2011 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Dec 17 2014 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>YourExchangesDates</ConfigurationName>
+            <ConfigurationValue1>May 14 2012 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Aug 16 2012 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>XmasSaverCurrDates</ConfigurationName>
+            <ConfigurationValue1>Nov  5 2011 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Oct 21 2012 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>XmasSaverNextDates</ConfigurationName>
+            <ConfigurationValue1>Dec 14 2012 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Oct 21 2013 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>SmartVoucherDates</ConfigurationName>
+            <ConfigurationValue1>Sep  1 2011 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Sep  2 2011 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>YourExchangesFlag</ConfigurationName>
+            <ConfigurationValue1>0</ConfigurationValue1>
+            <ConfigurationValue2>NULL</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>MyLatestStatementDates</ConfigurationName>
+            <ConfigurationValue1>Jun  2 2012 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Jun 30 2012 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <Table1>
+            <raceid>0</raceid>
+            <racedescenglish>do not know</racedescenglish>
+            <racedesclocal>ไม่ทราบ </racedesclocal>
+          </Table1>
+          <Table1>
+            <raceid>1</raceid>
+            <racedescenglish>Buddha</racedescenglish>
+            <racedesclocal>พระพุทธเจ้า</racedesclocal>
+          </Table1>
+          <Table1>
+            <raceid>2</raceid>
+            <racedescenglish>Islam</racedescenglish>
+            <racedesclocal>ศาสนาอิสลาม </racedesclocal>
+          </Table1>
+          <Table1>
+            <raceid>3</raceid>
+            <racedescenglish>Christ</racedescenglish>
+            <racedesclocal>คริสต์</racedesclocal>
+          </Table1>
+          <Table1>
+            <raceid>4</raceid>
+            <racedescenglish>other</racedescenglish>
+            <racedesclocal>อื่น ๆ </racedesclocal>
+          </Table1>
+          <Table2>
+            <ISOLanguageCode>zho</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Chinese</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>ces</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Czech</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>eng</ISOLanguageCode>
+            <ISOLanguageDescEnglish>English</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>hin</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Hindi</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>hun</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Hungarian</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>jpn</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Japanese</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>kor</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Korean</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>pol</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Polish</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>slk</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Slovak</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>zsm</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Standard Malay</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>tha</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Thai</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>tur</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Turkish</ISOLanguageDescEnglish>
+          </Table2>
+          <Table3>
+            <ProvinceID >-1</ProvinceID >
+            <ProvinceNameEnglish>Unknown</ProvinceNameEnglish>
+            <ProvinceNameLocal>ไม่ทราบ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >0</ProvinceID >
+            <ProvinceNameEnglish>Kanchanaburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>กาญจนบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >1</ProvinceID >
+            <ProvinceNameEnglish>Chanthaburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>จันทบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >2</ProvinceID >
+            <ProvinceNameEnglish>Chachoengsao</ProvinceNameEnglish>
+            <ProvinceNameLocal>ฉะเชิงเทรา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >3</ProvinceID >
+            <ProvinceNameEnglish>Chon Buri</ProvinceNameEnglish>
+            <ProvinceNameLocal>ชลบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >4</ProvinceID >
+            <ProvinceNameEnglish>Chai Nat</ProvinceNameEnglish>
+            <ProvinceNameLocal>ชัยนาท</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >5</ProvinceID >
+            <ProvinceNameEnglish>Trat</ProvinceNameEnglish>
+            <ProvinceNameLocal>ตราด</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >6</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Nayok</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครนายก</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >7</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Pathom</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครปฐม</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >8</ProvinceID >
+            <ProvinceNameEnglish>Nonthaburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>นนทบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >9</ProvinceID >
+            <ProvinceNameEnglish>Pathum Thani</ProvinceNameEnglish>
+            <ProvinceNameLocal>ปทุมธานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >10</ProvinceID >
+            <ProvinceNameEnglish>Prachuap Khiri Khan</ProvinceNameEnglish>
+            <ProvinceNameLocal>ประจวบคีรีขันธ์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >11</ProvinceID >
+            <ProvinceNameEnglish>Phrachin Buri</ProvinceNameEnglish>
+            <ProvinceNameLocal>ปราจีนบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >12</ProvinceID >
+            <ProvinceNameEnglish>Phra Nakhon Si Ayutthaya</ProvinceNameEnglish>
+            <ProvinceNameLocal>พระนครศรีอยุธยา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >13</ProvinceID >
+            <ProvinceNameEnglish>Phetchaburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>เพชรบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >14</ProvinceID >
+            <ProvinceNameEnglish>Rayong</ProvinceNameEnglish>
+            <ProvinceNameLocal>ระยอง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >15</ProvinceID >
+            <ProvinceNameEnglish>Ratchaburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>ราชบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >16</ProvinceID >
+            <ProvinceNameEnglish>Lop Buri</ProvinceNameEnglish>
+            <ProvinceNameLocal>ลพบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >17</ProvinceID >
+            <ProvinceNameEnglish>Samut Prakan</ProvinceNameEnglish>
+            <ProvinceNameLocal>สมุทรปราการ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >18</ProvinceID >
+            <ProvinceNameEnglish>Samut Songkhram</ProvinceNameEnglish>
+            <ProvinceNameLocal>สมุทรสงคราม</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >19</ProvinceID >
+            <ProvinceNameEnglish>Samut Sakhon</ProvinceNameEnglish>
+            <ProvinceNameLocal>สมุทรสาคร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >20</ProvinceID >
+            <ProvinceNameEnglish>Sa Kaeo</ProvinceNameEnglish>
+            <ProvinceNameLocal>สระแก้ว</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >21</ProvinceID >
+            <ProvinceNameEnglish>Saraburi</ProvinceNameEnglish>
+            <ProvinceNameLocal>สระบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >22</ProvinceID >
+            <ProvinceNameEnglish>Sing Buri</ProvinceNameEnglish>
+            <ProvinceNameLocal>สิงห์บุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >23</ProvinceID >
+            <ProvinceNameEnglish>Suphan Buri</ProvinceNameEnglish>
+            <ProvinceNameLocal>สุพรรณบุรี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >24</ProvinceID >
+            <ProvinceNameEnglish>Ang Thong</ProvinceNameEnglish>
+            <ProvinceNameLocal>อ่างทอง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >25</ProvinceID >
+            <ProvinceNameEnglish>Kamphaeng Phet</ProvinceNameEnglish>
+            <ProvinceNameLocal>กำแพงเพชร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >26</ProvinceID >
+            <ProvinceNameEnglish>Chiang Rai</ProvinceNameEnglish>
+            <ProvinceNameLocal>เชียงราย</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >27</ProvinceID >
+            <ProvinceNameEnglish>Chiang Mai</ProvinceNameEnglish>
+            <ProvinceNameLocal>เชียงใหม่</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >28</ProvinceID >
+            <ProvinceNameEnglish>Tak</ProvinceNameEnglish>
+            <ProvinceNameLocal>ตาก</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >29</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Sawan</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครสวรรค์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >30</ProvinceID >
+            <ProvinceNameEnglish>Nan</ProvinceNameEnglish>
+            <ProvinceNameLocal>น่าน</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >31</ProvinceID >
+            <ProvinceNameEnglish>Phichit</ProvinceNameEnglish>
+            <ProvinceNameLocal>พิจิตร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >32</ProvinceID >
+            <ProvinceNameEnglish>Phitsanulok</ProvinceNameEnglish>
+            <ProvinceNameLocal>พิษณุโลก</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >33</ProvinceID >
+            <ProvinceNameEnglish>Phetchabun</ProvinceNameEnglish>
+            <ProvinceNameLocal>เพชรบูรณ์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >34</ProvinceID >
+            <ProvinceNameEnglish>Phrae</ProvinceNameEnglish>
+            <ProvinceNameLocal>แพร่</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >35</ProvinceID >
+            <ProvinceNameEnglish>Mae Hong Son</ProvinceNameEnglish>
+            <ProvinceNameLocal>แม่ฮ่องสอน</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >36</ProvinceID >
+            <ProvinceNameEnglish>Lampang</ProvinceNameEnglish>
+            <ProvinceNameLocal>ลำปาง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >37</ProvinceID >
+            <ProvinceNameEnglish>Lamphun</ProvinceNameEnglish>
+            <ProvinceNameLocal>ลำพูน</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >38</ProvinceID >
+            <ProvinceNameEnglish>Sukhothai</ProvinceNameEnglish>
+            <ProvinceNameLocal>สุโขทัย</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >39</ProvinceID >
+            <ProvinceNameEnglish>Uttaradit</ProvinceNameEnglish>
+            <ProvinceNameLocal>อุตรดิตถ์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >40</ProvinceID >
+            <ProvinceNameEnglish>Uthai Thani</ProvinceNameEnglish>
+            <ProvinceNameLocal>อุทัยธานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >41</ProvinceID >
+            <ProvinceNameEnglish>Phayao</ProvinceNameEnglish>
+            <ProvinceNameLocal>พะเยา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >42</ProvinceID >
+            <ProvinceNameEnglish>Kalasin</ProvinceNameEnglish>
+            <ProvinceNameLocal>กาฬสินธุ์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >43</ProvinceID >
+            <ProvinceNameEnglish>Khon Kaen</ProvinceNameEnglish>
+            <ProvinceNameLocal>ขอนแก่น</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >44</ProvinceID >
+            <ProvinceNameEnglish>Chaiyaphum</ProvinceNameEnglish>
+            <ProvinceNameLocal>ชัยภูมิ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >45</ProvinceID >
+            <ProvinceNameEnglish>Yasothon</ProvinceNameEnglish>
+            <ProvinceNameLocal>ยโสธร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >46</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Phanom</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครพนม</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >47</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Ratchasima</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครราชสีมา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >48</ProvinceID >
+            <ProvinceNameEnglish>Buri Ram</ProvinceNameEnglish>
+            <ProvinceNameLocal>บุรีรัมย์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >49</ProvinceID >
+            <ProvinceNameEnglish>Maha Sarakham</ProvinceNameEnglish>
+            <ProvinceNameLocal>มหาสารคาม</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >50</ProvinceID >
+            <ProvinceNameEnglish>Roi Et</ProvinceNameEnglish>
+            <ProvinceNameLocal>ร้อยเอ็ด</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >51</ProvinceID >
+            <ProvinceNameEnglish>Loei</ProvinceNameEnglish>
+            <ProvinceNameLocal>เลย</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >52</ProvinceID >
+            <ProvinceNameEnglish>Si Sa Ket</ProvinceNameEnglish>
+            <ProvinceNameLocal>ศรีสะเกษ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >53</ProvinceID >
+            <ProvinceNameEnglish>Sakon Nakhon</ProvinceNameEnglish>
+            <ProvinceNameLocal>สกลนคร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >54</ProvinceID >
+            <ProvinceNameEnglish>Surin</ProvinceNameEnglish>
+            <ProvinceNameLocal>สุรินทร์</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >55</ProvinceID >
+            <ProvinceNameEnglish>Nong Khai</ProvinceNameEnglish>
+            <ProvinceNameLocal>หนองคาย</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >56</ProvinceID >
+            <ProvinceNameEnglish>Udon Thani</ProvinceNameEnglish>
+            <ProvinceNameLocal>อุดรธานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >57</ProvinceID >
+            <ProvinceNameEnglish>Ubon Ratchathani</ProvinceNameEnglish>
+            <ProvinceNameLocal>อุบลราชธานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >58</ProvinceID >
+            <ProvinceNameEnglish>Mukdahan</ProvinceNameEnglish>
+            <ProvinceNameLocal>มุกดาหาร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >59</ProvinceID >
+            <ProvinceNameEnglish>Amnat Charoen</ProvinceNameEnglish>
+            <ProvinceNameLocal>อำนาจเจริญ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >60</ProvinceID >
+            <ProvinceNameEnglish>Nong Bua Lam Phu</ProvinceNameEnglish>
+            <ProvinceNameLocal>หนองบัวลำพู</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >61</ProvinceID >
+            <ProvinceNameEnglish>Krabi</ProvinceNameEnglish>
+            <ProvinceNameLocal>กระบี่</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >62</ProvinceID >
+            <ProvinceNameEnglish>Chumphon</ProvinceNameEnglish>
+            <ProvinceNameLocal>ชุมพร</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >63</ProvinceID >
+            <ProvinceNameEnglish>Trang</ProvinceNameEnglish>
+            <ProvinceNameLocal>ตรัง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >64</ProvinceID >
+            <ProvinceNameEnglish>Nakhon Si Thammarat</ProvinceNameEnglish>
+            <ProvinceNameLocal>นครศรีธรรมราช</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >65</ProvinceID >
+            <ProvinceNameEnglish>Narathiwat</ProvinceNameEnglish>
+            <ProvinceNameLocal>นราธิวาส</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >66</ProvinceID >
+            <ProvinceNameEnglish>Pattani</ProvinceNameEnglish>
+            <ProvinceNameLocal>ปัตตานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >67</ProvinceID >
+            <ProvinceNameEnglish>Phangnga</ProvinceNameEnglish>
+            <ProvinceNameLocal>พังงา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >68</ProvinceID >
+            <ProvinceNameEnglish>Patthalung</ProvinceNameEnglish>
+            <ProvinceNameLocal>พัทลุง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >69</ProvinceID >
+            <ProvinceNameEnglish>Phuket</ProvinceNameEnglish>
+            <ProvinceNameLocal>ภูเก็ต</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >70</ProvinceID >
+            <ProvinceNameEnglish>Yala</ProvinceNameEnglish>
+            <ProvinceNameLocal>ยะลา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >71</ProvinceID >
+            <ProvinceNameEnglish>Ranong</ProvinceNameEnglish>
+            <ProvinceNameLocal>ระนอง</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >72</ProvinceID >
+            <ProvinceNameEnglish>Songkhla</ProvinceNameEnglish>
+            <ProvinceNameLocal>สงขลา</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >73</ProvinceID >
+            <ProvinceNameEnglish>Satun</ProvinceNameEnglish>
+            <ProvinceNameLocal>สตูล</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >74</ProvinceID >
+            <ProvinceNameEnglish>Surat Thani</ProvinceNameEnglish>
+            <ProvinceNameLocal>สุราษฎร์ธานี</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >75</ProvinceID >
+            <ProvinceNameEnglish>Bangkok</ProvinceNameEnglish>
+            <ProvinceNameLocal>กรุงเทพ</ProvinceNameLocal>
+          </Table3>
+          <Table3>
+            <ProvinceID >76</ProvinceID >
+            <ProvinceNameEnglish>Bueng-Kan</ProvinceNameEnglish>
+            <ProvinceNameLocal>บึงกาฬ</ProvinceNameLocal>
+          </Table3>
+        </NewDataSet>
+      </resultXml>
+      <rowCount>7</rowCount>
+    </GetConfigDetailsResponse>
+  </s:Body>
+</s:Envelope>

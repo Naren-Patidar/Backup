@@ -1,0 +1,12 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPrintAtHomeDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:95a05908-76a9-4814-be6d-e086fad4f3ee</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <AddPrintAtHomeDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <AddPrintAtHomeDetailsResult>true</AddPrintAtHomeDetailsResult>
+      <errorXml />
+    </AddPrintAtHomeDetailsResponse>
+  </s:Body>
+</s:Envelope>

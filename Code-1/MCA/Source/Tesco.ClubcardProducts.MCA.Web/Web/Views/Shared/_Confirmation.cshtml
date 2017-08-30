@@ -1,0 +1,70 @@
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@Html.HiddenFor(m => m.Clubcard)
+@Html.HiddenFor(m => m.IsConfirmation)
+<div class="ddl-banner">
+    <img src="@Url.Content(Resources.ConfigLinks.imgCongratulations)" style="height:100%" alt="" />
+    <div class="ddl-banner-inner">
+        <h2 id="bannerMsg1" class="ddl-h1-like">
+            @Html.Translate("Shared/_Confirmation", "BannerMsg1")
+        </h2>
+        <p id="bannerMsg2" class="ddl-h3-like">
+            @Html.Translate("Shared/_Confirmation", "BannerMsg2")
+        </p>
+    </div>
+</div>
+<div class="copy-wrapper">
+    <h1 id="welcomeMsg" class="ddl-text-centre">@Html.Translate("Shared/_Confirmation", "WelcomeMsg")</h1>
+    <p id="congratsMsg" class="ddl-t2 ddl-text-centre">@Html.Translate("Shared/_Confirmation", "CongratulationsMsg")</p>
+    <p id="emailMsg" class="ddl-t4 ddl-text-centre">@Html.Translate("Shared/_Confirmation", "EmailSentMsg")</p>
+    <p id="earnPoints" class="ddl-t4 ddl-text-centre">@Html.Translate("Shared/_Confirmation", "StartEarningPoints")</p>
+    <h2 id="clubcardArrive" class="h3-like ddl-text-centre">@Html.Translate("Shared/_Confirmation", "YourClubcardArrive")</h2>
+</div>
+<div class="row">
+    <div class="gr-12 gr-9@small gr-centered">
+        <div class="ddl-panel">
+            <div class="ddl-panel-body">
+                <p id="yourCCNumber" class="ddl-t3 ddl-text-centre">@Html.Translate("Shared/_Confirmation", "YourClubcardNumber")
+                    <strong>@ViewBag.Clubcard</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-wrapper">
+    <h2 id="collectPoints" class="ddl-text-centre">@Html.Translate("Shared/_Confirmation", "StartCollectingPoints")</h2>
+</div>
+<div class="row ddl-equalheight">
+    <div class="gr-12 gr-6@small">
+        <div class="ddl-panel ddl-equalchild">
+            <div class="ddl-panel-body">
+                <div class="copy-wrapper">
+                    <h3 id="todayNote" class="ddl-text-centre">@Html.Translate("Shared/_Confirmation", "TodayNote")</h3>
+                    <p class="ddl-t4 ddl-text-centre">
+                        <a id="btnPrintClubcard" class="ddl-icon-after ddl-icon-right" href='@Url.Action("PrintCC", new
+                     {
+                         @Clubcard = Model.Clubcard
+                     })'>@Html.Translate("Shared/_Confirmation", "btnShowPrintCardText")</a></p>
+                    <p class="ddl-t4 ddl-text-centre">
+                        <a id="receipt" href="@Url.Content(Resources.ConfigLinks.ReceiptTellMeMore)" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.ReceiptTellMeMore) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-right">
+                            @Html.Translate("Shared/_Confirmation", "Reciept")</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gr-12 gr-6@small">
+        <div class="ddl-panel ddl-equalchild">
+            <div class="ddl-panel-body">
+                <div class="copy-wrapper">
+                    <h3 id="tomorrowNote" class="ddl-text-centre">@Html.Translate("Shared/_Confirmation", "TomorrowNote")</h3>
+                    <p class="ddl-t4 ddl-text-centre">
+                        <a id="addOnline" href="@Url.Content(Resources.ConfigLinks.OnlineShopTellMeMore)" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.OnlineShopTellMeMore) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-right">@Html.Translate("Shared/_Confirmation", "AddOnlineShop")</a></p>
+                    <p class="ddl-t4 ddl-text-centre">
+                        <a id="downloadApp" href="@Url.Content(Resources.ConfigLinks.DownloadAppTellMeMore)" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.DownloadAppTellMeMore) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-right">@Html.Translate("Shared/_Confirmation", "DownloadApp")</a></p>
+                    <p class="ddl-t4 ddl-text-centre">
+                        <a id="tellMeMore" href="@Url.Content(Resources.ConfigLinks.MyAccountTellMeMore)" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.MyAccountTellMeMore) ? "_blank" : "_self"' class="ddl-icon-after ddl-icon-right">@Html.Translate("Shared/_Confirmation", "MyCCAccount")</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

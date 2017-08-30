@@ -1,0 +1,29 @@
+﻿{
+  "access_token": "e09186d5-c6de-40ca-b16b-e8d428f30d91",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "refresh_token": "",
+  "scope": "oob",
+  "Claims": [
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/clientid",
+      "value": "trn:tesco:cid:9fe1f09d-9a78-4c1c-b54f-1aa7fc01824d"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/scope",
+      "value": "oob"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/userkey",
+      "value": "trn:tesco:uid:uuid:36661306-1646-4f78-88b5-c277d53b8ecf"
+    },
+    {
+      "claimType": "http://schemas.tesco.com/ws/2011/12/identity/claims/confidencelevel",
+      "value": "2"
+    },
+    {
+      "claimType": "http://schemas.microsoft.com/ws/2008/06/identity/claims/expiration",
+      "value": "1469014827"
+    }
+  ]
+}

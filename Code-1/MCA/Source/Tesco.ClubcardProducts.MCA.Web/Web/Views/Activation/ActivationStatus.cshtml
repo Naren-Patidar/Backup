@@ -1,0 +1,55 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@{
+    
+    ViewBag.Title = Html.Translate("Activation/Home", "BrowserHeader");
+    ViewBag.dtmTitle = Html.Translate("Activation/Home", "BrowserHeader");
+    ViewBag.PageName = "ActivationStatus";
+ }
+
+<div class="l-column padded-left">
+    @if (ViewBag.Name == "Pending")
+    {
+        <div id="mainContentAccountActivation">
+            <h2>@Html.Translate("Activation/Home", "lclmainContentAccountActivation.Text")
+            </h2>
+            <div>
+                <p class="pageDescActivation">@Html.Translate("Activation/Home", "lclProcessResource1.Text")</p>
+                <p>@Html.Translate("Activation/Home", "lclNoteResource1.Text")</p>
+            </div>
+            <p class="pageDesc" id="pGoBackLink" runat="server" style="direction: rtl;">
+                <a id="A1" href='@Html.Translate("Activation/Home", "AAPBack")' runat="server">
+                    <input type="submit" value="@Html.Translate("Activation/Home", "goMyAccountResource")" class="ddl-button" id="btnGoBack" />          
+                </a>
+            </p>
+        </div>
+    }
+    @if (ViewBag.Name == "Banned")
+    {
+        <div id="mainContentBannedHousehold">
+            <h2>@Html.Translate("Activation/Home", "lclmainContentBannedHousehold.Text")
+            </h2> 
+            <div>
+                <br />
+                <br />
+                <p class="pageDesc">  @Html.Translate("Activation/Home", "lclAccountResource1.Text")</p>
+                <p id="lblBannedHouseholdCommunicateMsg1"> @Html.Translate("Activation/Home", "lclCommunicateMsg1Resource1.Text")</p>
+                <p id="lblBannedHouseholdCommunicateMsg2"> @Html.Translate("Activation/Home", "lclCommunicateMsg2Resource1.Text")</p>
+            </div>
+        </div>
+    }
+    @if (ViewBag.Name == "LeftScheme")
+    {
+        <div id="mainContentLeftScheme">
+            <h2>@Html.Translate("Activation/Home", "lclmainContentLeftScheme.Text")
+            </h2>
+            <div>
+                <br />
+                <br />
+                <p class="pageDesc">@Html.Translate("Activation/Home", "lclPreviousResource1.Text")</p>
+                <p id="lblLeftSchemeCommunicateMsg1"> @Html.Translate("Activation/Home", "lclCommunicateMsg1Resource1.Text")</p>
+                <p id="lblLeftSchemeCommunicateMsg2"> @Html.Translate("Activation/Home", "lclCommunicateMsg2Resource1.Text")</p>
+                @*<p>@Html.Translate("Activation/Home", "lclErrorResource1.Text")</p>*@
+            </div> 
+        </div> 
+    }
+</div>

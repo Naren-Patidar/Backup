@@ -1,0 +1,145 @@
+
+//Colours =======================
+
+
+//Core pallette --
+
+$ddl-black1: #000 !default;
+.ddl-black1 {background: #000;}
+
+$ddl-black2: #222 !default;
+.ddl-black2 {background: #222;}
+
+$ddl-white1: #fff !default;
+.ddl-white1 {background: #fff;}
+
+$ddl-white2: #f2f2f2 !default;
+.ddl-white2 {background: #fff;}
+
+$ddl-grey1: #333333 !default;
+.ddl-grey1 {background: #333333;}
+
+$ddl-grey2: #666666 !default;
+.ddl-grey2 {background: #666666;}
+
+$ddl-grey3: #CCCCCC !default;
+.ddl-grey3 {background: #CCCCCC;}
+
+$ddl-grey4: #f6f6f6 !default;
+.ddl-grey4 {background: #f6f6f6;}
+
+$ddl-grey5: #EDECEC !default;
+.ddl-grey5 {background: #EDECEC;}
+
+$ddl-grey6: #E5E5E5 !default;
+.ddl-grey6 {background: #E5E5E5;}
+
+$ddl-blue1: #00539F !default;
+.ddl-blue1 {background: #00539F;}
+
+$ddl-blue2: #008dc8 !default;
+.ddl-blue2 {background: #008dc8;}
+
+$ddl-blue3: rgba(153,209,233,1);
+.ddl-blue3 {background: rgba(153,209,233,1);}
+
+$ddl-blue4: #00294f !default;
+.ddl-blue4 {background: #00294f;}
+
+$ddl-blue5: #e5e8ea !default;
+.ddl-blue5 {background: #e5e8ea;}
+
+$ddl-blue6: #99d1e9 !default;
+.ddl-blue5 {background: #99d1e9;}
+
+$ddl-red: #EE1C2E !default;
+.ddl-red {background: #EE1C2E;}
+
+$ddl-red2: #cc3333 !default;
+.ddl-red2 {background: #cc3333;}
+
+$ddl-red2: #cc3333 !default;
+.ddl-red2 {background: #cc3333;}
+
+$ddl-pink: #f5d6d6 !default;
+.ddl-pink {background: #f5d6d6;}
+
+$ddl-trans-dark: rgba(0,0,0,.2);
+
+$ddl-purple: #793ba3 !default;
+$ddl-purple2: #62238d !default;
+
+$ddl-red1: #cc3333 !default;
+
+$success: #04b404 !default;
+$error: $ddl-red2 !default;
+$warning: $ddl-red2 !default;
+$inform: $ddl-red2 !default;
+
+
+
+//Functional colour --
+
+$category-1: $ddl-purple;
+$category-1_2: $ddl-purple2;
+
+$outline-color: $ddl-blue3;//For links and things
+
+$button-outline-color: rgba(153,209,233,0);
+$button-outline-color-hover: $ddl-blue3;
+
+$ddl-heading-colour: $ddl-grey1;
+$ddl-body-copy-colour: $ddl-grey2; 
+
+$ddl-Highlight: $ddl-blue2;
+$ddl-Focus-state: $ddl-blue3;
+$ddl-Text-1: $ddl-grey1;
+$ddl-Text-2: $ddl-grey2;
+$ddl-Text-3: $ddl-grey3;
+$ddl-Background-1: $ddl-grey4;
+$ddl-Background-2: $ddl-blue5;
+$ddl-Utilities-background: $ddl-blue4;
+
+$ddl-primary-button-background: $ddl-blue1;
+$ddl-primary-button-background-hover: $ddl-blue3;
+$ddl-primary-button-colour: $ddl-white1;
+$ddl-primary-button-colour-hover: $ddl-white1;
+
+$ddl-secondary-button-background: $ddl-white1;
+$ddl-secondary-button-background-hover: $ddl-white1;
+$ddl-secondary-button-colour: $ddl-blue1;
+$ddl-secondary-button-colour-hover: $ddl-blue1;
+
+$ddl-border-color-1: $ddl-grey3;
+$ddl-border-color-2: $ddl-grey6;
+
+
+
+$ddl-link-colour: $ddl-blue1;
+$ddl-link-colour-hover: $ddl-blue2;
+
+$ddl-label-colour: $ddl-grey1;
+$ddl-input-border-colour: $ddl-grey3;
+$ddl-input-background: $ddl-white1;
+$ddl-input-background-disabled: $ddl-grey4;
+$form-error: $ddl-red1;
+
+$ddl-panel-background-1: $ddl-grey3;
+
+$ddl-global-header-background-handheld: $ddl-blue1;
+$ddl-global-header-bordercolour-handheld: $ddl-blue1;
+$ddl-global-header-color-handheld: $ddl-white1;
+
+$ddl-global-header-background: $ddl-blue4;
+$ddl-global-header-bordercolour: $ddl-blue1;
+$ddl-global-header-color: $ddl-white1;
+
+$ddl-page-header-background: $ddl-white1;
+$ddl-app-ident-colour: $ddl-blue1;
+
+
+
+$ddl-footer-background: $ddl-grey4;
+
+
+

@@ -1,0 +1,57 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model CustomerAddressVerificationModel
+
+@if (!(Model.IsVerifiedFirstStep))
+{
+	<div id="divUpdateInfo"> 
+		<div class="ddl-button-banner">
+			<div class="ddl-button-banner-column">
+				<h2 id="pCustomerDetailsHeader" class="ddl-h5-like">@Html.Translate("Shared/_CustomerDetailsBanner", "lblHeaderText")</h2>
+				<p>
+					@Html.Translate("Shared/_CustomerDetailsBanner", "lblDescription1") 
+				</p>
+				<p>
+					@Html.Translate("Shared/_CustomerDetailsBanner", "lblSurname")
+					<strong id="CustmerSurname">@Html.DisplayFor(model => model.lastName)</strong><br />
+					@Html.Translate("Shared/_CustomerDetailsBanner", "lblPostCode")
+					<strong id="CustmerPostcode">@Html.DisplayFor(model => model.Postcode)</strong><br />
+				</p>
+				<br />
+				<div class="ddl-button-group ddl-button-group-left">          
+							<a class="ddl-button ddl-button-secondary close" id="btnDetailsAlreadyUpdated" target="_blank">@Html.Translate("Shared/_CustomerDetailsBanner", "btnDetailsAlreadyUpdatedResource")</a>
+						<a href="@Url.Action("PersonalDetails", "AccountManagement")" id="btnClubcardDetailsNotUpdated" class="ddl-button ddl-icon-after ddl-icon-right" target="_self">@Html.Translate("Shared/_CustomerDetailsBanner", "btnDetailsNotUpdatedResource")</a>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+
+@if (!(Model.IsVerifiedLastStep))
+{ 
+	<div id="divDotcomInfo" class="@(Model.IsVerifiedFirstStep ? "show" : "hide")">
+		<div class="ddl-button-banner">
+			<div class="ddl-button-banner-column">
+				<h2 id="pCustomerDotcomDetailsHeader" class="ddl-h5-like">@Html.Translate("Shared/_CustomerDetailsBanner", "lblDotcomHeaderText")</h2>
+				<p>
+					@Html.Translate("Shared/_CustomerDetailsBanner", "lblDotcomDescription1") 
+				</p>
+				<p>
+					<strong id="CustmerDotcomSurname">@Html.Translate("Shared/_CustomerDetailsBanner", "lblSurname")
+					</strong>@Html.DisplayFor(model => model.dotcomLastName)<br />
+					<strong id="CustmerDotcomPostcode">@Html.Translate("Shared/_CustomerDetailsBanner", "lblPostCode")
+					</strong>@Html.DisplayFor(model => model.dotcomPostcode)<br />
+				</p>
+				<br />
+				<br />
+				<div class="ddl-button-group ddl-button-group-left">
+						<a class="ddl-button ddl-button-secondary close" id="btnDotcomDetailsAreCorrect" target="_blank">@Html.Translate("Shared/_CustomerDetailsBanner", "btnMyTescoDetailsAreCorrect")</a>
+						<a href="@Html.Translate("Shared/_CustomerDetailsBanner", "lblDescLinkUrl")" id="btnDotcomDetailsAreNotCorrect" target="_blank" class="ddl-button ddl-icon-after ddl-icon-right">@Html.Translate("Shared/_CustomerDetailsBanner", "btnChangeMyTescoDetails")</a>
+				</div>
+			</div>
+		</div>
+	</div>
+}
+

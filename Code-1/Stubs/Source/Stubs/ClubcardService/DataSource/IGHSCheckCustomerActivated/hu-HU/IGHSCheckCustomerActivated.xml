@@ -1,0 +1,22 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IGHSCheckCustomerActivatedResponse</a:Action>
+    <a:RelatesTo>urn:uuid:72aa69cd-c70a-4f98-b477-d13469f5cdba</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <IGHSCheckCustomerActivatedResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <IGHSCheckCustomerActivatedResult>true</IGHSCheckCustomerActivatedResult>
+      <activated>78</activated>
+      <customerID>0</customerID>
+      <errorXml />
+      <resultXml>
+        <NewDataSet>
+          <ViewCheckCustomerActivated>
+            <Activated>N</Activated>
+            <CustomerID>0</CustomerID>
+          </ViewCheckCustomerActivated>
+        </NewDataSet>
+      </resultXml>
+    </IGHSCheckCustomerActivatedResponse>
+  </s:Body>
+</s:Envelope>

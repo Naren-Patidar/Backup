@@ -1,0 +1,37 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>1043886713</CustomerID>
+            <ClubcardID>634004025016032558</ClubcardID>
+            <CardIssuedDate>2013-02-12T00:00:00+00:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Sabrina</Name1>
+            <Name2 />
+            <Name3>Mape</Name3>
+            <MailingAddressLine1>27 PROSPECT ROAD</MailingAddressLine1>
+            <MailingAddressLine2>ST. ALBANS</MailingAddressLine2>
+            <MailingAddressPostCode>AL1 2AT</MailingAddressPostCode>
+            <DateOfBirth>1988-08-10T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>1007</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>352</PreviousPointsBalanceQty>
+            <JoinedDate>2013-02-12T00:00:00+00:00</JoinedDate>
+            <HouseHoldID>2019912239</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

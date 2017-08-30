@@ -1,0 +1,127 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@model OptInsModel
+@{
+    DbConfigurationItem hideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality]["HideMarketingPreference"];
+}
+
+<legend class="ddl-h4-like">
+    @if (Model.IsCustomerJoined)
+    {
+        @Html.Translate("OptInsHeader")      
+    }
+    else
+    {
+        @Html.Translate("lclDataProtection")
+    }
+</legend>
+  
+<p class="message-level-2 message-success" id="oiSaved" style='@(Model.IsSaved ? "display:block" : "display:none")'>
+    @Html.Translate("MessageDataSaved")
+</p> 
+
+@Html.HiddenFor(model => model.IsOptInBehaviour)
+@Html.HiddenFor(model => model.CustomerIDEncr)
+@Html.HiddenFor(model => model.CustomerEmail)
+@Html.HiddenFor(model => model.IsCustomerJoined)
+@if (!Model.IsOptInBehaviour)
+{
+    <p>
+        <strong id="lblOptInsSubHeading">@Html.Translate("OptInsSubHeading")</strong>                
+        <span id="lblOptInsDescription">@Html.Translate("OptInsDescription") </span>
+        <a href='@Resources.ConfigLinks.PHPreference' style="cursor: hand" id='aClickHere' target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHPreference) ? "_blank" : "_self"'>@Html.Translate("lblClickHere")</a>
+    </p>
+    <p>
+        <strong id="lblOptInsSubHeading2">@Html.Translate("OptInsSubHeading2")</strong>
+        @if (Model.IsCustomerJoined)
+        {               
+            <span id="lblOptInsDescription2">@Html.Translate("OptInsDescription2")</span>                
+        }
+        else
+        {
+            <span id="lblOptInsDescription2forJoin">@Html.Translate("OptInsDescription2ForJoin")</span>
+        }
+    </p>
+    <div class="form-row">
+		<fieldset class="ddl-fieldset">
+            @for (int i = 0; i < Model.OptIns.Count; i++)
+            {
+                if (Html.Translate("PrefixChkOptIns" + (i + 1)).ToString().Length > 0)
+                { 
+                    <div class="form-row" style='@(Model.OptIns[i].IsVisible ? "" : "display:none")'>
+                        <label>@Html.Translate("PrefixChkOptIns" + (i + 1))</label>
+                    </div>
+                }
+                <div class="form-row" style='@(Model.OptIns[i].IsVisible ? "" : "display:none")'>
+					<div class="ddl-form-field ddl-checkbox">
+                        <label for='@("OptIns_OptIns_" + i + "__IsOpted")' id='@("OptIns" + i)' class='ddl-label'>@Html.Translate("ChkOptIns" + (i + 1))                       
+                            @if (Model.IsCustomerJoined)
+                            {
+                                @Html.Translate("lblTescoStore")
+                            }
+                            else
+                            {
+                                @Html.Translate("lblTescoGroup") 
+                            }
+                        </label>
+                        <span class="ddl-checkbox">
+                            @Html.CheckBoxFor(model => model.OptIns[i].IsOpted)
+						    <em></em>
+						</span>
+                        @Html.HiddenFor(model => model.OptIns[i].PreferenceID)
+                        @Html.HiddenFor(model => model.OptIns[i].IsAlreadyOpted)
+                        @Html.HiddenFor(model => model.OptIns[i].IsVisible)
+					</div>
+                </div>
+                if (Html.Translate("PostfixChkOptIns" + (i + 1)).ToString().Length > 0)
+                { 
+                    <div class="form-row" style='@(Model.OptIns[i].IsVisible ? "" : "display:none")'>
+                        <label>@Html.Translate("PostfixChkOptIns" + (i + 1))</label>
+                    </div>
+                }
+            }
+		</fieldset>
+    </div>
+}
+else
+{
+    <p><strong id="OptOutsDescription"><span id="lblOptOutsDescription">@Html.Translate("ChkOptOutsDescription")</span></strong></p>
+    <p id="lblOptOutsDescription2">@Html.Translate("ChkOptOutsDescription2")
+        <a href='@Resources.ConfigLinks.PHPreference' style="cursor: hand" id="aPrivacyPolicy" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHPreference) ? "_blank" : "_self"'>@Html.Translate("lblPrivacyPolicy")</a>
+    </p>
+    <p id="lblOptOutsDescription3">@Html.Translate("ChkOptOutsDescription3")</p>
+    <div class="form-row">
+		<fieldset class="ddl-fieldset">
+            @for (int i = 0; i < Model.OptOuts.Count; i++)
+            {
+                if (Html.Translate("PrefixChkOptOuts" + (i + 1)).ToString().Length > 0)
+                {    
+                    <div style='@(Model.OptOuts[i].IsVisible ? "display:block" : "display:none")'>
+                        <label>@Html.Translate("PrefixChkOptOuts" + (i + 1))</label>
+                    </div>                      
+                }
+                <div class="form-row" style='@(Model.OptIns[i].IsVisible ? "" : "display:none")'>
+					<div class="ddl-form-field ddl-checkbox">
+                        <label for='@("OptOuts" + i)' id='@("OptOuts" + i)' class='ddl-label'>@Html.Translate("ChkOptOuts" + (i + 1))</label>
+					    <span class='ddl-checkbox'>
+                            @Html.CheckBoxFor(model => model.OptOuts[i].IsOpted)
+					        <em></em>
+					    </span>
+                        @Html.HiddenFor(model => model.OptOuts[i].PreferenceID)
+                        @Html.HiddenFor(model => model.OptOuts[i].IsAlreadyOpted)
+                        @Html.HiddenFor(model => model.OptOuts[i].IsVisible)
+                    </div>
+				</div>
+                if (Html.Translate("PostfixChkOptOuts" + (i + 1)).ToString().Length > 0)
+                { 
+                    <div style='@(Model.OptOuts[i].IsVisible ? "display:block" : "display:none")'>
+                        <label>@Html.Translate("PostfixChkOptOuts" + (i + 1))</label>
+                    </div>
+                }
+            }
+        </fieldset>
+    </div>
+}

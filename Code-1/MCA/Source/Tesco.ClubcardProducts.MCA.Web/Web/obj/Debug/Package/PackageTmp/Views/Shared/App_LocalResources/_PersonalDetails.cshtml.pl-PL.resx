@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="babyToddlerPref.valid" xml:space="preserve">
+    <value>Zanim usuniesz adres e-mail, zmień swoje preferencje w klubie "Tesco Loves Baby"</value>
+  </data>
+  <data name="changePref.valid" xml:space="preserve">
+    <value>Zanim usuniesz adres do koroespondencji, zmień preferowany sposób wysylki Twojego wyciagu Clubcard</value>
+  </data>
+  <data name="clickArrow.valid" xml:space="preserve">
+    <value>Kliknij, aby wybrać</value>
+  </data>
+  <data name="DayTimePhonenumber" xml:space="preserve">
+    <value>Podany numer jest nieprawidłowy</value>
+  </data>
+  <data name="dobLessThan.valid" xml:space="preserve">
+    <value>Wprowadź prawidłową datę urodzenia</value>
+  </data>
+  <data name="FamilyMemberDOB1" xml:space="preserve">
+    <value>Wymagana jest data urodzenia</value>
+  </data>
+  <data name="dueDate.valid" xml:space="preserve">
+    <value>Podaj pełną datę urodzenia w formacie DD/MM/RRRR dziecka poniżej 1 roku.</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Podany adres e-mail jest nieprawidłowy</value>
+  </data>
+  <data name="enterAge.valid" xml:space="preserve">
+    <value>Wprowadź wiek</value>
+  </data>
+  <data name="enterNo.valid" xml:space="preserve">
+    <value>Wprowadź numer od 1 do 99</value>
+  </data>
+  <data name="EveningPhonenumber" xml:space="preserve">
+    <value>Wprowadź poprawny numer telefonu.</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Wprowadź poprawne imię (imiona)</value>
+  </data>
+  <data name="format.valid" xml:space="preserve">
+    <value>Wprowadź wiek dziecka w formacie DD/MM/RRRR lub usuń datę</value>
+  </data>
+  <data name="gender.mismatch" xml:space="preserve">
+    <value>Wybrana płeć nie zgadza się z wprowadzonym wcześniej tytułem.</value>
+  </data>
+  <data name="gender.valid" xml:space="preserve">
+    <value>Wybierz płeć</value>
+  </data>
+  <data name="Initial" xml:space="preserve">
+    <value>Please enter a valid letter.</value>
+  </data>
+  <data name="ISOLanguageCode" xml:space="preserve">
+    <value>Wybierz język</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Wprowadź poprawne nazwisko</value>
+  </data>
+  <data name="lclAddress.Text" xml:space="preserve">
+    <value>Adres:</value>
+  </data>
+  <data name="lclAddressLine2.Text" xml:space="preserve">
+    <value>Nr domu/Nr mieszkania
+  (Przykład 18/6):</value>
+  </data>
+  <data name="lclAddressLine3.Text" xml:space="preserve">
+    <value>Numer domu:</value>
+  </data>
+  <data name="lclAddressLine4.Text" xml:space="preserve">
+    <value>Miejscowość:</value>
+  </data>
+  <data name="lclAddressLine5.Text" xml:space="preserve">
+    <value>Województwo:</value>
+  </data>
+  <data name="lclAge.Text" xml:space="preserve">
+    <value>Ty:</value>
+  </data>
+  <data name="lclBabyAndToddler.Text" xml:space="preserve">
+    <value>Klub Tesco Loves Baby</value>
+  </data>
+  <data name="lclBabyMessage1.Text" xml:space="preserve">
+    <value>Należysz do klubu Tesco Loves Baby</value>
+  </data>
+  <data name="lclBabyMessage2.Text" xml:space="preserve">
+    <value>Sprawdź daty urodzin dzieci oraz miejsca ich urodzenia</value>
+  </data>
+  <data name="lclCantFindAddress.Text" xml:space="preserve">
+    <value>If you can’t find your address via our post code finder, please call &lt;b&gt;0800 591 688*&lt;/b&gt; or &lt;b&gt;0330 123 1688**&lt;/b&gt;</value>
+  </data>
+  <data name="lclCantFindAdressmsg.text" xml:space="preserve">
+    <value>Please ensure your post code is entered with correct character spacing e.g. SW2A 0AB rather than SW2A0AB</value>
+  </data>
+  <data name="lclChild.Text" xml:space="preserve">
+    <value>W przypadku dzieci poniżej 1 roku życia, należy wpisać 0.</value>
+  </data>
+  <data name="lclChooseAnAddress.Text" xml:space="preserve">
+    <value>Wybierz adres:</value>
+  </data>
+  <data name="lclCountry.Text" xml:space="preserve">
+    <value>Województwo:</value>
+  </data>
+  <data name="lclDayTimePhoneNo.Text" xml:space="preserve">
+    <value>Telefon stacjonarny
+    (Wpisz 0 przed numerem kierunkowym telefonu):</value>
+  </data>
+  <data name="lclDietaryNeed.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclDob.Text" xml:space="preserve">
+    <value>Data urodzenia:</value>
+  </data>
+  <data name="lclEmailAddress.Text" xml:space="preserve">
+    <value>Adres e-mail:</value>
+  </data>
+  <data name="lclEnterAge.Text" xml:space="preserve">
+    <value>Podaj rok urodzenia członków Twojego gospodarstwa domowego (pomiń rok urodzenia właściciela konta Clubcard)</value>
+  </data>
+  <data name="lclEvnPhoneNo.Text" xml:space="preserve">
+    <value>Numer telefonu komórkowego:</value>
+  </data>
+  <data name="lclFemale.Text" xml:space="preserve">
+    <value>Kobieta</value>
+  </data>
+  <data name="lclFindAddressMsgResource.text" xml:space="preserve">
+    <value>This may be due to incorrect character spacing e.g. AL71TW rather than AL7 1TW</value>
+  </data>
+  <data name="lclFirstName.Text" xml:space="preserve">
+    <value>Imię (imiona):</value>
+  </data>
+  <data name="lclGender.Text" xml:space="preserve">
+    <value>Płeć:</value>
+  </data>
+  <data name="lclHouseHoldDetails.Text" xml:space="preserve">
+    <value>Informacje dotyczące Twojego gospodarstwa domowego :</value>
+  </data>
+  <data name="lclHouseNo.Text" xml:space="preserve">
+    <value>Ulica :</value>
+  </data>
+  <data name="lclHouseNoName.Text" xml:space="preserve">
+    <value>Ulica :</value>
+  </data>
+  <data name="lclLocality.Text" xml:space="preserve">
+    <value>Miejscowość:</value>
+  </data>
+  <data name="lclMale.Text" xml:space="preserve">
+    <value>Mężczyzna</value>
+  </data>
+  <data name="lclMiddleInitials.Text" xml:space="preserve">
+    <value>Inicjały:</value>
+  </data>
+  <data name="lclMobilePhoneNo.Text" xml:space="preserve">
+    <value>Telefon komórkowy
+   (Wpisz 0 przed numerem): </value>
+  </data>
+  <data name="lclMoreInfo.Text" xml:space="preserve">
+    <value>Więcej informacji</value>
+  </data>
+  <data name="lclNoteText.Text" xml:space="preserve">
+    <value>Informacje na temat Twojego gospodarstwa domowego pozwolą nam przesyłać ciekawe oferty i zniżki dla Ciebie oraz Twojej Rodziny.</value>
+  </data>
+  <data name="lclOptOut.Text" xml:space="preserve">
+    <value>Rezygnacja</value>
+  </data>
+  <data name="lclPeople.Text" xml:space="preserve">
+    <value>Ile osób liczy Twoje gospodarstwo domowe (łącznie z Tobą)?</value>
+  </data>
+  <data name="lclPostCode.Text" xml:space="preserve">
+    <value>Kod pocztowy (Wpisz 5 cyfr bez spacji):</value>
+  </data>
+  <data name="lclPrefLanguage.Text" xml:space="preserve">
+    <value>Preferowany język:</value>
+  </data>
+  <data name="lclPrimID.Text" xml:space="preserve">
+    <value>Numer dowodu osobistego:</value>
+  </data>
+  <data name="lclRace.Text" xml:space="preserve">
+    <value>Wybierz rasę:</value>
+  </data>
+  <data name="lclSecID.Text" xml:space="preserve">
+    <value>Numer innego dokumentu (paszport):</value>
+  </data>
+  <data name="lclStreet.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclSurName.Text" xml:space="preserve">
+    <value>Nazwisko:</value>
+  </data>
+  <data name="lclTitle.Text" xml:space="preserve">
+    <value>Nazwa:</value>
+  </data>
+  <data name="lclTown.Text" xml:space="preserve">
+    <value>Miejscowość:</value>
+  </data>
+  <data name="lclYourContDetails.Text" xml:space="preserve">
+    <value>Dane kontaktowe</value>
+  </data>
+  <data name="MailingAddressLine1" xml:space="preserve">
+    <value>Wprowadź poprawną nazwę ulicy</value>
+  </data>
+  <data name="MailingAddressLine2" xml:space="preserve">
+    <value>Wprowadź poprawny nr domu/nr mieszkania</value>
+  </data>
+  <data name="MailingAddressLine3" xml:space="preserve">
+    <value>Taki numer nie istenieje</value>
+  </data>
+  <data name="MailingAddressLine4" xml:space="preserve">
+    <value>Wprowadź poprawną miejscowość</value>
+  </data>
+  <data name="MailingAddressLine5" xml:space="preserve">
+    <value>Wprowadź poprawny nr domu/nr mieszkania</value>
+  </data>
+  <data name="MailingAddressLine6" xml:space="preserve">
+    <value>Taki numer nie istenieje</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>Wprowadzony numer telefonu komórkowego jest nieprawidłowy</value>
+  </data>
+  <data name="mobPhone.valid" xml:space="preserve">
+    <value>Wprowadzony numer telefonu komórkowego jest nieprawidłowy</value>
+  </data>
+  <data name="PassportNo" xml:space="preserve">
+    <value>Numer dokumentu jest nieprawidłowy</value>
+  </data>
+  <data name="pleaseTry.valid" xml:space="preserve">
+    <value>Spróbuj ponownie lub skontaktuj sie z bezpłatną Infolinia Clubcard, dostepną pod numerem telefonu 800 105 104.</value>
+  </data>
+  <data name="postcode.valid" xml:space="preserve">
+    <value>Wprowadź poprawny kod pocztowy</value>
+  </data>
+  <data name="primaryId.valid" xml:space="preserve">
+    <value>Wprowadzony numer dowodu osobistego jest nieprawidłowy</value>
+  </data>
+  <data name="primaryIdLength.valid" xml:space="preserve">
+    <value>Wprowadzony numer dowodu osobistego jest nieprawidłowej długości</value>
+  </data>
+  <data name="primIdsecId.valid" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RaceId" xml:space="preserve">
+    <value>Please select a valid race.</value>
+  </data>
+  <data name="save.valid" xml:space="preserve">
+    <value>Zapisano zmiany</value>
+  </data>
+  <data name="secondaryIdLength.valid" xml:space="preserve">
+    <value>Numer dokumentu jest nieprawidłowej długości</value>
+  </data>
+  <data name="selectHouse.valid" xml:space="preserve">
+    <value>Wybierz numer domu</value>
+  </data>
+  <data name="sorry.valid" xml:space="preserve">
+    <value>Wprowadź poprawny kod pocztowy</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Wybierz nazwę:</value>
+  </data>
+  <data name="tooManyAges.valid" xml:space="preserve">
+    <value>Wprowadzono wiek większej liczby członków gospodarstwa niż podana liczba domowników. Popraw nieprawidłowe informacje.</value>
+  </data>
+  <data name="validDob.valid" xml:space="preserve">
+    <value>Wprowadzona data urodzenia jest nieprawidłowa</value>
+  </data>
+  <data name="lclTitle1.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="lclTitle2.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="lclTitle3.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="lclTitle4.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="lclSelectTitle.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Znajdź adres</value>
+  </data>
+  <data name="btnSaveAddressResource1.Text" xml:space="preserve">
+    <value>Zachowaj zmiany</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>Dzień</value>
+  </data>
+  <data name="lclSelectMonth.Text" xml:space="preserve">
+    <value>Miesiąc</value>
+  </data>
+  <data name="lclSelectYear.Text" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="Len_DayTimePhonenumber" xml:space="preserve">
+    <value>Wprowadź poprawny numer telefonu</value>
+  </data>
+  <data name="Len_EmailAddress" xml:space="preserve">
+    <value>Wprowadź poprawny adres e-mail</value>
+  </data>
+  <data name="Len_EveningPhonenumber" xml:space="preserve">
+    <value>Wprowadź poprawny numer telefonu</value>
+  </data>
+  <data name="Len_FirstName" xml:space="preserve">
+    <value>Wprowadź poprawnie imię</value>
+  </data>
+  <data name="Len_Initial" xml:space="preserve">
+    <value>Wprowadź poprawnie drugie imię</value>
+  </data>
+  <data name="Len_LastName" xml:space="preserve">
+    <value>Wprowadź poprawnie nazwisko</value>
+  </data>
+  <data name="Len_MailingAddressLine1" xml:space="preserve">
+    <value>Wprowadź poprawnie kod pocztowy</value>
+  </data>
+  <data name="Len_MailingAddressLine2" xml:space="preserve">
+    <value>Wprowadź poprawnie nazwę ulicy</value>
+  </data>
+  <data name="Len_MailingAddressLine3" xml:space="preserve">
+    <value>Wprowadź poprawnie numer domu/mieszkania</value>
+  </data>
+  <data name="Len_MailingAddressLine4" xml:space="preserve">
+    <value>Proszę podać dane do wysyłki</value>
+  </data>
+  <data name="Len_MailingAddressLine5" xml:space="preserve">
+    <value>Wprowadź poprawnie nazwę miejscowości</value>
+  </data>
+  <data name="Len_MailingAddressLine6" xml:space="preserve">
+    <value>Wprowadź poprawnie nazwę województwa</value>
+  </data>
+  <data name="Len_MailingAddressPostCode" xml:space="preserve">
+    <value>Wprowadź poprawnie kod pocztowy</value>
+  </data>
+  <data name="Len_MobilePhoneNumber" xml:space="preserve">
+    <value>Wprowadź poprawny numer telefonu komórkowego</value>
+  </data>
+  <data name="Len_PassportNo" xml:space="preserve">
+    <value>Wprowadź poprawny numer karty Clubcard</value>
+  </data>
+  <data name="Len_SSN" xml:space="preserve">
+    <value>Wprowadź poprawny numer karty Clubcard</value>
+  </data>
+  <data name="selectrace" xml:space="preserve">
+    <value>- Select race -</value>
+  </data>
+  <data name="ReplacementText" xml:space="preserve">
+    <value>Do you need a replacement card with your new name?</value>
+  </data>
+  <data name="lclPerson2.Text" xml:space="preserve">
+    <value>Osoba 2:</value>
+  </data>
+  <data name="lclPerson3.Text" xml:space="preserve">
+    <value>Osoba 3:</value>
+  </data>
+  <data name="lclPerson4.Text" xml:space="preserve">
+    <value>Osoba 4:</value>
+  </data>
+  <data name="lclPerson5.Text" xml:space="preserve">
+    <value>Osoba 5:</value>
+  </data>
+  <data name="lclPerson6.Text" xml:space="preserve">
+    <value>Osoba 6:</value>
+  </data>
+  <data name="MailingAddressPostCode" xml:space="preserve">
+    <value>Wprowadź poprawnie kod pocztowy</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlHouseholdYearResource1.Text" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Wybierz płeć</value>
+  </data>
+</root>

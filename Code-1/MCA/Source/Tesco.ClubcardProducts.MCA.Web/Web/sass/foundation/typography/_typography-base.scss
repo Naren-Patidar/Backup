@@ -1,0 +1,241 @@
+
+html {
+  font-family: sans-serif;
+  font-size: 65.2%; /* 1rem = 10px */
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  color: $ddl-body-copy-colour;
+}
+
+body {
+  line-height: 1.6rem;
+  font-family: 'tescoregular', Arial;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Copy & Lists */
+
+.copy-wrapper {
+  padding-bottom: 20px;
+  clear: both;
+}
+
+.vital-form-journey {
+  
+  .copy-wrapper {
+    padding-bottom: 20px;
+    clear: both;
+
+    &:first-child, &:nth-child(2){
+      margin-top: -20px;
+    }
+  }
+}
+
+hr {
+  margin-top: 1.6rem;
+  margin-bottom: 1.5em;
+  border: 1px solid $ddl-border-color-1;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1.6rem;
+  widows: 3;
+}
+small {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding-top: 1.4rem;
+}
+ul,
+ol,
+dl {
+  margin: 0 0 1.6rem 20px;
+
+  &.no-bullet {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+ul li,
+ol li,
+dl dt,
+dl dd {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1.6rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol,
+dl dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+blockquote {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+/* Headings */
+h1, .ddl-h1-like,
+h2, .ddl-h2-like,
+h3, .ddl-h3-like,
+h4, .ddl-h4-like,
+h5, .ddl-h5-like,
+h6, .ddl-h6-like {
+  color: $ddl-heading-colour;
+  font-family: 'tescobold';
+  //letter-spacing: -1px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+h1, .ddl-h1-like {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  padding-top: 3.2rem;
+}
+h2, .ddl-h2-like  {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  padding-top: 2.8rem;
+}
+h3, .ddl-h3-like  {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  padding-top: 2.4rem;
+}
+h4, .ddl-h4-like  {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding-top: 2rem;
+}
+h5, .ddl-h5-like  {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-top: 1.6rem;
+}
+//No h6?
+.ddl-t1 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  padding-top: 2.8rem;
+}
+.ddl-t2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  padding-top: 2.4rem;
+}
+.ddl-t3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding-top: 2rem;
+}
+.ddl-t4 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-top: 1.6rem;
+}
+.ddl-t5 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding-top: 1.4rem;
+}
+.ddl-t6 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding-top: 1.2rem;
+}
+/* Tables */
+table {
+  margin-top: 1.6rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: $ddl-link-colour;
+  font-family: "tescobold";
+  &:hover {
+    color: $ddl-link-colour-hover;
+  }
+}
+
+.ddl-standalone-link {
+  font-size: 1.6rem;
+  position: relative;
+
+  &:after {
+    color: $ddl-link-colour;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    margin-left: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+
+    &:after {
+      color: $ddl-link-colour-hover;
+    }
+  }
+
+  a {
+      text-decoration: none;
+      padding-right: 14px;
+      position: relative;
+      z-index: 2;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.ddl-standalone-link-like {
+  text-decoration: none;
+  font-family: "tescobold";
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a:active, a:focus {
+  text-decoration: underline;
+}
+
+p a, small a {
+  font-family: "tescoregular";
+  text-decoration: underline;
+  position: relative;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: $ddl-link-colour-hover;
+  }
+}
+
+

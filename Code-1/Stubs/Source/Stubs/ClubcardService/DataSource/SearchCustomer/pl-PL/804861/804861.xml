@@ -1,0 +1,43 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>804861</CustomerID>
+            <ClubcardID>634009528001013001</ClubcardID>
+            <CardIssuedDate>2014-12-15T22:16:40.927+01:00</CardIssuedDate>
+            <TitleEnglish />
+            <Name1>Mária</Name1>
+            <Name2 />
+            <Name3>Kelemen</Name3>
+            <MailingAddressLine1>CSOKONAI UTCA</MailingAddressLine1>
+            <MailingAddressLine2>43</MailingAddressLine2>
+            <MailingAddressLine3 />
+            <MailingAddressLine4>DÖMSÖD</MailingAddressLine4>
+            <MailingAddressLine5>HUNGARY</MailingAddressLine5>
+            <MailingAddressPostCode>2344</MailingAddressPostCode>
+            <DateOfBirth>1957-03-24T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>1803</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>1566</PreviousPointsBalanceQty>
+            <JoinedDate>2014-12-15T22:16:40.77+01:00</JoinedDate>
+            <HouseHoldID>804861</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteID>2</JoinRouteID>
+            <JoinRouteDesc>Online Join</JoinRouteDesc>
+            <PromotionCode />
+            <AmendBy>System</AmendBy>
+            <AmendDateTime>07/01/2015 10:39</AmendDateTime>
+          </Customer>
+        </NewDataSet>
+      </resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

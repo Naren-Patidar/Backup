@@ -1,0 +1,18 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings; 
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.CouponImageViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+</head>
+<body>
+    <div>
+        <img src='@Url.Content(Path.Combine(DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.CouponImageFolder.ToString()].ConfigurationValue1 ,Model.CouponImageFile))' style="width:770px;height:450px;" />
+    </div>@Html.ValueFor(model => model.CouponDescription)
+</body>
+</html>

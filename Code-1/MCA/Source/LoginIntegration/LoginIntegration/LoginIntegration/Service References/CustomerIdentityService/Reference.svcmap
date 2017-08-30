@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0d0f6a0e-321b-4171-8c29-350801c0436b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://nga-app-vip-pl.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DecryptCookieService.disco" MetadataType="Disco" ID="6077f5a5-7a8e-4c03-81ac-3215154d6086" SourceId="1" SourceUrl="https://dvukgdcwcsu001.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc?disco" />
+    <MetadataFile FileName="DecryptCookieService.xsd" MetadataType="Schema" ID="8dbc1e6b-d135-4f7f-bb5b-022e75218787" SourceId="1" SourceUrl="https://dvukgdcwcsu001.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DecryptCookieService1.xsd" MetadataType="Schema" ID="10af4210-7a47-4dd3-b10e-a81ef1363afa" SourceId="1" SourceUrl="https://dvukgdcwcsu001.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DecryptCookieService2.xsd" MetadataType="Schema" ID="fe553ac5-875c-43fb-a761-c4780c2ae6eb" SourceId="1" SourceUrl="https://dvukgdcwcsu001.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DecryptCookieService.wsdl" MetadataType="Wsdl" ID="72e4faba-adf9-4dd3-b51e-284e67a2eb38" SourceId="1" SourceUrl="https://dvukgdcwcsu001.dev.global.tesco.org/NGCDecryptCookie/DecryptCookieService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

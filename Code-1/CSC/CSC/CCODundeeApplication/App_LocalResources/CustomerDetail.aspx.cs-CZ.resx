@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmCustomerDtls1Resource1.AlternateText" xml:space="preserve">
+    <value>Potvrdit</value>
+  </data>
+  <data name="btnConfirmCustomerDtls1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfirmCustomerDtlsResource1.AlternateText" xml:space="preserve">
+    <value>Potvrdit</value>
+  </data>
+  <data name="btnConfirmCustomerDtlsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveAddressResource1.AlternateText" xml:space="preserve">
+    <value>Uložit adresu</value>
+  </data>
+  <data name="btnSaveAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAssocCustResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlbuildingNoStreetListWithoutStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCustomerStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDay0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDay1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMailStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonth0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonth1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitle0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitle1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYear0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYear1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcladdress1Resource1.Text" xml:space="preserve">
+    <value>Ulice:</value>
+  </data>
+  <data name="lcladdress2Resource1.Text" xml:space="preserve">
+    <value>číšlo popísné:</value>
+  </data>
+  <data name="lcladdress3Resource1.Text" xml:space="preserve">
+    <value>Adresa, řádek 3:</value>
+  </data>
+  <data name="lcladdress4Resource1.Text" xml:space="preserve">
+    <value>mésto:</value>
+  </data>
+  <data name="lcladdress5Resource1.Text" xml:space="preserve">
+    <value>stát:</value>
+  </data>
+  <data name="lclAddressinErrorResource1.Text" xml:space="preserve">
+    <value>Chyba v adrese</value>
+  </data>
+  <data name="lcladdressResource1.Text" xml:space="preserve">
+    <value>Zvolit adresu:</value>
+  </data>
+  <data name="lclaDiabeticResource1.Text" xml:space="preserve">
+    <value>Diabetický</value>
+  </data>
+  <data name="lclaDietaryneedsResource1.Text" xml:space="preserve">
+    <value>Dietní potřeby</value>
+  </data>
+  <data name="lclaDOBResource1.Text" xml:space="preserve">
+    <value>Datum narození:</value>
+  </data>
+  <data name="lclaFemaleResource1.Text" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="lclaFirstNameResource1.Text" xml:space="preserve">
+    <value>Křestní jméno:</value>
+  </data>
+  <data name="lclage1Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclage2Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclage3Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclage4Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclage5Resource1.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclaGenderResource1.Text" xml:space="preserve">
+    <value>Pohlaví:</value>
+  </data>
+  <data name="lclaHalalResource1.Text" xml:space="preserve">
+    <value>Halal</value>
+  </data>
+  <data name="lclaKosherResource1.Text" xml:space="preserve">
+    <value>Kosher</value>
+  </data>
+  <data name="lclaMaleResource1.Text" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="lclaMiddleInitialResource1.Text" xml:space="preserve">
+    <value>Příjmení 1:</value>
+  </data>
+  <data name="lclAssociateCustomerResource1.Text" xml:space="preserve">
+    <value>Společný zákazník</value>
+  </data>
+  <data name="lclassociatecustomerstatusResource1.Text" xml:space="preserve">
+    <value>Společný zákazník</value>
+  </data>
+  <data name="lclaSurnameResource1.Text" xml:space="preserve">
+    <value>Příjmení 2:</value>
+  </data>
+  <data name="lclaTeetotalResource1.Text" xml:space="preserve">
+    <value>Abstinent</value>
+  </data>
+  <data name="lclatitleResource1.Text" xml:space="preserve">
+    <value>Titul:</value>
+  </data>
+  <data name="lclaVegetarianResource1.Text" xml:space="preserve">
+    <value>Vegetarián</value>
+  </data>
+  <data name="lclBannedResource1.Text" xml:space="preserve">
+    <value>Zakázáno</value>
+  </data>
+  <data name="lclcontactnoResource1.Text" xml:space="preserve">
+    <value>Číslo na pevnou linku:</value>
+  </data>
+  <data name="lclcusStatusResource1.Text" xml:space="preserve">
+    <value>Stav zákazníka</value>
+  </data>
+  <data name="lclCustomerDetailsResource1.Text" xml:space="preserve">
+    <value>Informace o zákazníkovi</value>
+  </data>
+  <data name="lclDiabeticResource1.Text" xml:space="preserve">
+    <value>Diabetický</value>
+  </data>
+  <data name="lclDietaryNeedsResource1.Text" xml:space="preserve">
+    <value>Dietní potřeby</value>
+  </data>
+  <data name="lclDOBResource1.Text" xml:space="preserve">
+    <value>Datum narození:</value>
+  </data>
+  <data name="lclDuplicateResource1.Text" xml:space="preserve">
+    <value>Kopírovat</value>
+  </data>
+  <data name="lclEmailResource1.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="lclFirstNameResource1.Text" xml:space="preserve">
+    <value>Křestní jméno:</value>
+  </data>
+  <data name="lclGenderResource1.Text" xml:space="preserve">
+    <value>Pohlaví:</value>
+  </data>
+  <data name="lclHalalResource1.Text" xml:space="preserve">
+    <value>Halal</value>
+  </data>
+  <data name="lclHouseholddetailsResource1.Text" xml:space="preserve">
+    <value>Údaje o domácnosti</value>
+  </data>
+  <data name="lclinitialsResource1.Text" xml:space="preserve">
+    <value>Příjmení 1:</value>
+  </data>
+  <data name="lclKosherResource1.Text" xml:space="preserve">
+    <value>Košer</value>
+  </data>
+  <data name="lcllastnameResource1.Text" xml:space="preserve">
+    <value>Příjmení 2:</value>
+  </data>
+  <data name="lclleftSchemeResource1.Text" xml:space="preserve">
+    <value>Zbývající program</value>
+  </data>
+  <data name="lclmailstatusResource1.Text" xml:space="preserve">
+    <value>Stav pošty</value>
+  </data>
+  <data name="lclMainCustomerResource1.Text" xml:space="preserve">
+    <value>Hlavní zákazník</value>
+  </data>
+  <data name="lclmaleResource1.Text" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="lclOtherAgesResource1.Text" xml:space="preserve">
+    <value>Věk dalších osob v domácnosti (v případě dítěte mladšího než 1 rok uveďte 0)</value>
+  </data>
+  <data name="lclpeopleResource1.Text" xml:space="preserve">
+    <value>počet členÚ domácnosti?</value>
+  </data>
+  <data name="lclPostcodeResource1.Text" xml:space="preserve">
+    <value>PSČ</value>
+  </data>
+  <data name="lclsemailResource1.Text" xml:space="preserve">
+    <value>E-mailová adresa:</value>
+  </data>
+  <data name="lclstatusMainCustomerResource1.Text" xml:space="preserve">
+    <value>Hlavní zákazník</value>
+  </data>
+  <data name="lclstatusofcustomerResource1.Text" xml:space="preserve">
+    <value>Stav zákazníka</value>
+  </data>
+  <data name="lclstatusResource1.Text" xml:space="preserve">
+    <value>Stav zákazníka</value>
+  </data>
+  <data name="lclSurnameResource1.Text" xml:space="preserve">
+    <value>Příjmení 2:</value>
+  </data>
+  <data name="lclTeetotalaResource1.Text" xml:space="preserve">
+    <value>Abstinent</value>
+  </data>
+  <data name="lclTitleResource1.Text" xml:space="preserve">
+    <value>Titul:</value>
+  </data>
+  <data name="lclVegetarianResource1.Text" xml:space="preserve">
+    <value>Vegetarian</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource45.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource46.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource47.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource48.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource49.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource49.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource50.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource50.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource51.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource51.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource52.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource52.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource53.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource53.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource54.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource54.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource55.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource55.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource56.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource56.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource57.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource57.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource58.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource58.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource59.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource59.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource60.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource60.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource61.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource61.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource62.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource62.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource63.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource63.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource64.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource64.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="Localize1Resource1.Text" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Informace o zákazníkovi</value>
+  </data>
+  <data name="radioFemale0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssAddressErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssAddressErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssBannedErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssBannedErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssDuplicateErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssDuplicateErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssLeftErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssLeftErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountyDetailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountyDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLocalityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLocalityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTownResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckforSavingDetails" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+  </data>
+  <data name="AgeValidationForClubCard" xml:space="preserve">
+    <value>Abyste mohli mít členskou kartu, musíte být starší než 18 let</value>
+  </data>
+  <data name="AgeValidationMsg" xml:space="preserve">
+    <value>Prosíme, zadejte věk od 0 do 99</value>
+  </data>
+  <data name="DOBValidation" xml:space="preserve">
+    <value>Datum narození je neplatné</value>
+  </data>
+  <data name="DupEmailCheck" xml:space="preserve">
+    <value>Identifikační číslo e-mailu již existuje</value>
+  </data>
+  <data name="dupmobilevalidation" xml:space="preserve">
+    <value>Číslo telefonu již existuje</value>
+  </data>
+  <data name="errMessageForAge" xml:space="preserve">
+    <value>Bohužel jste zadali příliš mnoho údajů o věku na velikost domácnosti. Prosíme, zkontrolujte a proveďte nové zadání.</value>
+  </data>
+  <data name="errMsgFirstName" xml:space="preserve">
+    <value>Je vyžadováno křestní jméno, nebo zadané jméno je neplatné.</value>
+  </data>
+  <data name="errMsgGender" xml:space="preserve">
+    <value>Zvolené pohlaví bohužel nesouhlasí se zvoleným titulem</value>
+  </data>
+  <data name="errMsgMiddleName" xml:space="preserve">
+    <value>Prosíme, zadejte platné písmeno</value>
+  </data>
+  <data name="errMsgPostCode" xml:space="preserve">
+    <value>PSČ bohužel nelze najít</value>
+  </data>
+  <data name="errMsgSurname" xml:space="preserve">
+    <value>Je vyžadováno příjmení, nebo zadané jméno je neplatné</value>
+  </data>
+  <data name="ErrNumberValidationMsg" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo mezi 1 a 99</value>
+  </data>
+  <data name="ERRorPostCodeValidation" xml:space="preserve">
+    <value>PSČ je neplatné</value>
+  </data>
+  <data name="GenderValidationMsg" xml:space="preserve">
+    <value>Zvolené pohlaví bohužel nesouhlasí se zvoleným titulem</value>
+  </data>
+  <data name="houseValidationMsg" xml:space="preserve">
+    <value>Prosíme, zvolte váš dům</value>
+  </data>
+  <data name="InformationValidation" xml:space="preserve">
+    <value>Prosíme, opravte následující informace</value>
+  </data>
+  <data name="MobileNumberValidationMsg" xml:space="preserve">
+    <value>Zadané číslo v denní době není platným číslem</value>
+  </data>
+  <data name="PostCodeValidation" xml:space="preserve">
+    <value>Je vyžadováno PSČ nebo je neplatné</value>
+  </data>
+  <data name="ReqGenderMsg" xml:space="preserve">
+    <value>Prosíme, zvolte pohlaví</value>
+  </data>
+  <data name="ReqGenderValidation" xml:space="preserve">
+    <value>Prosíme, zvolte pohlaví</value>
+  </data>
+  <data name="ReqLastNameValidation" xml:space="preserve">
+    <value>Je vyžadováno příjmení.</value>
+  </data>
+  <data name="validationOfEmail" xml:space="preserve">
+    <value>Prosíme, zadejte platnou e-mailovou adresu</value>
+  </data>
+  <data name="AckForAccountExistance" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckForClubCardPresentance" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckForNoPrimaryCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CardAddedAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DupCardAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrAckForCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidRangeCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuccPrimaryCardAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuccSuppCatdAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidateCardNumField" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclContactMobResource1.text" xml:space="preserve">
+    <value>Číslo mobilního telefonu:</value>
+  </data>
+  <data name="lcljoinroResource1.Text" xml:space="preserve">
+    <value>Kód cesty vstupu:</value>
+  </data>
+  <data name="lclProCodeResource1.Text" xml:space="preserve">
+    <value>kód promoce:</value>
+  </data>
+  <data name="lclConAccResource1.Text" xml:space="preserve">
+    <value>Typ účtu:</value>
+  </data>
+  <data name="LclDBValidate" xml:space="preserve">
+    <value>Naše databáze ukazuje, že již jste členem s klubovou kartou. Pokud jste vaši klubovou kartu ztratili nebo byla poškozena a potřebujete ji vyměnit, zavolejte nám na 0800 59 16 88, abychom mohli převést zůstatek vašich bodů na vaši novou kartu.</value>
+  </data>
+  <data name="mobileVali" xml:space="preserve">
+    <value>Je vyžadováno č. mobilního telefonu nebo není platným číslem</value>
+  </data>
+  <data name="ValidateMobile" xml:space="preserve">
+    <value>Zadané číslo mobilního telefonu není platným číslem</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Číslo telefonu ve večerní době:</value>
+  </data>
+  <data name="lclJoinedStoreIDResource1.Text" xml:space="preserve">
+    <value>primární obchod:</value>
+  </data>
+  <data name="EveningValid" xml:space="preserve">
+    <value>Zadané číslo telefonu ve večerní době není platným číslem</value>
+  </data>
+  <data name="ValidateEvening" xml:space="preserve">
+    <value>Zadané číslo telefonu ve večerní době není platným číslem</value>
+  </data>
+  <data name="lclEmailStatusResource1.Text" xml:space="preserve">
+    <value>Stav e-mailu</value>
+  </data>
+  <data name="lclMobileStausResource1.Text" xml:space="preserve">
+    <value>číslo mobilního telefonu</value>
+  </data>
+  <data name="errMsgAssocDaytimePhoneNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo telefonu</value>
+  </data>
+  <data name="errMsgAssocEmailAddress" xml:space="preserve">
+    <value>Prosíme, zadejte platnou e-mailovou adresu</value>
+  </data>
+  <data name="errMsgAssocEveningPhoneNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo telefonu</value>
+  </data>
+  <data name="errMsgAssocMobileNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo mobilu</value>
+  </data>
+  <data name="errMsgMainDaytimePhoneNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo telefonu</value>
+  </data>
+  <data name="errMsgMainEmailAddress" xml:space="preserve">
+    <value>Prosíme, zadejte platnou e-mailovou adresu</value>
+  </data>
+  <data name="errMsgMainEveningPhoneNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo telefonu</value>
+  </data>
+  <data name="errMsgMainMobileNumber" xml:space="preserve">
+    <value>Prosíme, zadejte platné číslo mobilu</value>
+  </data>
+  <data name="lclMainEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>císlo na pevnou linku:</value>
+  </data>
+  <data name="lclAssocContactMobResource1.Text" xml:space="preserve">
+    <value>Číslo mobilního telefonu:</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>císlo na pevnou linku:</value>
+  </data>
+  <data name="lclAssocEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Číslo telefonu ve večerní době:</value>
+  </data>
+  <data name="lclMainContactMobResource1.Text" xml:space="preserve">
+    <value>Číslo mobilního telefonu:</value>
+  </data>
+  <data name="lclMainDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>císlo na pevnou linku:</value>
+  </data>
+  <data name="sadaurce" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocDaytimePhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocEmailAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocEveningPhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocMobileNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainEveningPhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainMobileNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclLanguageResource1.Text" xml:space="preserve">
+    <value>Preferovaný jazyk:</value>
+  </data>
+  <data name="lclPrimaryIDResource1.Text" xml:space="preserve">
+    <value>Primární id. č.(č. sociálního pojištění):</value>
+  </data>
+  <data name="lclSecondaryIDResource1.Text" xml:space="preserve">
+    <value>Sekundární id. č. (pas, číslo do kanceláře):</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource11.Text" xml:space="preserve">
+    <value>císlo na pevnou linku:</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource12.Text" xml:space="preserve">
+    <value>císlo na pevnou linku:</value>
+  </data>
+  <data name="txtMainDaytimePhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrorMsgPrimIDLength" xml:space="preserve">
+    <value>Prosíme, zadejte platné primární identifikační č. příslušné délky</value>
+  </data>
+  <data name="ErrorMsgSecIDLength" xml:space="preserve">
+    <value>Prosíme, zadejte platné sekundární identif. č. příslušné délky</value>
+  </data>
+  <data name="ErrorMsgValidLanguage" xml:space="preserve">
+    <value>Prosíme, zvolte platný jazyk</value>
+  </data>
+  <data name="ErrorMsgValidPrimID" xml:space="preserve">
+    <value>Prosíme, zadejte platné primární identifikační č.</value>
+  </data>
+  <data name="ErrorMsgValidPrimorSecID" xml:space="preserve">
+    <value>Prosíme, zadejte buď primární, nebo sekundární identifikační č.</value>
+  </data>
+  <data name="ErrorMsgValidRace" xml:space="preserve">
+    <value>Prosíme, zvolte platnou rasu</value>
+  </data>
+  <data name="ErrorMsgValidSecID" xml:space="preserve">
+    <value>Prosíme, zadejte platné sekundární identifikační č.</value>
+  </data>
+  <data name="lclBabyResource1.Text" xml:space="preserve">
+    <value>Baby Toddler Club</value>
+  </data>
+  <data name="lclBTResource1.Text" xml:space="preserve">
+    <value>Možnost volby dovnitř/ven pro Baby &amp; Toddler Club</value>
+  </data>
+  <data name="lclChild1DOBResource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 1 rok</value>
+  </data>
+  <data name="lclChild2DOBResource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 2 rok</value>
+  </data>
+  <data name="lclChild3DOBResource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 3 rok</value>
+  </data>
+  <data name="lclChild4DOBResource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 4 rok</value>
+  </data>
+  <data name="lclChild5DOBResource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 5 rok</value>
+  </data>
+  <data name="lclOptionsverifyResource1.Text" xml:space="preserve">
+    <value>Prosíme, ověřte e-mailovou adresu pro následující možnosti</value>
+  </data>
+  <data name="lclABT1Resource1.Text" xml:space="preserve">
+    <value>Možnost volby dovnitř/ven pro Baby &amp; Toddler Club</value>
+  </data>
+  <data name="lclAchild1Resource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 1 rok</value>
+  </data>
+  <data name="lclAchild2Resource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 2 rok</value>
+  </data>
+  <data name="lclAchild3Resource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 3 rok</value>
+  </data>
+  <data name="lclAchild4Resource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 4 rok</value>
+  </data>
+  <data name="lclAchild5Resource1.Text" xml:space="preserve">
+    <value>Dítě mladší než 5 rok</value>
+  </data>
+  <data name="lclEmailVerifyResource1.Text" xml:space="preserve">
+    <value>Prosíme, ověřte e-mailovou adresu pro následující možnosti</value>
+  </data>
+  <data name="lcMlContactMobResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DOBValidationBabyto" xml:space="preserve">
+    <value>Prosíme, zadejte platné datum pozdější než 9 měsíců ve formátu DD/MM/YYYY nebo zadání dítěte odstraňte.</value>
+  </data>
+  <data name="DOBValidationBabyToValidation" xml:space="preserve">
+    <value>Prosíme, zadejte platné datum narození pozdější než</value>
+  </data>
+  <data name="ValidAddForFindAddress" xml:space="preserve">
+    <value>vyberte prosím adresu nebo zadejte číslo popisné/jméno</value>
+  </data>
+  <data name="ValidForAdd1FindAdd" xml:space="preserve">
+    <value>vyplňte číslo popisné ve správném formátu</value>
+  </data>
+  <data name="ValidForAdd2FindAdd" xml:space="preserve">
+    <value>Please note Address Line2 is required, or the entered Address is not valid.</value>
+  </data>
+  <data name="ValidForAdd3FindAdd" xml:space="preserve">
+    <value>Please note Address Line3 is required, or the entered Address is not valid.</value>
+  </data>
+  <data name="ValidForAdd4FindAdd" xml:space="preserve">
+    <value>Please note Address Line4 is required, or the entered Address is not valid.</value>
+  </data>
+  <data name="ValidForAdd5FindAdd" xml:space="preserve">
+    <value>Please note Address Line5 is required, or the entered Address is not valid.</value>
+  </data>
+  <data name="CusEmailStatusDelivar" xml:space="preserve">
+    <value>k dispozici</value>
+  </data>
+  <data name="CusEmailStatusInError" xml:space="preserve">
+    <value>S chybou</value>
+  </data>
+  <data name="CusEmailStatusMissing" xml:space="preserve">
+    <value>Chybějící</value>
+  </data>
+  <data name="CusMainStatusAddinError" xml:space="preserve">
+    <value>Chybná adresa</value>
+  </data>
+  <data name="CusMainStatusMailable" xml:space="preserve">
+    <value>Lze odeslat</value>
+  </data>
+  <data name="CusMainStatusNonMailable" xml:space="preserve">
+    <value>Nelze odeslat</value>
+  </data>
+  <data name="CusMstatusDelivar" xml:space="preserve">
+    <value>k dispozici</value>
+  </data>
+  <data name="CusMstatusInerror" xml:space="preserve">
+    <value>S chybou</value>
+  </data>
+  <data name="CusMtatusMissing" xml:space="preserve">
+    <value>Chybějící</value>
+  </data>
+  <data name="CusUseStatusActive" xml:space="preserve">
+    <value>Aktivní</value>
+  </data>
+  <data name="CusUseStatusBanned" xml:space="preserve">
+    <value>Zakázáno</value>
+  </data>
+  <data name="CusUseStatusCardless" xml:space="preserve">
+    <value>Bez karty</value>
+  </data>
+  <data name="CusUseStatusDeceased" xml:space="preserve">
+    <value>Ukončeno</value>
+  </data>
+  <data name="CusUseStatusDUP" xml:space="preserve">
+    <value>Duplicita</value>
+  </data>
+  <data name="CusUseStatusFraud" xml:space="preserve">
+    <value>Možný padělek</value>
+  </data>
+  <data name="CusUseStatusInactive" xml:space="preserve">
+    <value>Neaktivní</value>
+  </data>
+  <data name="CusUseStatusLeft" xml:space="preserve">
+    <value>Vystoupil z Clubcard</value>
+  </data>
+  <data name="CusUseStatusManualEntry" xml:space="preserve">
+    <value>Manuální zadání</value>
+  </data>
+  <data name="CusUseStatusOther" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="CusUseStatusPending" xml:space="preserve">
+    <value>Aktivace v procesu</value>
+  </data>
+  <data name="CusUseStatusProfanity" xml:space="preserve">
+    <value>Chyba nepřípustného textu</value>
+  </data>
+  <data name="CusUseStatusSkeleton" xml:space="preserve">
+    <value>Chybí zákaznická data</value>
+  </data>
+  <data name="CusUseStatusUnAgendSigned" xml:space="preserve">
+    <value>Věk pod 18let a Bez podpisu</value>
+  </data>
+  <data name="CusUseStatusUnderage" xml:space="preserve">
+    <value>Věk pod 18let</value>
+  </data>
+  <data name="CusUseStatusUnsigned" xml:space="preserve">
+    <value>Bez podpisu</value>
+  </data>
+  <data name="CusUseStstusDataRMD" xml:space="preserve">
+    <value>Data odstraněna</value>
+  </data>
+  <data name="dataintegritysms" xml:space="preserve">
+    <value>Máte nastavenou volbu na komunikaci pomocí SMS</value>
+  </data>
+  <data name="dataintegrityemail" xml:space="preserve">
+    <value>Máte nastavenou volbu na komunikaci e-mailem</value>
+  </data>
+  <data name="emailVali" xml:space="preserve">
+    <value>Email is required or not a valid email address.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="selectRace" xml:space="preserve">
+    <value>- Select race -</value>
+  </data>
+  <data name="lclAccountLocked.Text" xml:space="preserve">
+    <value>Acount Locked</value>
+  </data>
+  <data name="lclAttempts.Text" xml:space="preserve">
+    <value>Total Attempts : </value>
+  </data>
+  <data name="lclUnlock.Text" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="lclUnlockError.Text" xml:space="preserve">
+    <value>Something went wrong. Try again.</value>
+  </data>
+</root>

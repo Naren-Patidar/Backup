@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<!-- The name of this fragment -->
+	<Fragment Id ="AppFiles">
+		<!-- The directory reference of your main project -->
+		<DirectoryRef Id="INSTALLMYACCOUNT">
+			<Directory Id="Content" Name="Content">
+				<Directory Id="mls" Name="mls">
+					<Directory Id="FooterContents" Name="FooterContents">
+						<Component Id="FooterContents" Guid="8819ae8e-5105-4068-b29c-d02d3cc2dddd" DiskId="1" KeyPath="yes">
+							<File Id="FooterContentsFile0" Name="A-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\A-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile1" Name="B-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\B-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile2" Name="C-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\C-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile3" Name="D-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\D-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile4" Name="E-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\E-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile5" Name="F-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\F-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile6" Name="G-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\G-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile7" Name="H-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\H-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile8" Name="I-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\I-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile9" Name="J-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\J-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile10" Name="K-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\K-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile11" Name="L-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\L-footer.html" Vital="yes" />
+							<File Id="FooterContentsFile12" Name="M-footer.html" Source="$(var.SolutionDir)..\Web\Content\mls\FooterContents\M-footer.html" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="LetterContents" Name="LetterContents">
+						<Component Id="LetterContents" Guid="777f6f14-3a29-44be-b46f-1b7587738ba1" DiskId="1" KeyPath="yes">
+							<File Id="LetterContentsFile0" Name="A-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\A-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile1" Name="B-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\B-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile2" Name="C-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\C-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile3" Name="D-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\D-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile4" Name="E-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\E-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile5" Name="F-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\F-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile6" Name="G-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\G-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile7" Name="H-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\H-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile8" Name="I-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\I-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile9" Name="J-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\J-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile10" Name="K-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\K-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile11" Name="L-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\L-letter.html" Vital="yes" />
+							<File Id="LetterContentsFile12" Name="M-letter.html" Source="$(var.SolutionDir)..\Web\Content\mls\LetterContents\M-letter.html" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="MarketingImages" Name="MarketingImages">
+						<Component Id="MarketingImages" Guid="e7aa28fe-8ade-4c46-aa8f-924b5d434b4d" DiskId="1" KeyPath="yes">
+							<File Id="MarketingImagesFile0" Name="A.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\A.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile1" Name="B.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\B.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile2" Name="C.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\C.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile3" Name="D.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\D.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile4" Name="E.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\E.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile5" Name="F.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\F.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile6" Name="G.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\G.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile7" Name="H.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\H.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile8" Name="I.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\I.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile9" Name="J.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\J.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile10" Name="K.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\K.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile11" Name="L.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\L.jpg" Vital="yes" />
+							<File Id="MarketingImagesFile12" Name="M.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MarketingImages\M.jpg" Vital="yes" />
+						</Component>
+					</Directory>
+					<Directory Id="MiscellaneousImages" Name="MiscellaneousImages">
+						<Component Id="MiscellaneousImages" Guid="3914855c-7728-499d-9587-2da023beeac7" DiskId="1" KeyPath="yes">
+							<File Id="MiscellaneousImagesFile0" Name="cs-panel.jpg" Source="$(var.SolutionDir)..\Web\Content\mls\MiscellaneousImages\cs-panel.jpg" Vital="yes" />
+							<File Id="MiscellaneousImagesFile1" Name="cta-banner-xmas.gif" Source="$(var.SolutionDir)..\Web\Content\mls\MiscellaneousImages\cta-banner-xmas.gif" Vital="yes" />
+							<File Id="MiscellaneousImagesFile2" Name="cta-banner.gif" Source="$(var.SolutionDir)..\Web\Content\mls\MiscellaneousImages\cta-banner.gif" Vital="yes" />
+							<File Id="MiscellaneousImagesFile3" Name="intro-banner.gif" Source="$(var.SolutionDir)..\Web\Content\mls\MiscellaneousImages\intro-banner.gif" Vital="yes" />
+							<File Id="MiscellaneousImagesFile4" Name="tesco-every-helps.gif" Source="$(var.SolutionDir)..\Web\Content\mls\MiscellaneousImages\tesco-every-helps.gif" Vital="yes" />
+						</Component>
+					</Directory>
+				</Directory>
+			</Directory>
+		</DirectoryRef>
+		<ComponentGroup Id="ApplicationFiles">
+			<ComponentRef Id="FooterContents" />
+			<ComponentRef Id="LetterContents" />
+			<ComponentRef Id="MarketingImages" />
+			<ComponentRef Id="MiscellaneousImages" />
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -1,0 +1,56 @@
+input, input.ddl-input, input.ddl-input[type="number"], input.ddl-input[type="search"], input.ddl-input[type="email"] {
+    background: $ddl-input-background;
+    border: 1px solid $ddl-input-border-colour;
+    color: $ddl-black2;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    height: 48px;
+    padding: 6px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0 $button-outline-color;
+    transition: box-shadow .3s ease-in-out; 
+    -webkit-appearance: none;
+    border-radius: 0;
+
+    &:focus {
+        border: 1px solid $ddl-link-colour-hover;
+        outline: none;
+        box-shadow: 0 0 0 4px $ddl-blue6;
+    }
+
+    &:disabled {
+        background: $ddl-input-background-disabled;
+    }
+}
+
+input.ddl-input::-webkit-input-placeholder { 
+    color:$ddl-grey2;
+    font-style: italic !important;
+}
+input.ddl-input::-moz-placeholder { 
+    color:$ddl-grey2;
+    font-style: italic !important;
+}
+input.ddl-input:-ms-input-placeholder { 
+    color:$ddl-grey2;
+    font-style: italic !important;
+}
+
+input.ddl-input::-webkit-outer-spin-button,
+input.ddl-input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.ddl-error {
+
+    input, input.ddl-input, input.ddl-input[type="number"], input.ddl-input[type="search"], input.ddl-input[type="email"] {
+        border-color: $form-error;
+    }
+
+    p {
+        margin: 0;
+        color: $form-error;
+    }
+}

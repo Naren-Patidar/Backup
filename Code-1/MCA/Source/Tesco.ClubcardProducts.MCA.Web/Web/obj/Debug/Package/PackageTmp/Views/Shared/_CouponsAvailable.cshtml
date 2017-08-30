@@ -1,0 +1,142 @@
+﻿@using System;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Ecoupon;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+
+@model List<CouponDetails>
+
+@{
+    var appsettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];
+}
+<div class="copy-wrapper">
+<h2 id="lblCouponHeading" class="ddl-h4-like">@Html.Translate("Shared/_CouponsAvailable", "Heading")</h2>
+</div>
+     
+@if (Model.Count > 0)
+{ 
+    if (string.IsNullOrEmpty(Request.QueryString["error"]))
+    { 
+	   <div class="copy-wrapper">
+	     <p id="lblCouponSubHeading">@Html.Translate("Shared/_CouponsAvailable", "SubHeading")</p>
+        <p class="message-level-2 message-error" style="display:none" id="lblServerError">@Html.Translate("Shared/_CouponsAvailable", "NoCouponSeletedError")</p>
+	   </div> 
+	 
+    }
+    else
+    { 
+	  <div class="copy-wrapper">
+	     <p id="lblCouponSubHeading">@Html.Translate("Shared/_CouponsAvailable", "SubHeading")</p>
+        <p class="message-level-2 message-error" id="lblError">@Html.Translate("Shared/_CouponsAvailable", "NoCouponSeletedError")</p>
+		</div>
+		
+    }
+
+    using (Html.BeginForm("Home", "Coupons", FormMethod.Post))
+    {   
+        @Html.AntiForgeryToken()
+		<div data-selectAllWrapper="this">
+		<div class="coupon-list-utility">
+       		<div class="row">
+            <div class="gr-12 gr-8@small">
+			  <div class="ddl-form-field ddl-checkbox">
+                    <span class="ddl-checkbox">
+                        <input type="checkbox" id="chkSelectAll" data-selectAllTrigger="this" class="selectall" />
+                        <em></em>
+                    </span>
+                    <label for="chkSelectAll" class="ddl-label" id="lblSelect">@Html.Translate("Shared/_CouponsAvailable", "SelectBtnLable")</label>
+                </div>
+				</div>
+                <div class="gr-12 gr-4@small">
+                    <button type="submit" class="ddl-button ddl-icon-after ddl-icon-arrow-right" id="btnDownloadCoupons" onclick="return TrackGAEvent('Coupon Downloads')"> @Html.Translate("Shared/_CouponsAvailable", "PrintBtnLable")</button>
+                </div>
+            </div>
+		</div>
+
+
+	
+
+
+    
+    <ul class="coupons-list" data-selectAll="this">   
+        @for (int i = 0; i < Model.Count; i++)
+        { 
+            <li>
+                <div class="table-wrapper table-bordered coupons-table">
+				@Html.HiddenFor(m => m[i].FullImageName ,new { id = "hdnFullImageName" })  
+					<table>
+						<tbody>
+							  <tr class="coupon-select">
+                                    <th class="ddl-visually-hidden">Select coupon</th>
+                                    <td colspan="2">
+                                        <span class="ddl-checkbox">
+                                             @if (Model[i].HasImage)
+											{
+												@Html.CheckBoxFor(model => model[i].IsSelected, new { id = "chkSelect-" + i, @class = "select" })
+											
+											}
+											else
+											{
+												@Html.CheckBoxFor(model => model[i].IsSelected, new { id = "chkSelect-" + i, @class = "select", @disabled = "true" }) 
+   												
+											}
+											
+                                            <em></em>
+                                        </span>
+                                        <label for="rgrvbgbegr" class="ddl-label"><span class="ddl-visually-hidden">Voucher title here</span><img src='@Url.Content(@Model[i].ThumbnailImageName)' alt="@Model[i].CouponDescription" id='@("imgCoupon-T-" + i)'/></label>
+										@Html.HiddenFor(model => model[i].Id) 
+                                    </td>
+                                </tr>
+								 @if (!string.IsNullOrEmpty(Model[i].SmartAlphaNumeric))
+								{
+								<tr>
+                                    <th id="lblOnlineCode">@Html.Translate("Shared/_CouponsAvailable", "OnlineCodeLable")</th>
+                                    <td id="lblOnlineCodeVal">@Html.ValueFor(model => model[i].SmartAlphaNumeric)</td>
+                                </tr>
+								}
+								  @if (Model[i].RedemptionEndDate.HasValue)
+                                {
+								<tr>
+                                    <th id="lblExpire"> @Html.Translate("Shared/_CouponsAvailable", "ExpireLable")</th>
+                                    <td id="lblExpireVal">@Model[i].RedemptionEndDate.Value.ToString(appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1, System.Globalization.CultureInfo.InvariantCulture)</td>
+                                </tr>
+								}
+								  <tr>
+									<th id="lblRedemptionsRemaining">@Html.Translate("Shared/_CouponsAvailable", "RedemptionsRemainingLable")</th>
+									<td id="lblRedemptionsRemainingValue">@(Model[i].MaxRedemptionLimit.TryParse<Int16>() - Model[i].RedemptionUtilized.TryParse<Int16>())</td>
+								  </tr> 
+
+								  <tr>
+										<th class="ddl-visually-hidden">&nbsp;</th>
+										
+								  </tr> 
+
+						</tbody>
+					</table>
+
+                </div>
+            </li>
+        }
+    </ul>
+	</div> 
+	<div class="copy-wrapper">
+    <p id="lblCouponFooter">@Html.Translate("Shared/_CouponsAvailable", "FooterLable")</p>
+	</div>
+    }
+}
+else
+{ 
+  <div class="copy-wrapper">     
+    <p id="lblNoActiveCoupon">@Html.Translate("Shared/_CouponsAvailable", "NoCouponsLable")</p>
+ </div>
+}
+
+<script type="text/javascript">
+    function TrackGAEvent(ClickEvent) {
+        if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+            _gaq.push(['_trackEvent', 'eCoupon-Home', 'Selected Coupons', ClickEvent ]);
+        }
+        return true;
+    }
+</script>

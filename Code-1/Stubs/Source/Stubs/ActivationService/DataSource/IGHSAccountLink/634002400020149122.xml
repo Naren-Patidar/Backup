@@ -1,0 +1,15 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tempuri.org/IClubcardOnlineService/IGHSAccountLinkResponse</a:Action>
+    <a:RelatesTo>urn:uuid:d3941d47-8e10-4768-a527-4c1cd3fee128</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <IGHSAccountLinkResponse xmlns="http://tempuri.org/">
+      <IGHSAccountLinkResult xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <b:ErrorLogID i:nil="true" />
+        <b:ErrorMessage>CustomerID already mapped with another DotcomID</b:ErrorMessage>
+        <b:ErrorStatusCode>6500</b:ErrorStatusCode>
+      </IGHSAccountLinkResult>
+    </IGHSAccountLinkResponse>
+  </s:Body>
+</s:Envelope>

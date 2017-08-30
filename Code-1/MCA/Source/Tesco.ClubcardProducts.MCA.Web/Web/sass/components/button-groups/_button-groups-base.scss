@@ -1,0 +1,41 @@
+.ddl-button-group {
+	text-align: center;
+	width: 100%;
+	clear: both;
+	//margin-bottom: 20px;
+	
+	.ddl-button {
+		margin: 0 10px 10px 0;
+
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+	
+	&.ddl-button-group-left {
+		text-align: left;
+
+		.ddl-button {
+			margin-left: 0;
+			margin-right: 10px;
+
+			&.last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&.ddl-button-group-right {
+		text-align: right;
+
+		.ddl-button {
+			margin-right: 0;
+
+			&.first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,65 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Boost
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+
+@model List<Reward>
+@{
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1;
+}
+
+<h2 id="lblExchangesForm">@Html.Translate("BoostsAtTesco/Home", "lclExchangesForm")</h2>                
+<p id="lblInfoMessage">@Html.Translate("BoostsAtTesco/Home", "lclInfoMessage")</p>
+
+<h3 id="lblUseOnline">@Html.Translate("BoostsAtTesco/Home", "lclUseOnline")</h3>
+<ol id="boostonlinelist">
+    <li id="liCopyTokens">@Html.Translate("BoostsAtTesco/Home", "lclCopyTokens")</li>
+    <li id="liBoostCheckout">@Html.Translate("BoostsAtTesco/Home", "lclBoostCheckout")</li>
+</ol>
+
+<p id="lblPurchasedOnline">@Html.Translate("BoostsAtTesco/Home", "lclPurchasedOnline")</p>
+
+<p id="lblCodesUsedOnce"><strong>@Html.Translate("BoostsAtTesco/Home", "lclCodesUsedOnce")</strong></p>
+
+<div class="table-wrapper" id="divforBoostonline">
+    <div class="table-wrapper-inner" id="divforBSTOnline">
+        <table border="0" cellpadding="0" cellspacing="0" id="tb_Boostonlineinfo">
+            <thead>
+                <tr id="tr_boostonlinetokensinfo">
+                    <th id="lblOnlineDateOrdered">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineDateOrdered")</th>
+                    <th id="lblOnlineDescription">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineDescription")</th>
+                    <th id="lblOnlineOrderStatus">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineOrderStatus")</th>
+                    <th id="lblOnlineValue">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineValue")</th>
+                    <th id="lblOnlineCodes">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineCodes")</th>
+                    <th id="lblOnlineExpiryDate">@Html.Translate("Shared/_BoostsAtTesco", "lclOnlineExpiryDate")</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count; i++)
+                { 
+                    <tr>
+                        <td id="lblBookingDate">@Convert.ToDateTime(Model[i].BookingDate).ToString(dateFormat)</td>  
+                        @if (!string.IsNullOrEmpty(Model[i].TokenDescription))
+                        {
+                            <td id="lblTokenDescription">@Model[i].TokenDescription</td>
+                        }          
+                        @if (!string.IsNullOrEmpty(Model[i].ProductStatus))
+                        { 
+                            <td class="text-centre" id="lblProductStatus">@Model[i].ProductStatus</td>
+                        }   
+                        @if (Model[i].TokenValue != null)
+                        {
+                            <td class="text-centre" id="lblCurrencySymbol">@Html.Translate("Shared/_Vouchers", "CurrencySymbol")@Model[i].TokenValue</td>
+                        }
+                        @if (!string.IsNullOrEmpty(Model[i].SupplierTokenCode))
+                        { 
+                            <td class="text-centre" id="lblSupplierTokenCode">@Model[i].SupplierTokenCode</td>
+                        }
+                        <td class="text-centre" id="lbldateFormat">@Convert.ToDateTime(Model[i].ValidUntil).ToString(dateFormat)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

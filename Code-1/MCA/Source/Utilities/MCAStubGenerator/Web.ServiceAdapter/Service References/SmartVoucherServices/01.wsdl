@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01/Imports">
+      <xsd:import namespace="http://tesco.com/clubcardonline/datacontract/2010/01" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Tesco.com.IntegrationServices.Messages" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISmartVoucherServices_GetRewardDtls_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDtls" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetRewardDtls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDtlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetUnusedVoucherDtls_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnusedVoucherDtls" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetUnusedVoucherDtls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnusedVoucherDtlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetUsedVoucherDtls_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsedVoucherDtls" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetUsedVoucherDtls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsedVoucherDtlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetVoucherValHH_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherValHH" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetVoucherValHH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherValHHResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetRewardDtlsMiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDtlsMiles" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetRewardDtlsMiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDtlsMilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetVoucherValCPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherValCPS" />
+  </wsdl:message>
+  <wsdl:message name="ISmartVoucherServices_GetVoucherValCPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVoucherValCPSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISmartVoucherServices">
+    <wsdl:operation name="GetRewardDtls">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetRewardDtls" message="tns:ISmartVoucherServices_GetRewardDtls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetRewardDtlsResponse" message="tns:ISmartVoucherServices_GetRewardDtls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnusedVoucherDtls">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetUnusedVoucherDtls" message="tns:ISmartVoucherServices_GetUnusedVoucherDtls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetUnusedVoucherDtlsResponse" message="tns:ISmartVoucherServices_GetUnusedVoucherDtls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsedVoucherDtls">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetUsedVoucherDtls" message="tns:ISmartVoucherServices_GetUsedVoucherDtls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetUsedVoucherDtlsResponse" message="tns:ISmartVoucherServices_GetUsedVoucherDtls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherValHH">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetVoucherValHH" message="tns:ISmartVoucherServices_GetVoucherValHH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetVoucherValHHResponse" message="tns:ISmartVoucherServices_GetVoucherValHH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardDtlsMiles">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetRewardDtlsMiles" message="tns:ISmartVoucherServices_GetRewardDtlsMiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetRewardDtlsMilesResponse" message="tns:ISmartVoucherServices_GetRewardDtlsMiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoucherValCPS">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetVoucherValCPS" message="tns:ISmartVoucherServices_GetVoucherValCPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ISmartVoucherServices/GetVoucherValCPSResponse" message="tns:ISmartVoucherServices_GetVoucherValCPS_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

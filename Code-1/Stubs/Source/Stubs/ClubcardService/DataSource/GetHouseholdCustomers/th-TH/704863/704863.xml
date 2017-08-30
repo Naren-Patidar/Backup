@@ -1,0 +1,42 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>false</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+    <NewDataSet>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>704863</PrimaryCustomerID>
+        <CustomerID>704863</CustomerID>
+        <TitleEnglish>Mr</TitleEnglish>
+        <Name1>András</Name1>
+        <Name2 />
+        <Name3>Selmeczi</Name3>
+        <MailingAddressLine1>RÁKÓCZI UTCA</MailingAddressLine1>
+        <MailingAddressPostCode>1234</MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+        <BusinessType>0</BusinessType>
+        <BusinessName />
+        <BusinessRegistrationNumber />
+        <BusinessAddressLine1 />
+        <BusinessAddressLine2 />
+        <BusinessAddressLine3 />
+        <BusinessAddressLine4 />
+        <BusinessAddressLine5 />
+        <BusinessAddressLine6 />
+        <BusinessAddressPostCode />
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>704863</PrimaryCustomerID>
+        <CustomerID>153709079</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>Simiiiii</Name1>
+        <Name2 />
+        <Name3>Venker</Name3>
+        <MailingAddressLine1>1  SHIRE PARK</MailingAddressLine1>
+        <MailingAddressPostCode>AL7 1TW</MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+      </HouseholdCustomers>
+    </NewDataSet>
+  </resultXml>
+</GetHouseholdCustomersResponse>

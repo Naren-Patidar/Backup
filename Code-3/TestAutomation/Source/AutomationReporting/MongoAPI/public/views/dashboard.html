@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/files/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="../static/files/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+    <!-- Timeline CSS -->
+    <link href="../static/files/dist/css/timeline.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="../static/files/dist/css/sb-admin-2.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="../static/files/bower_components/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="../static/files/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../static/files/bower_components/jquery/dist/jquery.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/files/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../static/files/bower_components/metisMenu/dist/metisMenu.min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="../static/files/bower_components/raphael/raphael-min.js" type="text/javascript"
+        language="javascript"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/files/dist/js/sb-admin-2.js" type="text/javascript" language="javascript"></script>
+    
+    <script src="../static/files/js/JQuery-UI.js" type="text/javascript" language="javascript"></script>
+    <script src="../static/files/js/main.js" type="text/javascript" language="javascript"></script>
+    <style>
+        .flot-placeholder
+        {
+            height: 150px;
+        }
+    </style>
+    <script type="text/javascript" language="javascript" src="../static/files/js/dashboard.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/detailmodel.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/testhistory.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/testdetails.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/runbatch.js"></script>
+
+
+    <script type="text/javascript" language="javascript" src="../static/files/js/float/jquery.flot.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/float/jquery.flot.pie.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/float/jquery.flot.resize.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/bower_components/signalr/jquery.signalR.js"></script>
+    <script type="text/javascript" language="javascript" src="../static/files/js/notify.min.js"></script>
+
+    <script src="../../signalr/hubs"></script> 
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {   
+            var connection = $.connection.hub;
+            var ServerHub = $.connection.ServerHub;      
+            var d = $("#dashboard").dashboard({ environmentCtrl: $('.ddlenvironment').attr('id'),
+            notify: function(environment, country, category){
+                $.connection.hub.start().done(function () {
+                    ServerHub.server.setRunning(environment, country, category, 1);
+                });}
+            });
+            var connection1 = $.connection('/signalr');
+            connection1.received(function (bdata) {
+                if(bdata.H != 'ServerHub')
+                {
+                    console.log(JSON.stringify(bdata));
+                    $.notify(bdata.msg, "info");
+                    var dWidget = $("#dashboard").data('ui-dashboard');                    
+                    var tile = dWidget.Tiles.filter(function(i, obj){                        
+                        return (obj.category.toString() == bdata.data.category.toString()
+                            && obj.country.toString() == bdata.data.country.toString()
+                            && obj.environment.toString() == bdata.data.environment.toString());
+                    });
+                    if(tile.length > 0)
+                    {
+                        tile = tile[0];
+                    }
+                    if(tile)
+                    {               
+                        var heading = dWidget.Headers.filter(function(item){ 
+                            return (item.environment.toString() == bdata.data.environment.toString()
+                             && item.country.toString() == bdata.data.country.toString()) ;
+                        });
+                        console.log(heading);
+                        $(heading[0].ctrl).trigger('click');
+                        setTimeout(function(){ a$(heading[0].ctrl).trigger('click'); }, 1000);                        
+                    }
+                }
+            });
+            connection1.start().done(function() {
+                console.log("broadcast connection connection started!");
+            });
+            var connection = $.connection.hub;
+            var ServerHub = $.connection.ServerHub; 
+            //Handle a broadcast 
+            ServerHub.client.updateRunning = function (environment, country, category, status) {
+                var broadcastMessage = "Automation job started for " + category + " for country - " + country + ' and environment - ' + environment;
+                $.notify(broadcastMessage, "info");
+                console.log(broadcastMessage);                
+            };                      
+        });
+    </script>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand list-inline" href="http://localhost:9000/automation/portal/dashboard"><img src="../static/files/images/logo.png" /> </a> 
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-left">  
+            <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class='fa fa-anchor fa-fw'></i> Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="http://172.28.152.7/MCAReports/BuildHistory.aspx"><i class='fa fa-check fa-fw'></i>Build Report</a>
+                        </li> 
+                                               
+<li><a href="http://172.28.152.7/MCAReports/History.aspx"><i class='fa fa-signal fa-fw'></i>History Report</a>
+                        </li>                                                
+                    </ul>                    
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+            <ul class="nav navbar-top-links navbar-right">                            
+                <!-- /.dropdown -->               
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>                        
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+       
+        </nav>
+        <div id="page-wrapper" style="margin-left: 0px !important">
+            <div class="row">
+                <h2 style='<%=(Request.QueryString["q"] == null) ? "": "display:none" %>'>
+        <span class="text-primary">MCA Automation Report Dashboard</span></h2>
+    <div class="col-lg-12 form-group">
+        <div class="row   pull-right">
+            <label for="ddlEnvironments">
+                Select Environment :</label>
+            <select ID="ddlEnvironments" class="form-control ddlenvironment">
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="row">
+            <div id="dashboard">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="row">
+    <div id="flot-placeholder" class="flot-placeholder"></div>
+    </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <%--<!-- Modal content-->--%>
+            <div class="modal-content">
+                <div class="modal-header" id='detail-header'>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                    <h4 class="modal-title" id='detail-title'>
+                        Modal Header</h4>
+                </div>
+                <div class="modal-body" id='detail-body'>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="historyModel" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <%--<!-- Modal content-->--%>
+            <div class="modal-content">
+                <div class="modal-header" id='history-header'>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                    <h4 class="modal-title" id='history-title'>
+                        Modal Header</h4>
+                </div>
+                <div class="modal-body" id='history-body'>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="testModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <%--<!-- Modal content-->--%>
+            <div class="modal-content">
+                <div class="modal-header" id='test-Header'>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                    <h4 class="modal-title" id='test-title'>
+                        Modal Header</h4>
+                </div>
+                <div class="modal-body" id='test-body'>                    
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+   
+    </form>
+</body>
+</html>

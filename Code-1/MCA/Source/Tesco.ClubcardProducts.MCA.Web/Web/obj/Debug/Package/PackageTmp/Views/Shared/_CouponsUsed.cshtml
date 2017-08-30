@@ -1,0 +1,86 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Ecoupon;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using System.Globalization;
+    
+@model List<CouponDetails>
+
+@{
+    var appsettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];  
+    var datetime= string.Empty ;
+ 	if (!String.IsNullOrEmpty(DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DateFormatInTime.ToString()].ConfigurationValue1))
+ 	{
+ 		datetime = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DateFormatInTime.ToString()].ConfigurationValue1;
+ 	}
+ 	else
+ 	{
+ 		datetime = "dd/MM/yyyy HH:mm";
+ 	}  
+}
+<a name="RedeemedCoupons"></a>
+@* <div class"copy-wrapper">
+<h2 class="ddl-h4-like">@Html.Translate("Shared/_CouponsUsed", "UsedCouponSectionHeading")</h2>
+</div> *@
+ 
+@if (Model.Count > 0)
+{ 
+   
+	   <div class="table-wrapper table-bordered" id="divforCouponUsed">
+        <table>
+            <thead>
+                <tr>
+                      <th id='lblIssueDateLable' class="ddl-no-wrap">
+                            @Html.Translate("Shared/_CouponsUsed", "IssueDateLable")
+                        </th>
+                        <th id='lblOfferLable' class="ddl-no-wrap">
+                            @Html.Translate("Shared/_CouponsUsed", "OfferLable")
+                        </th>
+                        <th id='lblRedeemedDateLable' class="ddl-no-wrap">
+                            @Html.Translate("Shared/_CouponsUsed", "RedeemedDateLable")
+                        </th>
+                  @*      <th id='lblRedeemedLocationLable'>
+                            @Html.Translate("Shared/_CouponsUsed", "RedeemedLocationLable")
+                        </th>
+                        <th id='lblUsedLable'>
+                            @Html.Translate("Shared/_CouponsUsed", "UsedLable")
+                        </th> *@
+                        <th id='lblRedemptionCountLable' class="ddl-no-wrap">
+                            @Html.Translate("Shared/_CouponsUsed", "RedemptionCountLable")
+                        </th> 
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (CouponDetails coupon in Model)
+                    { 
+                        <tr>
+                            <td id="lblcouponIssuanceStartDate" class="ddl-no-wrap">
+                                @coupon.IssuanceStartDate.ToString(appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1, CultureInfo.InvariantCulture)
+                            </td>
+                            <td id="lblCouponDescription">
+                                @coupon.CouponDescription
+                            </td>
+                            <td id="lblCouponRedemptionDate" data-mobileheader='@Html.Translate("Shared/_CouponsUsed", "RedeemedDateLable")' class="ddl-no-wrap">
+                                @coupon.RedemptionDate.ToString(datetime, CultureInfo.InvariantCulture)
+                            </td>
+                      @*      <td id="lblcouponRedemptionStoreName">
+                                @coupon.RedemptionStoreName
+                            </td>
+                            <td id="lblCouponStatus">
+                                @coupon.CouponStatus
+                            </td>  *@
+                            <td id="lblcouponRedemptionCount" data-mobileheader='@Html.Translate("Shared/_CouponsUsed", "RedemptionCountLable")' class="ddl-no-wrap">
+                                @coupon.RedemptionCount
+                            </td>
+                        </tr>
+                    }
+                                                     
+            </tbody>
+        </table>
+		</div>
+    
+}
+else
+{
+    <p id="dicforNoRedeemptionMessage">@Html.Translate("Shared/_CouponsUsed", "NoRedeemptionMessage") </p>
+}

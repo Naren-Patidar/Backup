@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Points-App_LocalResources.th-TH>
+  <Home.cshtml.th-TH.resx />
+  <PointsDetail.cshtml.th-TH.resx>
+    <Data key="btnClearSelection" value="แสดงทั้งหมด" />
+    <Data key="btnClearSelectionText" value="Clear Selection" />
+    <Data key="btnCloseThisWindowResource1AlternateText" value="Close this window" />
+    <Data key="btnCloseThisWindowResource2AlternateText" value="Close this window" />
+    <Data key="ButtonResource2Text" value="แสดงทั้งหมด" />
+    <Data key="CurrencyAlphaSymbol" value="" />
+    <Data key="CurrencySymbol" value="฿" />
+    <Data key="ddlClubcard" value="กรุณาเลือก" />
+    <Data key="ddlTransaction" value="กรุณาเลือก" />
+    <Data key="ItemSelect" value="กรุณาเลือก" />
+    <Data key="lblBackToPointsPage" value="กลับไปที่หน้า &quot;แต้มคลับการ์ดของฉัน&quot;" />
+    <Data key="lblCardNumber" value="Card number:" />
+    <Data key="lblCouldNotFindAnyTransactions" value="ไม่พบรายละเอียดการสะสมแต้มคลับการ์ด ของคุณในเงื่อนไขที่กำหนด" />
+    <Data key="lblCurrentCollectionTransaction" value="รายการในรอบการสะสมแต้มปัจจุบัน" />
+    <Data key="lblCurrentPoints" value="รายละเอียดแต้มคลับการ์ดในรอบปัจจุบัน" />
+    <Data key="lblFromDateSeparatorToDate" value="ถึง" />
+    <Data key="lblNote" value="" />
+    <Data key="lblPageDescription" value="ถ้าคุณมีการรวมบัตร คุณจะเห็นเฉพาะข้อมูลของบัตรคลับการ์ดที่คุณใช้ล็อกอินเท่านั้น" />
+    <Data key="lblPointsCollection" value="คุณสามารถตรวจสอบรายละเอียดการสะสมแต้มคลับการ์ดทุกรายการที่ตารางด้านล่างนี้" />
+    <Data key="lblSearch" value="ค้นหาโดย:" />
+    <Data key="lblShow0PtsMsgResource1Text" value="You have currently have a zero points balance. Remember to use your Clubcard on your next shop." />
+    <Data key="lblShow0PtsMsgResource1ToolTip" value="" />
+    <Data key="lblShow0PtsMsgResource2Text" value="You have currently have a zero points balance. Remember to use your Clubcard on your next shop." />
+    <Data key="lblShow0PtsMsgResource2ToolTip" value="" />
+    <Data key="lblstrCouldNotFindAnyTransactions" value="ไม่พบรายละเอียดการสะสมแต้มคลับการ์ด ของคุณในเงื่อนไขที่กำหนด" />
+    <Data key="lblTransaction" value="Transaction:" />
+    <Data key="lblUseOptions" value="ใช้ตัวเลือกด้านล่างเพื่อค้นหารายละเอียดการสะสมแต้มคลับการ์ด  โดยเลือกจากหมายเลขคลับการ์ดหรือช่องทางการสะสมแต้ม&lt;br&gt;&#xD;&#xA;วิธีตรวจสอบแต้มพิเศษจากสินค้า&lt;br&gt;&#xD;&#xA;- แต้มพิเศษจากสินค้าจะแสดงเป็นรายการแยก โดยระบุวันที่เดียวกับวันที่ซื้อสินค้า แต่จะแสดงยอดการใช้จ่ายเป็น &quot;0&quot; บาท&lt;br&gt;&#xD;&#xA;- ช่องทางการสะสมแต้ม &quot;-1 Unknown&quot; ด้านล่างคือแต้มสะสมคงเหลือที่ยกยอดมาจากรอบการสะสมก่อนหน้า" />
+    <Data key="lblYourTransactionDetailsFrom" value="รายละเอียดการใช้จ่ายผ่านบัตรคลับการ์ดของคุณ ตั้งแต่ " />
+    <Data key="lclAmtSpndResource1Text" value="Amount Spent" />
+    <Data key="lclfindtxnResource1Text" value="ไม่พบรายละเอียดการสะสมแต้มคลับการ์ด ของคุณในเงื่อนไขที่กำหนด" />
+    <Data key="lnkVisualizeLink" value="#" />
+    <Data key="Localize1Resource1Text" value="หมายเลขคลับการ์ด:" />
+    <Data key="Localize2Resource1Text" value="ช่องทางการสะสมแต้ม:" />
+    <Data key="Localize3Resource1Text" value="กลับไปที่หน้า &quot;แต้มคลับการ์ดของฉัน&quot;" />
+    <Data key="Localize4Resource1Text" value="" />
+    <Data key="Localize5Resource1Text" value="Transaction Details" />
+    <Data key="Localize6Resource1Text" value="หมายเลขคลับการ์ด" />
+    <Data key="Localize7Resource1Text" value="Date of transaction" />
+    <Data key="Localize8Resource1Text" value="Transaction type" />
+    <Data key="Localize9Resource1Text" value="Total points" />
+    <Data key="ltrBlueHeadResource1Text" value="Current collection transaction details" />
+    <Data key="ltrBlueHeadResource2Text" value="รายการในรอบการสะสมแต้มปัจจุบัน" />
+    <Data key="ltrpagedescResource1Text" value="ถ้าคุณมีการรวมบัตร คุณจะเห็นเฉพาะข้อมูลของบัตรคลับการ์ดที่คุณใช้ล็อกอินเท่านั้น" />
+    <Data key="ltrpagedescResource2Text" value="ถ้าคุณมีการรวมบัตร  คุณจะเห็นเฉพาะข้อมูลของบัตรคลับการ์ดที่คุณใช้ล็อกอินเท่านั้น" />
+    <Data key="ltrPageDesResource1Text" value="คุณสามารถตรวจสอบรายละเอียดการสะสมแต้มคลับการ์ดทุกรายการที่ตารางด้านล่างนี้" />
+    <Data key="ltrPageDesResource2Text" value="คุณสามารถตรวจสอบรายละเอียดการสะสมแต้มคลับการ์ดทุกรายการที่ตารางด้านล่างนี้" />
+    <Data key="ltrPageTitleResource1Text" value="รายละเอียดแต้มคลับการ์ดในรอบปัจจุบัน" />
+    <Data key="ltrPageTitleResource2Text" value="รายละเอียดแต้มคลับการ์ดในรอบปัจจุบัน" />
+    <Data key="PageResource2Title" value="Points" />
+    <Data key="PageTitle" value="รายการแต้มคลับการ์ด" />
+    <Data key="tblHeaderBonusPoints" value="แต้มจากช่องทางอื่น" />
+    <Data key="tblHeaderCardNumber" value="หมายเลขคลับการ์ด" />
+    <Data key="tblHeaderDatePoints" value="วันที่ทำรายการ" />
+    <Data key="tblHeaderTotalPoints" value="แต้มคลับการ์ด" />
+    <Data key="tblHeaderTransactionDetails" value="ช่องทางการสะสมแต้ม" />
+    <Data key="tblHeaderTransactionValue" value="ยอดการใช้จ่าย" />
+    <Data key="TemplateFieldResource1AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource1FooterText" value="" />
+    <Data key="TemplateFieldResource10AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource10FooterText" value="" />
+    <Data key="TemplateFieldResource10HeaderText" value="Total points" />
+    <Data key="TemplateFieldResource11AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource11FooterText" value="" />
+    <Data key="TemplateFieldResource2AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource2FooterText" value="" />
+    <Data key="TemplateFieldResource3AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource3FooterText" value="" />
+    <Data key="TemplateFieldResource4AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource4FooterText" value="" />
+    <Data key="TemplateFieldResource5AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource5FooterText" value="" />
+    <Data key="TemplateFieldResource5HeaderText" value="Total points" />
+    <Data key="TemplateFieldResource6AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource6FooterText" value="" />
+    <Data key="TemplateFieldResource6HeaderText" value="Card number" />
+    <Data key="TemplateFieldResource7AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource7FooterText" value="" />
+    <Data key="TemplateFieldResource7HeaderText" value="Date pts added" />
+    <Data key="TemplateFieldResource8AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource8FooterText" value="" />
+    <Data key="TemplateFieldResource8HeaderText" value="Transaction details" />
+    <Data key="TemplateFieldResource9AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource9FooterText" value="" />
+    <Data key="TemplateFieldResource9HeaderText" value="Transaction Value" />
+    <Data key="lblWarningMsg" value="" />
+  </PointsDetail.cshtml.th-TH.resx>
+  <PointsSummaryView.cshtml.th-TH.resx>
+    <Data key="AviosTtl" value="Avios total CZ" />
+    <Data key="AvsAwded" value="Avios awarded" />
+    <Data key="AvsPptsCnvted" value="Points converted to Avios" />
+    <Data key="BonusVuchers" value="Bonus voucher total" />
+    <Data key="ChangePntsFromBoost" value="Points change from Clubcard Boost" />
+    <Data key="ClickHerePointResource" value="click here" />
+    <Data key="ClubcardVouchersTotal" value="Clubcard voucher total" />
+    <Data key="ClubMilePptsCnvted" value="Points converted to Flying Club miles" />
+    <Data key="ClubMilesAwded" value="Flying Club miles awarded" />
+    <Data key="EndXmasTtl" value=" total is" />
+    <Data key="FlyingClubTtl" value="Flying Club miles total" />
+    <Data key="PntsCarriedForwardXmas" value="Total points carried forward towards your Christmas" />
+    <Data key="PntsCltedFrom" value="Points collected from " />
+    <Data key="PntsCltedTo" value="to" />
+    <Data key="PointCarriedforwordPrevious" value="Points carried forward from previous statement" />
+    <Data key="PointsCarried" value="Total points carried forward to your next statement" />
+    <Data key="PointsCollectedFromTesco" value="Points collected with Tesco" />
+    <Data key="PointsCollectedFromTescoBank" value="Points collected with Tesco Bank" />
+    <Data key="PointsConvertedAndCarried" value="Total points not converted and carried forward to your next statement" />
+    <Data key="PointsTescoBankResource" value="Clubcard points from Tesco Bank" />
+    <Data key="PointsTescoResource" value="Clubcard points from Tesco" />
+    <Data key="PreStmtCarryForward" value="Points carried forward from previous statement" />
+    <Data key="ReviewSummary" value="To review a summary of the previous collection period " />
+    <Data key="StartTextFarXmas" value="Your Christmas Savers " />
+    <Data key="StatementTitleResource" value="Statement Summary" />
+    <Data key="Stmt" value="statement" />
+    <Data key="TecsoBankVucherTtl" value="Tesco Bank voucher total" />
+    <Data key="TescoBankCarriedForward" value="Tesco Bank points carried forward" />
+    <Data key="TescoPointsCariedforword" value="Tesco points carried forward" />
+    <Data key="TescoVucherTtl" value="Tesco voucher totals" />
+    <Data key="TopupVouchers" value="Top-up voucher total" />
+    <Data key="TotalPointsCollected" value="Total points" />
+    <Data key="TotalRewardLabelNonXmas" value="Voucher total" />
+    <Data key="TotalRewardLabelXmas" value="Voucher total" />
+    <Data key="TotalTescoBnkPnts" value="Total Tesco Bank points" />
+    <Data key="TotalTescoPnts" value="Total Tesco points" />
+    <Data key="VucherTtl" value="Voucher total CZ" />
+    <Data key="CurrencyAlphaSymbol" value="Kč" />
+    <Data key="CurrencySymbol" value="" />
+    <Data key="PageTitle" value="Points" />
+  </PointsSummaryView.cshtml.th-TH.resx>
+  <_Points.cshtml.th-TH.resx>
+   <Data key="lblSeparator" value="-" />
+		<Data key="lclCallCustomerSrvice" value="Call customer services on &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:08005916881&quot; &gt;0800 591 688&lt;/a&gt;* or &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:033012316882&quot; &gt;0330 123 1688&lt;/a&gt;** ." />		
+		<Data key="CommunicateMsg1Resource1" value="*Free from BT landlines. Other providers vary. Calls may be recorded." />
+		<Data key="CommunicateMsg2Resource1" value="**Charged at local rate from mobiles and private telephones." />
+    <Data key="AlphaSymbol" value="" />
+    <Data key="aviosMiles" value="Equivalent Avios:" />
+    <Data key="BAmiles" value="Equivalent BA Avios:" />
+    <Data key="CurrencySymbol" value="฿" />
+    <Data key="lblClickHere" value="กรุณาคลิกที่นี่" />
+    <Data key="lblClubcardStatement" value="คือวันที่" />
+    <Data key="lblClubcardSummary" value="แต้มคลับการ์ดของคุณ" />
+    <Data key="lblCurrentCollectionPeriod" value="รอบการสะสมแต้มปัจจุบัน" />
+    <Data key="lblCurrentPoints" value="รายละเอียดแต้มคลับการ์ดในรอบปัจจุบัน" />
+    <Data key="lblCurrentPointsTotal" value="แต้มสะสมในรอบการสะสมนี้:" />
+    <Data key="lblEasyEarn" value="คุณสามารถสะสม แต้มคลับการ์ดได้ง่ายๆ" />
+    <Data key="lblFinalDate" value="วันสุดท้ายในการสะสมแต้มสำหรับจดหมายคลับการ์ดรอบ" />
+    <Data key="lblFrmTesco" value="วิธีการสะสมแต้ม ลูกค้าสามารถสะสมแต้มผ่านช่องทางต่อไปนี้," />
+    <Data key="lblLink" value="#" />
+    <Data key="lblMyPoints" value="แต้มคลับการ์ดของฉัน" />
+    <Data key="lblPound" value="" />
+    <Data key="lblSeparator" value="-" />
+    <Data key="lblUHaveCollected" value="แต้มคลับการ์ดปัจจุบันของคุณ ที่สะสมตั้งแต่วันที่" />
+    <Data key="lclClickHereResource" value="" />
+    <Data key="lclDtlResource" value="รายละเอียด" />
+    <Data key="lclMisPointsResource" value="แต้มไม่ถูกต้อง?" />
+    <Data key="lclMissingPointsResource" value="หากคุณพบว่าแต้มคลับการ์ดของคุณไม่ถูกต้อง กรุณาติดต่อศูนย์บริการคลับการ์ด โทร 1712 กด 1 กด 3 ตั้งแต่ 9.00-23.00 น." />
+    <Data key="lclPeriodcltedResource" value="รอบการสะสมแต้ม" />
+    <Data key="lclSummaryResource" value="Summary" />
+    <Data key="lclWhichCollectionPeriodResource" value="กรุณาเลือกรอบการสะสมแต้มที่ต้องการดูรายการ" />
+    <Data key="lclWudLikeResource" value="ตรวจสอบยอดการสะสมแต้มของคุณได้ที่นี้" />
+    <Data key="lnkViewDetailResource" value="ดูรายละเอียด" />
+    <Data key="PageTitle" value="แต้ม" />
+    <Data key="stdVoucher" value="คูปองเงินสดของคุณในรอบการสะสมล่าสุด:" />
+    <Data key="virginMiles" value="Equivalent Virgin Flying Club Miles:" />
+    <Data key="xmasmiles" value="Total vouchers saved:" />
+  </_Points.cshtml.th-TH.resx>
+  <_PointsSummaryView.cshtml.th-TH.resx>
+    <Data key="ChangePntsFromBoost" value="Points change from Clubcard Boost" />
+    <Data key="ClickHerePointResource" value="click here" />
+    <Data key="ClubcardVouchersTotal" value="Clubcard voucher total" />
+    <Data key="PntsCarriedForwardXmas" value="Total points carried forward towards your Christmas" />
+    <Data key="PntsCltedFrom" value="Points collected from " />
+    <Data key="PntsCltedTo" value="to" />
+    <Data key="PointCarriedforwordPrevious" value="Points carried forward from previous statement" />
+    <Data key="PointsCarried" value="Total points carried forward to your next statement" />
+    <Data key="PointsCollectedFromTesco" value="Points collected with Tesco" />
+    <Data key="PointsCollectedFromTescoBank" value="Points collected with Tesco Bank" />
+    <Data key="PointsConvertedAndCarried" value="Total points not converted and carried forward to your next statement" />
+    <Data key="PointsTescoBankResource" value="Clubcard points from Tesco Bank" />
+    <Data key="PointsTescoResource" value="Clubcard points from Tesco" />
+    <Data key="PreStmtCarryForward" value="Points carried forward from previous statement" />
+    <Data key="ReviewSummary" value="To review a summary of the previous collection period " />
+    <Data key="StatementTitleResource" value="Statement Summary" />
+    <Data key="Stmt" value="statement" />
+    <Data key="TescoBankCarriedForward" value="Tesco Bank points carried forward" />
+    <Data key="TescoPointsCariedforword" value="Tesco points carried forward" />
+    <Data key="TopupVouchers" value="Top-up voucher total" />
+    <Data key="TotalPointsCollected" value="Total points" />
+    <Data key="TotalRewardLabelNonXmas" value="Voucher total" />
+    <Data key="TotalRewardLabelXmas" value="Voucher total" />
+    <Data key="TotalTescoBnkPnts" value="Total Tesco Bank points" />
+    <Data key="TotalTescoPnts" value="Total Tesco points" />
+  </_PointsSummaryView.cshtml.th-TH.resx>
+</Points-App_LocalResources.th-TH>

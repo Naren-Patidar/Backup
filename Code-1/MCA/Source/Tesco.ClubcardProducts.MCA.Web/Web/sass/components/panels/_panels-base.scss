@@ -1,0 +1,46 @@
+.ddl-panel {
+	background: $ddl-grey4;
+	border: 1px solid $ddl-border-color-1;
+	margin-bottom: 24px;
+	padding: 0;
+	position: relative;
+
+	img {
+		display: block;
+	}
+
+	.ddl-panel-header, .ddl-panel-body, .ddl-panel-footer {
+		padding: 24px 0;
+	}
+
+
+	.ddl-panel-header {
+		padding: 24px 16px;
+	}
+
+	.ddl-panel-header {
+		font-weight: normal;
+	}
+
+	.ddl-panel-body {
+		border: 1px solid $ddl-border-color-1;
+		border-width: 1px 0 0 0;		
+		margin: 0 12px;
+
+		:first-child {
+			padding-top: 0;
+		}
+
+	}
+
+	.ddl-panel-footer {
+		border-top: 1px solid $ddl-border-color-1;
+		margin: 0 12px;
+		
+		p {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+	}
+}
+

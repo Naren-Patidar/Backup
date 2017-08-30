@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+
+  <Message title="Required field!" description="" type="ErrorMessage" id="ErrorForMandatoryDestination"/>
+  <Message title="Hello" description="" type="VerificationMessage_Home" id="Home" />
+
+  <Message title="My Account Details >" description="" type="LinkName" id="MyAccount"/>
+  <Message title="My Personal Details" description="" type="LinkName" id="MyPersonalDetails"/>
+  <Message title="My Contact Preferences" description="" type="LinkName" id="MyContactPref"/>
+  <Message title="Options &amp; Benefits" description="" type="LinkName" id="OptionBenefit"/>
+  <Message title="My Options &amp; Benefits" description="" type="PageTitle" id="MyOptionBenefit"/>
+  <Message title="View My Cards" description="" type="LinkName" id="ViewMyCard"/>
+  <Message title="Order a Replacement" description="" type="LinkName" id="OrderReplacement"/>
+  <Message title="My Boosts at Tesco" description="" type="LinkName" id="TescoBoost"/>
+
+  <Message title="My Points" description="" type="LinkName" id="MyPoints"/>
+  <Message title="Current Points Detail" description="" type="LinkName" id="MyCurrentPoints"/>
+  <Message title="My Current Points Detail" description="" type="HeaderName" id="MyCurrentPointsHeader"/>
+  <Message title="statement" description="" type="PageTitle" id="MyCurrentPointsSummary"/>
+
+  <Message title="My Vouchers" description="" type="LinkName" id="MyVoucher"/>
+  <Message title="My Coupons" description="" type="LinkName" id="MyCoupon"/>
+  <Message title="My Latest Statement" description="" type="LinkName" id="MyLatestStatement"/>
+  <Message title="My Fuel Savings" description="" type="LinkName" id="FuelSaving"/>
+
+  <Message title="Christmas Savers" description="" type="PageTitle" id="ChristmasSaver"/>
+
+    
+  <!--Message for activation-->
+  <Message title="Thank you for confirming your details" description="" type="MessageActivation" id="SuccessfulMessageForActivation"/>
+  <Message title="Your Tesco.com profile is already connected to a Clubcard account. Unfortunately you can only connect one Clubcard account. If you wish to swap the current Clubcard account with a different one, please contact the Customer Service Centre on the numbers below. We apologise for any inconvenience caused." description="" type="MessageActivation" id="MessageForActivatingClubcard"/>
+  <Message title="Re-Confirm your Clubcard details. The details you have entered do not exactly match those on our system." description="" type="MessageActivation" id="MessageForActivationError"/>
+  
+  <!--Error Messages for Activation-->
+  <Message title="Please enter a valid Clubcard number." description="" type="ErrorMessage" id="ErrorForMandatoryClubCard"/>
+  <Message title="Please enter a valid First name." description="" type="ErrorMessage" id="ErrorForMandatoryFirstName"/>
+  <Message title="Please enter a valid surname." description="" type="ErrorMessage" id="ErrorForMandatorySurname"/>
+  <Message title="Please enter a valid Postcode." description="" type="ErrorMessage" id="ErrorForMandatoryPostCode"/>
+
+<!--Validation Messages for Join Page--> 
+<Message title="Thank you for registering your details" description="" type="ConfirmationMessage" id="JoinConfirmationMsg"/>
+<Message title="All done." description="" type="ConfirmationImage" id="JoinConfirmationImage"/> 
+
+<!--Validation Messages for My Contact Preference-->
+<Message title="Your changes have been saved" description="" type="ValidationMessage" id="ValidationMessageForSaveContactPreference"/>
+<Message title="Confirm" description="" type="Button" id="ContactPreferenceConfirmButton"/>
+
+  <!-- Messages for Home Security page-->
+  <Message title="Please enter the digits requested below from your active Clubcard linked to this account (Clubcard, Clubcard Credit Card, Privilege Card or Clubcard Plus)" description="" type="ValidationMessage" id="DefaultSecurityMsg"/>
+
+  <!--Home page message-->
+  <Message title="Welcome to Tesco Clubcard" description="" type="" id="WelcomeToTescoClubcard"/>
+  
+</Messages>

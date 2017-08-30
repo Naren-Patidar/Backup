@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnPrintCCResource1.Text" xml:space="preserve">
+    <value>打印临时会员卡</value>
+  </data>
+  <data name="btnPrintCCResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCardNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAbobeResource1.Text" xml:space="preserve">
+    <value>需要Adobe Acrobat Reader软件 - </value>
+  </data>
+  <data name="lclakeyfobResource1.Text" xml:space="preserve">
+    <value>新卡以及2张子卡</value>
+  </data>
+  <data name="lclanewcardssResource1.Text" xml:space="preserve">
+    <value>新卡</value>
+  </data>
+  <data name="lclanewkeysResource1.Text" xml:space="preserve">
+    <value>新子卡(一套两张)</value>
+  </data>
+  <data name="lclarrivewithuResource1.Text" xml:space="preserve">
+    <value>您将收到</value>
+  </data>
+  <data name="lclcardcuscardResource1.Text" xml:space="preserve">
+    <value>订制新卡/小卡, 请拨打0800 59 16 88</value>
+  </data>
+  <data name="lclCardhereResource1.Text" xml:space="preserve">
+    <value>点击这里</value>
+  </data>
+  <data name="lclCrdeditcardResource1.Text" xml:space="preserve">
+    <value>(如乐购联名信用卡)</value>
+  </data>
+  <data name="lclCuscardcardResource1.Text" xml:space="preserve">
+    <value>当我们给您补发新卡时，上面会印有以上会员卡号码。如果您有任何担忧，请拨打0800 59 1688</value>
+  </data>
+  <data name="lcldmgedResource1.Text" xml:space="preserve">
+    <value>损坏</value>
+  </data>
+  <data name="lclDwnLoadResource1.Text" xml:space="preserve">
+    <value>点此处下载</value>
+  </data>
+  <data name="lclFrmYourReqResource1.Text" xml:space="preserve">
+    <value>应您的要求</value>
+  </data>
+  <data name="lclhere4clickResource1.Text" xml:space="preserve">
+    <value>点击这里</value>
+  </data>
+  <data name="lclHHkeyResource1.Text" xml:space="preserve">
+    <value>为家人申请更多子卡</value>
+  </data>
+  <data name="lclKeyfobResource1.Text" xml:space="preserve">
+    <value>丢失会员卡/子卡</value>
+  </data>
+  <data name="lclneednewcardResource1.Text" xml:space="preserve">
+    <value>我需要一张新的会员卡和/或子卡，会员卡号是:</value>
+  </data>
+  <data name="lclneednewjobResource1.Text" xml:space="preserve">
+    <value>如果您丢失了会员卡/子卡或需要换卡,订制一张新卡</value>
+  </data>
+  <data name="lclnewcardfobsResource1.Text" xml:space="preserve">
+    <value>我们正在处理您的新会员卡申请.</value>
+  </data>
+  <data name="lclonlinehelpResource1.Text" xml:space="preserve">
+    <value>对不起, 您已经达到网上申请补发会员卡/小卡的上限。.</value>
+  </data>
+  <data name="lclothrResource1.Text" xml:space="preserve">
+    <value>其它</value>
+  </data>
+  <data name="lclplsfindoutResource1.Text" xml:space="preserve">
+    <value>了解如何为您不同的卡类型补发新卡, 请</value>
+  </data>
+  <data name="lclplsreplaceResource1.Text" xml:space="preserve">
+    <value>了解如何为您不同的卡类型补发新卡, 请</value>
+  </data>
+  <data name="lclPtempcardResource1.Text" xml:space="preserve">
+    <value>打印临时会员卡</value>
+  </data>
+  <data name="lclrplacecardResource1.Text" xml:space="preserve">
+    <value>申请会员卡补发</value>
+  </data>
+  <data name="lclSTDCradResource1.Text" xml:space="preserve">
+    <value>对应该账户您只有非标准会员卡</value>
+  </data>
+  <data name="lclStdRplaceResource1.Text" xml:space="preserve">
+    <value>此服务只会用于替换普通会员卡.</value>
+  </data>
+  <data name="lclStolenResource1.Text" xml:space="preserve">
+    <value>被偷*</value>
+  </data>
+  <data name="lcltempcardResource1.Text" xml:space="preserve">
+    <value>您凭临时会员卡获得的所有会员积分将被家如您的会员卡账户.</value>
+  </data>
+  <data name="lclthreeweekResource1.Text" xml:space="preserve">
+    <value>3周</value>
+  </data>
+  <data name="lclTscocardResource1.Text" xml:space="preserve">
+    <value>普通会员卡  (譬如,Tesco联名卡).</value>
+  </data>
+  <data name="lclUnfortunatecardResource1.Text" xml:space="preserve">
+    <value>抱歉,此服务只能在此帐户更换标准卡</value>
+  </data>
+  <data name="lclWaitingcardResource1.Text" xml:space="preserve">
+    <value>在您等待新的会员卡到手之前或者您暂时遗失会员卡时, 您可以打印一张“临时卡”以便获取积分*</value>
+  </data>
+  <data name="lclwudlkResource1.Text" xml:space="preserve">
+    <value>您为什么需要新的会员卡？?</value>
+  </data>
+  <data name="lclWudlkyouResource1.Text" xml:space="preserve">
+    <value>您想要什么?</value>
+  </data>
+  <data name="ltrInProcessMsg_DaysLeftResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="orderConfirmResource1.Text" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="orderConfirmResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ordreplacementResource1.Text" xml:space="preserve">
+    <value>申请补发</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>代替</value>
+  </data>
+  <data name="RadioDamagedResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioDamagedResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioLostResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioLostResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioMoreFobsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioMoreFobsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewCardnFobResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewCardnFobResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewCardResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewCardResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewFobResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioNewFobResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioOtherResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioOtherResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioStolenResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadioStolenResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclCommunicateMsg1Resource1.Text" xml:space="preserve">
+    <value>* Free from BT landlines. Other providers vary. Calls may be recorded.</value>
+  </data>
+  <data name="lclCommunicateMsg2Resource1.Text" xml:space="preserve">
+    <value>** Charged at local rate from mobiles and private telephones.</value>
+  </data>
+  <data name="lclneednewjob1Resource1.Text" xml:space="preserve">
+    <value>Don’t forget to safely destroy any damaged or broken cards or key fobs.</value>
+  </data>
+  <data name="lclneednewjob2Resource1.Text" xml:space="preserve">
+    <value>If your card has been lost or stolen, please call our Customer Services team on</value>
+  </data>
+  <data name="lcltollfree1Resource1.Text" xml:space="preserve">
+    <value>0800 591 688</value>
+  </data>
+  <data name="lcltollfree1starResource1.Text" xml:space="preserve">
+    <value>* or</value>
+  </data>
+  <data name="lcltollfree2Resource2.Text" xml:space="preserve">
+    <value>0330 123 1688</value>
+  </data>
+  <data name="lcltollfree2starResource2.Text" xml:space="preserve">
+    <value>**</value>
+  </data>
+  <data name="lcltenworkingdaysResource1.Text" xml:space="preserve">
+    <value>10 working days</value>
+  </data>
+  <data name="ErrorMsg" xml:space="preserve">
+    <value>Please select a request reason</value>
+  </data>
+  <data name="OrderAReplacementError" xml:space="preserve">
+    <value>There's an error retrieving the page. Please try later.</value>
+  </data>
+</root>

@@ -1,0 +1,74 @@
+.table-wrapper {
+	padding: 0;
+
+	table {
+
+		thead {
+			display: table-header-group;
+		}
+
+		tfoot {
+			border-top: 1px solid $ddl-border-color-1;
+			width: 100%;
+
+			tr {
+				width: 100%;
+
+				td {
+					display: table-cell;
+					clear: none;
+					float: none;
+					width: auto;
+
+					&:last-child {
+						width: auto;
+					}
+				}
+			}
+		}
+
+		tbody {
+
+			tr {
+				display: table-row;
+				border-bottom: none;
+
+				th {
+					display: table-cell;
+				}
+
+				td {
+					border-bottom: 1px solid $ddl-border-color-1;
+					padding: 12px;
+					display: table-cell;
+					clear: none;
+					float: none;
+
+					&:nth-child(even){
+						text-align: left;
+						float: none;
+					}
+					
+
+					&.ddl-table-checkbox {
+						padding: 14px 12px 0px 12px;
+					}
+
+					a:hover {
+						text-decoration: underline;
+					}
+				}
+
+				[data-mobileHeader] {
+					width: auto;
+					font-weight: normal;
+					text-align: left;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

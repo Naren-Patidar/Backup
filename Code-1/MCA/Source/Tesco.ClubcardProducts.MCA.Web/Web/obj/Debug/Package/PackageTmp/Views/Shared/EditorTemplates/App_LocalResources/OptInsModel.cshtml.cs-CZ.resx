@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChkOptIns1" xml:space="preserve">
+    <value>Pokud &lt;strong&gt;nechcete&lt;/strong&gt; dostávat žádné další nabídky a informace o produktech a službách společnosti Tesco, zaškrtněte prosím toto políčko</value>
+    <comment>lclTescoinfo1Resource1</comment>
+  </data>
+  <data name="ChkOptIns2" xml:space="preserve">
+    <value>Pokud &lt;strong&gt;nechcete&lt;/strong&gt; dostávat žádné další nabídky a informace o produktech a službách partnerů společnosti Tesco zasílané společností Tesco, zaškrtněte prosím toto políčko</value>
+    <comment>lclPartenrInfo1Resource1</comment>
+  </data>
+  <data name="ChkOptIns3" xml:space="preserve">
+    <value>Pokud &lt;strong&gt;nechcete&lt;/strong&gt; být kontaktování společností Tesco pro účely výzkumu spokojenosti zákazníků, zaškrtněte prosím toto políčko</value>
+    <comment>lclnewcard1Resource1</comment>
+  </data>
+  <data name="ChkOptOuts1" xml:space="preserve">
+    <value>Označte toto políčko , pokud si přejete dostávat nabídky a informace o produktech společnosti Tesco .</value>
+    <comment>lclTescoinfo1Resource1.Text</comment>
+  </data>
+  <data name="ChkOptOuts2" xml:space="preserve">
+    <value>Označte toto políčko , pokud si přejete dostávat produkty a služby nabízené našimi partnery</value>
+    <comment>lclPartenrInfo1Resource1.Text</comment>
+  </data>
+  <data name="ChkOptOuts3" xml:space="preserve">
+    <value>výskum zákazník</value>
+    <comment>lclnewcard1Resource1.Text</comment>
+  </data>
+  <data name="ChkOptOutsDescription" xml:space="preserve">
+    <value />
+    <comment>lclClubcardMemberoffersinfo1Resource1.Text</comment>
+  </data>
+  <data name="ChkOptOutsDescription2" xml:space="preserve">
+    <value />
+    <comment>lclSelectOneResource1.Text</comment>
+  </data>
+  <data name="ChkOptOutsDescription3" xml:space="preserve">
+    <value />
+    <comment>lclSelectOne1Resource1.Text</comment>
+  </data>
+  <data name="lblClickHere" xml:space="preserve">
+    <value />
+    <comment>lclnotetextClickhereResource1.Text</comment>
+  </data>
+  <data name="lblCustomerCharter" xml:space="preserve">
+    <value>Ochrana osobních údajů</value>
+    <comment>lclViewCustCharterResource1.Text </comment>
+  </data>
+  <data name="lblPrivacyPolicy" xml:space="preserve">
+    <value />
+    <comment>lclClubcardMemClickhereResource1.Text</comment>
+  </data>
+  <data name="lblTnC" xml:space="preserve">
+    <value>Podmínky používání</value>
+    <comment>lclTnCSResource1.Text</comment>
+  </data>
+  <data name="MsgPreferencesSaved" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+    <comment>lclMyContactPrefSaveMsgResource1</comment>
+  </data>
+  <data name="OptInsDescription" xml:space="preserve">
+    <value />
+    <comment>lclClubcardMemberoffersinfo1Resource1</comment>
+  </data>
+  <data name="OptInsDescription2" xml:space="preserve">
+    <value />
+    <comment>lclSelectOne1Resource1.Text</comment>
+  </data>
+  <data name="OptInsFooterDescription" xml:space="preserve">
+    <value />
+    <comment>lclClubcardMemberoffersinfo1Resource1.Text</comment>
+  </data>
+  <data name="OptInsHeader" xml:space="preserve">
+    <value>Nastavit zasílání informací</value>
+    <comment>lclMyContactPrefResource1.Text</comment>
+  </data>
+  <data name="OptInsSubHeading" xml:space="preserve">
+    <value />
+    <comment>lclClubcardMemberoffersinfoResource1</comment>
+  </data>
+  <data name="OptInsSubHeading2" xml:space="preserve">
+    <value />
+    <comment>lclSelectOneResource1</comment>
+  </data>
+  <data name="lclDataProtection" xml:space="preserve">
+    <value />
+    <comment>lclDataProtectionResource1.Text</comment>
+  </data>
+  <data name="MessageDataSaved" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+    <comment>lclConfirmSaveMsgResource1.Text</comment>
+  </data>
+  <data name="lblConfirm" xml:space="preserve">
+    <value>Potvrdit</value>
+  </data>
+  <data name="lblSeparator" xml:space="preserve">
+    <value> | </value>
+  </data>
+  <data name="PostfixChkOptIns1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostfixChkOptIns2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostfixChkOptIns3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostfixChkOptOuts1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostfixChkOptOuts2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostfixChkOptOuts3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefixChkOptIns1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefixChkOptIns2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefixChkOptIns3" xml:space="preserve">
+    <value>&lt;i&gt;Tesco pravidelně provádí výzkum spokojenosti zákazníků s cílem poskytnout vám co nejlepší služby. Můžeme vás kontaktovat telefonicky nebo e-mailem, abychom vám mohli položit pár otázek. Ujišťujeme vás, že vaše údaje nebudou nikdy poskytnuty jiným organizacím pro jejich marketingové účely.&lt;/i&gt;</value>
+  </data>
+  <data name="PrefixChkOptOuts1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefixChkOptOuts2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefixChkOptOuts3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FooterNoteLink" xml:space="preserve">
+    <value />
+  </data>
+</root>

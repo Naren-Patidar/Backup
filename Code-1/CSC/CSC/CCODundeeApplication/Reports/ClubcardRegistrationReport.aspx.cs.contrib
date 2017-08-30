@@ -1,0 +1,263 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using CCODundeeApplication.NGCReportingService;
+using System.Data;
+using System.IO;
+using System.Text;
+using System.Collections;
+namespace CCODundeeApplication.Reports
+{
+    public partial class ClubcardRegistrationReport : System.Web.UI.Page
+    {
+        protected string errMsgDOB = string.Empty;
+        protected string errMsgStartDate = string.Empty;
+        protected string errMsgEndDate = string.Empty;
+        protected string spanClassDOBDropDown0 = "dtFld";
+        protected string spanStartDateError0 = "display:none";
+        protected string spanEndDateError0 = "display:none";
+        private Hashtable htInputCriterias = new Hashtable();
+        private Hashtable htSchedule = new Hashtable();
+        private Hashtable htHeaders = new Hashtable();
+        private Int32 i = 0, j = 0;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+
+                Helper.GetMonthDdl(ddlStartMonth); //Load Month dropdown
+                Helper.GetYearDdlReport(ddlStartYear); //Load Year Dropdown
+                Helper.GetMonthDdl(ddlEndMonth); //Load Month dropdown
+                Helper.GetYearDdlReport(ddlEndYear); //Load Year Dropdown
+
+                if (ddlWeek != null)
+                {
+                    DataTable dtWeek =  Helper.PopulateWeekData();
+                    
+                    ddlWeek.DataSource = dtWeek;
+                    ddlWeek.DataValueField = "TescoCalendarID";
+                    ddlWeek.DataTextField = "WeekNumber";
+                    ddlWeek.DataBind();
+                }
+                if (ddlPeriod != null)
+                {
+                    DataTable dtPeriod = Helper.PopulatePeriodData();
+                    ddlPeriod.Items.Add(new ListItem("PleaseSelect", "-1"));
+                    foreach (DataRow row in dtPeriod.Rows)
+                    {
+                        if (!ddlPeriod.Items.Contains(new ListItem(row[1].ToString(), row[0].ToString())))
+                        {
+                            ddlPeriod.Items.Add(new ListItem(row[1].ToString(), row[0].ToString()));
+                        }
+                    }
+                }
+
+                btnRunRpt.Attributes.Add("onclick", "return ValidateDateRegReport('" + ddlStartDay.ClientID + "','" + ddlEndDay.ClientID + "','" + ddlStartMonth.ClientID + "','" + ddlEndMonth.ClientID + "','" + ddlStartYear.ClientID + "','" + ddlEndYear.ClientID + "','" + divStartDate.ClientID + "','" + divEndDate.ClientID + "','" + divComparision.ClientID + "')");
+            }
+        }
+
+        protected void btnRunRpt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                GenerateReport();
+
+                Response.Redirect("../DownloadExcelReport.aspx");
+            }
+            catch (Exception ex)
+            { 
+            
+            }
+        }
+        private static string ConvertDataTableToXML(DataTable dtBuildSQL)
+        {
+            DataSet dsBuildSQL = new DataSet();
+            StringBuilder sbSQL;
+            StringWriter swSQL;
+            string XMLformat;
+
+            sbSQL = new StringBuilder();
+            swSQL = new StringWriter(sbSQL);
+            dsBuildSQL.Merge(dtBuildSQL, true, MissingSchemaAction.AddWithKey);
+            dsBuildSQL.Tables[0].TableName = "Table";
+            foreach (DataColumn col in dsBuildSQL.Tables[0].Columns)
+            {
+                col.ColumnMapping = MappingType.Attribute;
+            }
+            dsBuildSQL.WriteXml(swSQL, XmlWriteMode.WriteSchema);
+            XMLformat = sbSQL.ToString();
+            return XMLformat;
+        }
+
+        public void ExportToExcel(DataTable dt, string strFilePath)
+        {
+
+            #region Export Grid to CSV
+
+
+
+            // Create the CSV file to which grid data will be exported.
+
+            StreamWriter sw = new StreamWriter(strFilePath, false);
+
+            // First we will write the headers.
+
+            //DataTable dt = m_dsProducts.Tables[0];
+
+            int iColCount = dt.Columns.Count;
+            for (int i = 0; i < iColCount; i++)
+            {
+                sw.Write(dt.Columns[i]);
+                if (i < iColCount - 1)
+                {
+                    sw.Write(",");
+                }
+            }
+            sw.Write(sw.NewLine);
+            // Now write all the rows.
+            foreach (DataRow dr in dt.Rows)
+            {
+                for (int i = 0; i < iColCount; i++)
+                {
+                    if (!Convert.IsDBNull(dr[i]))
+                    {
+                        sw.Write(dr[i].ToString());
+                    }
+                    if (i < iColCount - 1)
+                    {
+                        sw.Write(",");
+                    }
+                }
+
+                sw.Write(sw.NewLine);
+            }
+            sw.Close();
+            #endregion
+
+        }
+
+        protected void btnScheduleRpt_Click(object sender, EventArgs e)
+        {
+           string startDay = ddlStartDay.SelectedValue.ToString();
+            string startMonth = ddlStartMonth.SelectedValue.ToString();
+            string startYear = ddlStartYear.SelectedValue.ToString();
+
+            string endDay = ddlEndDay.SelectedValue.ToString();
+            string endMonth = ddlEndMonth.SelectedValue.ToString();
+            string endYear = ddlEndYear.SelectedValue.ToString();
+
+            string startDate = startDay + "/" + startMonth + "/" + startYear;
+            string endDate = endDay + "/" + endMonth + "/" + endYear;
+
+            string inputXml = "<ReportParams><Input0>StartDate</Input0><Input1>" + startDate + "</Input1><Input2>EndDate</Input2><Input3>" + endDate + "</Input3></ReportParams>";
+            Helper.SetTripleDESEncryptedCookie("UserInput", inputXml);
+            string headerXml = "<InputData><Input0>Start Date</Input0><Input1>" + startDate + "</Input1><Input2>End Date</Input2><Input3>" + endDate + "</Input3></InputData>";
+            Helper.SetTripleDESEncryptedCookie("ReportHeader", headerXml);
+            string reportName = "ClubcardRegistrationReport";
+            Helper.SetTripleDESEncryptedCookie("ReportName", reportName);
+            string script = "window.showModalDialog('SchedulePopup.aspx',null,'dialogLeft:400px; dialogTop:150px; dialogHeight:360px; dialogWidth:510px; status:no; resizable:no; scroll:no');";
+            string popup = "<script> " + script + " </script>";
+            Page.RegisterStartupScript("key", popup);
+        }
+
+
+        private bool GenerateReport()
+        {
+            NGCReportingServiceClient objReportingService = new NGCReportingServiceClient();
+            string timeFrame = "Time Frame";
+            int week =0;
+            string period="";
+            DateTime startDate = new DateTime();
+            DateTime endDate = new DateTime();
+            if (rdoDate.Checked && rdoDate.Visible)
+            {
+                string startDay = ddlStartDay.SelectedValue.ToString();
+                string startMonth = ddlStartMonth.SelectedValue.ToString();
+                string startYear = ddlStartYear.SelectedValue.ToString();
+
+                string endDay = ddlEndDay.SelectedValue.ToString();
+                string endMonth = ddlEndMonth.SelectedValue.ToString();
+                string endYear = ddlEndYear.SelectedValue.ToString();
+
+                startDate = Convert.ToDateTime(startMonth + "/" + startDay + "/" + startYear);
+                endDate = Convert.ToDateTime(endMonth + "/" + endDay + "/" + endYear);
+
+                htInputCriterias.Add("Input" + i, timeFrame);
+                i = i + 1;
+                htInputCriterias.Add("Input" + i, startDate + " - " + endDate);
+                i = i + 1;
+
+                htSchedule.Add("Input" + j, "StartDate");
+                j = j + 1;
+                htSchedule.Add("Input" + j, startDate);
+                j = j + 1;
+                htSchedule.Add("Input" + j, "EndDate");
+                j = j + 1;
+                htSchedule.Add("Input" + j, endDate);
+                j = j + 1;
+
+                
+            }
+            else if (rdoWeekNo.Checked && rdoWeekNo.Visible)
+            {
+                week = int.Parse(ddlWeek.SelectedItem.Value.ToString());
+                htInputCriterias.Add("Input" + i, timeFrame);
+                i = i + 1;
+                htInputCriterias.Add("Input" + i, ddlWeek.SelectedItem.Text.ToString());
+                i = i + 1;
+
+                htSchedule.Add("Input" + j, "Week");
+                j = j + 1;
+                htSchedule.Add("Input" + j, ddlWeek.SelectedItem.Value.ToString());
+                j = j + 1;
+
+               
+            }
+            else if (rdoPeriod.Checked && rdoPeriod.Visible)
+            {
+                period = this.ddlPeriod.SelectedItem.Value.ToString();
+              
+                htInputCriterias.Add("Input" + i, timeFrame);
+                i = i + 1;
+                htInputCriterias.Add("Input" + i, ddlPeriod.SelectedItem.Text.ToString());
+                i = i + 1;
+
+                // Modified by Syed Amjadulla on 20th Jan'2010 for correction of Perameters of Period for Scheduling
+
+                htSchedule.Add("Input" + j, "Period");
+                j = j + 1;
+
+                htSchedule.Add("Input" + j, period.ToString());
+                j = j + 1;
+
+            }                     
+
+            DataSet ds = new DataSet();
+
+            ds = objReportingService.GetRegistrationReport(startDate, endDate,week,period);
+            //ExportToExcel(ds.Tables[0], "C:\\csvdata.csv");
+            //string resultXML= ConvertDataTableToXML(ds.Tables[0]);
+            string resultXML = ds.GetXml();
+            Helper.SetTripleDESEncryptedCookie("ResultXml", resultXML);
+
+
+
+            string inputXml = Helper.HashTableToXML(htSchedule, "ReportParams");
+            Helper.SetTripleDESEncryptedCookie("UserInput", inputXml);
+            string headerXml = Helper.HashTableToXML(htInputCriterias, "InputData");
+            Helper.SetTripleDESEncryptedCookie("ReportHeader", headerXml);
+            string headers = "<Headers><Input0>Join Route</Input0><Input1>Number of Customers</Input1></Headers>";
+            Helper.SetTripleDESEncryptedCookie("Headers", headers);
+            string reportName = "ClubcardRegistrationReport";
+            Helper.SetTripleDESEncryptedCookie("ReportName", reportName);
+
+            return true;
+        }
+
+      
+    }
+}

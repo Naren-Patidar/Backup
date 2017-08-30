@@ -1,0 +1,47 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using BotDetect
+@using BotDetect.Web.UI.Mvc
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+
+<legend class="ddl-h4-like">@Html.Translate("Join/Home", "lclSecuritycheckResource1.Text")</legend>
+
+@*@if (!Model.noShowCaseSensistiveText)
+{ *@  
+<div class="copy-wrapper">
+    <p id="captchaText">
+        @Html.Translate("Join/Home", "lclCaptcha2Resource1.Text") @Html.Translate("Join/Home", "lclCaptcha3Resource1.Text")
+    </p>               
+</div>
+@*}*@
+<div class="form-row @(Model.captchaValidationFlag ? "ddl-error" : "")">
+    @if (Model.captchaValidationFlag)
+    {
+        <p>@Html.Translate("Join/Home", "lclCaptcha1Resource1.Text")</p>
+    }
+    <div align="center" class="ddl-form-field">
+        @{ MvcCaptcha Captcha = new MvcCaptcha("JoinCaptcha");
+           Captcha.UserInputClientID = "JoinCaptchaCode";
+           Captcha.ImageStyle = ImageStyle.Chipped;
+           Captcha.CustomLightColor = System.Drawing.Color.FromArgb(255, 255, 255);
+           Captcha.CustomDarkColor = System.Drawing.Color.FromArgb(0, 0, 139);
+           Captcha.CodeLength = 5;
+           Captcha.CodeStyle = CodeStyle.Alphanumeric;
+           Captcha.IconsDivWidth = 24;
+           Captcha.ImageSize = new System.Drawing.Size(300, 50);
+           Captcha.ImageFormat = ImageFormat.Jpeg;
+           Captcha.Locale = "en-Latn-US";
+           Captcha.SoundFormat = SoundFormat.WavPcm16bit8kHzMono;
+           Captcha.SoundStyle = SoundStyle.Dispatch;
+           Captcha.TabIndex = -1;
+           Captcha.UseHorizontalIcons = false;
+           Captcha.UseSmallIcons = false;}
+        @Html.Captcha(Captcha)
+    </div>
+</div>
+<div class="form-row @(Model.captchaValidationFlag ? "ddl-error" : "")">
+    <div class="ddl-form-field">
+        <label class="ddl-label">Enter Captcha</label>
+        <input class="ddl-input" id="JoinCaptchaCode" name="JoinCaptchaCode" type="text" autocomplete="off"></input>
+    </div>
+</div>

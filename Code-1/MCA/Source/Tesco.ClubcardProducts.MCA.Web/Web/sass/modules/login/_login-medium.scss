@@ -1,0 +1,73 @@
+
+#login {
+
+	li {
+
+		&#sign-in, &#register {
+		}
+
+		&#sign-in {
+			
+		}
+	}
+}
+
+#login-form {
+
+}
+
+#logged-in {
+	width: auto;
+	background: none;
+	display: inline-block;
+
+	.accordion-header {
+		padding: 7px 20px 9px;
+		font-size: 1.4rem;
+		font-weight: normal;
+		line-height: 1.6rem;
+
+		&:after {
+			padding: 0;
+			line-height: 1.6rem;
+			color: $ddl-white1;
+			background: none;
+			display: inline-block;
+			border: none;
+			content: "\e008";
+			margin: 2px 0 0 8px;
+			transition: all .3s ease-in-out;
+		}
+
+		&:hover {
+			
+			&:after {
+				transform: rotate(180deg);
+			}
+
+			+ .accordion-content {
+				max-height: 1000px;				
+			}
+		}
+	}
+
+	.accordion-content {
+		position: absolute;
+		top: 32px;
+		left: 0;
+		width: 200px;
+		background: $ddl-global-header-background;
+		text-align: left;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .5s;
+
+		&.active {
+			max-height: 1000px;	
+		}
+
+		li {
+			line-height: 1.6rem;
+		}
+	}
+}

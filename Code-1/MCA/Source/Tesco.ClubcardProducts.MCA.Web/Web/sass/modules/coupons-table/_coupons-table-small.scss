@@ -1,0 +1,70 @@
+
+// The Select all / Print device
+// -------------------------------
+
+.coupon-list-utility {
+
+	 .ddl-checkbox {
+	 	margin: 5px 0 0 0;
+	}
+
+
+}
+
+// An individual coupon
+// --------------------
+
+#ddl-wrapper .coupons-table {
+	position: relative;
+	padding-right: 240px;
+
+	tbody {
+
+		tr {
+			display: inline-block;
+			width: 84%;
+			float: left;
+			border-bottom: 1px solid $ddl-border-color-1;
+
+			&:after {
+				content: " ";
+				display: block;
+				height: 225px;
+				width: 240px;
+				background: #fff;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			&:nth-child(2){
+
+				th, td {
+					padding-top: 30px;
+				}
+			}
+		}
+
+		.coupon-select {
+			display: inline-block;
+			width: 10%;
+			height: 200px;
+			float: left;
+
+			td {
+
+				.ddl-checkbox {
+					top: 50%;
+					margin-top: -20px;
+				}
+
+				img {
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					width: 200px;
+				}
+			}
+		}
+	}
+}

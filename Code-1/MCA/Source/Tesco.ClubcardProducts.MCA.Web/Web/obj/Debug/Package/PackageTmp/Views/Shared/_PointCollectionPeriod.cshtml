@@ -1,0 +1,98 @@
+﻿@model  IEnumerable<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common.Offer>
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@{
+    var Period = "current";
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+}
+<div class="copy-wrapper">
+    <h2 id="lbllclWudLike" class="ddl-h3-like">
+        @Html.Translate("Shared/_Points", "lclWudLikeResource")</h2>
+    <p id="lblWhichCollectionPeriod">
+        @Html.Translate("Shared/_Points", "lclWhichCollectionPeriodResource")</p>
+</div>
+<div class="table-wrapper table-bordered">
+   <table border="0" cellpadding="0" cellspacing="0" id="tbl_collectionperioddtls">
+        <thead>
+            <tr>
+                <th id="lbllclPeriodcltedResource">@Html.Translate("Shared/_Points", "lclPeriodcltedResource")
+                </th>
+                @if (!HideConfig[DbConfigurationItemNames.HidePointsSummaryPage].ConfigurationValue1.Equals("1"))
+                {
+                    <th id="lblSummary">@Html.Translate("Shared/_Points", "lclSummaryResource")
+                    </th>
+                }
+                <th id="lbllclDtls">@Html.Translate("Shared/_Points", "lclDtlResource")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td id="lblperidno">
+                        @Html.DisplayFor(modelItem => item.Period)
+                    </td>
+                    @if (!HideConfig[DbConfigurationItemNames.HidePointsSummaryPage].ConfigurationValue1.Equals("1"))
+                    {
+                        if (item.Period != ViewBag.Period)
+                        {
+                            Period = string.Empty;
+                        <td id="lblHidesummarydtls"  data-mobileHeader="@Html.Translate("Shared/_Points", "lclSummaryResource")">
+                            @Html.ActionLink(@Html.Translate("Shared/_Points", "lnkViewSummaryResource").ToString(), "PointsStatement", "Points", new { offerid = item.Id }, new { id = "lblSummaryview", @class = "ddl-icon-after ddl-icon-right" })
+                        </td>
+                        }
+                        else
+                        {
+                        <td>
+                            &nbsp;
+                        </td>
+                        }
+                    }
+                    <td id="lblhidepointdtls"  data-mobileHeader="@Html.Translate("Shared/_Points", "lclDtlResource")">
+                        @if (item.Period != ViewBag.Period)
+                        {
+                            @Html.ActionLink(@Html.Translate("Shared/_Points", "lnkViewDetailResource").ToString(), "TransactionHistory", "Points", new { offerid = item.Id }, new { id = "lblPointdtlsview", @class = "ddl-icon-after ddl-icon-right" })
+                        }
+                        else
+                        {
+                            @Html.ActionLink(@Html.Translate("Shared/_Points", "lnkViewDetailResource").ToString(), "TransactionHistory", "Points", new { offerid = item.Id, period = Period }, new { id = "lblPointdtlsview", @class = "ddl-icon-after ddl-icon-right" })
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="gr-12">
+        <div class="ddl-button-banner">
+		<div class="ddl-button-banner-column">
+            @if (System.Globalization.CultureInfo.CurrentCulture.ToString() == "en-MY")
+            {
+                <span id="lblPleaseNote">@Html.Translate("Shared/_Points", "lclCollectionPeriodNote")</span>
+                <h2 id="lblMisPoints" class="ddl-h5-like">
+                    @Html.Translate("Shared/_Points", "lclMisPointsResource")
+                </h2>
+                <span id="lblMissingPoints">@Html.Translate("Shared/_Points", "lclMissingPointsResource")</span>
+            }
+            else
+            { 
+                <h2 id="lblMisPoints" class="ddl-h5-like">
+                    @Html.Translate("Shared/_Points", "lclMisPointsResource")
+                </h2>
+                <p id="lblMissingPoints">@Html.Translate("Shared/_Points", "lclMissingPointsResource")</p>
+                <p id= "lblCallCustomerSrvice">@Html.Translate("Shared/_Points", "lclCallCustomerSrvice")</p>
+            }
+        </div>
+		     </div>
+          <div class="copy-wrapper">
+    <p id='lblcommsg1' class="ddl-t5">@Html.Translate("Shared/_Points", "CommunicateMsg1Resource1")</p>
+    <p id='lblcommsg2' class="ddl-t5">@Html.Translate("Shared/_Points", "CommunicateMsg2Resource1")</p>
+			</div>
+
+
+    </div>
+</div>

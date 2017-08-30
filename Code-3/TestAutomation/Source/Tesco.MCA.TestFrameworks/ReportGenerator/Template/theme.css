@@ -1,0 +1,27 @@
+﻿.pass
+{
+	color: Green;
+}
+.fail
+{
+	color: Red;
+}
+.inconclusive
+{
+	color: Yellow;
+}
+.summaryTable
+{
+	width: 100%;
+	border:0;
+	border: #dcdcdc 1px solid;	
+}
+.summaryTable th
+{
+	width: 33%;	
+}
+.Inconclusive
+{
+	color:#000;
+}
+td.Inconclusive { background-color: Yellow; height: 9px;}

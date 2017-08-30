@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Avios" xml:space="preserve">
+    <value>Avios</value>
+    <comment>lclAviosOptinResource1.Text</comment>
+  </data>
+  <data name="BAMiles" xml:space="preserve">
+    <value>British Airways Executive Club - Avios</value>
+    <comment>lclliBAMilesOptInResource1.Text</comment>
+  </data>
+  <data name="ChristmasSavers" xml:space="preserve">
+    <value>Christmas savers</value>
+    <comment>lclChristmasSaversout2Resource1.Text</comment>
+  </data>
+  <data name="ClubcardEmails" xml:space="preserve">
+    <value>Clubcard emails</value>
+    <comment>lclClubcardEmailsResource1.Text</comment>
+  </data>
+  <data name="ClubcardStatementHeader" xml:space="preserve">
+    <value>My Clubcard statement</value>
+  </data>
+  <data name="LableAviosClubmembership" xml:space="preserve">
+    <value>Please enter your Avios membership number and click ‘Choose scheme’.</value>
+  </data>
+  <data name="LableBAClubmembership" xml:space="preserve">
+    <value>Please enter your British Airways Executive Club membership number and click ‘Choose scheme’.</value>
+    <comment>ltrBAMilesVoucherValMemNumberResource1.Text</comment>
+  </data>
+  <data name="LableImportant" xml:space="preserve">
+    <value>Important:</value>
+    <comment>lclAviosImportantResource1.Text</comment>
+  </data>
+  <data name="LableMembershipNumber" xml:space="preserve">
+    <value>Membership number:</value>
+    <comment>lclMembershipNumberResource1.Text</comment>
+  </data>
+  <data name="LableVirginClubmembership" xml:space="preserve">
+    <value>Please enter your Virgin Atlantic Flying Club membership number and click ‘Choose scheme’.</value>
+    <comment>lclVirginAtlanticMsgResource1.Text</comment>
+  </data>
+  <data name="MessageAviosOptedIn" xml:space="preserve">
+    <value>You have opted to automatically convert your Clubcard points to Avios.</value>
+  </data>
+  <data name="MessageAviosOptedOut" xml:space="preserve">
+    <value>Automatically convert your Clubcard points to Avios.</value>
+  </data>
+  <data name="MessageAviosOptedOut1" xml:space="preserve">
+    <value>You’ll get {0} Avios for every {1}  points earned.</value>
+  </data>
+  <data name="MessageAviosOptedOut2" xml:space="preserve">
+    <value>Once you are opted in, all of your Clubcard points will be converted to Avios from your next statement.</value>
+    <comment>lclAvios5Resource1.Text</comment>
+  </data>
+  <data name="MessageBAMilesOptedIn" xml:space="preserve">
+    <value>You have opted to automatically convert your Clubcard points to British Airways Executive Club Avios.</value>
+    <comment>lclBAMilesVoucherImportanttoAvios.Text</comment>
+  </data>
+  <data name="MessageBAMilesOptedOut" xml:space="preserve">
+    <value>Automatically convert your Clubcard points to British Airways Executive Club Avios.</value>
+    <comment>lclliBAMilesOptInMsgResource1.Text</comment>
+  </data>
+  <data name="MessageBAMilesOptedOut1" xml:space="preserve">
+    <value>You’ll get {0} British Airways Executive Club Avios for every {1} points earned.</value>
+    <comment>lclBAMilesOptInMsgResource.Text</comment>
+  </data>
+  <data name="MessageBAMilesOptedOut2" xml:space="preserve">
+    <value>Once you are opted in, all of your Clubcard points will be converted to British Airways Executive Club Avios from your next statement</value>
+    <comment>lclBAMilesVoucherValMemNumberDescResource1.Text</comment>
+  </data>
+  <data name="MessageChristmasSaverOptedIn" xml:space="preserve">
+    <value>You have opted to be a Christmas saver. This means you will save your vouchers throughout the year and receive them in time for Christmas. &lt;b&gt;You'll get £0.50 in vouchers for every 50 points earned.&lt;/b&gt;</value>
+    <comment>lclChristmasSaversout1Resource1.Text</comment>
+  </data>
+  <data name="MessageChristmasSaverOptedOut" xml:space="preserve">
+    <value>Opt to be a Christmas saver to save your vouchers throughout the year and receive them in time for Christmas. &lt;b&gt;You'll get £0.50 in vouchers for every 50 points earned.&lt;/b&gt;</value>
+    <comment>lclChristmasSavers1Resource1.Text</comment>
+  </data>
+  <data name="MessageDataSaved" xml:space="preserve">
+    <value>Your changes have been saved.</value>
+    <comment>lclMyContactPrefSaveMsgResource1.Text</comment>
+  </data>
+  <data name="MessageEmail" xml:space="preserve">
+    <value>If you would like to receive regular emails from Clubcard and be the first to hear about all our latest news and offers.</value>
+    <comment>lclClubcardEmails1Resource1.Text</comment>
+  </data>
+  <data name="MessageImportantAirMile" xml:space="preserve">
+    <value>you can only sign up to one scheme at a time. Clicking ‘Choose scheme’ will opt you out of your current scheme.</value>
+    <comment>lclBAMilesVoucherImportantoptedintoResource1.Text</comment>
+  </data>
+  <data name="MessageVirginOptedIn" xml:space="preserve">
+    <value>You have opted to automatically convert your Clubcard points to Virgin Atlantic Flying Club miles.</value>
+    <comment>lclVirginAtlantic7Resource1.Text</comment>
+  </data>
+  <data name="MessageVirginOptedOut" xml:space="preserve">
+    <value>Automatically convert your Clubcard points to Virgin Atlantic Flying Club miles.</value>
+    <comment>lclVirginAtlantic1Resource1.Text</comment>
+  </data>
+  <data name="MessageVirginOptedOut1" xml:space="preserve">
+    <value>You’ll get {0} Virgin Atlantic Flying Club miles for every {1} points earned.</value>
+    <comment>lclVirginAtlantic1Resource.Text</comment>
+  </data>
+  <data name="MessageVirginOptedOut2" xml:space="preserve">
+    <value>Once you are opted in, all of your Clubcard points will be converted to Virgin Atlantic Flying Club miles from your next statement.</value>
+    <comment>lclVirginAtlantic5Resource1.Text</comment>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>More information on the {0} scheme</value>
+    <comment>lclMoreInformationResource1.Text</comment>
+  </data>
+  <data name="OtherOptionsHeader" xml:space="preserve">
+    <value>What else can I sign up for?</value>
+    <comment>lclWhatelseResource1.Text</comment>
+  </data>
+  <data name="PageDescription" xml:space="preserve">
+    <value>Choose to automatically convert your points to Clubcard vouchers, Avios, British Airways Executive Club Avios, or Virgin Flying Club miles, or join the Christmas savers scheme.</value>
+    <comment>lclPageDescResource1.Text</comment>
+  </data>
+  <data name="PageHeader" xml:space="preserve">
+    <value>Voucher schemes</value>
+    <comment>lclHeaderResource1.Text</comment>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Voucher schemes</value>
+    <comment>lclHeaderResource1.Text</comment>
+  </data>
+  <data name="dtmPageTitle" xml:space="preserve">
+    <value>Options and Benefits</value>
+    <comment>lclHeaderResource1.Text</comment>
+  </data>
+  <data name="StatementOptionsHeader" xml:space="preserve">
+    <value>Points</value>
+    <comment>lclPointsResource1.Text</comment>
+  </data>
+  <data name="ValInvalidMembership" xml:space="preserve">
+    <value>Please enter a valid membership number.</value>
+    <comment>errMessageClubcardStatement</comment>
+  </data>
+  <data name="VirginAtlantic" xml:space="preserve">
+    <value>Virgin Atlantic Flying Club miles</value>
+    <comment>lclVirginAtlantic6Resource1.Text</comment>
+  </data>
+  <data name="EnsureMsg" xml:space="preserve">
+    <value>In order to receive Avios, you need to collect a minimum of 150 points per collection period. If you don't reach this amount, your points will be carried forward to your next statement.</value>
+    <comment>lclEnsureMsgResource1.Text</comment>
+  </data>
+  <data name="clientValidationMessage" xml:space="preserve">
+    <value>Please enter a valid membership number.</value>
+  </data>
+  <data name="labelAviosOpted" xml:space="preserve">
+    <value>If you would like to amend your membership number, please enter a new membership number below and click ‘Choose scheme’.</value>
+  </data>
+  <data name="labelBaOpted" xml:space="preserve">
+    <value>If you would like to amend your membership number, please enter a new membership number below and click ‘Choose scheme’.</value>
+  </data>
+  <data name="labelVirginOpted" xml:space="preserve">
+    <value>If you would like to amend your membership number, please enter a new membership number below and click ‘Choose scheme’.</value>
+  </data>
+  <data name="textBoxLabel" xml:space="preserve">
+    <value>Membership number</value>
+  </data>
+  <data name="chooseVoucherLegend" xml:space="preserve">
+    <value>Choose how to convert your points</value>
+  </data>
+  <data name="selectOptionLegend" xml:space="preserve">
+    <value>Select one option</value>
+  </data>
+  <data name="FooterNote" xml:space="preserve">
+    <value> including Tesco Bank, Tesco Mobile and Tesco Baby club</value>
+  </data>
+  <data name="FooterNoteLink" xml:space="preserve">
+    <value>Unsubscribe from all Tesco marketing</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Vouchers</value>
+  </data>
+  <data name="VoucherDesc1" xml:space="preserve">
+    <value>Automatically convert your Clubcard points to vouchers. &lt;b&gt;You'll get £0.50 in vouchers for every 50 points earned.&lt;/b&gt;&lt;/br&gt;&lt;/br&gt;Once you are opted in, all of your points will be converted to vouchers from your next statement. You can spend vouchers in store, online, or with our partners, where you'll get up to 4x your voucher value.</value>
+  </data>
+  <data name="VoucherDesc2" xml:space="preserve">
+    <value>In order to receive Clubcard vouchers, you need to collect a minimum of 150 points per collection period. If you don't reach this amount, your points will be carried forward to your next statement.</value>
+  </data>
+  <data name="ClubcardPartners" xml:space="preserve">
+    <value>More information on how to spend your vouchers</value>
+  </data>
+  <data name="VoucherOptInDesc1" xml:space="preserve">
+    <value>You have opted to automatically convert your Clubcard points to vouchers.&lt;b&gt;You'll get £0.50 in vouchers for every 50 points earned.&lt;/b&gt; &lt;/br&gt;&lt;/br&gt;You will receive new vouchers with your next quarterly statement. You can spend vouchers in store, online, or with our partners, where you'll get up to 4x your voucher value.</value>
+  </data>
+  <data name="MessageBAMilesOptedOut3" xml:space="preserve">
+    <value>In order to receive British Airways Executive Club Avios, you need to collect a minimum of 150 points per collection period. If you don't reach this amount, your points will be carried forward to your next statement.</value>
+    <comment>lclBAMilesVoucherValMemNumberDescResource1.Text</comment>
+  </data>
+  <data name="MessageChristmasSaverOpted" xml:space="preserve">
+    <value>You can top up your savings with your own money in store and also receive bonus vouchers.</value>
+  </data>
+  <data name="MessageChristmasSaverOptedOut2" xml:space="preserve">
+    <value>In order to receive Clubcard vouchers, you need to collect a minimum of 150 points per collection period. If you don't reach this amount, your points will be carried forward to your next statement.</value>
+  </data>
+  <data name="MessageVirginOptedOut3" xml:space="preserve">
+    <value>In order to receive Virgin Atlantic Flying Club miles, you need to collect a minimum of 150 points per collection period. If you don't reach this amount, your points will be carried forward to your next statement.</value>
+  </data>
+  <data name="lblErrorSummary" xml:space="preserve">
+    <value>Please correct the following information:</value>
+  </data>
+  <data name="BAAvios" xml:space="preserve">
+    <value>BA Avios</value>
+  </data>
+  <data name="postStatementMsg" xml:space="preserve">
+    <value>statements to this email address:</value>
+  </data>
+  <data name="preStatementMsg" xml:space="preserve">
+    <value>Once you are opted in, we will send you your</value>
+  </data>
+  <data name="VirginFlyingClub" xml:space="preserve">
+    <value>Virgin Flying Club</value>
+  </data>
+</root>

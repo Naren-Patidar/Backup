@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences-App_LocalResources>
+	<Home.aspx.en-GB.resx>
+		<Data key="AccountDuplicate" value="It appears that there is another account with this email address/mobile number. Please contact the helpline on 0800 59 16 88" />
+		<Data key="errCompareEmail" value="Email address did not match, please enter correct email address" />
+		<Data key="errMessageConfirmMobile" value="Mobile numbers did not match, please enter correct mobile numbers." />			
+		<Data key="PageName" value="Preference" />
+		<Data key="TrackEmail" value="E-mail address" />
+		<Data key="TrackMobileNumber" value="Mobile telephone number" />
+	</Home.aspx.en-GB.resx>
+  <MyContactPreferences.cshtml.en-GB.resx>
+    <Data key="PageDescription" value="Let us know how you’d like to receive your vouchers, coupons, and special offers." />
+    <Data key="PageHeading" value="Contact preferences" />
+    <Data key="PageTitle" value="Contact preferences" />
+  </MyContactPreferences.cshtml.en-GB.resx>
+  <ContactModel.cshtml.en-GB.resx>
+    <Data key="DescriptionText" value="How should we send your statements, vouchers and coupons?" />
+    <Data key="HeaderText" value="Statements, vouchers and coupons" />
+    <Data key="lblBraille" value="Large print and braille statements" />
+    <Data key="lblBrailleDesc" value="" />
+    <Data key="lblBrailleOpted" value="You are opted in to receive braille statements. Opt out of this service by calling us on 0800 591 688&lt;sup&gt;1&lt;/sup&gt; or 0330 123 1688&lt;sup&gt;2&lt;/sup&gt;." />
+    <Data key="lblBrailleStatementNotOptIn" value="Opt in to these services by calling us on 0800 591 688&lt;sup&gt;1&lt;/sup&gt; or 0330 123 1688&lt;sup&gt;2&lt;/sup&gt;." />
+    <Data key="lblCheckAddress" value="We’ll send your statement, vouchers and coupons by post to the address beginning " />
+    <Data key="lblConfirm" value="Update contact preference" />
+    <Data key="lblConfirmEmail" value="Please confirm your email address" />
+    <Data key="lblConfirmMobile" value="Please confirm your mobile number" />
+    <Data key="lblDesc" value="We’ll do our best to get in touch with you by your chosen contact method. Sometimes we’ll need to contact you by post for business or policy reasons, or when we can’t get through by email or phone.&lt;br&gt;&lt;/br&gt;If you have a joint account, make sure you have the permission of the other members to update contact preferences. You can find out more in our" />
+    <Data key="lblDesc1" value="* Free from BT landlines. Other providers vary. Calls may be recorded." />
+    <Data key="lblDesc2" value="** Charged at local rate from mobiles and private telephones." />
+    <Data key="lblEmailDesc" value="You will be sent an email with a link to My Clubcard Account to access your latest statement, vouchers, and coupons." />
+    <Data key="lblEmailDesc1" value="By clicking ‘Update contact preferences’, you will no longer receive your Clubcard statement, vouchers, or coupons in the post." />
+    <Data key="lblEnterEmail" value="Please enter your email address" />
+    <Data key="lblEnterMobile" value="Please enter your mobile number" />
+    <Data key="lblLargePrintOpted" value="You are opted in to receive large print statements. Opt out of this service by calling us on 0800 591 688&lt;sup&gt;1&lt;/sup&gt;or 0330 123 1688&lt;sup&gt;2&lt;/sup&gt;." />
+    <Data key="lblPostDesc" value="&lt;br/&gt;If you need to update your address," />
+    <Data key="lblPostDesc1" value="" />
+    <Data key="lblPrefEmail" value="By email" />
+    <Data key="lblPrefPost" value="By post" />
+    <Data key="lblPrefText" value="By text message" />
+    <Data key="lblTextDesc" value="You will be sent a text message with a link to My Clubcard Account to access your latest statement, vouchers, and coupons." />
+    <Data key="lblTextDesc1" value="By clicking ‘Update contact preferences’, you will no longer receive your Clubcard statement, vouchers, or coupons in the post." />
+    <Data key="lnkMyPersonalDetails" value="edit your personal details." />
+    <Data key="lnkTnC" value="terms and conditions." />
+    <Data key="MessageDataSaved" value="Your changes have been saved" />
+    <Data key="lclRequireWarningText" value="Indicates required fields" />
+    <Data key="lclMobileNumberExampleResource" value="" />
+    <Data key="lblDesc3" value="If you have a joint account, make sure you have the permission of the other members to update contact preferences. You can find out more in our" />
+    <Data key="errMessageEmail" value="Please enter a valid email address" />
+    <Data key="errMessageMobile" value="Please enter a valid mobile number." />
+  </ContactModel.cshtml.en-GB.resx>
+  <OptInsModel.cshtml.en-GB.resx>
+    <Data key="ChkOptIns1" value="I do not want to receive marketing offers or promotions from" />
+    <Data key="ChkOptOuts1" value="Offers and information about Tesco products and services" />
+    <Data key="ChkOptOuts2" value="Products and services offered by our partners" />
+    <Data key="ChkOptOuts3" value="Customer research" />
+    <Data key="ChkOptOutsDescription" value="We would like to reassure you that your details are safe with us and will never be released to companies outside of the Tesco Group for their marketing purposes. For more information see our " />
+    <Data key="ChkOptOutsDescription2" value="From time to time we would like to contact you with offers and information about products and services of interest to you and your family. " />
+    <Data key="ChkOptOutsDescription3" value="Tick the boxes below for additional great offers and information" />
+    <Data key="lblClickHere" value="" />
+    <Data key="lblCustomerCharter" value="View our Privacy &amp; cookies policy &gt;" />
+    <Data key="lblPrivacyPolicy" value="Customer Charter and Privacy Policy" />
+    <Data key="lblTnC" value="View our T &amp; Cs &gt;" />
+    <Data key="MsgPreferencesSaved" value="Your changes have been saved" />
+    <Data key="OptInsDescription" value="We’d like to let you know about Tesco products and services that we think you might be interested in." />
+    <Data key="OptInsDescription2" value="Let us know if you are happy to receive marketing communications by email, post, SMS and phone. If you have a joint account your choices here will apply to both account holders." />
+    <Data key="OptInsFooterDescription" value="We would like to reassure you that your details are safe with us and will never be released to companies outside of the Tesco Group for their marketing preferences." />
+    <Data key="OptInsHeader" value="Marketing preferences" />
+    <Data key="OptInsSubHeading" value="" />
+    <Data key="OptInsSubHeading2" value="" />
+    <Data key="lclDataProtection" value="Marketing preferences" />
+    <Data key="MessageDataSaved" value="Your changes have been saved" />
+    <Data key="lblSeparator" value=" | " />
+    <Data key="ChkOptIns2" value="If you &lt;strong&gt;do not&lt;/strong&gt; want Tesco to send you offers and information about products and services provided by our partners, please tick this box" />
+    <Data key="ChkOptIns3" value="I do not want to be contacted for customer research purposes by" />
+    <Data key="lblConfirm" value="Confirm" />
+    <Data key="PostfixChkOptIns1" value="" />
+    <Data key="PostfixChkOptIns2" value="" />
+    <Data key="PostfixChkOptIns3" value="" />
+    <Data key="PostfixChkOptOuts1" value="" />
+    <Data key="PostfixChkOptOuts2" value="" />
+    <Data key="PostfixChkOptOuts3" value="" />
+    <Data key="PrefixChkOptIns1" value="" />
+    <Data key="PrefixChkOptIns2" value="" />
+    <Data key="PrefixChkOptIns3" value="" />
+    <Data key="PrefixChkOptOuts1" value="" />
+    <Data key="PrefixChkOptOuts2" value="" />
+    <Data key="PrefixChkOptOuts3" value="" />
+    <Data key="FooterNote" value="&lt;sup&gt;3&lt;/sup&gt; Tesco Group includes but is not limited to Tesco Groceries, Tesco Direct, Clubcard, Wine by the Case, Tesco Bank and Tesco Mobile." />
+    <Data key="lblTescoGroup" value="Tesco Group&lt;sup&gt;3&lt;/sup&gt;" /> 
+    <Data key="FooterNoteJoin" value="You can also opt out of receiving marketing communications from Tesco Group by calling Customer Services on &lt;strong&gt;0800 591 688&lt;sup&gt;1&lt;/sup&gt;&lt;/strong&gt; or &lt;strong&gt;0330 123 1688&lt;/strong&gt;&lt;sup&gt;2&lt;/sup&gt;." />
+    <Data key="OptInsDescription2ForJoin" value="Set your preferences for receiving marketing communications by email, post, SMS and telephone: " />     
+    <Data key="FooterNotePref" value="&lt;sup&gt;3&lt;/sup&gt; Tesco Stores includes Tesco groceries, Tesco direct, Clubcard and Wine by the Case." />   
+    <Data key="lblTescoStore" value=" Tesco Stores&lt;sup&gt;3&lt;/sup&gt;" />     
+    <Data key="lblDesc1" value="&lt;sup&gt;1&lt;/sup&gt; Free from BT landlines. Other providers may vary. Calls may be recorded." />
+    <Data key="lblDesc2" value="&lt;sup&gt;2&lt;/sup&gt; Charged at the local rate from mobiles and private phones." />
+    <Data key="FooterNoteLink" value="Unsubscribe from all Tesco marketing &gt;" />
+  </OptInsModel.cshtml.en-GB.resx>
+</Preferences-App_LocalResources>

@@ -1,0 +1,104 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:e5dd5c3e-afd0-4ada-90e0-70a9b864a64e</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+      <errorXml />
+      <resultXml>
+        <CustomerInformation>
+          <NewDataSet>
+            <Customer>
+              <CustomerID>904862</CustomerID>
+              <CompleteName></CompleteName>
+              <official_id>100027649</official_id>
+              <postal_code>CW9 8BX</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1979-02-27T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Caroledjfsdh</Name1>
+              <Name2>CT</Name2>
+              <Name3>CT</Name3>
+              <Sex>M</Sex>
+              <MailingAddressLine1>12 ROY</MailingAddressLine1>
+              <MailingAddressLine2>FAIRFIELD ROAD</MailingAddressLine2>
+              <MailingAddressLine3>FAIRFIELD ROAD</MailingAddressLine3>
+              <email_address>sarrah433232n@yahoo.com</email_address>
+              <mobile_phone_number>07009889876</mobile_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <JoinedStoreID>2943</JoinedStoreID>
+              <JoinRouteCode>Privilegecards</JoinRouteCode>
+              <MailingAddressPostCode>CW9 8BX</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+            </Customer>
+            <Customer>
+              <CustomerID>904862</CustomerID>
+              <CompleteName>Caroledjfsdh CT</CompleteName>
+              <official_id>0275661713</official_id>
+              <postal_code>CW9 8BX</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1928-10-06T00:00:00+01:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Caroledjfsdh</Name1>
+              <Name2>CT</Name2>
+              <Name3>Tennantdffdsf</Name3>
+              <Sex>M</Sex>
+              <MailingAddressLine1>12 ROY</MailingAddressLine1>
+              <MailingAddressLine2>FAIRFIELD ROAD</MailingAddressLine2>
+              <MailingAddressLine3>NORTHWICH</MailingAddressLine3>
+              <email_address>sarrah433232n@yahoo.com</email_address>
+              <mobile_phone_number>07009889876</mobile_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <JoinedStoreID>2943</JoinedStoreID>
+              <JoinRouteCode>Privilegecards</JoinRouteCode>
+              <MailingAddressPostCode>CW9 8BX</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+            </Customer>
+          </NewDataSet>
+          <NewDataSet>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>1</FamilyMemberSeqNo>
+              <DateOfBirth>2004-01-01T00:00:00</DateOfBirth>
+              <number_of_household_members>6</number_of_household_members>
+            </FamilyDetails>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>2</FamilyMemberSeqNo>
+              <DateOfBirth>1934-01-01T00:00:00</DateOfBirth>
+              <number_of_household_members>6</number_of_household_members>
+            </FamilyDetails>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>3</FamilyMemberSeqNo>
+              <DateOfBirth>1931-01-01T00:00:00</DateOfBirth>
+              <number_of_household_members>6</number_of_household_members>
+            </FamilyDetails>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>4</FamilyMemberSeqNo>
+              <DateOfBirth>1931-01-01T00:00:00</DateOfBirth>
+              <number_of_household_members>6</number_of_household_members>
+            </FamilyDetails>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>5</FamilyMemberSeqNo>
+              <DateOfBirth>1930-01-01T00:00:00</DateOfBirth>
+              <number_of_household_members>6</number_of_household_members>
+            </FamilyDetails>
+          </NewDataSet>
+        </CustomerInformation>
+      </resultXml>
+      <rowCount>2</rowCount>
+    </GetCustomerDetailsResponse>
+  </s:Body>
+</s:Envelope>

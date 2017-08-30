@@ -1,0 +1,1488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmCustomerDtls1Resource1.AlternateText" xml:space="preserve">
+    <value>ConfirmTH</value>
+  </data>
+  <data name="btnConfirmCustomerDtls1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfirmCustomerDtlsResource1.AlternateText" xml:space="preserve">
+    <value>ConfirmTH</value>
+  </data>
+  <data name="btnConfirmCustomerDtlsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveAddressResource1.AlternateText" xml:space="preserve">
+    <value>Save addressTH</value>
+  </data>
+  <data name="btnSaveAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDiabetic1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTeeTotal1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAssocCustStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAssocCustResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlbuildingNoStreetListWithoutStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCustomerStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCustomerStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDay0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDay1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMailStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMailStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonth0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonth1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitle0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitle1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYear0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYear1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lcladdress1Resource1.Text" xml:space="preserve">
+    <value>บ้านเลขที่</value>
+  </data>
+  <data name="lcladdress2Resource1.Text" xml:space="preserve">
+    <value>หมู่ ซอย ถนน</value>
+  </data>
+  <data name="lcladdress3Resource1.Text" xml:space="preserve">
+    <value>ตำบล/ แขวง</value>
+  </data>
+  <data name="lcladdress4Resource1.Text" xml:space="preserve">
+    <value>อำเภอ/ เขต</value>
+  </data>
+  <data name="lcladdress5Resource1.Text" xml:space="preserve">
+    <value>จังหวัด</value>
+  </data>
+  <data name="lclAddressinErrorResource1.Text" xml:space="preserve">
+    <value>ที่อยู่ไม่ถูกต้อง</value>
+  </data>
+  <data name="lcladdressResource1.Text" xml:space="preserve">
+    <value>Choose an addresTH</value>
+  </data>
+  <data name="lclaDiabeticResource1.Text" xml:space="preserve">
+    <value>DiabeticTH</value>
+  </data>
+  <data name="lclaDietaryneedsResource1.Text" xml:space="preserve">
+    <value>ข้อมูลเกียวกับการรับประทานอาหาร</value>
+  </data>
+  <data name="lclaDOBResource1.Text" xml:space="preserve">
+    <value>วันเดือนปีเกิด</value>
+  </data>
+  <data name="lclaFemaleResource1.Text" xml:space="preserve">
+    <value>เพศหญิง</value>
+  </data>
+  <data name="lclaFirstNameResource1.Text" xml:space="preserve">
+    <value>ชื่อ:</value>
+  </data>
+  <data name="lclage1Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclage2Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclage3Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclage4Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclage5Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclage6Resource1.Text" xml:space="preserve">
+    <value>อายุ</value>
+  </data>
+  <data name="lclaGenderResource1.Text" xml:space="preserve">
+    <value>เพศ</value>
+  </data>
+  <data name="lclaHalalResource1.Text" xml:space="preserve">
+    <value>Halal</value>
+  </data>
+  <data name="lclaKosherResource1.Text" xml:space="preserve">
+    <value>Kosher</value>
+  </data>
+  <data name="lclaMaleResource1.Text" xml:space="preserve">
+    <value>เพศชาย</value>
+  </data>
+  <data name="lclaMiddleInitialResource1.Text" xml:space="preserve">
+    <value>นามสกุล:</value>
+  </data>
+  <data name="lclAssociateCustomerResource1.Text" xml:space="preserve">
+    <value>ลูกค้าบัตรรอง</value>
+  </data>
+  <data name="lclassociatecustomerstatusResource1.Text" xml:space="preserve">
+    <value>ลูกค้าบัตรรอง</value>
+  </data>
+  <data name="lclaSurnameResource1.Text" xml:space="preserve">
+    <value>นามสกุล:</value>
+  </data>
+  <data name="lclaTeetotalResource1.Text" xml:space="preserve">
+    <value>TeetotalTH</value>
+  </data>
+  <data name="lclatitleResource1.Text" xml:space="preserve">
+    <value>คำนำหน้าชื่อ</value>
+  </data>
+  <data name="lclaVegetarianResource1.Text" xml:space="preserve">
+    <value>VegetaTH</value>
+  </data>
+  <data name="lclBannedResource1.Text" xml:space="preserve">
+    <value>ถูกห้าม</value>
+  </data>
+  <data name="lclcontactnoResource1.Text" xml:space="preserve">
+    <value> โทรศํพท์ที่ทำงาน:</value>
+  </data>
+  <data name="lclcusStatusResource1.Text" xml:space="preserve">
+    <value>สถานะของลูกค้า</value>
+  </data>
+  <data name="lclCustomerDetailsResource1.Text" xml:space="preserve">
+    <value>ข้อมูลลูกค้า</value>
+  </data>
+  <data name="lclDiabeticResource1.Text" xml:space="preserve">
+    <value>DiabeticTH</value>
+  </data>
+  <data name="lclDietaryNeedsResource1.Text" xml:space="preserve">
+    <value>ข้อมูลเกียวกับการรับประทานอาหาร</value>
+  </data>
+  <data name="lclDOBResource1.Text" xml:space="preserve">
+    <value>วันเดือนปีเกิด:</value>
+  </data>
+  <data name="lclDuplicateResource1.Text" xml:space="preserve">
+    <value>DuplicateTH</value>
+  </data>
+  <data name="lclEmailResource1.Text" xml:space="preserve">
+    <value>อีเมล์</value>
+  </data>
+  <data name="lclFirstNameResource1.Text" xml:space="preserve">
+    <value>ชื่อ:</value>
+  </data>
+  <data name="lclGenderResource1.Text" xml:space="preserve">
+    <value>เพศ</value>
+  </data>
+  <data name="lclHalalResource1.Text" xml:space="preserve">
+    <value>HalalTH</value>
+  </data>
+  <data name="lclHouseholddetailsResource1.Text" xml:space="preserve">
+    <value>รายละเอียดที่ใช้ในครัวเรือน</value>
+  </data>
+  <data name="lclinitialsResource1.Text" xml:space="preserve">
+    <value> นามสกุล:</value>
+  </data>
+  <data name="lclKosherResource1.Text" xml:space="preserve">
+    <value>KosherTH</value>
+  </data>
+  <data name="lcllastnameResource1.Text" xml:space="preserve">
+    <value>Last Name:TH</value>
+  </data>
+  <data name="lclleftSchemeResource1.Text" xml:space="preserve">
+    <value>ออกจากโปรแกรม</value>
+  </data>
+  <data name="lclmailstatusResource1.Text" xml:space="preserve">
+    <value>สถานะการจัดส่งจดหมาย</value>
+  </data>
+  <data name="lclMainCustomerResource1.Text" xml:space="preserve">
+    <value>ลูกค้าบัตรหลัก</value>
+  </data>
+  <data name="lclmaleResource1.Text" xml:space="preserve">
+    <value>เพศชาย</value>
+  </data>
+  <data name="lclOtherAgesResource1.Text" xml:space="preserve">
+    <value>อายุของสมาชิกท่านอื่นในครอบครัว?</value>
+  </data>
+  <data name="lclpeopleResource1.Text" xml:space="preserve">
+    <value>จำนวนสมาชิกในครอบครัว?</value>
+  </data>
+  <data name="lclPostcodeResource1.Text" xml:space="preserve">
+    <value>รหัสไปรษณีย์:</value>
+  </data>
+  <data name="lclsemailResource1.Text" xml:space="preserve">
+    <value>อีเมล์</value>
+  </data>
+  <data name="lclstatusMainCustomerResource1.Text" xml:space="preserve">
+    <value>ลูกค้าบัตรหลัก</value>
+  </data>
+  <data name="lclstatusofcustomerResource1.Text" xml:space="preserve">
+    <value> สถานะของลูกค้า</value>
+  </data>
+  <data name="lclstatusResource1.Text" xml:space="preserve">
+    <value> สถานะของลูกค้า</value>
+  </data>
+  <data name="lclSurnameResource1.Text" xml:space="preserve">
+    <value>นามสกุล:</value>
+  </data>
+  <data name="lclTeetotalaResource1.Text" xml:space="preserve">
+    <value>TeetotalTH</value>
+  </data>
+  <data name="lclTitleResource1.Text" xml:space="preserve">
+    <value>คำนำหน้าชื่อ :</value>
+  </data>
+  <data name="lclVegetarianResource1.Text" xml:space="preserve">
+    <value>VegetTH</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource45.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource46.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource47.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource48.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource49.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource49.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource50.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource50.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource51.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource51.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource52.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource52.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource53.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource53.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource54.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource54.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource55.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource55.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource56.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource56.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource57.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource57.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource58.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource58.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource59.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource59.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource60.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource60.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource61.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource61.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource62.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource62.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource63.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource63.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource64.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource64.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="Localize1Resource1.Text" xml:space="preserve">
+    <value>เพศหญิง</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Customer detailsTH</value>
+  </data>
+  <data name="radioFemale0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemale1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioHalal1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioKosher1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioMale1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioVegeterian1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssAddressErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssAddressErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssBannedErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssBannedErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssDuplicateErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssDuplicateErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssLeftErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="spnAssLeftErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountyDetailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountyDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstName1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitial1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLocalityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLocalityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname0Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurname1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTownResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckforSavingDetails" xml:space="preserve">
+    <value>ข้อมูลได้ถูกบันทึกเรียบร้อยแล้ว</value>
+  </data>
+  <data name="AgeValidationForClubCard" xml:space="preserve">
+    <value>Please note you must be over 18 to be a member of ClubcardTH</value>
+  </data>
+  <data name="AgeValidationMsg" xml:space="preserve">
+    <value>กรุณาระบุอายุระหว่าง 0 ถึง 99</value>
+  </data>
+  <data name="DOBValidation" xml:space="preserve">
+    <value>วันเกิดไม่ถูกต้อง</value>
+  </data>
+  <data name="DupEmailCheck" xml:space="preserve">
+    <value>อีเมล์นี้มีอยู่ในระบบแล้ว</value>
+  </data>
+  <data name="dupmobilevalidation" xml:space="preserve">
+    <value>เบอร์โทรนี้มีอยู่ในระบบแล้ว</value>
+  </data>
+  <data name="errMessageForAge" xml:space="preserve">
+    <value>Sorry, you have entered too many ages for the size of the household. Please check and re-enterTH.</value>
+  </data>
+  <data name="errMsgFirstName" xml:space="preserve">
+    <value>กรุณาระบุชื่อ/หรือ ชื่อที่ระบุไม่ถูกต้อง</value>
+  </data>
+  <data name="errMsgGender" xml:space="preserve">
+    <value>คุณเลือกเพศไม่ตรงกับคำนำหน้าชื่อ กรุณาแก้ไขให้ถูกต้อง</value>
+  </data>
+  <data name="errMsgMiddleName" xml:space="preserve">
+    <value>กรุณาระบุนามสกุล/หรือ นามสกุลที่ระบุไม่ถูกต้อง</value>
+  </data>
+  <data name="errMsgPostCode" xml:space="preserve">
+    <value>ไม่สามารถค้นหารหัสไปรษณีย์ที่ถูกต้องได้</value>
+  </data>
+  <data name="errMsgSurname" xml:space="preserve">
+    <value>กรุณาระบุนามสกุล/หรือ นามสกุลที่ระบุไม่ถูกต้อง</value>
+  </data>
+  <data name="ErrNumberValidationMsg" xml:space="preserve">
+    <value>กรุณาระบุตัวเลขระหว่าง 1 ถึง 99</value>
+  </data>
+  <data name="ERRorPostCodeValidation" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+  </data>
+  <data name="GenderValidationMsg" xml:space="preserve">
+    <value>คุณเลือกเพศไม่ตรงกับคำนำหน้าชื่อ กรุณาแก้ไขให้ถูกต้อง</value>
+  </data>
+  <data name="houseValidationMsg" xml:space="preserve">
+    <value>Please select your HouseTH</value>
+  </data>
+  <data name="InformationValidation" xml:space="preserve">
+    <value>กรุณาแก้ไขข้อมูลให้ถูกต้อง</value>
+  </data>
+  <data name="MobileNumberValidationMsg" xml:space="preserve">
+    <value>กรุณาแก้ไขเบอร์โทรศัพท์ที่ทำงานให้ถูกต้อง</value>
+  </data>
+  <data name="PostCodeValidation" xml:space="preserve">
+    <value>กรุณาระบุรหัสไปรษณีย์ที่ถูกต้อง</value>
+  </data>
+  <data name="ReqGenderMsg" xml:space="preserve">
+    <value>กรุณาระบุเพศ</value>
+  </data>
+  <data name="ReqGenderValidation" xml:space="preserve">
+    <value>Please select GenderTH</value>
+  </data>
+  <data name="ReqLastNameValidation" xml:space="preserve">
+    <value>กรุณาระบุนามสกุล</value>
+  </data>
+  <data name="validationOfEmail" xml:space="preserve">
+    <value>กรุณาระบุอีเมล์ที่ถูกต้อง</value>
+  </data>
+  <data name="AckForAccountExistance" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckForClubCardPresentance" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AckForNoPrimaryCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CardAddedAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DupCardAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrAckForCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidRangeCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuccPrimaryCardAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SuccSuppCatdAck" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ValidateCardNumField" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclContactMobResource1.text" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์มือถือ:</value>
+  </data>
+  <data name="LclDBValidate" xml:space="preserve">
+    <value>พบว่าคุณเป็นสมาชิกคลับการ์ดแล้ว  หากบัตรสูญหายหรือชำรุดกรุณาติดต่อศูนย์บริการคลับการ์ด 1712</value>
+  </data>
+  <data name="lcljoinroResource1.Text" xml:space="preserve">
+    <value>ช่องทางสมัครคลับการ์ด:</value>
+  </data>
+  <data name="lclProCodeResource1.Text" xml:space="preserve">
+    <value>Promotional Code TH:</value>
+  </data>
+  <data name="mobileVali" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์มือถือที่ถูกต้อง</value>
+  </data>
+  <data name="ValidateMobile" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์มือถือที่ถูกต้อง</value>
+  </data>
+  <data name="lclConAccResource1.Text" xml:space="preserve">
+    <value>Account TypeTH:</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>โทรศํพท์บ้าน</value>
+  </data>
+  <data name="lclJoinedStoreIDResource1.Text" xml:space="preserve">
+    <value>สาขาที่สมัครบัตร:</value>
+  </data>
+  <data name="EveningValid" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์บ้านที่ถูกต้อง</value>
+  </data>
+  <data name="ValidateEvening" xml:space="preserve">
+    <value>Please note Evening phone number entered is not a valid Number</value>
+  </data>
+  <data name="lclEmailStatusResource1.Text" xml:space="preserve">
+    <value>สถานะของอีเมล์</value>
+  </data>
+  <data name="lclMobileStausResource1.Text" xml:space="preserve">
+    <value>สถานะโทรศัพท์มือถือ</value>
+  </data>
+  <data name="errMsgAssocDaytimePhoneNumber" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์ที่ถูกต้อง</value>
+  </data>
+  <data name="errMsgAssocEmailAddress" xml:space="preserve">
+    <value>กรุณาระบุอีเมล์ที่ถูกต้อง</value>
+  </data>
+  <data name="errMsgAssocEveningPhoneNumber" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์ที่ถูกต้อง</value>
+  </data>
+  <data name="errMsgAssocMobileNumber" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์มือถือที่ถูกต้อง</value>
+  </data>
+  <data name="errMsgMainDaytimePhoneNumber" xml:space="preserve">
+    <value>กรุณาระบุหมายเลขโทรศัพท์ที่ถูกต้อง</value>
+  </data>
+  <data name="errMsgMainEmailAddress" xml:space="preserve">
+    <value>Please enter a valid Email Address</value>
+  </data>
+  <data name="errMsgMainEveningPhoneNumber" xml:space="preserve">
+    <value>Please enter a valid Phone Number</value>
+  </data>
+  <data name="errMsgMainMobileNumber" xml:space="preserve">
+    <value>Please enter a valid Mobile Number</value>
+  </data>
+  <data name="lclMainEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Daytime Phone Number:</value>
+  </data>
+  <data name="lclAssocContactMobResource1.Text" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์มือถือ:</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>โทรศํพท์ที่ทำงาน</value>
+  </data>
+  <data name="lclAssocEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>โทรศํพท์บ้าน</value>
+  </data>
+  <data name="lclMainContactMobResource1.Text" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์มือถือ:</value>
+  </data>
+  <data name="lclMainDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>โทรศํพท์ที่ทำงาน</value>
+  </data>
+  <data name="sadaurce" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocDaytimePhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocEmailAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocEveningPhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAssocMobileNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainDaytimePhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMainEveningPhoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclLanguageResource1.Text" xml:space="preserve">
+    <value>Preferred Language:</value>
+  </data>
+  <data name="lclPrimaryIDResource1.Text" xml:space="preserve">
+    <value>หมายเลขบัตรประชาชน:</value>
+  </data>
+  <data name="lclSecondaryIDResource1.Text" xml:space="preserve">
+    <value>Secondary ID(passport,officer number):</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource11.Text" xml:space="preserve">
+    <value>Daytime Phone  Number:</value>
+  </data>
+  <data name="lclAssocDaytimePhoneNumberResource12.Text" xml:space="preserve">
+    <value>Daytime Phone  Number:</value>
+  </data>
+  <data name="txtMainMobileNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrorMsgPrimIDLength" xml:space="preserve">
+    <value>Please enter valid Primary Id of appropriate length</value>
+  </data>
+  <data name="ErrorMsgSecIDLength" xml:space="preserve">
+    <value>Please enter valid Secondary Id of appropriate length</value>
+  </data>
+  <data name="ErrorMsgValidLanguage" xml:space="preserve">
+    <value>กรุณาเลือกภาษาที่ถูกต้อง</value>
+  </data>
+  <data name="ErrorMsgValidPrimID" xml:space="preserve">
+    <value>Please enter valid Primary Id</value>
+  </data>
+  <data name="ErrorMsgValidPrimorSecID" xml:space="preserve">
+    <value>Please enter either Primary Id or Secondary Id</value>
+  </data>
+  <data name="ErrorMsgValidRace" xml:space="preserve">
+    <value>กรุณาเลือกศาสนา</value>
+  </data>
+  <data name="ErrorMsgValidSecID" xml:space="preserve">
+    <value>Please enter valid Secondary Id</value>
+  </data>
+  <data name="lclBabyResource1.Text" xml:space="preserve">
+    <value>Baby Toddler Club </value>
+  </data>
+  <data name="lclBTResource1.Text" xml:space="preserve">
+    <value>Opt In/Out for Baby &amp; Toddler Club</value>
+  </data>
+  <data name="lclChild1DOBResource1.Text" xml:space="preserve">
+    <value>DOB/Due Date</value>
+  </data>
+  <data name="lclChild2DOBResource1.Text" xml:space="preserve">
+    <value>DOB/Due Date</value>
+  </data>
+  <data name="lclChild3DOBResource1.Text" xml:space="preserve">
+    <value>DOB/Due Date</value>
+  </data>
+  <data name="lclChild4DOBResource1.Text" xml:space="preserve">
+    <value>DOB/Due Date</value>
+  </data>
+  <data name="lclChild5DOBResource1.Text" xml:space="preserve">
+    <value>DOB/Due Date</value>
+  </data>
+  <data name="lclOptionsverifyResource1.Text" xml:space="preserve">
+    <value>Please verify Email address for the following options</value>
+  </data>
+  <data name="lclABT1Resource1.Text" xml:space="preserve">
+    <value>Opt In/Out for Baby &amp; Toddler Club</value>
+  </data>
+  <data name="lclAchild1Resource1.Text" xml:space="preserve">
+    <value>Child-1</value>
+  </data>
+  <data name="lclAchild2Resource1.Text" xml:space="preserve">
+    <value>Child-2</value>
+  </data>
+  <data name="lclAchild3Resource1.Text" xml:space="preserve">
+    <value>Child-3</value>
+  </data>
+  <data name="lclAchild4Resource1.Text" xml:space="preserve">
+    <value>Child-4</value>
+  </data>
+  <data name="lclAchild5Resource1.Text" xml:space="preserve">
+    <value>Child-5</value>
+  </data>
+  <data name="lclEmailVerifyResource1.Text" xml:space="preserve">
+    <value>Please verify Email address for the following options</value>
+  </data>
+  <data name="lcMlContactMobResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DOBValidationBabyto" xml:space="preserve">
+    <value>Please enter due date</value>
+  </data>
+  <data name="DOBValidationBabyto1" xml:space="preserve">
+    <value>Please enter a valid due date less than 9 months in DD/MM/YYYY format or remove the child entry.</value>
+  </data>
+  <data name="DOBValidationBabyToValidation" xml:space="preserve">
+    <value>Please enter a valid date of birth less than</value>
+  </data>
+  <data name="ValidAddForFindAddress" xml:space="preserve">
+    <value>กรุณาเลือกที่อยู่ หรือ ระบุบ้านเลขที่</value>
+  </data>
+  <data name="ValidForAdd1FindAdd" xml:space="preserve">
+    <value>กรุณาระบุบ้านเลขที่ที่ถูกต้อง</value>
+  </data>
+  <data name="ValidForAdd2FindAdd" xml:space="preserve">
+    <value>กรุณาระบุ หมู่, ซอย, ถนน ที่ถูกต้อง</value>
+  </data>
+  <data name="ValidForAdd3FindAdd" xml:space="preserve">
+    <value>กรุณาระบุ ตำบล/แขวง ที่ถูกต้อง</value>
+  </data>
+  <data name="ValidForAdd4FindAdd" xml:space="preserve">
+    <value>กรุณาระบุ อำเภอ/เขต ที่ถูกต้อง</value>
+  </data>
+  <data name="ValidForAdd5FindAdd" xml:space="preserve">
+    <value>กรุณาระบุ จังหวัดที่ถูกต้อง</value>
+  </data>
+  <data name="CusUseStatusActive" xml:space="preserve">
+    <value>ปกติ</value>
+  </data>
+  <data name="CusActive" xml:space="preserve">
+    <value>ปกติ</value>
+  </data>
+  <data name="CusUseStatusCardless" xml:space="preserve">
+    <value>Cardless</value>
+  </data>
+  <data name="lclpocodeResource1.Text" xml:space="preserve">
+    <value>รหัสไปรษณีย์:</value>
+  </data>
+  <data name="lclRaceResource1.Text" xml:space="preserve">
+    <value>เลือกศาสนา:</value>
+  </data>
+  <data name="CusEmailStatusDelivar" xml:space="preserve">
+    <value>สามารถจัดส่งได้</value>
+  </data>
+  <data name="CusUseStatusDUP" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="CusUseStatusFraud" xml:space="preserve">
+    <value>Possible Fraud</value>
+  </data>
+  <data name="CusUseStatusManualEntry" xml:space="preserve">
+    <value>Manual Entry</value>
+  </data>
+  <data name="CusUseStatusOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="CusUseStatusPending" xml:space="preserve">
+    <value>Pending Activation</value>
+  </data>
+  <data name="CusUseStatusProfanity" xml:space="preserve">
+    <value>Profanity Error</value>
+  </data>
+  <data name="CusUseStatusUnAgendSigned" xml:space="preserve">
+    <value>Underage and Unsigned</value>
+  </data>
+  <data name="CusUseStatusUnderage" xml:space="preserve">
+    <value>Underage</value>
+  </data>
+  <data name="CusUseStatusUnsigned" xml:space="preserve">
+    <value>Unsigned</value>
+  </data>
+  <data name="CusMstatusDelivar" xml:space="preserve">
+    <value>สามารถจัดส่งได้</value>
+  </data>
+  <data name="CusUseStstusDataRMD" xml:space="preserve">
+    <value>Data removed</value>
+  </data>
+  <data name="dataintegritysms" xml:space="preserve">
+    <value>You are opted in for SMS communication</value>
+  </data>
+  <data name="dataintegrityemail" xml:space="preserve">
+    <value>You are opted in for Email communication</value>
+  </data>
+  <data name="emailVali" xml:space="preserve">
+    <value>Email is required or not a valid email address.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ErrorMsgValidProvince" xml:space="preserve">
+    <value>Please select valid Province</value>
+  </data>
+  <data name="CusUseSelectCountry" xml:space="preserve">
+    <value>- Select province -</value>
+  </data>
+  <data name="lclAssoPrimaryIDResource1.Text" xml:space="preserve">
+    <value>หมายเลขบัตรประชาชน:</value>
+  </data>
+  <data name="lclAssoSecondaryIDResource1.Text" xml:space="preserve">
+    <value>Official Id:</value>
+  </data>
+  <data name="lclAssoRaceResource1.Text" xml:space="preserve">
+    <value>เลือกศาสนา:</value>
+  </data>
+  <data name="lcladdress6Resource1.Text" xml:space="preserve">
+    <value>ประเทศ</value>
+  </data>
+  <data name="ValidForAdd6FindAdd" xml:space="preserve">
+    <value>Please note Address Line6 is required, or the entered Address is not valid.</value>
+  </data>
+  <data name="lclBusinessTypeResource1.Text" xml:space="preserve">
+    <value>ประเภทของธุรกิจ:</value>
+  </data>
+  <data name="lclExpatResource1.Text" xml:space="preserve">
+    <value>ชาวต่างชาติ</value>
+  </data>
+  <data name="lclAssoEmailStatusResource1.Text" xml:space="preserve">
+    <value>สถานะของอีเมล์</value>
+  </data>
+  <data name="lclAssoMobileStausResource1.Text" xml:space="preserve">
+    <value>สถานะของโทรศัพท์มือ</value>
+  </data>
+    <data name="CusEmailStatusMissing" xml:space="preserve">
+    <value>ที่อยู่ไม่ครบถ้วน ไม่สามารถจัดส่งได้</value>
+  </data>
+  <data name="CusMtatusMissing" xml:space="preserve">
+    <value>ที่อยู่ไม่ครบถ้วน ไม่สามารถจัดส่งได้</value>
+  </data>
+  <data name="CusMainStatusMailable" xml:space="preserve">
+    <value>ที่อยู่ถูกต้อง</value>
+  </data>
+  <data name="CusUseStatusSkeleton" xml:space="preserve">
+    <value>ยังไม่ได้ลงทะเบียนในระบบ</value>
+  </data>
+  <data name="CusMainStatusAddinError" xml:space="preserve">
+    <value>ที่อยู่ไม่ถูกต้อง</value>
+  </data>
+  <data name="CusEmailStatusInError" xml:space="preserve">
+    <value>ข้อมูลไม่ถูกต้อง</value>
+  </data>
+  <data name="CusMstatusInerror" xml:space="preserve">
+    <value>ข้อมูลไม่ถูกต้อง</value>
+  </data>
+  <data name="CusUseStatusBanned" xml:space="preserve">
+    <value>ถูกห้าม</value>
+  </data>
+  <data name="CusUseStatusLeft" xml:space="preserve">
+    <value>ออกจากโปรแกรม</value>
+  </data>
+  <data name="CusUseStatusInactive" xml:space="preserve">
+    <value>ปัจจุบันไม่มียอดซื้อ</value>
+  </data>
+  <data name="lclBusniessDetails.Text" xml:space="preserve">
+    <value>Busniess Details</value>
+  </data>
+  <data name="lclBusinessAddress1.Text" xml:space="preserve">
+    <value>Address 1:</value>
+  </data>
+  <data name="lclBusinessAddress2.Text" xml:space="preserve">
+    <value>Address 2:</value>
+  </data>
+  <data name="lclBusinessAddress3.Text" xml:space="preserve">
+    <value>Address 3:</value>
+  </data>
+  <data name="lclBusinessAddress4.Text" xml:space="preserve">
+    <value>Address 4:</value>
+  </data>
+  <data name="lclBusinessAddress5.Text" xml:space="preserve">
+    <value>Address 5:</value>
+  </data>
+  <data name="lclBusinessAddress6.Text" xml:space="preserve">
+    <value>Address 6:</value>
+  </data>
+  <data name="CusMainStatusNonMailable" xml:space="preserve">
+    <value>ระงับการส่งจดหมาย</value>
+  </data>
+  <data name="lclBusinessTypeCobrand.Text" xml:space="preserve">
+    <value>Business Type-Cobrand:</value>
+  </data>
+  <data name="lclBusniessName.Text" xml:space="preserve">
+    <value>Busniess Name:</value>
+  </data>
+  <data name="lclBusniessRegNo.Text" xml:space="preserve">
+    <value>Business Registration No:</value>
+  </data>
+  <data name="CusUseStatusDeceased" xml:space="preserve">
+    <value>ถึงแก่กรรม</value>
+  </data>
+  <data name="lclBusinessPostcode.Text" xml:space="preserve">
+    <value>Post Code:</value>
+  </data>
+  <data name="ConfirmMsg.Text" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="lclage6Resource1.Text" xml:space="preserve">
+    <value>Person6:</value>
+  </data>
+</root>

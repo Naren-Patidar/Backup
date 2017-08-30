@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClubcardOnline.Web-App_LocalResources>
+  <Home.cshtml.hu-HU.resx>
+    <Data key="Hello" value="Üdvözöljük kedves" />
+    <Data key="lclCurrentPointResource1Text" value="Aktuális pontjaim egyenlege:" />
+    <Data key="MyAccountAddressError" value="Kérjük, győződjön meg arról, hogy személyes adatai helyesen szerepelnek-e rendszerünkben. Amennyiben adatai módosulnak, frissítse azokat oldalunkon, hogy levélben vagy e-mailen küldött utalványait és kuponjait biztosan megkapja." />
+    <Data key="MyAccountVariablePreferenceMessage" value="Kérjük, győződjön meg arról, hogy személyes adatai helyesen szerepelnek-e rendszerünkben. Amennyiben adatai módosulnak, frissítse azokat oldalunkon, hogy levélben vagy e-mailen küldött utalványait és kuponjait biztosan megkapja." />
+    <Data key="MyAccountVariableProcessingMessage" value="Kérjük, győződjön meg arról, hogy személyes adatai helyesen szerepelnek-e rendszerünkben. Amennyiben adatai módosulnak, frissítse azokat oldalunkon, hogy levélben vagy e-mailen küldött utalványait és kuponjait biztosan megkapja." />
+    <Data key="MyAddressErrorHeader" value="Please update your address" />
+    <Data key="MyMessages" value="Köszönjük, hogy nálunk vásárol!" />
+    <Data key="PageResource1Title" value="Főoldal" />
+    <Data key="lclPrintTempClubcard" value="Still waiting for your new card? Print yourself one of these and take it with you" />
+    <Data key="printClubcard" value="Temporary card" />
+    <Data key="FindOutMore1" value="Jdi na stránku" />
+    <Data key="FindOutMore2" value="Jdi na stránku" />
+    <Data key="FindOutMore3" value="Jdi na stránku" />
+    <Data key="FindOutMore4" value="Jdi na stránku" />
+    <Data key="FindOutMore5" value="Jdi na stránku" />
+    <Data key="FindOutMore6" value="Jdi na stránku" />
+    <Data key="FindOutMore7" value="Jdi na stránku" />
+    <Data key="FindOutMore8" value="Jdi na stránku" />
+    <Data key="FindOutMore9" value="Jdi na stránku" />
+    <Data key="lclStamp1ResourceText" value="My Points" />
+    <Data key="lclStamp2ResourceText" value="My Coupons" />
+    <Data key="lclStamp3ResourceText" value="My Vouchers" />
+    <Data key="lclStamp4ResourceText" value="My Latest Statement" />
+    <Data key="lclStamp5ResourceText" value="My Personal Details" />
+    <Data key="lclStamp6ResourceText" value="My Boosts at Tesco" />
+    <Data key="lclStamp7ResourceText" value="Flying Schemes" />
+    <Data key="lclStamp8ResourceText" value="Baby Club" />
+    <Data key="lclStamp9Resource1Text" value="Christmas Savers" />
+    <Data key="lclViewMyCardsText" value="See all cards used in this account" />
+    <Data key="lclViewmycardsResource1Text" value="View My Cards" />
+    <Data key="lclViewmyPersonalDetailsText" value="View and update personal details" />
+    <Data key="lclViewMyPreferencesText" value="Select your preferred contact method to receive Statement, vouchers and coupons." />
+    <Data key="lclViewStamp1DetailsResourceText" value="View your total number of points and how they&#xD;&#xA;                                                were collected" />
+    <Data key="lclViewStamp2DetailsResourceText" value="View and print your coupons" />
+    <Data key="lclViewStamp3DetailsResourceText" value="View and print your vouchers " />
+    <Data key="lclViewStamp4DetailsResourceText" value="View your latest statement" />
+    <Data key="lclViewStamp5DetailsResourceText" value="Update your account details" />
+    <Data key="lclViewStamp6DetailsResourceText" value="View and print your Boost tokens" />
+    <Data key="lclViewStamp7DetailsText" value="Opt- in to receive  your Clubcard points  with our flying scheme partners" />
+    <Data key="lclViewStamp8DetailsText" value="Join Tesco Loves Baby Club for helpful advice and great offers" />
+    <Data key="lclViewStamp9DetailsText" value="Christmas Savers lets you save up your vouchers all year" />
+    <Data key="urlBannerImage" value="" />
+    <Data key="urlStamp1" value="Points/Home" />
+    <Data key="urlStamp2" value="Coupons/Home" />
+    <Data key="urlStamp3" value="Vouchers/Home" />
+    <Data key="urlStamp4" value="MyLatestStatement/Home" />
+    <Data key="urlStamp5" value="PersonalDetails/Home" />
+    <Data key="urlStamp6" value="BoostsAtTesco/Home" />
+    <Data key="urlStamp7" value="MyAccountDetails/OptionsAndBenefits" />
+    <Data key="urlStamp8" value="OrderAReplacement/Home" />
+    <Data key="urlStamp9" value="ChristmasSaver/Home" />
+    <Data key="imgStamp1Text1" value="~/Content/images/rollover-my-points.jpg" />
+    <Data key="imgStamp2Text1" value="~/Content/images/rollover-my-coupons.jpg" />
+    <Data key="imgStamp3Text1" value="~/Content/images/rollover-my-vouchers.jpg" />
+    <Data key="imgStamp4Text1" value="~/Content/images/rollover-mls.jpg" />
+    <Data key="imgStamp5Text1" value="~/Content/images/rollover-personal-details.jpg" />
+    <Data key="imgStamp6Text1" value="~/Content/images/rollover-bat.jpg" />
+    <Data key="imgStamp7Text1" value="~/Content/images/rollover-flying-schemes.jpg" />
+    <Data key="imgStamp8Text1" value="~/Content/images/rollover-replacement.jpg" />
+    <Data key="imgStamp9Text1" value="~/Content/images/rollover-xmas-savers.jpg" />
+  </Home.cshtml.hu-HU.resx>
+  <Error.cshtml.hu-HU.resx>
+    <Data key="CorrectiveStep1_404" value="Please check the url and try again" />
+    <Data key="CorrectiveStep1_500" value="Refresh the page" />
+    <Data key="CorrectiveStep2_404" value="Please remove any mistyped words from the url" />
+    <Data key="CorrectiveStep2_500" value="Contact Customer Care" />
+    <Data key="DetailedErrorMsg404" value="Please try one of the below steps:" />
+    <Data key="DetailedErrorMsg500" value="Please try one of the below steps:" />
+    <Data key="FriendlyErrorMsg404" value="The file you are trying to access is not available or has been moved to another web address." />
+    <Data key="FriendlyErrorMsg500" value="There seems to be a problem with the server. We apologise for the inconvenience." />
+  </Error.cshtml.hu-HU.resx>
+  <_LeftNavigation.cshtml.hu-HU.resx>
+    <Data key="lclChristmasSaver" value="Christmas Savers" />
+    <Data key="lclHome" value="Home" />
+    <Data key="lclMLS" value="My Latest Statement" />
+    <Data key="lclMyAccountDetails" value="My Account Details &gt;" />
+    <Data key="lclMyContactPreference" value="My Contact Preferences" />
+    <Data key="lclMycoupons" value="My Coupons" />
+    <Data key="lclMyExchanges" value="My Boosts at Tesco" />
+    <Data key="lclMyFuelSave" value="My Fuel Savings" />
+    <Data key="lclMyPersonalDetails" value="My Personal Details" />
+    <Data key="lclMyPoints" value="My Points" />
+    <Data key="lclMyvouchers" value="My Vouchers" />
+    <Data key="lclOAR" value="Order a Replacement" />
+    <Data key="lclOptionsNBenefits" value="Options &amp; Benefits" />
+    <Data key="lclVMC" value="View My Cards" />
+  </_LeftNavigation.cshtml.hu-HU.resx>
+</ClubcardOnline.Web-App_LocalResources>

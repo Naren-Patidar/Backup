@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4706F82C-F990-47A4-9C09-7E5F20D92440}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.Framework.UITesting</RootNamespace>
+    <AssemblyName>Tesco.Framework.UITesting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\ReferenceDll\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ReferenceDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\ReferenceDll\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tesco.NGC.RestClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDll\Tesco.NGC.RestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\ReferenceDll\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\ReferenceDll\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\ReferenceDll\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Consts.cs" />
+    <Compile Include="Constants\DBConfigKeys.cs" />
+    <Compile Include="Constants\LabelKey.cs" />
+    <Compile Include="Entities\ResourceFiles.cs" />
+    <Compile Include="Constants\ValidationKey.cs" />
+    <Compile Include="Constants\WebConfigKeys.cs" />
+    <Compile Include="CountrySetting.cs" />
+    <Compile Include="CustomException\LoginException.cs" />
+    <Compile Include="Entities\Browser.cs" />
+    <Compile Include="Entities\Controls.cs" />
+    <Compile Include="Entities\DBConfiguration.cs" />
+    <Compile Include="Entities\Messages.cs" />
+    <Compile Include="Entities\AppConfiguration.cs" />
+    <Compile Include="Entities\Resource.cs" />
+    <Compile Include="Entities\Syncfifty.cs" />
+    <Compile Include="Entities\TestingData.cs" />
+    <Compile Include="Entities\TransactionDetails.cs" />
+    <Compile Include="Entities\WebConfiguration.cs" />
+    <Compile Include="Enums\ConfugurationTypeEnum.cs" />
+    <Compile Include="Enums\NameCasingEnum.cs" />
+    <Compile Include="Helpers\ControlKeys.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Helpers\CustomHelper\AutomationHelper.cs" />
+    <Compile Include="Helpers\CustomHelper\TestDataHelper.cs" />
+    <Compile Include="Helpers\EncryptionHelper.cs" />
+    <Compile Include="Helpers\Extension.cs" />
+    <Compile Include="Helpers\ScreenShotDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\AccountDetailsTestSuit.cs" />
+    <Compile Include="Test\ActivationTestSuite.cs" />
+    <Compile Include="Test\ChristmasSaverTestSuite.cs" />
+    <Compile Include="Test\Common\Activation.cs" />
+    <Compile Include="Test\Common\BoostAtTesco.cs" />
+    <Compile Include="Test\Common\ChristmasSaver.cs" />
+    <Compile Include="Test\Common\Footer.cs" />
+    <Compile Include="Test\Common\FuelSaving.cs" />
+    <Compile Include="Test\Common\Generic.cs" />
+    <Compile Include="Test\Common\Header.cs" />
+    <Compile Include="Test\Common\HomeSecurity.cs" />
+    <Compile Include="Test\Common\Join.cs" />
+    <Compile Include="Test\Common\MyContactPreference.cs" />
+    <Compile Include="Test\Common\MyCoupon.cs" />
+    <Compile Include="Test\Common\MyLatestStatement.cs" />
+    <Compile Include="Test\Common\MyPoints.cs" />
+    <Compile Include="Test\Common\MyVouchers.cs" />
+    <Compile Include="Test\Common\OptionsAndBenefits.cs" />
+    <Compile Include="Test\Common\OrderAReplacement.cs" />
+    <Compile Include="Test\Common\PersonalDetails.cs" />
+    <Compile Include="Test\Common\Stamp.cs" />
+    <Compile Include="Test\ContactPreferenceTestSuite.cs" />
+    <Compile Include="Test\BoostTestSuite.cs" />
+    <Compile Include="Test\FooterTestSuite.cs" />
+    <Compile Include="Test\FuelSaveTestSuite.cs" />
+    <Compile Include="Test\HeaderTestSuite.cs" />
+    <Compile Include="Test\HoldingPagesTestSuite.cs" />
+    <Compile Include="Test\HomeSecurityTestSuite.cs" />
+    <Compile Include="Test\HomeTestSuit.cs" />
+    <Compile Include="Test\JoinTestSuite.cs" />
+    <Compile Include="Test\MyCouponTestSuite.cs" />
+    <Compile Include="Test\MyLatestStatementTestSuite.cs" />
+    <Compile Include="Test\MyPointsTestSuite.cs" />
+    <Compile Include="Test\MyVoucherTestSuite.cs" />
+    <Compile Include="Test\Common\Base.cs" />
+    <Compile Include="Test\Common\Home.cs" />
+    <Compile Include="Test\Common\Login.cs" />
+    <Compile Include="Test\Common\MyAccountDetails.cs" />
+    <Compile Include="Test\OptionAndBenefitTestSuite.cs" />
+    <Compile Include="Test\OrderAReplacementTestSuite.cs" />
+    <Compile Include="Test\PersonalDetailsTestSuite.cs" />
+    <Compile Include="Test\TestData_MyCoupon.cs" />
+    <Compile Include="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tesco.Framework.Common.Logging\Tesco.Framework.Common.Logging.csproj">
+      <Project>{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}</Project>
+      <Name>Tesco.Framework.Common.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tesco.Framework.Common.Utilities\Tesco.Framework.Common.Utilities.csproj">
+      <Project>{3AA7DD28-4A96-4A97-8672-476A50110DE5}</Project>
+      <Name>Tesco.Framework.Common.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tesco.Framework.UITesting.Services\Tesco.Framework.UITesting.Services.csproj">
+      <Project>{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}</Project>
+      <Name>Tesco.Framework.UITesting.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

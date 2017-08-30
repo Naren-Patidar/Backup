@@ -1,0 +1,23 @@
+.ddl-search {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+
+	&:after {
+		display: none;
+		content: '\e017';
+		font-family: 'icons';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: $ddl-input-border-colour;
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	input {
+		margin-bottom: 0;
+	}
+}

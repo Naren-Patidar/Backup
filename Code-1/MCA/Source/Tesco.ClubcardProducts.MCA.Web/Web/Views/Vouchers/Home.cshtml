@@ -1,0 +1,322 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.VouchersViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@{
+    ViewBag.Title = @Html.Translate("Vouchers/Home", "VoucherPageTitle");
+    ViewBag.dtmTitle = @Html.Translate("Vouchers/Home", "VoucherPageTitle");
+    ViewBag.PageName = "Vouchers";
+}
+@section leftNavigation
+                    {
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="row">
+    <div class="gr-12">
+        @if (ViewBag.Name == "Voucher Holding Page" || (Model.voucherRewardDetailsOverallSummaryModel == null || (Model.voucherRewardDetailsOverallSummaryModel.TotalRewardIssued == 0 &&
+                Model.voucherRewardDetailsOverallSummaryModel.TotalRewardLeftOver == 0 &&
+                Model.voucherRewardDetailsOverallSummaryModel.TotalVoucherIssuedLastTwoYears == 0)) && String.IsNullOrWhiteSpace(Model.voucherRewardsMilesModel.optedForMiles))
+        {
+            <div class="copy-wrapper">
+                <h2 id="lblheader" >@Html.Translate("Vouchers/Home", "lclVoucherHeader")</h2>
+                @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/VoucherHoldingPage.html" })
+            </div>        
+            @Html.Partial("_VouchersSocial")
+        }
+        else if (((Model.vouchersUnUsedModel.totalUnusedVouchers == 0 && Model.voucherUsageSummary.Count == 0) && (Model.voucherRewardsMilesModel.totalRewardPoints == "0")) 
+					&& !String.IsNullOrWhiteSpace(Model.voucherRewardsMilesModel.optedForMiles))
+        {
+        <div class="copy-wrapper">
+                <h2 id="lblheader" >@Html.Translate("Vouchers/Home", "lclVoucherHeader")</h2>
+                @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/VoucherHoldingPage.html" })
+            </div>        
+            @Html.Partial("_VouchersSocial")
+        }
+        else
+        {
+            if (Model.voucherRewardsMilesModel.optedForMiles != null)
+            {
+                if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.AIRMILES))
+                {
+            @AviosSummary(Culture)
+            <br />
+            @Html.Partial("_VouchersAviosSummary", Model.voucherRewardsMilesModel)
+                }
+                else if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.BAMILES))
+                {
+                    @BAAviosSummary(Culture)
+            <br />
+            @Html.Partial("_VouchersAviosSummary", Model.voucherRewardsMilesModel)
+                }
+                else if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.VIRGIN))
+                {
+            @VirginSummary(Culture)
+            <br />
+            @Html.Partial("_VouchersVirginSummary", Model.voucherRewardsMilesModel)
+                }
+            }
+            else
+            {
+            <div class="copy-wrapper">
+                <h2 id="lblheader">@Html.Translate("Vouchers/Home", "lclVoucherHeader")</h2>
+                @if (Model.voucherChristmasSaverSummaryModel.isXmasClubMember)
+                {
+                    <p id="divVoucherMsg">
+                        @Html.Translate("Vouchers/Home", "lclXMasSaverSummary")
+                        @Html.Translate("Vouchers/Home", "lclXMasSaverStatement")
+                    </p>
+                }
+                else
+                {
+                    <p>@Html.Translate("Vouchers/Home", "lclViewSummary")</p>    
+                }
+            </div>
+
+                if (Model.vouchersExpired)
+                {
+            <div class="copy-wrapper">
+                <p id="redMessage" class="message-level-2 message-error">
+                    @Html.Translate("Vouchers/Home", "lclVouchersDueToExpire")
+                </p>
+            </div>
+                }
+
+                if (!Model.isDotcomCustomerIDEmpty)
+                {
+                    if (Culture.Equals(Locale.Ireland))
+                    {
+            <div class="cf">
+                <div style="background: url(../Content/images/page_icons.jpg) 0 0 no-repeat; padding-top: 0px;
+                    position: relative; top: -5px; float: left; background-position: 0 -111px;">
+                </div>
+            </div>
+                    }
+                    else
+                    {
+            <div class="cf">
+                <div style="background: url(../Content/images/Voucher_Image.jpg); width: 126px; height: 85px;
+                    top: -5px; float: left;">
+                </div>
+            </div>
+                    }
+                }
+            <div class="copy-wrapper">
+                <h2 class="ddl-h3-like">@Html.Translate("Vouchers/Home", "lclVoucherSumHeader")
+                    @if (Culture.Equals(Locale.TH))
+                    {
+                        @DateTime.Now.Year.ToString();
+                    }
+                </h2>
+            </div>
+                        
+            @Html.Partial("_VouchersRewardLeftOver", Model.voucherRewardDetailsOverallSummaryModel)              
+
+            }
+        
+            @Html.Partial("_VouchersSocial")
+
+            if (Model.vouchersUnUsedModel.voucherList != null && Model.vouchersUnUsedModel.voucherList.Count != 0)
+            { 
+            <div class="copy-wrapper">
+                <h2 class="ddl-h3-like" id="lclUnUsedVouchersHeader">@Html.Translate("Vouchers/Home", "lclUnUsedVouchersHeader")</h2>
+                @if (Model.voucherRewardsMilesModel.optedForMiles != null)
+                {
+                    if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.AIRMILES))
+                    {
+                    <p id="pavios">
+                        <a href='@Html.Translate("Vouchers/Home", "lnkVoucherAvios")' target="_blank"
+                            ><u>@Html.Translate("Vouchers/Home", "lclForgotToSpend")</u> </a>
+                    </p>
+                    <div id="divAviosMsg">
+                        <p>@Html.Translate("Vouchers/Home", "lclAutoReceiveAvios")
+                        @Html.Translate("Vouchers/Home", "lclConvertToAvios")
+                            <a href='@Html.Translate("Vouchers/Home", "lnkConvertToAvios")' target="_blank"><strong>@Html.Translate("Vouchers/Home", "lclRewardSite")</strong></a>
+                        </p>
+                    </div>
+                    }
+                    else if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.BAMILES))
+                    {
+                    <p id="pbaavios">
+                        <a href='@Html.Translate("Vouchers/Home", "lnkVoucherBAAvios")' target="_blank"
+                            ><u>@Html.Translate("Vouchers/Home", "lclDontForget")</u></a>
+                    </p>
+                    <div id="divBAAvios">
+                        <p>@Html.Translate("Vouchers/Home", "lclAutoPreviousStatement")
+                        @Html.Translate("Vouchers/Home", "lclAviosOnlineCode")
+                            <a href='@Html.Translate("Vouchers/Home", "lnkConvertToBAAvios")' target="_blank"><u>@Html.Translate("Vouchers/Home", "lclRewardSite")</u>
+                            </a>
+                        </p>
+                    </div>
+                    }
+                    else if (Model.voucherRewardsMilesModel.optedForMiles.Contains(ParameterNames.VIRGIN))
+                    {
+                    <p id="pvirgin">
+                        <a href='@Html.Translate("Vouchers/Home", "lnkVoucherVirgin")' target="_blank">
+                            <u>@Html.Translate("Vouchers/Home", "lclBeforeExpires")</u></a>
+                    </p>
+                    <div id="divVAFmsg">
+                        <p>@Html.Translate("Vouchers/Home", "lclUnspendVouchers")
+                        @Html.Translate("Vouchers/Home", "lclFlyingClubMiles")
+                            <a href='@Html.Translate("Vouchers/Home", "lnkConvertToVirgin")' target="_blank"><u>@Html.Translate("Vouchers/Home", "lclRewardSite")</u></a>
+                        </p>
+                    </div>
+                    }
+                }
+                else
+                {          
+                    <p id="pvouchermsg">@Html.Translate("Vouchers/Home", "lclCurrentUnspent")</p>
+                }
+                <p id="lclVouchersUsedOnce">@Html.Translate("Vouchers/Home", "lclVouchersUsedOnce")</p>
+                <p id="lclFoundBelow">@Html.Translate("Vouchers/Home", "lclFoundBelow")</p>
+            </div>                    
+            @Html.Partial("_VouchersUnUsed", Model.vouchersUnUsedModel)    
+            }
+
+            if (Model.voucherUsageSummary != null && Model.voucherUsageSummary.Count != 0)
+            {
+            <div class="copy-wrapper">
+                <h2 class="ddl-h4-like" id="lblUsedResource">@Html.Translate("Shared/_VouchersUsed", "lclUsedResource")</h2>
+            </div>
+                if (Model.voucherRewardDetailsOverallSummaryModel != null)
+                {       
+                 @Html.Partial("_VouchersIssued", Model.voucherRewardDetailsOverallSummaryModel)    
+                }                 
+            @Html.Partial("_VouchersUsed", Model.voucherUsageSummary) 
+            }
+            if (!Model.voucherChristmasSaverSummaryModel.isXmasClubMember && Model.voucherChristmasSaverSummaryModel.christmasSaverSummary != null)
+            {
+            <h3>@Html.Translate("Vouchers/Home", "lclXMasHeader")</h3>
+            <p id="lclXmasSummary">@Html.Translate("Vouchers/Home", "lclXmasSummary")<br /><br /></p>
+                if (Model.voucherChristmasSaverSummaryModel.christmasSaverSummary.Count != 0)
+                {
+            @Html.Partial("_VouchersChristmasSaver", Model.voucherChristmasSaverSummaryModel.christmasSaverSummary)
+                }
+            }
+        }
+    </div>
+</div>
+@helper AviosSummary(string Culture)
+    {
+    <div class="copy-wrapper">
+        <h2 id="lblheader">@Html.Translate("Vouchers/Home", "lclAviosVoucherHeader")</h2>
+        @if (Model.voucherRewardsMilesModel.optedForMiles != null && Model.voucherRewardsMilesModel.optedForMiles != string.Empty)
+        {           
+            <p class="cf airMilesDesc">
+                @Html.Translate("Vouchers/Home", "lclAutoConvertPoints")
+                @Html.Translate("Vouchers/Home", "lclAviosMiles")
+                @Html.Translate("Vouchers/Home", "lclAtRate")
+                @Model.voucherRewardsMilesModel.milesRate
+                 @Html.Translate("Vouchers/Home", "lclAvios")
+                @Html.Translate("Vouchers/Home", "lclClubPointsForEvery")
+            </p>   
+        }
+    </div>
+        if (!Model.isDotcomCustomerIDEmpty)
+        {
+            if (Culture.Equals(Locale.Ireland))
+            {
+    <div class="copy-wrapper">
+        <div class="cf">
+            <div style="background: url(../Content/images/page_icons.jpg) 0 0 no-repeat; width: 126px;
+                height: 100px; padding-top: 0px; position: relative; top: -5px; float: left;
+                background-position: -147px -318px">
+            </div>
+        </div>
+    </div>
+            }
+        }
+    <div id="divAirmilesSummary">
+        <div class="copy-wrapper">
+            <h2 class="ddl-h3-like" id="lclAviosMilesHeader">
+            </h2>
+            <p>
+                <span id="lclCollectedPointsSummary">@Html.Translate("Vouchers/Home", "lclCollectedPointsSummary")</span>
+            </p>
+        </div>
+    </div>    
+}
+@helper VirginSummary(string Culture)
+    {
+    <div class="copy-wrapper">
+        <h2 id="lblheader">@Html.Translate("Vouchers/Home", "lclVirginHeader")</h2>
+        @if (Model.voucherRewardsMilesModel.optedForMiles != null && Model.voucherRewardsMilesModel.optedForMiles != string.Empty)
+        {           
+            <p class="cf airMilesDesc">
+                @Html.Translate("Vouchers/Home", "lclAutoConvertPoints")
+                @Html.Translate("Vouchers/Home", "lclVirginMiles")
+                @Html.Translate("Vouchers/Home", "lclAtRate")
+                @Model.voucherRewardsMilesModel.milesRate
+                @Html.Translate("Vouchers/Home", "lclFlyingMiles")
+                @Html.Translate("Vouchers/Home", "lclClubPointsForEvery")
+            </p>
+        }
+    </div>
+        if (!Model.isDotcomCustomerIDEmpty)
+        {
+            if (Culture.Equals(Locale.Ireland))
+            {
+    <div class="copy-wrapper">
+        <div class="cf">
+            <div style="background: url(../Content/images/page_icons.jpg) 0 0 no-repeat; width: 126px;
+                height: 100px; padding-top: 0px; position: relative; top: -5px; float: left;
+                background-position: -270px -318px">
+            </div>
+        </div>
+    </div>
+            }
+        }
+    <div class="copy-wrapper">
+        <div class="divAirmilesSummary">
+            <div class="blueheaderbar">
+                <h2 class="ddl-h3-like" id="lclVirginMilesHeader">
+                    @Html.Translate("Vouchers/Home", "lclVirginMilesHeader")
+                    @Html.Translate("Vouchers/Home", "lclAviosSummary")
+                </h2>
+            </div>
+            <p id="lclCollectedPointsSummary" class="divMilesMessageButtom">
+                @Html.Translate("Vouchers/Home", "lclCollectedPointsSummary")
+            </p>
+        </div>
+    </div>   
+}
+@helper BAAviosSummary(string Culture)
+    {
+    <div class="copy-wrapper">
+        <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("Vouchers/Home", "lclBAAviosVoucherHeader")</h1>
+        @if (Model.voucherRewardsMilesModel.optedForMiles != null && Model.voucherRewardsMilesModel.optedForMiles != string.Empty)
+        {           
+            <p class="cf airMilesDesc">
+                @Html.Translate("Vouchers/Home", "lclAutoConvertPoints")
+                @Html.Translate("Vouchers/Home", "lclBAAviosMiles")
+                @Html.Translate("Vouchers/Home", "lclAtRate")
+                @Model.voucherRewardsMilesModel.milesRate
+                 @Html.Translate("Vouchers/Home", "lclAvios")
+                @Html.Translate("Vouchers/Home", "lclClubPointsForEvery")
+            </p>   
+        }
+    </div>
+        if (!Model.isDotcomCustomerIDEmpty)
+        {
+            if (Culture.Equals(Locale.Ireland))
+            {
+    <div class="copy-wrapper">
+        <div class="cf">
+            <div style="background: url(../Content/images/page_icons.jpg) 0 0 no-repeat; width: 126px;
+                height: 100px; padding-top: 0px; position: relative; top: -5px; float: left;
+                background-position: -147px -318px">
+            </div>
+        </div>
+    </div>
+            }
+        }
+    <div id="divAirmilesSummary">
+        <div class="copy-wrapper">
+            <h2 class="ddl-h3-like" id="lclAviosMilesHeader">
+            </h2>
+            <p>
+                <span id="lclCollectedPointsSummary">@Html.Translate("Vouchers/Home", "lclCollectedPointsSummary")</span>
+            </p>
+        </div>
+    </div>    
+}

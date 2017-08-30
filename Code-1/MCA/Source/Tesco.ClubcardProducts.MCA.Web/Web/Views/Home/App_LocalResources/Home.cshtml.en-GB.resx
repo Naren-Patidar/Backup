@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lclPrintTempClubcard" xml:space="preserve">
+    <value>Still waiting for your new card? Print yourself one of these and take it with you</value>
+  </data>
+  <data name="printClubcard" xml:space="preserve">
+    <value>Temporary card</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello </value>
+  </data>
+  <data name="imgStamp1.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-my-points.jpg</value>
+  </data>
+  <data name="imgStamp2.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-my-coupons.jpg</value>
+  </data>
+  <data name="imgStamp3.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-my-vouchers.jpg</value>
+  </data>
+  <data name="imgStamp4.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-mls.jpg</value>
+  </data>
+  <data name="imgStamp5.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-personal-details.jpg</value>
+  </data>
+  <data name="imgStamp6.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-bat.jpg</value>
+  </data>
+  <data name="imgStamp7.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-flying-schemes.jpg</value>
+  </data>
+  <data name="imgStamp8.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-replacement.jpg</value>
+  </data>
+  <data name="imgStamp9.Text" xml:space="preserve">
+    <value>~/Content/images/rollover-xmas-savers.jpg</value>
+  </data>
+  <data name="lblVouchersResource1.Text" xml:space="preserve">
+    <value>Vouchers to spend now:</value>
+  </data>
+  <data name="lclCheckResource1.Text" xml:space="preserve">
+    <value>Check and change personal information</value>
+  </data>
+  <data name="lclCurrencySymbolResource1.Text" xml:space="preserve">
+    <value>&amp;pound;</value>
+  </data>
+  <data name="lclCurrentPointResource1.Text" xml:space="preserve">
+    <value>Current points total</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="TrackStamp1.Text" xml:space="preserve">
+    <value>HOME - Points</value>
+  </data>
+  <data name="TrackStamp2.Text" xml:space="preserve">
+    <value>HOME - Coupons</value>
+  </data>
+  <data name="TrackStamp3.Text" xml:space="preserve">
+    <value>HOME - Vouchers</value>
+  </data>
+  <data name="TrackStamp4.Text" xml:space="preserve">
+    <value>HOME - Latest statement</value>
+  </data>
+  <data name="TrackStamp5.Text" xml:space="preserve">
+    <value>HOME - Personal details</value>
+  </data>
+  <data name="TrackStamp6.Text" xml:space="preserve">
+    <value>HOME - Get rewards</value>
+  </data>
+  <data name="TrackStamp7.Text" xml:space="preserve">
+    <value>HOME - Voucher schemes</value>
+  </data>
+  <data name="TrackStamp8.Text" xml:space="preserve">
+    <value>HOME - Order cards and key fobs</value>
+  </data>
+  <data name="TrackStamp9.Text" xml:space="preserve">
+    <value>HOME - Christmas Savers</value>
+  </data>
+  <data name="voucherToSpend" xml:space="preserve">
+    <value>Vouchers to spend now:</value>
+  </data>
+  <data name="FindOutMore1" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore2" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore3" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore4" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore5" xml:space="preserve">
+    <value>View details</value>
+  </data>
+  <data name="FindOutMore6" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore7" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore8" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="FindOutMore9" xml:space="preserve">
+    <value>Find out more</value>
+  </data>
+  <data name="lclStamp1Resource.Text" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="lclStamp2Resource.Text" xml:space="preserve">
+    <value>Coupons</value>
+  </data>
+  <data name="lclStamp3Resource.Text" xml:space="preserve">
+    <value>Vouchers</value>
+  </data>
+  <data name="lclStamp4Resource.Text" xml:space="preserve">
+    <value>Latest statement</value>
+  </data>
+  <data name="lclStamp5Resource.Text" xml:space="preserve">
+    <value>Personal details</value>
+  </data>
+  <data name="lclStamp6Resource.Text" xml:space="preserve">
+    <value>Spend vouchers</value>
+  </data>
+  <data name="lclStamp7Resource.Text" xml:space="preserve">
+    <value>Voucher schemes</value>
+  </data>
+  <data name="lclStamp8Resource.Text" xml:space="preserve">
+    <value>Order a new card</value>
+  </data>
+  <data name="lclStamp9Resource1.Text" xml:space="preserve">
+    <value>Christmas savers</value>
+  </data>
+  <data name="lclViewMyCards.Text" xml:space="preserve">
+    <value>See all cards used in this account</value>
+  </data>
+  <data name="lclViewmycardsResource1.Text" xml:space="preserve">
+    <value>Clubcards on account</value>
+  </data>
+  <data name="lclViewmyPersonalDetails.Text" xml:space="preserve">
+    <value>View and update personal details</value>
+  </data>
+  <data name="lclViewMyPreferences.Text" xml:space="preserve">
+    <value>Select your preferred contact method to receive Statement, vouchers and coupons.</value>
+  </data>
+  <data name="lclViewStamp1DetailsResource.Text" xml:space="preserve">
+    <value>View your total number of points and how they were collected</value>
+  </data>
+  <data name="lclViewStamp2DetailsResource.Text" xml:space="preserve">
+    <value>View and print your coupons</value>
+  </data>
+  <data name="lclViewStamp3DetailsResource.Text" xml:space="preserve">
+    <value>View and print your vouchers </value>
+  </data>
+  <data name="lclViewStamp4DetailsResource.Text" xml:space="preserve">
+    <value>View your latest statement</value>
+  </data>
+  <data name="lclViewStamp5DetailsResource.Text" xml:space="preserve">
+    <value>Update your account details</value>
+  </data>
+  <data name="lclViewStamp6DetailsResource.Text" xml:space="preserve">
+    <value>View and print your Boost tokens</value>
+  </data>
+  <data name="lclViewStamp7Details.Text" xml:space="preserve">
+    <value>Opt- in to receive  your Clubcard points  with our flying scheme partners</value>
+  </data>
+  <data name="lclViewStamp8Details.Text" xml:space="preserve">
+    <value>Need to replace your card or key fob?</value>
+  </data>
+  <data name="lclViewStamp9Details.Text" xml:space="preserve">
+    <value>Christmas Savers lets you save up your vouchers all year</value>
+  </data>
+  <data name="urlBannerImage" xml:space="preserve">
+    <value>Order cards and key fobs/Home</value>
+  </data>
+  <data name="urlStamp1" xml:space="preserve">
+    <value>Points/Home</value>
+  </data>
+  <data name="urlStamp2" xml:space="preserve">
+    <value>Coupons/Home</value>
+  </data>
+  <data name="urlStamp3" xml:space="preserve">
+    <value>Vouchers/Home</value>
+  </data>
+  <data name="urlStamp4" xml:space="preserve">
+    <value>LatestStatement/Home</value>
+  </data>
+  <data name="urlStamp5" xml:space="preserve">
+    <value>AccountManagement/PersonalDetails</value>
+  </data>
+  <data name="urlStamp6" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/spend-vouchers/</value>
+  </data>
+  <data name="urlStamp7" xml:space="preserve">
+    <value>AccountManagement/VoucherSchemes</value>
+  </data>
+  <data name="urlStamp8" xml:space="preserve">
+    <value>AccountManagement/OrderANewCard</value>
+  </data>
+  <data name="urlStamp9" xml:space="preserve">
+    <value>ChristmasSavers/Home</value>
+  </data>
+  <data name="MyAccountAddressError" xml:space="preserve">
+    <value>Please update your address details so we can send you your Clubcard statement, vouchers, and coupons.</value>
+  </data>
+  <data name="MyAccountVariablePreferenceMessage" xml:space="preserve">
+    <value>Would you like to receive your statements via email? You’ll get them faster and save paper!</value>
+  </data>
+  <data name="MyAccountVariableProcessingMessage" xml:space="preserve">
+    <value>Check back soon for your latest statement, including any new vouchers or coupons. Points earned now will be carried forward to your next statement.</value>
+  </data>
+  <data name="MyAddressErrorHeader" xml:space="preserve">
+    <value>&lt;b&gt;Please update your address&lt;/b&gt;</value>
+  </data>
+  <data name="PointsMessage" xml:space="preserve">
+    <value>&lt;b&gt;We’re processing your statement&lt;/b&gt;</value>
+  </data>
+  <data name="aviosMiles" xml:space="preserve">
+    <value>View equivalent Avios</value>
+  </data>
+  <data name="aviosMilescta" xml:space="preserve">
+    <value>View balance</value>
+  </data>
+  <data name="BAmiles" xml:space="preserve">
+    <value>View equivalent BA Avios</value>
+  </data>
+  <data name="BAmilescta" xml:space="preserve">
+    <value>View balance</value>
+  </data>
+  <data name="stdvoucher" xml:space="preserve">
+    <value>View and print your vouchers</value>
+  </data>
+  <data name="stdvouchercta" xml:space="preserve">
+    <value>Your vouchers</value>
+  </data>
+  <data name="virginMiles" xml:space="preserve">
+    <value>View equivalent Virgin Flying Club miles</value>
+  </data>
+  <data name="virginMilescta" xml:space="preserve">
+    <value>View balance</value>
+  </data>
+  <data name="xmasmiles" xml:space="preserve">
+    <value>You have saved vouchers with Christmas savers</value>
+  </data>
+  <data name="xmasmilescta" xml:space="preserve">
+    <value>View balance</value>
+  </data>
+  <data name="PreferenceMessage" xml:space="preserve">
+    <value>&lt;b&gt;Online statements&lt;/b&gt;</value>
+  </data>
+  <data name="MngCC" xml:space="preserve">
+    <value>Manage your Clubcard account, points, vouchers and coupons.</value>
+  </data>
+  <data name="TempCC" xml:space="preserve">
+    <value>Temporary Clubcard</value>
+  </data>
+</root>

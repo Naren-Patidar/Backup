@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+}
+
+<script type="text/javascript">
+    var loginURL = '@ViewBag.LoginURL';
+    if (loginURL && loginURL.length > 10) {
+        window.location.href = loginURL;
+    }
+    else {
+        window.location.href = document.location.hostname;
+    }
+
+</script>

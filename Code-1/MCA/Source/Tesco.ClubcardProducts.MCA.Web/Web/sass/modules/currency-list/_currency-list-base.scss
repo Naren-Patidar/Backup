@@ -1,0 +1,58 @@
+.ddl-currency-list {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+	overflow: hidden;
+
+	li {
+		border: 1px solid $ddl-border-color-1;
+		border-radius: 3px;
+		height: 100px;
+		margin-bottom: 10px;
+		padding: 10px 110px 10px 50px !important;
+		display: table;
+		width: 100%;
+
+		.ddl-checkbox {
+			top: 50%;
+			left: 10px;
+			margin-top: -14px;
+		}
+
+		label {
+			display: table-cell;
+			vertical-align: middle;
+			color: $ddl-black1;
+
+			strong {
+				display: block;
+				font-size: 22px;
+			}
+
+			span {
+				display: block;
+			}
+
+			 .status {
+			 	position: absolute;
+			 	top: -1px;
+			 	right: -1px;
+			 	bottom: -1px;
+				display: block;
+				width: 100px;
+				height: 100%;
+				padding: 10px;
+				background: #eee;
+				text-align: center;
+				font-size: 1.4rem;
+				font-family: 'tescobold';
+
+				&.expiring {
+					background: #ffa0a8;
+					color: #c32936;
+				}
+
+			 }
+		}
+	}
+}

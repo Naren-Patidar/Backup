@@ -1,0 +1,20 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>true</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+    <NewDataSet>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>64654958</PrimaryCustomerID>
+        <CustomerID>64654958</CustomerID>
+        <TitleEnglish>Mrs</TitleEnglish>
+        <Name1>Neeta</Name1>
+        <Name2>Ke</Name2>
+        <Name3>Kewlanii</Name3>
+        <MailingAddressLine1>3 UNICORN HOUSE</MailingAddressLine1>
+        <MailingAddressPostCode>DN21 4NE</MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+      </HouseholdCustomers>
+    </NewDataSet>
+	</resultXml>
+</GetHouseholdCustomersResponse>

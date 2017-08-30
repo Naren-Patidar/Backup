@@ -1,0 +1,64 @@
+﻿@model BoostsViewModel 
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@{
+    ViewBag.Title = @Html.Translate("BoostsAtTesco/Home", "BoostPageTitle");
+    ViewBag.dtmTitle = @Html.Translate("BoostsAtTesco/Home", "BoostPageTitle");
+    ViewBag.PageName = "BoostsAtTesco";
+    var HoldingDates = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Holding_dates];
+}
+
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="l-column padded-left" id="divforPageheader">
+    <h1 id="lblheader" class="ddl-h2-like">
+        @Html.Translate("BoostsAtTesco/Home", "lclMyExchanges")
+    </h1>
+
+    @if (!Model.isCurrenltyBCVEPeriod)
+    {
+        @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/BoostAtTescoHoldingPage.html" })
+    }
+    else if (Model.rewardAndToken.Tokens != null && Model.rewardAndToken.Rewards != null)
+    {
+        <p id="lblExchangeOn"><strong>@Html.Translate("BoostsAtTesco/Home", "lclExchangeOn")</strong></p>
+        <p id="lblManageCardDescription">@Html.Translate("BoostsAtTesco/Home", "lclManageCardDescription")</p>
+        <p id="lblManageCardDescription2">@Html.Translate("BoostsAtTesco/Home", "lclManageCardDescription2")</p>
+        <p id="lblManageCardDescription3">@Html.Translate("BoostsAtTesco/Home", "lclManageCardDescription3")
+            <a href='@Resources.ConfigLinks.ExcTescoBigExchange' target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.ExcTescoBigExchange)? "_blank" : "_self"' id="lnkExcTescoBigExchange"><u>@Html.Translate("BoostsAtTesco/Home", "lclClickHere2")</u>.</a>
+        </p>
+
+        <div id="divforrewardAndToken">
+            @if (Model.rewardAndToken.Rewards.Count > 0)
+            {                
+                @Html.Partial("_BoostOnlineTokens", Model.rewardAndToken.Rewards)  
+            }
+            @if (Model.rewardAndToken.Tokens.Count > 0)
+            {
+                @Html.Partial("_BoostInstoreTokens", Model.rewardAndToken.Tokens)  
+            }
+        </div>
+    }
+    else
+    {
+        <p id="pNovalidCodeDesc">
+            @Html.Translate("BoostsAtTesco/Home", "lclNoValidCodeDescription")
+        </p>
+        <p>
+            @Html.Translate("BoostsAtTesco/Home", "lclCVExchange")
+            <a href='@Resources.ConfigLinks.ExcTescoBigEx' id='lnkExcTescoBigEx' target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.ExcTescoBigEx)? "_blank" : "_self"'>
+                <u>@Html.Translate("BoostsAtTesco/Home", "lclClickhere")</u>.
+            </a>
+        </p>
+    }
+   </div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/coupon")
+}

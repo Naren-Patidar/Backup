@@ -1,0 +1,38 @@
+
+.ddl-banner {
+	margin-bottom: 20px;
+	clear: both;
+	overflow: hidden;
+	z-index: 2;
+	background: #c91b60;
+	position: relative;
+
+	&.category-1 {
+		background: $category-1;
+
+		.ddl-banner-inner {
+
+			h1, .ddl-h1-like, h2, .ddl-h2-like, h3, .ddl-h3-like, p {
+				color: $ddl-white1;
+			}
+		}
+	}
+
+	.ddl-banner-inner {
+		position: relative;
+		padding: 15px 60px 15px 15px;
+
+		h1, .ddl-h1-like, h2, .ddl-h2-like, h3, .ddl-h3-like, p {
+			color: $ddl-white1;
+		}
+
+		.ddl-button {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+		}
+	}
+}
+
+
+

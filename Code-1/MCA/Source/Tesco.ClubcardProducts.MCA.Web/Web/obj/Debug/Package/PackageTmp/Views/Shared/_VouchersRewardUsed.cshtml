@@ -1,0 +1,54 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.VoucherRewardDetailsOverallSummaryModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@{
+    bool isSpendOnlineDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableSpendOnline].ConfigurationValue1.TryParse<bool>();
+    bool isDecimalDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableCurrencyDecimal].ConfigurationValue1.TryParse<bool>();
+    decimal xVal = 0;
+}
+@*<dl class="paired-list standalone my-points equal">
+    <dt id="lblVoucherSpent">@Html.Translate("Shared/_Vouchers", "lclVoucherSpent")</dt>
+    <dd><span id="lblCurrSymbols">@Html.Translate("Shared/_Vouchers", "CurrencySymbol") @Model @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")</span></dd>
+</dl>*@
+<div class="row">
+    <div class="gr-12">
+        <div class="table-wrapper points-callout points-callout-tertiary ddl-icon-before ddl-icon-vouchers">
+            <table>
+                <thead class="ddl-visually-hidden">
+                    <tr>
+                        <th class="ddl-text-left">
+                            Type of vouchers
+                        </th>
+                        <th class="ddl-text-centre">
+                            Voucher value
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lblVoucherSpent"><h2>
+                            @Html.Translate("Shared/_Vouchers", "lclVoucherSpent")</h2>
+                        </td>
+                        <td class="ddl-no-wrap">
+                            @if (isDecimalDisabled)
+                            {
+                                xVal = GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.TotalRewardUsed.TryParse<string>()).TryParse<decimal>();
+
+                            }
+                            else
+                            {
+                                xVal = Model.TotalRewardUsed;
+                            }
+                            <div id="lblTotalRewardUsed" class="l-column">
+                                <span id="lblCurrSymbols">@Html.Translate("Shared/_Vouchers", "CurrencySymbol") @xVal
+                                    @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

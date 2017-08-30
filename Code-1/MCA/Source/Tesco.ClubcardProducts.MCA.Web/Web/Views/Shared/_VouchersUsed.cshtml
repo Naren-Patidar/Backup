@@ -1,0 +1,75 @@
+﻿@model List<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Vouchers.VoucherUsageSummary>
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+
+@{ 
+    bool isDecimalDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableCurrencyDecimal].ConfigurationValue1.TryParse<bool>();
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisplayDateFormat].ConfigurationValue1.TryParse<string>();
+}
+
+
+ <div class="copy-wrapper"> 
+<p id="lblBrkDwnResource">@Html.Translate("Shared/_VouchersUsed", "lclBrkDwnResource")</p>
+</div>
+@*<div class="table-wrapper" id="div_VoucherUsed">*@
+    <div class="table-wrapper table-bordered" id="div_Vouchersused">
+        <table>
+            <thead>
+                <tr>
+                    <th id="lblStmtIssuedResource">@Html.Translate("Shared/_VouchersUsed", "lclStmtIssuedResource")</th>                   
+                    <th id="lblWhnUsedResource">@Html.Translate("Shared/_VouchersUsed", "lclWhnUsedResource")</th>
+                    <th id="lblWhrUsedResource">@Html.Translate("Shared/_VouchersUsed", "lclWhrUsedResource")</th>
+                    <th id="lblAnyAddInfoResource">@Html.Translate("Shared/_VouchersUsed", "lclAnyAddInfoResource")</th>
+                     <th id="lblVleResource">@Html.Translate("Shared/_VouchersUsed", "lclVleResource")</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var voucher in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (voucher.PeriodName != null)
+                            {
+                                voucher.PeriodName = GeneralUtility.GetGroupMonthName(voucher.PeriodName);
+                                @voucher.PeriodName
+                            }
+                        </td>                       
+                        <td  id="lblVoucherWenUsed">
+                            @if (voucher.WhenUsed != null)
+                            {
+                                DateTime dt;
+                                voucher.WhenUsed.TryParseDate(out dt);
+                                @Convert.ToDateTime(dt).ToString(dateFormat,System.Globalization.CultureInfo.InvariantCulture);
+                            }
+                        </td>
+                        <td  id="lblVoucherWhrUsed">
+                            @if (voucher.WhereUsed != null)
+                            { 
+                                @voucher.WhereUsed.Trim().ToUpper()
+                            }
+                        </td>
+                        <td  id="lblVoucherAddInfo">@voucher.AdditionalInfo</td>
+                         <td  id="lblVoucherValue" data-mobileheader="Value">
+                            @if (voucher.Value != null)
+                            {
+                                if (isDecimalDisabled)
+                                {
+                                 @Html.Translate("Shared/_Vouchers", "CurrencySymbol") @GeneralUtility.GetDecimalTrimmedCurrencyVal(voucher.Value.ToString())
+                                 @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")
+                            
+                                }
+                                else
+                                { 
+                                    @Html.Translate("Shared/_Vouchers", "CurrencySymbol") @voucher.Value @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")
+                                }
+                            }
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+        </table>
+    </div>
+@*</div>*@

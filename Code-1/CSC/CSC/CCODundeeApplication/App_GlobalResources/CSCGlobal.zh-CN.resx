@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errAddFromCardRange" xml:space="preserve">
+    <value>请从卡号段里选择输入</value>
+  </data>
+  <data name="errAddLength" xml:space="preserve">
+    <value>请输入有效卡长度</value>
+  </data>
+  <data name="errAddName" xml:space="preserve">
+    <value>请输入卡类型名称</value>
+  </data>
+  <data name="errAddToCardRange" xml:space="preserve">
+    <value>请从卡号段里选择输入</value>
+  </data>
+  <data name="errMsgGroupName" xml:space="preserve">
+    <value>请输入组名称</value>
+  </data>
+  <data name="errMsgUserName" xml:space="preserve">
+    <value>请输入有效用户名进行验证</value>
+  </data>
+  <data name="errMsgvalid" xml:space="preserve">
+    <value>请输入有效卡类型</value>
+  </data>
+  <data name="errMsgvalidCardRange" xml:space="preserve">
+    <value>请输入有效卡号段</value>
+  </data>
+  <data name="errMsgvalidDes" xml:space="preserve">
+    <value>请输入有效描述</value>
+  </data>
+  <data name="ValidGrpMsg" xml:space="preserve">
+    <value>请输入有效组名</value>
+  </data>
+  <data name="errMsgEditAddLimit" xml:space="preserve">
+    <value>清输入一个数字值</value>
+  </data>
+  <data name="errMsgEditGroupName" xml:space="preserve">
+    <value>请输入组名称</value>
+  </data>
+  <data name="errMsgEditSubLimit" xml:space="preserve">
+    <value>清输入一个数字值</value>
+  </data>
+  <data name="errMsgEditvalid" xml:space="preserve">
+    <value>请输入有效字符串</value>
+  </data>
+  <data name="errMsgStoreName" xml:space="preserve">
+    <value>请输入有效门店名称</value>
+  </data>
+  <data name="errMsgTescoStore" xml:space="preserve">
+    <value>请输入有效门店店号</value>
+  </data>
+  <data name="errMsgWelcomePoints" xml:space="preserve">
+    <value>请输入有效欢迎积分</value>
+  </data>
+  <data name="lnkFindUser" xml:space="preserve">
+    <value>查找用户</value>
+  </data>
+  <data name="lnkAdmin" xml:space="preserve">
+    <value>系统管理</value>
+  </data>
+  <data name="lnkCustomerCards" xml:space="preserve">
+    <value>顾客卡</value>
+  </data>
+  <data name="lnkCustomerDtl" xml:space="preserve">
+    <value>顾客详细信息</value>
+  </data>
+  <data name="lnkCustomerPts" xml:space="preserve">
+    <value>顾客积分</value>
+  </data>
+  <data name="lnkFindCustomer" xml:space="preserve">
+    <value>查找顾客</value>
+  </data>
+  <data name="lnkJoin" xml:space="preserve">
+    <value>创建新客户</value>
+  </data>
+  <data name="lnkViewPoints" xml:space="preserve">
+    <value>查看积分</value>
+  </data>
+  <data name="lnkXmasSaver" xml:space="preserve">
+    <value>圣诞储户</value>
+  </data>
+  <data name="lnkAddGroup" xml:space="preserve">
+    <value>新增 组</value>
+  </data>
+  <data name="lnkAddinError" xml:space="preserve">
+    <value>地址错误</value>
+  </data>
+  <data name="lnkAddUser" xml:space="preserve">
+    <value>新增用户</value>
+  </data>
+  <data name="lnkBanned" xml:space="preserve">
+    <value>禁用的</value>
+  </data>
+  <data name="lnkCardNo" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="lnkCardRange" xml:space="preserve">
+    <value>卡序列</value>
+  </data>
+  <data name="lnkCardType" xml:space="preserve">
+    <value>卡类型</value>
+  </data>
+  <data name="lnkCHousehold" xml:space="preserve">
+    <value>住户代码</value>
+  </data>
+  <data name="lnkCurrPoints" xml:space="preserve">
+    <value>目前点数:</value>
+  </data>
+  <data name="lnkCustType" xml:space="preserve">
+    <value>顾客类型</value>
+  </data>
+  <data name="lnkDuplicate" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="lnkFindGroup" xml:space="preserve">
+    <value>查找组</value>
+  </data>
+  <data name="lnkGroups" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="lnkJoinDate" xml:space="preserve">
+    <value>入会日期</value>
+  </data>
+  <data name="lnkLastUpdateBy" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="lnkLeftScheme" xml:space="preserve">
+    <value>离开（会员）体制</value>
+  </data>
+  <data name="lnkName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="lnkresetpass" xml:space="preserve">
+    <value>重新设置密码</value>
+  </data>
+  <data name="lnkStores" xml:space="preserve">
+    <value>门店</value>
+  </data>
+  <data name="lnkUpdateDate" xml:space="preserve">
+    <value>最近更新日期</value>
+  </data>
+  <data name="lnkUsers" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="lnkCustomerPref" xml:space="preserve">
+    <value>顾客喜好</value>
+  </data>
+  <data name="lblScreenMenu" xml:space="preserve">
+    <value>屏幕菜单</value>
+  </data>
+  <data name="AlertforPrimaryCard" xml:space="preserve">
+    <value>主卡更新成功</value>
+  </data>
+  <data name="AlertMsg1" xml:space="preserve">
+    <value>您的卡已被成功冻结，已不能参与兑换!!.</value>
+  </data>
+  <data name="AlertMsg2" xml:space="preserve">
+    <value>您的会员卡状态已更改成功.</value>
+  </data>
+  <data name="errMsgCardNo" xml:space="preserve">
+    <value>清输入一个数字值</value>
+  </data>
+  <data name="errMsgEmailAddress" xml:space="preserve">
+    <value>请输入一个有效的电子邮箱地址</value>
+  </data>
+  <data name="errMsgName" xml:space="preserve">
+    <value>请输入一个有效的姓名</value>
+  </data>
+  <data name="errMsgSurname" xml:space="preserve">
+    <value>Surname must be atleast 2 letters long</value>
+  </data>
+  <data name="CollectionPeriod" xml:space="preserve">
+    <value>请选择您希望查看的积分周期</value>
+  </data>
+  <data name="ValidateReqFields" xml:space="preserve">
+    <value>清输入一个数字值</value>
+  </data>
+  <data name="ConfirmationStatus" xml:space="preserve">
+    <value>确认更新卡状态</value>
+  </data>
+  <data name="validTitleMsg" xml:space="preserve">
+    <value>请选择头衔</value>
+  </data>
+  <data name="ReqReasion" xml:space="preserve">
+    <value>请选择请求原因</value>
+  </data>
+  <data name="ReqTypeandReasion" xml:space="preserve">
+    <value>请选择请求类型和请求原因</value>
+  </data>
+  <data name="ReqType" xml:space="preserve">
+    <value>请选择请求类型</value>
+  </data>
+  <data name="CardOption" xml:space="preserve">
+    <value>补发新卡</value>
+  </data>
+  <data name="CusSaved" xml:space="preserve">
+    <value>顾客已保存</value>
+  </data>
+  <data name="FarNove" xml:space="preserve">
+    <value>到目前为止的十一月份</value>
+  </data>
+  <data name="stmt" xml:space="preserve">
+    <value>对帐单</value>
+  </data>
+  <data name="ValidateNumValue" xml:space="preserve">
+    <value>清输入一个数字值</value>
+  </data>
+  <data name="errMsgAge" xml:space="preserve">
+    <value>顾客必须年满18岁才能申请会员卡</value>
+  </data>
+  <data name="errMsgEmail" xml:space="preserve">
+    <value>请输入一个有效的电子邮箱地址</value>
+  </data>
+  <data name="errMsgPhone" xml:space="preserve">
+    <value>请输入有效座机号码</value>
+  </data>
+  <data name="errMsgPostCode" xml:space="preserve">
+    <value>请输入有效邮编</value>
+  </data>
+  <data name="lclbeContacted" xml:space="preserve">
+    <value>- 特别邀请参加与我们团队的讨论.</value>
+  </data>
+  <data name="lclHbeContacted" xml:space="preserve">
+    <value>顾客调查报表</value>
+  </data>
+  <data name="lclHreceiveTesco" xml:space="preserve">
+    <value>Program emails</value>
+  </data>
+  <data name="lclHreceiveTescoPartners" xml:space="preserve">
+    <value>提醒邮件</value>
+  </data>
+  <data name="lclreceiveTesco" xml:space="preserve">
+    <value>- 包含会员卡最新消息，会员积点奖励券，独家优惠和每周特价</value>
+  </data>
+  <data name="lclreceiveTescoPartners" xml:space="preserve">
+    <value>-提供关于您会员帐户的重要信息</value>
+  </data>
+  <data name="lnkDelink" xml:space="preserve">
+    <value>解除帐户</value>
+  </data>
+  <data name="lnkCustomerCoupons" xml:space="preserve">
+    <value>顾客优惠券</value>
+  </data>
+  <data name="lnkCustomerCoupons1" xml:space="preserve">
+    <value>顾客优惠券</value>
+  </data>
+  <data name="lnkAccounts" xml:space="preserve">
+    <value>账户和营运报表</value>
+  </data>
+  <data name="lnkPoints" xml:space="preserve">
+    <value>一周期内获得的积分</value>
+  </data>
+  <data name="lnkPromotional" xml:space="preserve">
+    <value>促销代码报表</value>
+  </data>
+  <data name="lnkReports" xml:space="preserve">
+    <value>报表</value>
+  </data>
+  <data name="EnddategreaterthanTodaydate" xml:space="preserve">
+    <value>结束日期需晚于今日.</value>
+  </data>
+  <data name="EnddateshouldbegreaterthanStartdate" xml:space="preserve">
+    <value>结束日期需晚于开始日期.</value>
+  </data>
+  <data name="InvalidEnddate" xml:space="preserve">
+    <value>无效结束日期</value>
+  </data>
+  <data name="InvalidPeriod" xml:space="preserve">
+    <value>无效周期</value>
+  </data>
+  <data name="InvalidStartdate" xml:space="preserve">
+    <value>无效开始日期</value>
+  </data>
+  <data name="InvalidWeek" xml:space="preserve">
+    <value>无效周数</value>
+  </data>
+  <data name="StartdateshouldnotbegreaterthanTodaydate" xml:space="preserve">
+    <value>开始日期需晚于今天</value>
+  </data>
+  <data name="Datediffindays" xml:space="preserve">
+    <value>日期差值不应超过42天.</value>
+  </data>
+  <data name="lnkDataConfig" xml:space="preserve">
+    <value>数据配置</value>
+  </data>
+  <data name="lnkpromotion" xml:space="preserve">
+    <value>促销代码</value>
+  </data>
+  <data name="ValidDomain" xml:space="preserve">
+    <value>请选择区域</value>
+  </data>
+  <data name="ValidPwd" xml:space="preserve">
+    <value>请输入密码</value>
+  </data>
+  <data name="ValidUsername" xml:space="preserve">
+    <value>请输入用户名</value>
+  </data>
+</root>

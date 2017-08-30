@@ -1,0 +1,40 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+      <resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>27557697</CustomerID>
+            <ClubcardID>634004024126368309</ClubcardID>
+            <CardIssuedDate>2007-08-20T00:00:00+01:00</CardIssuedDate>
+            <TitleEnglish>Miss</TitleEnglish>
+            <Name1>KATHLEEN            </Name1>
+            <Name2>H </Name2>
+            <Name3>MCALLISTER               </Name3>
+            <MailingAddressLine1>709 BOYDSTONE ROAD            </MailingAddressLine1>
+            <MailingAddressLine2>THORNLIEBANK                  </MailingAddressLine2>
+            <MailingAddressLine3>GLASGOW                       </MailingAddressLine3>
+            <MailingAddressLine4>LANARKSHIRE                   </MailingAddressLine4>
+            <MailingAddressLine5 xml:space="preserve">                    </MailingAddressLine5>
+            <MailingAddressPostCode>G46 8LD  </MailingAddressPostCode>
+            <DateOfBirth>1901-01-01T00:00:00+00:00</DateOfBirth>
+            <CurrentPointsBalanceQty>7110</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>1730</PreviousPointsBalanceQty>
+            <JoinedDate>1995-01-28T00:00:00+00:00</JoinedDate>
+            <HouseHoldID>26792924</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+      </resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

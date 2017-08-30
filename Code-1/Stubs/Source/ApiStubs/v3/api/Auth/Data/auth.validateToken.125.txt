@@ -1,0 +1,11 @@
+{
+       "UserId":"trn:tesco:uid:uuid:9FF11D02-FB9C-4500-8801-F2091F9BCE77",
+       "Status":"INVALID",
+       "Claims":[
+                  {"claimType":"http://schemas.tesco.com/ws/2011/12/identity/claims/clientid","value":"trn:tesco:cid:190d5cba-3581-4270-9b44-676d6efbebbb"},
+          {"claimType":"http://schemas.tesco.com/ws/2011/12/identity/claims/scope","value":"oob"},
+          {"claimType":"http://schemas.tesco.com/ws/2011/12/identity/claims/userkey","value":"trn:tesco:uid:uuid:9FF11D02-FB9C-4500-8801-F2091F9BCE77"},
+	  {"claimType":"http://schemas.tesco.com/ws/2011/12/identity/claims/clubcardUUID","value":"trn:tesco:uid:uuid:9FF11D02-FB9C-4500-8801-F2091F9BCE77"},
+          {"claimType":"http://schemas.tesco.com/ws/2011/12/identity/claims/confidencelevel","value":"12"},
+          {"claimType":"http://schemas.microsoft.com/ws/2008/06/identity/claims/expiration","value":"1422287324"}
+]}

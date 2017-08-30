@@ -1,0 +1,222 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.VouchersUnUsedModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using System.Globalization
+@{
+    string isDecimalDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableCurrencyDecimal].ConfigurationValue1.TryParse<string>();
+    string isAlphaCodeRequired = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.IsAlphaCodeRequired].ConfigurationValue1.TryParse<string>();
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisplayDateFormat].ConfigurationValue1.TryParse<string>();
+    bool DisableSpendOnline = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableSpendOnline].ConfigurationValue1.TryParse<bool>();
+}
+@using (Html.BeginForm("Home", "Vouchers", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+@* <div class="table-wrapper" id="div_unusedVouchers">*@
+
+    if (Model.error)
+    {
+    <div class="copy-wrapper">
+        <p id="pnlVouchernotSelected" class="message-level-2 message-error">
+            @Html.ValidationMessage("VoucherNotSelected")</p>
+    </div>
+    }
+   @* <div class="row">*@
+        <div data-selectallwrapper="this">
+            <div class="coupon-list-utility">
+                <div class="row">
+                    <div class="gr-12 gr-8@small">
+                        <div class="ddl-form-field ddl-checkbox">
+                            <span class="ddl-checkbox">
+                                <input id="selAllVoucher" type="checkbox" name="checkbox-input24r4" 
+                                    data-selectalltrigger="this" class="selectall" onclick="javascript:SelectAllVoucher();" />
+                                <em></em></span>                            
+                            <label for="checkbox-input24r4" class="ddl-label" id="lblSelectAllVouchers">@Html.Translate("Shared/_Vouchers", "lclSelectAllVouchers")</label>
+                        </div>
+                    </div>
+                    <div class="gr-12 gr-4@small">                       
+                        <input class="ddl-button" type="submit" value="@Html.Translate("btnPrintCCResource")" id="btnPrintVoucher" onclick="return TrackGAEvent('Voucher Downloads')"/>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrapper table-bordered" id="div_UnusedVoucherSummary" data-selectall="this">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="lblStatementIssued">@Html.Translate("Shared/_Vouchers", "lclStatementIssued")
+                            </th>                            
+                            @if (isAlphaCodeRequired.Equals("1"))
+                            {
+
+                                <th id="lblOnlineCode">@Html.Translate("Shared/_Vouchers", "lclOnlineCode")
+                                </th>
+                            }
+                            <th id="lblExpirydate">@Html.Translate("Shared/_Vouchers", "lclExpirydate")
+                            </th>
+                            <th id="lblVoucherValue">@Html.Translate("Shared/_Vouchers", "lclVoucherValue")
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>                            
+                            <td id="lblTotal">@Html.Translate("Shared/_Vouchers", "lclTotal")
+                            </td>
+                            <td>
+                              
+                            </td>
+                            <td>
+                            </td>
+                            @if (Model.totalUnusedVouchers != null)
+                            {
+                                if (isDecimalDisabled.ToLower() == "true")
+                                {
+                                    Model.totalUnusedVouchers = GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.totalUnusedVouchers.ToString()).TryParse<decimal>();
+                                }
+
+                                <td id="ltrtotalUnusedVouchers">@Html.Translate("Shared/_Vouchers", "CurrencySymbol")
+                                    @Model.totalUnusedVouchers.ToString()
+                                    @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")
+                                </td>
+                            }
+                            else
+                            { 
+                            <td>
+                            </td>
+                            }
+                            
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @for (int i = 0; i < Model.voucherList.Count; i++)
+                        {
+                           
+                            <tr>
+                                @*   <td class="text-centre" id="lblVouchersSelected">@Html.CheckBoxFor(v => v.voucherList[i].Selected,
+                                                                    new Dictionary<string, object> {
+                                                                    { "onclick", "OnCheckVoucher_Change.call(this)"},
+                                                                    { "class", "selectVoucher"}
+                                                                    })
+                            </td>*@
+                                @if (Model.voucherList[i].PeriodName != null)
+                                {
+                                    Model.voucherList[i].PeriodName = GeneralUtility.GetGroupMonthName(Model.voucherList[i].PeriodName);
+
+                                    <td id="lblVouchersPeriodName" class="ddl-table-checkbox">
+                                        <span class="ddl-checkbox">
+                                            @Html.CheckBoxFor(v => v.voucherList[i].Selected,
+                                                                    new Dictionary<string, object> {
+                                                                    { "onclick", "OnCheckVoucher_Change.call(this)"},
+                                                                     { "class", "selectVoucher"}
+                                                                    
+                                                                    })
+                                            <em></em></span>
+                                        <label class="ddl-label">
+                                            @Model.voucherList[i].PeriodName</label>
+                                    </td>
+                                }
+                              
+                                @if (isAlphaCodeRequired.Equals("1"))
+                                {
+                                    <td id="lblVoucherslist">@Model.voucherList[i].AlphaCode
+                                    </td>
+                                }
+                                <td  id="lblVouchersExpirydate" data-mobileheader='@Html.Translate("Shared/_Vouchers", "lclExpirydate")'>@Convert.ToDateTime(Model.voucherList[i].ExpiryDate).ToString(dateFormat, CultureInfo.InvariantCulture)
+                                 @Html.HiddenFor(v => v.voucherList[i].VNumberEncr)
+                                </td>
+                               @if (Model.voucherList[i].Value != null)
+                                {
+                                    if (isDecimalDisabled.ToLower() == "true")
+                                    {
+                                        Model.voucherList[i].Value = GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.voucherList[i].Value);
+                                    }
+                        
+                                    <td id="lblVoucherlists" data-mobileheader="Value">@Html.Translate("Shared/_Vouchers", "CurrencySymbol")
+                                        @Model.voucherList[i].Value
+                                        @Html.Translate("Shared/_Vouchers", "CurrencyAlphaSymbol")
+                                    </td>
+                                }
+                            </tr>                      
+                        }
+                    </tbody>
+                </table>               
+            </div>
+        </div>
+   @* </div>*@
+
+    
+    <div class="row">
+        <div class="gr-12 gr-6@small">
+            <h2 class="ddl-h4-like" id="lblPrintVouchers">@Html.Translate("lclPrintVoucherResource")</h2>
+            <ol class="ddl-numbered-steps">
+                <li id="liSelectVouchers">@Html.Translate("lclSelectVoucherResource")</li>
+                <li id="liClickPrint">@Html.Translate("lclClickPrintResource")</li>
+                <li id="liPrintvouchers">@Html.Translate("lclPrintResource")</li>
+            </ol>
+        </div>
+        <div class="gr-12 gr-6@small">
+            @if (!DisableSpendOnline)
+            {
+        
+                <h2 class="ddl-h4-like" id="lblAspent">@Html.Translate("lclAspentResource")</h2>
+@*   <p  id="lblDotcom">@Html.Translate("lclDotcomResource")</p>*@
+                <ol class="ddl-numbered-steps">
+                    <li id="licpyVoucherCode">@Html.Translate("lclcpyVoucherCodeResource")</li>
+                    <li id="liCheckout">@Html.Translate("lclCheckoutResource")</li>
+                </ol>
+       
+            }
+        </div>
+        <div class="gr-12">
+            <div class="copy-wrapper">
+            <h2 class="ddl-h4-like" id="lclPrintingTips">@Html.Translate("Vouchers/Home", "lclPrintingTips")</h2>
+                <p id="lblVoucherTill">
+                    @Html.Translate("lclTillResource")</p>
+                <p id="lblRedemVouchers">@Html.Translate("lclRedemVoucherResource")</p>
+                <p id="lblVouchersExpDate">@Html.Translate("lclExpDateResource")</p>
+            </div>
+        </div>
+    </div>
+}
+<script type="text/javascript">
+    function SelectAllVoucher() {
+        var inputs = document.getElementsByTagName("input");
+        var isAllVoucherChkd = false;
+
+
+        $('#pnlVouchernotSelected').hide();
+
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type == "checkbox") {
+                if (inputs[i].checked == true && inputs[i].id == "selAllVoucher") {
+                    isAllVoucherChkd = true;
+                }
+
+                if (isAllVoucherChkd) {
+                    inputs[i].checked = true;
+                }
+                else {
+                    inputs[i].checked = false;
+                }
+            }
+        }
+    }
+
+    function OnCheckVoucher_Change() {
+
+        if ($(this).is(":checked")) {
+            $('#pnlVouchernotSelected').hide();
+        };
+    $('#selAllVoucher').prop('checked', $('.selectVoucher:checked').length == $('.selectVoucher').length);
+    }
+
+
+
+    function TrackGAEvent(ClickEvent) {
+        if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+            _gaq.push(['_trackEvent', 'Voucher', 'Click', ClickEvent]);
+        }
+    } 
+</script>

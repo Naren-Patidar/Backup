@@ -1,0 +1,22 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/IsNewOrderReplacementValidResponse</a:Action>
+    <a:RelatesTo>urn:uuid:a2c97f04-41bb-47d9-8bd9-b9935c345b37</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <IsNewOrderReplacementValidResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <IsNewOrderReplacementValidResult>true</IsNewOrderReplacementValidResult>
+      <errorXml />
+      <resultXml>
+        <OrderReplacement>
+          <countOrdersPlacedInYear>0</countOrdersPlacedInYear>
+          <noOfDaysLeftToProcess>14</noOfDaysLeftToProcess>
+          <ClubcardTypeIndicatior></ClubcardTypeIndicatior>
+          <standardCardNumber>634009507000000003</standardCardNumber>
+          <oldOrderExists>0</oldOrderExists>
+        </OrderReplacement>
+      </resultXml>
+      <rowCount>1</rowCount>
+    </IsNewOrderReplacementValidResponse>
+  </s:Body>
+</s:Envelope>

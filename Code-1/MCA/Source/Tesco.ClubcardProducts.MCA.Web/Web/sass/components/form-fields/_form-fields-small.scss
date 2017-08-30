@@ -1,0 +1,29 @@
+.ddl-form-field {
+	display: inline-block;
+	width: 480px;
+
+	&.ddl-form-field-small {
+
+		input, .ddl-select, textarea {
+			width: 102px;
+		}
+	}
+
+	&.ddl-form-field-medium {
+
+		input, .ddl-select, textarea {
+			width: 228px;
+		}
+	}
+
+	&.ddl-form-field-large {
+
+		input, .ddl-select, textarea {
+			width: 354px;
+		}
+	}
+}
+
+.ddl-inline-fieldset {
+	max-width: 480px;
+}

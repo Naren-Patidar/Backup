@@ -1,0 +1,84 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.XmasSaverSummaryViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+<div class="table-wrapper table-bordered">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    &nbsp;
+                </th>
+                <th class="ddl-text-right">
+                    <span id="lclSummaryVlaue">@Html.Translate("Shared/_XmasSaver", "Value")</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span id="lclClubcardVoucherSoFar">@Html.Translate("Shared/_XmasSaver", "ClubcardVoucherSoFar")</span>
+                </td>
+                <td class="ddl-text-right" data-mobileheader="Value">
+                    <span id="spnClubcardVouchersSavedSofar">@Html.Translate("Shared/_XmasSaver", "Currency")
+                        @Model.clubcardVouchersSavedSofar @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="lclTopUpVouchersSoFar">@Html.Translate("Shared/_XmasSaver", "TopUpVouchersSoFar")</span>
+                </td>
+                <td class="ddl-text-right" data-mobileheader="Value">
+                    <span id="spnToppedupVouchersSavedSofar">@Html.Translate("Shared/_XmasSaver", "Currency")
+                        @Model.toppedupVouchersSavedSofar @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                </td>
+            </tr>
+            @if (Model.displayBonusVocuherRow)
+            {
+                <tr>
+                    <td>
+                        <span id="lclBonusVoucherSoFar">@Html.Translate("Shared/_XmasSaver", "BonusVoucherSoFar")</span>
+                    </td>
+                    <td class="ddl-text-right" data-mobileheader="Value">
+                        <span id="spnBonusVouchersSavedSofar">@Html.Translate("Shared/_XmasSaver", "Currency")
+                            @Model.bonusVouchersSavedSofar @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <span id="lclTotalSavingsSoFar">@Html.Translate("Shared/_XmasSaver", "TotalSavingsSoFar")</span>
+                </td>
+                <td>
+                    <span id="spnTotalVouchersSavedSofar">@Html.Translate("Shared/_XmasSaver", "Currency")
+                        @Model.totalVouchersSavedSofar @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+@if (Model.displayCongratesMsgForMaxBonus)
+{
+    <div class="copy-wrapper">
+        <p id="pXmasSaversDesc">
+            <strong>@Html.Translate("Shared/_XmasSaver", "Congratulation") </strong>@Html.Translate("Shared/_XmasSaver", "YouHaveSavedEnough")
+            @Html.Translate("Shared/_XmasSaver", "Currency")@Model.CongratsSectionValues.recievedBonusVocuher
+            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+            @Html.Translate("Shared/_XmasSaver", "BonusVoucherInStatmnt")</p>
+    </div> 
+}
+@if (Model.displayCongratesMsgForMinBonus)
+{
+    <div class="copy-wrapper">
+        <p  id="dvYetToSaveMsg">
+            <strong>@Html.Translate("Shared/_XmasSaver", "Congratulation")</strong> @Html.Translate("Shared/_XmasSaver", "YouHaveSavedEnough")
+            @Html.Translate("Shared/_XmasSaver", "Currency")@Model.CongratsSectionValues.bonusValueFor50
+            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+            @Html.Translate("Shared/_XmasSaver", "BonusVoucherInStatmnt") @Html.Translate("Shared/_XmasSaver", "YouOnlyNeedToSaveExtra")
+            @Html.Translate("Shared/_XmasSaver", "Currency")@Model.CongratsSectionValues.extraValueNeedToBeSaved
+            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+            @Html.Translate("Shared/_XmasSaver", "ToMakeIt") @Html.Translate("Shared/_XmasSaver", "Currency")@Model.CongratsSectionValues.requiredValueToMakeBonusVoucher
+            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+            @Html.Translate("Shared/_XmasSaver", "BonusVoucher").</p>
+    </div>
+}

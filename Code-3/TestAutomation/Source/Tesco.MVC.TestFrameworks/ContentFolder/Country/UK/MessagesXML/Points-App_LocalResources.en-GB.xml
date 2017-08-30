@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Points-App_LocalResources>
+  <Home.cshtml.en-GB.resx>
+    <Data key="PointsHomeError" value="There's some error fetching your Points Detail. Please try later." />
+  </Home.cshtml.en-GB.resx>
+  <PointsDetail.cshtml.en-GB.resx>
+    <Data key="btnCloseThisWindowResource1AlternateText" value="Close this window" />
+    <Data key="btnCloseThisWindowResource2AlternateText" value="Close this window" />
+    <Data key="btnClearSelection" value="Clear Selection" />
+    <Data key="btnClearSelectionText" value="Clear Selection" />
+    <Data key="lblShow0PtsMsgResource1Text" value="You have currently have a zero points balance. Remember to use your Clubcard on your next shop." />
+    <Data key="lblShow0PtsMsgResource1ToolTip" value="" />
+    <Data key="lblShow0PtsMsgResource2Text" value="You have currently have a zero points balance. Remember to use your Clubcard on your next shop." />
+    <Data key="lblShow0PtsMsgResource2ToolTip" value="" />
+    <Data key="lclAmtSpndResource1Text" value="Amount Spent" />
+    <Data key="lblCouldNotFindAnyTransactions" value="Could not find any transactions" />
+    <Data key="lblUseOptions" value="Search by card number and transaction details" />
+    <Data key="lblSearch" value="Search by:" />
+    <Data key="lblCardNumber" value="Card number" />
+    <Data key="lblTransaction" value="Transaction details" />
+    <Data key="lblBackToPointsPage" value="Back to Points" />
+    <Data key="lblNote" value="" />
+    <Data key="Localize5Resource1Text" value="Transaction Details" />
+    <Data key="Localize6Resource1Text" value="Card Number" />
+    <Data key="Localize7Resource1Text" value="Date of transaction" />
+    <Data key="Localize8Resource1Text" value="Transaction type" />
+    <Data key="Localize9Resource1Text" value="Total points" />
+    <Data key="ltrBlueHeadResource1Text" value="Your transaction details from " />
+    <Data key="lblCurrentCollectionTransaction" value="Transaction details for current collection period" />
+    <Data key="lblPageDescription" value="" />
+    <Data key="ltrpagedescResource2Text" value="If you have a joint or merged account, you will only see the points collected from the Clubcard account you have signed in with." />
+    <Data key="lblPointsCollection" value="See when and where you collected your points." />
+    <Data key="ltrPageDesResource2Text" value="Wherever you collected your points, the detail will be shown below." />
+    <Data key="ltrPageTitleResource1Text" value="My Current Points Detail" />
+    <Data key="lblCurrentPoints" value="Transaction history" />
+    <Data key="PageTitle" value="Points" />
+    <Data key="PageResource2Title" value="points" />
+    <Data key="TemplateFieldResource1AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource1FooterText" value="" />
+    <Data key="tblHeaderCardNumber" value="Card number" />
+    <Data key="TemplateFieldResource10AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource10FooterText" value="" />
+    <Data key="tblHeaderTotalPoints" value="Total points" />
+    <Data key="TemplateFieldResource2AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource2FooterText" value="" />
+    <Data key="tblHeaderDatePoints" value="Date points added" />
+    <Data key="TemplateFieldResource3AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource3FooterText" value="" />
+    <Data key="tblHeaderTransactionDetails" value="Transaction details" />
+    <Data key="TemplateFieldResource4AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource4FooterText" value="" />
+    <Data key="tblHeaderTransactionValue" value="Transaction value" />
+    <Data key="TemplateFieldResource5AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource5FooterText" value="" />
+    <Data key="TemplateFieldResource5HeaderText" value="Total points" />
+    <Data key="TemplateFieldResource6AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource6FooterText" value="" />
+    <Data key="TemplateFieldResource6HeaderText" value="Card number" />
+    <Data key="TemplateFieldResource7AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource7FooterText" value="" />
+    <Data key="TemplateFieldResource7HeaderText" value="Date pts added" />
+    <Data key="TemplateFieldResource8AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource8FooterText" value="" />
+    <Data key="TemplateFieldResource8HeaderText" value="Transaction details" />
+    <Data key="TemplateFieldResource9AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource9FooterText" value="" />
+    <Data key="TemplateFieldResource9HeaderText" value="Transaction Value" />
+    <Data key="CurrencySymbol" value="£" />
+    <Data key="lblstrCouldNotFindAnyTransactions" value="Could not find any transactions" />
+    <Data key="ItemSelect" value="Select" />
+    <Data key="CurrencyAlphaSymbol" value="" />
+    <Data key="lblYourTransactionDetailsFrom" value="Transaction details from" />
+    <Data key="lblFromDateSeparatorToDate" value="-" />
+    <Data key="TemplateFieldResource11AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource11FooterText" value="" />
+    <Data key="tblHeaderBonusPoints" value="Bonus Points" />
+    <Data key="lnkVisualizeLink" value="#" />
+    <Data key="ddlClubcard" value="Select" />
+    <Data key="ddlTransaction" value="Select" />
+    <Data key="lblWarningMsg" value="" />
+  </PointsDetail.cshtml.en-GB.resx>
+  <PointsSummaryView.cshtml.en-GB.resx>
+    <Data key="AviosTtl" value="Avios total" />
+    <Data key="AvsAwded" value="Avios awarded" />
+    <Data key="AvsPptsCnvted" value="Points converted to Avios" />
+    <Data key="BonusVuchers" value="Bonus voucher total" />
+    <Data key="ChangePntsFromBoost" value="Points change from Clubcard Boost" />
+    <Data key="ClickHerePointResource" value="click here." />
+    <Data key="ClubcardVouchersTotal" value="Clubcard voucher total" />
+    <Data key="ClubMilePptsCnvted" value="Points converted to Flying Club miles" />
+    <Data key="ClubMilesAwded" value="Flying Club miles awarded" />
+    <Data key="EndXmasTtl" value=" total is" />
+    <Data key="FlyingClubTtl" value="Flying Club miles total" />
+    <Data key="PntsCarriedForwardXmas" value="Total points carried forward towards your Christmas" />
+    <Data key="PntsCltedFrom" value="Points collected from " />
+    <Data key="PntsCltedTo" value="-" />
+    <Data key="PointCarriedforwordPrevious" value="Points carried forward from previous statement" />
+    <Data key="PointsCarried" value="Total points carried forward to your next statement" />
+    <Data key="PointsCollectedFromTesco" value="Points collected with Tesco" />
+    <Data key="PointsCollectedFromTescoBank" value="Points collected with Tesco Bank" />
+    <Data key="PointsConvertedAndCarried" value="Total points not converted and carried forward to your next statement" />
+    <Data key="PointsTescoBankResource" value="Clubcard points from Tesco Bank" />
+    <Data key="PointsTescoResource" value="Clubcard points from Tesco" />
+    <Data key="PreStmtCarryForward" value="Points carried forward from previous statement" />
+    <Data key="ReviewSummary" value="To review a summary of the previous collection period " />
+    <Data key="StartTextFarXmas" value="Your Christmas Savers " />
+    <Data key="StatementTitleResource" value="Statement Summary" />
+    <Data key="Stmt" value="points statement" />
+    <Data key="TecsoBankVucherTtl" value="Tesco Bank voucher total" />
+    <Data key="TescoBankCarriedForward" value="Tesco Bank points carried forward" />
+    <Data key="TescoPointsCariedforword" value="Tesco points carried forward" />
+    <Data key="TescoVucherTtl" value="Tesco voucher totals" />
+    <Data key="TopupVouchers" value="Top-up voucher total" />
+    <Data key="TotalPointsCollected" value="Total points" />
+    <Data key="TotalRewardLabelNonXmas" value="Voucher total" />
+    <Data key="TotalRewardLabelXmas" value="Voucher total" />
+    <Data key="TotalTescoBnkPnts" value="Total Tesco Bank points" />
+    <Data key="TotalTescoPnts" value="Total Tesco points" />
+    <Data key="VucherTtl" value="Voucher total" />
+    <Data key="CurrencyAlphaSymbol" value="" />
+    <Data key="CurrencySymbol" value="£" />
+    <Data key="PageTitle" value="Points" />
+    <Data key="Nutri" value="The Nutri Centre" />
+    <Data key="Other" value="Other" />
+    <Data key="lblWhere" value="Where"/>
+  </PointsSummaryView.cshtml.en-GB.resx>
+  <_Points.cshtml.en-GB.resx>
+    <Data key="aviosMiles" value="Equivalent Avios:" />
+    <Data key="BAmiles" value="Equivalent BA Avios:" />
+    <Data key="lblClickHere" value="click here" />
+    <Data key="lblClubcardStatement" value="Clubcard statement." />
+    <Data key="lblClubcardSummary" value="Points summary" />
+    <Data key="lblCurrentCollectionPeriod" value="The current collection period is " />
+    <Data key="lblCurrentPointsTotal" value="Current points total" />
+    <Data key="lblEasyEarn" value="It's very easy to earn points." />
+    <Data key="lblFinalDate" value="Points collected up to" />
+    <Data key="lblFrmTesco" value="To find out how to get the most from your Tesco Clubcard, please" />
+    <Data key="lblLink" value="#" />
+    <Data key="lblMyPoints" value="Points" />
+    <Data key="CurrencySymbol" value="£" />
+    <Data key="lblUHaveCollected" value="" />
+    <Data key="stdVoucher" value="Vouchers to spend now:" />
+    <Data key="virginMiles" value="Equivalent Virgin Flying Club Miles:" />
+    <Data key="xmasmiles" value="Total vouchers saved:" />
+    <Data key="AlphaSymbol" value="" />
+    <Data key="lclClickHereLink" value="http://www.tesco.com/clubcard/help/faqs/#mca_points" />
+    <Data key="lclClickHereResource" value="click here" />
+    <Data key="lclDtlResource" value="" />
+    <Data key="lclMisPointsResource" value="Missing points?" />
+    <Data key="lclMissingPointsResource" value="We try and process all points as quickly as possible, but please allow a few days for your points to show on your account." />
+    <Data key="lclPeriodcltedResource" value="Statement date" />
+    <Data key="lclSummaryResource" value="" />
+    <Data key="lclWhichCollectionPeriodResource" value="" />
+    <Data key="lclWudLikeResource" value="Statement history" />
+    <Data key="lnkViewDetailResource" value="View transactions" />
+    <Data key="PageTitle" value="Points" />
+    <Data key="lblSeparator" value="-" />
+    <Data key="lclCallCustomerSrvice" value="If your points are still missing, call us on &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:0800591688&quot;&gt;0800 591 688&lt;/a&gt;&lt;sup&gt;1&lt;/sup&gt; or  &lt;a id = &quot;hreftollfree1&quot; href=&quot;tel:03301231688&quot;&gt;0330 123 1688&lt;/a&gt;&lt;sup&gt;2&lt;/sup&gt;." />
+    <Data key="CommunicateMsg1Resource1" value="&lt;sup&gt;1&lt;/sup&gt; Free from BT landlines. Other providers may vary. Calls may be recorded." />
+    <Data key="CommunicateMsg2Resource1" value="&lt;sup&gt;2&lt;/sup&gt; Charged at the local rate from mobiles and private phones." />
+    <Data key="lblWillAppear" value="will appear on your" />
+    <Data key="lnkViewSummaryResource" value="View statement" />
+    <Data key="lblPointsCollected" value="All the points you’ve collected and when, where, and how you collected them." />
+    <Data key="lblFullStop" value="." />
+  </_Points.cshtml.en-GB.resx>
+</Points-App_LocalResources>

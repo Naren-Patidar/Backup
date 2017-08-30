@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Coupons-App_LocalResources>
+  <Home.cshtml.cs-CZ.resx>
+    <Data key="CouponSummaryHeader" value="Přehled kupónů" />
+    <Data key="Description" value="V této sekci si můžete prohlédnout souhrn kupónů, které vám byly zaslány za posledních 6 měsíců. Také si můžete vytisknout aktivní kupóny a mít přehled o již &lt;a href=&quot;#RedeemedCoupons&quot; id=&quot;LinkOnHome&quot;&gt;použitých kupónech.&lt;/a&gt;" />
+    <Data key="ErrorCouponsDetail" value="Could not fetch your Coupons Details." />
+    <Data key="ErrorCouponsHome" value="There is some error in fetching your coupons." />
+    <Data key="ErrorCouponsPreview" value="Cannot preview your Coupon" />
+    <Data key="HoldingPageDescriptionPart1" value="Myní vám zasíláme kupóny, které se dají využít v kamenném obchodě. Pokud byste si místo nich přáli obdržet eKupóny, které můžete využít k nakupování online, běžte na" />
+    <Data key="HoldingPageDescriptionPart2" value="Moje nastavení" />
+    <Data key="HoldingPageDescriptionPart3" value="možnosti k eKupónům" />
+    <Data key="HoldingPageDescriptionPart4" value="Chcete-li získat další informace" />
+    <Data key="HoldingPageDescriptionPart5" value="Klikněte zde" />
+    <Data key="PageTitle" value="Slevové kupóny" />
+    <Data key="PDFTitleCoupon" value="kupóny" />
+    <Data key="strCouponUsed" value="kupóny Použité" />
+    <Data key="strCouponVoided" value="kupóny  Zrušená transakce" />
+    <Data key="strOf" value="" />
+    <Data key="SummaryHeading" value="Přehled kupónů" />
+  </Home.cshtml.cs-CZ.resx>
+   <_CouponHowToUse.cshtml.cs-CZ.resx>
+    <Data key="InStoreHtml" value="&lt;ol&gt;&lt;li&gt;Vyberte kupóny, které si přejete vytisknout&lt;/li&gt;&lt;li&gt;Klikněte na &quot;Tisknout vybrané kupóny&quot;&lt;/li&gt;&lt;li&gt;Vybrané kupóny budou staženy k vytištění&lt;/li&gt;&lt;li&gt;test test Your coupons will be waiting for you at the test test test test test&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="OnlineHtml" value="&lt;ol&gt;&lt;li&gt;Your coupons will be waiting for you at the Tesco test test test&lt;/li&gt;&lt;li&gt;Tesco.com Tesco.com Tesco.com Tesco.com Tesco.com Tesco.com&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="InStoreHeading" value="Jak používat Vaše kupóny" />
+    <Data key="OnlineHeading" value="" />
+    <Data key="Heading" value="Jak používat Vaše kupóny" />
+  </_CouponHowToUse.cshtml.cs-CZ.resx>
+  <_CouponsAvailable.cshtml.cs-CZ.resx>
+    <Data key="Heading" value="Aktivní kupóny" />
+    <Data key="PrintBtnLable" value="Tisknout vybrané kupóny" />
+    <Data key="SubHeading" value="Níže uvedené kupóny jsou připraveny k použití. Prosím, tiskněte kupóny pouze pomocí tlačítka ‘Vytisknout vybrané kupóny’. Tisk kupónu přímo z náhledu nevygeneruje čárový kód, takže kupón nelze uplatnit na pokladně." />
+    <Data key="SelectBtnLable" value="Vybrat vše" />
+    <Data key="CouponHeaderLable" value="Označ kupon" />
+    <Data key="ExpireLable" value="Platnost do:" />
+    <Data key="FooterLable" value="Vytiskněte prosím kupóny černobíle nebo barevně na bílý papír. Rozmazané nebo nečitelné kódy nemohou být načteny na pokladnách. Kupóny můžete tisknout vícekrát, použity mohou však být pouze jednou." />
+    <Data key="OnlineCodeLable" value="" />
+    <Data key="RedemptionsRemainingLable" value="Zbývá kupónů:" />
+    <Data key="NoCouponsLable" value="V tuto chvíli nemáte žádné aktivní kupóny. Podívejte se brzy znovu!" />
+    <Data key="NoCouponSeletedError" value="No Coupons selected for printing. Please select atleast one coupon." />
+  </_CouponsAvailable.cshtml.cs-CZ.resx>
+  <_CouponsBox.cshtml.cs-CZ.resx>
+    <Data key="CouponAvailableLable" value="Můžete využít" />
+    <Data key="CouponsSentLable" value="Odeslány za posledních 6 měsíců" />
+    <Data key="CouponUsedLable" value="Využity za poslední 4 týdny" />
+  </_CouponsBox.cshtml.cs-CZ.resx>
+  <_CouponsUsed.cshtml.cs-CZ.resx>
+   <Data key="IssueDateLable" value="Datum vydání" />
+    <Data key="NoRedeemptionMessage" value="Za poslední 4 týdny jste nepoužili žádné kupóny." />
+    <Data key="OfferLable" value="Slevový kupón" />
+    <Data key="RedeemedDateLable" value="Datum použití" />
+    <Data key="RedeemedLocationLable" value="Místo nákupu" />
+    <Data key="RedemptionCountLable" value="Počet použití" />
+    <Data key="UsedCouponSectionHeading" value="Kupóny, které jste použili za poslední 4 týdny" />
+    <Data key="UsedLable" value="Použité / Zrušená transakce" />
+  </_CouponsUsed.cshtml.cs-CZ.resx>
+</Coupons-App_LocalResources>

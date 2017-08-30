@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC211D5E-CFB7-4F5A-B6F9-F170A09FA320}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.Com.Marketing.Kiosk.JoinAtKiosk</RootNamespace>
+    <AssemblyName>Tesco.Com.Marketing.Kiosk.JoinAtKiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\China\kiosk-styles.css" />
+    <Content Include="CSS\Turkey\kiosk-styles.css" />
+    <Content Include="CSS\UK\kiosk-styles.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\123buttons.jpg" />
+    <Content Include="Images\AddL4.jpg" />
+    <Content Include="Images\AddL5.jpg" />
+    <Content Include="Images\Arrows.gif" />
+    <Content Include="Images\Back.gif" />
+    <Content Include="Images\Back.jpg" />
+    <Content Include="Images\Backgrey.jpg" />
+    <Content Include="Images\Backtoaddress.gif" />
+    <Content Include="Images\BacktoSummary.gif" />
+    <Content Include="Images\Back_btn.png" />
+    <Content Include="Images\buttonbkgd.jpg" />
+    <Content Include="Images\cancel-start.png" />
+    <Content Include="Images\Cancel_btn.png" />
+    <Content Include="Images\charter.jpg" />
+    <Content Include="Images\China\123buttons.jpg" />
+    <Content Include="Images\China\Arrows.gif" />
+    <Content Include="Images\China\Back.gif" />
+    <Content Include="Images\China\Back.jpg" />
+    <Content Include="Images\China\Backgrey.jpg" />
+    <Content Include="Images\China\Backtoaddress.gif" />
+    <Content Include="Images\China\BacktoSummary.gif" />
+    <Content Include="Images\China\Back_btn.png" />
+    <Content Include="Images\China\buttonbkgd.jpg" />
+    <Content Include="Images\China\cancel-start.png" />
+    <Content Include="Images\China\Cancel_btn.png" />
+    <Content Include="Images\China\charter.jpg" />
+    <Content Include="Images\China\clubcard.gif" />
+    <Content Include="Images\China\ConfirmAddress.gif" />
+    <Content Include="Images\China\confirmdetails.gif" />
+    <Content Include="Images\China\confirmname.gif" />
+    <Content Include="Images\China\confirmselection.gif" />
+    <Content Include="Images\China\Confirm_btn.png" />
+    <Content Include="Images\China\continue.gif" />
+    <Content Include="Images\China\crumbAddress.gif" />
+    <Content Include="Images\China\crumbAddressreturn.gif" />
+    <Content Include="Images\China\crumbHousehold.gif" />
+    <Content Include="Images\China\crumbName.gif" />
+    <Content Include="Images\China\crumbEmail.gif" />
+    <Content Include="Images\China\crumbPrint.gif" />
+    <Content Include="Images\China\dietary.jpg" />
+    <Content Include="Images\China\edit.gif" />
+    <Content Include="Images\China\firstname_blue.gif" />
+    <Content Include="Images\China\Firstname_grey.gif" />
+    <Content Include="Images\China\Firstname_white.gif" />
+    <Content Include="Images\China\headerback.png" />
+    <Content Include="Images\China\input272.png" />
+    <Content Include="Images\China\input322.gif" />
+    <Content Include="Images\China\input324.png" />
+    <Content Include="Images\China\input400.png" />
+    <Content Include="Images\China\input400grey.png" />
+    <Content Include="Images\China\input92.png" />
+    <Content Include="Images\China\inputboxes.png" />
+    <Content Include="Images\China\LookupAddress.gif" />
+    <Content Include="Images\China\LookupAddress_grey.gif" />
+    <Content Include="Images\China\nextCustomer.gif" />
+    <Content Include="Images\China\NextHousenumber.gif" />
+    <Content Include="Images\China\nexts.gif" />
+    <Content Include="Images\China\next_dietary-needs.png" />
+    <Content Include="Images\China\Print.jpg" />
+    <Content Include="Images\China\surname_blue.gif" />
+    <Content Include="Images\China\TandCs.jpg" />
+    <Content Include="Images\China\TescoClubcard.gif" />
+    <Content Include="Images\China\Title10.gif" />
+    <Content Include="Images\China\Title11.gif" />
+    <Content Include="Images\China\Title13.gif" />
+    <Content Include="Images\China\Title15.gif" />
+    <Content Include="Images\China\Title18.gif" />
+    <Content Include="Images\China\Title19.gif" />
+    <Content Include="Images\China\Title20.gif" />
+    <Content Include="Images\China\Title21.gif" />
+    <Content Include="Images\China\Title22.gif" />
+    <Content Include="Images\China\Title23.gif" />
+    <Content Include="Images\China\Title6.gif" />
+    <Content Include="Images\China\Title7.gif" />
+    <Content Include="Images\China\TitleCharter.gif" />
+    <Content Include="Images\China\Titles.jpg" />
+    <Content Include="Images\China\TitleTerms.gif" />
+    <Content Include="Images\chk.png" />
+    <Content Include="Images\clubcard.gif" />
+    <Content Include="Images\ConfirmAddress.gif" />
+    <Content Include="Images\confirmadress.gif" />
+    <Content Include="Images\ConfirmDetails.gif" />
+    <Content Include="Images\confirmLPS.gif" />
+    <Content Include="Images\ConfirmName.gif" />
+    <Content Include="Images\ConfirmSelection.gif" />
+    <Content Include="Images\Confirm_btn.png" />
+    <Content Include="Images\continue.gif" />
+    <Content Include="Images\crumbAddress.gif" />
+    <Content Include="Images\crumbAddressreturn.gif" />
+    <Content Include="Images\crumbEmail.gif" />
+    <Content Include="Images\crumbHousehold.gif" />
+    <Content Include="Images\crumbLPS.gif" />
+    <Content Include="Images\crumbName.gif" />
+    <Content Include="Images\crumbPrint.gif" />
+    <Content Include="Images\crumEmail.gif" />
+    <Content Include="Images\crumPrint.gif" />
+    <Content Include="Images\DaytimeNo.jpg" />
+    <Content Include="Images\dietary.jpg" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\EvngNumber.jpg" />
+    <Content Include="Images\Firstname_blue.gif" />
+    <Content Include="Images\Firstname_grey.gif" />
+    <Content Include="Images\Firstname_white.gif" />
+    <Content Include="Images\headerback.png" />
+    <Content Include="Images\input272.png" />
+    <Content Include="Images\input322.gif" />
+    <Content Include="Images\input324.png" />
+    <Content Include="Images\input400.png" />
+    <Content Include="Images\input400grey.png" />
+    <Content Include="Images\input92.png" />
+    <Content Include="Images\inputboxes.png" />
+    <Content Include="Images\LookupAddress.gif" />
+    <Content Include="Images\LookupAddress_grey.gif" />
+    <Content Include="Images\LPSImgLanguageNav.jpg" />
+    <Content Include="Images\Next.png" />
+    <Content Include="Images\NextCustomer.gif" />
+    <Content Include="Images\NextGrey.png" />
+    <Content Include="Images\NextHousenumber.gif" />
+    <Content Include="Images\NextPromCode.png" />
+    <Content Include="Images\Nexts.gif" />
+    <Content Include="Images\NextsLPS.gif" />
+    <Content Include="Images\next_dietary-needs.png" />
+    <Content Include="Images\Postcode.jpg" />
+    <Content Include="Images\Print.jpg" />
+    <Content Include="Images\Races.jpg" />
+    <Content Include="Images\Surname_blue.gif" />
+    <Content Include="Images\TandCs.jpg" />
+    <Content Include="Images\TC1Highlighted.png" />
+    <Content Include="Images\TC1Normal.png" />
+    <Content Include="Images\TC2Highlighted.png" />
+    <Content Include="Images\TC2Normal.png" />
+    <Content Include="Images\TC3Highlighted.png" />
+    <Content Include="Images\TC3Normal.png" />
+    <Content Include="Images\TC4Highlighted.png" />
+    <Content Include="Images\TC4Normal.png" />
+    <Content Include="Images\TC5Highlighted.png" />
+    <Content Include="Images\TC5Normal.png" />
+    <Content Include="Images\TescoClubcard.gif" />
+    <Content Include="Images\Title10.gif" />
+    <Content Include="Images\Title11.gif" />
+    <Content Include="Images\Title13.gif" />
+    <Content Include="Images\Title15.gif" />
+    <Content Include="Images\Title18.gif" />
+    <Content Include="Images\Title19.gif" />
+    <Content Include="Images\Title20.gif" />
+    <Content Include="Images\Title21.gif" />
+    <Content Include="Images\Title22.gif" />
+    <Content Include="Images\Title23.gif" />
+    <Content Include="Images\Title6.gif" />
+    <Content Include="Images\Title7.gif" />
+    <Content Include="Images\TitleCharter.gif" />
+    <Content Include="Images\Titles.jpg" />
+    <Content Include="Images\TitleTerms.gif" />
+    <Content Include="Images\Turkey\Back.gif" />
+    <Content Include="Images\Turkey\Back.jpg" />
+    <Content Include="Images\Turkey\Backtoaddress.gif" />
+    <Content Include="Images\Turkey\BacktoSummary.gif" />
+    <Content Include="Images\Turkey\cancel-start.png" />
+    <Content Include="Images\Turkey\charter.jpg" />
+    <Content Include="Images\Turkey\ConfirmAddress.gif" />
+    <Content Include="Images\Turkey\confirmdetails.gif" />
+    <Content Include="Images\Turkey\confirmname.gif" />
+    <Content Include="Images\Turkey\crumbAddress.gif" />
+    <Content Include="Images\Turkey\crumbAddressreturn.gif" />
+    <Content Include="Images\Turkey\crumbEmail.gif" />
+    <Content Include="Images\Turkey\crumbHousehold.gif" />
+    <Content Include="Images\Turkey\crumbLPS.gif" />
+    <Content Include="Images\Turkey\crumbName.gif" />
+    <Content Include="Images\Turkey\crumbPrint.gif" />
+    <Content Include="Images\Turkey\edit.gif" />
+    <Content Include="Images\Turkey\firstname_blue.gif" />
+    <Content Include="Images\Turkey\nextCustomer.gif" />
+    <Content Include="Images\Turkey\NextHousenumber.gif" />
+    <Content Include="Images\Turkey\nexts.gif" />
+    <Content Include="Images\Turkey\surname_blue.gif" />
+    <Content Include="Images\Turkey\TandCs.jpg" />
+    <Content Include="Images\Turkey\TescoClubcard.gif" />
+    <Content Include="Images\unchk.png" />
+    <Content Include="Images\Untitled-1.png" />
+    <Content Include="Images\Untitled-2.png" />
+    <Content Include="Kiosk\CancelAndRestart.aspx" />
+    <Content Include="Kiosk\ClubcardCharter1.aspx" />
+    <Content Include="Kiosk\ContactPreferences.aspx" />
+    <Content Include="Kiosk\ContactPreferencesUK.aspx" />
+    <Content Include="Kiosk\Default.aspx" />
+    <Content Include="Kiosk\ErrorMessage.aspx" />
+    <Content Include="Kiosk\FinalSubmitionScreen.aspx" />
+    <Content Include="Kiosk\FurtherPersonalDetail1.aspx" />
+    <Content Include="Kiosk\FurtherPersonalDetails2.aspx" />
+    <Content Include="Kiosk\PrintClubcard.aspx" />
+    <Content Include="Kiosk\TermsAndCondition.aspx" />
+    <Content Include="Kiosk\TermsAndCondition2.aspx" />
+    <Content Include="Kiosk\TermsAndCondition3.aspx" />
+    <Content Include="Kiosk\TermsAndCondition4.aspx" />
+    <Content Include="Kiosk\TermsAndCondition5.aspx" />
+    <Content Include="Kiosk\ThankYou.aspx" />
+    <Content Include="Kiosk\TimeOut.aspx" />
+    <Content Include="Kiosk\WhatIsYourAdress.aspx" />
+    <Content Include="Kiosk\WhatIsYourContactDetails.aspx" />
+    <Content Include="Kiosk\WhatIsYourDietryPreferences.aspx" />
+    <Content Include="Kiosk\WhatIsYourDOBAndHHAges.aspx" />
+    <Content Include="Kiosk\WhatIsYourTitleandName.aspx" />
+    <Content Include="CSS\border-radius.htc" />
+    <Content Include="CSS\kiosk-styles.css" />
+    <Content Include="Configuration\China\PRO\wcfclientendpoints.config" />
+    <Content Include="Configuration\China\PRO\wcfstandardbinding.config" />
+    <Content Include="Configuration\China\PRO\Web.config" />
+    <Content Include="Configuration\Turkey\PRO\wcfclientendpoints.config" />
+    <Content Include="Configuration\Turkey\PRO\wcfstandardbinding.config" />
+    <Content Include="Configuration\Turkey\PRO\Web.config" />
+    <Content Include="Configuration\UK\PRO\wcfclientendpoints.config" />
+    <Content Include="Configuration\UK\PRO\wcfstandardbinding.config" />
+    <Content Include="Configuration\UK\PRO\Web.config" />
+    <None Include="Images\Turkey\Thumbs.db" />
+    <None Include="Properties\DataSources\System.Web.Security.MembershipUser.datasource" />
+    <None Include="Service References\CustomerService\CustomerService.wsdl" />
+    <None Include="Service References\CustomerService\CustomerService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService1.wsdl" />
+    <None Include="Service References\CustomerService\CustomerService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CustomerService.disco" />
+    <None Include="Service References\CustomerService\configuration91.svcinfo" />
+    <None Include="Service References\CustomerService\configuration.svcinfo" />
+    <None Include="Service References\CustomerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.wsdl" />
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCUtilityService\UtilityService.disco" />
+    <None Include="Service References\NGCUtilityService\configuration91.svcinfo" />
+    <None Include="Service References\NGCUtilityService\configuration.svcinfo" />
+    <None Include="Service References\NGCUtilityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\WhatIsYourAdress.js" />
+    <Content Include="Scripts\WhatIsYourContactDetails.js" />
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.disco" />
+    <None Include="Service References\JoinLoyaltyService\configuration91.svcinfo" />
+    <None Include="Service References\JoinLoyaltyService\configuration.svcinfo" />
+    <None Include="Service References\JoinLoyaltyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\WhatIsYourDietryPreferences.js" />
+    <Content Include="Scripts\WhatIsYourDOBAndHHAges.js" />
+    <Content Include="Scripts\WhatIsYourTitleandName.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\NGCUtilityService\UtilityService.wsdl" />
+    <None Include="Service References\NGCUtilityService\UtilityService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCUtilityService\UtilityService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\BaseUIPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.tr-TR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.tr-TR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClassForJoin.cs" />
+    <Compile Include="App_GlobalResources\GlobalResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.en-GB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResources.zh-CN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResources.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationReader.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Kiosk\CancelAndRestart.aspx.cs">
+      <DependentUpon>CancelAndRestart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\CancelAndRestart.aspx.designer.cs">
+      <DependentUpon>CancelAndRestart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\ClubcardCharter1.aspx.cs">
+      <DependentUpon>ClubcardCharter1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\ClubcardCharter1.aspx.designer.cs">
+      <DependentUpon>ClubcardCharter1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\ContactPreferences.aspx.cs">
+      <DependentUpon>ContactPreferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\ContactPreferences.aspx.designer.cs">
+      <DependentUpon>ContactPreferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\ContactPreferencesUK.aspx.cs">
+      <DependentUpon>ContactPreferencesUK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\ContactPreferencesUK.aspx.designer.cs">
+      <DependentUpon>ContactPreferencesUK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\ErrorMessage.aspx.cs">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\ErrorMessage.aspx.designer.cs">
+      <DependentUpon>ErrorMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\FinalSubmitionScreen.aspx.cs">
+      <DependentUpon>FinalSubmitionScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\FinalSubmitionScreen.aspx.designer.cs">
+      <DependentUpon>FinalSubmitionScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\LocatorSvcSDAClient.cs" />
+    <Compile Include="Kiosk\FurtherPersonalDetail1.aspx.cs">
+      <DependentUpon>FurtherPersonalDetail1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\FurtherPersonalDetail1.aspx.designer.cs">
+      <DependentUpon>FurtherPersonalDetail1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\FurtherPersonalDetails2.aspx.cs">
+      <DependentUpon>FurtherPersonalDetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\FurtherPersonalDetails2.aspx.designer.cs">
+      <DependentUpon>FurtherPersonalDetails2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\PrintClubcard.aspx.cs">
+      <DependentUpon>PrintClubcard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\PrintClubcard.aspx.designer.cs">
+      <DependentUpon>PrintClubcard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition.aspx.cs">
+      <DependentUpon>TermsAndCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition2.aspx.cs">
+      <DependentUpon>TermsAndCondition2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition2.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition3.aspx.cs">
+      <DependentUpon>TermsAndCondition3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition3.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition4.aspx.cs">
+      <DependentUpon>TermsAndCondition4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition4.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition5.aspx.cs">
+      <DependentUpon>TermsAndCondition5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TermsAndCondition5.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\TimeOut.aspx.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\TimeOut.aspx.designer.cs">
+      <DependentUpon>TimeOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourAdress.aspx.cs">
+      <DependentUpon>WhatIsYourAdress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourAdress.aspx.designer.cs">
+      <DependentUpon>WhatIsYourAdress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourContactDetails.aspx.cs">
+      <DependentUpon>WhatIsYourContactDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourContactDetails.aspx.designer.cs">
+      <DependentUpon>WhatIsYourContactDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourDietryPreferences.aspx.cs">
+      <DependentUpon>WhatIsYourDietryPreferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourDietryPreferences.aspx.designer.cs">
+      <DependentUpon>WhatIsYourDietryPreferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourDOBAndHHAges.aspx.cs">
+      <DependentUpon>WhatIsYourDOBAndHHAges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourDOBAndHHAges.aspx.designer.cs">
+      <DependentUpon>WhatIsYourDOBAndHHAges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourTitleandName.aspx.cs">
+      <DependentUpon>WhatIsYourTitleandName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kiosk\WhatIsYourTitleandName.aspx.designer.cs">
+      <DependentUpon>WhatIsYourTitleandName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\JoinLoyaltyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NGCUtilityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\UK\" />
+    <Folder Include="Kiosk\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\China\INT\wcfclientendpoints.config" />
+    <Content Include="Configuration\China\INT\wcfstandardbinding.config" />
+    <Content Include="Configuration\China\INT\Web.config" />
+    <Content Include="Configuration\Turkey\INT\wcfclientendpoints.config" />
+    <Content Include="Configuration\Turkey\INT\wcfstandardbinding.config" />
+    <Content Include="Configuration\Turkey\INT\Web.config" />
+    <Content Include="Configuration\UK\INT\wcfclientendpoints.config" />
+    <Content Include="Configuration\UK\INT\wcfstandardbinding.config" />
+    <Content Include="Configuration\UK\INT\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalResources.en-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalResources.en-GB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalResources.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalResources.zh-CN.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wcfbehaviors.config" />
+    <Content Include="wcfclientendpoints.config" />
+    <Content Include="wcfstandardbinding.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CustomerService\" />
+    <WCFMetadataStorage Include="Service References\JoinLoyaltyService\" />
+    <WCFMetadataStorage Include="Service References\NGCUtilityService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalResources.tr-TR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalResources.tr-TR.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3563</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/JoinAtKiosk</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/JoinAtKiosk</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

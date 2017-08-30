@@ -1,0 +1,34 @@
+.ddl-voucher-coupon-list {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+
+	li {
+		border-top: 1px solid $ddl-border-color-1;
+		padding-top: 10px;
+		overflow: hidden;
+
+		.ddl-checkbox {
+			top: 10px;
+		}
+
+		label {
+
+			strong {
+				display: block;
+				font-size: 22px;
+			}
+
+			span {
+				display: block;
+			}
+
+			 .status {
+			 	float: right;
+				display: block;
+				padding: 5px 10px;
+				background: #eee;
+			 }
+		}
+	}
+}

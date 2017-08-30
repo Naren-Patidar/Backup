@@ -1,0 +1,35 @@
+
+#ddl-footer {
+    padding: 30px 0;
+
+    .tagline {
+        position: relative;
+        bottom: auto;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .social {
+        overflow: hidden;
+        border-bottom: none;
+        margin: 0;
+        padding: 0 10px;
+
+        .ddl-h5-like {
+        	padding-top: 0;
+        }
+
+        .ddl-inline-list {
+            text-align: right;
+        }
+    }
+
+    .site-footer {
+        padding: 20px 0;
+
+        .device-link {
+            padding: 0;
+            border-bottom: none;
+        }
+    }
+}

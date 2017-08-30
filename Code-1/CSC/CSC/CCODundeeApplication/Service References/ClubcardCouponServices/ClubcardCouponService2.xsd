@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" elementFormDefault="qualified" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://plprgxnngcu07.pl.tesco-europe.com/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" />
+  <xs:element name="GetAvailableCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="houseHoldID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAvailableCouponsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" minOccurs="0" name="resultArray" nillable="true" type="q1:ArrayOfCouponInformation" />
+        <xs:element minOccurs="0" name="totalCoupons" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRedeemedCoupons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="houseHoldID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRedeemedCouponsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRedeemedCouponsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="couponDetail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCouponInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="smartBarcode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="smartAlphacode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCouponInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCouponInformationResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="couponDetail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

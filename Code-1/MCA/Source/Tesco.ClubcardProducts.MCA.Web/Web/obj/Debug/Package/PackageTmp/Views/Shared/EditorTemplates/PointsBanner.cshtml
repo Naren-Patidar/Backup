@@ -1,0 +1,197 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@model PointsBanner
+@{
+    //switch to toggle to previous functionality
+    bool hidePointConversionBanner = !DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointConversionBanner].ConfigurationValue1.Equals("0");
+    bool enablePointsTarget = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.EnablePointTargetModule.ToString()].ConfigurationValue1.Equals("1");
+ }
+<div id="pointsavailablelink" style="display:none">@Url.Action("AvailablePoints", "Points")</div>
+@if(Model.OptedVoucherScheme == VoucherSchemeName.XmasSaver)
+{
+
+}
+else if (Model.Stage == PointsBannerStage.PointsCutoff && !hidePointConversionBanner
+     && (Model.PreviousPointsRange == CustomerPointsRange.SufficientPoints || Model.PreviousPointsRange == CustomerPointsRange.InSufficientPoints))
+ {
+     <div class="gr-12" id="pointsConversionStrip">
+
+         <div class="table-wrapper points-callout points-callout-tertiary-dark" style="padding-left:15px !important;">
+             <table>
+                 <thead class="ddl-visually-hidden">
+                     <tr>
+                         <th class="ddl-text-left">
+                             Type of points
+                         </th>
+                         <th class="ddl-text-centre">
+                             Amount of points
+                         </th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         @if (Model.PreviousPointsRange == CustomerPointsRange.SufficientPoints)
+                         {
+                            
+                         <td>
+						 <h2 style="padding-left:0;">
+
+                             @Html.Translate("ConversionMsgPart1")
+                             <span id="uptodate">@Model.PreviousCollectionEnd</span> <span>@string.Format(Html.Translate("ConversionMsgPart2").ToString(), Html.Translate(string.Format("pref{0}", Model.OptedSchemeID)).ToString())</span>
+                             <span id="cutoffEnd">@Model.CutoffEnd</span>
+                             </h2>
+                             </td>
+                             <td class="ddl-no-wrap">
+                                 <span id="previousPointsTotal" class="value">@Model.PreviousPoints</span>@Html.Translate("Points")
+                                 @Html.Translate("Equal")
+                                 @if (Model.OptedSchemeID.Equals(0) || Model.OptedSchemeID.Equals(BusinessConstants.XMASSAVER))
+                                 {
+                                 <span>@Html.Translate("CurrencySymbol")<span id="previousVouchersTotal" class="value">@Model.PreviousVouchers</span>@Html.Translate("AlphaSymbol")</span>
+                                 }
+                                 else
+                                 { 
+                                     <span id="previousVouchersTotal" class="value">@Model.PreviousVouchers</span>
+                                 }
+                             </td>
+                         }
+                         else
+                         {
+                             <td colspan="2">
+                             @string.Format(Html.Translate("ConversionInsufficientPointsMsg").ToString(),
+                                 Html.Translate(string.Format("pref{0}", Model.OptedSchemeID)),
+                                 Model.PreviousPoints,
+                                 Model.CutoffEnd)
+                             </td>
+                         }
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+ }
+<div class="gr-12" id="pointsStrip">
+@if (Model.IsClickable)
+{
+     <a id="pointsLink" href="@Url.Action("Home", "Points")">
+     @if (Model.OptedSchemeID == 0 && enablePointsTarget)
+     { 
+         @PointTargetStrip()
+     }
+     else
+     {
+        @PointStrip(hidePointConversionBanner)
+     }
+     </a>
+}
+else
+{
+    if (Model.OptedSchemeID == 0 && enablePointsTarget)
+    { 
+        @PointTargetStrip()
+    }
+    else
+    {
+        @PointStrip(hidePointConversionBanner)
+    }
+}
+</div>
+
+@helper PointStrip(bool hidePointConversionBanner)
+    {
+    <div class='@(Model.IsClickable ? "table-wrapper points-callout points-callout-link ddl-icon-before ddl-icon-clubcard" : "table-wrapper points-callout ddl-icon-before ddl-icon-clubcard")'>
+        <table>
+            <thead class="ddl-visually-hidden">
+                <tr>
+                    <th class="ddl-text-left">
+                        Type of points
+                    </th>
+                    <th class="ddl-text-centre">
+                        Amount of points
+                    </th>
+                </tr>
+            </thead>                    
+            <tbody>
+                <tr>
+                    <td id="pointsText">
+                        <h2>@Html.Translate("lblCurrentPoint")
+                      @if(Model.OptedVoucherScheme == VoucherSchemeName.XmasSaver)
+								      {
+
+								      }
+                      else if (Model.Stage == PointsBannerStage.PointsCutoff & !hidePointConversionBanner)
+                      {
+                                @Html.Translate("lblSince") <span id="nextdayPreviousPeriod">@Model.CurrentCollectionStart</span> 
+                      }
+                        </h2>
+                          @if(Model.OptedVoucherScheme == VoucherSchemeName.XmasSaver)
+								          {
+
+								          }                                 
+                        else if (Model.Stage == PointsBannerStage.PrePointsCutoffWarning & !hidePointConversionBanner)
+                        {
+                            <p>
+                                @Math.Ceiling(Model.WarningDays) 
+                                @Html.Translate(Model.WarningDays > 1 ? "DaysleftbeforeConversion" : "DayleftbeforeConversion") 
+                                <span>@Html.Translate(string.Format("pref{0}", Model.OptedSchemeID))</span>
+                            </p>
+                        }
+                    </td>
+                    <td class="ddl-no-wrap">
+                        <span id="pointsTotal">@Model.CurrentPoints</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    }
+@helper PointTargetStrip()
+    {
+        <div class='@(Model.IsClickable ? "table-wrapper points-callout points-callout-link points-callout-progress" : "table-wrapper points-callout points-callout points-callout-progress")'>
+            <table>
+                <thead class="ddl-visually-hidden">
+                    <tr>
+                        <th class="ddl-text-left">Type of points</th>
+                        <th class="ddl-text-centre">Amount of points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><h2>@Html.Translate("lblCurrentPoint")
+                        @if (Model.Stage == PointsBannerStage.PointsCutoff)
+                        {
+                                @Html.Translate("lblSince") <span id="nextdayPreviousPeriod">@Model.CurrentCollectionStart</span> 
+                        }
+                        </h2>
+                        @if (Model.Stage == PointsBannerStage.PrePointsCutoffWarning)
+                        {
+                            <p>
+                                @Math.Ceiling(Model.WarningDays) 
+                                @Html.Translate(Model.WarningDays > 1 ? "DaysleftbeforeConversion" : "DayleftbeforeConversion") 
+                                <span>@Html.Translate(string.Format("pref{0}", Model.OptedSchemeID))</span>
+                            </p>
+                        }
+                        </td>
+                        <td class="ddl-no-wrap">@(Model.CurrentPoints + Html.Translate("Points").ToString())</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="indicator">
+                            <span data-start="@Model.CurrentPoints" data-current="@Model.CurrentPointStartTarget" data-goal="@(Model.CurrentPoints + Model.CurrentPointTarget)"><i></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>@string.Format(Html.Translate("PointTargetHeading").ToString(), 
+                        Model.CurrentPointTarget,
+                        Html.Translate("CurrencySymbol"), 
+                        Model.CurrentVoucherTarget,
+                        Html.Translate("AlphaSymbol"))</h2>
+                        <p>
+                        @string.Format(Html.Translate("PointTargetNote").ToString(), Model.StatementMonth, Model.CurrentCollectionEnd)
+                        </p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    }

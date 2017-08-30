@@ -1,0 +1,14 @@
+label, label.ddl-label {
+	display: block;
+	line-height: 32px;
+	font-size: 1.6rem;
+	font-family: 'tescobold';
+	color: $ddl-label-colour;
+}
+
+.ddl-error {
+
+	label, label.ddl-label {
+		color: $error;
+	}
+}

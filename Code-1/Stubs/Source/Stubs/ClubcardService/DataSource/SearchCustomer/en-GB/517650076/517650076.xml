@@ -1,0 +1,38 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>517650076</CustomerID>
+            <ClubcardID>634004000663993873</ClubcardID>
+            <CardIssuedDate>2004-01-02T00:00:00+00:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Mohdm</Name1>
+            <Name2 />
+            <Name3>Junaiw</Name3>
+            <MailingAddressLine1>SHIRE PARK CLUB</MailingAddressLine1>
+            <MailingAddressLine2>SHIRE PARK</MailingAddressLine2>
+            <MailingAddressLine3>WELWYN GARDEN CITY</MailingAddressLine3>
+            <MailingAddressPostCode>AL7 1TW</MailingAddressPostCode>
+            <DateOfBirth>1932-07-16T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>320</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>128</PreviousPointsBalanceQty>
+            <JoinedDate>2004-01-02T00:00:00+00:00</JoinedDate>
+            <HouseHoldID>499785952</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

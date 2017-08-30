@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="herfFun_Entertainment" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/entertainment/4294967290%7C4294967276.cat</value>
+  </data>
+  <data name="herfFun_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-fun/4294967290.cat</value>
+  </data>
+  <data name="href4XValue_DayOut" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/days-out/4294967290%7C4294967277.cat</value>
+  </data>
+  <data name="href4XValue_Pub" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-eating-out/4294967291.cat#sortBy=143&amp;navID=4294967291|4294964796</value>
+  </data>
+  <data name="href4XValue_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/search-results/view-all-x4-family-savings?search=View%20All%20x4%20Family%20Savings</value>
+  </data>
+  <data name="hrefAboutClubcard" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/about/</value>
+  </data>
+  <data name="hrefBasket" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/basket</value>
+  </data>
+  <data name="hrefCollectPoints" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/collect-points/</value>
+  </data>
+  <data name="hrefEO_FindRestaurant" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/eating-out/4294967291.cat</value>
+  </data>
+  <data name="hrefEO_Pubs" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/eating-out/pubs/4294967291%7C4294967203.cat</value>
+  </data>
+  <data name="hrefEO_Restaurant" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/eating-out/restaurants/4294967291%7C4294967202.cat</value>
+  </data>
+  <data name="hrefEO_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-eating-out/4294967291.cat</value>
+  </data>
+  <data name="hrefFun_DaysOut" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/days-out/4294967290%7C4294967277.cat</value>
+  </data>
+  <data name="hrefFun_Experience" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/experience-days/4294967290%7C4294967275.cat</value>
+  </data>
+  <data name="hrefFun_FindDay" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/4294967290%7C4294967290.cat</value>
+  </data>
+  <data name="hrefHome_Garden" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/home-essentials/home-garden/4294967289%7c4294967280.cat</value>
+  </data>
+  <data name="hrefHome_Learning" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/home-essentials/learning-software/4294967289%7C4294967279.cat</value>
+  </data>
+  <data name="hrefHome_Motoring" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/home-essentials/motoring/4294967289%7C4294967278.cat</value>
+  </data>
+  <data name="hrefHome_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-home-essentials/4294967289.cat</value>
+  </data>
+  <data name="hrefl4XValue_Attraction" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/days-out/4294967290%7C4294967277%7C4294964795.cat#sortBy=143&amp;navID=4294967290|4294967277|4294964795</value>
+  </data>
+  <data name="hrefLifestyle_Health" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/lifestyle/health-beauty/4294967287%7C4294967284.cat</value>
+  </data>
+  <data name="hrefLifestyle_Magazine" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/lifestyle/magazine-subscriptions/4294967287%7C4294967283.cat</value>
+  </data>
+  <data name="hrefLifestyle_Membership" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/lifestyle/memberships/4294967287%7C4294967282.cat</value>
+  </data>
+  <data name="hrefLifestyle_Shopping" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/lifestyle/shopping-gifts/4294967287%7C4294967281.cat</value>
+  </data>
+  <data name="hrefLifestyle_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-lifestyle/4294967287.cat</value>
+  </data>
+  <data name="hrefSpendVoucher" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost</value>
+    <comment>used in primary navigation "spend voucher" image link href</comment>
+  </data>
+  <data name="hrefStoreLocator" xml:space="preserve">
+    <value>http://www.tesco.com/store-locator/uk/</value>
+  </data>
+  <data name="hrefSV_4XValue" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/days-out/4294967290%7C4294967277.cat</value>
+  </data>
+  <data name="hrefSV_Boost" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/</value>
+  </data>
+  <data name="hrefSV_EatingOut" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/eating-out/4294967291.cat</value>
+  </data>
+  <data name="hrefSV_Fun" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/fun/4294967290%7C4294967290.cat</value>
+  </data>
+  <data name="hrefSV_HomeEssen" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/home-essentials/4294967289.cat</value>
+  </data>
+  <data name="hrefSV_How" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/spend-vouchers</value>
+  </data>
+  <data name="hrefSV_Lifestyle" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/lifestyle/4294967287.cat</value>
+  </data>
+  <data name="hrefSV_Travel" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/travel/4294967286.cat</value>
+  </data>
+  <data name="hrefTescoSite" xml:space="preserve">
+    <value>http://www.tesco.com</value>
+  </data>
+  <data name="hrefTravel_Airlines" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/travel/travel/airlines/4294967286%7C4294967267.cat</value>
+  </data>
+  <data name="hrefTravel_Holiday" xml:space="preserve">
+    <value>https://secure.tesco.com/Clubcard/boost/travel/hotels/4294967286%7C4294967266.cat</value>
+  </data>
+  <data name="hrefTravel_HotelBreak" xml:space="preserve">
+    <value>https://secure.tesco.com/Clubcard/boost/travel/hotel-breaks/4294967286%7C4294967265.cat</value>
+  </data>
+  <data name="hrefTravel_Transport" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/travel/transport/4294967286%7C4294967264.cat</value>
+  </data>
+  <data name="hrefTravel_ViewAll" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/boost/all-travel/4294967286.cat</value>
+  </data>
+  <data name="imgBoostSrc" xml:space="preserve">
+    <value>~/Content/images/ad.jpg</value>
+    <comment>used in primary navigation "spend voucher" image src</comment>
+  </data>
+  <data name="lbl4XValue_Attraction" xml:space="preserve">
+    <value>4x value Attractions</value>
+  </data>
+  <data name="lbl4XValue_DayOut" xml:space="preserve">
+    <value>Find a day out near me</value>
+  </data>
+  <data name="lbl4XValue_Pub" xml:space="preserve">
+    <value>4x value Restaurants &amp; Pubs</value>
+  </data>
+  <data name="lblAboutClubcard" xml:space="preserve">
+    <value>About Clubcard</value>
+  </data>
+  <data name="lblClubcard" xml:space="preserve">
+    <value>Clubcard</value>
+  </data>
+  <data name="lblCollectPoints" xml:space="preserve">
+    <value>Collect points</value>
+  </data>
+  <data name="lblEO_FindRestaurant" xml:space="preserve">
+    <value>Find a restaurant near me</value>
+  </data>
+  <data name="lblEO_Pubs" xml:space="preserve">
+    <value>Pubs</value>
+  </data>
+  <data name="lblEO_Restaurant" xml:space="preserve">
+    <value>Restaurants</value>
+  </data>
+  <data name="lblFeedback" xml:space="preserve">
+    <value>Website feedback</value>
+  </data>
+  <data name="lblFun_DaysOut" xml:space="preserve">
+    <value>Days out</value>
+  </data>
+  <data name="lblFun_Entertainment" xml:space="preserve">
+    <value>Entertainment</value>
+  </data>
+  <data name="lblFun_Experience" xml:space="preserve">
+    <value>Experience Days</value>
+  </data>
+  <data name="lblFun_FindDay" xml:space="preserve">
+    <value>Find a day out near me</value>
+  </data>
+  <data name="lblFun_ViewAll" xml:space="preserve">
+    <value>View all</value>
+  </data>
+  <data name="lblHome_Garden" xml:space="preserve">
+    <value>Home &amp; Garden</value>
+  </data>
+  <data name="lblHome_Learning" xml:space="preserve">
+    <value>Learning &amp; Software</value>
+  </data>
+  <data name="lblHome_Motoring" xml:space="preserve">
+    <value>Motoring</value>
+  </data>
+  <data name="lblLifestyle_Health" xml:space="preserve">
+    <value>Health &amp; Beauty</value>
+  </data>
+  <data name="lblLifestyle_Magazine" xml:space="preserve">
+    <value>Magazine Subscriptions</value>
+  </data>
+  <data name="lblLifestyle_Membership" xml:space="preserve">
+    <value>Memberships</value>
+  </data>
+  <data name="lblLifestyle_Shopping" xml:space="preserve">
+    <value>Shopping &amp; Gifts</value>
+  </data>
+  <data name="lblSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblSignOut" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="lblSpendVouchers" xml:space="preserve">
+    <value>Spend vouchers</value>
+  </data>
+  <data name="lblStoreLocator" xml:space="preserve">
+    <value>Store locator</value>
+  </data>
+  <data name="lblSV_4XValue" xml:space="preserve">
+    <value>4x value Family Days Out</value>
+  </data>
+  <data name="lblSV_Boost" xml:space="preserve">
+    <value>Clubcard Boost</value>
+  </data>
+  <data name="lblSV_EatingOut" xml:space="preserve">
+    <value>Eating out</value>
+  </data>
+  <data name="lblSV_Fun" xml:space="preserve">
+    <value>Fun</value>
+  </data>
+  <data name="lblSV_HomeEssen" xml:space="preserve">
+    <value>Home &amp; Essentials</value>
+  </data>
+  <data name="lblSV_How" xml:space="preserve">
+    <value>How to spend your vouchers</value>
+  </data>
+  <data name="lblSV_Lifestyle" xml:space="preserve">
+    <value>Lifestyle</value>
+  </data>
+  <data name="lblSV_Travel" xml:space="preserve">
+    <value>Travel</value>
+  </data>
+  <data name="lblTesco" xml:space="preserve">
+    <value>Tesco</value>
+  </data>
+  <data name="lblTescoSite" xml:space="preserve">
+    <value>Tesco.com</value>
+  </data>
+  <data name="lblTravel_Airlines" xml:space="preserve">
+    <value>Airlines</value>
+  </data>
+  <data name="lblTravel_Holiday" xml:space="preserve">
+    <value>Holidays</value>
+  </data>
+  <data name="lblTravel_HotelBreak" xml:space="preserve">
+    <value>Hotel Breaks</value>
+  </data>
+  <data name="lblTravel_Transport" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="TescoLogo" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/</value>
+  </data>
+</root>

@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A832D2D-7D1F-49AA-B8FB-86A2991442FC}"
+	ProjectSection(SolutionItems) = preProject
+		local.testsettings = local.testsettings
+		Tesco.MVC.TestFrameworks2.vsmdi = Tesco.MVC.TestFrameworks2.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.ReportGenerator", "Tesco.Framework.ReportGenerator\Tesco.Framework.ReportGenerator.csproj", "{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.Common.Utilities", "Tesco.Framework.Common.Utilities\Tesco.Framework.Common.Utilities.csproj", "{3AA7DD28-4A96-4A97-8672-476A50110DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.Common.Reporting", "Tesco.Framework.Common.Reporting\Tesco.Framework.Common.Reporting.csproj", "{E9D9945C-0849-4110-B250-990441BCBDB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.Common.Logging", "Tesco.Framework.Common.Logging\Tesco.Framework.Common.Logging.csproj", "{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator", "ReportGenerator\ReportGenerator.csproj", "{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.UITesting", "Tesco.Framework.UITesting\Tesco.Framework.UITesting.csproj", "{4706F82C-F990-47A4-9C09-7E5F20D92440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesco.Framework.UITesting.Services", "Tesco.Framework.UITesting.Services\Tesco.Framework.UITesting.Services.csproj", "{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsapp.dev.global.tesco.org/tfs/41_digitalclubcard
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tesco.Framework.ReportGenerator\\Tesco.Framework.ReportGenerator.csproj
+		SccProjectName1 = Tesco.Framework.ReportGenerator
+		SccLocalPath1 = Tesco.Framework.ReportGenerator
+		SccProjectUniqueName2 = Tesco.Framework.Common.Utilities\\Tesco.Framework.Common.Utilities.csproj
+		SccProjectName2 = Tesco.Framework.Common.Utilities
+		SccLocalPath2 = Tesco.Framework.Common.Utilities
+		SccProjectUniqueName3 = Tesco.Framework.Common.Reporting\\Tesco.Framework.Common.Reporting.csproj
+		SccProjectName3 = Tesco.Framework.Common.Reporting
+		SccLocalPath3 = Tesco.Framework.Common.Reporting
+		SccProjectUniqueName4 = Tesco.Framework.Common.Logging\\Tesco.Framework.Common.Logging.csproj
+		SccProjectName4 = Tesco.Framework.Common.Logging
+		SccLocalPath4 = Tesco.Framework.Common.Logging
+		SccProjectUniqueName5 = ReportGenerator\\ReportGenerator.csproj
+		SccProjectName5 = ReportGenerator
+		SccLocalPath5 = ReportGenerator
+		SccProjectUniqueName6 = Tesco.Framework.UITesting\\Tesco.Framework.UITesting.csproj
+		SccProjectName6 = Tesco.Framework.UITesting
+		SccLocalPath6 = Tesco.Framework.UITesting
+		SccProjectUniqueName7 = Tesco.Framework.UITesting.Services\\Tesco.Framework.UITesting.Services.csproj
+		SccProjectName7 = Tesco.Framework.UITesting.Services
+		SccLocalPath7 = Tesco.Framework.UITesting.Services
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Tesco.MVC.TestFrameworks2.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Debug|x86.ActiveCfg = Debug|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Debug|x86.Build.0 = Debug|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Release|Any CPU.ActiveCfg = Release|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Release|x86.ActiveCfg = Release|x86
+		{50A7B2E4-CCF0-4EC1-A365-81B514FD026E}.Release|x86.Build.0 = Release|x86
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3AA7DD28-4A96-4A97-8672-476A50110DE5}.Release|x86.ActiveCfg = Release|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E9D9945C-0849-4110-B250-990441BCBDB4}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BF0F4A60-8B39-469E-88EC-D6C3A2850D97}.Release|x86.ActiveCfg = Release|Any CPU
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Debug|x86.ActiveCfg = Debug|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Debug|x86.Build.0 = Debug|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Release|Any CPU.ActiveCfg = Release|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Release|Mixed Platforms.Build.0 = Release|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Release|x86.ActiveCfg = Release|x86
+		{19DE1833-A742-4AA1-9E2C-EBC38C0DD9CD}.Release|x86.Build.0 = Release|x86
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4706F82C-F990-47A4-9C09-7E5F20D92440}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4D54EC54-FD8A-4DD7-8C69-B09ADA7C95E2}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

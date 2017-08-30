@@ -1,0 +1,20 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="NewDataSet">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ActiveDateRangeConfig" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:byte" name="ConfigurationType"/>
+							<xs:element type="xs:string" name="ConfigurationName"/>
+							<xs:element type="xs:byte" name="ConfigurationValue1"/>
+							<xs:element type="xs:string" name="ConfigurationValue2"/>
+							<xs:element type="xs:string" name="IsDeleted"/>
+							<xs:element type="xs:string" name="Comments"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

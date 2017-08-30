@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<eCoupon-App_LocalResources.th-TH>
+  <Home.cshtml.th-TH.resx>
+    <Data key="Description" value="เราขอมอบคูปองส่วนลดเพื่อแทนคำขอบคุณสำหรับสมาชิกคลับการ์ด  คูปองส่วนลดของคุณย้อนหลัง 6 เดือนจะแสดงที่ด้านล่าง และคุณสามารถพิมพ์คูปองที่ยังใช้ได้หากคุณต้องการ" />
+    <Data key="ErrorCouponsDetail" value="Could not fetch your Coupons Details." />
+    <Data key="ErrorCouponsHome" value="There is some error in fetching your coupons." />
+    <Data key="ErrorCouponsPreview" value="Cannot preview your Coupon" />
+    <Data key="HoldingPageDescriptionPart1" value="We currently send you coupons to spend in store. If you would prefer to receive eCoupons to spend online, please go to" />
+    <Data key="HoldingPageDescriptionPart2" value="My preferences" />
+    <Data key="HoldingPageDescriptionPart3" value="and opt-in to eCoupons." />
+    <Data key="HoldingPageDescriptionPart4" value="To find out more," />
+    <Data key="HoldingPageDescriptionPart5" value="click here" />
+    <Data key="PageTitle" value="คูปองส่วนลด" />
+    <Data key="PDFTitleCoupon" value="Coupon" />
+    <Data key="strCouponUsed" value="คูปองได้ถูกใช้แล้ว" />
+    <Data key="strCouponVoided" value="คูปองได้ถูกยกเลิก" />
+    <Data key="strOf" value="ของ" />
+    <Data key="SummaryHeading" value="สรุปรายการคูปอง" />
+  </Home.cshtml.th-TH.resx>
+  <_CouponHowToUse.cshtml.th-TH.resx>
+    <Data key="InStoreHtml" value="&lt;ol&gt;&#xD;&#xA;&lt;li&gt;เลือกคูปองที่ต้องการ&lt;/li&gt;&#xD;&#xA;&lt;li&gt;คลิกที่ “พิมพ์คูปองที่เลือกไว้”&lt;/li&gt;&#xD;&#xA;&lt;li&gt;คูปองที่เลือกไว้จะโชว์เพื่อพิมพ์&lt;/li&gt;&#xD;&#xA;&lt;li&gt;พิมพ์คูปอง&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="OnlineHtml" value="&lt;ol&gt;&lt;li&gt;Your coupons will be waiting for you at the Tesco groceries checkout&lt;/li&gt;&lt;li&gt;Simply select those you want to use and complete your shopping&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="InStoreHeading" value="ร้านค้า" />
+    <Data key="OnlineHeading" value="Online" />
+    <Data key="Heading" value="วิธีการนำ &#xD;&#xA;คูปองไปใช้" />
+  </_CouponHowToUse.cshtml.th-TH.resx>
+  <_CouponsAvailable.cshtml.th-TH.resx>
+    <Data key="CouponHeaderLable" value="เลือกคูปอง" />
+    <Data key="ExpireLable" value="หมดอายุวันที่:" />
+    <Data key="FooterLable" value="*คูปอง 1 ใบ สามารถใช้ได้เพียง 1 ครั้ง หากใช้คูปองส่วนลดคลับการ์ดจากช่องทางใดแล้ว จะไม่ใช้คูปองนั้นได้อีกจากทุกช่องทาง)&#xD;&#xA;คูปองจะถูกบันทึกว่าถูกใช้แล้วที่หน้านี้ภายใน 24 ชั่วโมง" />
+    <Data key="Heading" value="คูปองที่ยังใช้ได้อยู่" />
+    <Data key="NoCouponSeletedError" value="กรุณาเลือกคูปองและลองใหม่อีกครั้ง ขอบคุณค่ะ" />
+    <Data key="NoCouponsLable" value="ขณะนี้คุณไม่มีคูปองส่วนลดที่สามารถใช้ได้, คุณสามารถเข้ามาตรวจสอบใหม่ได้ภายหลัง" />
+    <Data key="OnlineCodeLable" value="Online eCode" />
+    <Data key="PrintBtnLable" value="พิมพ์คูปอง" />
+    <Data key="RedemptionsRemainingLable" value="จำนวนครั้งที่สามารถใช้ได้:" />
+    <Data key="SelectBtnLable" value="เลือกทั้งหมด" />
+    <Data key="SubHeading" value="" />
+  </_CouponsAvailable.cshtml.th-TH.resx>
+  <_CouponsBox.cshtml.th-TH.resx>
+    <Data key="CouponAvailableLable" value="คูปองที่ยังใช้ได้อยู่" />
+    <Data key="CouponsSentLable" value="คูปองที่เราส่งให้คุณ ในรอบ 6 เดือนที่ผ่านมา" />
+    <Data key="CouponUsedLable" value="คูปองที่คุณใช้แล้ว ใน 4 สัปดาห์ที่ผ่านมา" />
+  </_CouponsBox.cshtml.th-TH.resx>
+  <_CouponsUsed.cshtml.th-TH.resx>
+    <Data key="IssueDateLable" value="วันที่ออกคูปอง" />
+    <Data key="NoRedeemptionMessage" value="คุณไม่ได้มีการใช้คูปองใน 4 สัปดาห์ที่ผ่านมา คุณสามารถดูวิธีการใช้คูปองได้" />
+    <Data key="OfferLable" value="รายละเอียดคูปอง" />
+    <Data key="RedeemedDateLable" value="วันที่ใช้คูปอง" />
+    <Data key="RedeemedLocationLable" value="สาขาที่ใช้" />
+    <Data key="RedemptionCountLable" value="จำนวนครั้งที่ใช้ไป" />
+    <Data key="UsedCouponSectionHeading" value="คูปองที่คุณใช้เมื่อ 4 สัปดาห์ที่ผ่านมา" />
+    <Data key="UsedLable" value="สถานะการใช้" />
+  </_CouponsUsed.cshtml.th-TH.resx>
+</eCoupon-App_LocalResources.th-TH>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Zaznacz jedną z poniżej dostępnych opcji:</value>
+    <comment>lclPageDesc1Resource1.Text + lclPageDesc2Resource1.Text</comment>
+  </data>
+  <data name="HeaderText" xml:space="preserve">
+    <value>Wybierz formę kontaktu oraz sposób otrzymywania swojego wyciągu CLUBCARD</value>
+    <comment>lclConfirmcontactResource1.Text</comment>
+  </data>
+  <data name="lblBraille" xml:space="preserve">
+    <value />
+    <comment>lclLargePrintResource1.Text</comment>
+  </data>
+  <data name="lblBrailleDesc" xml:space="preserve">
+    <value>Zapisz się lub zrezygnuj z usługi. Skontaktuj się z bezplatną Infolinią Clubcard pod numerem telefonu 800 105 104 0800 591 688 * or 0330 123 1688 **</value>
+    <comment>lclOptinServicesResource1.Text + lcltollfree1Resource1.Text + lcltollfree1starResource1.Text + lcltollfree2Resource2.Text + lcltollfree2starResource2.Text</comment>
+  </data>
+  <data name="lblBrailleOpted" xml:space="preserve">
+    <value />
+    <comment>BrailleStatementOptIn</comment>
+  </data>
+  <data name="lblBrailleStatementNotOptIn" xml:space="preserve">
+    <value />
+    <comment>BrailleStatementNotOptInLargePrint</comment>
+  </data>
+  <data name="lblCheckAddress" xml:space="preserve">
+    <value>Zweryfikuj adres korespondencyjny (ulica):</value>
+    <comment>lclcheckAddressline1Resource1.Text</comment>
+  </data>
+  <data name="lblConfirm" xml:space="preserve">
+    <value>Potwierdź</value>
+    <comment>btnConfirmContactPrefResource1.Text</comment>
+  </data>
+  <data name="lblConfirmEmail" xml:space="preserve">
+    <value>Potwierdź adres e-mail:</value>
+    <comment>lclConEmailAddressResource1.Text</comment>
+  </data>
+  <data name="lblConfirmMobile" xml:space="preserve">
+    <value>Potwierdz numer telefonu komórkowego*:</value>
+    <comment>lclConfirmMobileNumberResource1.Text</comment>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>W przypadku pytań lub wątpliwości dotyczących powyższych możliwości otrzymywania Twojego wyciągu CLUBCARD prosimy o kontakt z bezpłatną infolinią 800 105 104.</value>
+    <comment>lclCommunicateMsgResource1.Text</comment>
+  </data>
+  <data name="lblDesc1" xml:space="preserve">
+    <value />
+    <comment>lclCommunicateMsg1Resource1.Text</comment>
+  </data>
+  <data name="lblDesc2" xml:space="preserve">
+    <value />
+    <comment>lclCommunicateMsg2Resource1.Text</comment>
+  </data>
+  <data name="lblEmailDesc" xml:space="preserve">
+    <value>Jeżeli wybierzesz tę opcję kontaktu, informacje na temat Twojego wyciągu CLUBCARD z kuponami i bonami będziemy przesyłać na podany powyżej adres e-mail. Bony i kupony CLUBCARD będą dostępne na koncie wcześniej niż w wersji papierowej, którą wysyłamy pocztą.</value>
+    <comment>lclsentEmailmsgResource1.Text</comment>
+  </data>
+  <data name="lblEmailDesc1" xml:space="preserve">
+    <value>Wybierając tę opcję kontaktu, wyrażam zgodę na otrzymywanie informacji środkami komunikacji elektronicznej na podany powyżej adres e-mail. Informujemy równocześnie, że zaznaczając tę opcję, rezygnujesz z otrzymywania papierowego wyciągu CLUBCARD.</value>
+    <comment>Localize1Resource1.Text</comment>
+  </data>
+  <data name="lblEnterEmail" xml:space="preserve">
+    <value>Podaj adres e-mail:</value>
+    <comment>lclemailAddressResource1.Text</comment>
+  </data>
+  <data name="lblEnterMobile" xml:space="preserve">
+    <value>Wprowadź numer telefonu*:</value>
+    <comment>lclMobileNumberResource1.Text</comment>
+  </data>
+  <data name="lblLargePrintOpted" xml:space="preserve">
+    <value />
+    <comment>BrailleStatementOptInLargePrint</comment>
+  </data>
+  <data name="lblPostDesc" xml:space="preserve">
+    <value>Zawsze możesz zaktualizować swój adres korespondencyjny w zakładce:</value>
+    <comment>lclAddressupdateResource1.Text</comment>
+  </data>
+  <data name="lblPostDesc1" xml:space="preserve">
+    <value>Jeżeli wybierzesz tę opcję kontaktu, Twój wyciąg CLUBCARD będzie przesyłany pocztą.</value>
+    <comment>Localize2Resource1.Text</comment>
+  </data>
+  <data name="lblPrefEmail" xml:space="preserve">
+    <value>Online za pośrdnictwem e-mail</value>
+    <comment>lclViaEmailResource1.Text</comment>
+  </data>
+  <data name="lblPrefPost" xml:space="preserve">
+    <value>Za pośrednictwem poczty</value>
+    <comment>lclViaPostResource1.Text</comment>
+  </data>
+  <data name="lblPrefText" xml:space="preserve">
+    <value>Za pośrednictwem wiadomości tekstowych SMS</value>
+    <comment>lclTextMsgResource1.Text</comment>
+  </data>
+  <data name="lblTextDesc" xml:space="preserve">
+    <value>Wysłano e-mail z linkiem aktywacyjnym do Twojego konta Clubcard. Aby uzyskać pełny dostęp do wyciągów, kuponów oraz podsumowania punktów Clubcard, zakończ aktywację.</value>
+    <comment>lclTextDescResource1.Text</comment>
+  </data>
+  <data name="lblTextDesc1" xml:space="preserve">
+    <value>Informujemy równocześnie, że zaznaczając tą opcję rezygnujesz z otrzymywania papierowego wyciągu CLUBCARD.</value>
+    <comment>Localize1Resource1.Text</comment>
+  </data>
+  <data name="lnkMyPersonalDetails" xml:space="preserve">
+    <value>Dane osobowe.</value>
+    <comment>lclMyPersonalDetailsResource1.Text</comment>
+  </data>
+  <data name="lnkTnC" xml:space="preserve">
+    <value />
+    <comment>lclTermsCondnResource1.Text</comment>
+  </data>
+  <data name="MessageDataSaved" xml:space="preserve">
+    <value>Zapisano zmiany</value>
+    <comment>lclConfirmSaveMsgResource1.Text</comment>
+  </data>
+  <data name="lclRequireWarningText" xml:space="preserve">
+    <value>pola wymagane</value>
+  </data>
+  <data name="errMessageEmail" xml:space="preserve">
+    <value>Wprowadzony adres e-mail jest nieprawidłowy. Podaj poprawny adres e-mail</value>
+  </data>
+  <data name="PageName" xml:space="preserve">
+    <value>Preferencje kontaktu</value>
+    <comment>PageName -</comment>
+  </data>
+  <data name="TrackEmail" xml:space="preserve">
+    <value>Adres e-mail</value>
+    <comment>TrackEmail -</comment>
+  </data>
+  <data name="clientErrEmailMismatch" xml:space="preserve">
+    <value></value>
+    <comment>clientSideErrMessageEmail -</comment>
+  </data>
+   <data name="clientErrMobileMismatch" xml:space="preserve">
+    <value></value>
+    <comment>clientSideErrMessageMobil -</comment>
+  </data>
+</root>

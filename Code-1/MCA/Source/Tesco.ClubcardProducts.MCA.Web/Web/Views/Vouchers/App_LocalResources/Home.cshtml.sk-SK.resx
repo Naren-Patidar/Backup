@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnPrintCCResource" xml:space="preserve">
+    <value>Vytlačiť moje poukážky</value>
+  </data>
+  <data name="lblAviosMilesButtom" xml:space="preserve">
+    <value>Avios</value>
+  </data>
+  <data name="lblIwantTo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblShowErrorMsgResource" xml:space="preserve">
+    <value>Prosím, vyberte poukázky a zkuste znovu. Děkujeme.</value>
+  </data>
+  <data name="lclAtRate" xml:space="preserve">
+    <value>ve výši</value>
+  </data>
+  <data name="lclAutoConvertPoints" xml:space="preserve">
+    <value>Rozhodli jste se mít své body automaticky převedeny do</value>
+  </data>
+  <data name="lclAutoPreviousStatement" xml:space="preserve">
+    <value>You have chosen to automatically receive Avios instead of Clubcard vouchers. However, you have unspent vouchers from previous Statements.</value>
+  </data>
+  <data name="lclAutoReceiveAvios" xml:space="preserve">
+    <value>You have chosen to automatically receive Avios instead of Clubcard vouchers. However,you have unspent vouchers from previous Statements.</value>
+  </data>
+  <data name="lclAviosMiles" xml:space="preserve">
+    <value>Avios</value>
+  </data>
+  <data name="lclAviosMilesHeader" xml:space="preserve">
+    <value>Avios</value>
+  </data>
+  <data name="lclAviosOnlineCode" xml:space="preserve">
+    <value>To convert your vouchers below into Avios, use the online codes on the</value>
+  </data>
+  <data name="lclAviosSummary" xml:space="preserve">
+    <value>Přehled</value>
+  </data>
+  <data name="lclAviosVoucherHeader" xml:space="preserve">
+    <value>My Avios</value>
+  </data>
+  <data name="lclBeforeExpires" xml:space="preserve">
+    <value>Dosud jste nevyužili všechny své Clubcard poukázky - nezapomeňte je využít ještě před tím, než jim vyprší platnost</value>
+  </data>
+  <data name="lclClickHere" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclClickPrintResource" xml:space="preserve">
+    <value>Kliknite na „Vytlačiť moje poukážky“</value>
+  </data>
+  <data name="lclClubPointsForEvery" xml:space="preserve">
+    <value>za každých 250 Clubcard bodů.</value>
+  </data>
+  <data name="lclCollectedPointsSummary" xml:space="preserve">
+    <value>Přehled ukazuje, kolik bodů jste získali za poslední 2 roky, které byly převedeny do</value>
+  </data>
+  <data name="lclConvertToAvios" xml:space="preserve">
+    <value>To convert your vouchers below into Avios, use the online codes on the</value>
+  </data>
+  <data name="lclCurrentUnspent" xml:space="preserve">
+    <value>Tieto poukážky ešte máte k dispozícií a môžete ich použiť.</value>
+  </data>
+  <data name="lclEasyEarnPoints" xml:space="preserve">
+    <value>V túto chvíľu nemáte žiadne peňažné poukážky.</value>
+  </data>
+  <data name="lclExpDateResource" xml:space="preserve">
+    <value>Dátum expirácie</value>
+  </data>
+  <data name="lclFlyingClubMiles" xml:space="preserve">
+    <value>To convert your vouchers below into Flying Club miles, use the online codes on the</value>
+  </data>
+  <data name="lclForgotToSpend" xml:space="preserve">
+    <value>Stále jste ještě nevyužili všechny své ClubCard poukázky - nezapomeňte je využít, než jim vyprší doba splatnosti.</value>
+  </data>
+  <data name="lclFoundBelow" xml:space="preserve">
+    <value>Pokyny pre použitie vašich peňažných poukážok nájdete nižšie.</value>
+  </data>
+  <data name="lclMakeSure" xml:space="preserve">
+    <value>Prosím ujistěte se, že je neztratíte</value>
+  </data>
+  <data name="lclPrintResource" xml:space="preserve">
+    <value>Vybrané poukážky sa vám uložia ako PDF a vy si ich kedykoľvek vytlačíte.</value>
+  </data>
+  <data name="lclPrintVoucherResource" xml:space="preserve">
+    <value>Ak si chcete vytlačiť peňažné poukážky:</value>
+  </data>
+  <data name="lclRedemVoucherResource" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclRewardSite" xml:space="preserve">
+    <value>rewards website</value>
+  </data>
+  <data name="lclSelectVoucherResource" xml:space="preserve">
+    <value>Vyberte poukážky, ktoré si prajete vytlačiť</value>
+  </data>
+  <data name="lclTescoMstCard" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclTillResource" xml:space="preserve">
+    <value>Prosím, vytlačte na biely papier čiernobielo, alebo farebne.  Rozmazané, alebo inak poškodené čiarové kódy nemusia byť pri nákupe akceptované.  Poukážky môžete tlačiť viackrát, použité však môžu byť a budú iba jeden krát. </value>
+  </data>
+  <data name="lclUnspendVouchers" xml:space="preserve">
+    <value>You have chosen to automatically receive Virgin Atlantic Flying Club miles instead of Clubcard vouchers. However, you have unspent vouchers from previous Statements.</value>
+  </data>
+  <data name="lclUnUsedVouchersHeader" xml:space="preserve">
+    <value>Poukážky, ktoré ešte môžete použiť.</value>
+  </data>
+  <data name="lclViewSummary" xml:space="preserve">
+    <value>Peňažné poukážky Clubcard môžete uplatniť  na nákup tovarov v obchodnej sieti spoločnosti Tesco podľa platnosti uvedenej na poukážke. 
+                                        Nižšie nájdete prehľad použitých a nepoužitých poukážiek, ktoré si môžete vytlačit                                           
+.</value>
+  </data>
+  <data name="lclVirginHeader" xml:space="preserve">
+    <value>My Virgin Atlantic Flying Club</value>
+  </data>
+  <data name="lclVirginMiles" xml:space="preserve">
+    <value>Virgin Atlantic Flying Club</value>
+  </data>
+  <data name="lclVirginMilesButtom" xml:space="preserve">
+    <value>Flying Club miles</value>
+  </data>
+  <data name="lclVirginMilesHeader" xml:space="preserve">
+    <value>Virgin Atlantic Flying Club</value>
+  </data>
+  <data name="lclVoucherHeader" xml:space="preserve">
+    <value>Moje poukážky</value>
+  </data>
+  <data name="lclVouchersDueToExpire" xml:space="preserve">
+    <value>Máte nějaké poukázky, jejichž platnost vyprší v příštích 3 měsících</value>
+  </data>
+  <data name="lclVoucherSumHeader" xml:space="preserve">
+    <value>Prehľad poukážok:</value>
+  </data>
+  <data name="lclVouchersUsedOnce" xml:space="preserve">
+    <value>Peňažné poukážky je možné použiť iba jedenkrát. Bude trvať až 24 hodín pokým sa peňažné poukážky na tejto stránke označia ako použité.</value>
+  </data>
+  <data name="lclXMasHeader" xml:space="preserve">
+    <value>Přehled vánočních úspor</value>
+  </data>
+  <data name="lclXMasSaverStatement" xml:space="preserve">
+    <value>Váš vánoční výpis</value>
+  </data>
+  <data name="lclXMasSaverSummary" xml:space="preserve">
+    <value>Jako člen vánočních úspor jste si objednali, aby Vám Vaše poukázky byly zaslány na:</value>
+  </data>
+  <data name="lclXmasSummary" xml:space="preserve">
+    <value>Zatímco jste byl/byla členem klubu vánočních úspor, peníze které jste ušetřil/ušetřila jsou uvedeny v tabulce. Tato částka Vám bude vrácena v podobě poukázek ve Vašem listopadovém výpise.</value>
+  </data>
+  <data name="lnkConvertToAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="lnkConvertToBAAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="lnkConvertToVirgin" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="lnkVoucherAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="lnkVoucherBAAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="lnkVoucherVirgin" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VoucherPageTitle" xml:space="preserve">
+    <value>Vouchers</value>
+  </data>
+</root>

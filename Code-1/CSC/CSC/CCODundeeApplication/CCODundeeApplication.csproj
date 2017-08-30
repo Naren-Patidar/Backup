@@ -1,0 +1,2386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCODundeeApplication</RootNamespace>
+    <AssemblyName>CCODundeeApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalizationLibrary, Version=9.0.1.9, Culture=neutral, PublicKeyToken=860ef521a32837fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\LocalizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=9.0.1.9, Culture=neutral, PublicKeyToken=468ff2615375db33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=9.0.1.9, Culture=neutral, PublicKeyToken=468ff2615375db33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\ReferenceDLL\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\ReferenceDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NGCTrace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\NGCTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\office.dll</HintPath>
+    </Reference>
+    <Reference Include="PointsSummarySequencing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ReferenceDLL\PointsSummarySequencing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tesco.ClubcardProducts.MCA.Web.RestClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\ReferenceDLL\Tesco.ClubcardProducts.MCA.Web.RestClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax.aspx" />
+    <Compile Include="App_Code\addressLookup.cs" />
+    <Compile Include="App_Code\CustomerUUID.cs" />
+    <Content Include="ChristmasSavers.aspx" />
+    <Content Include="CSS\core.css" />
+    <Content Include="CustomerCards.aspx" />
+    <Content Include="CustomerCardsRecarding.aspx" />
+    <Content Include="CustomerDetail.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="JS\CustomerDetails.js" />
+    <Content Include="JS\General.js" />
+    <Content Include="JS\jquery-1.3.2.js" />
+    <Content Include="JS\UnlockAccount.js" />
+    <Content Include="SearchCustomer.aspx" />
+    <None Include="Service References\AdminService\configuration91.svcinfo" />
+    <None Include="Service References\AdminService\configuration.svcinfo" />
+    <None Include="Service References\AdminService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\CCODundeeApplication.ClubcardCouponServices.CouponInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.disco" />
+    <None Include="Service References\ClubcardCouponServices\configuration91.svcinfo" />
+    <None Include="Service References\ClubcardCouponServices\configuration.svcinfo" />
+    <None Include="Service References\ClubcardCouponServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ClubcardService\CCODundeeApplication.ClubcardService.GetFuelBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService.disco" />
+    <None Include="Service References\ClubcardService\configuration91.svcinfo" />
+    <None Include="Service References\ClubcardService\configuration.svcinfo" />
+    <None Include="Service References\ClubcardService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CouponEnquiryService\CCODundeeApplication.CouponEnquiryService.CouponInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService.disco" />
+    <None Include="Service References\CouponEnquiryService\configuration91.svcinfo" />
+    <None Include="Service References\CouponEnquiryService\configuration.svcinfo" />
+    <None Include="Service References\CouponEnquiryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CustomerService\01.wsdl" />
+    <None Include="Service References\CustomerService\01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\CCODundeeApplication.CustomerService.CouponResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerService\CCODundeeApplication.CustomerService.MembershipUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomerService\configuration91.svcinfo" />
+    <None Include="Service References\CustomerService\configuration.svcinfo" />
+    <None Include="Service References\CustomerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CustomerService\service.wsdl" />
+    <None Include="Service References\CustomerService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\System.Web.Security.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\Tesco.com.ClubcardOnlineService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\Tesco.Marketing.IT.ClubcardCoupon.DataContract.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.disco" />
+    <None Include="Service References\JoinLoyaltyService\configuration91.svcinfo" />
+    <None Include="Service References\JoinLoyaltyService\configuration.svcinfo" />
+    <None Include="Service References\JoinLoyaltyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MarketingService\MarketingService.disco" />
+    <None Include="Service References\MarketingService\configuration91.svcinfo" />
+    <None Include="Service References\MarketingService\configuration.svcinfo" />
+    <None Include="Service References\MarketingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\NGCReportingService\configuration91.svcinfo" />
+    <None Include="Service References\NGCReportingService\configuration.svcinfo" />
+    <None Include="Service References\NGCReportingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\NGCReportingService\service1.wsdl" />
+    <None Include="Service References\NGCReportingService\service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCReportingService\service31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NGCReportingService\service32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\CCODundeeApplication.PreferenceServices.ClubDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PreferenceServices\CCODundeeApplication.PreferenceServices.CustomerPreference.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PreferenceServices\configuration91.svcinfo" />
+    <None Include="Service References\PreferenceServices\configuration.svcinfo" />
+    <None Include="Service References\PreferenceServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PreferenceServices\service.wsdl" />
+    <None Include="Service References\PreferenceServices\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PreferenceServices\Tesco.com.ClubcardOnline.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetRewardDtlsMilesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetRewardDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetUnusedVoucherDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetUsedVoucherDtlsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetVoucherValAllCPSRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\CCODundeeApplication.SmartVoucherServices.GetVoucherValHHRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices.disco" />
+    <None Include="Service References\SmartVoucherServices\configuration91.svcinfo" />
+    <None Include="Service References\SmartVoucherServices\configuration.svcinfo" />
+    <None Include="Service References\SmartVoucherServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.wsdl" />
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService1.wsdl" />
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardCouponServices\ClubcardCouponService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService.wsdl" />
+    <None Include="Service References\ClubcardService\ClubcardService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService1.wsdl" />
+    <None Include="Service References\ClubcardService\ClubcardService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClubcardService\ClubcardService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService.wsdl" />
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService1.wsdl" />
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CouponEnquiryService\ClubcardCouponService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.wsdl" />
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JoinLoyaltyService\JoinLoyaltyService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarketingService\MarketingService.wsdl" />
+    <None Include="Service References\MarketingService\MarketingService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MarketingService\MarketingService1.wsdl" />
+    <None Include="Service References\MarketingService\MarketingService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices.wsdl" />
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices1.wsdl" />
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SmartVoucherServices\SmartVoucherServices3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroup.aspx.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddGroup.aspx.designer.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPoints.aspx.cs">
+      <DependentUpon>AddPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPoints.aspx.designer.cs">
+      <DependentUpon>AddPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\ConfigurationConstants.cs" />
+    <Compile Include="Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\CreateCardset.cs" />
+    <Compile Include="App_Code\LocatorSvcSDAOperations.cs" />
+    <Compile Include="App_Code\NewCardEntitled.cs" />
+    <Compile Include="App_Code\RestClient.cs" />
+    <Compile Include="App_GlobalResources\ApiMethodNames.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApiMethodNames.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.cs-CZ1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.cs-CZ.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.Designer.cs" />
+    <Compile Include="App_GlobalResources\CSCGlobal.en-IE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.en-IE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.en-MY.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.en-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.hu-HU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.hu-HU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.pl-PL.designer.cs" />
+    <Compile Include="App_GlobalResources\CSCGlobal.pl-PL1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.th-TH.designer.cs" />
+    <Compile Include="App_GlobalResources\CSCGlobal.th-TH3.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.th-TH.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CSCGlobal.zh-CN2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSCGlobal.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessConstants.cs" />
+    <Compile Include="CardRanges.aspx.cs">
+      <DependentUpon>CardRanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardRanges.aspx.designer.cs">
+      <DependentUpon>CardRanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardType.aspx.cs">
+      <DependentUpon>CardType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardType.aspx.designer.cs">
+      <DependentUpon>CardType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePrimaryCard.aspx.cs">
+      <DependentUpon>ChangePrimaryCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePrimaryCard.aspx.designer.cs">
+      <DependentUpon>ChangePrimaryCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChristmasSavers.aspx.cs">
+      <DependentUpon>ChristmasSavers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChristmasSavers.aspx.designer.cs">
+      <DependentUpon>ChristmasSavers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCards.aspx.cs">
+      <DependentUpon>CustomerCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCards.aspx.designer.cs">
+      <DependentUpon>CustomerCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCardsRecarding.aspx.cs">
+      <DependentUpon>CustomerCardsRecarding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCardsRecarding.aspx.designer.cs">
+      <DependentUpon>CustomerCardsRecarding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCoupons.aspx.cs">
+      <DependentUpon>CustomerCoupons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCoupons.aspx.designer.cs">
+      <DependentUpon>CustomerCoupons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetail.aspx.cs">
+      <DependentUpon>CustomerDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerDetail.aspx.designer.cs">
+      <DependentUpon>CustomerDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataConfiguration.aspx.cs">
+      <DependentUpon>DataConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataConfiguration.aspx.designer.cs">
+      <DependentUpon>DataConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeLinking.aspx.cs">
+      <DependentUpon>DeLinking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeLinking.aspx.designer.cs">
+      <DependentUpon>DeLinking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindCoupon.aspx.cs">
+      <DependentUpon>FindCoupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindCoupon.aspx.designer.cs">
+      <DependentUpon>FindCoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindGroup.aspx.cs">
+      <DependentUpon>FindGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindGroup.aspx.designer.cs">
+      <DependentUpon>FindGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindUser.aspx.cs">
+      <DependentUpon>FindUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindUser.aspx.designer.cs">
+      <DependentUpon>FindUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Join.aspx.cs">
+      <DependentUpon>Join.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Join.aspx.designer.cs">
+      <DependentUpon>Join.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MergeCard.aspx.cs">
+      <DependentUpon>MergeCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MergeCard.aspx.designer.cs">
+      <DependentUpon>MergeCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Points.aspx.cs">
+      <DependentUpon>Points.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Points.aspx.designer.cs">
+      <DependentUpon>Points.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PointsSummary.aspx.cs">
+      <DependentUpon>PointsSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PointsSummary.aspx.designer.cs">
+      <DependentUpon>PointsSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences.aspx.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preferences.aspx.designer.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PromotionCode.aspx.cs">
+      <DependentUpon>PromotionCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PromotionCode.aspx.designer.cs">
+      <DependentUpon>PromotionCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AccountReportHomePage.aspx.cs">
+      <DependentUpon>AccountReportHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountReportHomePage.aspx.designer.cs">
+      <DependentUpon>AccountReportHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClubcardRegistrationReport.aspx.cs">
+      <DependentUpon>ClubcardRegistrationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ClubcardRegistrationReport.aspx.designer.cs">
+      <DependentUpon>ClubcardRegistrationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerLoadReport.aspx.cs">
+      <DependentUpon>CustomerLoadReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerLoadReport.aspx.designer.cs">
+      <DependentUpon>CustomerLoadReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DownloadExcelReport.aspx.cs">
+      <DependentUpon>DownloadExcelReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DownloadExcelReport.aspx.designer.cs">
+      <DependentUpon>DownloadExcelReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExportToExcel.aspx.cs">
+      <DependentUpon>ExportToExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ExportToExcel.aspx.designer.cs">
+      <DependentUpon>ExportToExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExtracttoExcel.cs" />
+    <Compile Include="Reports\PointsEarnedReport.aspx.cs">
+      <DependentUpon>PointsEarnedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PointsEarnedReport.aspx.designer.cs">
+      <DependentUpon>PointsEarnedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PromotionCodeReport.aspx.cs">
+      <DependentUpon>PromotionCodeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PromotionCodeReport.aspx.designer.cs">
+      <DependentUpon>PromotionCodeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportHomePage.aspx.cs">
+      <DependentUpon>ReportHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportHomePage.aspx.designer.cs">
+      <DependentUpon>ReportHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SchedulePopup.aspx.cs">
+      <DependentUpon>SchedulePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\SchedulePopup.aspx.designer.cs">
+      <DependentUpon>SchedulePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdminService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClubcardCouponServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClubcardService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CouponEnquiryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\JoinLoyaltyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MarketingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NGCReportingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PreferenceServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SmartVoucherServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShowCallDetails.aspx.cs">
+      <DependentUpon>ShowCallDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowCallDetails.aspx.designer.cs">
+      <DependentUpon>ShowCallDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TescoPartner.aspx.cs">
+      <DependentUpon>TescoPartner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TescoPartner.aspx.designer.cs">
+      <DependentUpon>TescoPartner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TescoStore.aspx.cs">
+      <DependentUpon>TescoStore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TescoStore.aspx.designer.cs">
+      <DependentUpon>TescoStore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.designer.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCardStatus.aspx.cs">
+      <DependentUpon>EditCardStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCardStatus.aspx.designer.cs">
+      <DependentUpon>EditCardStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowInfo.aspx.cs">
+      <DependentUpon>ShowInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowInfo.aspx.designer.cs">
+      <DependentUpon>ShowInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserNotes.aspx.cs">
+      <DependentUpon>UserNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserNotes.aspx.designer.cs">
+      <DependentUpon>UserNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPoints.aspx.cs">
+      <DependentUpon>ViewPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPoints.aspx.designer.cs">
+      <DependentUpon>ViewPoints.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Web.Security.MembershipUser.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="AddGroup.aspx" />
+    <Content Include="AddPoints.aspx" />
+    <Content Include="AddUser.aspx" />
+    <Content Include="ChangePrimaryCard.aspx" />
+    <Content Include="ClubcardOnlineService.csproj" />
+    <Content Include="CSCSetUP.sln" />
+    <Content Include="CustomerCoupons.aspx" />
+    <Content Include="DataConfiguration.aspx" />
+    <Content Include="FindCoupon.aspx" />
+    <Content Include="FindGroup.aspx" />
+    <Content Include="FindUser.aspx" />
+    <Content Include="I\AddCard.gif" />
+    <Content Include="I\AddPoints.bmp" />
+    <Content Include="I\btnSave.jpg" />
+    <Content Include="I\ChangePrimary.gif" />
+    <Content Include="I\enablepswd.jpg" />
+    <Content Include="I\untitled.jpg" />
+    <Content Include="Join.aspx" />
+    <Content Include="NGCDataAccessLayer.csproj" />
+    <Content Include="Reports\AccountReportHomePage.aspx" />
+    <Content Include="Reports\ClubcardRegistrationReport.aspx" />
+    <Content Include="Reports\CustomerLoadReport.aspx" />
+    <Content Include="Reports\DownloadExcelReport.aspx" />
+    <Content Include="Reports\ExportToExcel.aspx" />
+    <Content Include="Reports\PointsEarnedReport.aspx" />
+    <Content Include="Reports\PromotionalCodeReport.aspx" />
+    <Content Include="Reports\PromotionCodeReport.aspx" />
+    <Content Include="Reports\ReportHomePage.aspx" />
+    <Content Include="Reports\SchedulePopup.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="EditCardStatus.aspx" />
+    <None Include="Reports\App_LocalResources\PointsEarnedReport.aspx.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PointsEarnedReport.aspx.th-TH.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PromotionCodeReport.aspx.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PromotionCodeReport.aspx.th-TH.resx.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.cs.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.designer.cs.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.merge" />
+    <None Include="Reports\App_LocalResources\PointsEarnedReport.aspx.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PointsEarnedReport.aspx.th-TH.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PromotionCodeReport.aspx.resx.contrib" />
+    <None Include="Reports\App_LocalResources\PromotionCodeReport.aspx.th-TH.resx.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.cs.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.designer.cs.contrib" />
+    <None Include="Reports\ClubcardRegistrationReport.aspx.merge" />
+    <Content Include="TescoStore.aspx" />
+    <Content Include="ShowInfo.aspx" />
+    <Content Include="StatementFormats\42.xml" />
+    <Content Include="StatementFormats\3.xml" />
+    <Content Include="ViewPoints.aspx" />
+    <Content Include="wcfbehaviors.config" />
+    <Content Include="wcfclientendpoints.config" />
+    <Content Include="wcfstandardbinding.config" />
+    <Content Include="CSS\ie6.css" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="I\4xmoregreatdeals.jpg" />
+    <Content Include="I\airMiles.gif" />
+    <Content Include="I\airmiles.jpg" />
+    <Content Include="I\airmiles_small.jpg" />
+    <Content Include="I\AM_CMYK.png" />
+    <Content Include="I\AM_CMYK_1.JPG" />
+    <Content Include="I\asterisk.gif" />
+    <Content Include="I\avis.jpg" />
+    <Content Include="I\BA Executive Club blue.png" />
+    <Content Include="I\babytoddlerclub.jpg" />
+    <Content Include="I\baby_club.jpg" />
+    <Content Include="I\backprevsummarypage.gif" />
+    <Content Include="I\backtomanagecards.gif" />
+    <Content Include="I\backtopointspage.gif" />
+    <Content Include="I\backtopreviousummary.png" />
+    <Content Include="I\backtosummarypage.gif" />
+    <Content Include="I\backtovoucherhistory.gif" />
+    <Content Include="I\backtovouchersummary.gif" />
+    <Content Include="I\backtoyoupointspage.gif" />
+    <Content Include="I\blank.gif" />
+    <Content Include="I\botleft.png" />
+    <Content Include="I\botright.png" />
+    <Content Include="I\bottom-lightblue-left.png" />
+    <Content Include="I\bottom-lightblue-right.png" />
+    <Content Include="I\button_gobacktoyouraccount.png" />
+    <Content Include="I\button_login.png" />
+    <Content Include="I\button_register.png" />
+    <Content Include="I\cardNmbLt.gif" />
+    <Content Include="I\cardNmbRt.gif" />
+    <Content Include="I\ccBlueGreyBox.gif" />
+    <Content Include="I\ccBlueHeaderBox.gif" />
+    <Content Include="I\ccBlueHeaderBox1.gif" />
+    <Content Include="I\ccBlueHeaderBoxLogin.gif" />
+    <Content Include="I\ccCardNmbBox_left.gif" />
+    <Content Include="I\ccCardNmbBox_right.gif" />
+    <Content Include="I\ccDarkGreyBox.gif" />
+    <Content Include="I\ccGreenHeaderBox.gif" />
+    <Content Include="I\ccGreenInfoBox.gif" />
+    <Content Include="I\ccLightGreyBox.gif" />
+    <Content Include="I\ccPinkHeaderBox.gif" />
+    <Content Include="I\ccPurpleGreyBox.gif" />
+    <Content Include="I\ccPurpleHeaderBox.gif" />
+    <Content Include="I\ccPurpleInfoBox.gif" />
+    <Content Include="I\ccRedHeaderBox.gif" />
+    <Content Include="I\ccWhiteHeaderBox.gif" />
+    <Content Include="I\ccWhiteHeaderBox1.gif" />
+    <Content Include="I\cc_4vouchers.gif" />
+    <Content Include="I\cc_4vouchers.png" />
+    <Content Include="I\cc_christmassavers.jpg" />
+    <Content Include="I\cc_christmassavers_on.jpg" />
+    <Content Include="I\cc_clubcardrewards.jpg" />
+    <Content Include="I\cc_clubcardrewards_on.jpg" />
+    <Content Include="I\cc_greypointsCurve_l.png" />
+    <Content Include="I\cc_greypointsCurve_r.png" />
+    <Content Include="I\cc_grnwhitepointsCurve_l.png" />
+    <Content Include="I\cc_grnwhitepointsCurve_r.png" />
+    <Content Include="I\cc_manageyourCard.jpg" />
+    <Content Include="I\cc_manageyourCard_on.jpg" />
+    <Content Include="I\cc_orderareplacement.jpg" />
+    <Content Include="I\cc_orderareplacement_on.jpg" />
+    <Content Include="I\cc_personalDtls.jpg" />
+    <Content Include="I\cc_personalDtls_on.jpg" />
+    <Content Include="I\cc_pointssummary.jpg" />
+    <Content Include="I\cc_pointssummary_on.jpg" />
+    <Content Include="I\cc_prevPtsSmryWhitepointsCurve_l.png" />
+    <Content Include="I\cc_prevPtsSmryWhitepointsCurve_r.png" />
+    <Content Include="I\cc_vouchers.jpg" />
+    <Content Include="I\cc_vouchers_on.jpg" />
+    <Content Include="I\cc_whitepointsCurve.gif" />
+    <Content Include="I\cc_whitepointsCurve.png" />
+    <Content Include="I\cc_whitepointsCurve_l.gif" />
+    <Content Include="I\cc_whitepointsCurve_l.png" />
+    <Content Include="I\cc_whitepointsCurve_r.gif" />
+    <Content Include="I\cc_whitepointsCurve_r.png" />
+    <Content Include="I\cc_yourPreference.jpg" />
+    <Content Include="I\cc_yourPreference_on.jpg" />
+    <Content Include="I\checkamenddetails.gif" />
+    <Content Include="I\christmassaver_ban1.jpg" />
+    <Content Include="I\christmassaver_ban2.jpg" />
+    <Content Include="I\christmassaver_ban3.jpg" />
+    <Content Include="I\christmassaver_Img.jpg" />
+    <Content Include="I\christTblTop_l.gif" />
+    <Content Include="I\christTblTop_r.gif" />
+    <Content Include="I\clearselection.gif" />
+    <Content Include="I\clickhere.gif" />
+    <Content Include="I\closethiswindow.gif" />
+    <Content Include="I\clubcardbottom_l.gif" />
+    <Content Include="I\clubcardbottom_l2.gif" />
+    <Content Include="I\clubcardbottom_r.gif" />
+    <Content Include="I\clubcardbottom_r1.gif" />
+    <Content Include="I\clubcardbottom_r2.gif" />
+    <Content Include="I\clubcardbottom_r3.gif" />
+    <Content Include="I\clubcardHeader_l.gif" />
+    <Content Include="I\clubcardHeader_l1.gif" />
+    <Content Include="I\clubcardHeader_r.gif" />
+    <Content Include="I\clubcardHeader_r1.gif" />
+    <Content Include="I\confirm.gif" />
+    <Content Include="I\confirmDetails.gif" />
+    <Content Include="I\confirmsplit.gif" />
+    <Content Include="I\corner-bottom-left-grey.png" />
+    <Content Include="I\corner-bottom-left.png" />
+    <Content Include="I\corner-bottom-right-grey.png" />
+    <Content Include="I\corner-bottom-right.png" />
+    <Content Include="I\corner-top-left-grey-inside.png" />
+    <Content Include="I\corner-top-left-grey.png" />
+    <Content Include="I\corner-top-left.png" />
+    <Content Include="I\corner-top-right-grey-inside.png" />
+    <Content Include="I\corner-top-right-grey.png" />
+    <Content Include="I\corner-top-right.png" />
+    <Content Include="I\Coupon Comp 2 No Barcode.jpg" />
+    <Content Include="I\Coupon Comp 2.jpg" />
+    <Content Include="I\darkBlue_left.jpg" />
+    <Content Include="I\darkBlue_right.jpg" />
+    <Content Include="I\dot.png" />
+    <Content Include="I\doubleClubcardPoints.jpg" />
+    <Content Include="I\eCoupon-No-Barcode.jpg" />
+    <Content Include="I\eCouponNoBarcode.jpg" />
+    <Content Include="I\eon.jpg" />
+    <Content Include="I\eon.png" />
+    <Content Include="I\every_little_helps.png" />
+    <Content Include="I\executiveClub.jpg" />
+    <Content Include="I\findaddress.gif" />
+    <Content Include="I\FindCustomer.gif" />
+    <Content Include="I\food.jpg" />
+    <Content Include="I\footer.png" />
+    <Content Include="I\gobacktoclubcardhomepage.gif" />
+    <Content Include="I\GotoMyClubcardAccount.gif" />
+    <Content Include="I\GotoSearchCustomer.gif" />
+    <Content Include="I\green-clubcard-points.png" />
+    <Content Include="I\greenclubcardpoints.jpg" />
+    <Content Include="I\green_botleft.jpg" />
+    <Content Include="I\green_botright.jpg" />
+    <Content Include="I\h1.clubcard.png" />
+    <Content Include="I\header-darkblue-left.png" />
+    <Content Include="I\header-darkblue-right.png" />
+    <Content Include="I\header-lightblue-left.png" />
+    <Content Include="I\header-lightblue-right.png" />
+    <Content Include="I\healthy_living.jpg" />
+    <Content Include="I\heathy_living.jpg" />
+    <Content Include="I\homephone.png" />
+    <Content Include="I\icentre.jpg" />
+    <Content Include="I\infoIcon.jpg" />
+    <Content Include="I\infoIcon.png" />
+    <Content Include="I\internetaccess.png" />
+    <Content Include="I\left-menu-header-bg.png" />
+    <Content Include="I\left.png" />
+    <Content Include="I\leftNavBg.gif" />
+    <Content Include="I\leftNav_header.jpg" />
+    <Content Include="I\lightBlue_left.gif" />
+    <Content Include="I\lightBlue_right.gif" />
+    <Content Include="I\link-bg.png" />
+    <Content Include="I\Login.gif" />
+    <Content Include="I\logos-bg.png" />
+    <Content Include="I\menu-circle.png" />
+    <Content Include="I\milesArrow.gif" />
+    <Content Include="I\modalcurve_bottom.gif" />
+    <Content Include="I\modalcurve_top.gif" />
+    <Content Include="I\navBg.png" />
+    <Content Include="I\next.gif" />
+    <Content Include="I\nextDisabled.gif" />
+    <Content Include="I\orderReplacement_Img.jpg" />
+    <Content Include="I\other.jpg" />
+    <Content Include="I\personalDetails_Img.jpg" />
+    <Content Include="I\pointsCurve.png" />
+    <Content Include="I\pointtable_bottom.gif" />
+    <Content Include="I\pointtable_colbg.gif" />
+    <Content Include="I\pointtable_top.gif" />
+    <Content Include="I\preferences_Img.jpg" />
+    <Content Include="I\previous.gif" />
+    <Content Include="I\previousDisabled.gif" />
+    <Content Include="I\red_left.jpg" />
+    <Content Include="I\red_right.jpg" />
+    <Content Include="I\replacevoucher.gif" />
+    <Content Include="I\right.banner.clubcard2v3.png" />
+    <Content Include="I\right.banner.clubcard2v4.png" />
+    <Content Include="I\right.png" />
+    <Content Include="I\saveAddressChange.gif" />
+    <Content Include="I\saveAddressChange1.gif" />
+    <Content Include="I\SaveChanges.gif" />
+    <Content Include="I\seecurntpointssummary.gif" />
+    <Content Include="I\seecurrentpointsummary.gif" />
+    <Content Include="I\seepointsdetail.gif" />
+    <Content Include="I\seepointsdetail.png" />
+    <Content Include="I\seeprevpointdetails.gif" />
+    <Content Include="I\seeprevpointsummary.gif" />
+    <Content Include="I\seevoucherdtls.gif" />
+    <Content Include="I\smallWhite_left.gif" />
+    <Content Include="I\smallWhite_right.gif" />
+    <Content Include="I\Standard-Coupon.jpg" />
+    <Content Include="I\standardCoupon.jpg" />
+    <Content Include="I\subMenu_activeArrow.gif" />
+    <Content Include="I\subMenu_arrow.gif" />
+    <Content Include="I\td-price-bg-noborder.png" />
+    <Content Include="I\td-price-bg.png" />
+    <Content Include="I\td-price-bg2.png" />
+    <Content Include="I\td-price-big-bg.png" />
+    <Content Include="I\td-price-big-bg2.png" />
+    <Content Include="I\tesco-broadband.png" />
+    <Content Include="I\tesco-com.png" />
+    <Content Include="I\tesco-credit-card.png" />
+    <Content Include="I\tesco-diets.png" />
+    <Content Include="I\tesco-direct.png" />
+    <Content Include="I\tesco-mobile.png" />
+    <Content Include="I\tesco-petrol.png" />
+    <Content Include="I\TescoBroadband.jpg" />
+    <Content Include="I\tescocarinsurance.jpg" />
+    <Content Include="I\tescocreditcard.jpg" />
+    <Content Include="I\tescodiets.jpg" />
+    <Content Include="I\tescodirect.jpg" />
+    <Content Include="I\tescodotcom.jpg" />
+    <Content Include="I\tescohomephone.jpg" />
+    <Content Include="I\tescointernetaccess.jpg" />
+    <Content Include="I\tescointernetphone.jpg" />
+    <Content Include="I\tescoLogo.gif" />
+    <Content Include="I\tescomobile.jpg" />
+    <Content Include="I\tescopetrol.jpg" />
+    <Content Include="I\thefoodclub.jpg" />
+    <Content Include="I\thehealthylivingclub.jpg" />
+    <Content Include="I\viewCards_Img.jpg" />
+    <Content Include="I\viewcustomercharter.gif" />
+    <Content Include="I\viewtermsconditions.gif" />
+    <Content Include="I\viewwhatoffers.gif" />
+    <Content Include="I\voucher tab.bmp" />
+    <Content Include="I\voucherGreyTblBtm_l.gif" />
+    <Content Include="I\voucherGreyTblBtm_r.gif" />
+    <Content Include="I\vouchersHeader.jpg" />
+    <Content Include="I\VouchersSummaryVal.gif" />
+    <Content Include="I\VouchersSummaryVal.jpg" />
+    <Content Include="I\VouchersSummaryValRew.gif" />
+    <Content Include="I\voucherTblBtm_l.gif" />
+    <Content Include="I\voucherTblBtm_r.gif" />
+    <Content Include="I\voucherValue_Lft.gif" />
+    <Content Include="I\voucherValue_Rt.gif" />
+    <Content Include="I\wineLogo.jpg" />
+    <Content Include="I\world_of_wine.jpg" />
+    <Content Include="I\xmas saver.bmp" />
+    <Content Include="I\xmas_saver.jpg" />
+    <Content Include="I\Your Preferences.jpg" />
+    <Content Include="I\yourchangessaved.gif" />
+    <Content Include="I\yourPoints_Img.jpg" />
+    <Content Include="I\yourPreferenceImg.jpg" />
+    <Content Include="I\your_points.jpg" />
+    <Content Include="Points.aspx" />
+    <Content Include="PointsSummary.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="StatementFormats\126.xml" />
+    <Content Include="StatementFormats\143.xml" />
+    <Content Include="StatementFormats\153.xml" />
+    <Content Include="StatementFormats\211.xml" />
+    <Content Include="StatementFormats\51.xml" />
+    <Content Include="StatementFormats\41.xml" />
+    <Content Include="StatementFormats\87.xml" />
+    <None Include="Service References\AdminService\11.wsdl" />
+    <None Include="Service References\AdminService\11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdminService\service.wsdl" />
+    <None Include="Service References\AdminService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\CSCGlobal.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.th-TH.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.th-TH3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.zh-CN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.zh-CN2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx..th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CardRanges.aspx" />
+    <Content Include="CardType.aspx" />
+    <Content Include="DeLinking.aspx" />
+    <Content Include="I\btnSave_eng.jpg" />
+    <Content Include="I\Confirmbtn.JPG" />
+    <Content Include="I\confirm_eng.gif" />
+    <Content Include="I\CSCLogin.gif" />
+    <Content Include="I\Donation_to_charity.gif" />
+    <Content Include="I\FlagPL.gif" />
+    <Content Include="I\flagth.gif" />
+    <Content Include="I\flaguk.gif" />
+    <Content Include="I\leftNav_headerUK.jpg" />
+    <Content Include="I\nutricentre.gif" />
+    <Content Include="I\Other_points.gif" />
+    <Content Include="I\SaveChanges_eng.gif" />
+    <Content Include="I\stamp.jpg" />
+    <Content Include="I\tescobbphone.jpg" />
+    <Content Include="I\TescoHomeInsurance.jpg" />
+    <Content Include="I\TescoPetInsurance.jpg" />
+    <Content Include="I\Tesco_fuel.gif" />
+    <Content Include="I\togetherfortrees.gif" />
+    <Content Include="MergeCard.aspx" />
+    <Content Include="Preferences.aspx" />
+    <Content Include="PromotionCode.aspx" />
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="I\Thumbs.db" />
+    <Content Include="ShowCallDetails.aspx" />
+    <Content Include="Template\welcome.html" />
+    <Content Include="App_GlobalResources\CSCGlobal.en-IE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.en-IE.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TescoPartner.aspx" />
+    <Content Include="App_LocalResources\TescoPartner.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MergeCard.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UserNotes.aspx" />
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.en-IE.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.pl-PL1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.th-TH.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.cs-CZaspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.cs-CZ.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.cs-CZ1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.en-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.en-MY.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MergeCard.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.en-MY.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CSCGlobal.hu-HU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CSCGlobal.hu-HU.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MergeCard.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\AccountReportHomePage.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ClubcardRegistrationReport.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\CustomerLoadReport.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ExportToExcel.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PointsEarnedReport.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\PromotionCodeReport.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\ReportHomePage.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\App_LocalResources\SchedulePopup.aspx.hu-HU.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddGroup.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddPoints.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\AddUser.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardRanges.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CardType.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChangePrimaryCard.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ChristmasSavers.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCards.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCoupons.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerDetail.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DataConfiguration.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Default.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\DeLinking.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\EditCardStatus.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Error.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindCoupon.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindGroup.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\FindUser.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Join.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MergeCard.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\MergeCard.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Points.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PointsSummary.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\Preferences.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\PromotionCode.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ResetPassword.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\SearchCustomer.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowCallDetails.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ShowInfo.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoPartner.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\TescoStore.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\UserNotes.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.cs-CZ.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\ViewPoints.aspx.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_LocalResources\CustomerCardsRecarding.aspx.resx" />
+    <Content Include="App_GlobalResources\ApiMethodNames.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ApiMethodNames.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Reports\DownloadExcelReport.aspx.resx">
+      <DependentUpon>DownloadExcelReport.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AdminService\" />
+    <WCFMetadataStorage Include="Service References\ClubcardCouponServices\" />
+    <WCFMetadataStorage Include="Service References\ClubcardService\" />
+    <WCFMetadataStorage Include="Service References\CouponEnquiryService\" />
+    <WCFMetadataStorage Include="Service References\CustomerService\" />
+    <WCFMetadataStorage Include="Service References\JoinLoyaltyService\" />
+    <WCFMetadataStorage Include="Service References\MarketingService\" />
+    <WCFMetadataStorage Include="Service References\NGCReportingService\" />
+    <WCFMetadataStorage Include="Service References\PreferenceServices\" />
+    <WCFMetadataStorage Include="Service References\SmartVoucherServices\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

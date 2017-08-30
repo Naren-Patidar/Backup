@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlphaSymbol" xml:space="preserve">
+    <value />
+  </data>
+  <data name="aviosMiles" xml:space="preserve">
+    <value>Equivalent Avios:</value>
+  </data>
+  <data name="BAmiles" xml:space="preserve">
+    <value>Equivalent BA Avios:</value>
+  </data>
+  <data name="CurrencySymbol" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClickHere" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblClubcardStatement" xml:space="preserve">
+    <value>Clubcard statement is</value>
+  </data>
+  <data name="lblClubcardSummary" xml:space="preserve">
+    <value>Your Clubcard points summary</value>
+  </data>
+  <data name="lblCurrentCollectionPeriod" xml:space="preserve">
+    <value>Current collection period</value>
+  </data>
+  <data name="lblCurrentPointsTotal" xml:space="preserve">
+    <value>Total current points :</value>
+  </data>
+  <data name="lblEasyEarn" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFinalDate" xml:space="preserve">
+    <value>The final date to collect points for your</value>
+  </data>
+  <data name="lblFrmTesco" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLink" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="lblMyPoints" xml:space="preserve">
+    <value>My points</value>
+  </data>
+  <data name="lblUHaveCollected" xml:space="preserve">
+    <value>Here's a summary of the Clubcard points you have collected since</value>
+  </data>
+  <data name="stdVoucher" xml:space="preserve">
+    <value>Total Vouchers to spend now (RM):</value>
+  </data>
+  <data name="virginMiles" xml:space="preserve">
+    <value>Equivalent Virgin Flying Club Miles:</value>
+  </data>
+  <data name="xmasmiles" xml:space="preserve">
+    <value>Total vouchers saved:</value>
+  </data>
+  <data name="lclClickHereResource" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclDtlResource" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="lclMisPointsResource" xml:space="preserve">
+    <value>Missing Points?</value>
+  </data>
+  <data name="lclMissingPointsResource" xml:space="preserve">
+    <value>If you think you are missing any points, please call our Clubcard Helpline at 
+1300-13-1313.</value>
+  </data>
+  <data name="lclPeriodcltedResource" xml:space="preserve">
+    <value>Collection Period</value>
+  </data>
+  <data name="lclSummaryResource" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="lclWhichCollectionPeriodResource" xml:space="preserve">
+    <value>To view your points detail, please select which collection period you would like to find out.</value>
+  </data>
+  <data name="lclWudLikeResource" xml:space="preserve">
+    <value>What would you like to do?</value>
+  </data>
+  <data name="lnkViewDetailResource" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="lclCollectionPeriodNote" xml:space="preserve">
+    <value>Please note - You can only view current &amp; previous 2 collection periods.</value>
+  </data>
+  <data name="lblSeparator" xml:space="preserve">
+    <value>-</value>
+  </data>
+</root>

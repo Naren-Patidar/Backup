@@ -1,0 +1,169 @@
+﻿@model List<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Boost.Token>
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@{
+    string dateFormat = AppConfiguration.Settings[AppConfigEnum.DisplayDateFormat].TryParse<string>();
+}
+@using (Html.BeginForm("Home", "BoostsAtTesco", FormMethod.Post, new {@class="form cf"}))
+ {
+     <h2>
+                            In Store Boost token codes
+                        </h2>
+    
+            <div>
+                            <p>
+                                These are the Boost token you ordered to spend in store (but not at Tesco Direct 
+                                    desks).  See your email to check where you can spend them if you are not sure.
+                            </p>
+                            <p>
+                                Follow the instructions below to print your Clubcard Boost tokens to spend in store.
+                            </p>
+                            <p>
+                                Any Clubcard Boost tokens ordered in store will not be listed below.
+                            </p>
+                            <strong>
+                                Please note: Clubcard Boost tokens can only be used once.
+                                <br />
+                                  <br />
+                                </strong>
+                        </div>   
+<div class="table-wrapper">
+        <div class="table-wrapper-inner"> 
+     
+            <table border="0" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclDateOrdResource")
+                        </th>
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclDescResource")
+                        </th>
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclOrdStatusResource")
+                        </th>
+                        
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclValResource")
+                        </th>
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclExpDateResource")
+                        </th>
+                        <th class="text-centre">@Html.Translate("Shared/_BoostsAtTesco", "lclSelectTokenResource")
+                            <br />
+                            @Html.Translate("Shared/_BoostsAtTesco", "lclSelectAllTokens")
+                            <input id="selAllTokens" type="checkbox" class="selectall" />
+                        </th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                 @for (int i = 0; i < Model.Count; i++)
+                 {
+                      @Html.HiddenFor(v => v[i].TokenID)
+                       <tr>
+                               
+                                @if (Model[i].BookingDate != null)
+                                {
+                                     <td>
+                                    @Convert.ToDateTime(Model[i].BookingDate).ToString(dateFormat)
+                                    </td>   
+                                }
+                                                
+                                
+                                 @if (Model[i].TokenDescription != null)
+                                 {
+                                     <td>
+                                     @Model[i].TokenDescription
+                                     </td>
+                                 }
+                                
+                               
+                                 @if (Model[i].ProductStatus != null)
+                                 { 
+                                     <td>
+                                     @Model[i].ProductStatus
+                                    </td>
+                                 }
+                                
+                                
+                                 @if (Model[i].TokenValue != null)
+                                 {
+                                     <td>
+                                    @Html.Translate("Shared/_Vouchers", "CurrencySymbol")@Model[i].TokenValue
+                                    </td>
+                                 }
+                               
+                               
+                                @if (Model[i].ValidUntil != null)
+                                { 
+                                    <td>
+                                     @Convert.ToDateTime(Model[i].ValidUntil).ToString(dateFormat)
+                                     </td>
+                                }
+                                
+                                <td class="text-centre">
+                                  @Html.CheckBoxFor(v => Model[i].Selected, new { @class = "select" })
+                            </td>
+                        </tr>                      
+                 }
+                </tbody>
+            </table>
+        </div>
+    </div>  
+   <p> I want To: <input class="button right download" type="submit" value="@Html.Translate("Shared/_BoostsAtTesco", "btnPrintTokens")"/></p> 
+                 if (string.IsNullOrEmpty(Request.QueryString["error"]))
+                 { 
+            <span class="error" style="display:none;color:red">@Html.Translate("Shared/_BoostsAtTesco", "lblShowErrorMsgResource")</span> 
+                 }
+                 else
+                 { 
+                <span class="error" style="color:red">@Html.Translate("Shared/_BoostsAtTesco", "lblShowErrorMsgResource")</span>
+                 }
+                          <strong>
+                            To print your Clubcard Boost tokens
+                              <br />
+                                <br />
+                          </strong>
+    
+    
+    
+                        <ol class="olnone">
+                            <li>
+                               Select the Clubcard Boost tokens to print
+                               </li>
+                            <li>
+                                Click 'Print my tokens'</li>
+                            <li>
+                                Print your Clubcard Boost tokens to use in store
+                            </li>
+                        </ol>
+                        <p>
+                            <strong>
+                               Please ensure your Clubcard Boost tokens have printed clearly on white paper, before taking into store. Unfortunately, smudged or unclear barcodes are unable to be scanned at the till.
+                            </strong>
+                            Clubcard Boost tokens will be accepted printed in black & white or in colour.  If you are worried your printout might not be clear enough, try printing it our again, (Clubcard Boost tokens can be printed more than once), or write down the 22 digit barcode number that is next to the barcode and take this into store with your printed Clubcard Boost tokens.  If your barcode does not scan, checkout staff can type in the barcode number at the till to redeem your Clubcard Boost tokens.                                </p>
+                        <p>
+                            Please note: Clubcard Boost tokens will display their original expiry date.
+                        </p>
+   
+ }
+    <script type="text/javascript">
+        function SelectAllTokens() {
+           
+            var inputs = document.getElementsByTagName("input");
+            var isAllTokenChkd = false;
+
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type == "checkbox") {
+                    if (inputs[i].checked == true && inputs[i].id == "selAllTokens") {
+                        isAllTokenChkd = true;
+                    }
+
+                    if (isAllTokenChkd) {
+                        inputs[i].checked = true;
+                    }
+                    else {
+                        inputs[i].checked = false;
+                    }
+                }
+            }
+        }
+
+</script>

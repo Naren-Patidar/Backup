@@ -1,0 +1,51 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:69161c58-3578-4781-bb9f-b2325b5fa359</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+      <errorXml />
+      <resultXml>
+        <CustomerInformation>
+          <NewDataSet>
+            <Customer>
+              <CustomerID>60013333</CustomerID>
+              <CompleteName></CompleteName>
+              <official_id>0059248589</official_id>
+              <postal_code>BS21 5DA</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1979-06-16T00:00:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Kim</Name1>
+              <Name2>K</Name2>
+              <Name3>K</Name3>
+              <Sex>M</Sex>
+              <email_address>yogyat.nidhi@in.tesco.com</email_address>
+              <mobile_phone_number>07755577552</mobile_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <MailingAddressPostCode>BS21 5DA</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+              <MailingAddressLine1></MailingAddressLine1>
+              <MailingAddressLine2></MailingAddressLine2>
+              <MailingAddressLine3></MailingAddressLine3>
+            </Customer>
+          </NewDataSet>
+          <NewDataSet>
+            <NoOFFamilyMembers>
+              <number_of_household_members>1</number_of_household_members>
+            </NoOFFamilyMembers>
+          </NewDataSet>
+        </CustomerInformation>
+      </resultXml>
+      <rowCount>1</rowCount>
+    </GetCustomerDetailsResponse>
+  </s:Body>
+</s:Envelope>

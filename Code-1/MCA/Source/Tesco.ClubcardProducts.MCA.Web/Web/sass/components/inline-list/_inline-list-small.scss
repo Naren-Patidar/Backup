@@ -1,0 +1,12 @@
+.ddl-inline-list {
+
+	&.ddl-inline-list-right {
+		text-align: right;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+}

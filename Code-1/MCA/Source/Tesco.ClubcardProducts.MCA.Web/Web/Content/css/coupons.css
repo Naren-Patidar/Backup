@@ -1,0 +1,29 @@
+/* line 6, ../../sass/coupons.scss */
+.grid.coupons li .borders {
+  padding: 35px 10px 10px 10px;
+  width: 100%;
+}
+/* line 10, ../../sass/coupons.scss */
+.grid.coupons li .borders span.utility {
+  min-height: 30px;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: left;
+}
+/* line 16, ../../sass/coupons.scss */
+.grid.coupons li .borders span.utility input {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 24, ../../sass/coupons.scss */
+.grid.coupons li .borders span.utility input {
+  z-index: 99;
+  margin: 0;
+}
+/* line 31, ../../sass/coupons.scss */
+.grid.coupons li .borders img {
+  width: 100%;
+}

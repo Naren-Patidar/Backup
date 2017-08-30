@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!-- The name of this fragment -->
+  <Fragment Id ="AppFiles">
+    <!-- The directory reference of your main project -->
+    <DirectoryRef Id="INSTALLCSC">
+
+		<Component Id="Config" Guid="0ECB9D48-6FBE-49E1-841A-EEC90C445021" DiskId="1" KeyPath="yes">
+			<File Id="ConfigFile0" Name="wcfbehaviors.config" Source="$(var.SolutionDir)..\..\..\HU\Config\wcfbehaviors.config" Vital="yes" />
+			<File Id="ConfigFile1" Name="wcfclientendpoints.config" Source="$(var.SolutionDir)..\..\..\HU\Config\wcfclientendpoints.config" Vital="yes" />
+			<File Id="ConfigFile2" Name="wcfstandardbinding.config" Source="$(var.SolutionDir)..\..\..\HU\Config\wcfstandardbinding.config" Vital="yes" />
+			<File Id="ConfigFile3" Name="Web.config" Source="$(var.SolutionDir)..\..\..\HU\Config\Web.config" Vital="yes" />
+		</Component>
+      <Component Id="BaseFiles" Guid="98D17A59-4E9E-45D8-B8BE-11EE7FCD3D9A" DiskId="1" KeyPath="yes">
+        <File Id="BaseFilesFile0" Name="AddGroup.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\AddGroup.aspx" Vital="yes" />
+        <File Id="BaseFilesFile1" Name="AddPoints.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\AddPoints.aspx" Vital="yes" />
+        <File Id="BaseFilesFile2" Name="AddUser.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\AddUser.aspx" Vital="yes" />
+        <File Id="BaseFilesFile3" Name="CardRanges.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CardRanges.aspx" Vital="yes" />
+        <File Id="BaseFilesFile4" Name="CardType.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CardType.aspx" Vital="yes" />
+        <File Id="BaseFilesFile5" Name="ChangePrimaryCard.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ChangePrimaryCard.aspx" Vital="yes" />
+        <File Id="BaseFilesFile6" Name="ChristmasSavers.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ChristmasSavers.aspx" Vital="yes" />
+        <!--<File Id="BaseFilesFile7" Name="ClubcardOnlineService.csproj" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ClubcardOnlineService.csproj" Vital="yes" />-->
+        <!--<File Id="BaseFilesFile8" Name="CSCSetUP.sln" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CSCSetUP.sln" Vital="yes" />-->
+        <File Id="BaseFilesFile9" Name="CustomerCards.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CustomerCards.aspx" Vital="yes" />
+        <File Id="BaseFilesFile10" Name="CustomerCoupons.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CustomerCoupons.aspx" Vital="yes" />
+        <File Id="BaseFilesFile11" Name="CustomerDetail.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CustomerDetail.aspx" Vital="yes" />
+        <File Id="BaseFilesFile12" Name="DataConfiguration.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\DataConfiguration.aspx" Vital="yes" />
+        <File Id="BaseFilesFile13" Name="Default.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Default.aspx" Vital="yes" />
+        <File Id="BaseFilesFile14" Name="DeLinking.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\DeLinking.aspx" Vital="yes" />
+        <File Id="BaseFilesFile15" Name="EditCardStatus.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\EditCardStatus.aspx" Vital="yes" />
+        <File Id="BaseFilesFile16" Name="Error.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Error.aspx" Vital="yes" />
+        <File Id="BaseFilesFile17" Name="FindCoupon.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\FindCoupon.aspx" Vital="yes" />
+        <File Id="BaseFilesFile18" Name="FindGroup.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\FindGroup.aspx" Vital="yes" />
+        <File Id="BaseFilesFile19" Name="FindUser.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\FindUser.aspx" Vital="yes" />
+        <File Id="BaseFilesFile20" Name="Global.asax" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Global.asax" Vital="yes" />
+        <File Id="BaseFilesFile21" Name="Join.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Join.aspx" Vital="yes" />
+        <!--<File Id="BaseFilesFile22" Name="NGCDataAccessLayer.csproj" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\NGCDataAccessLayer.csproj" Vital="yes" />-->
+        <File Id="BaseFilesFile23" Name="Points.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Points.aspx" Vital="yes" />
+        <File Id="BaseFilesFile24" Name="PointsSummary.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\PointsSummary.aspx" Vital="yes" />
+        <File Id="BaseFilesFile25" Name="Preferences.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Preferences.aspx" Vital="yes" />
+        <File Id="BaseFilesFile26" Name="PromotionCode.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\PromotionCode.aspx" Vital="yes" />
+        <File Id="BaseFilesFile27" Name="ResetPassword.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ResetPassword.aspx" Vital="yes" />
+        <File Id="BaseFilesFile28" Name="SearchCustomer.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\SearchCustomer.aspx" Vital="yes" />
+        <File Id="BaseFilesFile29" Name="ShowInfo.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ShowInfo.aspx" Vital="yes" />
+        <File Id="BaseFilesFile30" Name="Site.Master" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Site.Master" Vital="yes" />
+        <File Id="BaseFilesFile31" Name="TescoPartner.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\TescoPartner.aspx" Vital="yes" />
+        <File Id="BaseFilesFile32" Name="TescoStore.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\TescoStore.aspx" Vital="yes" />
+        <File Id="BaseFilesFile33" Name="ViewPoints.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ViewPoints.aspx" Vital="yes" />
+        <File Id="BaseFilesFile34" Name="UserNotes.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\UserNotes.aspx" Vital="yes" />
+        <File Id="BaseFilesFile35" Name="MergeCard.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\MergeCard.aspx" Vital="yes" />
+        <File Id="BaseFilesFile36" Name="wcfbehaviors.config" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\wcfbehaviors.config" Vital="yes" />
+        <File Id="BaseFilesFile37" Name="wcfclientendpoints.config" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\wcfclientendpoints.config" Vital="yes" />
+        <File Id="BaseFilesFile38" Name="wcfstandardbinding.config" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\wcfstandardbinding.config" Vital="yes" />
+        <File Id="BaseFilesFile39" Name="Web.config" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Web.config" Vital="yes" />
+        <File Id="BaseFilesFile40" Name="ShowCallDetails.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\ShowCallDetails.aspx" Vital="yes" />
+      </Component>
+      <Directory Id="App_Data" Name="App_Data">
+      </Directory>
+      <Directory Id="App_GlobalResources" Name="App_GlobalResources">
+        <Component Id="App_GlobalResources" Guid="0A4947E0-CF67-4495-8F14-27BE7D9A4106" DiskId="1" KeyPath="yes">
+			<File Id="App_GlobalResourcesFile0" Name="CSCGlobal.hu-Hu.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\App_GlobalResources\CSCGlobal.hu-Hu.resx" Vital="yes" />
+			<File Id="App_GlobalResourcesFile1" Name="CSCGlobal.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\App_GlobalResources\CSCGlobal.resx" Vital="yes" />
+          <!--<File Id="App_GlobalResourcesFile5" Name="CSCGlobal.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\App_GlobalResources\CSCGlobal.hu-HU.resx" Vital="yes" />-->
+        </Component>
+      </Directory>
+      <Directory Id="App_LocalResources" Name="App_LocalResources">
+        <Component Id="App_LocalResources" Guid="2D628AD0-0344-4D3C-9830-09D6F5F23D2B" DiskId="1" KeyPath="yes">
+			<File Id="APP_LocalResourcesFile0" Name="AddGroup.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddGroup.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile1" Name="AddGroup.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddGroup.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile2" Name="AddPoints.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddPoints.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile3" Name="AddPoints.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddPoints.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile4" Name="AddUser.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddUser.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile5" Name="AddUser.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\AddUser.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile6" Name="CardRanges.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CardRanges.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile7" Name="CardRanges.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CardRanges.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile8" Name="CardType.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CardType.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile9" Name="CardType.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CardType.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile10" Name="ChangePrimaryCard.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ChangePrimaryCard.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile11" Name="ChangePrimaryCard.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ChangePrimaryCard.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile12" Name="ChristmasSavers.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ChristmasSavers.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile13" Name="ChristmasSavers.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ChristmasSavers.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile14" Name="CustomerCards.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerCards.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile15" Name="CustomerCards.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerCards.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile16" Name="CustomerCoupons.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerCoupons.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile17" Name="CustomerCoupons.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerCoupons.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile18" Name="CustomerDetail.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerDetail.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile19" Name="CustomerDetail.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\CustomerDetail.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile20" Name="DataConfiguration.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\DataConfiguration.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile21" Name="DataConfiguration.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\DataConfiguration.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile22" Name="Default.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Default.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile23" Name="Default.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Default.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile24" Name="DeLinking.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\DeLinking.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile25" Name="DeLinking.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\DeLinking.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile26" Name="EditCardStatus.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\EditCardStatus.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile27" Name="EditCardStatus.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\EditCardStatus.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile28" Name="Error.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Error.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile29" Name="Error.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Error.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile30" Name="FindCoupon.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindCoupon.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile31" Name="FindCoupon.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindCoupon.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile32" Name="FindGroup.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindGroup.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile33" Name="FindGroup.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindGroup.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile34" Name="FindUser.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindUser.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile35" Name="FindUser.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\FindUser.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile36" Name="Join.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Join.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile37" Name="Join.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Join.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile38" Name="MergeCard.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\MergeCard.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile39" Name="MergeCard.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\MergeCard.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile40" Name="Points.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Points.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile41" Name="Points.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Points.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile42" Name="PointsSummary.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\PointsSummary.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile43" Name="PointsSummary.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\PointsSummary.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile44" Name="Preferences.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Preferences.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile45" Name="Preferences.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\Preferences.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile46" Name="PromotionCode.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\PromotionCode.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile47" Name="PromotionCode.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\PromotionCode.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile48" Name="ResetPassword.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ResetPassword.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile49" Name="ResetPassword.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ResetPassword.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile50" Name="SearchCustomer.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\SearchCustomer.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile51" Name="SearchCustomer.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\SearchCustomer.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile52" Name="ShowCallDetails.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ShowCallDetails.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile53" Name="ShowCallDetails.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ShowCallDetails.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile54" Name="ShowInfo.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ShowInfo.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile55" Name="ShowInfo.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ShowInfo.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile56" Name="TescoPartner.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\TescoPartner.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile57" Name="TescoPartner.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\TescoPartner.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile58" Name="TescoStore.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\TescoStore.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile59" Name="TescoStore.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\TescoStore.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile60" Name="UserNotes.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\UserNotes.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile61" Name="UserNotes.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\UserNotes.aspx.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile62" Name="ViewPoints.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ViewPoints.aspx.hu-HU.resx" Vital="yes" />
+			<File Id="APP_LocalResourcesFile63" Name="ViewPoints.aspx.resx" Source="$(var.SolutionDir)..\..\..\HU\ResourceFiles\APP_LocalResources\ViewPoints.aspx.resx" Vital="yes" />
+
+        </Component>
+      </Directory>
+      <Directory Id="bin" Name="bin">
+        <Component Id="bin" Guid="0CF592CB-EE3B-45E1-8849-D064FE51D6B5" DiskId="1" KeyPath="yes">
+          <File Id="binFile0" Name="AjaxControlToolkit.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\AjaxControlToolkit.dll" Vital="yes" />
+          <File Id="binFile1" Name="CCODundeeApplication.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\CCODundeeApplication.dll" Vital="yes" />
+          
+          <File Id="binFile3" Name="LocalizationLibrary.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\LocalizationLibrary.dll" Vital="yes" />
+          <File Id="binFile4" Name="Microsoft.ApplicationBlocks.Data.dll" Source="$(var.SolutionDir)..\..\..\ReferenceDLL\Microsoft.ApplicationBlocks.Data.dll" Vital="yes" />
+          <File Id="binFile5" Name="Microsoft.ApplicationBlocks.ExceptionManagement.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll" Vital="yes" />
+          <File Id="binFile6" Name="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll" Vital="yes" />
+          <File Id="binFile7" Name="Microsoft.Office.Interop.Excel.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Office.Interop.Excel.dll" Vital="yes" />
+          
+          <File Id="binFile9" Name="Microsoft.Practices.EnterpriseLibrary.Common.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" Vital="yes" />
+          <File Id="binFile10" Name="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" Vital="yes" />
+          <File Id="binFile11" Name="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" Vital="yes" />
+          <File Id="binFile12" Name="Microsoft.Practices.EnterpriseLibrary.Logging.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" Vital="yes" />
+          <File Id="binFile13" Name="Microsoft.Practices.ObjectBuilder.dll" Source="$(var.SolutionDir)..\..\..\ReferenceDLL\Microsoft.Practices.ObjectBuilder.dll" Vital="yes" />
+          <File Id="binFile14" Name="Microsoft.Practices.ObjectBuilder2.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.ObjectBuilder2.dll" Vital="yes" />
+          <File Id="binFile15" Name="Microsoft.Practices.Unity.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Practices.Unity.dll" Vital="yes" />
+          <File Id="binFile16" Name="Microsoft.Vbe.Interop.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\Microsoft.Vbe.Interop.dll" Vital="yes" />
+          <File Id="binFile17" Name="NGCTrace.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\NGCTrace.dll" Vital="yes" />
+          
+          <File Id="binFile19" Name="office.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\office.dll" Vital="yes" />
+          
+          <File Id="binFile21" Name="PointsSummarySequencing.dll" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\bin\PointsSummarySequencing.dll" Vital="yes" />
+        </Component>
+        <Directory Id="ar" Name="ar">
+        </Directory>
+        <Directory Id="bin_1" Name="bin">
+        </Directory>
+        <Directory Id="cs" Name="cs">
+        </Directory>
+        <Directory Id="de" Name="de">
+        </Directory>
+        <Directory Id="es" Name="es">
+        </Directory>
+        <Directory Id="fr" Name="fr">
+        </Directory>
+        <Directory Id="he" Name="he">
+        </Directory>
+        <Directory Id="hi" Name="hi">
+        </Directory>
+        <Directory Id="it" Name="it">
+        </Directory>
+        <Directory Id="ja" Name="ja">
+        </Directory>
+        <Directory Id="ko" Name="ko">
+        </Directory>
+        <Directory Id="nl" Name="nl">
+        </Directory>
+        <Directory Id="pl_PL" Name="pl-PL">
+        </Directory>
+        <Directory Id="pt" Name="pt">
+        </Directory>
+        <Directory Id="ru" Name="ru">
+        </Directory>
+        <Directory Id="th_TH" Name="th-TH">
+        </Directory>
+        <Directory Id="tr_TR" Name="tr-TR">
+        </Directory>
+        <Directory Id="zh_CHS" Name="zh-CHS">
+        </Directory>
+        <Directory Id="zh_CHT" Name="zh-CHT">
+        </Directory>
+        <Directory Id="zh_CN" Name="zh-CN">
+        </Directory>
+      </Directory>
+      <Directory Id="CSS" Name="CSS">
+        <Component Id="CSS" Guid="69C042A3-36B6-4D42-9A3C-A57849FB11E1" DiskId="1" KeyPath="yes">
+          <File Id="CSSFile0" Name="core.css" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CSS\core.css" Vital="yes" />
+          <File Id="CSSFile1" Name="ie6.css" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\CSS\ie6.css" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="I" Name="I">
+        <Component Id="I" Guid="58A14FA2-6664-4F2C-B56E-1DE661848E36" DiskId="1" KeyPath="yes">
+          
+			<File Id="IFile0" Name="4xmoregreatdeals.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\4xmoregreatdeals.jpg" Vital="yes" />
+			<File Id="IFile1" Name="AddCard.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\AddCard.gif" Vital="yes" />
+			<File Id="IFile2" Name="AddPoints.bmp" Source="$(var.SolutionDir)..\..\..\HU\Images\AddPoints.bmp" Vital="yes" />
+			<File Id="IFile3" Name="airMiles.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\airMiles.gif" Vital="yes" />
+			<File Id="IFile4" Name="airmiles.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\airmiles.jpg" Vital="yes" />
+			<File Id="IFile5" Name="airmiles_small.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\airmiles_small.jpg" Vital="yes" />
+			<File Id="IFile6" Name="AM_CMYK.png" Source="$(var.SolutionDir)..\..\..\HU\Images\AM_CMYK.png" Vital="yes" />
+			<File Id="IFile7" Name="AM_CMYK_1.JPG" Source="$(var.SolutionDir)..\..\..\HU\Images\AM_CMYK_1.JPG" Vital="yes" />
+			<File Id="IFile8" Name="asterisk.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\asterisk.gif" Vital="yes" />
+			<File Id="IFile9" Name="avis.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\avis.jpg" Vital="yes" />
+			<File Id="IFile10" Name="BA Executive Club blue.png" Source="$(var.SolutionDir)..\..\..\HU\Images\BA Executive Club blue.png" Vital="yes" />
+			<File Id="IFile11" Name="babytoddlerclub.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\babytoddlerclub.jpg" Vital="yes" />
+			<File Id="IFile12" Name="baby_club.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\baby_club.jpg" Vital="yes" />
+			<File Id="IFile13" Name="backprevsummarypage.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backprevsummarypage.gif" Vital="yes" />
+			<File Id="IFile14" Name="backtomanagecards.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtomanagecards.gif" Vital="yes" />
+			<File Id="IFile15" Name="backtopointspage.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtopointspage.gif" Vital="yes" />
+			<File Id="IFile16" Name="backtopreviousummary.png" Source="$(var.SolutionDir)..\..\..\HU\Images\backtopreviousummary.png" Vital="yes" />
+			<File Id="IFile17" Name="backtosummarypage.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtosummarypage.gif" Vital="yes" />
+			<File Id="IFile18" Name="backtovoucherhistory.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtovoucherhistory.gif" Vital="yes" />
+			<File Id="IFile19" Name="backtovouchersummary.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtovouchersummary.gif" Vital="yes" />
+			<File Id="IFile20" Name="backtoyoupointspage.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\backtoyoupointspage.gif" Vital="yes" />
+			<File Id="IFile21" Name="blank.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\blank.gif" Vital="yes" />
+			<File Id="IFile22" Name="botleft.png" Source="$(var.SolutionDir)..\..\..\HU\Images\botleft.png" Vital="yes" />
+			<File Id="IFile23" Name="botright.png" Source="$(var.SolutionDir)..\..\..\HU\Images\botright.png" Vital="yes" />
+			<File Id="IFile24" Name="bottom-lightblue-left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\bottom-lightblue-left.png" Vital="yes" />
+			<File Id="IFile25" Name="bottom-lightblue-right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\bottom-lightblue-right.png" Vital="yes" />
+			<File Id="IFile26" Name="btnSave.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\btnSave.jpg" Vital="yes" />
+			<File Id="IFile27" Name="button_gobacktoyouraccount.png" Source="$(var.SolutionDir)..\..\..\HU\Images\button_gobacktoyouraccount.png" Vital="yes" />
+			<File Id="IFile28" Name="button_login.png" Source="$(var.SolutionDir)..\..\..\HU\Images\button_login.png" Vital="yes" />
+			<File Id="IFile29" Name="button_register.png" Source="$(var.SolutionDir)..\..\..\HU\Images\button_register.png" Vital="yes" />
+			<File Id="IFile30" Name="cardNmbLt.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cardNmbLt.gif" Vital="yes" />
+			<File Id="IFile31" Name="cardNmbRt.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cardNmbRt.gif" Vital="yes" />
+			<File Id="IFile32" Name="ccBlueGreyBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccBlueGreyBox.gif" Vital="yes" />
+			<File Id="IFile33" Name="ccBlueHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccBlueHeaderBox.gif" Vital="yes" />
+			<File Id="IFile34" Name="ccBlueHeaderBox1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccBlueHeaderBox1.gif" Vital="yes" />
+			<File Id="IFile35" Name="ccBlueHeaderBoxLogin.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccBlueHeaderBoxLogin.gif" Vital="yes" />
+			<File Id="IFile36" Name="ccCardNmbBox_left.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccCardNmbBox_left.gif" Vital="yes" />
+			<File Id="IFile37" Name="ccCardNmbBox_right.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccCardNmbBox_right.gif" Vital="yes" />
+			<File Id="IFile38" Name="ccDarkGreyBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccDarkGreyBox.gif" Vital="yes" />
+			<File Id="IFile39" Name="ccGreenHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccGreenHeaderBox.gif" Vital="yes" />
+			<File Id="IFile40" Name="ccGreenInfoBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccGreenInfoBox.gif" Vital="yes" />
+			<File Id="IFile41" Name="ccLightGreyBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccLightGreyBox.gif" Vital="yes" />
+			<File Id="IFile42" Name="ccPinkHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccPinkHeaderBox.gif" Vital="yes" />
+			<File Id="IFile43" Name="ccPurpleGreyBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccPurpleGreyBox.gif" Vital="yes" />
+			<File Id="IFile44" Name="ccPurpleHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccPurpleHeaderBox.gif" Vital="yes" />
+			<File Id="IFile45" Name="ccPurpleInfoBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccPurpleInfoBox.gif" Vital="yes" />
+			<File Id="IFile46" Name="ccRedHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccRedHeaderBox.gif" Vital="yes" />
+			<File Id="IFile47" Name="ccWhiteHeaderBox.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccWhiteHeaderBox.gif" Vital="yes" />
+			<File Id="IFile48" Name="ccWhiteHeaderBox1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ccWhiteHeaderBox1.gif" Vital="yes" />
+			<File Id="IFile49" Name="cc_4vouchers.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_4vouchers.gif" Vital="yes" />
+			<File Id="IFile50" Name="cc_4vouchers.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_4vouchers.png" Vital="yes" />
+			<File Id="IFile51" Name="cc_christmassavers.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_christmassavers.jpg" Vital="yes" />
+			<File Id="IFile52" Name="cc_christmassavers_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_christmassavers_on.jpg" Vital="yes" />
+			<File Id="IFile53" Name="cc_clubcardrewards.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_clubcardrewards.jpg" Vital="yes" />
+			<File Id="IFile54" Name="cc_clubcardrewards_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_clubcardrewards_on.jpg" Vital="yes" />
+			<File Id="IFile55" Name="cc_greypointsCurve_l.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_greypointsCurve_l.png" Vital="yes" />
+			<File Id="IFile56" Name="cc_greypointsCurve_r.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_greypointsCurve_r.png" Vital="yes" />
+			<File Id="IFile57" Name="cc_grnwhitepointsCurve_l.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_grnwhitepointsCurve_l.png" Vital="yes" />
+			<File Id="IFile58" Name="cc_grnwhitepointsCurve_r.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_grnwhitepointsCurve_r.png" Vital="yes" />
+			<File Id="IFile59" Name="cc_manageyourCard.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_manageyourCard.jpg" Vital="yes" />
+			<File Id="IFile60" Name="cc_manageyourCard_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_manageyourCard_on.jpg" Vital="yes" />
+			<File Id="IFile61" Name="cc_orderareplacement.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_orderareplacement.jpg" Vital="yes" />
+			<File Id="IFile62" Name="cc_orderareplacement_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_orderareplacement_on.jpg" Vital="yes" />
+			<File Id="IFile63" Name="cc_personalDtls.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_personalDtls.jpg" Vital="yes" />
+			<File Id="IFile64" Name="cc_personalDtls_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_personalDtls_on.jpg" Vital="yes" />
+			<File Id="IFile65" Name="cc_pointssummary.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_pointssummary.jpg" Vital="yes" />
+			<File Id="IFile66" Name="cc_pointssummary_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_pointssummary_on.jpg" Vital="yes" />
+			<File Id="IFile67" Name="cc_prevPtsSmryWhitepointsCurve_l.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_prevPtsSmryWhitepointsCurve_l.png" Vital="yes" />
+			<File Id="IFile68" Name="cc_prevPtsSmryWhitepointsCurve_r.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_prevPtsSmryWhitepointsCurve_r.png" Vital="yes" />
+			<File Id="IFile69" Name="cc_vouchers.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_vouchers.jpg" Vital="yes" />
+			<File Id="IFile70" Name="cc_vouchers_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_vouchers_on.jpg" Vital="yes" />
+			<File Id="IFile71" Name="cc_whitepointsCurve.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve.gif" Vital="yes" />
+			<File Id="IFile72" Name="cc_whitepointsCurve.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve.png" Vital="yes" />
+			<File Id="IFile73" Name="cc_whitepointsCurve_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve_l.gif" Vital="yes" />
+			<File Id="IFile74" Name="cc_whitepointsCurve_l.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve_l.png" Vital="yes" />
+			<File Id="IFile75" Name="cc_whitepointsCurve_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve_r.gif" Vital="yes" />
+			<File Id="IFile76" Name="cc_whitepointsCurve_r.png" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_whitepointsCurve_r.png" Vital="yes" />
+			<File Id="IFile77" Name="cc_yourPreference.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_yourPreference.jpg" Vital="yes" />
+			<File Id="IFile78" Name="cc_yourPreference_on.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\cc_yourPreference_on.jpg" Vital="yes" />
+			<File Id="IFile79" Name="ChangePrimary.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\ChangePrimary.gif" Vital="yes" />
+			<File Id="IFile80" Name="checkamenddetails.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\checkamenddetails.gif" Vital="yes" />
+			<File Id="IFile81" Name="christmassaver_ban1.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\christmassaver_ban1.jpg" Vital="yes" />
+			<File Id="IFile82" Name="christmassaver_ban2.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\christmassaver_ban2.jpg" Vital="yes" />
+			<File Id="IFile83" Name="christmassaver_ban3.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\christmassaver_ban3.jpg" Vital="yes" />
+			<File Id="IFile84" Name="christmassaver_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\christmassaver_Img.jpg" Vital="yes" />
+			<File Id="IFile85" Name="christTblTop_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\christTblTop_l.gif" Vital="yes" />
+			<File Id="IFile86" Name="christTblTop_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\christTblTop_r.gif" Vital="yes" />
+			<File Id="IFile87" Name="clearselection.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clearselection.gif" Vital="yes" />
+			<File Id="IFile88" Name="clickhere.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clickhere.gif" Vital="yes" />
+			<File Id="IFile89" Name="closethiswindow.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\closethiswindow.gif" Vital="yes" />
+			<File Id="IFile90" Name="clubcardbottom_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_l.gif" Vital="yes" />
+			<File Id="IFile91" Name="clubcardbottom_l2.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_l2.gif" Vital="yes" />
+			<File Id="IFile92" Name="clubcardbottom_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_r.gif" Vital="yes" />
+			<File Id="IFile93" Name="clubcardbottom_r1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_r1.gif" Vital="yes" />
+			<File Id="IFile94" Name="clubcardbottom_r2.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_r2.gif" Vital="yes" />
+			<File Id="IFile95" Name="clubcardbottom_r3.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardbottom_r3.gif" Vital="yes" />
+			<File Id="IFile96" Name="clubcardHeader_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardHeader_l.gif" Vital="yes" />
+			<File Id="IFile97" Name="clubcardHeader_l1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardHeader_l1.gif" Vital="yes" />
+			<File Id="IFile98" Name="clubcardHeader_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardHeader_r.gif" Vital="yes" />
+			<File Id="IFile99" Name="clubcardHeader_r1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\clubcardHeader_r1.gif" Vital="yes" />
+			<File Id="IFile100" Name="confirm.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\confirm.gif" Vital="yes" />
+			<File Id="IFile101" Name="Confirmbtn.JPG" Source="$(var.SolutionDir)..\..\..\HU\Images\Confirmbtn.JPG" Vital="yes" />
+			<File Id="IFile102" Name="confirmDetails.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\confirmDetails.gif" Vital="yes" />
+			<File Id="IFile103" Name="confirmsplit.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\confirmsplit.gif" Vital="yes" />
+			<File Id="IFile104" Name="corner-bottom-left-grey.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-bottom-left-grey.png" Vital="yes" />
+			<File Id="IFile105" Name="corner-bottom-left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-bottom-left.png" Vital="yes" />
+			<File Id="IFile106" Name="corner-bottom-right-grey.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-bottom-right-grey.png" Vital="yes" />
+			<File Id="IFile107" Name="corner-bottom-right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-bottom-right.png" Vital="yes" />
+			<File Id="IFile108" Name="corner-top-left-grey-inside.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-left-grey-inside.png" Vital="yes" />
+			<File Id="IFile109" Name="corner-top-left-grey.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-left-grey.png" Vital="yes" />
+			<File Id="IFile110" Name="corner-top-left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-left.png" Vital="yes" />
+			<File Id="IFile111" Name="corner-top-right-grey-inside.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-right-grey-inside.png" Vital="yes" />
+			<File Id="IFile112" Name="corner-top-right-grey.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-right-grey.png" Vital="yes" />
+			<File Id="IFile113" Name="corner-top-right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\corner-top-right.png" Vital="yes" />
+			<File Id="IFile114" Name="Coupon Comp 2 No Barcode.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\Coupon Comp 2 No Barcode.jpg" Vital="yes" />
+			<File Id="IFile115" Name="Coupon Comp 2.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\Coupon Comp 2.jpg" Vital="yes" />
+			<File Id="IFile116" Name="csc.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\csc.gif" Vital="yes" />
+			<File Id="IFile117" Name="CSCLogin.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\CSCLogin.gif" Vital="yes" />
+			<File Id="IFile118" Name="darkBlue_left.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\darkBlue_left.jpg" Vital="yes" />
+			<File Id="IFile119" Name="darkBlue_right.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\darkBlue_right.jpg" Vital="yes" />
+			<File Id="IFile120" Name="dot.png" Source="$(var.SolutionDir)..\..\..\HU\Images\dot.png" Vital="yes" />
+			<File Id="IFile121" Name="doubleClubcardPoints.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\doubleClubcardPoints.jpg" Vital="yes" />
+			<File Id="IFile122" Name="eCoupon-No-Barcode.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\eCoupon-No-Barcode.jpg" Vital="yes" />
+			<File Id="IFile123" Name="eCouponNoBarcode.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\eCouponNoBarcode.jpg" Vital="yes" />
+			<File Id="IFile124" Name="enablepswd.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\enablepswd.jpg" Vital="yes" />
+			<File Id="IFile125" Name="eon.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\eon.jpg" Vital="yes" />
+			<File Id="IFile126" Name="eon.png" Source="$(var.SolutionDir)..\..\..\HU\Images\eon.png" Vital="yes" />
+			<File Id="IFile127" Name="every_little_helps.png" Source="$(var.SolutionDir)..\..\..\HU\Images\every_little_helps.png" Vital="yes" />
+			<File Id="IFile128" Name="executiveClub.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\executiveClub.jpg" Vital="yes" />
+			<File Id="IFile129" Name="findaddress.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\findaddress.gif" Vital="yes" />
+			<File Id="IFile130" Name="FindCustomer.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\FindCustomer.gif" Vital="yes" />
+			<File Id="IFile131" Name="flagpl.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\flagpl.gif" Vital="yes" />
+			<File Id="IFile132" Name="flagth.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\flagth.gif" Vital="yes" />
+			<File Id="IFile133" Name="flagth1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\flagth1.gif" Vital="yes" />
+			<File Id="IFile134" Name="flaguk.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\flaguk.gif" Vital="yes" />
+			<File Id="IFile135" Name="food.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\food.jpg" Vital="yes" />
+			<File Id="IFile136" Name="footer.png" Source="$(var.SolutionDir)..\..\..\HU\Images\footer.png" Vital="yes" />
+			<File Id="IFile137" Name="gobacktoclubcardhomepage.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\gobacktoclubcardhomepage.gif" Vital="yes" />
+			<File Id="IFile138" Name="GotoMyClubcardAccount.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\GotoMyClubcardAccount.gif" Vital="yes" />
+			<File Id="IFile139" Name="GotoSearchCustomer.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\GotoSearchCustomer.gif" Vital="yes" />
+			<File Id="IFile140" Name="green-clubcard-points.png" Source="$(var.SolutionDir)..\..\..\HU\Images\green-clubcard-points.png" Vital="yes" />
+			<File Id="IFile141" Name="greenclubcardpoints.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\greenclubcardpoints.jpg" Vital="yes" />
+			<File Id="IFile142" Name="green_botleft.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\green_botleft.jpg" Vital="yes" />
+			<File Id="IFile143" Name="green_botright.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\green_botright.jpg" Vital="yes" />
+			<File Id="IFile144" Name="h1.clubcard.png" Source="$(var.SolutionDir)..\..\..\HU\Images\h1.clubcard.png" Vital="yes" />
+			<File Id="IFile145" Name="header-darkblue-left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\header-darkblue-left.png" Vital="yes" />
+			<File Id="IFile146" Name="header-darkblue-right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\header-darkblue-right.png" Vital="yes" />
+			<File Id="IFile147" Name="header-lightblue-left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\header-lightblue-left.png" Vital="yes" />
+			<File Id="IFile148" Name="header-lightblue-right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\header-lightblue-right.png" Vital="yes" />
+			<File Id="IFile149" Name="healthy_living.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\healthy_living.jpg" Vital="yes" />
+			<File Id="IFile150" Name="heathy_living.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\heathy_living.jpg" Vital="yes" />
+			<File Id="IFile151" Name="homephone.png" Source="$(var.SolutionDir)..\..\..\HU\Images\homephone.png" Vital="yes" />
+			<File Id="IFile152" Name="icentre.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\icentre.jpg" Vital="yes" />
+			<File Id="IFile153" Name="infoIcon.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\infoIcon.jpg" Vital="yes" />
+			<File Id="IFile154" Name="infoIcon.png" Source="$(var.SolutionDir)..\..\..\HU\Images\infoIcon.png" Vital="yes" />
+			<File Id="IFile155" Name="internetaccess.png" Source="$(var.SolutionDir)..\..\..\HU\Images\internetaccess.png" Vital="yes" />
+			<File Id="IFile156" Name="left-menu-header-bg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\left-menu-header-bg.png" Vital="yes" />
+			<File Id="IFile157" Name="left.png" Source="$(var.SolutionDir)..\..\..\HU\Images\left.png" Vital="yes" />
+			<File Id="IFile158" Name="leftNavBg.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\leftNavBg.gif" Vital="yes" />
+			<File Id="IFile159" Name="leftNav_header.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\leftNav_header.jpg" Vital="yes" />
+			<File Id="IFile160" Name="leftNav_headerUK.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\leftNav_headerUK.jpg" Vital="yes" />
+			<File Id="IFile161" Name="lightBlue_left.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\lightBlue_left.gif" Vital="yes" />
+			<File Id="IFile162" Name="lightBlue_right.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\lightBlue_right.gif" Vital="yes" />
+			<File Id="IFile163" Name="link-bg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\link-bg.png" Vital="yes" />
+			<File Id="IFile164" Name="Login.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\Login.gif" Vital="yes" />
+			<File Id="IFile165" Name="logos-bg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\logos-bg.png" Vital="yes" />
+			<File Id="IFile166" Name="menu-circle.png" Source="$(var.SolutionDir)..\..\..\HU\Images\menu-circle.png" Vital="yes" />
+			<File Id="IFile167" Name="milesArrow.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\milesArrow.gif" Vital="yes" />
+			<File Id="IFile168" Name="modalcurve_bottom.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\modalcurve_bottom.gif" Vital="yes" />
+			<File Id="IFile169" Name="modalcurve_top.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\modalcurve_top.gif" Vital="yes" />
+			<File Id="IFile170" Name="navBg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\navBg.png" Vital="yes" />
+			<File Id="IFile171" Name="next.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\next.gif" Vital="yes" />
+			<File Id="IFile172" Name="nextDisabled.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\nextDisabled.gif" Vital="yes" />
+			<File Id="IFile173" Name="nutricentre.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\nutricentre.gif" Vital="yes" />
+			<File Id="IFile174" Name="orderReplacement_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\orderReplacement_Img.jpg" Vital="yes" />
+			<File Id="IFile175" Name="other.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\other.jpg" Vital="yes" />
+			<File Id="IFile176" Name="Other_points.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\Other_points.gif" Vital="yes" />
+			<File Id="IFile177" Name="personalDetails_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\personalDetails_Img.jpg" Vital="yes" />
+			<File Id="IFile178" Name="pointsCurve.png" Source="$(var.SolutionDir)..\..\..\HU\Images\pointsCurve.png" Vital="yes" />
+			<File Id="IFile179" Name="pointtable_bottom.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\pointtable_bottom.gif" Vital="yes" />
+			<File Id="IFile180" Name="pointtable_colbg.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\pointtable_colbg.gif" Vital="yes" />
+			<File Id="IFile181" Name="pointtable_top.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\pointtable_top.gif" Vital="yes" />
+			<File Id="IFile182" Name="preferences_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\preferences_Img.jpg" Vital="yes" />
+			<File Id="IFile183" Name="previous.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\previous.gif" Vital="yes" />
+			<File Id="IFile184" Name="previousDisabled.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\previousDisabled.gif" Vital="yes" />
+			<File Id="IFile185" Name="red_left.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\red_left.jpg" Vital="yes" />
+			<File Id="IFile186" Name="red_right.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\red_right.jpg" Vital="yes" />
+			<File Id="IFile187" Name="replacevoucher.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\replacevoucher.gif" Vital="yes" />
+			<File Id="IFile188" Name="right.banner.clubcard2v3.png" Source="$(var.SolutionDir)..\..\..\HU\Images\right.banner.clubcard2v3.png" Vital="yes" />
+			<File Id="IFile189" Name="right.banner.clubcard2v4.png" Source="$(var.SolutionDir)..\..\..\HU\Images\right.banner.clubcard2v4.png" Vital="yes" />
+			<File Id="IFile190" Name="right.png" Source="$(var.SolutionDir)..\..\..\HU\Images\right.png" Vital="yes" />
+			<File Id="IFile191" Name="saveAddressChange.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\saveAddressChange.gif" Vital="yes" />
+			<File Id="IFile192" Name="saveAddressChange1.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\saveAddressChange1.gif" Vital="yes" />
+			<File Id="IFile193" Name="SaveChanges.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\SaveChanges.gif" Vital="yes" />
+			<File Id="IFile194" Name="seecurntpointssummary.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seecurntpointssummary.gif" Vital="yes" />
+			<File Id="IFile195" Name="seecurrentpointsummary.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seecurrentpointsummary.gif" Vital="yes" />
+			<File Id="IFile196" Name="seepointsdetail.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seepointsdetail.gif" Vital="yes" />
+			<File Id="IFile197" Name="seepointsdetail.png" Source="$(var.SolutionDir)..\..\..\HU\Images\seepointsdetail.png" Vital="yes" />
+			<File Id="IFile198" Name="seeprevpointdetails.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seeprevpointdetails.gif" Vital="yes" />
+			<File Id="IFile199" Name="seeprevpointsummary.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seeprevpointsummary.gif" Vital="yes" />
+			<File Id="IFile200" Name="seevoucherdtls.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\seevoucherdtls.gif" Vital="yes" />
+			<File Id="IFile201" Name="smallWhite_left.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\smallWhite_left.gif" Vital="yes" />
+			<File Id="IFile202" Name="smallWhite_right.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\smallWhite_right.gif" Vital="yes" />
+			<File Id="IFile203" Name="Standard-Coupon.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\Standard-Coupon.jpg" Vital="yes" />
+			<File Id="IFile204" Name="standardCoupon.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\standardCoupon.jpg" Vital="yes" />
+			<File Id="IFile205" Name="subMenu_activeArrow.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\subMenu_activeArrow.gif" Vital="yes" />
+			<File Id="IFile206" Name="subMenu_arrow.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\subMenu_arrow.gif" Vital="yes" />
+			<File Id="IFile207" Name="td-price-bg-noborder.png" Source="$(var.SolutionDir)..\..\..\HU\Images\td-price-bg-noborder.png" Vital="yes" />
+			<File Id="IFile208" Name="td-price-bg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\td-price-bg.png" Vital="yes" />
+			<File Id="IFile209" Name="td-price-bg2.png" Source="$(var.SolutionDir)..\..\..\HU\Images\td-price-bg2.png" Vital="yes" />
+			<File Id="IFile210" Name="td-price-big-bg.png" Source="$(var.SolutionDir)..\..\..\HU\Images\td-price-big-bg.png" Vital="yes" />
+			<File Id="IFile211" Name="td-price-big-bg2.png" Source="$(var.SolutionDir)..\..\..\HU\Images\td-price-big-bg2.png" Vital="yes" />
+			<File Id="IFile212" Name="tesco-broadband.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-broadband.png" Vital="yes" />
+			<File Id="IFile213" Name="tesco-com.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-com.png" Vital="yes" />
+			<File Id="IFile214" Name="tesco-credit-card.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-credit-card.png" Vital="yes" />
+			<File Id="IFile215" Name="tesco-diets.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-diets.png" Vital="yes" />
+			<File Id="IFile216" Name="tesco-direct.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-direct.png" Vital="yes" />
+			<File Id="IFile217" Name="tesco-mobile.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-mobile.png" Vital="yes" />
+			<File Id="IFile218" Name="tesco-petrol.png" Source="$(var.SolutionDir)..\..\..\HU\Images\tesco-petrol.png" Vital="yes" />
+			<File Id="IFile219" Name="tescobbphone.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescobbphone.jpg" Vital="yes" />
+			<File Id="IFile220" Name="TescoBroadband.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\TescoBroadband.jpg" Vital="yes" />
+			<File Id="IFile221" Name="tescocarinsurance.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescocarinsurance.jpg" Vital="yes" />
+			<File Id="IFile222" Name="tescocreditcard.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescocreditcard.jpg" Vital="yes" />
+			<File Id="IFile223" Name="tescodiets.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescodiets.jpg" Vital="yes" />
+			<File Id="IFile224" Name="tescodirect.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescodirect.jpg" Vital="yes" />
+			<File Id="IFile225" Name="tescodotcom.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescodotcom.jpg" Vital="yes" />
+			<File Id="IFile226" Name="tescohomephone.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescohomephone.jpg" Vital="yes" />
+			<File Id="IFile227" Name="tescointernetaccess.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescointernetaccess.jpg" Vital="yes" />
+			<File Id="IFile228" Name="tescointernetphone.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescointernetphone.jpg" Vital="yes" />
+			<File Id="IFile229" Name="tescoLogo.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\tescoLogo.gif" Vital="yes" />
+			<File Id="IFile230" Name="tescomobile.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescomobile.jpg" Vital="yes" />
+			<File Id="IFile231" Name="tescopetrol.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\tescopetrol.jpg" Vital="yes" />
+			<File Id="IFile232" Name="Tesco_fuel.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\Tesco_fuel.gif" Vital="yes" />
+			<File Id="IFile233" Name="thefoodclub.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\thefoodclub.jpg" Vital="yes" />
+			<File Id="IFile234" Name="thehealthylivingclub.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\thehealthylivingclub.jpg" Vital="yes" />
+			<File Id="IFile235" Name="togetherfortrees.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\togetherfortrees.gif" Vital="yes" />
+			<File Id="IFile236" Name="untitled.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\untitled.jpg" Vital="yes" />
+			<File Id="IFile237" Name="viewCards_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\viewCards_Img.jpg" Vital="yes" />
+			<File Id="IFile238" Name="viewcustomercharter.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\viewcustomercharter.gif" Vital="yes" />
+			<File Id="IFile239" Name="viewtermsconditions.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\viewtermsconditions.gif" Vital="yes" />
+			<File Id="IFile240" Name="viewwhatoffers.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\viewwhatoffers.gif" Vital="yes" />
+			<File Id="IFile241" Name="voucher tab.bmp" Source="$(var.SolutionDir)..\..\..\HU\Images\voucher tab.bmp" Vital="yes" />
+			<File Id="IFile242" Name="voucherGreyTblBtm_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherGreyTblBtm_l.gif" Vital="yes" />
+			<File Id="IFile243" Name="voucherGreyTblBtm_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherGreyTblBtm_r.gif" Vital="yes" />
+			<File Id="IFile244" Name="vouchersHeader.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\vouchersHeader.jpg" Vital="yes" />
+			<File Id="IFile245" Name="VouchersSummaryVal.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\VouchersSummaryVal.gif" Vital="yes" />
+			<File Id="IFile246" Name="VouchersSummaryVal.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\VouchersSummaryVal.jpg" Vital="yes" />
+			<File Id="IFile247" Name="VouchersSummaryValRew.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\VouchersSummaryValRew.gif" Vital="yes" />
+			<File Id="IFile248" Name="voucherTblBtm_l.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherTblBtm_l.gif" Vital="yes" />
+			<File Id="IFile249" Name="voucherTblBtm_r.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherTblBtm_r.gif" Vital="yes" />
+			<File Id="IFile250" Name="voucherValue_Lft.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherValue_Lft.gif" Vital="yes" />
+			<File Id="IFile251" Name="voucherValue_Rt.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\voucherValue_Rt.gif" Vital="yes" />
+			<File Id="IFile252" Name="wineLogo.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\wineLogo.jpg" Vital="yes" />
+			<File Id="IFile253" Name="world_of_wine.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\world_of_wine.jpg" Vital="yes" />
+			<File Id="IFile254" Name="xmas saver.bmp" Source="$(var.SolutionDir)..\..\..\HU\Images\xmas saver.bmp" Vital="yes" />
+			<File Id="IFile255" Name="xmas_saver.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\xmas_saver.jpg" Vital="yes" />
+			<File Id="IFile256" Name="Your Preferences.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\Your Preferences.jpg" Vital="yes" />
+			<File Id="IFile257" Name="yourchangessaved.gif" Source="$(var.SolutionDir)..\..\..\HU\Images\yourchangessaved.gif" Vital="yes" />
+			<File Id="IFile258" Name="yourPoints_Img.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\yourPoints_Img.jpg" Vital="yes" />
+			<File Id="IFile259" Name="yourPreferenceImg.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\yourPreferenceImg.jpg" Vital="yes" />
+			<File Id="IFile260" Name="your_points.jpg" Source="$(var.SolutionDir)..\..\..\HU\Images\your_points.jpg" Vital="yes" />
+          
+        </Component>
+      </Directory>
+      <Directory Id="JS" Name="JS">
+        <Component Id="JS" Guid="424D504B-7174-42A5-B20A-3974C06A871B" DiskId="1" KeyPath="yes">
+          <File Id="JSFile0" Name="CustomerDetails.js" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\JS\CustomerDetails.js" Vital="yes" />
+          <File Id="JSFile1" Name="General.js" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\JS\General.js" Vital="yes" />
+          <File Id="JSFile2" Name="jquery-1.3.2.js" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\JS\jquery-1.3.2.js" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="Properties" Name="Properties">
+      </Directory>
+      <Directory Id="Reports" Name="Reports">
+        <Component Id="Reports" Guid="2159dbf9-fae2-42b3-a4c6-a0412fc09303" DiskId="1" KeyPath="yes">
+          <File Id="ReportsFile0" Name="AccountReportHomePage.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\AccountReportHomePage.aspx" Vital="yes" />
+          <File Id="ReportsFile1" Name="ClubcardRegistrationReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\ClubcardRegistrationReport.aspx" Vital="yes" />
+          <File Id="ReportsFile2" Name="CustomerLoadReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\CustomerLoadReport.aspx" Vital="yes" />
+          <File Id="ReportsFile3" Name="DownloadExcelReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\DownloadExcelReport.aspx" Vital="yes" />
+          <File Id="ReportsFile4" Name="ExportToExcel.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\ExportToExcel.aspx" Vital="yes" />
+          <File Id="ReportsFile5" Name="PointsEarnedReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\PointsEarnedReport.aspx" Vital="yes" />
+          <File Id="ReportsFile6" Name="PromotionalCodeReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\PromotionalCodeReport.aspx" Vital="yes" />
+          <File Id="ReportsFile7" Name="PromotionCodeReport.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\PromotionCodeReport.aspx" Vital="yes" />
+          <File Id="ReportsFile8" Name="ReportHomePage.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\ReportHomePage.aspx" Vital="yes" />
+          <File Id="ReportsFile9" Name="SchedulePopup.aspx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\SchedulePopup.aspx" Vital="yes" />
+        </Component>
+        <Directory Id="App_LocalResources_1" Name="App_LocalResources">
+          <Component Id="App_LocalResources_1" Guid="8bd080ea-af56-4cb5-8a56-41b177a990d5" DiskId="1" KeyPath="yes">
+            <File Id="App_LocalResources_1File0" Name="AccountReportHomePage.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\AccountReportHomePage.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File1" Name="AccountReportHomePage.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\AccountReportHomePage.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File2" Name="AccountReportHomePage.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\AccountReportHomePage.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File3" Name="ClubcardRegistrationReport.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ClubcardRegistrationReport.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File4" Name="ClubcardRegistrationReport.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ClubcardRegistrationReport.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File5" Name="ClubcardRegistrationReport.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ClubcardRegistrationReport.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File6" Name="CustomerLoadReport.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\CustomerLoadReport.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File7" Name="CustomerLoadReport.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\CustomerLoadReport.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File8" Name="CustomerLoadReport.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\CustomerLoadReport.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File9" Name="ExportToExcel.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ExportToExcel.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File10" Name="ExportToExcel.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ExportToExcel.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File11" Name="ExportToExcel.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ExportToExcel.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File12" Name="PointsEarnedReport.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PointsEarnedReport.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File13" Name="PointsEarnedReport.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PointsEarnedReport.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File14" Name="PointsEarnedReport.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PointsEarnedReport.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File15" Name="PromotionCodeReport.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PromotionCodeReport.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File16" Name="PromotionCodeReport.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PromotionCodeReport.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File17" Name="PromotionCodeReport.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PromotionCodeReport.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File18" Name="ReportHomePage.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ReportHomePage.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File19" Name="ReportHomePage.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ReportHomePage.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File20" Name="ReportHomePage.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ReportHomePage.aspx.zh-CN.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File21" Name="SchedulePopup.aspx.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\SchedulePopup.aspx.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File22" Name="SchedulePopup.aspx.th-TH.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\SchedulePopup.aspx.th-TH.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File23" Name="SchedulePopup.aspx.zh-CN.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\SchedulePopup.aspx.zh-CN.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File24" Name="AccountReportHomePage.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\AccountReportHomePage.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File25" Name="ClubcardRegistrationReport.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ClubcardRegistrationReport.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File26" Name="CustomerLoadReport.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\CustomerLoadReport.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File27" Name="ExportToExcel.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ExportToExcel.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File28" Name="PointsEarnedReport.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PointsEarnedReport.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File29" Name="PromotionCodeReport.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PromotionCodeReport.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File30" Name="ReportHomePage.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ReportHomePage.aspx.pl-PL.resx" Vital="yes" />
+			      <File Id="App_LocalResources_1File31" Name="SchedulePopup.aspx.pl-PL.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\SchedulePopup.aspx.pl-PL.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File32" Name="AccountReportHomePage.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\AccountReportHomePage.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File33" Name="ClubcardRegistrationReport.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ClubcardRegistrationReport.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File34" Name="CustomerLoadReport.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\CustomerLoadReport.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File35" Name="ExportToExcel.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ExportToExcel.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File36" Name="PointsEarnedReport.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PointsEarnedReport.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File37" Name="PromotionCodeReport.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\PromotionCodeReport.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File38" Name="ReportHomePage.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\ReportHomePage.aspx.hu-HU.resx" Vital="yes" />
+            <File Id="App_LocalResources_1File39" Name="SchedulePopup.aspx.hu-HU.resx" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Reports\App_LocalResources\SchedulePopup.aspx.hu-HU.resx" Vital="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="ServiceReferences" Name="Service References">
+        <Directory Id="MarketingService" Name="MarketingService">
+          <Component Id="MarketingService" Guid="292e670b-0e55-4410-950c-2059f1964b26" DiskId="1" KeyPath="yes">
+            <File Id="MarketingServiceFile0" Name="configuration.svcinfo" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Service References\MarketingService\configuration.svcinfo" Vital="yes" />
+            <File Id="MarketingServiceFile1" Name="configuration91.svcinfo" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Service References\MarketingService\configuration91.svcinfo" Vital="yes" />
+            <File Id="MarketingServiceFile2" Name="MarketingService.disco" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Service References\MarketingService\MarketingService.disco" Vital="yes" />
+            <File Id="MarketingServiceFile3" Name="Reference.svcmap" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Service References\MarketingService\Reference.svcmap" Vital="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="StatementFormats" Name="StatementFormats">
+        <Component Id="StatementFormats" Guid="b9f686e3-1edc-498b-9240-733a3509f6e3" DiskId="1" KeyPath="yes">
+          <File Id="StatementFormatsFile0" Name="126.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\126.xml" Vital="yes" />
+          <!--<File Id="StatementFormatsFile1" Name="132.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\132.xml" Vital="yes" />-->
+          <File Id="StatementFormatsFile2" Name="143.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\143.xml" Vital="yes" />
+          <File Id="StatementFormatsFile3" Name="148.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\148.xml" Vital="yes" />
+          <File Id="StatementFormatsFile4" Name="153.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\153.xml" Vital="yes" />
+          <!--<File Id="StatementFormatsFile5" Name="201.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\201.xml" Vital="yes" />-->
+          <File Id="StatementFormatsFile6" Name="21.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\21.xml" Vital="yes" />
+          <File Id="StatementFormatsFile7" Name="211.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\211.xml" Vital="yes" />
+          <!--<File Id="StatementFormatsFile8" Name="212.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\212.xml" Vital="yes" />-->
+          <File Id="StatementFormatsFile9" Name="3.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\3.xml" Vital="yes" />
+          <File Id="StatementFormatsFile10" Name="41.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\41.xml" Vital="yes" />
+          <File Id="StatementFormatsFile11" Name="42.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\42.xml" Vital="yes" />
+          <File Id="StatementFormatsFile12" Name="51.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\51.xml" Vital="yes" />
+          <File Id="StatementFormatsFile13" Name="87.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\87.xml" Vital="yes" />
+          <!--<File Id="StatementFormatsFile14" Name="111.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\111.xml" Vital="yes" />
+          <File Id="StatementFormatsFile15" Name="170.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\170.xml" Vital="yes" />
+          <File Id="StatementFormatsFile16" Name="199.xml" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\StatementFormats\199.xml" Vital="yes" />-->
+        </Component>
+      </Directory>
+      <Directory Id="Template" Name="Template">
+        <Component Id="Template" Guid="7337f048-b5e4-480a-b4d7-b0c7254e8dca" DiskId="1" KeyPath="yes">
+          <File Id="TemplateFile0" Name="welcome.html" Source="$(var.SolutionDir)..\..\..\CSC\CCODundeeApplication\Template\welcome.html" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="WebReferences" Name="Web References">
+      </Directory>
+    </DirectoryRef>
+    <ComponentGroup Id="ApplicationFiles">
+      <ComponentRef Id="BaseFiles" />
+		<ComponentRef Id="Config" />
+      <ComponentRef Id="App_GlobalResources" />
+      <ComponentRef Id="App_LocalResources" />
+      <ComponentRef Id="bin" />
+      <ComponentRef Id="CSS" />
+      <ComponentRef Id="I" />
+      <ComponentRef Id="JS" />
+      <ComponentRef Id="Reports" />
+      <ComponentRef Id="App_LocalResources_1" />
+      <ComponentRef Id="MarketingService" />
+      <ComponentRef Id="StatementFormats" />
+      <ComponentRef Id="Template" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

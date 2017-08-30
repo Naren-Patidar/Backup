@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Controls>
+	<Category name="CommonControls">
+		<Control key="lblPageTitle" id="" classname="" xpath="//div[contains(@class,'pageText')]/h2" />
+		<Control key="linkName" id="" classname="" xpath="//ul[contains(@id,'expand')]/li/a/span" />
+		<control key="btntilte" id="h1[id='errorTitleText']" classname="" xpath="" />
+	</Category>
+	<Category name ="BrowserControls">
+		<control key="btnclick" id="h2[id='expertContent']" classname="" xpath="" />
+		<control key="btnException" id="button[id='exceptionDialogButton']" classname="" xpath="" />
+
+	</Category>
+	<Category name="LoginControls">
+		<Control key="txtVerification" id="" classname="" xpath="//div[@id='loginleftColumn']/h1" />
+		<Control key="btnMCAloginDbt" id="input[id='ctl00_PageContainer_txtCardNo']" classname="" xpath="" />
+		<Control key="btnMCAPassDbt" id="input[id='ctl00_PageContainer_txtPassword']" classname="" xpath="" />
+		<Control key="btnMCAlogin" id="input[id='loginID']" classname="" xpath="" />
+		<Control key="btnMCAPass" id="input[id='password']" classname="" xpath="" />
+		<Control key="btnMCAEmailPpe" id="input[id='Username']" classname="" xpath="" />
+		<Control key="btnMCAPassPpe" id="input[id='Password']" classname="" xpath="" />
+		<Control key="btnSubmit" id="input[id='ctl00_PageContainer_btnLogin']" classname="" xpath="" />
+		<Control key="btnSignIn" id="button[id='LoginBtn']" classname="" xpath="//input[@src='/i/b/btnsignin.gif']" />
+		<Control key="btnCerti" id="a[id='overridelink']" classname="" xpath="//td[id='continueToSiteAlign']/h4[id='continueToSite']/a[id='overridelink']" />
+	</Category>
+	<Category name="LogOutControls">
+		<Control key="btnMCAlogOutDbt" id="a[id*='ctl00_ctl00_ctl05_']" classname="" xpath="" />
+	</Category>
+	<Category name="HeaderControls">
+		<Control key="Clubcardlinks" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'club_menu')]/li/a" />
+		<Control key="Externallinks" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'functional_nav')]/li/a" />
+		<Control key="facebook" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'functional_nav')]/li/a/i" />
+		<Control key="twitter" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'functional_nav')]/li/a" />
+		<Control key="youtube" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'functional_nav')]/li/a" />
+		<Control key="basket" id="" classname="" xpath="//div[contains(@class,'club_header')]/ul[contains(@class,'functional_nav')]/li/a" />
+		<Control key="tescoclubcard" id="" classname="" xpath="//*[@id='ctl00_ctl00_ctl05_club_header']/a" />
+	</Category>
+	<Category name="FooterControls">
+		<Control key="footerlinks"  id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_ctl06_club_footer')]/ul/li/a/span" />
+		<Control key="evrylittlehelps" id="" classname=""       xpath="//*[@id='ctl00_ctl00_ctl06_club_footer']/span" />
+	</Category>
+	<Category name="SecurityControls">
+		<Control key="txtVerification" id="" classname="" xpath="//div[@class='pageText']/h2" />
+		<Control key="lblFirstDigit" id="span[id*='spnFirstDigit']" classname="" xpath="" />
+		<Control key="lblSecondDigit" id="span[id*='spnSecondDigit']" classname="" xpath="" />
+		<Control key="lblThirdDigit" id="span[id*='spnThirdDigit']" classname="" xpath="" />
+		<Control key="txtFirstAnswer" id="input[id*='txtSecurityAnswer1']" classname="" xpath="" />
+		<Control key="txtSecondAnswer" id="input[id*='txtSecurityAnswer2']" classname="" xpath="" />
+		<Control key="txtThirdAnswer" id="input[id*='txtSecurityAnswer3']" classname="" xpath="//td[id='continueToSiteAlign']/h4[id='continueToSite']/a[id='overridelink']" />
+		<Control key="btnSubmit" id="input[id*='btnSbmtNumbers']" classname="" xpath="" />
+		<Control key="lblSecurityMsg" id="span[id*='spnHeadermsg']" classname="" xpath="" />
+		<Control key="maxAttemptMsg" id="span[id*='spnError']" classname="" xpath="" />
+		<Control key="btnSecurityLogout" id="a[id*='LinkButton1']" classname="" xpath="" />
+
+		<!--<Control Key="maxAttempsMessage" id="" Classname="" xpath="//span[@id='ctl00_PageContainer_spnError']"/>-->
+		<Control key="lblSecurityErrorMsg" id="span[id*='spnError']" classname="" xpath="" />
+		<Control key="lblSecurityCharErrorMsg1" id="span[id*='CompareValidator1']" classname="" xpath="" />
+		<Control key="lblSecurityCharErrorMsg2" id="span[id*='CompareValidator2']" classname="" xpath="" />
+		<Control key="lblSecurityCharErrorMsg3" id="span[id*='CompareValidator3']" classname="" xpath="" />
+		<Control key="lblRequiredFieldValidator1" id="span[id*='RequiredFieldValidator3']" classname="" xpath="" />
+		<Control key="lblRequiredFieldValidator2" id="span[id*='RequiredFieldValidator4']" classname="" xpath="" />
+		<Control key="lblRequiredFieldValidator3" id="span[id*='RequiredFieldValidator5']" classname="" xpath="" />
+
+	</Category>
+	<Category name="Home">
+		<Control key="title" id="" classname="" xpath="//form/div[contains(@id,'content')]/div[contains(@id,'inner')]/div[contains(@id,'mainContent')]/div[contains(@id,'homepage')]/div" />
+	</Category>
+	<Category name="HomePage">
+		<Control key="lnkMyAccountExpand" id="a[id='my-acc']" classname="my-acc" xpath="" />
+		<Control key="Stamp5" id="" classname="" xpath="//div[contains(@class,'cc_stampBody')]/ul/li/a" />
+		<Control key="Stamp1" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp1']" classname="" xpath="" />
+		<Control key="Stamp2" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp2']" classname="" xpath="" />
+		<Control key="Stamp3" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp3']" classname="" xpath="" />
+		<Control key="Stamp4" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp4']" classname="" xpath="" />
+		<Control key="Stamp" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp5']" classname="" xpath="" />
+		<Control key="Stamp6" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp6']" classname="" xpath="" />
+		<Control key="Stamp7" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp7']" classname="" xpath="" />
+		<Control key="Stamp8" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp8']" classname="" xpath="" />
+		<Control key="Stamp9" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp9']" classname="" xpath="" />
+		<Control key="lnkHomepage" id="li[id='ctl00_ctl00_PageContainer_homeNav']" classname="" xpath="" />
+		<Control key="lblpagetitle" id="" classname="div[class='pageText']" xpath="" />
+		<Control key="lblpagetitle1" id="" classname="[class='IEFrame']" xpath="" />
+		<Control key="btnPrintClubcard" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnPrintCC']" classname="" xpath="" />
+    		<Control key="lnkHomepage1" id="li[id='ctl00_ctl00_PageContainer_homeNav']" classname="" xpath="//[@id='ctl00_ctl00_PageContainer_A1']/span" />
+      		<Control key="MESSAGEText" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblMyAccountVariableMessage']" classname="" xpath="" />
+       		<Control key="HomelblMESSAGE" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblmsg']" classname="" xpath="" />
+		<Control key="PtsSummarylbl" id="" classname="" xpath="//a[contains(@id,'A14')]/div[contains(@class,'pointsbox')]/h3" />
+                <Control key="PtsSummaryValue" id="" classname="" xpath="//a[contains(@id,'A14')]/div[contains(@class,'pointsbox')]/div[contains(@class,'boxOutlineDB infoBoxwhite')]/div[contains(@class,'content')]/h4" />
+		<Control key="SecondPointsBoxlbl" id="" classname="" xpath="//a[contains(@id,'A10')]/div[contains(@class,'pointsbox')]/h3" />
+		<Control key="SecondPointsBoxValue" id="" classname="" xpath="//a[contains(@id,'A10')]/div[contains(@class,'pointsbox')]/div[contains(@class,'boxOutline boxOutlineLB infoBoxwhite')]/div[contains(@class,'content')]/h4" />
+	
+	</Category>
+	<Category name="MyAccountDetails">
+		<Control key="lblMyAccDetail" id="" classname="" xpath="//a[@id='my-acc']/span" />
+		<Control key="lblMyPersonalDetail" id="" classname="" xpath="//ul[contains(@id,'expand')]/li/a/span" />
+		<Control key="lblMyContPref" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A5']/span" />
+		<Control key="lblOptAndBenft" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A27']/span" />
+		<Control key="lblViewMyCard" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A21']/span" />
+		<Control key="lblOrderReplc" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A19']/span" />
+		<Control key="lblMyBoost" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A12']/span" />
+		<Control key="lblViewMyCardCommonMsg" id="" classname="" xpath="//div[contains(@class,'blueheaderbar')]/h2" />
+		<Control key="lblViewMyCardMainMsg" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/div/h4" />
+		<Control key="lblViewMyCardAssoMsg" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/div/h4" />
+		<Control key="lblMainClubcards" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/tbody/tr/td[1]"/>
+		<Control key="lblAssoClubcards" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/table/tbody/tr/td[1]"/>
+		<Control key="lblShowTypeofCard" id="ctl00_ctl00_PageContainer_MyAccountContainer_ctl01_rptCardDetails_ctl00_hideTypeofCard" classname="" xpath=""/>
+		<Control key="lblWhereUsed" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/thead/tr/th[@class='last']"/>
+		<Control key="lblWhereUsedDetails" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/tbody/tr/td[@class='last']"/>
+		<Control key="lblWhereUsedasso" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/table/thead/tr/th[@class='last']"/>
+		<Control key="lblWhereUsedDetailsasso" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/table/tbody/tr/td[@class='last']"/>
+		<Control key="lblLastUsed" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/tbody/tr/td[2]"/>
+		<Control key="lblLastUsedwithTypeofCard" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/tbody/tr/td[3]"/>
+		<Control key="lblLastUsedAsso" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/table/tbody/tr/td[2]"/>
+		<Control key="lblLastUsedAssowithTypeofCard" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[2]/table/tbody/tr/td[3]"/>
+		<Control key="lblShowTypeofCardDetails" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlCards']/div[1]/table/tbody/tr/td[contains(@id,'hideTypeofCardDesc')]"/>
+
+	</Category>
+  <Category name="HomePage">
+    <Control key="lnkMyAccountExpand" id="a[id='my-acc']" classname="my-acc" xpath="" />
+    <Control key="Stamp5" id="" classname="" xpath="//div[contains(@class,'cc_stampBody')]/ul/li/a" />
+    <Control key="Stamp1" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp1']" classname="" xpath="" />
+    <Control key="Stamp2" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp2']" classname="" xpath="" />
+    <Control key="Stamp3" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp3']" classname="" xpath="" />
+    <Control key="Stamp4" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp4']" classname="" xpath="" />
+    <Control key="Stamp" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp5']" classname="" xpath="" />
+    <Control key="Stamp6" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp6']" classname="" xpath="" />
+    <Control key="Stamp7" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp7']" classname="" xpath="" />
+    <Control key="Stamp8" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp8']" classname="" xpath="" />
+    <Control key="Stamp9" id="li[id='ctl00_ctl00_PageContainer_MyAccountContainer_liStamp9']" classname="" xpath="" />
+    <Control key="lnkHomepage" id="li[id='ctl00_ctl00_PageContainer_homeNav']" classname="" xpath="" />
+    <!--<Control key="lnkHomepage1" id="li[id='ctl00_ctl00_PageContainer_homeNav']" classname="" xpath="//[@id='ctl00_ctl00_PageContainer_A1']/span" />-->
+    <Control key="lblpagetitle" id="" classname="div[class='pageText']" xpath="" />
+    <Control key="lblpagetitle1" id="" classname="[class='IEFrame']" xpath="" />
+</Category>
+  <Category name="MyAccountDetails">
+    <Control key="lblMyAccDetail" id="" classname="" xpath="//a[@id='my-acc']/span" />
+    <Control key="lblMyPersonalDetail" id="" classname="" xpath="//ul[contains(@id,'expand')]/li/a/span" />
+    <Control key="lblMyContPref" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A5']/span" />
+    <Control key="lblOptAndBenft" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A27']/span" />
+    <Control key="lblViewMyCard" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A21']/span" />
+    <Control key="lblOrderReplc" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A19']/span" />
+    <Control key="lblMyBoost" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A12']/span" />
+</Category>
+  <Category name="MyPersonalDetails">
+    <Control key="lblTitle" id="" classname="" xpath="//ul[contains(@id,'expand')]/li/a/span" />
+    <Control key="btnConfirm" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnConfirmPersonalDtls']" classname="" xpath="" />
+    <Control key="btnConfirmDietaryDisabled" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_Contactdetails']" classname="" xpath="" />
+    <Control key="lblmessage" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblSuccessMessage']" classname="" xpath="" />
+    <Control key="txtpostcode" id="input[id*='ctl00_ctl00_PageContainer_MyAccountContainer_txtPostCode']" classname="" xpath="" />
+    <Control key="btnpostcode" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnFindAddress']" classname="" xpath="" />
+    <Control key="ddlhouse" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAddress']" classname="" xpath="" />
+	  <Control key="Housenumber" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtHouseNumber']" classname="" xpath="" />
+	  <Control key="lblpostcodesec1" id="" classname="" xpath="//div[@class='cc_lightGreybody']/ul[@class='contacts']/li[12]/label/b" />
+    <Control key="lblpostcodesec2" id="" classname="" xpath="//div[@class='cc_lightGreybody']/ul[@class='contacts']/li[13]/label/b" />
+    <Control key="btnSaveChanges" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnSaveAddress']" classname="" xpath="" />
+    <Control key="lblSuccessfulMsg" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblSuccessMessage']" classname="" xpath="" />
+    <Control key="txtEmail" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtEmail']" classname="" xpath="" />
+    <Control key="txtFirstname" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtFirstName']" classname="" xpath="" />
+    <Control key="txtmiddlename" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtInitial']" classname="" xpath="" />
+    <Control key="txtsurname" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtSurname']" classname="" xpath="" />
+    <Control key="txteveningphone" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtEveningPhoneNumber']" classname="" xpath="" />
+    <Control key="mobilenumber" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtMobileNumber']" classname="" xpath="" />
+    <Control key="phonenumber" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtPhoneNumber']" classname="" xpath="" />
+	<Control key="btnmaleradio" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioMale']" classname="" xpath="" />
+	<Control key="btnfemaleradio" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioFemale']" classname="" xpath="" />
+	<Control key="day" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlDay']" classname="" xpath="" />
+	<Control key="month" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlMonth']" classname="" xpath="" />
+    	<Control key="year" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlYear']" classname="" xpath="" />
+	<Control key="title" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlTitle']" classname="" xpath="" />
+	<Control key="tescodotcomaccount" id="" classname="" xpath="//a[contains(@href,'contactDetails.aspx?vstore=0')]"/>
+	<Control key="passwordChange" id="" classname="" xpath="//a[contains(@href,'changepassword/change/')]"/>
+	<Control key="surnameupdateClickhere" id="" classname="" xpath="//a[contains(@href,'OrderAReplacement/Home.aspx')]"/>
+	<Control key="surnameupdateText" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_sMesg']" classname="" xpath=""/>  
+	<Control key="tescodotcomaccount" id="" classname="" xpath="//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[2]/a/u" />
+	
+	<Control key="CheckText" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[2]/h2" />
+	<Control key="YCDetailsText" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[3]/div/h4" />
+	<Control key="AstricTxt" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[3]/div[1]/p" />
+	<Control key="PageDescTxtone" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[1]" />
+	<Control key="PageDescTxtTwo" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[2]" />
+	<Control key="PageDescTxtThree" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[3]" />
+  <Control key="Province" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlProvince']" classname="" xpath="" />
+   <Control key="Race" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlRace']" classname="" xpath="" />
+    <Control key="AddressLine5" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine5']" classname="" xpath="" />
+    <Control key="AddressLine1" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine1']" classname="" xpath="" />
+    <Control key="AddressLine2" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine2']" classname="" xpath="" />
+    <Control key="AddressLine3" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine3']" classname="" xpath="" />
+    <Control key="AddressLine4" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine4']" classname="" xpath="" />
+    <Control key="AddressLine6" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine6']" classname="" xpath="" />
+    <Control key="PrimaryID" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtPrimId']" classname="" xpath="" />
+    <Control key="ReplacementText" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_sMesg']" classname="" xpath="" />
+    <Control key="ErrorDOB" id="span[id='spanDOB']" classname="" xpath="" />
+    <Control key="GenericError" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblSuccessMessage']" classname="" xpath="" />
+    <Control key="ErrorName1" id="span[id='spanFirstName']" classname="" xpath="" />
+    <Control key="ErrorName2" id="span[id='spanMiddleName']" classname="" xpath="" />
+    <Control key="ErrorName3" id="span[id='spanSurname']" classname="" xpath="" />
+    <Control key="ErrorMobileNumber" id="span[id='span7']" classname="" xpath="" />
+    <Control key="ErrorEmail" id="span[id='spanEmail']" classname="" xpath="" />
+    <Control key="ErrorGenderMismatch" id="span[id='spanGenderError']" classname="" xpath="" />
+    <Control key="ErrorAddressLine1" id="span[id='spanAddressLine1']" classname="" xpath="" />
+    <Control key="ErrorAddressLine2" id="span[id='spanAddressLine2']" classname="" xpath="" />
+    <Control key="ErrorAddressLine3" id="span[id='spanAddressLine3']" classname="" xpath="" />
+    <Control key="ErrorAddressLine4" id="span[id='spanAddressLine4']" classname="" xpath="" />
+    <Control key="ErrorAddressLine5" id="span[id='spanAddressLine5']" classname="" xpath="" />
+    <Control key="ErrorAddressLine6" id="span[id='spanAddressLine6']" classname="" xpath="" />
+ 		<Control key="CheckText" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[2]/h2" />
+		<Control key="YCDetailsText" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[3]/div/h4" />
+		<Control key="AstricTxt" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[3]/div[1]/p" />
+		<Control key="PageDescTxtone" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[1]" />
+		<Control key="PageDescTxtTwo" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[2]" />
+		<Control key="PageDescTxtThree" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[1]/div[1]/p[3]" />
+		<Control key="YHDAgeYou" id="li[id='liFirstAge']" classname="" xpath="" />
+		<Control key="YHDAgePerson2" id="" classname="" xpath="//label[@for='age2']" />
+		<Control key="YHDAgePerson3" id="" classname="" xpath="//label[@for='age3']" />
+		<Control key="YHDAgePerson4" id="" classname="" xpath="//label[@for='age4']" />
+		<Control key="YHDAgePerson5" id="" classname="" xpath="//label[@for='age5']" />
+		<Control key="YHDAgePerson6" id="" classname="" xpath="//label[@for='age6']" />
+		<Control key="YHDAgeYouValue" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAge1']" classname="" xpath="" />
+		<Control key="YHDDDPerson2" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAge2']" classname="" xpath="" />
+		<Control key="YHDDDPerson3" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAge3']" classname="" xpath="" />
+		<Control key="YHDDDPerson4" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAge4']" classname="" xpath="" />
+		<Control key="YHDDDPerson5" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAge5']" classname="" xpath="" />
+		<Control key="YHDDDPerson6" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlAge6']" classname="" xpath="" />
+		<Control key="AddressLine5" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtAddressLine5']" classname="" xpath="" />
+
+		<Control key="LblDietaryNeedDiabetic" id="label[for='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_0']" classname="" xpath="" />
+		<Control key="LblDietaryNeedKosher" id="label[for='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_1']" classname="" xpath="" />
+		<Control key="LblDietaryNeedHalal" id="label[for='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_2']" classname="" xpath="" />
+		<Control key="LblDietaryNeedVegeterian" id="label[for='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_3']" classname="" xpath="" />
+		<Control key="LblDietaryNeedTeaTotal" id="label[for='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_4']" classname="" xpath="" />
+		<Control key="ChkDietaryNeedDiabetic" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_0']" classname="" xpath="" />
+		<Control key="ChkDietaryNeedKosher" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_1']" classname="" xpath="" />
+		<Control key="ChkDietaryNeedHalal" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_2']" classname="" xpath="" />
+		<Control key="ChkDietaryNeedVegeterian" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_3']" classname="" xpath="" />
+		<Control key="ChkDietaryNeedTeaTotal" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds_4']" classname="" xpath="" />
+
+		<Control key="ChkDietaryNeeds" id="" classname="" xpath="//table[@id='ctl00_ctl00_PageContainer_MyAccountContainer_cblDietaryNeeds']/tbody/tr/td/label" />
+	</Category>
+  <Category name="OptionsAndBenefit">
+<Control key="btnConfirm" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnConfirmStatementPref']" classname="" xpath="" />
+<Control key="btnClearSection" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_Button1']" classname="" xpath="" />
+<Control key="lblmessage" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divConfirmStatementPref']" classname="" xpath="" />
+<Control key="lblChristmasmessage" id="ctl00_ctl00_PageContainer_MyAccountContainer_divchristmasin" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divchristmasin')]/p" />
+
+  <Control key="radioBtnChistmas" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioXmasSaverOptIn']" classname="" xpath="" />
+  <!--<Control key="radioBtnChistmas" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioAirMilesOptIn']" classname="" xpath="" />-->
+  
+  <Control key="radioBtnBAAvios" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioBAMilesOptIn']" classname="" xpath="" />
+<Control key="radioBtnAvios" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioAirMilesOptIn']" classname="" xpath="" />
+  <Control key="radioBtnVirginAtlanticFlyingClub" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioVirginOptIn']" classname="" xpath="" />
+  <!--<Control key="radioBtnBritishAirwaysExecutiveAvios" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioBAMilesOptIn']" classname="" xpath="" />-->
+  <Control key="txtVirgnMembershipID" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtVirgnMembershipID']" classname="" xpath="" />
+  <Control key="txtBAviosID" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtBAvios']" classname="" xpath="" />
+  <Control key="lblAviousValidateMessage" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spanVirgin']" classname="" xpath="" />
+  <Control key="lblBAValidateMessage" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spanBA']" classname="" xpath="" />
+
+  <Control key="lnkVirginAtlanticFlyingClubMoreInformation" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divVirginout')]/p[1]/a/u"/> 
+  
+  <Control key="lnkBAAVIOSMoreInformation" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divBAout')]/p[1]/a/u"/>
+
+
+
+  <Control key="lnkAVIOSMoreInformation" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divAviosout')]/p[1]/a/u"/> 
+
+  <Control key="lnkChistmasSMoreInformation" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divchristmasin')]/p[1]/a/u"/> 
+
+
+</Category>
+	<Category name="MyContactPreference">
+		<Control key="ValidationMsg" id="ctl00_ctl00_PageContainer_MyAccountContainer_divContactpref" classname="" xpath="" />
+		<Control key="BtnConfirm" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnConfirmContactPref']" classname="" xpath="" />
+		<Control key="RadioBtnEmail" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioEmail']" classname="" xpath="" />
+		<Control key="RadioBtnSMS" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioSMS']" classname="" xpath="" />
+		<Control key="EmailTextValue" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtEmail']" classname="" xpath="" />
+		<Control key="PhoneNumberValue" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_txtSMS']" classname="" xpath="" />
+		<Control key="lblContactPreferenceOne" id="" class="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_Panel1']/div[@class='blueheaderbar']/h2" />
+		<Control key="lblContactPreferenceTwo" id="" class="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlMailingOptions']/div[@class='blueheaderbar']/h2"/> />
+		<Control key="gdtable" id="table[id='ctl00_ctl00_PageContainer_MyAccountContainer_DataProtectionTable']" class="" xpath="" />
+		<Control key="lblValidationMsg" id="" class="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlMailingOptions']/div[@class='blueheaderbar']/h2" />
+		<Control key="chekBox1" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkTGMail']" class="" xpath="" />
+		<Control key="lstCheckBox" id="" class="" xpath="//input[@type='checkbox']" />
+		<Control key="chkGrpTescoProduct" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkGrpTescoProducts']" classname="" xpath="" />
+		<Control key="chkGrpPartneroffer" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkGrpPartnerOffers']" classname="" xpath="" />
+		<Control key="chkGrpResearch" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkGrpResearch']" classname="" xpath="" />
+		<Control key="btnConfirmMailingPref" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnConfirmMailingPref']" classname="" xpath="" />
+		<Control key="divNoGrid" id="" class="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pnlMailingOptions']/div[@class='ccbody']" />
+		<Control key="prefSuccessMsg" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divConfirmMailingPref']" classname="" xpath="" />
+		<Control key="chkboxEmail" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkTPEmail']" classname="" xpath="" />
+		<Control key="chkboxSMS" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkTPSms']" classname="" xpath="" />
+		<Control key="chkTescoProduct" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkRecvTescoOffrnInfo']" classname="" xpath="" />
+		<Control key="chkPartneroffer" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkRecvPartnersOffrnInfo']" classname="" xpath="" />
+		<Control key="chkResearch" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkDontContact']" classname="" xpath="" />
+
+
+
+
+
+
+  </Category>
+	<Category name="MyPoints">
+		<Control key="lblMyPoints" id="" classname="" xpath="//a[@id='ctl00_ctl00_PageContainer_A13']/span" />
+		<Control key="lblMyCurrentPoints" id="" classname="" xpath="//li[contains(@class,'submenu')]/a/span" />
+		<Control key="lnkCurrentDetails" id="a[id*='ctl00_ctl00_PageContainer_MyAccountContainer_rptPointsInfoWithDetails_ctl01_lnkViewDetail_']" classname="" xpath="" />
+		<Control key="lnkPrevious1Details" id="a[id*='ctl00_ctl00_PageContainer_MyAccountContainer_rptPointsInfoWithDetails_ctl02_lnkViewDetail_']" classname="" xpath="" />
+		<Control key="lnkPrevious1Summary" id="a[id*='ctl00_ctl00_PageContainer_MyAccountContainer_rptPointsInfoWithDetails_ctl02_lnkViewSummary_']" classname="" xpath="" />
+		<Control key="lnkPrevious2Details" id="a[id*='ctl00_ctl00_PageContainer_MyAccountContainer_rptPointsInfoWithDetails_ctl03_lnkViewDetail_']" classname="" xpath="" />
+		<Control key="lnkPrevious2Summary" id="a[id*='ctl00_ctl00_PageContainer_MyAccountContainer_rptPointsInfoWithDetails_ctl03_lnkViewSummary_']" classname="" xpath="" />
+		<Control key="lblNoTransacionsMessage" id="a[id='ctl00_ctl00_PageContainer_MyAccountContainer_lblShow0PtsMsg']" classname="" xpath="" />
+		<Control key="tblCollectionPeriodGrid" id="" classname="table[class='tbl colPrdSm']" xpath="" />
+		<Control key="tblPointsTransactionGrid" id="table[id='ctl00_ctl00_PageContainer_MyAccountContainer_grdTransactions']" classname="" xpath="" />
+		<Control key="selectClubcard" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlCardNumbers']" classname="" xpath="" />
+		<Control key="selectStore" id="select[id='ctl00_ctl00_PageContainer_MyAccountContainer_ddlTransactionTypes']" classname="" xpath="" />
+	</Category>
+  <Category name="PointsSummary">
+    <Control key="lblVouchersTotal" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvNonXmasVoucher')]/div/div/div/h3" />
+    <Control key="lblTotalCarriedForward" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvCarryFrdPts')]/div/div/div/h3" />
+    <Control key="lbTotalPointsFromTesco" id="" classname="" xpath="//div[contains(@class,'ccPointscollected')]/ul/li/div/div/div/h3" />
+    <Control key="txtVouchersTotal" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvNonXmasVoucher')]/div/div/div/div/div/h4" />
+    <Control key="txtCarriedForwardTotal" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvCarryFrdPts')]/div/div/div/div/div/h4" />
+    <Control key="txtTotalPointsFromTesco" id="" classname="" xpath="//div[contains(@class,'ccPointscollected')]/ul/li/div/div/div/div/div/h4" />
+    <Control key="lblPointsFromTescoSection" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/h2" />
+    <Control key="lblPointsFromTescoBankSection" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div[contains(@class,'pointstableright')]/div/div/h2" />
+    <Control key="lblPointsForChristmasSaver" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvXmasVoucher')]/div/div/div/h3" />
+    <Control key="lblVouchersForChristmasSaver" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvXmasSaver')]/ul/li/div/div/div/h3" />
+    <Control key="txtChristmasSaverVoucher" id="" classname="" xpath="//li[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvXmasVoucher')]/div/div/div/div/div/h4" />
+    <Control key="txtChristmasSaverAllVouchers" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvXmasSaver')]/ul/li/div/div/div/div/div/h4" />
+    <Control key="lblMilesBox" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvMilesSection')]/ul/li/div/div/div/h3" />
+    <Control key="txtMilesBox" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_dvMilesSection')]/ul/li/div/div/div/div/div/h4" />
+    <Control key="lblLowerLeftBox" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/div/span" />
+    <Control key="txtLowerLeftBoxWithBold" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/div/b" />
+    <Control key="txtLowerLeftBoxWithoutBold" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/div[contains(@class,'summary')]" />
+    <Control key="lblLowerLeftBoxWithTextBox" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/ul/li/div/h3" />
+    <Control key="txtLowerLeftBoxWithTextBox" id="" classname="" xpath="//div[contains(@id,'pointstables')]/div/div/div/ul/li/div/div/div/h4" />
+    <Control key="sectionTescoPoints" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_pnlTescoPointsTotalsNov')]/table/tbody/tr" />
+    <Control key="sectionTescoBankPoints" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_pnlTescoBankPointsTotalsNov')]/table/tbody/tr" />
+  </Category>
+	<Category name="OptionsAndBenefit">
+		<Control key="btnConfirm" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnConfirmStatementPref']" classname="" xpath="" />
+		<Control key="lblmessage" id="ctl00_ctl00_PageContainer_MyAccountContainer_divConfirmStatementPref" classname="" xpath="" />
+		<Control key="radioBtnBAAvios" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioBAMilesOptIn']" classname="" xpath="" />
+		<Control key="radioBtnAvios" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_radioAirMilesOptIn']" classname="" xpath="" />
+	</Category>
+	<Category name="MyVoucher">
+		<Control key="lblMyVoucher" id="" classname="" xpath="//div[contains(@class,'boxOutline')]/ul/li/a/span" />
+		<Control key="lblMyVoucherHeader" id="h2[id='ctl00_ctl00_PageContainer_MyAccountContainer_vouchername']" classname="" xpath="" />
+		<Control key="chkSelectAll" id="input[id*='rptVoucherUnUsedDetails_ctl00_selAllVoucher']" classname="" xpath="" />
+		<Control key="btnPrintVoucher" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_btnPrintCC']" classname="" xpath="" />
+		<Control key="chkSelectOne" id="input[id*='rptVoucherUnUsedDetails_ctl01_selVoucher']" classname="" xpath="" />
+		<Control key="lblUnUsedVoucher" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divUnusedVouchers']" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divUnusedVouchers')]/div[contains(@class,'blueheaderbar')]/h2" />
+		<Control key="lblSocialSite" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_divVoucherFacebookTweetInt']/div/h2" />
+		<Control key="imgTwitter" id="" classname="" xpath="//img[@src='../I/Twitter.png']" />
+		<Control key="imgTFaceBook" id="" classname="" xpath="//img[@src='../I/facebook_logo.jpg']" />
+		<Control key="pointBox1" id="" classname="" xpath="//ul/li[1]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]" />
+		<Control key="lblpointBox1Text" id="" classname="" xpath="//ul/li[1]/div[contains(@class,'boxOutlineW')]/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]/h3" />
+		<Control key="pointBox2" id="" classname="" xpath="//ul/li[2]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]" />
+		<Control key="lblpointBox2Text" id="" classname="" xpath="//ul/li[2]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]/h3" />
+		<Control key="pointBox3" id="" classname="" xpath="//ul/li[3]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]" />
+		<Control key="lblpointBox3Text" id="" classname="" xpath="//ul/li[3]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]/h3" />
+		<Control key="lblTotalOnTop" id="" classname="" xpath="//ul/li[3]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]/div/div/h4" />
+		<Control key="lblTotalCount" id="" classname="span[class='totalbox']" xpath="" />
+		<Control key="lblUsedVoucher" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divUsedVouchers')]/div[contains(@class,'blueheaderbar')]/h2" />
+		<Control key="tableRedeemed" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divUsedVouchers')]/div[contains(@class,'ccbody')]/table[contains(@class,'tbl')]/tbody" />
+		<Control key="txtRedeemedValue" id="span[id*='lblVhrUsedValue']" classname="" xpath="" />
+		<Control key="tableUnused" id="" classname="" xpath="//div[contains(@id,'ctl00_ctl00_PageContainer_MyAccountContainer_divUnusedVouchers')]/div[contains(@class,'ccbody')]/table[contains(@class,'tbl')]/tbody" />
+		<Control key="divUsedVoucherSection" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divUsedVouchers']" classname="" xpath="" />
+		<Control key="txtPointsCollected" id="" classname="" xpath="//div[contains(@class,'ccbody')]/table/tbody/tr/td[1]/div[contains(@class,'greybox')]/div/div/div/h3" />
+		<Control key="txtConvertedTo" id="" classname="" xpath="//div[contains(@class,'ccbody')]/table/tbody/tr/td[contains(@class,'arrow')]/table/tbody/tr[1]/td" />
+		<Control key="imgArrow" id="" classname="" xpath="//img[@src='../I/arrow.gif']" />
+		<Control key="imgAvios" id="" classname="" xpath="//img[@src='../I/avios_logo.jpg']" />
+		<Control key="imgVirginAtlantic" id="" classname="" xpath="//img[@src='../I/VirginFlyingClublogo.jpg']" />
+		<Control key="lblTotalOnTop1" id="" classname="" xpath="//ul/li[2]/div/div[contains(@class,'content')]/div[contains(@class,'pointsbox')]/div/div/h4" />
+
+	</Category>
+	<Category name="MyCoupon">
+		<Control key="btnPrintCoupon" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_PrintCoupon']" classname="" xpath="" />
+		<Control key="iconPrintCoupon" id="" classname="" xpath="//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_divActiveCoupons']/div/ul/li[1]/div[1]/div/div/span[2]/img" />
+		<Control key="CouponImages" id="" classname="" xpath="/html/body/form/div[4]/div/div[2]/div/div/div[2]/div[4]/div/ul" />
+
+		<Control key="SelectCouponMessage" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_dvSelectCoupon']" />
+		<Control key="chkSelectFirstCoupon" id="input[id='chkSelCoupon1']" classname="" xpath="" />
+
+		<Control key="chkSelectAllCoupon" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_chkSelAll']" classname="" xpath="" />
+		<Control key="NoActiveCoupon" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pMsgNoActiveCoupons']/p[@class='pageDesc']" />
+		<Control key="NoCouponRedeemed" id="" classname="" xpath="//div[@id='ctl00_ctl00_PageContainer_MyAccountContainer_pMsgNoRedeemedCoupons']/p[@class='pageDesc']" />
+		<Control key="StoreName" id="" classname="" xpath="//div[@class='Usedcoupondiv']/table/tbody/tr/td[4]"/>
+		<Control key="DateRedeemed" id="" classname="" xpath="//div[@class='Usedcoupondiv']/table/tbody/tr/td[3]"/>
+		<Control key="AvailableText" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[3]/div/div/div/h3"/>
+		<Control key="CouponusedtextSummary" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[2]/div/div/div/h3"/>
+		<Control key="CouponUsedCountSummary" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[2]/div/div/div/div/div/h4"/>
+		<Control key="CouponSenttextSummary" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[1]/div/div/div/h3"/>
+		<Control key="CouponSentCountSummary" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[1]/div/div/div/div/div/h4"/>
+		<Control key="AvailableCount" id="" classname="" xpath=".//*[@id='ctl00_ctl00_PageContainer_MyAccountContainer_diveCouponSummary']/div/ul/li[3]/div/div/div/div/div/h4"/>
+	</Category>
+  <Category name="JoinControls">
+    <Control key="JoinClubcard" id="" classname="" xpath="//div[contains(@class,'inset_centre_wrapper')]/div[contains(@id,'ctl00_PageJoinContainer_divSubHeader')]/h1[@class='hide']" />
+    <Control key="Yourdetails" id="" classname="" xpath="//div[contains(@class,'blueheaderbar')]/h2" />
+    <Control key="btnJoin" id="input[id='ctl00_PageJoinContainer_btnConfirmJoin']" classname="" xpath="" />
+    <Control key="txtFirstname" id="input[id='ctl00_PageJoinContainer_txtFirstName']" classname="" xpath="" />
+    <Control key="txtmiddlename" id="input[id='ctl00_PageJoinContainer_txtInitial']" classname="" xpath="" />
+    <Control key="txtsurname" id="input[id='ctl00_PageJoinContainer_txtSurname']" classname="" xpath="" />
+    <Control key="day" id="select[id='ctl00_PageJoinContainer_ddlDay']" classname="" xpath="" />
+    <Control key="month" id="select[id='ctl00_PageJoinContainer_ddlMonth']" classname="" xpath="" />
+    <Control key="year" id="select[id='ctl00_PageJoinContainer_ddlYear']" classname="" xpath="" />
+    <Control key="btnmaleradio" id="input[id='ctl00_PageJoinContainer_radioMale']" classname="" xpath="" />
+    <Control key="txtpostcode" id="input[id*='ctl00_PageJoinContainer_txtPostCode']" classname="" xpath="" />
+    <Control key="btnpostcode" id="input[id='ctl00_PageJoinContainer_btnFindAddress']" classname="" xpath="" />
+    <Control key="txtemail" id="input[id='ctl00_PageJoinContainer_txtEmail']" classname="" xpath="" />
+    <Control key="txteveningphone" id="input[id='ctl00_PageJoinContainer_txtEveningPhoneNumber']" classname="" xpath="" />
+    <Control key="txthousenumber" id="input[id='ctl00_PageJoinContainer_txtHouseNumber']" classname="" xpath="" />
+    <Control key="title" id="select[id='ctl00_PageJoinContainer_ddlTitle']" classname="" xpath="" />
+    <Control key="msgconfirm" id="" classname="" xpath="//*[@id='joinconfirmed']/p[1]/span" />
+    <Control key="imgalldone" id="ctl00_PageJoinContainer_Div1" classname="" xpath="" />
+    <Control key="phonenumber" id="input[id='ctl00_PageJoinContainer_txtPhoneNumber']" classname="" xpath="" />
+    <Control key="addressline1" id="input[id='ctl00_PageJoinContainer_txtAddressLine1']" classname="" xpath="" />
+    <Control key="addressline2" id="input[id='ctl00_PageJoinContainer_txtAddressLine2']" classname="" xpath="" />
+    <Control key="addressline4" id="input[id='ctl00_PageJoinContainer_txtAddressLine4']" classname="" xpath="" />
+    <Control key="addressline5" id="input[id='ctl00_PageJoinContainer_txtAddressLine5']" classname="" xpath="" />
+    <Control key="mobilenumber" id="input[id='ctl00_PageJoinContainer_txtMobileNumber']" classname="" xpath="" />
+    <Control key="chktermsAndCondition" id="input[id='ctl00_PageJoinContainer_chkTermsAndConditions']" classname="" xpath="" />
+    <Control key="chkPrivacyPolicy" id="input[id='ctl00_PageJoinContainer_chkPrivacyPolicy']" classname="" xpath="" />
+    <Control key="thankyoumsg" id="" classname="p[class='page_intro']" xpath="" />
+    <Control key="confText" id="" classname="" xpath="//div[contains(@id,'joinconfirmed')]/p[3]" />
+    <Control key="clickHeretodownloadpdf" id="a[id='ctl00_PageJoinContainer_a1']" classname="" xpath="" />
+    <Control key="PleaseCorrectInfo" id="span[id='ctl00_PageJoinContainer_lblSuccessMessage']" classname="" xpath="" />
+    <Control key="errorName1" id="span[id='span1']" classname="" xpath="" />
+    <Control key="errorName2" id="span[id='span2']" classname="" xpath="" />
+    <Control key="errorName3" id="span[id='span3']" classname="" xpath="" />
+    <Control key="errorGender" id="span[id='spanGenderError']" classname="" xpath="" />
+    <Control key="errorDOB" id="span[id='span5']" classname="" xpath="" />
+    <Control key="errorPostCode" id="span[id*='spanPostCode']" classname="" xpath="" />
+    <Control key="errorAddressUK" id="span[id='spanAddressError']" classname="" xpath="" />
+    <Control key="errorAddressLine1" id="span[id='spanAddressLine1']" classname="" xpath="" />
+    <Control key="errorAddressLine2" id="span[id='spanAddressLine2']" classname="" xpath="" />
+    <Control key="errorAddressLine4" id="span[id='spanAddressLine4']" classname="" xpath="" />
+    <Control key="errorAddressLine5" id="span[id='spanAddressLine5']" classname="" xpath="" />
+    <Control key="errorMobilePhoneNumber" id="span[id='span7']" classname="" xpath="" />
+    <Control key="errorDayTimePhoneNumber" id="span[id='spanerr']" classname="" xpath="" />
+    <Control key="errorEmail" id="span[id='span9']" classname="" xpath="" />
+    <Control key="errorPrivacy" id="span[id='spanError']" classname="" xpath="" />
+    <Control key="txtPromoCode" id="input[id='ctl00_PageJoinContainer_txtPromoCode']" classname="" xpath="" />
+    <Control key="errorPromoCode" id="span[id='ctl00_PageJoinContainer_promotionalerror']" classname="" xpath="" />
+    <Control key="houseddl" id="select[id='ctl00_PageJoinContainer_ddlAddress']" classname="" xpath="" />
+    <Control key="errorProfane" id="span[id='ctl00_PageJoinContainer_lblSuccessMessage']" classname="" xpath="" />
+    <Control key="errorTitle" id="" classname="" xpath="//li[contains(@id,'ctl00_PageJoinContainer_liTitle')]/div[contains(@class,'inputFields')]/span" />
+    <Control key="lblYou" id="label[for='age1']" classname="" xpath="" />
+    <Control key="lblPerson2" id="label[for='age2']" classname="" xpath="" />
+    <Control key="lblPerson3" id="label[for='age3']" classname="" xpath="" />
+    <Control key="lblPerson4" id="label[for='age4']" classname="" xpath="" />
+    <Control key="lblPerson5" id="label[for='age5']" classname="" xpath="" />
+    <Control key="lblPerson6" id="label[for='age6']" classname="" xpath="" />
+    <Control key="txtHousehold" id="" classname="" xpath="//div[contains(@id,'ctl00_PageJoinContainer_ContentOptionalInfoDivID')]/div/div/div[contains(@class,'cc_lightGreybody')]/p/strong" />
+    <Control key="txtOptionalInfo" id="" classname="" xpath="//div[contains(@id,'ctl00_PageJoinContainer_OptionalInfoDivId')]/h2" />
+    <Control key="txtYearInOptionalInfo" id="input[id='ctl00_PageJoinContainer_txtAge1']" classname="" xpath="" />
+    <Control key="ddlPerson2Age" id="select[id='ctl00_PageJoinContainer_ddlAge2']" classname="" xpath="" />
+    <Control key="joinliTescoproducts" id="li[id='ctl00_PageJoinContainer_liTescoproducts']" classname="" xpath="" />
+    <Control key="joinliGrpTescoproducts" id="li[id='ctl00_PageJoinContainer_liGrpTescoproducts']" classname="" xpath="" />
+    <Control key="joinliTescoOffer" id="li[id='ctl00_PageJoinContainer_liTescoOffer']" classname="" xpath="" />
+    <Control key="joinliGrpTescoOffer" id="li[id='ctl00_PageJoinContainer_liGrpTescoOffer']" classname="" xpath="" />
+    <Control key="joinliTescoCustomerReasearch" id="li[id='ctl00_PageJoinContainer_liTescoCustomerReasearch']" classname="" xpath="" />
+    <Control key="joinliGrpTescoCustomerReasearch" id="li[id='ctl00_PageJoinContainer_liGrpTescoCustomerReasearch']" classname="" xpath="" />
+    <Control key="joinChkTescoOffers" id="input[id='ctl00_PageJoinContainer_chkTescoOfers']" classname="" xpath="" />
+    <Control key="joinChkGrpTescoProducts" id="input[id='ctl00_PageJoinContainer_chkGrpTescoProducts']" classname="" xpath="" />
+    <Control key="joinChkPartnerOffers" id="input[id='ctl00_PageJoinContainer_chkPartnerOffers']" classname="" xpath="" />
+    <Control key="joinChkGrpPartnerOffers" id="input[id='ctl00_PageJoinContainer_chkGrpPartnerOffers']" classname="" xpath="" />
+    <Control key="joinChkResearch" id="input[id='ctl00_PageJoinContainer_chkResearch']" classname="" xpath="" />
+    <Control key="joinChkGrpResearch" id="input[id='ctl00_PageJoinContainer_chkGrpResearch']" classname="" xpath="" />
+    <Control key="joinChkTGMail" id="input[id='ctl00_PageJoinContainer_chkTGMail']" classname="" xpath="" />
+    <Control key="joinChkTGEMail" id="input[id='ctl00_PageJoinContainer_chkTGEMail']" classname="" xpath="" />
+    <Control key="joinChkTGPhone" id="input[id='ctl00_PageJoinContainer_chkTGPhone']" classname="" xpath="" />
+    <Control key="joinChkTGSms" id="input[id='ctl00_PageJoinContainer_chkTGSms']" classname="" xpath="" />
+    <Control key="joinChkTPMail" id="input[id='ctl00_PageJoinContainer_chkTPMail']" classname="" xpath="" />
+    <Control key="joinChkTPEMail" id="input[id='ctl00_PageJoinContainer_chkTPEMail']" classname="" xpath="" />
+    <Control key="joinChkTPPhone" id="input[id='ctl00_PageJoinContainer_chkTPPhone']" classname="" xpath="" />
+    <Control key="joinChkTPSms" id="input[id='ctl00_PageJoinContainer_chkTPSms']" classname="" xpath="" />
+    <Control key="joinChkRMail" id="input[id='ctl00_PageJoinContainer_chkRMail']" classname="" xpath="" />
+    <Control key="joinChkREMail" id="input[id='ctl00_PageJoinContainer_chkREMail']" classname="" xpath="" />
+    <Control key="joinChkRPhone" id="input[id='ctl00_PageJoinContainer_chkRPhone']" classname="" xpath="" />
+    <Control key="joinChkRSms" id="input[id='ctl00_PageJoinContainer_chkRSms']" classname="" xpath="" />
+    <Control key="jointdGrpTescoproducts" id="td[id='ctl00_PageJoinContainer_TableCell6']" classname="" xpath="" />
+    <Control key="jointdGrpTescopartner" id="td[id='ctl00_PageJoinContainer_TableCell11']" classname="" xpath="" />
+    <Control key="jointdGrpTescoresearch" id="td[id='ctl00_PageJoinContainer_TableCell15']" classname="" xpath="" />
+  </Category>
+	<Category name="ActivationControls">
+		<Control key="btnActivation" id="input[id='ctl00_PageContainer_btnConfirmPersonalDtls']" classname="" xpath="" />
+		<Control key="lblConfirmyourClubcarddetails" id="" classname="" xpath="//p[contains(@id,'ctl00_PageContainer_hdrConfirmClubcardDetails')]/span" />
+		<Control key="txtClubcardno" id="input[id='ctl00_PageContainer_txtClubcardNo']" class="" xpath="" />
+		<Control key="txtFirstName" id="input[id='ctl00_PageContainer_txtFirstName']" class="" xpath="" />
+		<Control key="txtSurname" id="input[id='ctl00_PageContainer_txtSurname']" class="" xpath="" />
+		<Control key="txtPostcode" id="input[id='ctl00_PageContainer_txtPostCode']" class="" xpath="" />
+		<Control key="btnConfirm" id="input[id='ctl00_PageContainer_btnConfirmPersonalDtls']" class="" xpath="" />
+		<Control key="lblAccConf" id="" class="" xpath="//div[contains(@id,'mainContentAccountActivation')]/h2" />
+		<Control key="lblActivationConfirmMsg" id="" class="" xpath="//div[@id='mainContentAccountActivation']/h2"/>
+		<Control key="lblActivationSuccessMsg" id="" class="" xpath="//p[@class='pageDescActivation']/span[@class='red']" />
+		<Control key="lblActivationErrorMsg1" id="" class="" xpath="//p[@id='ctl00_PageContainer_hdrReConfirmClubcardDetails']/span[@class='red']" />
+		<Control key="lblActivationErrorMsg2" id="" class="" xpath="//p[@id='ctl00_PageContainer_pReconfirmDetailsMessage']" />
+		<Control key="lblClubCardErrorMsg" id="span[id='spanClubcardNumber']" class="" xpath="" />
+		<Control key="lblFirstNameErrorMsg" id="span[id='spanFirstName']" class="" xpath="" />
+		<Control key="lblSurnameErrorMsg" id="span[id='spanSurname']" class="" xpath="" />
+		<Control key="lblPostCodeErrorMsg" id="span[id='spanPostCode']" class="" xpath="" />
+		<Control key="lblFirstName" id="li[id='ctl00_PageContainer_lifirstName']" class="" xpath="" />
+		<Control key="lblSurname" id="li[id='ctl00_PageContainer_lisurname']" class="" xpath="" />
+		<Control key="lblDOB" id="li[id='ctl00_PageContainer_liDOB']" class="" xpath="" />
+		<Control key="lblMOB" id="li[id='ctl00_PageContainer_liMOB']" class="" xpath="" />
+		<Control key="lblYOB" id="li[id='ctl00_PageContainer_liYOB']" class="" xpath="" />
+		<Control key="lblAddressLine1" id="li[id='ctl00_PageContainer_liAddressline1']" class="" xpath="" />
+		<Control key="lblPostcode" id="li[id='ctl00_PageContainer_lipostCode']" class="" xpath="" />
+		<Control key="lblPMobileNumber" id="li[id='ctl00_PageContainer_liMobileNumber']" class="" xpath="" />
+		<Control key="lblSSN" id="li[id='ctl00_PageContainer_liSSN']" class="" xpath="" />
+		<Control key="lblEmailAddress" id="li[id='ctl00_PageContainer_liEmailAddress']" class="" xpath="" />
+		<Control key="txtemail" id="input[id='Email']" class="" xpath="" />
+		<Control key="txtpassword" id="input[id='RegPassword']" class="" xpath="" />
+		<Control key="txtrepassword" id="input[id='ReRegPassword']" class="" xpath="" />
+		<Control key="txtregister" id="" classname="" xpath="//span[@class='btnSprite']/button[@id='registerBtn']" />
+	</Category>
+	<Category name="CSCSearchCustomerControls">
+		<Control key="txtCardNumber" id="input[id='ctl00_PageContainer_txtCardNumber']" classname="" xpath="" />
+		<Control key="btnFindCustomer" id="input[id='ctl00_PageContainer_btnFindCustomer']" classname="" xpath="" />
+	</Category>
+	<Category name="CSCCustomerDetailsControls">
+		<Control key="txtFirstName" id="input[id*='ctl00_PageContainer_txtFirstName']" classname="" xpath="" />
+		<Control key="txtSurname" id="input[id*='ctl00_PageContainer_txtSurname']" classname="" xpath="" />
+		<Control key="txtPostCode" id="input[id='ctl00_PageContainer_txtPostCode']" classname="" xpath="" />
+	</Category>
+	<Category name="CSCDelinkAccountControls">
+		<Control key="lnkDelinkAcc" id="a[id='ctl00_DelinkAccounts']" classname="" xpath="" />
+		<Control key="lnkDelinkCustomerAcc" id="a[id='ctl00_PageContainer_grdMainCustomer_ctl02_lnkDelCustomerDotcom']" classname="" xpath="" />
+	</Category>
+	<Category name="CSCLoginLogoutControls">
+		<Control key="btnLogOut" id="a[id='ctl00_LinkButton1']" classname="" xpath="" />
+		<Control key="txtUserId" id="input[id='txtUserID']" classname="" xpath="" />
+		<Control key="txtPassword" id="input[id='txtPassword']" classname="" xpath="" />
+		<Control key="ddlSelectDomain" id="select[id='ddlDomain']" classname="" xpath="" />
+		<Control key="btnSignIn" id="input=[id='btnConfirmPersonalDtls']" classname="" xpath="" />
+	</Category>
+	<Category name="OrderAReplacementControls">
+		<Control key="lblCardNumber" id="" classname="" xpath="//div[contains(@class,'ccCardNbr curved')]/h3/span"/>
+		<Control key="lblRequestReasonError" id="" classname="" xpath="//div[contains(@class,'errorFields')]/p"/>
+		<Control key="lblDivStdNonStdText" id="" classname="" xpath="//div[contains(@class,'noteText')]/p"/>
+		<Control key="txtForCLubcardTypeB" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divStdNStdMsg']" classname="noteText" xpath=""/>
+		<Control key="txtForCLubcardTypeN" id="p[id='ctl00_ctl00_PageContainer_MyAccountContainer_pNonStandard']" classname="pageDesc" xpath=""/>
+		<Control key="lblMaxOrdersReached" id="p[id='ctl00_ctl00_PageContainer_MyAccountContainer_pMaxOrdersReached']" classname="" xpath=""/>
+		<Control key="txtReasonErrorMessage" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divErrorMessage']" classname="" xpath=""/>
+		<Control key="rdbtnLost" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_RadioLost']" classname="" xpath=""/>
+		<Control key="rdbtnDamaged" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_RadioDamaged']" classname="" xpath=""/>
+		<Control key="rdbtnStolen" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_RadioStolen']" classname="" xpath=""/>
+		<Control key="rdbtnMoreFobs" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_RadioMoreFobs']" classname="" xpath=""/>
+		<Control key="rdbtnOther" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_RadioOther']" classname="" xpath=""/>
+		<Control key="btnConfirm" id="input[id='ctl00_ctl00_PageContainer_MyAccountContainer_orderConfirm']" classname="" xpath=""/>
+		<Control key="txtOrderInProcessMsg" id="p[id='ctl00_ctl00_PageContainer_MyAccountContainer_pInProcessMsg']" classname="" xpath=""/>
+		<Control key="txtForCLubcardTypeN_SK" id="p[id='ctl00_ctl00_PageContainer_MyAccountContainer_pNonStandard']" classname="" xpath=""/>
+		<Control key="" id="" classname="" xpath=""/>
+	</Category>
+  <Category name="XmusSaver">
+    <Control key="youHaveSavedMsg" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_divchrstmasSaverMain']" classname="" xpath="" />
+    <Control key="spnttlToppedUpMoney" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_ttlToppedUoMoney']" classname="" xpath="" />
+    <Control key="spnCCVouchersSaved" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnCCVouchersSaved']" classname="" xpath="" />
+    <Control key="dvMoneyToppedUp" id="div[id='ctl00_ctl00_PageContainer_MyAccountContainer_dvMoneyToppedUp']" classname="" xpath="" />
+    <Control key="spnBonusVoucher" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnBonusVoucher']" classname="" xpath="" />
+    <Control key="spnTtlVouchersSoFar" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnTtlVouchersSoFar']" classname="" xpath="" />
+    <Control key="spnYear1" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnYear1']" classname="" xpath="" />
+    <Control key="spnTtlPnts" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnTtlPnts']" classname="" xpath="" />
+    <Control key="spnBonusValueFor50" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnBonusValueFor50']" classname="" xpath="" />
+    <Control key="spnMoneyTobeSavedForBonus6" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnMoneyTobeSavedForBonus6']" classname="" xpath="" />
+    <Control key="spnBonusValueFor100AND1" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnBonusValueFor100_1']" classname="" xpath="" />
+    <Control key="spnBonusValueFor100" id="span[id='ctl00_ctl00_PageContainer_MyAccountContainer_spnBonusValueFor100']" classname="" xpath="" />
+
+  </Category>
+</Controls>
+

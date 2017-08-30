@@ -1,0 +1,48 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@{
+    ViewBag.Title = "Error";
+    ViewBag.dtmTitle = "Error";
+    ViewBag.PageName = "Error";
+    var customerror = HttpContext.Current.Request.QueryString["customerror".ToUpper()];
+    var ShowExceptionMessage = GeneralUtility.CheckEncriptedDate(customerror);
+}
+@model HandleErrorInfo
+@section leftNavigation
+{
+        @Html.Partial("_LeftNavigation")
+}
+
+<div class="row">
+    <div class="gr-12">
+    @if (ViewBag.ErrorCode == "404" || HttpContext.Current.Request.QueryString["aspxerrorpath"] != null)
+    {
+        <div class="row">
+        <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("FriendlyErrorMsg404")</h1>
+        <p>@Html.Translate("DetailedErrorMsg404")</p>
+        <p class="ddl-t5">@Html.Translate("CorrectiveStep1_404")</p>
+        <p class="ddl-t5">@Html.Translate("CorrectiveStep2_404")</p>
+        </div>
+    }
+    else
+    { 
+        <div class="row">@Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/htmls/Error.html" })</div>
+    }  
+        <div class="row">
+            <div class="gr-12">
+                <div class="copy-wrapper">
+                    @if (Model != null)
+                    {
+                        if (ShowExceptionMessage)
+                        { 
+                            <h5>Exception Message: @Html.DisplayFor(model => model.Exception.GetBaseException().Message)</h5>
+                            <h5>Stack Trace:</h5>
+                            <p>@Html.DisplayFor(model => model.Exception.GetBaseException().StackTrace)</p>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

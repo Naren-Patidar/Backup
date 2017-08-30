@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SMAboutClubcard" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/what.asp</value>
+  </data>
+  <data name="SMChristmasSavers" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/christmas-savers/</value>
+  </data>
+  <data name="SMCollectPoints" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/collect-spend</value>
+  </data>
+  <data name="SMConditions" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="SMContact" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/contact/</value>
+  </data>
+  <data name="SMContactus" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/contact/</value>
+  </data>
+  <data name="SMEmailSignup" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/email-sign-up/</value>
+  </data>
+  <data name="SMFaq" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/</value>
+  </data>
+  <data name="SMHelp" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/</value>
+  </data>
+  <data name="SMHome" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/</value>
+  </data>
+  <data name="SMlogoclubcard" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/</value>
+  </data>
+  <data name="SMLostyourClubcard" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/lost-clubcard/</value>
+  </data>
+  <data name="SMMyClubcardAccount" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/myaccount/</value>
+  </data>
+  <data name="SMNews" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/news.asp</value>
+  </data>
+  <data name="SMRewards" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/rewards/</value>
+  </data>
+  <data name="SMSitemap" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/sitemap/</value>
+  </data>
+  <data name="SMSpendvouchers" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/spend.asp</value>
+  </data>
+  <data name="SMYourprivacy" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/charter/</value>
+  </data>
+  <data name="VHAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHpbaavios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHpvirgin" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHRewadsite" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHRewadsite1" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHRewadsite2" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VHTescoMstCard" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/calculator.asp</value>
+  </data>
+  <data name="JMTescoCC" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/contact/</value>
+  </data>
+  <data name="JMTescoPrivacy" xml:space="preserve">
+    <value>http://www.tesco.com/help/privacy-and-cookies/privacy-centre/privacy-policy/</value>
+  </data>
+  <data name="JMTescoTerm" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/help/terms-and-conditions</value>
+  </data>
+  <data name="PHAviosMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHAviosOutMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHChristmasSaversMoreInfo" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/christmas-savers/</value>
+  </data>
+  <data name="PHMoreInformation" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/eCoupons.asp</value>
+  </data>
+  <data name="PHMoreInformation1" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/eCoupons.asp</value>
+  </data>
+  <data name="PHTermsConditions" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="PHVirginAtlanticMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHVirginAtlanticMoreInfo1" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHBAMemberMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHBAMilesMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="PHBntMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/babyclub</value>
+  </data>
+  <data name="PHCharter" xml:space="preserve">
+    <value>http://www.tesco.com/help/privacy-and-cookies/privacy-centre/privacy-policy/</value>
+  </data>
+  <data name="PHClubcardEmailMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/email-sign-up</value>
+  </data>
+  <data name="PHContactPref" xml:space="preserve">
+    <value>https://secure.tesco.com/register/contactPrefs.aspx?vstore=0</value>
+  </data>
+  <data name="PHPreference" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/preferences</value>
+  </data>
+  <data name="PHTerms" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="PHTreesMoreInfo" xml:space="preserve">
+    <value>http://www.tesco.com/trees</value>
+  </data>
+  <data name="MCHFaq" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/#mca_cards</value>
+  </data>
+  <data name="ORHAdobe" xml:space="preserve">
+    <value>http://www.adobe.com/products/reader.html</value>
+  </data>
+  <data name="ORHFaq" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/#lost_clubcard_or_key_fobs</value>
+  </data>
+  <data name="PDHBabyMessage" xml:space="preserve">
+    <value>http://www.tesco.com/babyclub</value>
+  </data>
+  <data name="PDHContactDetails" xml:space="preserve">
+    <value>https://secure.tesco.com/register/contactDetails.aspx?vstore=0</value>
+  </data>
+  <data name="PDHTescoPassword" xml:space="preserve">
+    <value>https://secure.tesco.com/login/en-gb/changepassword/change/</value>
+  </data>
+  <data name="PntHCalculatorClickhere" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/calculator.asp</value>
+  </data>
+  <data name="PntHFaq" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/#mca_points</value>
+  </data>
+  <data name="AAPBack" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/</value>
+  </data>
+  <data name="CSHClickHere" xml:space="preserve">
+    <value>../Options-benefits/Home.aspx</value>
+  </data>
+  <data name="EHClickHere" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/eCoupons.asp</value>
+  </data>
+  <data name="SMTescoDotcom" xml:space="preserve">
+    <value>http://www.tesco.com</value>
+  </data>
+  <data name="ExcTescoBigEx" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/boost-at-tesco/</value>
+  </data>
+  <data name="ExcTescoBigExchange" xml:space="preserve">
+    <value>http://www.tesco.com/boost/</value>
+  </data>
+  <data name="ExcTescoEmail" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/email-sign-up</value>
+  </data>
+  <data name="ExcTescorewards" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/boost-at-tesco/</value>
+  </data>
+  <data name="JMFAQS" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/</value>
+  </data>
+  <data name="JMFrom" xml:space="preserve">
+    <value>http://www.tesco.com/register/?from=</value>
+  </data>
+  <data name="JMTesco" xml:space="preserve">
+    <value>http://www.tesco.com</value>
+  </data>
+  <data name="JMTescoCCLogin" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/login.asp</value>
+  </data>
+  <data name="JMTescoCCSite" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/sitemap/</value>
+  </data>
+  <data name="JMTescoChar" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/charter/</value>
+  </data>
+  <data name="JMTescoClub" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/</value>
+  </data>
+  <data name="JMTescoColl" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/collect-spend</value>
+  </data>
+  <data name="JMTescoEmail" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/emails/</value>
+  </data>
+  <data name="JMTescoLost" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/lost-clubcard/</value>
+  </data>
+  <data name="JMTescoNew" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/news.asp</value>
+  </data>
+  <data name="JMTescoReward" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/rewards/</value>
+  </data>
+  <data name="JMTescoSpend" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/spend.asp</value>
+  </data>
+  <data name="JMTescoWhat" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/what.asp</value>
+  </data>
+  <data name="JMTescoXmas" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/christmas-savers/</value>
+  </data>
+  <data name="MLSClubDealTesco" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=855</value>
+  </data>
+  <data name="MLSDealRestaurant" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/restaurants.aspx</value>
+  </data>
+  <data name="MLSopticians" xml:space="preserve">
+    <value>http://www.tescoopticians.com/</value>
+  </data>
+  <data name="MLSPrdBrowse" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/browse.aspx?N=4294966467</value>
+  </data>
+  <data name="MLSSToreLoc" xml:space="preserve">
+    <value>http://www.tesco.com/storelocator/</value>
+  </data>
+  <data name="MLSTesco" xml:space="preserve">
+    <value>http://www.tesco.com/groceries/</value>
+  </data>
+  <data name="MLSTescoAvios" xml:space="preserve">
+    <value>http://www.avios.com/</value>
+  </data>
+  <data name="MLSTescoBank" xml:space="preserve">
+    <value>http://www.tescobank.com/personal/finance/insurance/travelins/index.html</value>
+  </data>
+  <data name="MLSTescoBooks" xml:space="preserve">
+    <value>http://www.tesco.com/direct/books/</value>
+  </data>
+  <data name="MLSTescoBrowse" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/browse.aspx?N=4294967232</value>
+  </data>
+  <data name="MLSTescoClubDeal" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/browse.aspx?N=4294964995</value>
+  </data>
+  <data name="MLSTescoColl" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/collect-spend</value>
+  </data>
+  <data name="MLSTescoDaySearch" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/p.aspx?id=fun</value>
+  </data>
+  <data name="MLSTescoDealNum" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=190</value>
+  </data>
+  <data name="MLSTescoDealPrd" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=1797</value>
+  </data>
+  <data name="MLSTescoDealPrdt" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=185</value>
+  </data>
+  <data name="MLSTescoDealProduct" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=184</value>
+  </data>
+  <data name="MLSTescoDirect" xml:space="preserve">
+    <value>http://www.tesco.com/direct/</value>
+  </data>
+  <data name="MLSTescoDPrd" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/browse.aspx?N=4294964844</value>
+  </data>
+  <data name="MLSTescoExchanges" xml:space="preserve">
+    <value>http://tesco.com/exchange</value>
+  </data>
+  <data name="MLSTescoIndex" xml:space="preserve">
+    <value>http://www.tescobank.com/personal/finance/creditcards/index.html</value>
+  </data>
+  <data name="MLSTescoPetrol" xml:space="preserve">
+    <value>http://www.tesco.com/petrolstation/</value>
+  </data>
+  <data name="MLSTescoPhone" xml:space="preserve">
+    <value>http://phone-shop.tesco.com/</value>
+  </data>
+  <data name="MLSTescoPrdD" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=114</value>
+  </data>
+  <data name="MLSTescoPrdDeal" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2661</value>
+  </data>
+  <data name="MLSTescoPrdDealnum" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=865</value>
+  </data>
+  <data name="MLSTescoPrdNum" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=111</value>
+  </data>
+  <data name="MLSTescoPrdR" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236</value>
+  </data>
+  <data name="MLSTescoPrdRR" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2620</value>
+  </data>
+  <data name="MLSTescoProduct" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=1802</value>
+  </data>
+  <data name="MLSTescoReward" xml:space="preserve">
+    <value>http://www.tesco.com/rewards</value>
+  </data>
+  <data name="MLSTescoStoreLoc" xml:space="preserve">
+    <value>http://www.tesco.com/storelocator/</value>
+  </data>
+  <data name="MLSTescoVirginIndex" xml:space="preserve">
+    <value>http://www.virgin-atlantic.com/en/gb/frequentflyer/spendmiles/index.jsp?cm_mmc=UK%20Display-_-Partner%20site%20promotions-_-Tesco%20online%20statement-_-Aug12</value>
+  </data>
+  <data name="MLSTescoWine" xml:space="preserve">
+    <value>http://www.tesco.com/wine/</value>
+  </data>
+  <data name="JMTescoConflict" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="SMBasket" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/basket.aspx</value>
+  </data>
+  <data name="SMCCPerks" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/perks/</value>
+  </data>
+  <data name="SMExchangeandRewards" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/</value>
+  </data>
+  <data name="SMFacebook" xml:space="preserve">
+    <value>http://www.facebook.com/tesco</value>
+  </data>
+  <data name="SMSignOut" xml:space="preserve">
+    <value>https://secure.tesco.com/register/signout.aspx?from=http%3A%2F%2Fwww%2Etesco%2Ecom%2Fclubcard%2F</value>
+  </data>
+  <data name="SMSpendandCollect" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/about/</value>
+  </data>
+  <data name="SMTescocom" xml:space="preserve">
+    <value>http://www.tesco.com</value>
+  </data>
+  <data name="SMTwitter" xml:space="preserve">
+    <value>https://twitter.com/TescoOffersMore</value>
+  </data>
+  <data name="SMYouTube" xml:space="preserve">
+    <value>http://www.youtube.com/playlist?list=PLB90E16B1F490600F</value>
+  </data>
+  <data name="JMBasket" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/basket.aspx</value>
+  </data>
+  <data name="JMCCPerks" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/perks/</value>
+  </data>
+  <data name="JMConditions" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="JMContactus" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/contact/</value>
+  </data>
+  <data name="JMEmailSignup" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/email-sign-up/</value>
+  </data>
+  <data name="JMExchangeandRewards" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/</value>
+  </data>
+  <data name="JMFacebook" xml:space="preserve">
+    <value>http://www.facebook.com/tesco</value>
+  </data>
+  <data name="JMHelp" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/faqs/</value>
+  </data>
+  <data name="JMLostyourClubcard" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/lost-clubcard/</value>
+  </data>
+  <data name="JMMyClubcardAccount" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/myaccount/</value>
+  </data>
+  <data name="JMSignOut" xml:space="preserve">
+    <value>https://secure.tesco.com/register/signout.aspx?from=http%3A%2F%2Fwww%2Etesco%2Ecom%2Fclubcard%2F</value>
+  </data>
+  <data name="JMSitemap" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/sitemap/</value>
+  </data>
+  <data name="JMSpendandCollect" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/about/</value>
+  </data>
+  <data name="JMTescocom" xml:space="preserve">
+    <value>http://www.tesco.com</value>
+  </data>
+  <data name="JMTwitter" xml:space="preserve">
+    <value>https://twitter.com/TescoOffersMore</value>
+  </data>
+  <data name="JMYourprivacy" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/charter/</value>
+  </data>
+  <data name="JMYouTube" xml:space="preserve">
+    <value>http://www.youtube.com/playlist?list=PLB90E16B1F490600F</value>
+  </data>
+  <data name="JMTandC" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/help/terms-and-conditions/</value>
+  </data>
+  <data name="VoucherPageLink4" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/calculator.asp</value>
+  </data>
+  <data name="VoucherPageLink1" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=236&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VoucherPageLink2" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="VoucherPageLink3" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;in_merch=1&amp;in_merch_title=More+great+Clubcard+rewards&amp;in_merch_name=</value>
+  </data>
+  <data name="ClubcardBoostBannerLink" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/boost</value>
+  </data>
+  <data name="SMClubcardBreaks" xml:space="preserve">
+    <value>http://www.clubcardbreaks.com/</value>
+  </data>
+  <data name="JMClubcardBreaks" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/calculator.asp</value>
+  </data>
+  <data name="TescoFuelSave" xml:space="preserve">
+    <value>http://www.tesco.com/fuelsave/</value>
+  </data>
+  <data name="BrowserHeader" xml:space="preserve">
+    <value>Tesco.com</value>
+  </data>
+  <data name="urlStamp1" xml:space="preserve">
+    <value>Points/Home.aspx</value>
+  </data>
+  <data name="urlStamp2" xml:space="preserve">
+    <value>eCoupon/Home.aspx</value>
+  </data>
+  <data name="urlStamp3" xml:space="preserve">
+    <value>Vouchers/Home.aspx</value>
+  </data>
+  <data name="urlStamp4" xml:space="preserve">
+    <value>LatestStatement/Home.aspx</value>
+  </data>
+  <data name="urlStamp5" xml:space="preserve">
+    <value>PersonalDetails/Home.aspx</value>
+  </data>
+  <data name="urlStamp6" xml:space="preserve">
+    <value>BoostsAtTesco/Home.aspx</value>
+  </data>
+  <data name="urlStamp7" xml:space="preserve">
+    <value>Options-benefits/Home.aspx</value>
+  </data>
+  <data name="urlStamp8" xml:space="preserve">
+    <value>OrderAReplacement/Home.aspx</value>
+  </data>
+  <data name="urlStamp9" xml:space="preserve">
+    <value>ChristmasSavers/Home.aspx</value>
+  </data>
+  <data name="fbCaption" xml:space="preserve">
+    <value>www.tesco.com</value>
+  </data>
+  <data name="fbDescription" xml:space="preserve">
+    <value>Find your unspent Clubcard vouchers under %27My Clubcard Account%27 at www.tesco.com/clubcard</value>
+  </data>
+  <data name="fbLink" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/clubcard/facebook.asp</value>
+  </data>
+  <data name="fbMessage" xml:space="preserve">
+    <value>I%27ve just discovered Tesco Clubcard vouchers I didn%27t know I had!</value>
+  </data>
+  <data name="fbName" xml:space="preserve">
+    <value>Facebook - Clubcard - Tesco.com</value>
+  </data>
+  <data name="twitterlink" xml:space="preserve">
+    <value>https://twitter.com/share?original_referer=&amp;text=I%27ve just discovered Tesco %23Clubcard vouchers I didn%27t know I had! Find your unspent vouchers at &amp;url=http%3A%2F%2Fwww.tesco.com%2Fclubcard</value>
+  </data>
+  <data name="fbappID" xml:space="preserve">
+    <value>494720700591406</value>
+  </data>
+  <data name="LostClubcardLink" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/help/faqs/#lost_clubcard_or_key_fobs</value>
+  </data>
+  <data name="imgEmail" xml:space="preserve">
+    <value>~/Content/images/email.jpg</value>
+  </data>
+  <data name="imgPost" xml:space="preserve">
+    <value>~/Content/images/post.jpg</value>
+  </data>
+  <data name="imgSMS" xml:space="preserve">
+    <value>~/Content/images/sms.jpg</value>
+  </data>
+  <data name="lnkVoucherBAAvios" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=237&amp;amp;amp;in_merch=1&amp;amp;amp;in_merch_title=More+great+Clubcard+rewards&amp;amp;amp;in_merch_name=</value>
+  </data>
+  <data name="lnkVoucherVirgin" xml:space="preserve">
+    <value>http://www.tesco.com/clubcard/deals/product.aspx?R=2179&amp;amp;amp;in_merch=1&amp;amp;amp;in_merch_title=More+great+Clubcard+rewards&amp;amp;amp;in_merch_name=</value>
+  </data>
+  <data name="DownloadAppTellMeMore" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/smartphones/</value>
+  </data>
+  <data name="MyAccountTellMeMore" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/register-my-account/</value>
+  </data>
+  <data name="OnlineShopTellMeMore" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/collect-points/</value>
+  </data>
+  <data name="ReceiptTellMeMore" xml:space="preserve">
+    <value>https://secure.tesco.com/clubcard/help/faqs</value>
+  </data>
+  <data name="VoucherLock" xml:space="preserve">
+    <value>~/Content/images/lock.png</value>
+  </data>
+  <data name="imgAvios" xml:space="preserve">
+    <value>~/Content/images/Avios.jpg</value>
+  </data>
+  <data name="imgAviosLogo" xml:space="preserve">
+    <value>~/Content/images/avios_logo.jpg</value>
+  </data>
+  <data name="imgBaavios" xml:space="preserve">
+    <value>~/Content/images/baavios.jpg</value>
+  </data>
+  <data name="imgBanner" xml:space="preserve">
+    <value>~/Content/images/banner.jpg</value>
+  </data>
+  <data name="imgCards" xml:space="preserve">
+    <value>~/Content/images/cards.jpg</value>
+  </data>
+  <data name="imgCcemails" xml:space="preserve">
+    <value>~/Content/images/ccemails.jpg</value>
+  </data>
+  <data name="imgChristmassavers" xml:space="preserve">
+    <value>~/Content/images/christmassavers.jpg</value>
+  </data>
+  <data name="imgClubcard" xml:space="preserve">
+    <value>~/Content/images/clubcard.gif</value>
+  </data>
+  <data name="imgCongratulations" xml:space="preserve">
+    <value>~/Content/images/congratulations.png</value>
+  </data>
+  <data name="groupOptOut" xml:space="preserve">
+    <value>https://secure.tesco.com/account/en-GB/marketing-preferences</value>
+  </data>
+</root>

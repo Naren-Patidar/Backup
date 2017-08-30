@@ -1,0 +1,24 @@
+#account-verification {
+	padding-right: 300px;
+	position: relative;
+
+	#cards {
+		width: 215px;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		img {
+			width: 100%;
+			margin: 0 0 10px 0;
+			display: block;
+			float: none;
+
+			&:last-child {
+				margin: 0;
+				width: 100%;
+			}
+		}
+	}
+}

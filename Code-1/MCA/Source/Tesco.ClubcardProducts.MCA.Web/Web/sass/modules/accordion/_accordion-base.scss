@@ -1,0 +1,53 @@
+.accordion, .accordion-handheld {
+	margin-bottom: 20px;
+}
+
+.js .accordion, .js .base .accordion-handheld, .js .smallest .accordion-handheld, .js .small .accordion-handheld {
+
+	.accordion-header {
+		margin: 0;
+		padding: 10px;
+		cursor: pointer;
+
+		&.active {
+			text-decoration: none;
+
+			&:after {
+		    	content: "\e00e";
+			}
+		}
+
+		&:after {
+	    	content: "\e013";
+			float: right;
+			font-family: 'Icons';
+			font-size: 10px;
+	    padding: 3px 8px;
+	    border-radius: 30px;
+	    line-height: 20px;
+	    background: none;
+	    color: $ddl-primary-button-background;
+	    border: 2px solid $ddl-primary-button-background;
+	    margin-top: -5px;
+		}
+
+	}
+
+	.accordion-content {
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height .8s;
+		border-bottom: 1px solid $ddl-border-color-1;
+		padding: 0 10px !important;
+
+		&.active {
+			max-height: 1000px;
+		}
+
+		.accordion-content-inner {
+			padding: 10px;
+		}
+	}
+
+
+}

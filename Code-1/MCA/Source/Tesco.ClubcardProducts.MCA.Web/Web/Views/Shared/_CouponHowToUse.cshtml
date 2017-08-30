@@ -1,0 +1,65 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@{
+    var Config = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.ShowTescoDotcomCoupons.ToString()].ConfigurationValue1.ToUpper();
+}
+<div class="gr-12">
+ <div class="copy-wrapper">
+<h2 class="ddl-h4-like">@Html.Translate("Shared/_CouponHowToUse", "Heading")</h2>
+</div>
+</div> 
+<div class="@(Config == "FALSE" ? "gr-12@small" : "gr-12 gr-6@small")">
+
+              <div class="copy-wrapper">
+                <h2 class="ddl-h4-like" id="lblCouponInStoreHeading"> @Html.Translate("Shared/_CouponHowToUse", "InStoreHeading")</h2>
+			</div>
+
+                <ol class="ddl-numbered-steps">
+                    <li>@Html.Translate("Shared/_CouponHowToUse", "SelectCoupon")</li>
+                    <li>@Html.Translate("Shared/_CouponHowToUse", "ClickPrint")</li>
+                    <li>@Html.Translate("Shared/_CouponHowToUse", "Spendprinted")</li>
+                </ol>
+
+            </div>
+
+            <div class="gr-12 gr-6@small" style="@(Config == "FALSE" ? "display:none" : "")">
+			   <div class="copy-wrapper">
+                <h2 class="ddl-h4-like" id="lblCouponOnlineHeading"> @Html.Translate("Shared/_CouponHowToUse", "OnlineHeading")</h2>
+			   </div>
+
+                <ol class="ddl-numbered-steps">
+                    <li>@Html.Translate("Shared/_CouponHowToUse", "CopyOnline")</li>
+                    <li>@Html.Translate("Shared/_CouponHowToUse", "EnterCodes")</li>
+                </ol>
+
+</div>
+
+
+@* <div class="@(Config == "FALSE" ? "l-alpha gutters" : "l-alpha gutters equal-height")">
+    <div class="l-column">
+        <div class="panel coupon-panel">
+            <h3 class="h4-like panel-header" id="lblCouponInStoreHeading">
+                @Html.Translate("Shared/_CouponHowToUse", "InStoreHeading")
+            </h3>
+            <div class="panel-inner" id="divforInStore">
+                @Html.Translate("Shared/_CouponHowToUse", "InStoreHtml")
+            </div>
+        </div>
+    </div>
+    <div class="l-column" style="@(Config == "FALSE" ? "display:none" : "")">
+        <div class="panel coupon-panel">
+            <h3 class="h4-like panel-header" id="lblCouponOnlineHeading">
+                @Html.Translate("Shared/_CouponHowToUse", "OnlineHeading")
+            </h3>
+            <div class="panel-inner" id="divforOnline">
+                @Html.Translate("Shared/_CouponHowToUse", "OnlineHtml")
+            </div>
+        </div>
+    </div>
+</div>  *@
+
+
+
+
+

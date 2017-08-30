@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="78032f3f-5b7e-43c2-9727-ba42ceab2d2a" name="QW29@INLTD12613 2016-06-05 10:56:50" runUser="TESCOGLOBAL\QW29" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="60266e05-263a-4775-821d-544588b99287">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="QW29_INLTD12613 2016-06-05 10_56_50">
+      <DeploymentItem filename="D:\Test\webApp\webApp\bin\webApp.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-06-05T10:56:50.5885531+05:30" queuing="2016-06-05T10:56:51.7791531+05:30" start="2016-06-05T10:56:51.8883531+05:30" finish="2016-06-05T10:58:12.2254531+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="INLTD12613" outcome="Error" timestamp="2016-06-05T10:58:12.2234531+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="findFactorialsTest" storage="d:\test\webapp\testproject1\bin\debug\testproject1.dll" id="4db3daca-83c9-c405-525d-4aa600d705e3">
+      <Execution id="535b9a11-39a2-48a0-8bed-e37dd79c6267" />
+      <TestMethod codeBase="D:/Test/webApp/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.StringOperationsTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="findFactorialsTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4db3daca-83c9-c405-525d-4aa600d705e3" executionId="535b9a11-39a2-48a0-8bed-e37dd79c6267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="535b9a11-39a2-48a0-8bed-e37dd79c6267" testId="4db3daca-83c9-c405-525d-4aa600d705e3" testName="findFactorialsTest" computerName="INLTD12613" duration="00:01:20.2279000" startTime="2016-06-05T10:56:51.9975531+05:30" endTime="2016-06-05T10:58:12.2254531+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="535b9a11-39a2-48a0-8bed-e37dd79c6267">
+    </UnitTestResult>
+  </Results>
+</TestRun>

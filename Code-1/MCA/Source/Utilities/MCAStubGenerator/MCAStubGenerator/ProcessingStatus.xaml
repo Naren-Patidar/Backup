@@ -1,0 +1,34 @@
+﻿<Window x:Class="Tesco.ClubcardProducts.MCAStubGenerator.ProcessingStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ProcessingStatus" Height="300" Width="900" ShowInTaskbar="False" WindowState="Maximized" WindowStartupLocation="CenterScreen" Topmost="False">
+    <Window.Resources>
+        <CollectionViewSource x:Key="ItemCollectionViewSource"  CollectionViewType="ListCollectionView"/>
+    </Window.Resources>
+    
+    <Grid Height="auto" Width="auto" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="236*" />
+            <RowDefinition Height="25*" />
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" Name="dgResult" HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch" DataContext="{StaticResource ItemCollectionViewSource}"
+                      ItemsSource="{Binding}" Margin="0,43,0,0" Grid.ColumnSpan="1" Grid.RowSpan="1" Width="auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="Auto" Binding="{Binding ID}" IsReadOnly='True'/>
+                <DataGridTextColumn Header="CustomerID" Width="Auto" Binding="{Binding customerID}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Status" Width="Auto" Binding="{Binding CurrentStatus}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Service" Width="Auto" Binding="{Binding EndPointDef.ServiceType}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Method" Width="Auto" Binding="{Binding EndPointDef.MethodName}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Started" Width="Auto" Binding="{Binding Started}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Ended" Width="Auto" Binding="{Binding Ended}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Output" Width="Auto" Binding="{Binding ResultDirectory}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Error" Width="Auto" Binding="{Binding FailureReason}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Close" Grid.Row="1" Height="23" HorizontalAlignment="Center" Name="btnClose" VerticalAlignment="Bottom" Width="75" Grid.RowSpan="2" Click="btnClose_Click" />
+    </Grid>
+</Window>

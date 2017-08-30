@@ -1,0 +1,41 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>223981236</CustomerID>
+            <ClubcardID>6340049021040566</ClubcardID>
+            <CardIssuedDate>2009-04-05T00:00:00+01:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>NINA</Name1>
+            <Name2 />
+            <Name3>QUICK</Name3>
+            <MailingAddressLine1 />
+            <MailingAddressLine2>BARROW-IN-FURNESS</MailingAddressLine2>
+            <MailingAddressLine3 />
+            <MailingAddressLine4 />
+            <MailingAddressLine5 />
+            <MailingAddressPostCode>LA13 0AJ</MailingAddressPostCode>
+            <DateOfBirth>1962-04-04T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>1430</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>6042</PreviousPointsBalanceQty>
+            <JoinedDate>1997-11-22T00:00:00+00:00</JoinedDate>
+            <HouseHoldID>215334811</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteID>5</JoinRouteID>
+            <JoinRouteDesc>Bank (CR)</JoinRouteDesc>
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

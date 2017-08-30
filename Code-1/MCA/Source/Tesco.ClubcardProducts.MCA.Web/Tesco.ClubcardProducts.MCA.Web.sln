@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Business", "Web.Business\Web.Business.csproj", "{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{6A62BA60-F281-445F-9BDF-E32439510B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.ServiceAdapter", "Web.ServiceAdapter\Web.ServiceAdapter.csproj", "{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTesting", "UnitTesting", "{AC8F3083-CBAD-4DB8-BCDB-8A8AA9EAC6F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C11CE60D-2148-4768-903B-B03A76DF9755}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Tesco.ClubcardProducts.MCA.Web.vsmdi = Tesco.ClubcardProducts.MCA.Web.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Business.Tests", "Web.Business.Tests\Web.Business.Tests.csproj", "{5974E2AA-604C-4F99-A4AF-092C4E12C2A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Tests", "Web.Tests\Web.Tests.csproj", "{318264C2-6F68-42C3-B452-352CCB781BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.ServiceAdapter.Tests", "Web.ServiceAdapter.Tests\Web.ServiceAdapter.Tests.csproj", "{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Common", "Web.Common\Web.Common.csproj", "{F5D1C51F-0E34-4062-9D48-59FC06AED200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.RestClient", "Web.RestClient\Web.RestClient.csproj", "{7665B4D2-BDBA-4C0C-87F9-186F0BC78DF7}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Tesco.ClubcardProducts.MCA.Web.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A62BA60-F281-445F-9BDF-E32439510B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A62BA60-F281-445F-9BDF-E32439510B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A62BA60-F281-445F-9BDF-E32439510B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A62BA60-F281-445F-9BDF-E32439510B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5974E2AA-604C-4F99-A4AF-092C4E12C2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5974E2AA-604C-4F99-A4AF-092C4E12C2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5974E2AA-604C-4F99-A4AF-092C4E12C2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5974E2AA-604C-4F99-A4AF-092C4E12C2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318264C2-6F68-42C3-B452-352CCB781BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318264C2-6F68-42C3-B452-352CCB781BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318264C2-6F68-42C3-B452-352CCB781BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318264C2-6F68-42C3-B452-352CCB781BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D1C51F-0E34-4062-9D48-59FC06AED200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D1C51F-0E34-4062-9D48-59FC06AED200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D1C51F-0E34-4062-9D48-59FC06AED200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D1C51F-0E34-4062-9D48-59FC06AED200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7665B4D2-BDBA-4C0C-87F9-186F0BC78DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7665B4D2-BDBA-4C0C-87F9-186F0BC78DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7665B4D2-BDBA-4C0C-87F9-186F0BC78DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7665B4D2-BDBA-4C0C-87F9-186F0BC78DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C11CE60D-2148-4768-903B-B03A76DF9755} = {AC8F3083-CBAD-4DB8-BCDB-8A8AA9EAC6F8}
+		{5974E2AA-604C-4F99-A4AF-092C4E12C2A3} = {AC8F3083-CBAD-4DB8-BCDB-8A8AA9EAC6F8}
+		{318264C2-6F68-42C3-B452-352CCB781BC6} = {AC8F3083-CBAD-4DB8-BCDB-8A8AA9EAC6F8}
+		{F4D3D15C-8F81-4B4A-97F6-405E30DA3DDC} = {AC8F3083-CBAD-4DB8-BCDB-8A8AA9EAC6F8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

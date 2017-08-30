@@ -1,0 +1,107 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetConfigDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:6b86620f-04e6-4cfb-836a-f840d8407e01</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetConfigDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetConfigDetailsResult>true</GetConfigDetailsResult>
+      <errorXml />
+      <resultXml>
+        <NewDataSet>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>PtsSummaryDates</ConfigurationName>
+            <ConfigurationValue1>Jul 1 2015 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Jul 5 2015 12:00AM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>YourExchangesDates</ConfigurationName>
+            <ConfigurationValue1>Apr 10 2013 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Jul 12 2017 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>XmasSaverCurrDates</ConfigurationName>
+            <ConfigurationValue1>Oct 15 2013 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Oct 26 2014 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>XmasSaverNextDates</ConfigurationName>
+            <ConfigurationValue1>Oct 28 2013 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Oct 27 2014 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>SmartVoucherDates</ConfigurationName>
+            <ConfigurationValue1>Apr 29 2014 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Jul 17 2014 11:59PM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>YourExchangesFlag</ConfigurationName>
+            <ConfigurationValue1>0</ConfigurationValue1>
+            <ConfigurationValue2>NULL</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <ActiveDateRangeConfig>
+            <ConfigurationType>7</ConfigurationType>
+            <ConfigurationName>MyLatestStatementDates</ConfigurationName>
+            <ConfigurationValue1>Jul 1 2015 12:00AM</ConfigurationValue1>
+            <ConfigurationValue2>Jul 5 2015 12:00AM</ConfigurationValue2>
+          </ActiveDateRangeConfig>
+          <Table2>
+            <ISOLanguageCode>zho</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Chinese</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>ces</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Czech</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>eng</ISOLanguageCode>
+            <ISOLanguageDescEnglish>English</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>hin</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Hindi</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>hun</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Hungarian</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>jpn</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Japanese</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>kor</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Korean</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>pol</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Polish</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>slk</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Slovak</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>zsm</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Standard Malay</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>tha</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Thai</ISOLanguageDescEnglish>
+          </Table2>
+          <Table2>
+            <ISOLanguageCode>tur</ISOLanguageCode>
+            <ISOLanguageDescEnglish>Turkish</ISOLanguageDescEnglish>
+          </Table2>
+        </NewDataSet>
+      </resultXml>
+      <rowCount>18</rowCount>
+    </GetConfigDetailsResponse>
+  </s:Body>
+</s:Envelope>

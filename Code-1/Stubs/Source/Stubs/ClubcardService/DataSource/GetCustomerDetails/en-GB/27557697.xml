@@ -1,0 +1,49 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:e5dd5c3e-afd0-4ada-90e0-70a9b864a64e</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+      <errorXml />
+      <resultXml>
+        <CustomerInformation>
+          <NewDataSet>
+            <Customer>
+              <CustomerID>27557697</CustomerID>
+              <CompleteName>KATHLEEN             H </CompleteName>
+              <official_id>0026792924</official_id>
+              <postal_code>G46 8LD  </postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1901-01-01T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Miss</TitleEnglish>
+              <Name1>KATHLEEN            </Name1>
+              <Name2>H </Name2>
+              <Name3>MCALLISTER               </Name3>
+              <Sex>F</Sex>
+              <MailingAddressLine1>709 BOYDSTONE ROAD            </MailingAddressLine1>
+              <MailingAddressLine2>THORNLIEBANK                  </MailingAddressLine2>
+              <MailingAddressLine3>GLASGOW                       </MailingAddressLine3>
+              <MailingAddressLine4>LANARKSHIRE                   </MailingAddressLine4>
+              <MailingAddressLine5 xml:space="preserve">                    </MailingAddressLine5>
+              <daytime_phone_number xml:space="preserve">               </daytime_phone_number>
+              <JoinedStoreID>0</JoinedStoreID>
+              <MailingAddressPostCode>G46 8LD  </MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>1</CustomerMailStatus>
+            </Customer>
+          </NewDataSet>
+          <NewDataSet>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>1</FamilyMemberSeqNo>
+              <DateOfBirth>2006-01-01T00:00:00+00:00</DateOfBirth>
+              <number_of_household_members>0</number_of_household_members>
+            </FamilyDetails>
+          </NewDataSet>
+        </CustomerInformation>
+      </resultXml>
+      <rowCount>2</rowCount>
+    </GetCustomerDetailsResponse>
+  </s:Body>
+</s:Envelope>

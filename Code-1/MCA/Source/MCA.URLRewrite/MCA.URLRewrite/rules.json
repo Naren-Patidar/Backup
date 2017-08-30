@@ -1,0 +1,13 @@
+[
+   {
+      "source":"(?i)\/MyAccount\/Join\/Home.aspx",
+      "target":"/Clubcard/MyAccount/Alpha443/Join/Home"
+   },
+   {
+      "source":"(?i)\/MyAccount\/(.*?).aspx",
+      "target":"/Clubcard/MyAccount/Alpha443/Home",
+      "exceptions":[
+         "legacy"
+      ]
+   }
+]

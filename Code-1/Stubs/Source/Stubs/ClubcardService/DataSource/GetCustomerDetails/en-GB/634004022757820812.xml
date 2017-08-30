@@ -1,0 +1,49 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:e5dd5c3e-afd0-4ada-90e0-70a9b864a64e</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+      <errorXml />
+      <resultXml>
+        <CustomerInformation>
+          <NewDataSet>
+            <Customer>
+              <CustomerID>123812559</CustomerID>
+              <CompleteName>JENNIE                 </CompleteName>
+              <official_id>0122221839</official_id>
+              <postal_code>SS12 0PJ </postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1901-01-01T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Miss</TitleEnglish>
+              <Name1>JENNIE              </Name1>
+              <Name2 xml:space="preserve">  </Name2>
+              <Name3>FERRIER                  </Name3>
+              <Sex>F</Sex>
+              <MailingAddressLine1>48 OZONIA AVENUE              </MailingAddressLine1>
+              <MailingAddressLine2>WICKFORD                      </MailingAddressLine2>
+              <MailingAddressLine3>ESSEX                         </MailingAddressLine3>
+              <MailingAddressLine4 xml:space="preserve">                              </MailingAddressLine4>
+              <MailingAddressLine5 xml:space="preserve">                    </MailingAddressLine5>
+              <daytime_phone_number>01268573570    </daytime_phone_number>
+              <JoinedStoreID>0</JoinedStoreID>
+              <MailingAddressPostCode>SS12 0PJ </MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>1</CustomerMailStatus>
+            </Customer>
+          </NewDataSet>
+          <NewDataSet>
+            <FamilyDetails>
+              <FamilyMemberSeqNo>1</FamilyMemberSeqNo>
+              <DateOfBirth>2003-01-01T00:00:00+00:00</DateOfBirth>
+              <number_of_household_members>0</number_of_household_members>
+            </FamilyDetails>
+          </NewDataSet>
+        </CustomerInformation>
+      </resultXml>
+      <rowCount>2</rowCount>
+    </GetCustomerDetailsResponse>
+  </s:Body>
+</s:Envelope>

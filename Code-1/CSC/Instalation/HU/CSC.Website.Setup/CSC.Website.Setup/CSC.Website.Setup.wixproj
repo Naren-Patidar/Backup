@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TPath>$(MSBuildExtensionsPath)\ExtensionPack\4.0\MSBuild.ExtensionPack.tasks</TPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <Import Project="$(TPath)" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.6</ProductVersion>
+    <ProjectGuid>{a7cbb47b-c790-4f6f-a852-06fd2f212ca2}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>CSC.CSCHU.Setup</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug</DefineConstants>
+    <SuppressValidation>True</SuppressValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <SuppressValidation>True</SuppressValidation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationFiles.wxs" />
+    <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Guids.wxi" />
+    <Content Include="Project.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it.
+	Other similar extension points exist, see Wix.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+  <UsingTask TaskName="Microsoft.TeamFoundation.Build.Tasks.GetBuildProperties" AssemblyFile="$(MSBuildProgramFiles32)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\Microsoft.TeamFoundation.Build.ProcessComponents.dll" Condition="' $(BuildUri) '!='  '" />
+  <Target Name="BeforeBuild" Condition="' $(BuildUri) '!='  '">
+    <GetBuildProperties TeamFoundationServerUrl="$(TeamFoundationServerUrl)" BuildUri="$(BuildUri)">
+      <Output TaskParameter="BuildNumber" PropertyName="BuildNumber" />
+    </GetBuildProperties>
+    <!-- Get the build Number-->
+    <PropertyGroup>
+      <BuildNumberSplitLocation>$([MSBuild]::Add($(BuildNumber.LastIndexOf('_')),1))</BuildNumberSplitLocation>
+    </PropertyGroup>
+    <!-- get the build version in to a property (MSBuild variable)-->
+    <CreateProperty Value="$(BuildNumber.Substring($(BuildNumberSplitLocation)))">
+      <Output TaskParameter="Value" PropertyName="Version" />
+    </CreateProperty>
+    <Message Text="Target name = $(Version)" Importance="high" />
+    <!-- Update the version in the wxi file.-->
+    <!-- remove the read only flag on the project .wxi file-->
+    <Message Text="Updating the version in the project.wxi" Importance="high" />
+    <Exec Command="attrib -r &quot;$(ProjectDir)\project.wxi&quot;" ContinueOnError="false" />
+    <!-- This is the file that needs to be changed-->
+    <ItemGroup>
+      <FilesToUpdate Include="$(ProjectDir)\project.wxi" />
+    </ItemGroup>
+    <!-- Replace file content using a regular expression. Searches for the 0.0.0.0 version and replaces it with the TFS version -->
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Replace" RegexPattern="0.0.0.0" Replacement="$(Version)" Files="@(FilesToUpdate)" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Replace" RegexPattern="BuildVersionLabel" Replacement="$(BuildNumber)" Files="@(FilesToUpdate)" />
+    <Exec Command="attrib +r &quot;$(ProjectDir)\project.wxi&quot;" ContinueOnError="false" />
+    <!-- Update the output name of the MSI -->
+    <CreateProperty Value="$(OutputName).$(Version)">
+      <Output TaskParameter="Value" PropertyName="TargetName" />
+    </CreateProperty>
+    <Message Text="Target name = $(TargetName)" Importance="high" />
+    <CreateProperty Value="$(TargetName)$(TargetExt)">
+      <Output TaskParameter="Value" PropertyName="TargetFileName" />
+    </CreateProperty>
+    <Message Text="TargetFileName = $(TargetFileName)" Importance="high" />
+    <CreateProperty Value="$(TargetDir)$(TargetFileName)">
+      <Output TaskParameter="Value" PropertyName="TargetPath" />
+    </CreateProperty>
+    <Message Text="TargetPath = $(TargetPath)" Importance="high" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY /Y $(TargetDir)%2a.msi $(SolutionDir)..\..\..\..\Build\Deployment\%2a</PostBuildEvent>
+  </PropertyGroup>
+</Project>

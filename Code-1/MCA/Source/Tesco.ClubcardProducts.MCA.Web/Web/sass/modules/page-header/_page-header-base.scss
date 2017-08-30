@@ -1,0 +1,112 @@
+#ddl-page-header {
+	background: $ddl-page-header-background;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	border-top: 3px solid $ddl-blue4;
+
+		#ddl-app-ident {
+			display: block;
+			color: $ddl-white2;
+			width: 300px;
+			height: 34px;
+			margin: 0 0 20px 12px;
+			background: url(../../images/tesco-logo.svg) no-repeat 0 0;
+			text-indent: -9999px;
+			float: left;
+			font-family: 'tescoregular';
+
+			span {
+				display: none;
+				font-family: 'tescoregular';
+			}
+		}
+
+		#primary-search {
+			margin: 0;
+
+			.ddl-form-field {
+				display: inline-block;
+				position: relative;
+				padding-right: 80px;
+				margin-bottom: 0;
+				min-width: 100%;
+
+				.ddl-search {
+					max-width: none;
+					width: 100%;
+
+					input {
+						width: 100%;
+						height: 40px;
+						max-width: none;
+						background: $ddl-white2;
+					}
+
+					input::-webkit-input-placeholder { /* WebKit browsers */
+						color: transparent;
+						font-style: normal;
+					}
+					input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+						color: transparent;
+						font-style: normal;
+					}
+					input::-moz-placeholder { /* Mozilla Firefox 19+ */
+						color: transparent;
+						font-style: normal;
+					}
+					input:-ms-input-placeholder { /* Internet Explorer 10+ */
+						color: transparent;
+						font-style: normal;
+					}
+				}
+
+				button {
+					position: absolute;
+					top: 0;
+					right: 0;
+					text-indent: 0;
+					border: 1px solid $ddl-border-color-1;
+					border-width: 1px 1px 1px 0;
+					border-radius: 0;
+					width: 80px;
+					padding: 0 12px;
+					line-height: 38px;
+					font-weight: normal;
+
+					&:before {
+						display: none;
+						font-size: 20px;
+						font-weight: normal;
+						line-height: 38px;
+					}
+				}
+			}
+		}
+
+		#ddl-basket {
+			position: absolute;
+		    top: 0px;
+		    right: 70px;
+
+			.ddl-inline-list {
+
+				li {
+					margin: 0;
+
+					a {
+						text-indent: -9999px;
+
+						&:before {
+							position: absolute;
+							top: 0;
+							left: 0;
+							text-indent: 0;
+							font-size: 20px;
+							font-weight: normal;
+							line-height: 38px;
+						}
+					}
+				}
+			}
+		}
+	}

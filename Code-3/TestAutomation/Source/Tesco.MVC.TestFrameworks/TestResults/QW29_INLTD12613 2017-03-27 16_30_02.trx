@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="80a25fbc-c367-4465-9a3d-8b154d1d35cf" name="QW29@INLTD12613 2017-03-27 16:30:02" runUser="TESCOGLOBAL\QW29" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="TestSettings1" id="21859d0f-7bdc-4165-b9ad-05fc803c9ee9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="QW29_INLTD12613 2017-03-27 16_30_02">
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Build\Tesco.Framework.Common.Logging.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\WebDriver.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting.Services\bin\Debug\Tesco.Framework.UITesting.Services.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\nunit.framework.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\ThoughtWorks.Selenium.Core.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Build\Tesco.Framework.Common.Utilities.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Tesco.NGC.RestClient.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\WebDriver.Support.dll" />
+    </Deployment>
+    <Execution parallelTestCount="5">
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-03-27T16:30:02.6001615+05:30" queuing="2017-03-27T16:30:02.6469615+05:30" start="2017-03-27T16:30:02.6625615+05:30" finish="2017-03-27T16:31:00.9669615+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <DebugTrace>InitializeClass - Starting
+InitializeClass - Ending
+</DebugTrace>
+    </Output>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Home_AviosSection" storage="d:\git_new\automation\6355\testautomation\source\tesco.mvc.testframeworks\tesco.framework.uitesting\bin\debug\tesco.framework.uitesting.dll" id="ab8d1c7b-515a-1ebf-b0e7-90cc0d307366">
+      <Description>VerifY home page for customer opted for Avois premimum</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="HomePage" />
+        <TestCategoryItem TestCategory="P0" />
+      </TestCategory>
+      <Execution id="65499be5-1afb-4801-b2f3-586b67859343" />
+      <TestMethod codeBase="D:/git_New/Automation/6355/TestAutomation/Source/Tesco.MVC.TestFrameworks/Tesco.Framework.UITesting/bin/Debug/Tesco.Framework.UITesting.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tesco.Framework.UITesting.Test.HomeTestSuit, Tesco.Framework.UITesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Home_AviosSection" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ab8d1c7b-515a-1ebf-b0e7-90cc0d307366" executionId="65499be5-1afb-4801-b2f3-586b67859343" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="65499be5-1afb-4801-b2f3-586b67859343" testId="ab8d1c7b-515a-1ebf-b0e7-90cc0d307366" testName="Home_AviosSection" computerName="INLTD12613" duration="00:00:58.0370631" startTime="2017-03-27T16:30:02.6781615+05:30" endTime="2017-03-27T16:31:00.9513615+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65499be5-1afb-4801-b2f3-586b67859343">
+      <Output>
+        <StdErr>log4net:ERROR XmlConfigurator: Failed to initialize configuration file watcher for file [D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver\log4net.config]
+System.ArgumentException: The directory name D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver is invalid.
+   at System.IO.FileSystemWatcher.set_Path(String value)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler..ctor(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatch(ILoggerRepository repository, FileInfo configFile)</StdErr>
+        <DebugTrace>log4net:ERROR XmlConfigurator: Failed to initialize configuration file watcher for file [D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver\log4net.config]
+System.ArgumentException: The directory name D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver is invalid.
+   at System.IO.FileSystemWatcher.set_Path(String value)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler..ctor(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatch(ILoggerRepository repository, FileInfo configFile)
+TestInitialize - Starting
+.ctor - Starting
+.ctor - Ending
+TestInitialize - Ending
+Waited for input[id='ClubcardNumber'] control by 187 mili sec.
+Login_Verification|Login Successfull with -634004024006785251
+verifySecondBoxValue Start
+verifySecondBoxValue|secondary box ctrl not found
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. secondary box ctrl not found</Message>
+          <StackTrace>   at Tesco.Framework.UITesting.Test.Common.Home.verifySecondBoxValue(String clubcard, OptionPreference preference, Boolean securityCleared) in D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\Test\Common\Home.cs:line 144
+   at Tesco.Framework.UITesting.Test.HomeTestSuit.Home_AviosSection() in D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting\Test\HomeTestSuit.cs:line 306
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

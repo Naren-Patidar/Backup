@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9e8d305d-90e2-475b-81ac-8280b1248b5c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClubcardCouponService.wsdl" MetadataType="Wsdl" ID="ece96163-1800-4341-b7ad-404f549ec4ae" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?wsdl" />
+    <MetadataFile FileName="ClubcardCouponService1.wsdl" MetadataType="Wsdl" ID="9276aeb7-adfa-4e70-98a1-a4935f535c90" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ClubcardCouponService.xsd" MetadataType="Schema" ID="f76ca534-565c-4b45-8f4c-87dff7a49dd6" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClubcardCouponService1.xsd" MetadataType="Schema" ID="b85b3371-b82c-4b8e-9254-1d48e1b125ec" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClubcardCouponService2.xsd" MetadataType="Schema" ID="eeb13963-4506-46cb-9b33-a71d330b16ee" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClubcardCouponService3.xsd" MetadataType="Schema" ID="9a36fb8c-2f57-46f0-8dcb-8cf7df4ea99e" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClubcardCouponService.disco" MetadataType="Disco" ID="9a38356e-8a4c-4b93-8b74-18a4a6783630" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/ClubcardCouponService/ClubcardCouponService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

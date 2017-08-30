@@ -1,0 +1,40 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>431275636</CustomerID>
+            <ClubcardID>634004022813428873</ClubcardID>
+            <CardIssuedDate>2006-02-08T00:00:00+00:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Muriel</Name1>
+            <Name2 />
+            <Name3>Wilson</Name3>
+            <MailingAddressLine1 />
+            <MailingAddressLine2>THORNTON-CLEVELEYS</MailingAddressLine2>
+            <MailingAddressLine3 />
+            <MailingAddressLine4 />
+            <MailingAddressLine5 />
+            <MailingAddressPostCode>FY5 2NP</MailingAddressPostCode>
+            <DateOfBirth>1944-04-14T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>645</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>258</PreviousPointsBalanceQty>
+            <JoinedDate>2002-05-30T00:00:00+01:00</JoinedDate>
+            <HouseHoldID>415913750</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+	<!-- Unique GUIDs generated for this installer-->
+	<?define UpgradeCode = "{C248B1E4-2A8D-4847-8210-4D9C568E887C}" ?>
+	<?define ApplicationGuid = "{71D8EB6E-6F6C-4391-9021-404E31E2F029}" ?>
+	<?define ApplicationFilesGuid = "{21E2CA6C-AEEA-4131-90E6-B36DF6793E3A}"?>
+	<?define ApplicationBinGuid = "{913F6DA2-9B23-4B95-9CE2-840C4EC098D0}"?>
+	<?define BinFilesGuid = "{7B77CBA6-FEC2-4470-916A-983E19156FE9}"?>
+	<?define ProductGuid="*" ?>
+	<?define LogDirectoryGuid = "{D5C4B1E7-EF88-4984-A557-9A358FEB6B0B}" ?>
+</Include>

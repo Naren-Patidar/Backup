@@ -1,0 +1,33 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@model CustomerEmail
+@Html.HiddenFor(model => model.ValidEmail, new { id = "hdnvalidemail" })
+<div id="divEmail" class="copy-wrapper" data-attr="@(Model.HasEmail? "1" : "0")">
+    <div id="divhasemail" class="form-row" style="display:@(Model.HasEmail && Model.IsValid ? "block" : "none")">
+        <p class="copy-wrapper"><span id="lblEmail">@(Model.IsValid ? Model.Email : Model.ValidEmail)</span>
+            <span class="ddl-standalone-link ddl-icon-after"><a href="javascript:void()" id="lnkChangeEmail"
+                onclick="return changeEmail();">@Html.Translate("lblChange")</a> </span>
+                @Html.HiddenFor(model => model.Email, new { id = "hdnemail" })
+        </p>
+    </div>
+    <div id="divnoemail" style="display:@(Model.HasEmail && Model.IsValid ? "none" : "block")">
+        <div class="form-row">
+            <div class="ddl-form-field ddl-form-field-large" id="divforEmail">
+                <label for="txtemail" id="lblemail" class="ddl-label">
+                    @Html.Translate("lblEmail")</label>
+                @Html.TextBoxFor(model => model.Email, new { id = "txtemail", @class = "ddl-input", autocomplete = "off" })
+                <p id="email_validation" style='display:none'>@Html.Translate("errMessageEmail")</p>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="ddl-form-field ddl-form-field-large" id="divforConfirmEmail">
+                <label for="txtconfirmemail" id="lblconfirmemail" class="ddl-label">
+                    @Html.Translate("lblConfirmEmail")</label>
+                @Html.TextBoxFor(model => model.ConfirmEmail, new { id = "txtconfirmemail", @class = "ddl-input", autocomplete = "off" })
+                <p id="confirm_email_validation_invalid" style='display:none'>@Html.Translate("errMessageEmail")</p>
+                <p id="confirm_email_validation_mismatch" style='display:none'>@Html.Translate("errCompareEmail")</p>
+                <p id="email_duplicate" style='display:none'>@Html.Translate("errAccountDuplicate")</p>
+            </div>
+        </div>
+    </div>
+</div>

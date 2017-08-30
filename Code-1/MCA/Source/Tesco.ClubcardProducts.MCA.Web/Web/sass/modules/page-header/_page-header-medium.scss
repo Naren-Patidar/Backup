@@ -1,0 +1,143 @@
+#ddl-page-header {
+	padding: 0;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 9999999;
+	border-top: none;
+
+	.container {
+		background: pink;
+		padding: 0;
+
+		/*&:before, &:after {
+			content: " ";
+			display: block;
+			width: 800px;
+			height: 85px;
+			position: absolute;
+			bottom: 0;
+			left: -800px;
+			background: rgba(0,0,0,.7);
+			z-index: 9999;
+			transition: opacity .1s ease-in-out;
+			opacity: 0;
+		}*/
+
+		&:after {
+			left: auto;
+			right: -800px;
+		}
+	}
+
+	#ddl-page-header-inner {
+		padding: 24px 12px 12px 24px;
+		position: relative;
+		background: #fff;
+
+		#ddl-app-ident {
+			margin: 0;
+
+			span {
+				top: 28px;
+				left: 160px;
+			}
+		}
+
+		#primary-search {
+			border-right: 1px solid $ddl-border-color-2;
+			padding: 0 16px 0 4px;
+			margin: 0 0 0 -13px;
+			float: left;
+
+			.ddl-form-field {
+				padding-right: 56px;
+
+				.ddl-search {
+
+					input {
+						background: $ddl-white1;
+					}
+
+					input::-webkit-input-placeholder {
+						color: $ddl-body-copy-colour;
+					}
+					input:-moz-placeholder {
+						color: $ddl-body-copy-colour;
+					}
+					input::-moz-placeholder {
+						color: $ddl-body-copy-colour;
+					}
+					input:-ms-input-placeholder {
+						color: $ddl-body-copy-colour;
+					}
+				}
+
+				button {
+				    background: $ddl-primary-button-background;
+				    border: none;
+				    border-radius: 20px;
+				    color: $ddl-primary-button-colour;
+				    text-indent: -9999px;
+				    width: 40px;
+
+				    &:before {
+				    	display: block;
+				    }
+				}
+			}
+		}
+
+		#ddl-basket {
+			float: left;
+			position: static;
+			top: auto;
+			right: auto;
+			padding-left: 16px;
+
+			.ddl-inline-list {
+				margin: 0;
+
+				li {
+					margin-right: 15px;
+					padding: 0;
+
+					&:last-child {
+						display: inline-block;
+						margin-right: 0;
+
+						p {
+							margin: 0;
+						}
+					}
+
+					a {
+						text-indent: 0;
+
+						&:before {
+							position: static;
+							float: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*.primary-nav-active {
+
+	#ddl-page-header {
+
+		.container {
+
+			&:before, &:after {
+				opacity: 1;
+			}
+
+			&:after {
+				left: auto;
+				right: -800px;
+			}
+		}
+	}
+}*/

@@ -1,0 +1,141 @@
+<html>
+<head>
+<style type="text/css">
+body { font:normal 80% verdana,arial,helvetica; color:#000000; }
+span.info { font-size:smaller; font-weight:normal; color:#545454; font-style:normal; font-family:Arial;}
+span.covered { background: #2D9320; display: inline-block;height: 9px;}
+span.uncovered { background: #CA261D; display: inline-block; height: 9px;}
+span.ignored { background: #FFFF50; display: inline-block; height: 9px;}
+td.covered { background-color: #2D9320; height: 9px;}
+td.uncovered { background-color: #CA261D; height: 9px;}
+td.ignored { background-color: #FFFF50; height: 9px;}
+td { FONT-SIZE: 80%; BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid;}
+td.section { FONT-SIZE: 80% !important; BORDER-BOTTOM: 0px !important; BORDER-RIGHT: 0px !important;}
+p {	line-height:1.5em; margin-top:0.5em; margin-bottom:1.0em;}
+h1 { MARGIN: 0px 0px 5px; FONT: 165% verdana,arial,helvetica;}
+h2 { MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.5em; FONT: bold 125% verdana,arial,helvetica;}
+h3 { MARGIN-BOTTOM: 0.5em; FONT: bold 115% verdana,arial,helvetica; }
+h4 { MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica; color:#441106; }
+h5 { MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica;}
+h6 { MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica;}
+.Error { font-weight:bold;}
+.Failure { font-weight:bold; color:#CA261D;}
+.Success { font-weight:bold; color:#2D9320;}
+.Blue { font-weight:bold; color:#1F38B6;}
+.FailureTest { color:#373E36;}
+.SuccessTest { color:#373E36;}
+.Ignored { font-weight:bold;}
+.FailureDetail { font-size: -1; padding-left: 2.0em; background:#cdcdcd;}
+.Pass { padding-left:2px;}
+.TableHeader { background: #efefef; color: #000; font-weight: bold; horizontal-align: center; }
+a:visited { color: #0000ff;} a { color: #0000ff;}
+a:active { color: #800000;} a.summarie { color:#000; text-decoration: none;}
+a.summarie:active { color:#000; text-decoration: none;}
+a.summarie:visited { color:#000; text-decoration: none;}
+.description { margin-top:1px; padding:3px; background-color:#dcdcdc; color:#000; font-weight:normal;}
+.method{ color:#000; font-weight:normal; padding-left:5px;}
+a.method{ text-decoration: none; color:#000; font-weight:normal; padding-left:5px;}
+a.Failure { font-weight:bold; color:red; text-decoration: none;}
+a.Failure:visited { font-weight:bold; color:red; text-decoration: none;}
+a.Failure:active { font-weight:bold; color:red; text-decoration: none;}
+a.error { font-weight:bold; color:red;}
+a.error:visited { font-weight:bold; color:red;}
+a.error:active { font-weight:bold; color:red;}
+a.ignored { font-weight:bold; text-decoration: none; padding-left:5px;}
+a.ignored:visited { font-weight:bold; text-decoration: none; padding-left:5px;}
+a.ignored:active { font-weight:bold; text-decoration: none; padding-left:5px;}
+</style>
+<script language="JavaScript">
+function Toggle(id) {
+var element = document.getElementById(id);
+if ( element.style.display == "none" )
+element.style.display = '';
+else 
+element.style.display = "none";
+}
+</script>
+</head>
+<body>
+<h2 id="top" class="title">Test Results<span class="info"> (22/10/2015 10:35:48 GMT Standard Time)</span></h2>
+<hr width="85%" align="left"/>
+<h3>Summary: </h3>
+<table border="0" cellpadding="2" cellspacing="0" width="60%" style="border: #dcdcdc 1px solid;">
+<tr valign="top" class="TableHeader">
+<td width="50px"><b>Tests</b></td>
+<td width="70px"><b>Executed</b></td>
+<td width="70px"><b>Passed</b></td>
+<td width="70px"><b>Failed</b></td>
+<td colspan="2"><b>Success Rate</b></td>
+<td width="10%" nowrap="nowrap"><b>Total Time(hh:mm:ss)</b></td></tr>
+<tr valign="top" class="Blue">
+<td>1 </td>
+<td>1 </td>
+<td>1 </td>
+<td>0</td>
+<td nowrap="nowrap" width="70px">100%</td>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="covered" style="width:200px"></td>
+</tr>
+</table>
+</td>
+<td>00:00:20</td>
+</tr></table>
+<h2>Test Container Summary</h2>
+<table border="0" cellpadding="2" cellspacing="0" width="85%">
+<tr class="TableHeader" valign="top">
+<td width="30%" colspan="1"><b>Project Name</b></td>
+<td width="40%" colspan="2"><b>Success Rate</b></td>
+<td width="10%"><b>Tests</b></td>
+<td width="10%"><b>Success</b></td>
+<td width="10%"><b>Failures</b></td>
+<td width="10%" nowrap="nowrap"><b>Total Execution Time(hh:mm:ss)</b></td></tr>
+<tr valign="top" class="Success"><td width="25%">
+Tesco.Framework.UITesting.DLL</td>
+<td nowrap="nowrap" width="6%" align="right"><b>100 %</b></td>
+<td width="20%" height="9px">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="covered" style="width:200px"></td>
+</tr>
+</table>
+</td>
+<td>1</td><td>1</td><td>0</td>
+<td>00:00:20</td></tr>
+</table>
+<hr size="1" width="85%" align="left"></hr>
+<h3 id=Tesco.Framework.UITesting.DLL>Tesco.Framework.UITesting.DLL</h3>
+<table border="0" cellpadding="1" cellspacing="1" width="85%">
+<tr class="TableHeader" valign="top"><td width="30%" style="word-break: break-all"><b>Method Name</b></td><td width="20%"><b>Description</b></td>
+<td width="5%">Status</td><td width="32%" nowrap="nowrap"><b>Remarks</b></td><td width="10%" nowrap="nowrap"><b>Execution Time(s)</b></td></tr>
+<tr><td height="2px" colspan="5"></td></tr>
+<tr style="color: #1947A3"><td width="20%" style="font-family:Copperplate Gothic;font-size:78%" bgcolor="#E3F7F8"><a href="javascript:Toggle('OneWay')" style="text-decoration:none"><b>Test Group :: OneWay</b></a></td>
+<td bgcolor="#E3F7F8"></td>
+<td width="10%" style="padding-left:3px" height="9px" bgcolor="#E3F7F8">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td style="width:100px" bgcolor="#E3F7F8"></td>
+</tr>
+</table>
+</td>
+<td width="10%" bgcolor="#E3F7F8"></td>
+<td bgcolor="#E3F7F8"></td></tr>
+<tr><td class="section" colspan="5"><table border="0" cellpadding="1" cellspacing="1" width="100%" style="display: none !important;" id="OneWay">
+<tr valign="top" class="Pass"><td width="29%" class="SuccessTest" style="word-break: break-all">
+OneWay</td>
+<td width="19%">NA</td>
+<td width="9%" style="padding-left:3px" height="9px">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="covered" style="width:100px"></td>
+</tr>
+</table>
+</td>
+<td width="345px" style="word-break: break-all"> NA </td>
+<td>19.41</td></tr>
+</table></td></tr>
+</table>
+<a href="#top">Back to top</a>
+</body>
+</html>

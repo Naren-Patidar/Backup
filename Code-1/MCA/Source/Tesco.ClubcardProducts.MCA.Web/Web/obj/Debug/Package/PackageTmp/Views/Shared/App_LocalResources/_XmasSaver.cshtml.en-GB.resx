@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AndWeGiveYou" xml:space="preserve">
+    <value>and we’ll give you a </value>
+  </data>
+  <data name="AndWeRewardYou" xml:space="preserve">
+    <value>and we’ll reward you with a</value>
+  </data>
+  <data name="BonusVoucher" xml:space="preserve">
+    <value>bonus voucher</value>
+  </data>
+  <data name="BonusVoucherInStatmnt" xml:space="preserve">
+    <value>bonus voucher in your Christmas statement.</value>
+  </data>
+  <data name="BonusVoucherOrTopUp" xml:space="preserve">
+    <value>bonus voucher. Top up with over</value>
+  </data>
+  <data name="BonusVoucherSoFar" xml:space="preserve">
+    <value>Bonus vouchers awarded to date</value>
+  </data>
+  <data name="ClubcardVoucherSoFar" xml:space="preserve">
+    <value>Clubcard vouchers saved to date</value>
+  </data>
+  <data name="Congratulation" xml:space="preserve">
+    <value>Congratulations!</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="DateNotAvailable" xml:space="preserve">
+    <value>Date Not Available</value>
+  </data>
+  <data name="DateToppedUp" xml:space="preserve">
+    <value>Date topped up</value>
+  </data>
+  <data name="IfYouWouldLikeToPutMore" xml:space="preserve">
+    <value>To top up your Christmas savers account, visit your local store.</value>
+  </data>
+  <data name="MoneyTobeSavedForBonus" xml:space="preserve">
+    <value>your own money at the check-out every time you’re in store, up to a maximum of £360 over the year.</value>
+  </data>
+  <data name="SoFarForYourNovember" xml:space="preserve">
+    <value>saved for your November</value>
+  </data>
+  <data name="Statement" xml:space="preserve">
+    <value> statement</value>
+  </data>
+  <data name="StatementIssuedIn" xml:space="preserve">
+    <value>Statement date</value>
+  </data>
+  <data name="ToMakeIt" xml:space="preserve">
+    <value> to make it a </value>
+  </data>
+  <data name="TopUpVouchersSoFar" xml:space="preserve">
+    <value>Top-up vouchers saved to date</value>
+  </data>
+  <data name="TopUpYourAccountUpTo" xml:space="preserve">
+    <value>Top up your account up to</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TotalSavingsSoFar" xml:space="preserve">
+    <value>Total savings to date</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="YouCanTopUpYourAcc" xml:space="preserve">
+    <value>bonus voucher. You can top up your account with </value>
+  </data>
+  <data name="YouHaveSaved" xml:space="preserve">
+    <value>Vouchers you have</value>
+  </data>
+  <data name="YouHaveSavedEnough" xml:space="preserve">
+    <value>You have saved enough to receive a</value>
+  </data>
+  <data name="YouOnlyNeedToSaveExtra" xml:space="preserve">
+    <value>You only need to save another</value>
+  </data>
+</root>

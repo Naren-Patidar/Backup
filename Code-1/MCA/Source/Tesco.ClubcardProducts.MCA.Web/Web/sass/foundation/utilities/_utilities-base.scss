@@ -1,0 +1,336 @@
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.ddl-visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.ddl-visually-hidden.focusable:active, .ddl-visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* device specific (feature based)
+----------------------------------*/
+
+.ddl-handheldonly {
+	display: none !important;
+}
+
+@media only screen and (max-width : $breakpoint-4) {
+
+	.ddl-desktoponly {
+		display: none !important;
+	}
+
+	.ddl-handheldonly {
+		display: inline-block !important;
+	}
+}
+
+.ddl-no-js-visible {
+	display: none !important;
+}
+
+.no-js {
+
+	.ddl-no-js-visible {
+		display: inline-block !important;
+	}
+}
+
+/* Floats
+--------------*/
+
+.ddl-left {
+	width: auto;
+	max-width: none;
+	min-width: none;
+	float: left;
+}
+
+.ddl-right {
+	width: auto;
+	max-width: none;
+	min-width: none;
+	float: right;
+}
+
+/* Copy alignment
+---------------------*/
+
+.ddl-text-centre-handheld {
+	text-align: center;
+}
+
+@media only screen and (min-width : $breakpoint-4) {
+
+	.ddl-text-centre-handheld {
+		text-align: left;
+	}
+
+}
+
+.ddl-text-centre {
+	text-align: center !important;
+}
+
+.ddl-text-left {
+	text-align: left !important;
+}
+
+.ddl-text-right {
+	text-align: right !important;
+}
+
+/* Vertical alignment
+---------------------*/
+.ddl-vertical-outer {
+	width:100%;
+	display:table;
+
+	.ddl-vertical-inner {
+		display:table-cell;
+		vertical-align:middle;
+		float:none!important;
+	}
+}
+
+/* Clearfix
+--------------*/
+.ddl-cf:before,
+.ddl-cf:after {
+    content: " ";
+    display: table;
+}
+
+.ddl-cf:after {
+    clear: both;
+}
+
+.ddl-cf {
+    *zoom: 1;
+}
+
+/* No wrap
+--------------*/
+
+.ddl-no-wrap {
+	white-space: nowrap;
+}
+
+/* icon fonts
+--------------*/
+
+.ddl-icon-before, .ddl-icon-after {
+	position: relative;
+
+	&:before, &:after {
+		font-family: 'icons';
+		font-size: 12px;
+		vertical-align: middle;
+		text-indent: 0;
+		display: inline;
+	}
+
+	&.ddl-icon-only {
+		display: inline-block;
+		text-indent: -9999px;
+
+		&:before, &:after {
+			min-width: 40px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			text-indent: 0;
+			line-height: 40px;
+		}	
+	}
+
+	&.ddl-icon-button {
+
+		&:before, &:after {
+			text-align: center;
+			min-width: 40px;
+			line-height: 40px;
+			border: 2px solid $ddl-blue1;
+			border-radius: 30px;
+			background: $ddl-white1;
+		}	
+	}
+
+	&.ddl-icon-question {
+
+		&:before, &:after {
+	    	content: "\e904";
+		}		
+	}
+
+	&.ddl-icon-tick {
+
+		&:before, &:after {
+	    	content: "\e004";
+		}		
+	}
+
+	&.ddl-icon-close {
+
+		&:before, &:after {
+	    	content: "\e007";
+		}		
+	}
+
+	&.ddl-icon-menu {
+
+		&:before, &:after {
+	    	content: "\e00b";
+		}		
+	}
+
+	&.ddl-icon-basket {
+
+		&:before, &:after {
+	    	content: "\e001";
+		}		
+	}
+
+	&.ddl-icon-minus {
+
+		&:before, &:after {
+	    	content: "\e00e";
+		}		
+	}
+
+	&.ddl-icon-plus {
+
+		&:before, &:after {
+	    	content: "\e013";
+		}		
+	}
+
+	&.ddl-icon-phone {
+
+		&:before, &:after {
+	    	content: "\e011";
+		}		
+	}
+
+	&.ddl-icon-search {
+
+		&:before, &:after {
+	    	content: "\e017";
+		}		
+	}
+
+	&.ddl-icon-facebook {
+
+		&:before, &:after {
+	    	content: "\e606";
+		}		
+	}
+
+	&.ddl-icon-twitter {
+
+		&:before, &:after {
+	    	content: "\e607";
+		}		
+	}
+
+	&.ddl-icon-googleplus {
+
+		&:before, &:after {
+	    	content: "\e906";
+		}		
+	}
+
+	&.ddl-icon-youtube {
+
+		&:before, &:after {
+	    	content: "\e907";
+		}		
+	}
+
+	&.ddl-icon-map-marker {
+
+		&:before, &:after {
+	    	content: "\e00d";
+		}		
+	}
+
+	&.ddl-icon-up {
+
+		&:before, &:after {
+	    	content: "\e602";
+		}		
+	}
+
+	&.ddl-icon-down {
+
+		&:before, &:after {
+	    	content: "\e008";
+		}		
+	}
+
+	&.ddl-icon-left {
+
+		&:before, &:after {
+	    	content: "\e005";
+		}		
+	}
+
+	&.ddl-icon-right {
+
+		&:before, &:after {
+	    	content: "\e605";
+		}		
+	}
+
+	&.ddl-icon-clubcard {
+
+		&:before, &:after {
+	    	content: "\e900";
+		}		
+	}
+
+	&.ddl-icon-coupons {
+
+		&:before, &:after {
+	    	content: "\e901";
+		}		
+	}
+
+	&.ddl-icon-vouchers {
+
+		&:before, &:after {
+	    	content: "\e902";
+		}		
+	}
+}
+
+.ddl-icon-before {
+	
+	&:before {
+		display: inline;
+		margin-right: 5px;
+	}
+
+	&:after {
+		display: none;
+	}
+}
+
+.ddl-icon-after {
+	
+	&:before {
+		display: none;
+	}
+
+	&:after {
+		display: inline;
+		margin-left: 5px;
+	}
+}
+
+.ddl-icon-before, .ddl-icon-after {
+	position: relative;
+
+	&:before, &:after {
+		font-size: 12px;
+	}
+}

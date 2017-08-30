@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Include the references to the Project and the GUIDS inclusion-->
+<?include Project.wxi ?>
+<?include Guids.wxi ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	  xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Id="$(var.ProductGuid)" Name="$(var.ProductName) ($(var.Version))" Language="1033" Version="$(var.Version)" Manufacturer="Tesco.Com" UpgradeCode="$(var.UpgradeCode)">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="CSC.IIS.Setup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLCSC"></Property>
+		<Property Id ="INSTALLFOLDER"><![CDATA[D:\MCAhosting\WebApplication\]]></Property>
+    <Property Id ="ProductRegistryEntry"></Property>
+		<!--<UIRef Id="WixUI_ErrorProgressText" />
+		<UIRef Id="WixUI_InstallDir" />-->
+    <Upgrade Id='$(var.UpgradeCode)'>
+      <UpgradeVersion Minimum='0.0.0.0' IncludeMinimum='yes' Maximum='255.255.65535.255' IncludeMaximum='yes' Property='UPGRADEFOUND' />
+    </Upgrade>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<!--Override the default location by above specified path -->
+				<Directory Id="INSTALLFOLDER" Name=".">					
+
+					<Directory Id="INSTALLCSC" Name="MCADundeeApplication" >
+						<!--Installed location -->
+						<Component Id="ClubcardadminVirtualDir" Guid="{12707E47-EE52-4f90-8892-74349490E642}">
+							<CreateFolder Directory="INSTALLCSC"/>
+							<!--Create VD -->
+							<iis:WebVirtualDir Id='ClubcardadminVirtualDir' Alias='Clubcardadmin' Directory='INSTALLCSC'
+										   WebSite='DefaultWebSite'>
+								<!--Make the default document -->
+								<iis:WebDirProperties Id="DefaultDocClubcardadminSetup" DefaultDocuments="Default.aspx"/>
+								<!--Convert the VD to Web Application -->
+								<iis:WebApplication Id='Clubcardadmin' Name='Clubcardadmin'  WebAppPool='ClubcardadminAppPool' Isolation='medium' />
+							</iis:WebVirtualDir>
+						</Component>
+						
+						<!--Creating Application Pool -->
+						<Component Id="ClubcardadminAppPool" Guid="{2B22D861-FE31-4f53-AA29-D1E7FD733D96}" >
+							<CreateFolder />
+							<iis:WebAppPool Id="ClubcardadminAppPool"
+											Name="MCADundeeApplication"
+											Identity="networkService"  ManagedPipelineMode="integrated"
+											ManagedRuntimeVersion="v2.0" />
+						</Component>
+         
+
+          </Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+		<!--Application will be create under Default Web site -->
+		<iis:WebSite Id='DefaultWebSite' Description='Default Web Site'>
+			<iis:WebAddress Id="AllUnassigned" Port="80"/>
+		</iis:WebSite>
+
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="ProductRegistryEntry" Guid="*">
+        <!--GUID can be a * becuase major upgrades don't care about same GUIDS.-->
+        <RegistryKey Root="HKLM" Key="$(var.DeployedRegistryKey)\$(var.PackageName)" Action="createAndRemoveOnUninstall">
+          <RegistryValue Type="string" Name="ProductCode" Value="[ProductCode]" KeyPath="yes"/>
+          <RegistryValue Type="string" Name="ProductVersion" Value="[ProductVersion]"/>
+          <RegistryValue Type="string" Name="Label" Value="$(var.Label)"/>
+        </RegistryKey>
+      </Component>
+			<ComponentRef Id ="ClubcardadminVirtualDir"/>
+			<ComponentRef Id ="ClubcardadminAppPool"/>
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+		</ComponentGroup>
+    
+	</Fragment>
+</Wix>

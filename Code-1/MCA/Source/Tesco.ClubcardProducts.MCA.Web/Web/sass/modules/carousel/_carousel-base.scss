@@ -1,0 +1,50 @@
+.bx-wrapper {
+    border: none;
+    background: #eee;
+    box-shadow: none;
+    padding-top: 10px;
+
+    .bx-slide {
+        transition: opacity .3s ease-in-out;
+        transform: scale(.9); 
+        opacity: .6;   
+    }
+
+    .active-slide {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .bx-controls-direction {
+
+        .bx-next, .bx-prev {
+            background: $ddl-white1;
+            border-radius: none;
+            width: 52px;
+            height: 52px;
+            margin-top: -26px;
+
+            &:after {
+                content: '\e605';
+                font-family: 'icons';
+                text-align: center;
+                color: $ddl-blue1;
+                text-indent: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 3rem;
+                line-height: 52px;
+            }
+        }
+    }
+
+    .bx-prev {
+
+        &:after {
+            content: '\e605';
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+.ddl-banner {
+	display: table;
+	width: 100%;
+	min-height: 350px;
+	padding: 40px 65% 40px 40px;
+
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 65%;
+	}
+
+	&.image-left {
+		padding: 40px 40px 40px 50%;
+
+		img {
+			left: 0;
+			right: auto;
+		}
+
+		.ddl-banner-inner {
+			padding: 15px 15px 15px 60px;
+		}
+	}
+
+	.ddl-banner-inner {
+		display: table-cell;
+		vertical-align: middle;
+
+		.ddl-button {
+			position: static;
+		}
+	}
+}

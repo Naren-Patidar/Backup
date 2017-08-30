@@ -1,0 +1,308 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Group_Config_Values];
+    var HideConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Mandatory_fields];
+    var ChinaHide = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+    bool islocale = false;
+    islocale = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsLocale.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    var currentPage = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var provinces = Provinces.List as List<Province>;
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+    
+}
+<div id="divforFindaddress">
+    @if (!currentPage.ToLower().Equals("join"))
+    {
+        if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("0") && !Model.FindAddressClicked)
+        {
+        <div class="form-row" id="divforAddress">
+            <div class="ddl-form-field">
+                <label id="lblforaddress" for="@Html.Translate("Shared/_PersonalDetails", "lclAddress.Text")" class="ddl-label required">@Html.Translate("Shared/_PersonalDetails", "lclAddress.Text")</label>
+                <textarea name="fld_address" id="fld_address" disabled="disabled" class="ddl-textarea">
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1)
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2)
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3)
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4)
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5)
+@Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6)
+                </textarea>
+            </div>
+        </div>
+        }
+    }
+    @if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("1"))
+    { 
+        <div class="form-row" id="divforPostcode">
+            <div class="ddl-form-field @(((errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && !Model.IsJoinPage) ||
+                                                (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && 
+                                                Model.IsJoinPage && !errorKeys.Contains("errPostcode"))) || 
+                                                    errorKeys.Contains("errPostcode") ? "ddl-error" : "")">
+                <label id="lblPostcode" for="@Html.Translate("Shared/_PersonalDetails", "lclPostCode.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressPostCode].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclPostCode.Text")</label>
+                <span class="ddl-postcode">
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode, new { @class = "ddl-input", id = "fld_PostCode", autocomplete = "off", name = "MailingAddressPostCode", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressPostCode].ConfigurationValue2.ToString() })
+                    @if ((errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && !Model.IsJoinPage) ||
+                                (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && Model.IsJoinPage && !errorKeys.Contains("errPostcode")))
+                    {
+                        <p class="error" id="errMailingAddressPostCode">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode)</p>
+                    }
+                    @if (errorKeys.Contains("errPostcode"))
+                    {
+                        <p id="errPostcode" class="error">@Html.Raw(HttpUtility.HtmlDecode(Html.ValidationMessage("errPostcode").ToHtmlString()))</p>
+                    }
+                </span>
+            </div>
+        </div>
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine1].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforHouseNumber">
+                <div class="ddl-form-field @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1") ? "ddl-error" : "")">
+                    <label id="lblHousenumber" for="@Html.Translate("Shared/_PersonalDetails", "lclHouseNoName.Text")"
+                            class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine1].ConfigurationValue1.Equals("1") ? "required" : "")">
+                        @Html.Translate("Shared/_PersonalDetails", "lclHouseNoName.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1, new { @class = "ddl-input", id = "fld_MailingAddressLine1", autocomplete = "off", name = "MailingAddressLine1", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine1].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1"))
+                    {
+                        <p id="errMailingAddressLine1">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1)</p>
+                    }
+                </div>
+            </div>
+                    }
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine2].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforAddline2">
+                <div class="ddl-form-field @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2") ? "ddl-error" : "")">
+                    <label id="lblAddline2" for="@Html.Translate("Shared/_PersonalDetails", "lclAddressLine2.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine2].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclAddressLine2.Text")</label>
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2, new { @class = "ddl-input", id = "fld_MailingAddressLine2", autocomplete = "off", name = "MailingAddressLine2", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine2].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2"))
+                    {
+                        <p id="errMailingAddressLine2">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2)</p>
+                    }
+                </div>
+            </div>
+                    }
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine3].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforAddline3">
+                <div class="ddl-form-field">
+                    <label id="lblAddline3" for="@Html.Translate("Shared/_PersonalDetails", "lclAddressLine3.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine3].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclAddressLine3.Text")</label>
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3, new { @class = "ddl-input", id = "fld_MailingAddressLine3", autocomplete = "off", name = "MailingAddressLine3", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine3].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3"))
+                    {
+                        <p id="errMailingAddressLine3">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3)</p>
+                    }
+                </div>
+            </div>
+                    }
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine4].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforAddline4">
+                <div class="ddl-form-field @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4") ? "ddl-error" : "")">
+                    <label id="lblAddline4" for="@Html.Translate("Shared/_PersonalDetails", "lclAddressLine4.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine4].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclAddressLine4.Text")</label>
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4, new { @class = "ddl-input", id = "fld_MailingAddressLine4", autocomplete = "off", name = "MailingAddressLine4", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine4].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4"))
+                    {
+                        <p id="errMailingAddressLine4">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4)</p>
+                    }
+                </div>
+            </div>
+                    }
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine5].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforAddline5">
+                <div class="ddl-form-field @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5") ? "ddl-error" : "")">
+                    <label id="lblAddline5" for="@Html.Translate("Shared/_PersonalDetails", "lclAddressLine5.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine5].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclAddressLine5.Text")</label>
+                    @if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings]["EnableProvince"].ConfigurationValue1.Equals("1"))
+                    {
+                        <span class="ddl-select">
+                            @if (provinces != null && provinces.Count > 0)
+                            {
+                                if (islocale)
+                                {
+                                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5, new SelectList(Provinces.List, "ProvinceID", "ProvinceNameLocal", Model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5), @Html.Translate("Shared/_PersonalDetails", "selectprovince").ToString(), new { id = "fld_ProvinceID" })
+                                }
+                                else
+                                {
+                                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5, new SelectList(Provinces.List, "ProvinceID", "ProvinceNameEnglish", Model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5), @Html.Translate("Shared/_PersonalDetails", "selectprovince").ToString(), new { id = "fld_ProvinceID" })
+                                }
+                            }
+                            else
+                            {
+                                @Html.DropDownList("Province", new List<SelectListItem>
+                                {
+                                  new SelectListItem{ Text = @Html.Translate("Shared/_PersonalDetails", "selectprovince").ToString(), Value = "0" }
+                                })
+                            }
+                        </span>
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5, new { @class = "ddl-input", id = "fld_MailingAddressLine5", autocomplete = "off", name = "MailingAddressLine5", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine5].ConfigurationValue2.ToString() })
+                    }
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5"))
+                    {
+                        <p id="errMailingAddressLine5">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5)</p>
+                    }
+                </div>
+            </div>
+                    }
+                    if (ChinaHide[DbConfigurationItemNames.HideAddressLine6].ConfigurationValue1.Equals("0"))
+                    {
+            <div class="form-row" id="divforAddline6">
+                <div class="ddl-form-field @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6") ? "ddl-error" : "")">
+                    <label for="@Html.Translate("Shared/_PersonalDetails", "lclAddressLine6.Text")" class="@(HideConfigMandate[DbConfigurationItemNames.MailingAddressLine6].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclAddressLine6.Text")</label>
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6, new { @class = "ddl-input", id = "fld_MailingAddressLine6", autocomplete = "off", name = "MailingAddressLine6", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressLine6].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6"))
+                    {
+                        <p id="errMailingAddressLine6">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6)</p>
+                    }
+                </div>
+            </div>
+                    }
+    }
+    else
+    { 
+        <div class="form-row" id="divforPostcode">
+            <div class="ddl-form-field @(((errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && !Model.IsJoinPage) ||
+                                                (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") &&
+                                                Model.IsJoinPage && !errorKeys.Contains("errPostcode"))) ||
+                                                    errorKeys.Contains("errPostcode") ? "ddl-error" : "")">
+                <label id="lblPostcode" for="@Html.Translate("Shared/_PersonalDetails", "lclPostCode.Text")" class="ddl-label @(HideConfigMandate[DbConfigurationItemNames.MailingAddressPostCode].ConfigurationValue1.Equals("1") ? "required" : "")">@Html.Translate("Shared/_PersonalDetails", "lclPostCode.Text")</label>
+                <span class="ddl-postcode">
+                    @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode, new { @class = "ddl-input", id = "fld_PostCode", autocomplete = "off", name = "MailingAddressPostCode", maxLength = LengthConfig[DbConfigurationItemNames.MailingAddressPostCode].ConfigurationValue2.ToString() })
+                    <input type="submit" class="ddl-button" id="btnfindAddress" name="Command" value="@Html.Translate("Shared/_PersonalDetails", "btnFindAddressResource1.Text")" onclick="return TrackGAEvent('Find Address');" />
+                </span>
+                @if ((errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && !Model.IsJoinPage) ||
+                            (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode") && Model.IsJoinPage && !errorKeys.Contains("errPostcode")))
+                {
+                    <p id="errMailingAddressPostCode">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode)</p>
+                }
+                @if (errorKeys.Contains("errPostcode"))
+                {
+                    <p id="errPostcode" class="error">@Html.Raw(HttpUtility.HtmlDecode(Html.ValidationMessage("errPostcode").ToHtmlString()))</p>
+                }
+            </div>
+        </div>
+                if (Model.FindAddressClicked && !errorKeys.Contains("errPostcode"))
+                {
+                    if (Model.AddressDetails != null && Model.AddressDetails.IsErrorMessage)
+                    {
+                <div class="ddl-error">
+                    <p id="errAddress">
+                        @if (!Model.IsJoinPage)
+                        {
+                            @Html.Translate("Shared/_PersonalDetails", "sorry.valid")
+                            @String.Concat(" \"", @Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode), "\"")
+                            <br />
+                            @Html.Translate("Shared/_PersonalDetails", "lclFindAddressMsgResource.Text")<br />
+                            @Html.Translate("Shared/_PersonalDetails", "pleaseTry.valid")<br />
+                        }
+                        else
+                        {
+                            @String.Concat(@Html.Translate("Shared/_PersonalDetails", "errSorryFindAddress1"), " \"", @Html.DisplayFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressPostCode), " \"", @Html.Translate("Shared/_PersonalDetails", "errSorryFindAddress2"))                        
+                        }
+                    </p>
+                </div>
+                    }
+                }
+
+                if (errorKeys.Contains("errAddressChange") && !Model.IsJoinPage)
+                {
+            <div class="ddl-error">
+                <p id="errAddressChange">@Html.ValidationMessage("errAddressChange")</p>
+            </div>
+                }
+
+                if (!Model.IsJoinPage)
+                {
+            <div class="copy-wrapper">
+                <p id="errCantFindAddress">
+                    @Html.Translate("Shared/_PersonalDetails", "lclCantFindAdressmsg.Text")
+                    <br /> <br />
+                    @Html.Translate("Shared/_PersonalDetails", "lclCantFindAddress.Text")
+                </p>
+            </div>
+                }
+                if (Model.FindAddressClicked && !errorKeys.Contains("errPostcode"))
+                {
+                    if (Model.AddressDetails != null && !Model.AddressDetails.IsErrorMessage)
+                    {
+                @Html.HiddenFor(model => model.AddressDetails.HideAddressformat)
+               
+                <div class="ddl-form-field" id="divforChoseAddress">
+                    <label id="lblChooseAnAddress" for="@Html.Translate("Shared/_PersonalDetails", "lclChooseAnAddress.Text")" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclChooseAnAddress.Text")</label>
+                    <span class="ddl-select">
+                        @Html.DropDownListFor(model => model.AddressDetails.AddressChosen, new SelectList(Model.AddressDetails.AddressList, "Key", "Value"), @Html.Translate("Shared/_PersonalDetails", "clickArrow.valid").ToString() + "->", new { id = "fld_ChooseAnAddress" })
+                        <em></em>
+                    </span>
+                </div>
+                <div class="form-row" id="divforHouseNo">
+                    <div class="ddl-form-field @(errorKeys.Contains("errHouseno") ? "ddl-error" : "")">
+                        <label id="lblHouseNo" for="@Html.Translate("Shared/_PersonalDetails", "lclHouseNo.Text")" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclHouseNo.Text")</label>
+                        @Html.TextBoxFor(model => model.AddressDetails.Houseno, new { @class = "ddl-input", id = "fld_Houseno", name = "Houseno", autocomplete = "off", maxLength = "30" })
+                        @if (errorKeys.Contains("errHouseno"))
+                        {
+                            <p id="errHouseno">@Html.ValidationMessage("errHouseno")</p>
+                        }
+                    </div>
+                </div>
+                <p>
+                    @if (Model.AddressDetails.IsStreetVisible)
+                    {
+                        <strong>
+                            <label id="lclStreet" for="@Html.Translate("Shared/_PersonalDetails", "lclStreet.Text")">@Html.Translate("Shared/_PersonalDetails", "lclStreet.Text")</label></strong>
+                        @Html.DisplayFor(model => model.AddressDetails.Street, new { id = "fld_Street", name = "Street" }) <br/><br />
+                
+                        @Html.HiddenFor(model => model.AddressDetails.Street)
+
+                    }
+                    @if (Model.AddressDetails.IsLocalityVisible)
+                    {
+                        <strong>
+                            <label id="lblLocality" for="@Html.Translate("Shared/_PersonalDetails", "lclLocality.Text")">@Html.Translate("Shared/_PersonalDetails", "lclLocality.Text")</label></strong>
+                
+                        @Html.DisplayFor(model => model.AddressDetails.Locality, new { id = "fld_Locality", name = "Locality" }) <br/><br />
+                        @Html.HiddenFor(model => model.AddressDetails.Locality)
+                    }
+                    @if (Model.AddressDetails.IsCityVisible)
+                    {
+                        <strong>
+                            <label id="lblTown" for="@Html.Translate("Shared/_PersonalDetails", "lclTown.Text")">@Html.Translate("Shared/_PersonalDetails", "lclTown.Text")</label></strong>
+                        @Html.DisplayFor(model => model.AddressDetails.City, new { id = "fld_City", name = "City" }) <br/><br />
+                    
+                        @Html.HiddenFor(model => model.AddressDetails.City)
+
+                    }
+                    @if (Model.AddressDetails.IsCountryVisible)
+                    {
+                        <strong>
+                            <label id="lblCountry" for="@Html.Translate("Shared/_PersonalDetails", "lclCountry.Text")">@Html.Translate("Shared/_PersonalDetails", "lclCountry.Text")</label></strong>
+                
+                        @Html.DisplayFor(model => model.AddressDetails.Country, new { id = "fld_Country", name = "Country" }) <br /><br /><br />
+                
+                        @Html.HiddenFor(model => model.AddressDetails.Country)
+                    }
+                </p>
+        
+                    if (!Model.IsJoinPage)
+                    {
+                    <input type="submit" id="btnSaveAddress" name="Command" value="@Html.Translate("Shared/_PersonalDetails", "btnSaveAddressResource1.Text")" class="ddl-button"  />
+                    }
+                    }
+                }
+    }
+</div>
+@Html.HiddenFor(model => model.FindAddressClicked)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine1)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine2)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine3)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine4)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine5)
+@Html.HiddenFor(model => model.CustomerFamilyMasterData.CustomerData[0].MailingAddressLine6)

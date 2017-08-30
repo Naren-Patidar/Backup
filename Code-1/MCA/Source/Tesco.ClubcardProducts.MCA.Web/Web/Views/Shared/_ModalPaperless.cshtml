@@ -1,0 +1,30 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+
+
+@{
+    ViewBag.Title = "_ModalPaperless";
+    ViewBag.dtmTitle = "_ModalPaperless";
+    
+}
+	<div id="paperlessmodal">
+		<div class="copy-wrapper">
+     <h2 id="lblheader">@Html.Translate("Shared/_ModalPaperless", "lblPaperlessHeading")</h2>
+	 <span class="ddl-visually-hidden"></span>
+		<p>@Html.Translate("Shared/_ModalPaperless", "lclPaperlessMessage1")</p>
+		<p class="ddl-t5">@Html.Translate("Shared/_ModalPaperless", "lclPaperlessMessage2")</p>
+	</div>
+	 </div>
+
+  
+ 	<script type="text/javascript">
+	
+	 $(document).ready(function(){	   
+		$("#close-modal").wrap("<div id='cookie-handler'></div>");
+		$("#cookie-handler").on("click",function(event){
+			event.preventDefault();
+            var expires="Mon, 18 Jan 2038 01:23:45 GMT";
+            document.cookie = "popUpStatus=0;expires=" + expires;
+		});
+	 });
+   </script> 
+  

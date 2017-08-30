@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CSCSetUP", "CSCSetUP\CSCSetUP.vdproj", "{D48A0499-EC9F-4094-AC42-4E92632BCC60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCODundeeApplication", "..\CSC\CCODundeeApplication\CCODundeeApplication.csproj", "{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D48A0499-EC9F-4094-AC42-4E92632BCC60}.Debug|Any CPU.ActiveCfg = Debug
+		{D48A0499-EC9F-4094-AC42-4E92632BCC60}.Debug|Any CPU.Build.0 = Debug
+		{D48A0499-EC9F-4094-AC42-4E92632BCC60}.Release|Any CPU.ActiveCfg = Release
+		{D48A0499-EC9F-4094-AC42-4E92632BCC60}.Release|Any CPU.Build.0 = Release
+		{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FCC0C8-91EA-4AD0-BFD2-6072BCE3D7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    var currentPage = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+}
+<legend id="lclHouseholdDetails" class="ddl-h4-like">@Html.Translate("Shared/_PersonalDetails", "lclHouseHoldDetails.Text")</legend>
+
+<p id="householdInfo">@Html.Translate("Shared/_PersonalDetails", "lclNoteText.Text")</p>
+
+<fieldset class="ddl-fieldset">
+   <div class='copy-wrapper'> <legend id="enterAge" class="ddl-h4-like">@Html.Translate("Shared/_PersonalDetails", "lclEnterAge.Text")</legend></div>
+    <div class="form-row">
+        <div class="ddl-form-field ddl-form-field-small">
+            <label class="ddl-label" id="lblAge" data-label="@Html.Translate("Shared/_PersonalDetails", "lclAge.Text")">
+                @Html.Translate("Shared/_PersonalDetails", "lclAge.Text")
+            </label>
+            @if (@Model.YearOfBirth == null)
+            {
+                <input type="text" class="ddl-input" readonly="readonly" id="txtYear" value="@Html.Translate("Shared/_PersonalDetails", "lclSelectYear.Text")" name=" @Html.Translate("Shared/_PersonalDetails", "lclAge.Text")" />
+            }
+            else
+            {
+                @Html.TextBoxFor(model => model.YearOfBirth, new { @class = "ddl-input", @ReadOnly = "True", id = "txtYear", name = @Html.Translate("Shared/_PersonalDetails", "lclAge.Text") })    
+            }
+        </div>
+    </div>
+    @for (int i = 2; i <= 6; i++)
+    {
+        <div class="form-row">
+            <div class="ddl-form-field ddl-form-field-small">
+                <label class="ddl-label" for="select-input-21">@Html.Translate("Shared/_PersonalDetails", "lclPerson" + i + ".Text")</label>
+                <span class="ddl-select">
+                    @if (currentPage.ToLower().Equals("join"))
+                    {
+                        @Html.DropDownListFor(model => model.FamilyMemberDob[i - 2], new SelectList(GeneralUtility.GetHouseholdYearsList(), "Key", "Value"), @Html.Translate("Shared/_PersonalDetails", "ddlHouseholdYearResource1.Text").ToString(), new { @id = "select-input-21", @name = "select-input-21" })
+                    }
+                    else
+                    {
+                        @Html.DropDownListFor(model => model.FamilyMemberDob[i - 2], new SelectList(GeneralUtility.GetHouseholdYearsList(), "Key", "Value", Model.FamilyMemberDob[i - 2]), @Html.Translate("Shared/_PersonalDetails", "ddlHouseholdYearResource1.Text").ToString(), new { @id = "select-input-21", @name = "select-input-21" })
+                    }
+                    <em></em>
+                </span>
+            </div>
+        </div>
+    }
+</fieldset>

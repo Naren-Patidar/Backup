@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <!-- MSI Package Name - Name you will givew to the compiled msi file -->
+  <?define PackageName        	  = "MKTG.ClubcardEventViewer.UKSetup.msi" ?>
+
+  <!-- ProductName - Name that you want to appear in Add Remove Programs, version will be appended -->
+  <?define ProductName        	  = "Tesco MKTG.ClubcardEventViewer.UKSetup" ?>
+
+  <!-- ApplicationName - This will become name of Folder Used, which should match the Service in IIS -->
+  <?define ApplicationName        = "MKTG" ?>
+
+  <!-- Description - the text that will appear in Control Panel-->
+  <?define Description            = "MKTG.ClubcardEventViewer.UKSetup for MKTG" ?>
+
+  <!-- MinFrameworkVersion .net 1.1 or 2.0 etc -->
+  <?define MinFrameworkVersion    = "4.0" ?>
+
+  <!-- Default Version -->
+  <?define Version = "0.0.0.0"?>
+
+  <!-- Default Label -->
+  <?define Label = "BuildVersionLabel"?>
+
+  <!-- Deployed Registry Key Set-->
+  <?define DeployedRegistryKey = "Software\MKTG\Deployed"?>
+  
+  </Include>

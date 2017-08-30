@@ -1,0 +1,115 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model SecurityViewModel
+@{
+    bool isOrderReplacementrequire = MenuConfiguration.Exists[MenuConfigEnum.HideOrderAReplacementPage];
+    bool isSecurityHomePageenabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.SecurityCheck]["HOME"].ConfigurationValue1.Equals("0");
+    bool isblocked = Model.IsBlocked;
+    bool isSuccessful = Model.isSuccessful;
+    HtmlString errormsg = @Html.Translate("RequiredFieldValidator3Resource1");
+}
+<h1 class="ddl-h2-like">@Html.Translate("lclPageHead")</h1>
+<p>@Html.Translate("lclPageHead1")</p>
+@if (isOrderReplacementrequire)
+{
+    <p>@Html.Translate("lclOrderReplacementLink")<a href="/OrderReplacement/index.cshtml">@Html.Translate("lclClickHere")</a></p>
+}
+@if (!isSecurityHomePageenabled)
+{
+    @section leftNavigation
+    {
+        @Html.Partial("_LeftNavigation")
+    }
+}
+<div class="l-beta cf">
+     
+    <div class="l-column">  
+            
+       @using (Html.BeginForm("SecurityHome", "Account", FormMethod.Post, new { @class = "form non-linear cf" }))
+       {
+           @Html.AntiForgeryToken()
+        <fieldset>
+               @if (!isblocked  && !isSuccessful)
+               {
+               <font color="red"> @Html.Translate("lclErrorMsgHead")</font>
+               }
+               @if (isblocked && !isSuccessful)
+               {
+               <font color="red"> @Html.Translate("ErrorMaximumAttemp")</font>
+               }
+          
+             @if (!isblocked )
+             {
+                   <p> @Html.Translate("lclHeaderMsg")</p>
+                 <div id="security1">
+            <label data-label="@Html.Translate("lclAnswer") @Model.firstSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")">
+            @Html.Translate("lclAnswer") @Model.firstSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+            
+            @Html.HiddenFor(model => model.firstSecureDigit)
+             @Html.TextBoxFor(model => model.txtfirstSecureDigit, new { autofocus = "autofocus", style = "width: 200px;height: 30px;", autocomplete = "off", @maxlength = "1", id = "txtSecurityAnswer1", onkeyup = "return SetFocus('txtSecAns2');", onkeydown = "return ValidateNumber(event);" })
+             </label></div>
+               <div id="errormsg1">   
+              <font color="red">@Html.ValidationMessage("requiredmsg1")</font></div>
+                 
+                <div id="security2"> 
+            <label data-label="@Html.Translate("lclAnswer") @Model.secondSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")">
+            @Html.Translate("lclAnswer") @Model.secondSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+             @Html.HiddenFor(model => model.secondSecureDigit)
+            @Html.TextBoxFor(model => model.txtsecondSecureDigit, new { id = "txtSecurityAnswer2", style = "width: 200px;height: 30px;", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('txtSecAns3');", onkeydown = "return ValidateNumber(event);" })
+           
+            </label> </div> 
+                 <div id="errormsg2">
+            <font color="red">@Html.ValidationMessage("requiredmsg2")</font></div>
+             <div id="security3"> 
+            <label data-label="@Html.Translate("lclAnswer") @Model.thirdSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")">
+            @Html.Translate("lclAnswer") @Model.thirdSecureDigit@Html.Translate("lclth") @Html.Translate("lclAnswer1")
+             @Html.HiddenFor(model => model.thirdSecureDigit)
+              @Html.TextBoxFor(model => model.txtthirdSecureDigit, new { id = "txtSecurityAnswer3", style = "width: 200px;height: 30px;", autocomplete = "off", @maxlength = "1", onkeyup = "return SetFocus('btnSbmtNumber');", onkeydown = "return ValidateNumber(event);" })
+             
+            </label>  
+            </div>
+             <div id="errormsg3"><font color="red">@Html.ValidationMessage("requiredmsg3")</font></div>
+                 <input type="submit"  value="@Html.Translate("btnSubmitResource")" class="button right" id=btnSbmtNumbers>
+             }
+             </fieldset>
+        
+       }
+           
+    </div>
+    
+    <div class="l-column">
+        &nbsp;
+    </div>
+    <script type="text/javascript">
+       function ValidateNumber(e) {
+           var evt = (e) ? e : window.event;
+           var charCode = (evt.keyCode) ? evt.keyCode : evt.which;
+           if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+               return false;
+           }
+           return true;
+       };
+       function SetFocus(Index) {
+           if (Index == 'txtSecAns2' && document.getElementById('txtSecurityAnswer1').value != "") {
+               document.getElementById('txtSecurityAnswer2').focus();
+               document.getElementById('errormsg1').style.display = "none";
+           }
+           else if (Index == 'txtSecAns3' && document.getElementById('txtSecurityAnswer2').value != "") {
+               document.getElementById('txtSecurityAnswer3').focus();
+               document.getElementById('errormsg2').style.display = "none";
+           }
+           else if (Index == 'btnSbmtNumber' && document.getElementById('txtSecurityAnswer3').value != "") {
+
+               document.getElementById('btnSbmtNumbers').focus();
+               document.getElementById('errormsg3').style.display = "none";
+           }
+       };
+       </script>    
+</div>
+   
+<p>@Html.Translate("lclspnFooterMsg")</p>
+<p class="note">
+    @Html.Translate("lclCommunicateMsg1Resource1")</p>
+<p class="note">
+    @Html.Translate("lclCommunicateMsg2Resource1")</p>

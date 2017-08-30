@@ -1,0 +1,123 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:e5dd5c3e-afd0-4ada-90e0-70a9b864a64e</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+      <errorXml />
+      <resultXml>
+        <CustomerInformation>
+          <NewDataSet>
+            <Customer>
+              <CustomerID>587774688</CustomerID>
+              <CompleteName>Rnhmewjddhsff </CompleteName>
+              <official_id>100025250</official_id>
+              <postal_code>PH1 1PH</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1927-11-17T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Rnhmewjddhsff</Name1>
+              <Name2 />
+              <Name3>Westdsdas</Name3>
+              <Sex>M</Sex>
+              <MailingAddressLine1>10 JEANFIELD ROAD</MailingAddressLine1>
+              <MailingAddressLine2>PERTH</MailingAddressLine2>
+              <MailingAddressLine3 />
+              <MailingAddressLine4 />
+              <MailingAddressLine5 />
+              <MailingAddressLine6 />
+              <email_address>ghhgewew@hg.vom</email_address>
+              <daytime_phone_number>06997260634</daytime_phone_number>
+              <mobile_phone_number>07898799987</mobile_phone_number>
+              <evening_phone_number>0189788899</evening_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <JoinedStoreID>3072</JoinedStoreID>
+              <MailingAddressPostCode>PH1 1PH</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+            </Customer>
+            <Customer>
+              <CustomerID>587774688</CustomerID>
+              <CompleteName>Rnhmewjddhsff </CompleteName>
+              <official_id>34243435345</official_id>
+              <postal_code>PH1 1PH</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1927-11-17T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Rnhmewjddhsff</Name1>
+              <Name2 />
+              <Name3>Westdsdas</Name3>
+              <Sex>M</Sex>
+              <MailingAddressLine1>10 JEANFIELD ROAD</MailingAddressLine1>
+              <MailingAddressLine2>PERTH</MailingAddressLine2>
+              <MailingAddressLine3 />
+              <MailingAddressLine4 />
+              <MailingAddressLine5 />
+              <MailingAddressLine6 />
+              <email_address>ghhgewew@hg.vom</email_address>
+              <daytime_phone_number>06997260634</daytime_phone_number>
+              <mobile_phone_number>07898799987</mobile_phone_number>
+              <evening_phone_number>0189788899</evening_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <JoinedStoreID>3072</JoinedStoreID>
+              <MailingAddressPostCode>PH1 1PH</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+            </Customer>
+            <Customer>
+              <CustomerID>587774688</CustomerID>
+              <CompleteName>Rnhmewjddhsff </CompleteName>
+              <official_id>49249309</official_id>
+              <postal_code>PH1 1PH</postal_code>
+              <is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+              <family_member_1_dob>1927-11-17T00:00:00+00:00</family_member_1_dob>
+              <TitleEnglish>Mr</TitleEnglish>
+              <Name1>Rnhmewjddhsff</Name1>
+              <Name2 />
+              <Name3>Westdsdas</Name3>
+              <Sex>M</Sex>
+              <MailingAddressLine1>10 JEANFIELD ROAD</MailingAddressLine1>
+              <MailingAddressLine2>PERTH</MailingAddressLine2>
+              <MailingAddressLine3 />
+              <MailingAddressLine4 />
+              <MailingAddressLine5 />
+              <MailingAddressLine6 />
+              <email_address>ghhgewew@hg.vom</email_address>
+              <daytime_phone_number>06997260634</daytime_phone_number>
+              <mobile_phone_number>07898799987</mobile_phone_number>
+              <evening_phone_number>0189788899</evening_phone_number>
+              <SSN />
+              <PassportNo />
+              <ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+              <RaceID>0</RaceID>
+              <JoinedStoreID>3072</JoinedStoreID>
+              <MailingAddressPostCode>PH1 1PH</MailingAddressPostCode>
+              <CustomerUseStatusID>1</CustomerUseStatusID>
+              <CustomerMailStatus>7</CustomerMailStatus>
+              <CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+              <CustomerEmailStatus>7</CustomerEmailStatus>
+            </Customer>
+          </NewDataSet>
+          <NewDataSet>
+            <NoOFFamilyMembers>
+              <number_of_household_members>1</number_of_household_members>
+            </NoOFFamilyMembers>
+          </NewDataSet>
+        </CustomerInformation>
+      </resultXml>
+      <rowCount>2</rowCount>
+    </GetCustomerDetailsResponse>
+  </s:Body>
+</s:Envelope>

@@ -1,0 +1,349 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+    var HideConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Mandatory_fields];
+    var JoinConfigMandate = DBConfigurationManager.Instance[DbConfigurationTypeEnum.JoinEmailMandatory];
+    bool islocale = false;
+    islocale = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsLocale.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    var races = Races.List as List<Race>;
+    var langauges = ISOLanguages.List as List<ISOLanguage>;
+    var currentPage = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+}
+
+@if (HideConfig[DbConfigurationItemNames.ChinaHiddenFunctionalityTitle].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row">
+        <div class="ddl-form-field ddl-form-field-small @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Title") ? "ddl-error" : "")" id="divforTitle">
+            <label for="fld_title" id="lblTitle" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclTitle.Text")</label>
+            <span class="ddl-select">
+                @if (Model.CustomerFamilyMasterData == null)
+                {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].Title, new SelectList(Model.Titles, "Key", "Value"), @Html.Translate("Shared/_PersonalDetails", "lclSelectTitle.Text").ToString(), new { id = "fld_title", })
+                }
+                else
+                {
+                    if (!Model.IsJoinPage)
+                    {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].Title, new SelectList(Model.Titles, "Key", "Value", Model.CustomerFamilyMasterData.CustomerData[0].Title), new { id = "fld_title" })
+                    }
+                    else
+                    {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].Title, new SelectList(Model.Titles, "Key", "Value", Model.CustomerFamilyMasterData.CustomerData[0].Title), @Html.Translate("_PersonalDetails", "lclSelectTitle.Text").ToString(), new { id = "fld_title" })
+                    }
+                }
+                <em></em></span>
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Title"))
+            {
+                <p id="errTitle">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].Title)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideFirstName].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforFirstname">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].FirstName") ? "ddl-error" : "")">
+            <label for="fld_firstName" id="lblFname" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclFirstName.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].FirstName, new { @class = "ddl-input", id = "fld_firstName", name = "fld_firstName", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.Name1].ConfigurationValue2.ToString(), placeholder = HideConfigMandate[DbConfigurationItemNames.Name1].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].FirstName"))
+            {
+                <p id="errFirstName">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].FirstName)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.ChinaHiddenFunctionalityMiddleName].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforInitial">
+        <div class="ddl-form-field ddl-form-field-small @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Initial") ? "ddl-error" : "")">
+            <label for="fld_initial" id="lblinitial" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclMiddleInitials.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].Initial, new { @class = "ddl-input", id = "fld_initial", name = "fld_initial", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.Name2].ConfigurationValue2.ToString(), placeholder = HideConfigMandate[DbConfigurationItemNames.Name2].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Initial"))
+            {
+                <p id="errInitial">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].Initial)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideSurName].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforLastname">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].LastName") ? "ddl-error" : "")">
+            <label for="fld_lastName" id="lblLastname" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclSurName.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].LastName, new { @class = "ddl-input", id = "fld_lastName", name = "fld_lastName", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.Name3].ConfigurationValue2.ToString(), placeholder = HideConfigMandate[DbConfigurationItemNames.Name3].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (@Model.HiddenMessage != null)
+            {
+                if (@Model.HiddenMessage == "true" && !Model.IsJoinPage)
+                { 
+				<div class="copy-wrapper"></div>
+                <p id="sMesg" class="message-level-2 message-inform">
+                    @Html.Translate("Shared/_PersonalDetails", "ReplacementText") @Html.ActionLink(Html.Translate("Shared/_PersonalDetails", "orderANewCard").ToString(), "OrderANewCard")
+                </p>
+				
+                }
+            }
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].LastName"))
+            {
+                <p id="errSurName">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].LastName)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideDOB].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].FamilyMemberDOB1") ? "ddl-error" : "") @(errorKeys.Contains("errDoB") ? "ddl-error" : "") id="divforDOB">
+        <fieldset class="ddl-fieldset ddl-inline-fieldset date-of-birth-field">
+            <legend>@Html.Translate("Shared/_PersonalDetails", "lclDOB.Text")</legend>
+            <div class="ddl-form-field" id="divforDay">
+                <label for="fld_dayOfBirth" id="lblDayofBirth" class="ddl-label">
+                    Day Of Birth</label>
+                <span class="ddl-select">
+                    @Html.DropDownListFor(model => model.DayOfBirth, new SelectList(GeneralUtility.GetDays(), "Key", "Value", Model.DayOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectDay.Text").ToString(), new { id = "fld_dayOfBirth" })
+                    <em></em></span>
+            </div>
+            <div class="ddl-form-field" id="divforMonthofBirth">
+                <label for="fld_monthOfBirth" id="lblMonthofBirth" class="ddl-label">
+                    Month Of Birth</label>
+                <span class="ddl-select">
+                    @Html.DropDownListFor(model => model.MonthOfBirth, new SelectList(GeneralUtility.GetMonthsList(), "Key", "Value", Model.MonthOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectMonth.Text").ToString(), new { id = "fld_monthOfBirth" })
+                    <em></em></span>
+            </div>
+            <div class="ddl-form-field" id="divforYearofBirth">
+                <label for="fld_yearOfBirth" id="lblYearofBirth" class="ddl-label">
+                    Year Of Birth</label>
+                <span class="ddl-select">
+                    @Html.DropDownListFor(model => model.YearOfBirth, new SelectList(GeneralUtility.GetYearsList(), "Key", "Value", Model.YearOfBirth), @Html.Translate("Shared/_PersonalDetails", "lclSelectYear.Text").ToString(), new { id = "fld_yearOfBirth" })
+                    <em></em></span>
+            </div>
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].FamilyMemberDOB1"))
+            {
+                <p id="errDoB">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].FamilyMemberDOB1)</p>
+            }
+            else if (errorKeys.Contains("errDoB"))
+            {
+                <p id="errDoB">@Html.ValidationMessage("errDoB")</p>
+            }
+        </fieldset>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideGender].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row">
+        <fieldset class="ddl-fieldset ddl-inline-fieldset @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Sex") ? "ddl-error" : "")">
+            <legend>@Html.Translate("Shared/_PersonalDetails", "lclGender.Text")</legend>
+            <div class="form-row" id="divforSex">
+                @foreach (var ml in Model.Genders)
+                {                
+                    <div class="ddl-form-field ddl-radio">
+                        <label class="ddl-label" for="@ml.Key" id="lblSex">@ml.Key</label>
+                        <span class="ddl-radio">
+                            @Html.RadioButtonFor(m => m.CustomerFamilyMasterData.CustomerData[0].Sex, ml.Value, new { @id = ml.Key, name = ml.Key })
+                            <em></em></span>
+                    </div>               
+                }
+            </div>
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].Sex"))
+            {
+                <p id="errGender">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].Sex)</p>
+            }
+        </fieldset>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HidePrimaryId].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforPrimaryid">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].SSN") ? "ddl-error" : "")">
+            <label for="fld_PrimaryId" id="lblPrimaryid" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclPrimID.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].SSN, new { @class = "ddl-input", id = "fld_PrimaryId", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.PrimId].ConfigurationValue2.ToString(), placeholder = HideConfigMandate[DbConfigurationItemNames.PrimaryId].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].SSN"))
+            {
+                <p id="errPrimaryId">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].SSN)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideSecondaryId].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforSecondaryId">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].PassportNo") ? "ddl-error" : "")">
+            <label for="fld_SecondaryId" id="SecondaryId" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclSecID.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].PassportNo, new { @class = "ddl-input", id = "fld_SecondaryId", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.SecId].ConfigurationValue2.ToString(), placeholder = HideConfigMandate[DbConfigurationItemNames.SecondaryId].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].PassportNo"))
+            {
+                <p id="errSecondayId">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].PassportNo)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HidePreferredLanguage].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforPreferredLanguage">
+        <div class="ddl-form-field ddl-form-field-medium @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].ISOLanguageCode") ? "ddl-error" : "")">
+            <label for="fld_PreferredLanguage" id="lblPreferredLanguage" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclPrefLanguage.Text")</label>
+            <span class="ddl-select">
+                @if (langauges != null && langauges.Count > 0)
+                {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].ISOLanguageCode, new SelectList(ISOLanguages.List, "ISOLanguageCode", "ISOLanguageDescEnglish", Model.CustomerFamilyMasterData.CustomerData[0].ISOLanguageCode), "- Select language -", new { id = "fld_PreferredLanguage" })
+                }
+                else
+                {
+                    @Html.DropDownList("ISOLanguage", new List<SelectListItem>
+                    {
+                        new SelectListItem{ Text = "- Select language -", Value = "0" }
+                    })
+                }
+                <em></em></span>
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].ISOLanguageCode"))
+            {
+                <p id="errLanguage">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].ISOLanguageCode)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideRace].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforRace">
+        <div class="ddl-form-field ddl-form-field-medium @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].RaceID") ? "ddl-error" : "")">
+            <label for="fld_Race" id="lblRace" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclRace.Text")</label>
+            <span class="ddl-select">
+                @if (races != null && races.Count > 0)
+                {
+                    if (islocale)
+                    {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].RaceID, new SelectList(Races.List, "RaceID", "Racedesclocal", Model.CustomerFamilyMasterData.CustomerData[0].RaceID), @Html.Translate("Shared/_PersonalDetails", "selectrace").ToString(), new { id = "fld_Race" })
+                    }
+                    else
+                    {
+                    @Html.DropDownListFor(model => model.CustomerFamilyMasterData.CustomerData[0].RaceID, new SelectList(Races.List, "RaceID", "Racedescenglish", Model.CustomerFamilyMasterData.CustomerData[0].RaceID), @Html.Translate("Shared/_PersonalDetails", "selectrace").ToString(), new { id = "fld_Race" })
+                    }
+                }
+                else
+                {
+                    @Html.DropDownList("Race", new List<SelectListItem>
+                    {
+                        new SelectListItem{ Text = @Html.Translate("Shared/_PersonalDetails", "selectrace").ToString(), Value = "0" }
+                    })
+                }
+                <em></em></span>
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].RaceID"))
+            {
+                <p id="errRace">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].RaceID)</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideEmail].ConfigurationValue1.Equals("0"))
+{
+    if (Model.IsJoinPage)
+    {    
+    <div class="form-row" id="divforJoinEmail">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EmailAddress") ? "ddl-error" : "")">
+            <label for="fld_Email" id="lblJoinEmail" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclEmailAddress.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].EmailAddress, new { @class = "ddl-input", id = "fld_Email", name = "Email", autocomplete = "off", placeholder = JoinConfigMandate[DbConfigurationItemNames.EmailAddress].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EmailAddress"))
+            {
+                <p id="errJoinEmail">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].EmailAddress)</p>
+            }
+        </div>
+    </div>
+    }
+    else
+    {
+    <div class="form-row" id="divforEmail">
+        <div class="ddl-form-field ddl-form-field-large @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EmailAddress") || errorKeys.Contains("errEmail") ? "ddl-error" : "")">
+            <label for="fld_Email" id="lblEmail" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclEmailAddress.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].EmailAddress, new { @class = "ddl-input", id = "fld_Email", name = "Email", autocomplete = "off", placeholder = HideConfigMandate[DbConfigurationItemNames.EmailAddress].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EmailAddress"))
+            {
+                <p class="error" id="errorEmail">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].EmailAddress)</p>
+            }
+            @if (errorKeys.Contains("errEmail"))
+            {
+                <p id="errorEmailPref">@Html.ValidationMessage("errEmail")</p>
+            }
+        </div>
+    </div>
+    }
+}
+@if (HideConfig[DbConfigurationItemNames.HideMobilePhoneNo].ConfigurationValue1.Equals("0"))
+{  
+    <div class="form-row" id="divforMobile">
+        <div class="ddl-form-field ddl-form-field-medium @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MobileNumber") || errorKeys.Contains("errMobile") ? "ddl-error" : "")">
+            <label for="fld_Mobilenumber" id="lblMobile" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclMobilePhoneNo.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].MobileNumber, new { @type="tel",@class = "ddl-input", id = "fld_Mobilenumber", name = "Mobilenumber", placeholder = HideConfigMandate[DbConfigurationItemNames.MobilePhoneNumber].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "txtinputOptional").ToString() , autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.MobilePhoneNumber].ConfigurationValue2.ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].MobileNumber"))
+            {
+                <p id="errMobile">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].MobileNumber)</p>  
+            }
+            @if (errorKeys.Contains("errMobile"))
+            {  
+                <p id="errMobilePref">@Html.ValidationMessage("errMobile")</p>
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideDayTimePhoneNo].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divforDaytimenumber">
+        <div class="ddl-form-field ddl-form-field-medium @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].DayTimePhonenumber") ? "ddl-error" : "")">
+            <label for="fld_DaytimePhonenumber" id="lblDaytimePhonenumber" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclDayTimePhoneNo.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].DayTimePhonenumber, new { @type="tel",@class = "ddl-input", id = "fld_DaytimePhonenumber", autocomplete = "off", name = "Daytimenumber", placeholder = HideConfigMandate[DbConfigurationItemNames.DaytimePhoneNumber].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "lclDayTimePhoneNoExampleResource1.Text").ToString(), maxLength = LengthConfig[DbConfigurationItemNames.DaytimePhoneNumber].ConfigurationValue2.ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].DayTimePhonenumber"))
+            {
+                <p id="errDaytimephNo">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].DayTimePhonenumber)</p>  
+            }
+        </div>
+    </div>
+}
+@if (HideConfig[DbConfigurationItemNames.HideEveningPhoneNo].ConfigurationValue1.Equals("0"))
+{
+    <div class="form-row" id="divEveningphonenumber">
+        <div class="ddl-form-field ddl-form-field-medium @(errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EveningPhonenumber") ? "ddl-error" : "")">
+            <label for="fld_Eveningphonenumber" id="lblEveningphonenumber" class="ddl-label">@Html.Translate("Shared/_PersonalDetails", "lclEvnPhoneNo.Text")</label>
+            @Html.TextBoxFor(model => model.CustomerFamilyMasterData.CustomerData[0].EveningPhonenumber, new { @type="tel",@class = "ddl-input", id = "fld_Eveningphonenumber", autocomplete = "off", name = "Eveningnumber", placeholder = HideConfigMandate[DbConfigurationItemNames.EveningPhoneNumber].ConfigurationValue1.Equals("1") ? "" : @Html.Translate("Shared/_PersonalDetails", "lclEveningPhoneNoExampleResource1.Text").ToString(), maxLength = LengthConfig[DbConfigurationItemNames.EveningPhoneNumber].ConfigurationValue2.ToString() })
+            @if (errorKeys.Contains("CustomerFamilyMasterData.CustomerData[0].EveningPhonenumber"))
+            {
+                <p id="errEveNo">@Html.ValidationMessageFor(model => model.CustomerFamilyMasterData.CustomerData[0].EveningPhonenumber)</p>
+            }
+        </div>
+    </div>
+}
+@Html.HiddenFor(model => model.HiddenAddressLine1)
+@Html.HiddenFor(model => model.HiddenAddressLine2)
+@Html.HiddenFor(model => model.HiddenAddressLine3)
+@Html.HiddenFor(model => model.HiddenAddressLine4)
+@Html.HiddenFor(model => model.HiddenAddressLine5)
+@Html.HiddenFor(model => model.HiddenAddressLine6)
+@Html.HiddenFor(model => model.HiddenFirstName)
+@Html.HiddenFor(model => model.HiddenMidName)
+@Html.HiddenFor(model => model.HiddenSurname)
+@Html.HiddenFor(model => model.HiddenDOB)
+@Html.HiddenFor(model => model.HiddenSex)
+@Html.HiddenFor(model => model.HiddenEmail)
+@Html.HiddenFor(model => model.HiddenPostcode)
+@Html.HiddenFor(model => model.HiddenEveningPhoneNumber)
+@Html.HiddenFor(model => model.HiddenSSN)
+@Html.HiddenFor(model => model.HiddenMobileNumber)
+@Html.HiddenFor(model => model.HiddenRaceID)
+@Html.HiddenFor(model => model.HiddenPassportNo)
+@Html.HiddenFor(model => model.HiddenISOLanguageCode)
+@Html.HiddenFor(model => model.HiddenSendEmailForAllergy)
+@Html.HiddenFor(model => model.HiddenSentEmail)
+@Html.HiddenFor(model => model.HiddenSendEmailForDietary)
+@Html.HiddenFor(model => model.HiddenDietary)
+@Html.HiddenFor(model => model.HiddenAllergy)
+@Html.HiddenFor(model => model.HiddenDietaryPreferences)
+@Html.HiddenFor(model => model.HiddenAllergyPreferences)
+@Html.HiddenFor(model => model.HiddenEmailPref)
+@Html.HiddenFor(model => model.HiddenMobilePref)
+@Html.HiddenFor(model => model.HiddenPostPref)

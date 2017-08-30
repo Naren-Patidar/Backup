@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errAddFromCardRange" xml:space="preserve">
+    <value>Please Enter From Card Range TH</value>
+  </data>
+  <data name="errAddLength" xml:space="preserve">
+    <value>Please Enter valid Card Length  TH.</value>
+  </data>
+  <data name="errAddName" xml:space="preserve">
+    <value>Please Enter Card Type Name  TH.</value>
+  </data>
+  <data name="errAddToCardRange" xml:space="preserve">
+    <value>Please Enter From Card Range  TH.</value>
+  </data>
+  <data name="errMsgGroupName" xml:space="preserve">
+    <value>Please Enter Group Name  TH.</value>
+  </data>
+  <data name="errMsgUserName" xml:space="preserve">
+    <value>Please Enter Valid UserName to validate  TH</value>
+  </data>
+  <data name="errMsgvalid" xml:space="preserve">
+    <value>Please Enter a valid Card Type  TH.</value>
+  </data>
+  <data name="errMsgvalidCardRange" xml:space="preserve">
+    <value>Please Enter a valid Card Range  TH.</value>
+  </data>
+  <data name="errMsgvalidDes" xml:space="preserve">
+    <value>Please Enter a valid Description  TH.</value>
+  </data>
+  <data name="ValidGrpMsg" xml:space="preserve">
+    <value>Please Enter a valid Group NameTH.</value>
+  </data>
+  <data name="errMsgEditAddLimit" xml:space="preserve">
+    <value>Please enter a numeric value  TH.</value>
+  </data>
+  <data name="errMsgEditGroupName" xml:space="preserve">
+    <value>Please Enter Group Name  TH.</value>
+  </data>
+  <data name="errMsgEditSubLimit" xml:space="preserve">
+    <value>Please enter a numeric value  TH.</value>
+  </data>
+  <data name="errMsgEditvalid" xml:space="preserve">
+    <value>Please Enter a valid String  TH.</value>
+  </data>
+  <data name="errMsgStoreName" xml:space="preserve">
+    <value>Please Enter a valid Store Name  TH.</value>
+  </data>
+  <data name="errMsgTescoStore" xml:space="preserve">
+    <value>Please Enter valid Store Number  TH.</value>
+  </data>
+  <data name="errMsgWelcomePoints" xml:space="preserve">
+    <value>Please Enter Valid Welcome Points  TH.</value>
+  </data>
+  <data name="lnkFindUser" xml:space="preserve">
+    <value>ค้นหาผู้ใช้งาน</value>
+  </data>
+  <data name="lnkCustomerDtl" xml:space="preserve">
+    <value>Customer Details thai</value>
+  </data>
+  <data name="lnkCustomerPref" xml:space="preserve">
+    <value>Customer preferences Thai</value>
+  </data>
+  <data name="lnkFindCustomer" xml:space="preserve">
+    <value>Find Customer thai</value>
+  </data>
+  <data name="lnkAddGroup" xml:space="preserve">
+    <value>เพิ่มกลุ่ม</value>
+  </data>
+  <data name="lnkAddinError" xml:space="preserve">
+    <value>Address in Error  thai</value>
+  </data>
+  <data name="lnkAddUser" xml:space="preserve">
+    <value>Aเพิ่มผู้ใช้งาน</value>
+  </data>
+  <data name="lnkBanned" xml:space="preserve">
+    <value>Banned  thai</value>
+  </data>
+  <data name="lnkCardNo" xml:space="preserve">
+    <value>Card No thai</value>
+  </data>
+  <data name="lnkCardRange" xml:space="preserve">
+    <value>ช่วงตัวเลขบัตร</value>
+  </data>
+  <data name="lnkCardType" xml:space="preserve">
+    <value>ประเภทของบัตร</value>
+  </data>
+  <data name="lnkCHousehold" xml:space="preserve">
+    <value>Household ID thai</value>
+  </data>
+  <data name="lnkCurrPoints" xml:space="preserve">
+    <value>Current Points thai</value>
+  </data>
+  <data name="lnkCustomerPts" xml:space="preserve">
+    <value>Customer Points thai</value>
+  </data>
+  <data name="lnkCustType" xml:space="preserve">
+    <value>Customer Type:</value>
+  </data>
+  <data name="lnkDuplicate" xml:space="preserve">
+    <value>Duplicate  thai</value>
+  </data>
+  <data name="lnkFindGroup" xml:space="preserve">
+    <value>ค้นหากลุ่ม</value>
+  </data>
+  <data name="lnkGroups" xml:space="preserve">
+    <value>Groups  thai</value>
+  </data>
+  <data name="lnkJoin" xml:space="preserve">
+    <value>Create New Customer  thai</value>
+  </data>
+  <data name="lnkJoinDate" xml:space="preserve">
+    <value>Join Date  thai</value>
+  </data>
+  <data name="lnkLastUpdateBy" xml:space="preserve">
+    <value>Last Updated By thai</value>
+  </data>
+  <data name="lnkLeftScheme" xml:space="preserve">
+    <value>Left Scheme  thai</value>
+  </data>
+  <data name="lnkName" xml:space="preserve">
+    <value>Name  thai</value>
+  </data>
+  <data name="lnkresetpass" xml:space="preserve">
+    <value>Reset Password  thai</value>
+  </data>
+  <data name="lnkStores" xml:space="preserve">
+    <value>Stores thai</value>
+  </data>
+  <data name="lnkUpdateDate" xml:space="preserve">
+    <value>Last Updated Date thai</value>
+  </data>
+  <data name="lnkUsers" xml:space="preserve">
+    <value>Users thai</value>
+  </data>
+  <data name="lnkViewPoints" xml:space="preserve">
+    <value>View Points thai</value>
+  </data>
+  <data name="lnkXmasSaver" xml:space="preserve">
+    <value>Christmas Saver thai</value>
+  </data>
+  <data name="lnkAdmin" xml:space="preserve">
+    <value>System Admin  thai</value>
+  </data>
+  <data name="lnkCustomerCards" xml:space="preserve">
+    <value>Customer Card thais</value>
+  </data>
+  <data name="lblScreenMenu" xml:space="preserve">
+    <value>Screen Menu  thai</value>
+  </data>
+  <data name="AlertforPrimaryCard" xml:space="preserve">
+    <value>Primary Card has been changed successfullyTH</value>
+  </data>
+  <data name="AlertMsg1" xml:space="preserve">
+    <value>Your card has been successfully blocked and cannot be used for redemptionTH</value>
+  </data>
+  <data name="AlertMsg2" xml:space="preserve">
+    <value>Your cad status has been changed successfullyTH</value>
+  </data>
+  <data name="ConfirmationStatus" xml:space="preserve">
+    <value>Are you sure you would like to change your card status toTH</value>
+  </data>
+  <data name="ReqReasion" xml:space="preserve">
+    <value>Please select a request reasonTH</value>
+  </data>
+  <data name="ReqType" xml:space="preserve">
+    <value>Please select a request typeTH</value>
+  </data>
+  <data name="ReqTypeandReasion" xml:space="preserve">
+    <value>Please select a request type and a request reasonTH</value>
+  </data>
+  <data name="ValidateReqFields" xml:space="preserve">
+    <value>Please enter all required fieldsTH.</value>
+  </data>
+  <data name="CusSaved" xml:space="preserve">
+    <value>Customer has savedTH</value>
+  </data>
+  <data name="FarNove" xml:space="preserve">
+    <value>so far for NovemberTH</value>
+  </data>
+  <data name="stmt" xml:space="preserve">
+    <value>statementTH</value>
+  </data>
+  <data name="ValidateNumValue" xml:space="preserve">
+    <value>Please enter a numeric valueTH</value>
+  </data>
+  <data name="CardOption" xml:space="preserve">
+    <value>Card ReplacementTH</value>
+  </data>
+  <data name="lnkDelink" xml:space="preserve">
+    <value>De-Link AccountTH</value>
+  </data>
+  <data name="lnkCustomerCoupons" xml:space="preserve">
+    <value>Customer CouponsTH</value>
+  </data>
+  <data name="lnkAccounts" xml:space="preserve">
+    <value>Account and operations reports</value>
+  </data>
+  <data name="lnkPoints" xml:space="preserve">
+    <value>Points Earned During A period</value>
+  </data>
+  <data name="lnkPromotional" xml:space="preserve">
+    <value>Promotional Code</value>
+  </data>
+  <data name="lnkReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="EnddategreaterthanTodaydate" xml:space="preserve">
+    <value>End date should not be greater than Today dateTH</value>
+  </data>
+  <data name="EnddateshouldbegreaterthanStartdate" xml:space="preserve">
+    <value>End date should be greater than Start dateTH</value>
+  </data>
+  <data name="InvalidEnddate" xml:space="preserve">
+    <value>Invalid End dateTH</value>
+  </data>
+  <data name="InvalidPeriod" xml:space="preserve">
+    <value>Invalid PeriodTH</value>
+  </data>
+  <data name="InvalidStartdate" xml:space="preserve">
+    <value>Invalid Start dateTH</value>
+  </data>
+  <data name="InvalidWeek" xml:space="preserve">
+    <value>Invalid WeekTH</value>
+  </data>
+  <data name="StartdateshouldnotbegreaterthanTodaydate" xml:space="preserve">
+    <value>Start date should not be greater than Today dateTH</value>
+  </data>
+  <data name="Datediffindays" xml:space="preserve">
+    <value>Date Difference Shouldn't Be More Than 42 Days</value>
+  </data>
+  <data name="lnkpromotion" xml:space="preserve">
+    <value>Promotion Code</value>
+  </data>
+  <data name="ValidDomain" xml:space="preserve">
+    <value>Please select the domain</value>
+  </data>
+  <data name="ValidPwd" xml:space="preserve">
+    <value>Please enter a password</value>
+  </data>
+  <data name="ValidUsername" xml:space="preserve">
+    <value>Please enter a user ID</value>
+  </data>
+  <data name="lclMPDesc" xml:space="preserve">
+    <value>เราขอยืนยันว่าเราจะไม่ส่งข้อมูลของคุณให้กับองค์กรอื่นนอกเหนือไปจากกลุ่มบริษัทเทสโก้ เพื่อวัตถุประสงค์ทางการตลาด                                                                                                                                  คุณสามารถเปลี่ยนแปลงข้อมูลของคุณได้ตลอดเวลาโดยเลือกที่ตัวเลือกด้านล่าง                                          กรุณาเลือกรายการ ที่คุณไม่ต้องการได้รับการติดต่อจากเราในทุกช่องทาง       </value>
+  </data>
+</root>

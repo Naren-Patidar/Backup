@@ -1,0 +1,42 @@
+.ddl-with-noticiation-bar {
+	padding-top: 55px !important;
+
+	#ddl-global-header {
+		top: 34px;
+	}
+
+	.ddl-noticiation-bar {
+		background: $ddl-blue2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 8px 0;
+		z-index: 9999;
+		min-height: 55px;
+
+		p {
+			color: $ddl-white1;
+			text-align: center;
+			padding: 0;
+
+			a {
+				color: $ddl-white1;
+
+				&:before {
+					background: $ddl-white1;
+				}
+
+				&:after {
+					background: $ddl-white1;
+				}
+
+				&:hover {
+					color: $ddl-white1;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+}

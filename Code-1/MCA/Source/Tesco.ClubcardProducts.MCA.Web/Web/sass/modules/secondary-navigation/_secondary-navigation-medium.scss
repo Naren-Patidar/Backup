@@ -1,0 +1,66 @@
+#secondary-navigation {
+	
+	.nav-header{
+		display: none;
+	}
+
+	ul {
+
+		li {
+			border: 1px solid $ddl-border-color-1;
+			border-width: 0 0 1px 0;
+
+			a {
+
+				&.accordion-header { 
+					
+					&:after {
+						content: "\e013";
+						border: 2px solid $ddl-link-colour;
+						margin-top: -5px;
+					}
+
+					&.current-page {//This class comes from the back-end. So the nav remains open when we are in that section
+						text-decoration: none;
+						
+						&:after {
+					    	content: "\e00e";
+						}
+					}
+				}
+
+				&.current-page {
+					background: $ddl-link-colour-hover;
+					color: $ddl-white1;
+				}
+
+				&.accordion-header.current-page {
+					background: none;
+					color: $ddl-link-colour;
+				}
+			}
+
+			nav.current-page {
+				max-height: 1000px;
+
+				a.current-page {
+					background: $ddl-link-colour-hover;
+					color: $ddl-white1;
+				}
+			}
+
+			ul {
+				border: none;
+				padding: 0 !important;
+
+				li {
+					border-width: 0;
+
+					a {
+						padding: 15px 10px 15px 30px;
+					}
+				}
+			}
+		}
+	}
+}

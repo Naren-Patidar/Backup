@@ -1,0 +1,17 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tempuri.org/IClubcardOnlineService/AccountFindByClubcardNumberResponse</a:Action>
+    <a:RelatesTo>urn:uuid:8c44143b-995d-43a5-a906-7e803a7579b1</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <AccountFindByClubcardNumberResponse xmlns="http://tempuri.org/">
+      <AccountFindByClubcardNumberResult xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <b:ErrorLogID i:nil="true" />
+        <b:ErrorMessage i:nil="true" />
+        <b:ErrorStatusCode i:nil="true" />
+        <b:ContactDetailMatchStatus>N</b:ContactDetailMatchStatus>
+        <b:Matched>true</b:Matched>
+      </AccountFindByClubcardNumberResult>
+    </AccountFindByClubcardNumberResponse>
+  </s:Body>
+</s:Envelope>

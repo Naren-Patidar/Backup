@@ -1,0 +1,41 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>37831590</CustomerID>
+            <ClubcardID>634004024007890751</ClubcardID>
+            <CardIssuedDate>2015-07-10T10:06:03.193+01:00</CardIssuedDate>
+            <TitleEnglish>Mr</TitleEnglish>
+            <Name1>Bitch</Name1>
+            <Name2>Sa</Name2>
+            <Name3>bitch</Name3>
+            <MailingAddressLine1>33 Chambers Company GROVE</MailingAddressLine1>
+            <MailingAddressLine2>WELWYN GARDEN CITY</MailingAddressLine2>
+            <MailingAddressLine3>WELWYN GARDEN CITY</MailingAddressLine3>
+            <MailingAddressLine4>WELWYN GARDEN CITY</MailingAddressLine4>
+            <MailingAddressLine5>WELWYN GARDEN CITY</MailingAddressLine5>
+            <MailingAddressPostCode>AL7 4FG</MailingAddressPostCode>
+            <DateOfBirth>1979-06-16T00:00:00+01:00</DateOfBirth>
+            <CurrentPointsBalanceQty>2852</CurrentPointsBalanceQty>
+            <PreviousPointsBalanceQty>2554</PreviousPointsBalanceQty>
+            <JoinedDate>2012-01-16T00:00:00+00:00</JoinedDate>
+            <HouseHoldID>2157</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteID>4</JoinRouteID>
+            <JoinRouteDesc>Privilegecards</JoinRouteDesc>
+            <PromotionCode />
+          </Customer>
+        </NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

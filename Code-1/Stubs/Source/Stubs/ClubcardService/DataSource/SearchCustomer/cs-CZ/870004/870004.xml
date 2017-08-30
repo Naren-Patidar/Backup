@@ -1,0 +1,40 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+        <NewDataSet>
+          <Customer>
+            <CustomerID>870004</CustomerID>
+            <ClubcardID>634009540005385754</ClubcardID>
+            <CardIssuedDate>2014-03-22T00:00:00+01:00</CardIssuedDate>
+            <TitleEnglish />
+            <Name1>Zoltán</Name1>
+            <Name2 />
+            <Name3>Adrienn Zol</Name3>
+            <MailingAddressLine1>HEGEDŰS</MailingAddressLine1>
+            <MailingAddressLine2>20</MailingAddressLine2>
+            <MailingAddressLine3 />
+            <MailingAddressLine4>KAPOSVÁR</MailingAddressLine4>
+            <MailingAddressLine5>HUNGARY</MailingAddressLine5>
+            <MailingAddressPostCode>7400</MailingAddressPostCode>
+            <DateOfBirth>1984-11-23T00:00:00+01:00</DateOfBirth>
+            <JoinedDate>2010-09-18T00:00:00+02:00</JoinedDate>
+            <HouseHoldID>870004</HouseHoldID>
+            <CustomerUseStatusID>1</CustomerUseStatusID>
+            <JoinRouteDesc />
+            <PromotionCode />
+            <AmendBy>System</AmendBy>
+            <AmendDateTime>20/02/2015 12:48</AmendDateTime>
+          </Customer>
+        </NewDataSet>
+      </resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

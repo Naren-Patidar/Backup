@@ -1,0 +1,173 @@
+#content
+{
+
+}
+
+.ccPointDetails #vouchValues
+{
+	margin-top:-2px;
+}
+ul.contacts input
+{
+	margin-left:-12px;
+}
+#leftNav
+{
+	margin-bottom:-1200px;
+	/*margin-bottom:-1470px;*/
+}
+ul.customer li div.customerSurName .inputFields .errorFields, ul.customer li div.customerFirstName .inputFields .errorFields
+{
+	width:100%;
+}
+ul.customer div.customerSurName .inputFields input, ul.customer div.customerFirstName .inputFields input
+{
+	margin-left:0px;
+}
+ul.customer div.customerSurName
+{
+	margin-bottom:5px;
+}
+ul.customer .gender input
+{
+	border:none;
+	margin-left:-5px;
+	margin-top:-1px;
+}
+/*** Newly added classes for point summary 1.1 release ****/
+
+#tc_christmas_total .tc_pricecell, .tc_points table th, .tc_box.tc_grey table td, #tc_standard_reward .tc_pricecell
+{
+    behavior: url("./js/iepngfix.htc");
+}
+#tc_main
+{
+}
+#tc_right
+{
+    float: left;
+    width: 760px;
+}
+.tc_half
+{
+    width: 50%;
+}
+.tc_points
+{
+    margin: 7px;
+}
+.tc_box.tc_grey
+{
+    margin: 5px;
+    padding: 5px 8px 0px 8px;
+    width: 345px;
+}
+.tc_posup
+{
+    bottom: 12px;
+    left: 2px;
+    position: relative;
+    width: 336px;
+}
+.tc_box .tc_header
+{
+    height: 23px;
+}
+.tc_box .tc_crbottomright, .tc_box .tc_crbottomleft
+{
+    /*bottom: -5px;*/
+}
+.tc_box.tc_grey table td
+{
+    background: url("../I/td-price-bg.png") no-repeat scroll top center transparent;
+    vertical-align: top;
+    padding-top: 6px;
+}
+.tc_header.tc_darkblue
+{
+    width: 341px;
+}
+.tc_box.tc_wide
+{
+    width: 760px;
+}
+.tc_header.tc_lightblue
+{
+    width: 350px;
+}
+.tc_header.tc_lightblue.tc_wheader
+{
+    width: 740px;
+    margin: 0px;
+}
+.tc_box.tc_table.tc_lightblue
+{
+    border-left: 2px solid #4ABCD7;
+    border-right: 2px solid #4ABCD7;
+}
+
+.tc_box .tc_lightblue .tc_crtopleft, .tc_box .tc_lightblue .tc_crbottomleft
+{
+    left: -2px;
+}
+.tc_box .tc_lightblue .tc_crtopright, .tc_box .tc_lightblue .tc_crbottomright
+{
+    right: -2px;
+}
+
+.tc_box .tc_lightblue.tc_wheader .tc_crtopleft
+{
+    left: -3px;
+}
+.tc_box .tc_lightblue.tc_wheader .tc_crtopright
+{
+    right: -3px;
+}
+#tc_christmas_total, #tc_standard_reward
+{
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+#tc_standard_reward .tc_large
+{
+    width: 230px;
+    height: 40px;
+}
+
+.tc_box.tc_grey .tc_crbottomleft
+{
+    
+    left: -2px;
+}
+.tc_box.tc_grey .tc_crbottomright
+{
+    /*bottom: -12px;*/
+    right: -2px;
+}
+.tc_box.tc_grey.tc_underlying .tc_crbottomright, .tc_box.tc_grey.tc_underlying .tc_crbottomleft
+{
+    /*bottom: -16px;*/
+}
+.tc_box.tc_grey.tc_more .tc_crbottomright, .tc_box.tc_grey.tc_more .tc_crbottomleft
+{
+    /*bottom: -11px;*/
+}
+
+.tc_box.tc_grey table
+{
+    width: 334px;
+}
+
+.tc_box.tc_grey.tc_underlying
+{
+    width: 330px;
+    position: relative;
+    left: 5px;
+    bottom: 15px;
+    padding-top: 15px;
+}
+.tc_box.tc_grey.tc_underlying table
+{
+    width: 330px;
+}

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareConfigurations", "CompareConfigurations\CompareConfigurations.csproj", "{D65E2C93-5656-4EED-8B41-F72F171C6D1D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsapp.dev.global.tesco.org/tfs/41_digitalclubcard
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CompareConfigurations\\CompareConfigurations.csproj
+		SccProjectName1 = CompareConfigurations
+		SccLocalPath1 = CompareConfigurations
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D65E2C93-5656-4EED-8B41-F72F171C6D1D}.Debug|x86.ActiveCfg = Debug|x86
+		{D65E2C93-5656-4EED-8B41-F72F171C6D1D}.Debug|x86.Build.0 = Debug|x86
+		{D65E2C93-5656-4EED-8B41-F72F171C6D1D}.Release|x86.ActiveCfg = Release|x86
+		{D65E2C93-5656-4EED-8B41-F72F171C6D1D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

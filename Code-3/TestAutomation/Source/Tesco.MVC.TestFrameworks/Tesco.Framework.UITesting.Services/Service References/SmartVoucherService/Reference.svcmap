@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2c48b022-1976-485e-a8f6-3d5b223c9321" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SmartVoucherServices.wsdl" MetadataType="Wsdl" ID="eb3fab66-f5f6-427f-98b3-f02a1bc09b68" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="SmartVoucherServices.xsd" MetadataType="Schema" ID="37e97e36-2899-453b-8d5a-ee914fb198da" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="SmartVoucherServices1.xsd" MetadataType="Schema" ID="4e884035-9a36-4371-9c50-b59e4d1aafdf" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?xsd=xsd3" />
+    <MetadataFile FileName="SmartVoucherServices2.xsd" MetadataType="Schema" ID="0c400d75-1eed-482d-9ede-588495c7d18b" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="SmartVoucherServices.disco" MetadataType="Disco" ID="f119ce78-e837-48b9-bd30-d6c4391a6bc3" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?disco" />
+    <MetadataFile FileName="SmartVoucherServices1.wsdl" MetadataType="Wsdl" ID="87a8dd10-ec41-42bc-98cc-f7de1114baa0" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?wsdl" />
+    <MetadataFile FileName="SmartVoucherServices3.xsd" MetadataType="Schema" ID="5e811dfc-4f1f-4cf6-aba1-f934b12e43a5" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/SmartVoucherUK/SmartVoucherServices.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

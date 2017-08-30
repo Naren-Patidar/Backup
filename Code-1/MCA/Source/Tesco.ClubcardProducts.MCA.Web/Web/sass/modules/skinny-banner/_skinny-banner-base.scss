@@ -1,0 +1,27 @@
+a.skinny-banner {
+	display: block;
+	margin: 20px;
+	padding: 20px;
+	overflow: hidden;
+	color: $ddl-white1;
+
+	&:after {
+		position: absolute;
+		bottom: 40px;
+		right: 20px;
+	}
+
+	&:hover {
+		color: $ddl-white1;
+	}
+
+	h1, h2, p {
+		color: $ddl-white1;
+		padding: 0 30px;
+	}
+
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

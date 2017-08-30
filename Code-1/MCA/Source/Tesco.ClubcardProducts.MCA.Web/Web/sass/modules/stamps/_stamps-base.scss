@@ -1,0 +1,46 @@
+
+.ddl-stamps {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	background: $ddl-white1;
+	overflow: hidden;
+	
+	li {
+		margin: 0;
+
+		a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			text-decoration: none;
+
+			img {
+				display: block;
+			}
+
+			h2, .ddl-h2-like {
+				background: $ddl-grey4;
+				color: $ddl-link-colour;
+				font-size: 1.4rem;
+				margin: 0;
+				padding: 12px 8px;
+				line-height: 20px;
+				white-space: no-wrap;
+
+				&:after {
+					margin: 0 0 0 8px;
+					font-size: 8px;
+				}
+
+				&:hover {
+					color: $ddl-link-colour;
+				}
+			}
+
+			p {
+				color: $ddl-black2;
+			}
+		}
+	}
+}

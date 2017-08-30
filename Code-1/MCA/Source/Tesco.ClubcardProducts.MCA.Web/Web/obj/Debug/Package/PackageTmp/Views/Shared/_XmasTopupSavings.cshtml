@@ -1,0 +1,76 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.XmasSaverTopUpViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.ChristmasSaver
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@{ 
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisplayDateFormat].ConfigurationValue1.TryParse<string>(); 
+}
+<div class="table-wrapper table-bordered">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <span id="lclDateTopup">@Html.Translate("Shared/_XmasSaver", "DateToppedUp")</span>
+                </th>
+                <th class="ddl-text-right">
+                    <span id="lclValue">@Html.Translate("Shared/_XmasSaver", "Value")</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ChristmasSaverSummary xmasSummary in Model.ChristmasSaverSummaryList)
+            {
+                <tr>
+                    <td>
+                        <span id="lblTransDate">
+                            @if (xmasSummary.TransactionDateTime == DateTime.MinValue)
+                            {
+                                @Html.Translate("Shared/_XmasSaver", "DateNotAvailable")
+                            }
+                            else
+                            {
+                                @Convert.ToDateTime(xmasSummary.TransactionDateTime).ToString(dateFormat)
+                            }</span>
+                    </td>
+                    <td class="ddl-text-right" data-mobileheader="Value">
+                        <span id="lblAmount">@Html.Translate("Shared/_XmasSaver", "Currency") @Convert.ToDecimal(xmasSummary.AmountSpent)
+                            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <span id="lclTopUpTotal">@Html.Translate("Shared/_XmasSaver", "Total")</span>
+                </td>
+                <td>
+                    <span id="spnTopUpTotal">@Html.Translate("Shared/_XmasSaver", "Currency") @Model.sumTtlToppedUpMoney
+                        @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+@if (Model.displayMsgForTopupBonus)
+{
+    <div class="copy-wrapper">
+        <p>
+            <span id="lclTopUpYourAccountUpTo">@Html.Translate("Shared/_XmasSaver", "TopUpYourAccountUpTo")</span>
+            <span id="lcltopUpAccountUptoVal">@Html.Translate("Shared/_XmasSaver", "Currency")@Convert.ToDecimal(Model.topUpYourAccountUpto)
+                @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span> <span id="">@Html.Translate("Shared/_XmasSaver", "AndWeRewardYou")</span>
+            <span id="spnRewardedBonusToBeSaved">@Html.Translate("Shared/_XmasSaver", "Currency")@Model.rewardedBonus
+                @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span> <span id="lclBonusVoucherOrTopUp">
+                    @Html.Translate("Shared/_XmasSaver", "BonusVoucherOrTopUp")</span><span id="spnTopupWithOverValue">
+                        @Html.Translate("Shared/_XmasSaver", "Currency")@Model.topupWithOverValue
+                        @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span> <span id="lclAndWeGiveYou">
+                            @Html.Translate("Shared/_XmasSaver", "AndWeGiveYou")</span><span id="spnBonuVoucherinReturn">
+                                @Html.Translate("Shared/_XmasSaver", "Currency")@Model.bonuVoucherinReturn
+                                @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span><span id=""> @Html.Translate("Shared/_XmasSaver", "YouCanTopUpYourAcc")</span>
+            <span id="lclMoneyTobeSavedForBonus">@Html.Translate("Shared/_XmasSaver", "MoneyTobeSavedForBonus")</span>
+        </p>
+        <p>
+            <span id="lclIfYouWouldLikeToPutMore">@Html.Translate("Shared/_XmasSaver", "IfYouWouldLikeToPutMore")</span></p>
+    </div>
+}

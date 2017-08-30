@@ -1,0 +1,344 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Preferences;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@model OptionsAndBenefitsModel
+@{
+    ViewBag.Title = @Html.Translate("PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("dtmPageTitle");
+    ViewBag.PageName = "VoucherSchemes";
+    string isGARequired = ViewBag.IsGARequired.ToString();
+    bool IsMembershipForAviosEnable = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsMembershipForAviosEnable.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+}
+@section head
+{
+    <style type="text/css">
+        .txtError
+        {
+            border: 1px solid red;
+        }
+    </style>
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("PageHeader")
+            </h1>
+            <p id="lblOpsndBenPageDesc">
+                @Html.Translate("PageDescription")
+            </p>
+        </div>
+        @if (Model.IsXmasSaverVisible || Model.IsVirginMilesVisisble || Model.IsBAMilesStandardVisisble || Model.IsAviosPremiumVisisble)
+        { 
+@*     <h3 id="lblstmtoptionsheader" class="ddl-h4-like">@Html.Translate("StatementOptionsHeader")</h3> *@
+            using (Html.BeginForm("VoucherSchemes", "AccountManagement", FormMethod.Post, new { @class = "ddl-form" }))
+            {
+            <legend class="ddl-h4-like">@Html.Translate("chooseVoucherLegend")</legend>
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.IsAviosPremiumOpted)
+            @Html.HiddenFor(m => m.IsAviosPremiumVisisble)
+            @Html.HiddenFor(m => m.IsAviosStandardOpted)
+            @Html.HiddenFor(m => m.IsAviosStandardVisisble)
+            @Html.HiddenFor(m => m.IsBAMilesPremiumOpted)
+            @Html.HiddenFor(m => m.IsBAMilesPremiumVisisble)
+            @Html.HiddenFor(m => m.IsBAMilesStandardOpted)
+            @Html.HiddenFor(m => m.IsBAMilesStandardVisisble)
+            @Html.HiddenFor(m => m.IsVirginMilesOpted)
+            @Html.HiddenFor(m => m.IsVirginMilesVisisble)
+            @Html.HiddenFor(m => m.IsXmasSaverOpted)
+            @Html.HiddenFor(m => m.IsXmasSaverVisible)
+            @Html.HiddenFor(m => m.CustomerEmail)
+            @Html.HiddenFor(m => m.PreviousSelectedPreferenceID)
+            @Html.HiddenFor(m => m.IsEmailStatementVisible)
+            @Html.HiddenFor(m => m.AviosClubDetails.MembershipID, new { id = "hdnAviosMembershipID" })
+            @Html.HiddenFor(m => m.BAMilesClubDetails.MembershipID, new { id = "hdnBAAviosMembershipID" })
+            @Html.HiddenFor(m => m.AviosMembershipIdLabel)
+            @Html.HiddenFor(m => m.BaMembershipIdLabel)
+            @Html.HiddenFor(m => m.VirginMembershipIdLabel)
+            <fieldset class="ddl-fieldset">
+				<div class="copy-wrapper">
+                    <span class="message-level-2 message-success" id="sm-saved" style='@(Model.IsSaved ? "display:block" : "display:none")'>@Html.Translate("MessageDataSaved")</span>
+                    <span class="message-level-2 message-error" id="sm-ValInvalidMembership" style='@(!Model.IsValid ? "display:block" : "display:none")'>@Html.Translate("lblErrorSummary")</span>
+                    <span style="display:none" id='lblErrorId'>@Model.ErrorIds</span>
+                    <fieldset class="ddl-fieldset" id="statement-preferences">
+                        <legend>@Html.Translate("selectOptionLegend")</legend>@* Added a new option vouchers and this will be a default option. *@
+                        <div class="form-row" id='VoucherOptIn'>
+                            <div class="ddl-form-field ddl-radio" id="divforVoucher">
+                                <div class="form-row" id="divforVoucherpreference">
+                                    <label for="4" class="ddl-label" id="voucherLabel">@Html.Translate("Voucher")</label>
+                                    <span class="ddl-radio">
+                                        @Html.RadioButtonFor(model => model.SelectedPreferenceID, 0, new { GroupName = "preference", id = "4", tabIndex = "4", data_contentTrigger = "4" })
+                                        <em></em></span>
+                                </div>
+                            </div>
+                        </div>
+                        @if (Model.IsXmasSaverVisible)
+                        {
+                            <div class="form-row" id='XmasSaverOptIn'>
+                                <div class="ddl-form-field ddl-radio" id="divforXmassaver">
+                                    <div class="form-row" id="divforXmassaverpreference">
+                                        <label for="0" class="ddl-label" id="xmasSaverLabel">@Html.Translate("ChristmasSavers")</label>
+                                        <span class="ddl-radio">
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, Model.ChristmasSaversClubDetails.PreferenceID, new { GroupName = "preference", id = "0", tabIndex = "0", data_contentTrigger = "0" })
+                                            <em></em></span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.IsAviosStandardVisisble || Model.IsAviosPremiumVisisble)
+                        { 
+                            <div class="form-row" id='AirMilesOptIn'>
+                                <div class="ddl-form-field ddl-radio" id="divforAvios">
+                                    <div class="form-row" id="divforAviospreference">
+                                        <label for="1" id="lblAvios" class="ddl-label">@Html.Translate("Avios")</label>
+                                        <span class="ddl-radio">
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, Model.IsAviosStandardVisisble ? (short)PreferenceEnum.Airmiles_Standard : (short)PreferenceEnum.Airmiles_Premium, new { GroupName = "preference", id = "1", tabIndex = "1", data_contentTrigger = "1" })
+                                            <em></em></span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.IsVirginMilesVisisble)
+                        { 
+                            <div class="form-row" id='VirginMilesOptIn'>
+                                <div class="ddl-form-field ddl-radio" id="divforVirginatlantic">
+                                    <div class="form-row" id="divforVirginatlanticpreference">
+                                        <label for="2" class="ddl-label" id="lblVirginatlantic">@Html.Translate("VirginAtlantic")</label>
+                                        <span class="ddl-radio">
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, (short)PreferenceEnum.Virgin_Atlantic, new { GroupName = "preference", id = "2", tabIndex = "2", data_contentTrigger = "2" })
+                                            <em></em></span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.IsBAMilesStandardVisisble || Model.IsBAMilesPremiumVisisble)
+                        { 
+                            <div class="form-row" id='BAMilesOptIn'>
+                                <div class="ddl-form-field ddl-radio" id="divforBAAvios">
+                                    <div class="form-row" id="dovforBAAviospref">
+                                        <label for="3" class="ddl-label" id="lblBAAvios">
+                                            @Html.Translate("BAMiles")</label>
+                                        <span class="ddl-radio">
+                                            @Html.RadioButtonFor(model => model.SelectedPreferenceID, Model.IsBAMilesStandardVisisble ? (short)PreferenceEnum.BA_Miles_Standard : (short)PreferenceEnum.BA_Miles_Premium, new { GroupName = "preference", id = "3", tabindex = "3", data_contentTrigger = "3" })
+                                            <em></em></span>
+                                    </div>
+                                </div>
+                            </div> 
+                        }
+                    </fieldset>
+                    <div class="conditional-content">
+                        <div data-conditionalcontent="0">
+                            <div class="copy-wrapper">
+                                @if (Model.IsXmasSaverOpted)
+                                {
+                                    <p id="csMessage">
+                                        @Html.Translate("MessageChristmasSaverOptedIn")
+                                        <br />
+                                        <br />
+                                        @Html.Translate("MessageChristmasSaverOpted")
+                                    </p> <br /> <span class="ddl-standalone-link"> <a class="ddl-icon-after ddl-icon-right" id="lnkMoreinfo" href="@Resources.ConfigLinks.PHChristmasSaversMoreInfo" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHChristmasSaversMoreInfo) ? "_blank" : "_self")'>
+                                        @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("ChristmasSavers"))</a></span>
+                                }
+                                else
+                                { 
+                                    <p id="csMessage">
+                                        @Html.Translate("MessageChristmasSaverOptedOut")
+                                        <br />
+                                        <br />
+                                        @Html.Translate("MessageChristmasSaverOpted")
+                                    </p>
+                                    <br /> <span class="ddl-standalone-link"> <a class="ddl-icon-after ddl-icon-right" id="lnkMoreinfo" href="@Resources.ConfigLinks.PHChristmasSaversMoreInfo" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHChristmasSaversMoreInfo) ? "_blank" : "_self")'>
+                                        @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("ChristmasSavers"))</a></span>
+                                    <br />
+                                    <p id="csMessage">
+                                        @Html.Translate("MessageChristmasSaverOptedOut2")
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                        <div data-conditionalcontent="1">
+                            <div id="AviosMilesOpted" class="copy-wrapper" style="@((Model.IsAviosPremiumOpted || Model.IsAviosStandardOpted) ? "display:block" : "display:none")">
+                                <p id="pnlforAviosOptedIn" class="copy-wrapper">@Html.Translate("MessageAviosOptedIn")
+                                    <b>@string.Format(Html.Translate("MessageAviosOptedOut1").ToString(), Model.IsAviosPremiumOpted ? BusinessConstants.PRIMIUM_AMILES : BusinessConstants.STANDARD_AMILES, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href="@Resources.ConfigLinks.PHAviosOutMoreInfo" target='(@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHAviosOutMoreInfo) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("Avios"))</a></span>
+                                @if (IsMembershipForAviosEnable)
+                                {
+                                    <p id="pnlAviosMembership">
+                                        <strong>@Html.Translate("LableMembershipNumber")
+                                            @Html.DisplayFor(model => model.AviosMembershipIdLabel)</strong></p>
+                                }
+                                <p>@Html.Translate("labelAviosOpted")</p>
+                            </div>
+                            <div id="AviosMilesOptedOut" class="copy-wrapper" style="@((Model.IsAviosPremiumOpted || Model.IsAviosStandardOpted) ? "display:none" : "display:block")">
+                                <p id="pnlforAviosOptedout" class="copy-wrapper">@Html.Translate("MessageAviosOptedOut")
+                                    <b>@string.Format(Html.Translate("MessageAviosOptedOut1").ToString(), Model.IsAviosPremiumOpted ?
+                                                      BusinessConstants.PRIMIUM_AMILES : BusinessConstants.STANDARD_AMILES, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href="@Resources.ConfigLinks.PHAviosOutMoreInfo" target='(@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHAviosOutMoreInfo) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("Avios"))</a></span>
+                                <p id="pnlAviosOptedOut2">@Html.Translate("MessageAviosOptedOut2")</p>
+                                <p>@Html.Translate("LableAviosClubmembership")</p>
+                            </div>
+                            <div id="AviosMembershipIDTxt" class="copy-wrapper">
+                                @if (IsMembershipForAviosEnable)
+                                {
+                                    <div class="form-row">
+                                        <div class="ddl-form-field" id="avios_wrapper">
+                                            <br />
+                                            <label id="pnlAviosClubmembership" class="ddl-label">@Html.Translate("textBoxLabel")</label>
+                                            @Html.TextBoxFor(model => model.AviosClubDetails.MembershipID, new { @type="tel",minLength = LengthConfig[DbConfigurationItemNames.AviosMembershipID].ConfigurationValue1.ToString(), maxLength = LengthConfig[DbConfigurationItemNames.AviosMembershipID].ConfigurationValue2.ToString(), autocomplete = "off", id = "txtAviosMembershipID", @class = "ddl-input" })
+                                            <p id="aviosValidationMessage" style="display: none">@Html.Translate("clientValidationMessage")</p>
+                                        </div>
+                                    </div>   
+                                }
+                            </div>                            
+                            <div id="AviosMilesOptedOut" class="copy-wrapper" style="@((Model.IsAviosPremiumOpted || Model.IsAviosStandardOpted) ? "display:none" : "display:block")">
+                                <p id="pnlEnsuremsg">
+                                    @Html.Translate("EnsureMsg")</p>
+                            </div>
+                        </div>
+                        <div data-conditionalcontent="2">
+                            <div id="VirginMilesOpted" class="copy-wrapper" style="@(Model.IsVirginMilesOpted ? "display:block" : "display:none")">
+                                <p id="pnlVirginatlanticoptedin" class="copy-wrapper">@Html.Translate("MessageVirginOptedIn")
+                                    <b>@string.Format(@Html.Translate("MessageVirginOptedOut1").ToString(), BusinessConstants.VIRGIN_ATLANTIC, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href='@Resources.ConfigLinks.PHVirginAtlanticMoreInfo1' 
+                       id="lnkVirginMilesOptedin" target='(@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHVirginAtlanticMoreInfo1) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("VirginAtlantic"))</a></span>
+                                <p id="Virginatlanticmemshipid">
+                                    <strong>@Html.Translate("LableMembershipNumber")
+                                        @Html.DisplayFor(model => model.VirginMembershipIdLabel)</strong></p>
+                                <p>@Html.Translate("labelVirginOpted")</p>
+                            </div>
+                            <div id="VirginMilesOptedOut" class="copy-wrapper" style="@(Model.IsVirginMilesOpted ? "display:none" : "display:block")">
+                                <p id="pnlVirginMilesOptedOut" class="copy-wrapper">@Html.Translate("MessageVirginOptedOut")
+                                    <b>@string.Format(Html.Translate("MessageVirginOptedOut1").ToString(), BusinessConstants.VIRGIN_ATLANTIC, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href='@Resources.ConfigLinks.PHVirginAtlanticMoreInfo1' id="lnkVirginMilesOptedOut" target='(@GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHVirginAtlanticMoreInfo1) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("VirginAtlantic"))</a></span>
+                                <p id="lclMessageVirginOptedOut2">
+                                    @Html.Translate("MessageVirginOptedOut2")
+                                </p>
+                                <p>@Html.Translate("LableVirginClubmembership")
+                                </p>
+                            </div>
+                            <div id="VirginMembershipIDTxt" class="copy-wrapper">
+                                <div class="form-row">
+                                    <div class="ddl-form-field" id="virgin_wrapper">
+                                        <br />
+                                        <label id="pnlVirginClubmembership" class="ddl-label">@Html.Translate("textBoxLabel")
+                                        </label>
+                                        @Html.TextBoxFor(model => model.VirgnClubDetails.MembershipID, new { @type="tel",minLength = LengthConfig[DbConfigurationItemNames.VirginMembershipID].ConfigurationValue1.ToString(), maxLength = LengthConfig[DbConfigurationItemNames.VirginMembershipID].ConfigurationValue2.ToString(), autocomplete = "off", id = "txtVirgnMembershipID", @class = "ddl-input" })
+                                        <p id="virginValidationMessage" style="display: none">@Html.Translate("clientValidationMessage")</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="VirginMilesOptedOut" class="copy-wrapper" style="@(Model.IsVirginMilesOpted ? "display:none" : "display:block")">
+                                <p id="lclMessageVirginOptedOut3">@Html.Translate("MessageVirginOptedOut3")</p>
+                            </div>
+                        </div>
+                        <div data-conditionalcontent="3">
+                            <div id="BAMilesOpted" class="copy-wrapper" style="@((Model.IsBAMilesPremiumOpted || Model.IsBAMilesStandardOpted) ? "display:block" : "display:none")">
+                                <p id="pnlBAOptedIn" class="copy-wrapper">@Html.Translate("MessageBAMilesOptedIn")
+                                    <b>@string.Format(Html.Translate("MessageBAMilesOptedOut1").ToString(), Model.IsBAMilesPremiumOpted ? BusinessConstants.PRIMIUM_BAMILES : BusinessConstants.STANDARD_BAMILES, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href='@Resources.ConfigLinks.PHBAMemberMoreInfo' id="lnkBAAVIOSoptedinmoreinfo" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHBAMemberMoreInfo) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("BAMiles"))</a></span>
+                                <p id="pnlBAAviosMembership">
+                                    <strong>@Html.Translate("LableMembershipNumber")
+                                        @Html.DisplayFor(model => model.BaMembershipIdLabel)</strong></p>
+                                <p>@Html.Translate("labelBaOpted")</p>
+                            </div>
+                            <div id="BAMilesOptedOut" class="copy-wrapper" style="@((Model.IsBAMilesPremiumOpted || Model.IsBAMilesStandardOpted) ? "display:none" : "display:block")">
+                                <p id="pnlforBAaviosOptout" class="copy-wrapper">@Html.Translate("MessageBAMilesOptedOut")
+                                    <b>@string.Format(Html.Translate("MessageBAMilesOptedOut1").ToString(), Model.IsBAMilesPremiumOpted ? BusinessConstants.PRIMIUM_BAMILES : BusinessConstants.STANDARD_BAMILES, BusinessConstants.POINTS_PERMILE)</b></p>
+                                <br />
+                                <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" href='@Resources.ConfigLinks.PHBAMemberMoreInfo' id="lnkBAAVIOSoptedoutmoreinfo"  target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHBAMemberMoreInfo) ? "_blank" : "_self")'>
+                                    @string.Format(Html.Translate("MoreInformation").ToString(), @Html.Translate("BAMiles"))</a></span>
+                                <p id="lblBAMilesOptedOut2">
+                                    @Html.Translate("MessageBAMilesOptedOut2")
+                                </p>
+                                <p>@Html.Translate("LableBAClubmembership")
+                                </p>
+                            </div>
+                            <div id="BAAviosMembershipIDTxt" class="copy-wrapper">
+                                <div class="form-row">
+                                    <div class="ddl-form-field" id="miles_wrapper">
+                                        <br />
+                                        <label class="ddl-label" id="pnlBAClubmembership">@Html.Translate("textBoxLabel")
+                                        </label>
+                                        @Html.TextBoxFor(model => model.BAMilesClubDetails.MembershipID, new { @type="tel",minLength = LengthConfig[DbConfigurationItemNames.BAAviosMembershipID].ConfigurationValue1.ToString(), maxLength = LengthConfig[DbConfigurationItemNames.BAAviosMembershipID].ConfigurationValue2.ToString(), autocomplete = "off", id = "txtBAvios", @class = "ddl-input" })
+                                        <p id="baValidationMessage" style="display: none">@Html.Translate("clientValidationMessage")</p>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div id="BAMilesOptedOut" class="copy-wrapper" style="@((Model.IsBAMilesPremiumOpted || Model.IsBAMilesStandardOpted) ? "display:none" : "display:block")">
+                                <p id="lblBAMilesOptedOut3">
+                                    @Html.Translate("MessageBAMilesOptedOut3")
+                                </p>
+                            </div>
+                        </div>
+                        <div data-conditionalcontent="4">
+                            <div class="copy-wrapper">
+                                <div>
+                                    <p id="csMessage">
+                                        @if (Model.SelectedPreferenceID == 0)
+                                        { 
+                                            @Html.Translate("VoucherOptInDesc1")
+                                        }
+                                        else
+                                        { 
+                                            @Html.Translate("VoucherDesc1")
+                                        }
+                                    </p>
+                                    <br />
+                                    <span class="ddl-standalone-link"><a class="ddl-icon-after ddl-icon-right" id="lnkMoreinfo" href="@Resources.ConfigLinks.PHClubcardPartners" target='@(GeneralUtility.IsExternalLink(Resources.ConfigLinks.PHClubcardPartners) ? "_blank" : "_self")'>
+                                        @Html.Translate("ClubcardPartners")</a></span>
+                                    @if (Model.SelectedPreferenceID != 0)
+                                    { 
+                                        <p id="csMessage">
+                                            @Html.Translate("VoucherDesc2")
+                                        </p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy-wrapper" id='statementMessage' style='display:none'>
+                        <p>
+                        @Html.Translate("preStatementMsg") 
+                        <span data-attr='1' class="schemeName" style='display:none'>@Html.Translate("Avios")</span>
+                        <span data-attr='2' class="schemeName" style='display:none'>@Html.Translate("VirginFlyingClub")</span>
+                        <span data-attr='3' class="schemeName" style='display:none'>@Html.Translate("BAAvios")</span>
+                        @Html.Translate("postStatementMsg") 
+                        </p>
+                        </div>
+                        @Html.EditorFor(model => model.Email, "CustomerEmailModel")
+                        <div>
+                            <p id="pnlVoucherMessage2">
+                                <b>@Html.Translate("LableImportant")</b> @Html.Translate("MessageImportantAirMile")</p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="ddl-button-group ddl-button-group-left">
+                <input type="submit" value="Choose scheme" class="ddl-button" id="btn_Reset_Statement_Pref"
+                onclick="return ValidateAndTrackGAEvents(@isGARequired.ToLower());" />
+            </div>
+            }
+        }
+    </div>
+</div>
+@section scripts
+{
+    @Scripts.Render("~/bundles/preferences")
+}

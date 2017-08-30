@@ -1,0 +1,63 @@
+.date-of-birth-field {
+	margin-bottom: 20px !important;
+
+	legend {
+		margin-bottom: 0 !important;
+		line-height: 32px;
+	}
+	
+	.ddl-form-field {
+		min-width: 0;
+		width: auto;
+		//padding-right: 20px;
+		padding-right: 16px;
+		position: relative;
+		margin-right: 0 !important;
+
+		&:after {
+			content: "/";
+			display: inline-block;
+			//width: 20px;
+			width: 16px;
+			height: 40px;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			margin-top: -20px;
+			right: 0;
+		}
+
+		&:nth-child(4) {
+
+			&:after {
+				display: none;
+			}
+		}
+
+		input.ddl-input, input.ddl-input[type="number"] {
+			width: auto;
+			max-width: 60px;
+		}
+
+		.ddl-select {//Temporary for MCA functional solution
+			
+			em:after {
+				width: 24px;
+			}
+
+			select {
+				padding-right: 24px;
+			}
+		}
+	}
+
+	&.ddl-error {
+
+		legend {
+			color: $form-error;;
+		}
+
+	}
+}

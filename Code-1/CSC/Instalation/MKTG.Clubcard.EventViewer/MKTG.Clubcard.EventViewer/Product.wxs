@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include Project.wxi ?>
+	<?include Guids.wxi ?>
+	
+
+		<Product Id="$(var.ProductGuid)" Name="$(var.ProductName) ($(var.Version))" Language="1033" Version="$(var.Version)" Manufacturer="Tesco.Com" UpgradeCode="$(var.UpgradeCode)">
+			<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+
+			<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="MKTG.Clubcard.EventViewer" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+			<Upgrade Id='$(var.UpgradeCode)'>
+				<UpgradeVersion Minimum='0.0.0.0' IncludeMinimum='yes' Maximum='255.255.65535.255' IncludeMaximum='yes' Property='UPGRADEFOUND' />
+			</Upgrade>
+
+		</Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="MKTG.Clubcard.EventViewer" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+
+      <ComponentRef Id ="cmpClubcardEntries"/>
+      <ComponentRef Id ="cmpClubcardRef"/>
+      <ComponentRef Id="ProductRegistryEntry"/>
+      <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+      <!-- <Component Id="ProductComponent"> -->
+      <!-- TODO: Insert files, registry keys, and other resources here. -->
+      <!-- </Component> -->
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <DirectoryRef Id="TARGETDIR">
+      <Component Id="cmpClubcardEntries" Guid="CF7CE93E-A69C-4B90-9E4B-754E7C5577AC" KeyPath="yes">
+        <RegistryKey Key="SYSTEM\CurrentControlSet\Services\EventLog\sss" Root="HKLM">
+          <RegistryValue Name="MaxSize" Value="524288" Type="integer" />
+          <RegistryValue Name="AutoBackupLogFiles" Value="0" Type="integer" />
+          <RegistryValue Name="Retention" Value="0" Type="integer" />
+        </RegistryKey>
+      </Component>
+      <Component Id="cmpClubcardRef" Guid="C481DC2A-48CD-45E8-9CAA-7BF0299A6E86" KeyPath="yes">
+        <RegistryKey Key="SYSTEM\CurrentControlSet\Services\EventLog\Clubcard\Clubcard" Root="HKLM">
+          <RegistryValue Name="EventMessageFile" Value="C:\Windows\Microsoft.NET\Framework64\v2.0.50727\EventLogMessages.dll" Type="expandable" />
+        </RegistryKey>
+      </Component>
+
+      <Component Id="ProductRegistryEntry" Guid="*">
+        <!--GUID can be a * becuase major upgrades don't care about same GUIDS.-->
+        <RegistryKey Root="HKLM" Key="$(var.DeployedRegistryKey)\$(var.PackageName)" Action="createAndRemoveOnUninstall">
+          <RegistryValue Type="string" Name="ProductCode" Value="[ProductCode]" KeyPath="yes"/>
+          <RegistryValue Type="string" Name="ProductVersion" Value="[ProductVersion]"/>
+          <RegistryValue Type="string" Name="Label" Value="$(var.Label)"/>
+        </RegistryKey>
+      </Component>
+
+
+    </DirectoryRef>
+  </Fragment>
+</Wix>

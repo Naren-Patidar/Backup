@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmPreferencesResource1.AlternateText" xml:space="preserve">
+    <value>Potvrdit</value>
+  </data>
+  <data name="btnConfirmPreferencesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAirmilesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAirmilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBAmilesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBAmilesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDontContactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkDontContactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEcouponResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEcouponResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkRecvPartnersOffrnInfoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkRecvPartnersOffrnInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkRecvTescoOffrnInfoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkRecvTescoOffrnInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkSaveTreeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkSaveTreeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkXmasSaverResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkXmasSaverResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCustomerNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCustomerNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHouseholdPrefResource1.Text" xml:space="preserve">
+    <value>Preference domácnosti</value>
+  </data>
+  <data name="lblHouseholdPrefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMainCustomerResource1.Text" xml:space="preserve">
+    <value>Hlavní zákazník:</value>
+  </data>
+  <data name="lblMainCustomerResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAirMilesResource1.Text" xml:space="preserve">
+    <value>Letecké míle</value>
+  </data>
+  <data name="lclBAEarnRateResource1.Text" xml:space="preserve">
+    <value>Úroveň výdělku:</value>
+  </data>
+  <data name="lclBAMilesResource1.Text" xml:space="preserve">
+    <value>BA Miles</value>
+  </data>
+  <data name="lclChangesSavedResource1.Text" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+  </data>
+  <data name="lclChristmasResource1.Text" xml:space="preserve">
+    <value>Vánoční spoření</value>
+  </data>
+  <data name="lclEarnRateResource1.Text" xml:space="preserve">
+    <value>Úroveň výdělku:</value>
+  </data>
+  <data name="lcleCouponsResource1.Text" xml:space="preserve">
+    <value>e-kupony</value>
+  </data>
+  <data name="lclinoutResource1.Text" xml:space="preserve">
+    <value>Možnost volby dovnitř/ven</value>
+  </data>
+  <data name="lclOptOutResource1.Text" xml:space="preserve">
+    <value>Možnost volby ven</value>
+  </data>
+  <data name="lclStatementPreferencesResource1.Text" xml:space="preserve">
+    <value>Preference vyúčtování</value>
+  </data>
+  <data name="lclTogetherTreesResource1.Text" xml:space="preserve">
+    <value>Společně pro stromečky</value>
+  </data>
+  <data name="ltrAMilesEarnRateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrBAMilesEarnRateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Preference zákazníka</value>
+  </data>
+  <data name="CardTypeAM.Text" xml:space="preserve">
+    <value>Letecké míle</value>
+  </data>
+  <data name="CardTypeBAAM.Text" xml:space="preserve">
+    <value>BA Miles</value>
+  </data>
+  <data name="CardTypeCS.Text" xml:space="preserve">
+    <value>Vánoční spoření</value>
+  </data>
+  <data name="CardTypeS.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="chkAviosPremium.Text" xml:space="preserve">
+    <value>Prémie</value>
+  </data>
+  <data name="chkAviosPremium.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAviosStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="chkAviosStandard.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBAviosPremium.Text" xml:space="preserve">
+    <value>Prémie</value>
+  </data>
+  <data name="chkBAviosPremium.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkBAviosStandard.Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="chkBAviosStandard.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAvios.Text" xml:space="preserve">
+    <value>Avios</value>
+  </data>
+  <data name="lclBAvios.Text" xml:space="preserve">
+    <value>BA Avios</value>
+  </data>
+  <data name="lclVirginAtlantic.Text" xml:space="preserve">
+    <value>Letecký klub Virgin Atlantic</value>
+  </data>
+  <data name="lclRewardPreferencesResource1.Text" xml:space="preserve">
+    <value>Preference odměny</value>
+  </data>
+  <data name="lclAviosResource1.Text" xml:space="preserve">
+    <value>Avios Standard</value>
+  </data>
+  <data name="lclBAviosResource1.Text" xml:space="preserve">
+    <value>BA Avios Standard</value>
+  </data>
+  <data name="lclbrailleResource1.Text" xml:space="preserve">
+    <value>Braillovo písmo</value>
+  </data>
+  <data name="lclContactResource1.Text" xml:space="preserve">
+    <value>preferovaný způsob kontaktování:</value>
+  </data>
+  <data name="lclContnactprefResource1.Text" xml:space="preserve">
+    <value>Možnost volby dovnitř/ven</value>
+  </data>
+  <data name="lclemailconfirmResource1.Text" xml:space="preserve">
+    <value>Prosíme, ověřte e-mailovou adresu</value>
+  </data>
+  <data name="lclEmailResource1.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="lclLPResource1.Text" xml:space="preserve">
+    <value>Velký tisk</value>
+  </data>
+  <data name="lclpartypreResource1.Text" xml:space="preserve">
+    <value>Partner (třetí strana)</value>
+  </data>
+  <data name="lclpemailconfirmResource1.Text" xml:space="preserve">
+    <value>Prosíme, ověřte e-mailovou adresu</value>
+  </data>
+  <data name="lclpEmailResource1.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="lclphnResource1.Text" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="lclPostResource1.Text" xml:space="preserve">
+    <value>Pošta</value>
+  </data>
+  <data name="lclppSMSResource1.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclpSMSResource1.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="lclSMSResource1.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclTGResource1.Text" xml:space="preserve">
+    <value>Tesco (skupina)</value>
+  </data>
+  <data name="lclVirginAtlanticResource1.Text" xml:space="preserve">
+    <value>Virgin Atlantic</value>
+  </data>
+  <data name="llclResearchResource1.Text" xml:space="preserve">
+    <value>Průzkum</value>
+  </data>
+  <data name="lclairpremiumResource1.Text" xml:space="preserve">
+    <value>Avios Premium</value>
+  </data>
+  <data name="lclBRPREResource1.Text" xml:space="preserve">
+    <value>BA Avios Premium</value>
+  </data>
+  <data name="lclBAMemebership.Text" xml:space="preserve">
+    <value>zadejte prosím členské číslo</value>
+  </data>
+  <data name="lclVirginMemebership.Text" xml:space="preserve">
+    <value>zadejte prosím členské číslo</value>
+  </data>
+  <data name="crtformat.Text" xml:space="preserve">
+    <value>zadejte prosím platné datum narození (DD/MM/RR)</value>
+  </data>
+  <data name="FormatHaif.Text" xml:space="preserve">
+    <value> years in DD/MM/YYYY format or remove the child entry.</value>
+  </data>
+  <data name="Mobilevali.Text" xml:space="preserve">
+    <value>pravděpodobně existuje jiný účet s tímto e-mailem/mobilním číslem</value>
+  </data>
+  <data name="removeentry.Text" xml:space="preserve">
+    <value>Prosíme, zadejte platné datum pozdější než 9 měsíců ve formátu DD/MM/YYYY nebo zadání dítěte odstraňte.</value>
+  </data>
+  <data name="Savetext.Text" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+  </data>
+  <data name="ValidDateFormat.Text" xml:space="preserve">
+    <value>přidejte prosím dítě s platným datumem narození (DD/MM/RR).</value>
+  </data>
+  <data name="Validdateless.Text" xml:space="preserve">
+    <value>Prosíme, zadejte platné datum narození pozdější než</value>
+  </data>
+  <data name="ValidEmailAdd.Text" xml:space="preserve">
+    <value>Prosíme, zadejte platnou e-mailovou adresu</value>
+  </data>
+  <data name="ValidMembership.Text" xml:space="preserve">
+    <value>zadejte prosím platné členské ID</value>
+  </data>
+  <data name="ValidMobNum.Text" xml:space="preserve">
+    <value>Prosíme, zadejte platné Číslo mobilního telefonu</value>
+  </data>
+</root>

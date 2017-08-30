@@ -1,0 +1,44 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>true</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+    <NewDataSet>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>37831590</PrimaryCustomerID>
+        <CustomerID>37831590</CustomerID>
+        <TitleEnglish>Mr</TitleEnglish>
+        <Name1>Bitch</Name1>
+        <Name2>Sa</Name2>
+        <Name3>bitch</Name3>
+        <MailingAddressLine1>33 Chambers Company GROVE</MailingAddressLine1>
+        <MailingAddressPostCode>AL7 4FG</MailingAddressPostCode>
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>37831590</PrimaryCustomerID>
+        <CustomerID>1095630839</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>Jason</Name1>
+        <Name2 />
+        <Name3>Alex</Name3>
+        <MailingAddressLine1>33 Chambers Company GROVE</MailingAddressLine1>
+        <MailingAddressPostCode />
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+      </HouseholdCustomers>
+      <HouseholdCustomers>
+        <PrimaryCustomerID>37831590</PrimaryCustomerID>
+        <CustomerID>1095648218</CustomerID>
+        <TitleEnglish>Miss</TitleEnglish>
+        <Name1>Samson</Name1>
+        <Name2 />
+        <Name3>Alex</Name3>
+        <MailingAddressLine1>33 Chambers Company GROVE</MailingAddressLine1>
+        <MailingAddressPostCode />
+        <CustomerUseStatusID>1</CustomerUseStatusID>
+        <CustomerMailStatus>7</CustomerMailStatus>
+      </HouseholdCustomers>
+    </NewDataSet>
+	</resultXml>
+</GetHouseholdCustomersResponse>

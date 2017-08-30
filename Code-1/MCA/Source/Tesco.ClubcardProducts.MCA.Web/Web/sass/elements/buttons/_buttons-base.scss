@@ -1,0 +1,203 @@
+
+.ddl-button {
+    background: $ddl-primary-button-background;
+    border: none;
+    border-radius: 100px;
+    color: $ddl-primary-button-colour;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'tescobold';
+    line-height: 40px;
+    min-height: 40px;
+    min-width: 30px;
+    padding: 0 26px;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 0 0 $button-outline-color;
+    transition: box-shadow .3s ease-in-out;
+    white-space: nowrap;
+
+    &:hover {
+        color: $ddl-primary-button-colour-hover;
+        cursor: pointer;
+        box-shadow: 0 0 0 3px $button-outline-color-hover;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: $ddl-primary-button-colour-hover;
+        outline: none;
+    }
+    
+    &:active, &:visited {
+        color: $ddl-primary-button-colour-hover;
+    }
+
+    span {
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    &.forced-width {
+        min-width: 200px;
+    }
+
+    &.ddl-icon-before, &.ddl-icon-after {
+
+        &:before {
+            color: $ddl-white2;
+            margin-right: 8px;
+        }
+
+        &:after {
+            color: $ddl-white2;
+            margin-left: 8px;
+        }
+
+        &:hover {
+
+            &:before, &:after {
+                color: $ddl-white1;
+            }
+        }
+
+        &.ddl-icon-outside, &.ddl-icon-only {
+            background: none;
+            border: none;
+            color: $ddl-primary-button-background;
+            padding: 0;
+
+            &:before, &:after {
+                width: 40px;
+                height: 40px;
+                background: $ddl-primary-button-background;
+                border-radius: 30px;
+                text-align: center;
+            }
+
+            &:hover {
+                background: none;  
+            }
+        }
+
+        &.ddl-icon-only {
+            text-indent: -9999px;
+
+            &:before, &:after {
+                text-indent: 0;
+            }
+        }
+
+    }
+
+    &.ddl-icon-before.ddl-icon-outside {
+
+        &:before, &:after {
+            transition: box-shadow .3s ease-in-out; 
+            box-shadow: 0 0 0 0 $button-outline-color;            
+        }
+
+        &:hover {
+            box-shadow: none;
+
+            &:before, &:after {
+                box-shadow: 0 0 0 3px $button-outline-color-hover;            
+            }
+        }
+
+        &:before {
+            display: inline-block;
+        }
+    }
+
+    &.ddl-icon-after.ddl-icon-outside {
+
+        &:before, &:after {
+            transition: box-shadow .3s ease-in-out; 
+            box-shadow: 0 0 0 0 $button-outline-color-hover;            
+        }
+
+        &:hover {
+            box-shadow: none;
+
+            &:before, &:after {
+                box-shadow: 0 0 0 3px $button-outline-color-hover;   
+            }
+        }
+
+        &:after {
+            display: inline-block;
+        }
+    }
+
+    &.ddl-button-full {
+        width: 100%;
+        text-align: center;
+    }
+
+    &.ddl-button-fixed {
+        width: 200px;
+    }
+
+    //Variations
+    //==========
+
+    &.ddl-button-secondary {
+        background: $ddl-secondary-button-background;
+        color: $ddl-secondary-button-colour;
+        border: 2px solid $ddl-secondary-button-colour;
+        line-height: 34px;
+
+        &:hover {
+            background: $ddl-secondary-button-background-hover;
+            color: $ddl-secondary-button-colour-hover;
+        }
+
+        &:before, &:after {
+            color: $ddl-secondary-button-colour;
+        }
+
+        &:hover {
+
+            &:before, &:after {
+                color: $ddl-secondary-button-colour;
+            }
+        }
+
+        &.ddl-icon-outside {
+            color: $ddl-secondary-button-colour;
+            
+            &:before, &:after {
+                background: $ddl-white1;
+                border: 2px solid $ddl-secondary-button-colour;
+            }
+        }
+    }
+
+    &.ddl-button-link-style {
+        background: none;
+        color: $ddl-link-colour;
+        padding: 0;
+        border: none;
+
+        &:hover {
+            background: none;
+            color: $ddl-link-colour-hover;
+            box-shadow: none;
+        }
+            
+        &:focus {
+            color: $ddl-primary-button-colour-hover;
+        }
+
+        &:active {
+            color: $ddl-primary-button-colour-hover;
+        }
+
+    }
+}
+
+
+

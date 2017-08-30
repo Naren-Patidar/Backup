@@ -1,0 +1,60 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model  LoginViewModel
+
+@{
+    Layout = null;
+	var attributes = new Dictionary<string, object>();
+    attributes.Add("class", "ddl-form");
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>@ViewBag.Title</title>
+        <meta name="description" content="">
+        @Styles.Render("~/Content/css/styles/main.css")
+    </head>
+    <body>
+        <div id="ddl-wrapper" class="scrollable">
+         @*       @Html.Partial("_Header") *@
+            <div id="ddl-page-body">
+                <div class="container">
+                    @using (Html.BeginForm("Login", "Account", FormMethod.Post, attributes))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="row">
+                            <div class="gr-12 gr-9@medium">
+                                <fieldset class="ddl-fieldset">
+                                    <legend>Login Form</legend>
+                                    <div class="form-row">
+                                        <label for="fld_UserName" id="lblUserName" class="ddl-label">@Html.Translate("UserName")</label>
+                                        @Html.TextBoxFor(model => model.ClubcardNumber, new {@class="ddl-input"})
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="fld_Password" id="lblPassword" class="ddl-label">@Html.Translate("Password")</label>
+                                        @Html.PasswordFor(model => model.Password, new {@class="ddl-input"})
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="fld_DotcomID" id="lblPassword" class="ddl-label">@Html.Translate("DotcomID")</label>
+                                        @Html.TextBoxFor(model => model.DotcomCustomerId, new {@class="ddl-input"})
+                                    </div>
+                                </fieldset>
+                                <input type="submit" id="btnLogin" value="Login" class="ddl-button" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

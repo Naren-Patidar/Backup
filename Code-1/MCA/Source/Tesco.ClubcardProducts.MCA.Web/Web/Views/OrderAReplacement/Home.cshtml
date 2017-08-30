@@ -1,0 +1,170 @@
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.OrderReplacement;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.OrderAReplacementModel
+@{
+    ViewBag.Title = @Html.Translate("OrderAReplacement/Home", "PageResource1.Title");
+    ViewBag.PageName = "OrderAReplacement";
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Group_Config_Values];
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h2 id="lblheader">@Html.Translate("OrderAReplacement/Home", "OrderAReplacement")</h2>
+            @if (Model.IsInProcess)
+            {
+                @*@Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/OrderAReplacementHoldingPage.html" })*@
+                @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/OrderANewcardHoldingpage.html" })
+            }
+            @if (Model.IsMaxOrdersReached)
+            {
+                <p>
+                    <span id="lblMaxOrderlimit">@Html.Translate("OrderAReplacement/Home", "MaxOrderLimitReached")</span>
+                        <br />
+                        <span id="lblTollFreeNumber1">@Html.Translate("OrderAReplacement/Home", "CallCustomerCare")</span>
+                        <br />
+                        <span id="lblCommunicationMsg">@Html.Translate("OrderAReplacement/Home", "CommunicationMsg")</span>
+                        <br />
+                        <span id="lblLocalRatesMsg">@Html.Translate("OrderAReplacement/Home", "LocalRatesMsg")</span>
+                    
+                </p>
+            }
+            @if (!Model.IsInProcess && !Model.IsMaxOrdersReached)
+            {
+                if (Model.IsNonStandardCard)
+                {
+                <p id="lblNonStandardCardServiceMsg">@Html.Translate("OrderAReplacement/Home", "NonStandardCardServiceMsg")</p>
+                @*<p id="lblNonStandardCardMSg">@Html.Translate("OrderAReplacement/Home", "NonStandardCardMSg")</p>*@
+                    if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("1"))
+                    {
+                <p id="lblTescoCreditCard">@Html.Translate("OrderAReplacement/Home", "TescoCreditCard")</p>
+                    }
+                @*<p>
+                    <b><span id="lblFindOut">@Html.Translate("OrderAReplacement/Home", "FindOut")</span></b>
+                </p>*@
+                    if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("0"))
+                    {
+                <p id="lblClickHere1">@Html.Translate("OrderAReplacement/Home", "ClickHere")
+                    <b><span id="lblYouHaveNonStandardCardMsg2">@Html.Translate("OrderAReplacement/Home", "YouHaveNonStandardCardMsg")</span></b>
+                 @Html.Translate("OrderAReplacement/Home", "lclhere4clickResource1.Text")</p>
+                    }
+                    else
+                    {
+                <a href="@Resources.ConfigLinks.LostClubcardLink" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.LostClubcardLink) ? "_blank" : "_self"' id="lnkClickHere">
+                    <span id="lblClickHere"><u>@Html.Translate("OrderAReplacement/Home", "ClickHere")</u></span>
+                </a>
+                    }
+                }
+                else
+                {
+                <p id="lblNeedNewCard">@Html.Translate("OrderAReplacement/Home", "NeedNewCard")</p>
+                <p id="lblSafelyDamageMsg">@Html.Translate("OrderAReplacement/Home", "SafelyDamageMsg")</p>
+                <span id="lblCardLostorStolenMsg">@Html.Translate("OrderAReplacement/Home", "CardLostorStolenMsg")</span>
+                <span id="lblTollFreeNumber"><strong>@Html.Translate("OrderAReplacement/Home", "TollFreeNumber1")@Html.Translate("OrderAReplacement/Home", "Condition1withOr")</strong></span>
+                <span id="lblTollFreno2" class="no-wrap"><strong>@Html.Translate("OrderAReplacement/Home", "TollFreeNumber2")@Html.Translate("OrderAReplacement/Home", "Condition2")</strong></span>
+                    if (@Html.Translate("OrderAReplacement/Home", "OrderStandardCard").ToString().Length > 0)
+                    {
+                <h2 class="h3-like" id="lblOrderStandardCard">@Html.Translate("OrderAReplacement/Home", "OrderStandardCard")</h2>
+                <p>
+                    <span id="lblNeedAClubcard">@Html.Translate("OrderAReplacement/Home", "NeedAClubcard")</span>
+                    <span id="ltrClubcard"><strong>@GeneralUtility.MasknFormatClubcard(@Model.OrderReplacementModel.ClubcardNumber.ToString(), true, 'X')</strong></span>
+                </p>
+                    }
+                }
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="gr-12">
+        @if (!Model.IsInProcess && !Model.IsMaxOrdersReached && !Model.IsNonStandardCard)
+        {
+
+            using (Html.BeginForm("Home", "OrderAReplacement", FormMethod.Post, new { @class = "ddl-form" }))
+            {
+            @Html.AntiForgeryToken()       
+            <fieldset class="ddl-fieldset">
+                <legend id="lblOrderRequestReason" class="ddl-h4-like">@Html.Translate("OrderAReplacement/Home", "OrderRequestReason")</legend>
+                <div class="form-row">
+                    <h4 id="lblErrorMsg" class="message-level-2 message-error" style="@(Model.errorMsg ? "display:block" : "display:none")">@Html.Translate("OrderAReplacement/Home", "ErrorMsg")</h4>
+                    <fieldset class="ddl-fieldset">
+                    <legend id="lblSelectReason">@Html.Translate("OrderAReplacement/Home", "OrderSelectReason")</legend>
+                        @foreach (var ml in Model.Reasons)
+                        { 
+                            <div class="form-row">
+                                <div class="ddl-form-field ddl-radio">
+                                    <label class="ddl-label" id="lblKeyvalue" for="radio-input-@ml.Key">@ml.Value</label>
+                                    <span class="ddl-radio">
+                                        @Html.RadioButtonFor(m => m.OrderReplacementModel.Reason, ml.Key, new { id = "radio-input-" + ml.Key, name = ml.Key })
+                                        <em></em></span>
+                                </div>
+                            </div>
+                        }
+                    </fieldset>
+                </div>
+            </fieldset>                  
+            <span id="confirm">
+                <input type="submit" value="@Html.Translate("OrderAReplacement/Home", "btnorderConfirm")"
+                name="@Html.Translate("OrderAReplacement/Home", "btnorderConfirm")" class="ddl-button"
+                id="btnOrderConfirm" />
+            </span>
+                        if (Model.divStandardNonStandard)
+                        {
+                            if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("1"))
+                            {
+            <p>
+                <span id="lblUnfortunateMsgs">@Html.Translate("OrderAReplacement/Home", "UnfortunateMsg")</span>
+                <span id="lblYouHaveNonStandardCardMsg">@Html.Translate("OrderAReplacement/Home", "YouHaveNonStandardCardMsg")</span>
+            </p>
+                            }
+                            if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("0"))
+                            {
+            <p>
+                <b><span id="lblFindOutmore">@Html.Translate("OrderAReplacement/Home", "FindOut")
+                </span></b>
+            </p>
+            <p id="lblClickHere3">@Html.Translate("OrderAReplacement/Home", "ClickHere")
+                <b><span id="lblYouHaveNonStandardCardMsg1">@Html.Translate("OrderAReplacement/Home", "YouHaveNonStandardCardMsg")</span></b></p>
+            <p id="lblClickHere4">
+                @Html.Translate("OrderAReplacement/Home", "lclhere4clickResource1.Text")</p>
+                            }
+                            if (HideConfig[DbConfigurationItemNames.GroupCountryAddress].ConfigurationValue1.Equals("1"))
+                            {
+            <p>
+                <span id="lblFindOutmore1">@Html.Translate("OrderAReplacement/Home", "FindOut")</span>
+                <a href="@Resources.ConfigLinks.LostClubcardLink" target='@GeneralUtility.IsExternalLink(Resources.ConfigLinks.LostClubcardLink)
+                ? "_blank" : "_self"' id="lnkkClickHere"><span id="lblClickHeree"><u>@Html.Translate("OrderAReplacement/Home", "ClickHere")</u></span>
+                </a>
+            </p>
+                            }
+                        }
+            @Html.HiddenFor(m => m.OrderReplacementModel.CustomerIdEncrypt)
+            @Html.HiddenFor(m => m.IsInProcess)
+            @Html.HiddenFor(m => m.divStandardNonStandard)
+            @Html.HiddenFor(m => m.OrderReplacementModel.Reason)
+            @Html.HiddenFor(m => m.OrderReplacementModel.RequestType)
+            }
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="gr-12">
+        <p class="note">
+            <span id="lblCardReplacement">@Html.Translate("OrderAReplacement/Home", "CardReplace")</span>
+            <span id="lbltollno1"><strong>@Html.Translate("OrderAReplacement/Home", "TollFreeNumber1")</strong>@Html.Translate("OrderAReplacement/Home", "Condition1withOr")</span>
+            <span id="lblTollNo2"><strong>@Html.Translate("OrderAReplacement/Home", "TollFreeNumber2")@Html.Translate("OrderAReplacement/Home", "Condition2")</strong></span>
+        </p>
+        <p class="note">
+            <span id="lblCommMsg" class="ddl-t5">@Html.Translate("OrderAReplacement/Home", "CommunicationMsg")</span>
+            <br />
+            <span id="lblLclRatesMsg" class="ddl-t5">@Html.Translate("OrderAReplacement/Home", "LocalRatesMsg")</span>
+        </p>
+    </div>
+</div>

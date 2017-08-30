@@ -1,0 +1,2907 @@
+<configurations>
+  <Configuration>
+    <ConfigurationType>1</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code, used only in SP level</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>1</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code, used only in SP level</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>1</ConfigurationType>
+    <ConfigurationName>NameANDAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Not used in code, used only in SP level</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>DateOfBirth</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>EveningPhoneNumber</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Language</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressLine6</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Name2</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>PrimaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Race</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>SecondaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Sex</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>Title</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check if it is a mandatory field and to show the * next to this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>2</ConfigurationType>
+    <ConfigurationName>TitleEnglish</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>3</ConfigurationType>
+    <ConfigurationName>45</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Options and Benefits, Preference page to set a preference as the default preference - as of Version 3I (Other preferences can be made as default preference by changing the ConfigurationName to the correct preference number)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>ClubcardNumber</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2>18</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>14</ConfigurationValue1>
+    <ConfigurationValue2>14</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>EveningPhoneNumber</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>0</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Activation, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressLine6</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>5</ConfigurationValue1>
+    <ConfigurationValue2>5</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>14</ConfigurationValue1>
+    <ConfigurationValue2>14</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Activation, Options and Benefits, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>2</ConfigurationValue1>
+    <ConfigurationValue2>20</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>Name2</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>2</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>2</ConfigurationValue1>
+    <ConfigurationValue2>25</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>PrimId</ConfigurationName>
+    <ConfigurationValue1>6</ConfigurationValue1>
+    <ConfigurationValue2>10</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Activation, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>SecId</ConfigurationName>
+    <ConfigurationValue1>6</ConfigurationValue1>
+    <ConfigurationValue2>10</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details page to check the minimum and maximum length set for the field</Comments>
+  </Configuration>
+    <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>AviosMembershipID</ConfigurationName>
+    <ConfigurationValue1>16</ConfigurationValue1>
+    <ConfigurationValue2>16</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>BAAviosMembershipID</ConfigurationName>
+    <ConfigurationValue1>8</ConfigurationValue1>
+    <ConfigurationValue2>8</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>5</ConfigurationType>
+    <ConfigurationName>VirginMembershipID</ConfigurationName>
+    <ConfigurationValue1>10</ConfigurationValue1>
+    <ConfigurationValue2>11</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>6</ConfigurationType>
+    <ConfigurationName>DisplayIds</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>1</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Not used in code. It is commented in Join page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>6</ConfigurationType>
+    <ConfigurationName>GroupCountryAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to display AddressLines 1-6 and MailingAddressPostCode section to the Group countries and the FindAddress section in UK</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>Name2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>PrimaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>8</ConfigurationType>
+    <ConfigurationName>SecondaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the profane words against this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>9</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>00421</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the prefix - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>9</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>00421</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the prefix - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>ClubcardNumber</ConfigurationName>
+    <ConfigurationValue1>^\d{1,18}$</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation page to validate clubcard regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Date</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,6}|[0-9]{1,3})$</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>IdFormat</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšť A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressLine6</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšť A-Za-z0-9]+$</ConfigurationValue1>
+    <ConfigurationValue2>^[sSiIçÇöÖüÜGg A-Za-z0-9]+$</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Name2</ConfigurationName>
+    <ConfigurationValue1>^[ÚŮÝŽÁČĎÉĚÍŇÓŘŠŤúůýžáčďéěíňóřšťľ A-Za-z0-9,.\-;:\\\/]+$</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join, Personal Details and Activation to validate the regular expression - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Numeric</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>Phone</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>10</ConfigurationType>
+    <ConfigurationName>PhoneNumber</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation page to validate the regular expression</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>11</ConfigurationType>
+    <ConfigurationName>Join Route Code</ConfigurationName>
+    <ConfigurationValue1>2</ConfigurationValue1>
+    <ConfigurationValue2>3</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>used in Join page to get the join route code value - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>12</ConfigurationType>
+    <ConfigurationName>Is Profanity Check Needed</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>14</ConfigurationType>
+    <ConfigurationName>TransactionlDB</ConfigurationName>
+    <ConfigurationValue1>NGCDataT</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>16</ConfigurationType>
+    <ConfigurationName>ExpiredAccountProcesses</ConfigurationName>
+    <ConfigurationValue1>750</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>17</ConfigurationType>
+    <ConfigurationName>Uncontactable Account</ConfigurationName>
+    <ConfigurationValue1>750</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>18</ConfigurationType>
+    <ConfigurationName>Inactive Account</ConfigurationName>
+    <ConfigurationValue1>760</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideChristmasSaversPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideeCouponPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideExchangesPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideJoinFunctionality</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable the Join functionality - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideLatestStatementPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideManageCardsPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideMyFuelSaverPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideOptionsandBenefits</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideOrderAReplacementPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>0</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HidePersonalDetails</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HidePointDetailsPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HidePointsPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HidePointsSummaryPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HidePreferencesPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideVouchersPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Myaccount master page to enable/disable this link from left menu navigation - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideVoucherLock</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Field to Hide Vouchers on Home page if 2LA disabled </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideLeftNavOnSecLayer</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Field to enable disable left navigation on Security page </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>YearofBirth</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>DayofBirth</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode3Digits</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>MonthofBirth</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>Name2</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>20</ConfigurationType>
+    <ConfigurationName>SSN</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>21</ConfigurationType>
+    <ConfigurationName>Birth Day</ConfigurationName>
+    <ConfigurationValue1>1095</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation page to enable/disable this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>22</ConfigurationType>
+    <ConfigurationName>ShowMyCouponPage</ConfigurationName>
+    <ConfigurationValue1>2012-06-23 15:38:13.413</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to enable/disable order replacement link from left navigation(Defect)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>23</ConfigurationType>
+    <ConfigurationName>CarriedForward</ConfigurationName>
+    <ConfigurationValue1>Prevedené do ďaľšieho obdobia</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Store Procedure for Transaction details in Points page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>23</ConfigurationType>
+    <ConfigurationName>StoreNamePrefix</ConfigurationName>
+    <ConfigurationValue1>TESCO </ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Store Procedure for Transaction details in Points page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>23</ConfigurationType>
+    <ConfigurationName>StringConcatenator</ConfigurationName>
+    <ConfigurationValue1> - </ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideDOB</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideGender</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideEmail</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine1</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine2</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine4</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine5</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>ChinaHiddenFunctionalityEveningPhoneNo</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>ChinaHiddenFunctionalityMiddleName</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>ChinaHiddenFunctionalityTitle</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>EditCustomerStatusSettings</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the textbox/dropdown field - CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessAddress6</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessDetails</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessName</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessPostCode</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessRegistrationNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideBusinessType</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Customer details Page to enable/disable the field -  CSC Code</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideDayTimePhoneNo</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>0</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideFirstName</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideFirstNameinSalutation</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>0</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Home and Manage cards Page to enable/disable the first name in salutaion- as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideLegalPolicy</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Page to enable/disable the privacy policy section - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideMobilePhoneNo</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>0</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePointsSummaryPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Points details Page to enable/disable the summary link - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePostCode</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePreferredLanguage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePrimaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePromotionalCodeInJoinPage</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideRace</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideSecondaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideSurName</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideEveningPhoneNo</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HideAddressLine6</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Coupons to get the coupon images</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePointsStartDate</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Points Home Page to Show/Hide Start Date in the Points Collection Period Box</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePointsEndDate</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>1</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Points Home Page to Show/Hide End Date in the Points Collection Period Box</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>25</ConfigurationType>
+    <ConfigurationName>HidePointsEndMonth</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Points Home Page to Show/Hide End Month in the Points Collection Period Box</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>DateOfBirth</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>EveningPhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>Language</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>PrimaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>Race</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>SecondaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>Sex</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used by Cell 10 in the Import Customer Batch</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>26</ConfigurationType>
+    <ConfigurationName>TitleEnglish</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>1</ConfigurationName>
+    <ConfigurationValue1>Welcome to Allergic preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>2</ConfigurationName>
+    <ConfigurationValue1>Welcome to Dietary preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>10</ConfigurationName>
+    <ConfigurationValue1>Welcome to BA Miles preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>12</ConfigurationName>
+    <ConfigurationValue1>Welcome to Avios Miles preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>13</ConfigurationName>
+    <ConfigurationValue1>Welcome to Christmas Saver preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>15</ConfigurationName>
+    <ConfigurationValue1>Welcome to eCoupon preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>16</ConfigurationName>
+    <ConfigurationValue1>Welcome to Save Trees preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>17</ConfigurationName>
+    <ConfigurationValue1>Welcome to VA preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>43</ConfigurationName>
+    <ConfigurationValue1>Potvrdenie o zmene spôsobu zasielania Clubcard vyúčtovania</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>44</ConfigurationName>
+    <ConfigurationValue1>Potvrdenie o zmene spôsobu zasielania Clubcard vyúčtovania</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>45</ConfigurationName>
+    <ConfigurationValue1>Potvrdenie o zmene spôsobu zasielania Clubcard vyúčtovania</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Preferences page to get the Email Subject for send email notification on opt in -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>27</ConfigurationType>
+    <ConfigurationName>48</ConfigurationName>
+    <ConfigurationValue1>Welcome to BT preference</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>0</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>28</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>25</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join page to check if it is a mandatory field and to show the * next to this field  -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>29</ConfigurationType>
+    <ConfigurationName>EmailLinkExpirationTime</ConfigurationName>
+    <ConfigurationValue1>250</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Not used in MCA code </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>30</ConfigurationType>
+    <ConfigurationName>CollectionPeriodMonth</ConfigurationName>
+    <ConfigurationValue1>30</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Points summary page to get the month name from the collection period - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>ClubcardSecureDigits</ConfigurationName>
+    <ConfigurationValue1>11,12,13,14</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in HomeSecurityLayer and SecurityLayer pages to get the three random digits for verification -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>SecureVoucherPage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Voucher home pages to check show/hide the sevurity page for verification -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>PERSONALDETAILS</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Config value 1 as 0 will enable security on personal details page and vice versa</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>MYCONTACTPREFERENCES</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Config value 1 as 0 will enable security on My contact preferences page and vice versa</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>VIEWMYCARDS</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on viewmycards page and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>OPTIONSANDBENEFITS</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on optionsandbenefits page and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>HOME</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in home page to check show/hide the security page for verification -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>BOOSTSATTESCO</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on boosts page and vice versa.Along with configvalue 1 as "0" .if configvalue2 is "0", it will enable the security on Boosts page irrespective of boost value.if for configvalue "0",configvalue2 is anything other than</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>VOUCHERS</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on voucher page and vice versa.Along with configvalue1 as "0" .if configvalue2 is "0", it will enable the security on voucher page irrespective of voucher value.if for configvalue "0",configvalue2 is anything other t</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>COUPONS</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on coupons page irrespective of coupons value and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>JOIN</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Config value 1 as 0 will enable security on join page and vice versa.Note: we dont have secuiry applicable for join page. this key has been created if any such requirement comes in future.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>ACTIVATION</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on activation page and vice versa.Note: we dont have security applicable for activation page. This key has been created if any such requirement comes in future.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>ORDERAREPLACEMENT</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on orderreplacement page and vice versa.Note: we dont have security applicable for orderreplacement page. This key has been created if any such requirement comes in future.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>MYLATESTSTATEMENT</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on MYLATESTSTATEMENT page and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>POINTS</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on points page and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>CHRISTMASSAVER</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configvalue1 as 0 will enable security on christmassaver page and vice versa.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>31</ConfigurationType>
+    <ConfigurationName>POINTSDETAIL</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to apply 2LA authentication on the page | Use 0 to factor 2LA, 1 to bypass security</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>EmailNotification</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification functionality -as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackDayTimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackDOB</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackEmail</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackEvengingPhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackFirstName</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackGender</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackMiddleName</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackMobileNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>34</ConfigurationType>
+    <ConfigurationName>TrackSurname</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Store Procedures for Transaction Database name.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp1</ConfigurationName>
+    <ConfigurationValue1>My Points</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp2</ConfigurationName>
+    <ConfigurationValue1>My Coupons</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp3</ConfigurationName>
+    <ConfigurationValue1>My Vouchers</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp4</ConfigurationName>
+    <ConfigurationValue1>My Latest Statement</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp5</ConfigurationName>
+    <ConfigurationValue1>My Fuel Savings</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp6</ConfigurationName>
+    <ConfigurationValue1>My Boosts at Tesco</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp7</ConfigurationName>
+    <ConfigurationValue1>Flying Schemes</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp8</ConfigurationName>
+    <ConfigurationValue1>Baby Club</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>35</ConfigurationType>
+    <ConfigurationName>Stamp9</ConfigurationName>
+    <ConfigurationValue1>Christmas Savers</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Store Procedure for Transaction details in Points page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>DateOfBirth</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>EveningPhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>Language</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>Name1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>Name3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>PrimaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>Race</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>SecondaryId</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>Sex</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>36</ConfigurationType>
+    <ConfigurationName>TitleEnglish</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Personal details and Preference page to check to enable/disable send email notification on update of this field - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>37</ConfigurationType>
+    <ConfigurationName>EmailAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>37</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>37</ConfigurationType>
+    <ConfigurationName>NameANDAddress</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>37</ConfigurationType>
+    <ConfigurationName>SSN</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Home page to check to enable/disable stamps fields  - as of Version 3I</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>DaytimePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>14</ConfigurationValue1>
+    <ConfigurationValue2>14</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressLine1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressLine2</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressLine3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressLine4</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressLine5</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>35</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MailingAddressPostCode</ConfigurationName>
+    <ConfigurationValue1>5</ConfigurationValue1>
+    <ConfigurationValue2>6</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>MobilePhoneNumber</ConfigurationName>
+    <ConfigurationValue1>14</ConfigurationValue1>
+    <ConfigurationValue2>14</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>PrimId</ConfigurationName>
+    <ConfigurationValue1>6</ConfigurationValue1>
+    <ConfigurationValue2>10</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>38</ConfigurationType>
+    <ConfigurationName>SecId</ConfigurationName>
+    <ConfigurationValue1>6</ConfigurationValue1>
+    <ConfigurationValue2>10</ConfigurationValue2>
+    <IsDeleted>Y</IsDeleted>
+    <Comments>Used in Import Customer Batch - Not used in MCA code.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Profanity</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsDotcomEnvironment</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Password</ConfigurationName>
+    <ConfigurationValue1>cco1234</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DisplayDateFormat</ConfigurationName>
+    <ConfigurationValue1>dd.MM.yy</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>NLogConfigPath</ConfigurationName>
+    <ConfigurationValue1>Config\NLog.config</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsFacebookRequired</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsTwitterRequired</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DisableSpendOnline</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsReplacementCardWithYourNewName</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>SpecifiedDateFormat</ConfigurationName>
+    <ConfigurationValue1>MM/dd/yyyy</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Linkerfordate</ConfigurationName>
+    <ConfigurationValue1>/</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>GenericLoginPage</ConfigurationName>
+    <ConfigurationValue1>https://r.itesco.sk/sk-SK/?returnUrl=https://s.itesco.sk/mojaclubcard/ucet/Home.aspx</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>GenericLogoutPage</ConfigurationName>
+    <ConfigurationValue1>http://www.clubcard.sk</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DisableCurrencyDecimal</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DateRangeForCollectionPeriod</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>LoginSolution</ConfigurationName>
+    <ConfigurationValue1>IGHS</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>EnableSecurityLayerOnMCAHome</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Setting config value as True will enable security before home page and vice versa</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>StatementFormatPath</ConfigurationName>
+    <ConfigurationValue1>~/StatementFormats/</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>TescoPointsImagePath</ConfigurationName>
+    <ConfigurationValue1>~/Content/images/</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ReplaceClubcardPrefix</ConfigurationName>
+    <ConfigurationValue1>979</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>PrintBGImagePath</ConfigurationName>
+    <ConfigurationValue1>~\Content\Images\</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsAlphaCodeRequired</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsHideCustomerName</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>FontName</ConfigurationName>
+    <ConfigurationValue1>Verdana</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>BankVoucherType</ConfigurationName>
+    <ConfigurationValue1>52,53</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>FontPath</ConfigurationName>
+    <ConfigurationValue1>D:\MCA\Refactoring\MCA\ClubcardOnline.Web\fonts\arial.ttf</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>MaxRows</ConfigurationName>
+    <ConfigurationValue1>100</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>AccountDuplicateCheckRequired</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ShowHowToUseCoupons</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DisableDiaetoryPreference</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Enable/Disable Locale</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsLocale</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>EnableProvince</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable the field - as of Version 3I(Group)</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Tesco_Visa_High</ConfigurationName>
+    <ConfigurationValue1>43056700</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Tesco_Visa_Low</ConfigurationName>
+    <ConfigurationValue1>43056799</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Tesco_Platinum_High</ConfigurationName>
+    <ConfigurationValue1>46559000</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Tesco_Platinum_Low</ConfigurationName>
+    <ConfigurationValue1>46559099</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_High</ConfigurationName>
+    <ConfigurationValue1>51864500</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_Low</ConfigurationName>
+    <ConfigurationValue1>51864599</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_Clubcard_High</ConfigurationName>
+    <ConfigurationValue1>51865200</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_Clubcard_Low</ConfigurationName>
+    <ConfigurationValue1>51865299</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_Bonus_High</ConfigurationName>
+    <ConfigurationValue1>52064100</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Mastercard_Bonus_Low</ConfigurationName>
+    <ConfigurationValue1>52064199</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Visa_Bonus_High</ConfigurationName>
+    <ConfigurationValue1>40134300</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Visa_Bonus_Low</ConfigurationName>
+    <ConfigurationValue1>40134999</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Visa_Clubcard_High</ConfigurationName>
+    <ConfigurationValue1>40134400</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Visa_Clubcard_Low</ConfigurationName>
+    <ConfigurationValue1>40134999</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Platinum_Mastercard_High</ConfigurationName>
+    <ConfigurationValue1>55218800</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Activation Page for Clubcard validation against credit card</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Platinum_Mastercard_Low</ConfigurationName>
+    <ConfigurationValue1>55218899</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to toggle Contact Preference Optins behavior</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsOptInBehaviour</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to redirect url when join page is hidden.</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>HideJoinFunctionality</ConfigurationName>
+    <ConfigurationValue1>https://s.itesco.sk/mojaclubcard/ucet/Join/Home.aspx</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to enable print temporary card on Home Page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>EnablePrintTempCard</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Order replacement</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ORDRPL_PROCESSWINDOW</ConfigurationName>
+    <ConfigurationValue1>21</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to show/hide Bonus Points Column in Points Details page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DisableBonusPoints</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsCaptchaEnabled</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in view my cards</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Transaction_type</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Domain name of the application running to track google analytics</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>GADomainName</ConfigurationName>
+    <ConfigurationValue1>tesco.com</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Property ID provided for specific country</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>WebPropertyId</ConfigurationName>
+    <ConfigurationValue1>UA-50812388-5</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Home Page for GA Stamps tracking</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsGoogleAnalyticsRequired</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>DTM library to integrate DTM functionalities</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DTMUrl</ConfigurationName>
+    <ConfigurationValue1>//assets.adobedtm.com/07f4803ba7577af91bd0d0bb989cce05e8f2a5c8/satelliteLib-7911cd3d3857c03c0f8ff13ddf46947d78d9b46d.js</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>DTM library to integrate DTM functionalities,update url for staging-//assets.adobedtm.com/07f4803ba7577af91bd0d0bb989cce05e8f2a5c8/satelliteLib-7911cd3d3857c03c0f8ff13ddf46947d78d9b46d-staging.js</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsDTMRequired</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Xmas saver Page for calculate bonus </Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>Topuptoreceivemaxbonus</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Xmas saver Page for calculate Max Bonus</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>MaxBonusVoucher</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Xmas saver Page for calculate bonus voucher</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>BonusVoucher</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Xmas saver Page for calculate Topup</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>TopupRange</ConfigurationName>
+    <ConfigurationValue1></ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Forsee library to integrate DTM functionalities</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ForeseeURL</ConfigurationName>
+    <ConfigurationValue1>//gateway.answerscloud.com/tescoclubcard-uk/staging/gateway.min.js</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to enable or disable Foresee functionalities</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsForeseeRequired</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ServiceConsumer</ConfigurationName>
+    <ConfigurationValue1>Dotcom Customer</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ShowTypeofCard</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to toggle Store box of How To Use Couponse section</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ShowTescoDotcomCoupons</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Login integration solution</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>CustomerEncodedValue</ConfigurationName>
+    <ConfigurationValue1>D065D5CD040ABE725512CFC4D190E07C7E8D789040146292FEED7A06D698F187456E9EE7C1A9122F59A77BA2AB68AFBF58152201E5D52AA060FE48CB61276840E1B1B3CD97F98406495CEBD20BBB29F353C13F5B441A24B25D321F0A17A6E16555A1922D2D8F7A6505A8F90EB7118B8B1CCB388818CB7A23066EA31C6B9D33A6D75818AFA27B409FBB48D72682DE2D3AF1066227D028090569713E1C8131D060A2112ADF4F94DFC6FEFA557172D3B51B71FAF8F340627A4A8215DD54AEBD31485B2A7319C9B89A3A6E9928285884BE3E6C09E37EFF82AB19BC95F3D72ADF37A9305025C23EBF1803DD4F8E96ECCABFA470B8EAEB3701E57C9DDCD02EB496F7C5F49BAA3D</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Login integration solution</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>anonCookieName</ConfigurationName>
+    <ConfigurationValue1>AUID</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Login integration solution</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>anonCookieLifeSpan</ConfigurationName>
+    <ConfigurationValue1>30</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>CouponImageFolder</ConfigurationName>
+    <ConfigurationValue1>~/Content/images/couponimages</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>For checking Exceptions</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ExceptionMessage</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used in Join Personal details Page to enable/disable Household and Dietary preferences</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>DateFormats</ConfigurationName>
+    <ConfigurationValue1>
+      "M/d/yyyy h:mm:ss tt", "M/d/yyyy h:mm tt",
+      "MM/dd/yyyy hh:mm:ss", "M/d/yyyy h:mm:ss",
+      "M/d/yyyy hh:mm tt", "M/d/yyyy hh tt",
+      "M/d/yyyy h:mm", "M/d/yyyy h:mm",
+      "MM/dd/yyyy hh:mm", "M/dd/yyyy hh:mm",
+      "yyyy/MM/dd hh:mm", "yyyy/MM/dd hh:mm:ss",
+      "yyyy-MM-ddThh:mm:ss:fff", "yyyy-MM-ddThh:mm:ss",
+      "yyyy-MM-dd hh:mm:ss", "yyyy-MM-dd hh:mm",
+      "M-dd-yyyy h:mm:ss", "M-dd-yyyy h:mm",
+      "M-dd-yyyy hh:mm:ss", "M-dd-yyyy hh:mm",
+      "yyyy/M/dd hh:mm", "yyyy/M/dd hh:mm:ss",
+      "M/d/yyyy H:mm:ss tt", "M/d/yyyy H:mm tt",
+      "MM/dd/yyyy HH:mm:ss", "M/d/yyyy H:mm:ss",
+      "M/d/yyyy HH:mm tt", "M/d/yyyy HH tt",
+      "M/d/yyyy H:mm", "M/d/yyyy H:mm",
+      "MM/dd/yyyy HH:mm", "M/dd/yyyy HH:mm",
+      "yyyy/MM/dd HH:mm", "yyyy/MM/dd HH:mm:ss",
+      "yyyy-MM-ddTHH:mm:ss:fff", "yyyy-MM-ddTHH:mm:ss",
+      "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm",
+      "M-dd-yyyy H:mm:ss", "M-dd-yyyy H:mm",
+      "M-dd-yyyy HH:mm:ss", "M-dd-yyyy HH:mm",
+      "yyyy/M/dd HH:mm", "yyyy/M/dd HH:mm:ss",
+      "dd/MM/yy", "MMM dd yyyy hh:mmtt", "MMM d yyyy hh:mmtt",
+      "yyyy-MM-ddTHH:mm:sszzz", "yyyy-MM-ddTHH:mm:ssTZD",
+      "yyyy-MM-ddTHH:mm:ssTZ", "dd MMM yyyy",
+      "dd/MM/yyyy HH:mm:ss",
+      "MMM  d yyyy hh:mmtt","dd/M/yyyy","d/M/yyyy"
+    </ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used across the application to format the date as defined</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>19</ConfigurationType>
+    <ConfigurationName>HideMarketingPreference</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>51</ConfigurationType>
+    <ConfigurationName>DisplayName1</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to Show or Hide Name1 in Customer Display Name throughout MCA.ConfigValue1 as "1" will display the name1 for pages mentioned in Configvalue2.ConfigValue1 as "0" will hide the name1 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>51</ConfigurationType>
+    <ConfigurationName>DisplayName2</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards,Voucher,Coupon</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to Show or Hide Name2 in Customer Display Name throughout MCA.ConfigValue1 as "1" will display the name2 for pages mentioned in Configvalue2.ConfigValue1 as "0" will hide the name2 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>51</ConfigurationType>
+    <ConfigurationName>DisplayName3</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to Show or Hide name3 in Customer Display Name throughout MCA.ConfigValue1 as "1" will display the name3 for pages mentioned in Configvalue2.ConfigValue1 as "0" will hide the name3 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>52</ConfigurationType>
+    <ConfigurationName>Name1Abbreviation</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards,Voucher,Coupon</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name1 Abbreviation in Customer Display Name throughout MCA. ConfigValue1 as "1" will show the intial of name1 for pages mentioned in Configvalue2.ConfigValue1 as "0" will show the full name1 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>52</ConfigurationType>
+    <ConfigurationName>Name2Abbreviation</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards,Voucher,Coupon</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name2 Abbreviation in Customer Display Name throughout MCA.ConfigValue1 as "1" will show the intial of name2 for pages mentioned in Configvalue2.ConfigValue1 as "0" will show the full name2 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>52</ConfigurationType>
+    <ConfigurationName>Name3Abbreviation</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>Home,ViewMyCards,Voucher,Coupon</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name3 Abbreviation in Customer Display Name throughout MCA.ConfigValue1 as "1" will show the intial of name3 for pages mentioned in Configvalue2.ConfigValue1 as "0" will show the full name3 for pages mentioned in Configvalue2</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>53</ConfigurationType>
+    <ConfigurationName>Name1Casing</ConfigurationName>
+    <ConfigurationValue1>Home|C,Voucher|U, Coupon|U,ViewMycards|C</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name1 casing in Customer Display Name throughout MCA.Config value 1 as "Home|C" depicts that for home page, name1 will be displayed in camel case. C stands for Camelcase, U for Uppercase and L for Lowercase</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>53</ConfigurationType>
+    <ConfigurationName>Name2Casing</ConfigurationName>
+    <ConfigurationValue1>Home|C,Voucher|U, Coupon|U,ViewMycards|C</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name2 casing in Customer Display Name throughout MCA.Config value 1 as "Home|C" depicts that for home page, name2 will be displayed in camel case. C stands for Camelcase, U for Uppercase and L for Lowercase</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>53</ConfigurationType>
+    <ConfigurationName>Name3Casing</ConfigurationName>
+    <ConfigurationValue1>Home|C,Voucher|U, Coupon|U,ViewMycards|C</ConfigurationValue1>
+    <ConfigurationValue2></ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to configure name3 casing in Customer Display Name throughout MCA.Config value 1 as "Home|C" depicts that for home page, name3 will be displayed in camel case. C stands for Camelcase, U for Uppercase and L for Lowercase</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>EnableSecurityAfterActivation</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Enable Security page after Activation: 1 to go to Show Home Security page and 0 to go to Home page directly</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>EnableLeftNavOnSecLayer</ConfigurationName>
+    <ConfigurationValue1>TRUE</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to enable left nav on security page</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>PointsLockForCultures</ConfigurationName>
+    <ConfigurationValue1>en-GB</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>used to enable secuirty on given cultures</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>VocuherLockForCultures</ConfigurationName>
+    <ConfigurationValue1>en-GB</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Voucher security lock for given culture</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>PreferenceUIConfiguration</ConfigurationName>
+    <ConfigurationValue1>
+      [{"preferenceid":27,"dependentprefidsassame":[28,29,30],"dependentprefidsasopp":null,"isvisible":true},
+      {"preferenceid":31,"dependentprefidsassame":[32,33,34],"dependentprefidsasopp":null,"isvisible":true},
+      {"preferenceid":35,"dependentprefidsassame":[36,37,38],"dependentprefidsasopp":null,"isvisible":true}]
+    </ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Configuration for preferences optin and optouts</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsPrivacyPolicyVisibleForPreference</ConfigurationName>
+    <ConfigurationValue1>1</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Show and hide privacy policy section for preference  0 means hide, 1 means show</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsPostCodeFormatRequired</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used to apply formatting on Postcode | Use 0 to switch-off formatting, 1 to switch-on formatting</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsChristmasSaverApplicable</ConfigurationName>
+    <ConfigurationValue1>0</ConfigurationValue1>
+    <ConfigurationValue2>NULL</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments>This key is used to enable/disable Christmas Saver call. Make it 1 to enable and 0 to disable</Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>ContactApiUrl</ConfigurationName>
+    <ConfigurationValue1>http://172.28.152.12/mcaapi/v1/AddressBook/PreferredPhysicalAddresses</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+    <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>IsGridFormat</ConfigurationName>
+    <ConfigurationValue1>FALSE</ConfigurationValue1>
+    <ConfigurationValue2>Null</ConfigurationValue2>
+    <IsDeleted>N</IsDeleted>
+    <Comments></Comments>
+  </Configuration>
+  <Configuration>
+  <ConfigurationType>50</ConfigurationType>
+    <ConfigurationName>AddressAPI</ConfigurationName>
+    <ConfigurationValue1>false</ConfigurationValue1>
+    <ConfigurationValue2>http://api.ppe.tescoaddress.com/v4/postcodes</ConfigurationValue2>
+    <!--<ConfigurationValue2>http://172.28.152.12/MCAApi/v4/postcodes</ConfigurationValue2>-->
+    <IsDeleted>N</IsDeleted>
+    <Comments>Used as switch for using Address API\NGC service and contains the URL as well</Comments>
+  </Configuration>
+</configurations>

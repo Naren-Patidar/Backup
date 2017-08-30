@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a74a388c-b6dd-41e4-a8f7-7ecfe44894b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.21.179.47/CCOServices/CustomerService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="01.wsdl" MetadataType="Wsdl" ID="e46a7528-4bcf-436f-a90f-af1f3ed42664" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="748fb449-abf2-41b6-8319-0eab089be471" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="01.xsd" MetadataType="Schema" ID="baf67844-f247-4d58-b343-57d5ca6d5674" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c756f81e-b2bc-423f-99ac-8179b811e75f" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="Tesco.com.ClubcardOnlineService.xsd" MetadataType="Schema" ID="c4b4f0f2-0bc6-42d1-a482-4e3859aedf1d" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="Tesco.Marketing.IT.ClubcardCoupon.DataContract.xsd" MetadataType="Schema" ID="2a9d0e4a-ac8e-4dc2-86ca-6220ff49a201" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="System.Web.Security.xsd" MetadataType="Schema" ID="6befc0e3-11eb-4278-a7ed-8f7a985196cc" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="4466b4f7-ee15-4988-bad8-a8ae387061e3" SourceId="1" SourceUrl="http://172.21.179.47/CCOServices/CustomerService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

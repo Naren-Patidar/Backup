@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A23F4CA-2C63-45F0-9DC5-2CD50FCE4829}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomerService</RootNamespace>
+    <AssemblyName>CustomerService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomerService.svc" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\1.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\2.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\3.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\4.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\5.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\6.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\Config1.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\Config.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\7.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\8.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\9.xml" />
+    <Content Include="DataSource\GetConfigDetails\en-GB\Copy of Config.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004022010553358.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\0.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\634004024007890751.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\Copy %282%29 of 634004022010553358.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetCustomerVerificationDetails\904289.xml" />
+    <Content Include="DataSource\GetCustomerDetails\en-GB\904289.xml" />
+    <Content Include="DataSource\SearchCustomer\en-GB\904289.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerService.svc.cs">
+      <DependentUpon>CustomerService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ConsumerSource.cs" />
+    <Compile Include="Entities\CouponClass.cs" />
+    <Compile Include="Entities\CouponInformation.cs" />
+    <Compile Include="Entities\CouponLineTextInfo.cs" />
+    <Compile Include="Entities\CouponRequest.cs" />
+    <Compile Include="Entities\CouponResponse.cs" />
+    <Compile Include="Entities\CustomerCouponRequest.cs" />
+    <Compile Include="Entities\MembershipUser.cs" />
+    <Compile Include="Entities\RedeemType.cs" />
+    <Compile Include="Entities\RedemptionInfo.cs" />
+    <Compile Include="ICustomerService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\CustomerServiceProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ServiceUtility\ServiceUtility.csproj">
+      <Project>{C71BE56F-960E-48A4-86AA-5B995349E106}</Project>
+      <Name>ServiceUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8905</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<eCoupon-App_LocalResources.th-TH>
+  <Home.cshtml.en-MY.resx>
+    <Data key="Description" value="In this section, you can view a summary of the coupons that have been sent to you, check out which coupons you have redeemed and not redeemed, &amp; print out any unredeemed ones. &lt;a href=&quot;#RedeemedCoupons&quot; id=&quot;LinkOnHome&quot;&gt;keep track of which ones have been used.&lt;/a&gt;" />
+    <Data key="ErrorCouponsDetail" value="Could not fetch your Coupons Details." />
+    <Data key="ErrorCouponsHome" value="There is some error in fetching your coupons." />
+    <Data key="ErrorCouponsPreview" value="Cannot preview your Coupon" />
+    <Data key="HoldingPageDescriptionPart1" value="We currently send you coupons to spend in store. If you would prefer to receive eCoupons to spend online, please go to" />
+    <Data key="HoldingPageDescriptionPart2" value="My preferences" />
+    <Data key="HoldingPageDescriptionPart3" value="and opt-in to eCoupons." />
+    <Data key="HoldingPageDescriptionPart4" value="To find out more," />
+    <Data key="HoldingPageDescriptionPart5" value="click here" />
+    <Data key="PageTitle" value="My Coupons" />
+    <Data key="PDFTitleCoupon" value="Coupon" />
+    <Data key="strCouponUsed" value="Coupon Used" />
+    <Data key="strCouponVoided" value="Coupon Voided" />
+    <Data key="strOf" value="of" />
+    <Data key="SummaryHeading" value="Coupon Summary" />
+  </Home.cshtml.en-MY.resx>
+  <_CouponHowToUse.cshtml.en-MY.resx>
+    <Data key="Heading" value="How to use your coupons" />
+    <Data key="InStoreHeading" value="In store" />
+    <Data key="InStoreHtml" value="&lt;ol&gt;&#xD;&#xA;&lt;li&gt;Select the Coupons you want to print&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Click &quot;Print selected coupons&quot;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Selected coupons will be displayed for you to print&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Print out your coupons &amp; redeem at any Tesco store&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="OnlineHeading" value="Online" />
+    <Data key="OnlineHtml" value="&lt;ol&gt;&lt;li&gt;Your coupons will be waiting for you at the Tesco groceries checkout&lt;/li&gt;&lt;li&gt;Simply select those you want to use and complete your shopping&lt;/li&gt;&lt;/ol&gt;" />
+  </_CouponHowToUse.cshtml.en-MY.resx>
+  <_CouponsAvailable.cshtml.en-MY.resx>
+    <Data key="CouponHeaderLable" value="Show details" />
+    <Data key="ExpireLable" value="Expires" />
+    <Data key="FooterLable" value="Please note: Ensure your coupons are printed clearly on white paper before visiting any Tesco store. Coupons printed in black &amp; white, or colour are accepted. Coupons can be printed out multiple times but can only be redeemed ONCE." />
+    <Data key="Heading" value="Coupons currently available &amp; can be printed out" />
+    <Data key="NoCouponSeletedError" value="Please select some coupons and try again. Thank you." />
+    <Data key="NoCouponsLable" value="You don't have any active coupons at the moment. Check back soon!" />
+    <Data key="OnlineCodeLable" value="Online eCode" />
+    <Data key="PrintBtnLable" value="Print selected coupons" />
+    <Data key="RedemptionsRemainingLable" value="Redemptions Remaining" />
+    <Data key="SelectBtnLable" value="Select all" />
+    <Data key="SubHeading" value="The following coupons below are ready for use." />
+  </_CouponsAvailable.cshtml.en-MY.resx>
+  <_CouponsBox.cshtml.en-MY.resx>
+    <Data key="CouponAvailableLable" value="Currently available &amp;&#xD;&#xA;can be printed out" />
+    <Data key="CouponsSentLable" value="Sent to you&#xD;&#xA;in the last 6 months" />
+    <Data key="CouponUsedLable" value="You have redeemed&#xD;&#xA;in the last 4 weeks" />
+  </_CouponsBox.cshtml.en-MY.resx>
+  <_CouponsUsed.cshtml.en-MY.resx>
+    <Data key="IssueDateLable" value="Date issued" />
+    <Data key="NoRedeemptionMessage" value="You haven't redeemed any coupons in the last 4 weeks." />
+    <Data key="OfferLable" value="Offer" />
+    <Data key="RedeemedDateLable" value="Date redeemed" />
+    <Data key="RedeemedLocationLable" value="Where redeemed" />
+    <Data key="RedemptionCountLable" value="Redemption count" />
+    <Data key="UsedCouponSectionHeading" value="You have redeemed in the last 4 weeks" />
+    <Data key="UsedLable" value="Used / Voided" />
+  </_CouponsUsed.cshtml.en-MY.resx>
+</eCoupon-App_LocalResources.th-TH>

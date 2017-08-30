@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences-App_LocalResources>
+  <Home.aspx.cs-CZ.resx>
+    <Data key="AccountDuplicate" value="Zdá se, že existuje jiný účet s touto e-mailovou adresou / číslem mobilního telefonu. Prosím, obraťte se na infolinku na telefonním čísle 0800 59 16 88" />
+    <Data key="AddChildValidDobFormat" value="Doplňte prosím dítě s platným datem narození ve formátu DD/MM/RRRR." />
+    <Data key="BrailleStatementNotOptInLargePrint" value="Nemáte zvoleno Braillovo písmo / velký tisk výpisu." />
+    <Data key="BrailleStatementOptIn" value="Máte zvolen výpis v  Braillově písmu." />
+    <Data key="BrailleStatementOptInLargePrint" value="Máte zvolen velký tisk výpisu." />
+    <Data key="btnConfirmContactPrefResource1Text" value="Potvrdit" />
+    <Data key="btnConfirmContactPrefResource1ToolTip" value="" />
+    <Data key="btnConfirmContactPrefResource2Text" value="Potvrdit" />
+    <Data key="btnConfirmContactPrefResource2ToolTip" value="" />
+    <Data key="btnConfirmMailingPrefResource1Text" value="Potvrdit" />
+    <Data key="btnConfirmMailingPrefResource1ToolTip" value="" />
+    <Data key="btnConfirmMailingPrefResource2Text" value="Potvrdit" />
+    <Data key="btnConfirmMailingPrefResource2ToolTip" value="" />
+    <Data key="btnConfirmStatementPrefResource1Text" value="Potvrdit" />
+    <Data key="btnConfirmStatementPrefResource1ToolTip" value="" />
+    <Data key="btnConfirmStatementPrefResource2Text" value="Potvrdit" />
+    <Data key="btnConfirmStatementPrefResource2ToolTip" value="" />
+    <Data key="btnConfirmWhatElseIcanSignUpResource1Text" value="Potvrdit" />
+    <Data key="btnConfirmWhatElseIcanSignUpResource1ToolTip" value="" />
+    <Data key="btnConfirmWhatElseIcanSignUpResource2Text" value="Potvrdit" />
+    <Data key="btnConfirmWhatElseIcanSignUpResource2ToolTip" value="" />
+    <Data key="Button1Resource1Text" value="Zrušit výběr" />
+    <Data key="Button1Resource1ToolTip" value="" />
+    <Data key="Button1Resource2Text" value="Zrušit výběr" />
+    <Data key="Button1Resource2ToolTip" value="" />
+    <Data key="chkBabyTodlerOptInResource1Text" value="" />
+    <Data key="chkBabyTodlerOptInResource1ToolTip" value="" />
+    <Data key="chkBabyTodlerOptInResource2Text" value="" />
+    <Data key="chkBabyTodlerOptInResource2ToolTip" value="" />
+    <Data key="chkBabyTodlerOptOutResource1Text" value="" />
+    <Data key="chkBabyTodlerOptOutResource1ToolTip" value="" />
+    <Data key="chkBabyTodlerOptOutResource2Text" value="" />
+    <Data key="chkBabyTodlerOptOutResource2ToolTip" value="" />
+    <Data key="chkDontContactResource1Text" value="" />
+    <Data key="chkDontContactResource1ToolTip" value="" />
+    <Data key="chkDontContactResource2Text" value="" />
+    <Data key="chkDontContactResource2ToolTip" value="" />
+    <Data key="chkEcouponsOptInResource1Text" value="" />
+    <Data key="chkEcouponsOptInResource1ToolTip" value="" />
+    <Data key="chkEcouponsOptInResource2Text" value="" />
+    <Data key="chkEcouponsOptInResource2ToolTip" value="" />
+    <Data key="chkEcouponsOptOutResource1Text" value="" />
+    <Data key="chkEcouponsOptOutResource1ToolTip" value="" />
+    <Data key="chkEcouponsOptOutResource2Text" value="" />
+    <Data key="chkEcouponsOptOutResource2ToolTip" value="" />
+    <Data key="chkRecvPartnersOffrnInfoResource1Text" value="" />
+    <Data key="chkRecvPartnersOffrnInfoResource1ToolTip" value="" />
+    <Data key="chkRecvPartnersOffrnInfoResource2Text" value="" />
+    <Data key="chkRecvPartnersOffrnInfoResource2ToolTip" value="" />
+    <Data key="chkRecvTescoOffrnInfoResource1Text" value="" />
+    <Data key="chkRecvTescoOffrnInfoResource1ToolTip" value="" />
+    <Data key="chkRecvTescoOffrnInfoResource2Text" value="" />
+    <Data key="chkRecvTescoOffrnInfoResource2ToolTip" value="" />
+    <Data key="chkREmailResource1Text" value="" />
+    <Data key="chkREmailResource1ToolTip" value="" />
+    <Data key="chkREmailResource2Text" value="" />
+    <Data key="chkREmailResource2ToolTip" value="" />
+    <Data key="chkRMailResource1Text" value="" />
+    <Data key="chkRMailResource1ToolTip" value="" />
+    <Data key="chkRMailResource2Text" value="" />
+    <Data key="chkRMailResource2ToolTip" value="" />
+    <Data key="chkRphoneResource1Text" value="" />
+    <Data key="chkRphoneResource1ToolTip" value="" />
+    <Data key="chkRphoneResource2Text" value="" />
+    <Data key="chkRphoneResource2ToolTip" value="" />
+    <Data key="chkRSmsResource1Text" value="" />
+    <Data key="chkRSmsResource1ToolTip" value="" />
+    <Data key="chkRSmsResource2Text" value="" />
+    <Data key="chkRSmsResource2ToolTip" value="" />
+    <Data key="chkSaveTreeOptINResource1Text" value="" />
+    <Data key="chkSaveTreeOptINResource1ToolTip" value="" />
+    <Data key="chkSaveTreeOptINResource2Text" value="" />
+    <Data key="chkSaveTreeOptINResource2ToolTip" value="" />
+    <Data key="chkSaveTreeOptOutResource1Text" value="" />
+    <Data key="chkSaveTreeOptOutResource1ToolTip" value="" />
+    <Data key="chkSaveTreeOptOutResource2Text" value="" />
+    <Data key="chkSaveTreeOptOutResource2ToolTip" value="" />
+    <Data key="chkTGEMailResource1Text" value="" />
+    <Data key="chkTGEMailResource1ToolTip" value="" />
+    <Data key="chkTGEMailResource2Text" value="" />
+    <Data key="chkTGEMailResource2ToolTip" value="" />
+    <Data key="chkTGMailResource1Text" value="" />
+    <Data key="chkTGMailResource1ToolTip" value="" />
+    <Data key="chkTGMailResource2Text" value="" />
+    <Data key="chkTGMailResource2ToolTip" value="" />
+    <Data key="chkTGPhoneResource1Text" value="" />
+    <Data key="chkTGPhoneResource1ToolTip" value="" />
+    <Data key="chkTGPhoneResource2Text" value="" />
+    <Data key="chkTGPhoneResource2ToolTip" value="" />
+    <Data key="chkTGSmsResource1Text" value="" />
+    <Data key="chkTGSmsResource1ToolTip" value="" />
+    <Data key="chkTGSmsResource2Text" value="" />
+    <Data key="chkTGSmsResource2ToolTip" value="" />
+    <Data key="chkTPEmailResource1Text" value="" />
+    <Data key="chkTPEmailResource1ToolTip" value="" />
+    <Data key="chkTPEmailResource2Text" value="" />
+    <Data key="chkTPEmailResource2ToolTip" value="" />
+    <Data key="chkTPMailResource1Text" value="" />
+    <Data key="chkTPMailResource1ToolTip" value="" />
+    <Data key="chkTPMailResource2Text" value="" />
+    <Data key="chkTPMailResource2ToolTip" value="" />
+    <Data key="chkTPPhoneResource1Text" value="" />
+    <Data key="chkTPPhoneResource1ToolTip" value="" />
+    <Data key="chkTPPhoneResource2Text" value="" />
+    <Data key="chkTPPhoneResource2ToolTip" value="" />
+    <Data key="chkTPSmsResource1Text" value="" />
+    <Data key="chkTPSmsResource1ToolTip" value="" />
+    <Data key="chkTPSmsResource2Text" value="" />
+    <Data key="chkTPSmsResource2ToolTip" value="" />
+    <Data key="CurrentlyOptedIn" value="V současné době jste přihlášena do klubu &quot;Miminka&amp;Batolata&quot;, aktualizujte prosím svou e-mailovou adresu na stránce Moje osobní údaje a aktualizujte tak vaše nastavení." />
+    <Data key="DataProtectionTableResource1Caption" value="" />
+    <Data key="DataProtectionTableResource1ToolTip" value="" />
+    <Data key="DataProtectionTableResource2Caption" value="" />
+    <Data key="DataProtectionTableResource2ToolTip" value="" />
+    <Data key="ddlMediaResource1ToolTip" value="" />
+    <Data key="ddlMediaResource2ToolTip" value="" />
+    <Data key="errCompareEmail" value="Emailová adresa se neshoduje, prosím zadejte správnou emailovou adresu" />
+    <Data key="errMessageClubcardStatement" value="Prosím zadejte platné členské číslo" />
+    <Data key="errMessageConfirmMobile" value="Mobilní telefonní čísla se neshodují, prosím zadejte správná mobilní čísla." />
+    <Data key="errMessageEmail" value="Zadejte prosím platnou e-mailovou adresu." />
+    <Data key="errMessageMobile" value="Prosím zadejte platné mobilní telefonní číslo." />
+    <Data key="grdBabyTodlerOptInResource1Caption" value="" />
+    <Data key="grdBabyTodlerOptInResource1EmptyDataText" value="" />
+    <Data key="grdBabyTodlerOptInResource1ToolTip" value="" />
+    <Data key="grdBabyTodlerOptInResource2Caption" value="" />
+    <Data key="grdBabyTodlerOptInResource2EmptyDataText" value="" />
+    <Data key="grdBabyTodlerOptInResource2ToolTip" value="" />
+    <Data key="grdBabyTodlerOptOutResource1Caption" value="" />
+    <Data key="grdBabyTodlerOptOutResource1EmptyDataText" value="" />
+    <Data key="grdBabyTodlerOptOutResource1ToolTip" value="" />
+    <Data key="grdBabyTodlerOptOutResource2Caption" value="" />
+    <Data key="grdBabyTodlerOptOutResource2EmptyDataText" value="" />
+    <Data key="grdBabyTodlerOptOutResource2ToolTip" value="" />
+    <Data key="Label1Resource1Text" value="" />
+    <Data key="Label1Resource1ToolTip" value="" />
+    <Data key="Label1Resource2Text" value="" />
+    <Data key="Label1Resource2ToolTip" value="" />
+    <Data key="Label2Resource1Text" value="" />
+    <Data key="Label2Resource1ToolTip" value="" />
+    <Data key="Label2Resource2Text" value="" />
+    <Data key="Label2Resource2ToolTip" value="" />
+    <Data key="Label3Resource1Text" value="" />
+    <Data key="Label3Resource1ToolTip" value="" />
+    <Data key="Label3Resource2Text" value="" />
+    <Data key="Label3Resource2ToolTip" value="" />
+    <Data key="lbladdressResource1Text" value="" />
+    <Data key="lbladdressResource1ToolTip" value="" />
+    <Data key="lbladdressResource2Text" value="" />
+    <Data key="lbladdressResource2ToolTip" value="" />
+    <Data key="lblChildNoResource1Text" value="" />
+    <Data key="lblChildNoResource1ToolTip" value="" />
+    <Data key="lblChildNoResource2Text" value="" />
+    <Data key="lblChildNoResource2ToolTip" value="" />
+    <Data key="lbltotalChildResource1Text" value="" />
+    <Data key="lbltotalChildResource1ToolTip" value="" />
+    <Data key="lbltotalChildResource2Text" value="" />
+    <Data key="lbltotalChildResource2ToolTip" value="" />
+    <Data key="lclAboutOfferResource1Text" value="Jak jste se dozvěděli o této nabídce?" />
+    <Data key="lclAboutOfferResource2Text" value="Jak jste se dozvěděli o této nabídce?" />
+    <Data key="lclAddressupdateResource1Text" value="Pokud je vaše adresa nesprávná, prosím aktualizujte jí zde:" />
+    <Data key="lclAddressupdateResource2Text" value="Pokud je vaše adresa nesprávná, prosím aktualizujte jí zde" />
+    <Data key="lclAvios1Resource1Text" value="If you would like to automatically convert all your vouchers to Avios at a rate of" />
+    <Data key="lclAvios1Resource2Text" value="If you would like to automatically convert all your vouchers to Avios at a rate of" />
+    <Data key="lclAvios2Resource1Text" value="Avios for every" />
+    <Data key="lclAvios2Resource2Text" value="Avios for every" />
+    <Data key="lclAvios3Resource1Text" value="formu poukázek, prosím zvolte zde" />
+    <Data key="lclAvios3Resource2Text" value="formu poukázek, prosím zvolte zde" />
+    <Data key="lclAvios4Resource1Text" value="Více informací" />
+    <Data key="lclAvios4Resource2Text" value="Více informací" />
+    <Data key="lclAvios5Resource1Text" value="By opting in, all of your Clubcard points will be converted to Avios from your next                                    statement. " />
+    <Data key="lclAvios5Resource2Text" value="By opting in, all of your Clubcard points will be converted to Avios from your next                                    statement. " />
+    <Data key="lclAviosforeveryResource1Text" value="Avios for every " />
+    <Data key="lclAviosforeveryResource2Text" value="Avios for every " />
+    <Data key="lclAviosImportantMsgResource1Text" value="If you are opted into another of our airline schemes,                                    or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclAviosImportantMsgResource2Text" value="If you are opted into another of our airline schemes,                                    or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclAviosImportantResource1Text" value="DŮLEŽITÉ:" />
+    <Data key="lclAviosImportantResource2Text" value="DŮLEŽITÉ:" />
+    <Data key="lclAviosOptinResource1Text" value="Avios" />
+    <Data key="lclAviosOptinResource2Text" value="Avios" />
+    <Data key="lclAviosOut1Resource1Text" value="You have opted to get all your points automatically converted to Avios at a rate of" />
+    <Data key="lclAviosOut1Resource2Text" value="You have opted to get all your points automatically converted to Avios at a rate of" />
+    <Data key="lclAviosoutinvouchersResource1Text" value="formou poukázek." />
+    <Data key="lclAviosoutinvouchersResource2Text" value="formou poukázek." />
+    <Data key="lclAviosoutMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclAviosoutMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclAviosOutResource1Text" value="Avios" />
+    <Data key="lclAviosOutResource2Text" value="Avios" />
+    <Data key="lclAviosResource1Text" value="Avios" />
+    <Data key="lclAviosResource2Text" value="Avios" />
+    <Data key="lclBAAviosResource1Text" value="BA Avios" />
+    <Data key="lclBAAviosResource2Text" value="BA Avios" />
+    <Data key="lclBAMilesEarnRateOutResource1Text" value="Avios for every" />
+    <Data key="lclBAMilesEarnRateOutResource2Text" value="Avios for every" />
+    <Data key="lclBAMilesEarnRateResource1Text" value="Avios for every " />
+    <Data key="lclBAMilesEarnRateResource2Text" value="Avios for every " />
+    <Data key="lclBAMilesVoucherImportantBritishAirwaysResource1Text" value="British Airways Executive Club - Avios" />
+    <Data key="lclBAMilesVoucherImportantBritishAirwaysResource2Text" value="British Airways Executive Club - Avios" />
+    <Data key="lclBAMilesVoucherImportantoptedintoResource1Text" value="If you are opted into another of our airline schemes, or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclBAMilesVoucherImportantoptedintoResource2Text" value="If you are opted into another of our airline schemes, or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclBAMilesVoucherImportantResource1Text" value="DŮLEŽITÉ:" />
+    <Data key="lclBAMilesVoucherImportantResource2Text" value="DŮLEŽITÉ:" />
+    <Data key="lclBAMilesVoucherImportanttoAviosResource1Text" value="You have opted to have all your points converted to Avios at a rate of" />
+    <Data key="lclBAMilesVoucherImportanttoAviosResource2Text" value="You have opted to have all your points converted to Avios at a rate of" />
+    <Data key="lclBAMilesVouchermoreinfoResource1Text" value="Více informací" />
+    <Data key="lclBAMilesVouchermoreinfoResource2Text" value="Více informací" />
+    <Data key="lclBAMilesVoucherValMemNumberDescResource1Text" value="By opting in to British Airways Executive Club, all of your Clubcard points will be converted to Avios from your next statement." />
+    <Data key="lclBAMilesVoucherValMemNumberDescResource2Text" value="By opting in to British Airways Executive Club, all of your Clubcard points will be converted to Avios from your next statement." />
+    <Data key="lclBAMilesVoucherValOutResource1Text" value="formou poukázek." />
+    <Data key="lclBAMilesVoucherValOutResource2Text" value="formou poukázek." />
+    <Data key="lclBAMilesVoucherValResource1Text" value="formu poukázek, prosím zvolte zde" />
+    <Data key="lclBAMilesVoucherValResource2Text" value="formu poukázek, prosím zvolte zde" />
+    <Data key="lclBntClub1Resource1Text" value="Náš klub &quot;Miminka&amp;Batolata&quot; nabízí odborné poradenství, bezplatné časopisy, kupóny a mnohem více." />
+    <Data key="lclBntClub1Resource2Text" value="Join now for help and advice whether you’re pregnant, have a baby or a toddler and get money-saving offers and much, much more!" />
+    <Data key="lclBntClubageofResource1Text" value="Prosím, zadejte náležitě datum nebo data narození všech dětí mladších než" />
+    <Data key="lclBntClubageofResource2Text" value="Prosím, zadejte náležitě datum nebo data narození všech dětí mladších než" />
+    <Data key="lclBntClubMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclBntClubMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclBntClubResource1Text" value="Miminka&amp;Batolata klub" />
+    <Data key="lclBntClubResource2Text" value="Miminka&amp;Batolata klub" />
+    <Data key="lclBntOptInResource1Text" value="Vstoupit do klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclBntOptInResource2Text" value="Vstoupit do klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclcheckAddressline1Resource1Text" value="Prosím zkontrolujte první řádek vaší adresy :&amp;nbsp;" />
+    <Data key="lclcheckAddressline1Resource2Text" value="Prosím zkontrolujte první řádek vaší adresy :" />
+    <Data key="lclchkEcouponsOptOutResource1Text" value="Odstoupit od eKupónů" />
+    <Data key="lclchkEcouponsOptOutResource2Text" value="Odstoupit od eKupónů" />
+    <Data key="lclChoosecouponsResource1Text" value="Zvolte, zda-li chcete dostávat kupóny k využití v obchodě nebo eKupóny k využití on-line." />
+    <Data key="lclChoosecouponsResource2Text" value="Zvolte, zda-li chcete dostávat kupóny k využití v obchodě nebo eKupóny k využití on-line." />
+    <Data key="lclChristmasSavers1Resource1Text" value="Jestliže si přejete uložit poukázky na Vánoce a přijímat je jednou za rok ve svém výpisu v listopadu, prosím přihlaste se do Vánočních úspor zde." />
+    <Data key="lclChristmasSavers1Resource2Text" value="Jestliže si přejete uložit poukázky na Vánoce a přijímat je jednou za rok ve svém výpisu v listopadu, prosím přihlaste se do Vánočních úspor zde." />
+    <Data key="lclChristmasSavers2Resource1Text" value="Více informací" />
+    <Data key="lclChristmasSavers2Resource2Text" value="Více informací" />
+    <Data key="lclChristmasSaversout1Resource1Text" value="Jako vánoční úspory jste si zvolili přijímat poukázky jednou za rok ve svém listopadovém výpisu." />
+    <Data key="lclChristmasSaversout1Resource2Text" value="Jako vánoční úspory jste si zvolili přijímat poukázky jednou za rok ve svém listopadovém výpisu." />
+    <Data key="lclChristmasSaversout2Resource1Text" value="Vánoční úspory" />
+    <Data key="lclChristmasSaversout2Resource2Text" value="Vánoční úspory" />
+    <Data key="lclChristmasSaversoutResource1Text" value="Vánoční úspory" />
+    <Data key="lclChristmasSaversoutResource2Text" value="Vánoční úspory" />
+    <Data key="lclChristmasSaversResource1Text" value="Vánoční úspory" />
+    <Data key="lclChristmasSaversResource2Text" value="Vánoční úspory" />
+    <Data key="lclClickConfigmmsgResource1Text" value="Po potvrzení této možnosti vám již dále nebude zasílán papírový výpis." />
+    <Data key="lclClickConfigmmsgResource2Text" value="Po potvrzení této možnosti vám již dále nebude zasílán papírový výpis." />
+    <Data key="lclClubcardEmails1Resource1Text" value="Pokud si přejete dostávat pravidelné e-maily o našich nejnovějších odměnách, způsobech jak získat extra body, soutěžích a mnoho dalšího." />
+    <Data key="lclClubcardEmails1Resource2Text" value="Pokud si přejete dostávat pravidelné e-maily o našich nejnovějších odměnách, způsobech jak získat extra body, soutěžích a mnoho dalšího." />
+    <Data key="lclClubcardEmailsMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclClubcardEmailsMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclClubcardEmailsResource1Text" value="Clubcard emaily" />
+    <Data key="lclClubcardEmailsResource2Text" value="Clubcard emaily" />
+    <Data key="lclClubcardMemberoffersinfo1Resource1Text" value="" />
+    <Data key="lclClubcardMemberoffersinfo1Resource2Text" value="Abychom vám pomohli pochopit, co od nás můžete obdržet, prosím" />
+    <Data key="lclClubcardMemberoffersinfoResource1Text" value="" />
+    <Data key="lclClubcardMemberoffersinfoResource2Text" value="" />
+    <Data key="lclClubcardMemClickhereResource1Text" value="" />
+    <Data key="lclClubcardMemClickhereResource2Text" value="Klikněte zde" />
+    <Data key="lclCommunicateMsgResource1Text" value="" />
+    <Data key="lclCommunicateMsgResource2Text" value="We will do our best to communicate with you by your chosen contact method but may have to send you communication by post where there are problems with your registered e-mail address or mobile phone number or for business or policy reasons. If you have a joint account you must have the permission of the other member to update the above preferences. For more detail please see our " />
+    <Data key="lclConEmailAddressResource1Text" value="potvrďte  svoji e-mailovou adresu:" />
+    <Data key="lclConEmailAddressResource2Text" value="potvrďte  svoji e-mailovou adresu:" />
+    <Data key="lclConfirmcontactResource1Text" value="" />
+    <Data key="lclConfirmcontactResource2Text" value="" />
+    <Data key="lclConfirmemailAddressResource1Text" value="potvrďte  svoji e-mailovou adresu:" />
+    <Data key="lclConfirmemailAddressResource2Text" value="potvrďte  svoji e-mailovou adresu:" />
+    <Data key="lclConfirmMobileNumberResource1Text" value="Prosím, potvrďte své mobilní číslo:" />
+    <Data key="lclConfirmMobileNumberResource2Text" value="Prosím, potvrďte své mobilní číslo:" />
+    <Data key="lclConfirmSaveMsgResource1Text" value="Vaše změny byly uloženy" />
+    <Data key="lclConfirmSaveMsgResource2Text" value="Vaše změny byly uloženy" />
+    <Data key="lclConMobileNumberResource1Text" value="Prosím, potvrďte své mobilní číslo:" />
+    <Data key="lclConMobileNumberResource2Text" value="Prosím, potvrďte své mobilní číslo:" />
+    <Data key="lclDueBirthdatesResource1Text" value="Prosím, zkontrolujte náležitě datum nebo data narození všech dětí mladších než" />
+    <Data key="lclDueBirthdatesResource2Text" value="Prosím, zkontrolujte náležitě datum nebo data narození všech dětí mladších než" />
+    <Data key="lcleCouponsoptinResource1Text" value="eKupón" />
+    <Data key="lcleCouponsoptinResource2Text" value="eKupón" />
+    <Data key="lcleCouponsoptoutResource1Text" value="eKupón" />
+    <Data key="lcleCouponsoptoutResource2Text" value="eKupón" />
+    <Data key="lcleCouponsoptsResource1Text" value="eKupón" />
+    <Data key="lcleCouponsoptsResource2Text" value="eKupón" />
+    <Data key="lcleCouponsrecieveoptoutResource1Text" value="Obdržíte eKupóny k využití" />
+    <Data key="lcleCouponsrecieveoptoutResource2Text" value="Obdržíte eKupóny k využití" />
+    <Data key="lclemailAddressResource1Text" value="vyplňte svoji e-mailovou adresu:" />
+    <Data key="lclemailAddressResource2Text" value="vyplňte svoji e-mailovou adresu:" />
+    <Data key="lclEmailResource1Text" value="Email" />
+    <Data key="lclEmailResource2Text" value="Email" />
+    <Data key="lclHeaderResource1Text" value="Moje nastavení" />
+    <Data key="lclHeaderResource2Text" value="Moje nastavení" />
+    <Data key="lclinstoreResource1Text" value="v obchodě" />
+    <Data key="lclinstoreResource2Text" value="v obchodě" />
+    <Data key="lclLargePrintResource1Text" value="Velký tisk &amp; Braillovo písmo výpisu:" />
+    <Data key="lclLargePrintResource2Text" value="Velký tisk &amp; Braillovo písmo výpisu:" />
+    <Data key="lclliBAMilesOptInMsgResource1Text" value="If you would like to automatically convert all your vouchers to Avios through the British Airways Executive Club at a rate of " />
+    <Data key="lclliBAMilesOptInMsgResource2Text" value="If you would like to automatically convert all your vouchers to Avios through the British Airways Executive Club at a rate of " />
+    <Data key="lclliBAMilesOptInResource1Text" value="British Airways Executive Club - Avios" />
+    <Data key="lclliBAMilesOptInResource2Text" value="British Airways Executive Club - Avios" />
+    <Data key="lclMemberofBntResource1Text" value="Jste členem našeho klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclMemberofBntResource2Text" value="Jste členem našeho klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclMembershipNumberResource1Text" value="Členské číslo:" />
+    <Data key="lclMembershipNumberResource2Text" value="Členské číslo:" />
+    <Data key="lclMobileNumberResource1Text" value="Prosím vyplňte své mobilní telefonní číslo:" />
+    <Data key="lclMobileNumberResource2Text" value="Prosím vyplňte své mobilní telefonní číslo:" />
+    <Data key="lclMoreInformationResource1Text" value="Více informací" />
+    <Data key="lclMoreInformationResource2Text" value="Více informací" />
+    <Data key="lclMyClubcardstatementResource1Text" value="Můj výpis ClubCard" />
+    <Data key="lclMyClubcardstatementResource2Text" value="Můj výpis ClubCard" />
+    <Data key="lclMyContactPrefResource1Text" value="Nastavit zasílání informací" />
+    <Data key="lclMyContactPrefResource2Text" value="Zpětný kontakt" />
+    <Data key="lclMyContactPrefSaveMsgResource1Text" value="Vaše změny byly uloženy" />
+    <Data key="lclMyContactPrefSaveMsgResource2Text" value="Vaše změny byly uloženy" />
+    <Data key="lclMyPersonalDetailsResource1Text" value="Moje osobní údaje" />
+    <Data key="lclMyPersonalDetailsResource2Text" value="Moje osobní údaje" />
+    <Data key="lclnewcard1Resource1Text" value="Pokud" />
+    <Data key="lclnewcard1Resource2Text" value="" />
+    <Data key="lclnewcard2Resource1Text" value="nechcete" />
+    <Data key="lclnewcard2Resource2Text" value="" />
+    <Data key="lclnewcard3Resource1Text" value="být kontaktování společností Tesco pro účely výzkumu spokojenosti zákazníků, zaškrtněte prosím toto políčko" />
+    <Data key="lclnewcard3Resource2Text" value="" />
+    <Data key="lclNoteText1Resource1Text" value="" />
+    <Data key="lclNoteText1Resource2Text" value="mimo skupinu Tesco." />
+    <Data key="lclnotetextClickhereResource1Text" value="Klikněte zde" />
+    <Data key="lclnotetextClickhereResource2Text" value="Klikněte zde" />
+    <Data key="lclNoteTextMsgResource1Text" value="Pokud si přejete aktualizovat jak s vámi komunikuje Tesco.com, prosím" />
+    <Data key="lclNoteTextMsgResource2Text" value="Pokud si přejete aktualizovat jak s vámi komunikuje Tesco.com, prosím" />
+    <Data key="lclNoteTextResource1Text" value="" />
+    <Data key="lclNoteTextResource2Text" value="Rádi bychom Vás ujistili, že Vaše údaje jsou u nás v bezpečí a nikdy nebudou předány dalším společnostem" />
+    <Data key="lclonline1Resource1Text" value="ve Vašem výpisu. Pokud byste raději získali kupony pro použití" />
+    <Data key="lclonline1Resource2Text" value="ve Vašem výpisu. Pokud byste raději získali kupony pro použití" />
+    <Data key="lclonline2Resource1Text" value="v obchodě" />
+    <Data key="lclonline2Resource2Text" value="v obchodě" />
+    <Data key="lclonline3Resource1Text" value=", prosím odhlásit z eKupónu zde." />
+    <Data key="lclonline3Resource2Text" value=", prosím odhlásit z eKupónu zde." />
+    <Data key="lclonline4Resource1Text" value="Více informací" />
+    <Data key="lclonline4Resource2Text" value="Více informací" />
+    <Data key="lclonlineoptoutResource1Text" value="online" />
+    <Data key="lclonlineoptoutResource2Text" value="online" />
+    <Data key="lclonlineResource1Text" value="online" />
+    <Data key="lclonlineResource2Text" value="online " />
+    <Data key="lcloptinCouponsResource1Text" value="Zvolit eKupóny" />
+    <Data key="lcloptinCouponsResource2Text" value="Zvolit eKupóny" />
+    <Data key="lclOptinServicesResource1Text" value="Zvolit nebo odstoupit od těchto služeb zavoláním zdarma na centrum Zákaznického servisu na 0800 591 688" />
+    <Data key="lclOptinServicesResource2Text" value="Zvolit nebo odstoupit od těchto služeb zavoláním zdarma na centrum Zákaznického servisu na 0800 591 688" />
+    <Data key="lclOptinTreesResource1Text" value="Zvolit &quot;Společně pro stromy&quot;" />
+    <Data key="lclOptinTreesResource2Text" value="Zvolit &quot;Společně pro stromy&quot;" />
+    <Data key="lclOptOutBabynToddlerResource1Text" value="Odhlásit z klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclOptOutBabynToddlerResource2Text" value="Odhlásit z klubu &quot;Miminka&amp;Batolata&quot;" />
+    <Data key="lclOptOutBnTMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclOptOutBnTMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclOptOutBnTResource1Text" value="" />
+    <Data key="lclOptOutBnTResource2Text" value="Miminka&amp;Batolata klub" />
+    <Data key="lcloptoutTogetherforTreesResource1Text" value="Odhlásit z &quot;Společně pro stromy&quot;" />
+    <Data key="lcloptoutTogetherforTreesResource2Text" value="Odhlásit z &quot;Společně pro stromy&quot;" />
+    <Data key="lclPageDesc1Resource1Text" value="Vyberte si způsob doručení  poukázek a kupónů z Clubcard vyúčtování." />
+    <Data key="lclPageDesc1Resource2Text" value="Vyberte si způsob doručení  poukázek a kupónů z Clubcard vyúčtování." />
+    <Data key="lclPageDesc2Resource1Text" value="" />
+    <Data key="lclPageDesc2Resource2Text" value="Prosím, zvolte jednu z možností:" />
+    <Data key="lclPageDescResource1Text" value="Jsme rádi, když jsou naši zákazníci vždy informováni o speciálních nabídkách, akcích a službách. Tato sekce vám umožňuje zkontrolovat si a změnit informace, které v dostáváte od Clubcard." />
+    <Data key="lclPageDescResource2Text" value="Jsme rádi, když jsou naši zákazníci vždy informováni o speciálních nabídkách, akcích a službách. Tato sekce vám umožňuje zkontrolovat si a změnit informace, které v dostáváte od Clubcard." />
+    <Data key="lclPartenrInfo1Resource1Text" value="Pokud" />
+    <Data key="lclPartenrInfo1Resource2Text" value="Pokud" />
+    <Data key="lclPartenrInfo2Resource1Text" value="nechcete" />
+    <Data key="lclPartenrInfo2Resource2Text" value="nechcete" />
+    <Data key="lclPartenrInfo3Resource1Text" value="dostávat žádné další nabídky a informace o produktech a službách partnerů společnosti Tesco zasílané společností Tesco, zaškrtněte prosím toto políčko" />
+    <Data key="lclPartenrInfo3Resource2Text" value="Zaškrtněte toto políčko, chcete-li aby vám Tesco zasílalo nabídky a informace o produktech a službách poskytovanými  našimi partnery" />
+    <Data key="lclPartner3partyResource1Text" value="Partner (3.strany)" />
+    <Data key="lclPartner3partyResource2Text" value="Partner (3.strany)" />
+    <Data key="lclPleaseMsgResource1Text" value="Prosím opravte své údaje" />
+    <Data key="lclPleaseMsgResource2Text" value="Prosím opravte své údaje" />
+    <Data key="lclPoints1Resource1Text" value="Místo dostávání bodů formou poukázek na Vašem Clubcard výpisu, si můžete vybrat jednu z alternativních možností viz níže:" />
+    <Data key="lclPoints1Resource2Text" value="Místo dostávání bodů formou poukázek na Vašem Clubcard výpisu, si můžete vybrat jednu z alternativních možností viz níže:" />
+    <Data key="lclPointsResource1Text" value="Body" />
+    <Data key="lclPointsResource2Text" value="Body" />
+    <Data key="lclPost1Resource1Text" value="Pošta" />
+    <Data key="lclPost1Resource2Text" value="Pošta" />
+    <Data key="lclReceiveCoupons1Resource1Text" value="ve Vašem výpisu. Pokud byste raději dostávali k využití eKupóny" />
+    <Data key="lclReceiveCoupons1Resource2Text" value="ve Vašem výpisu. Pokud byste raději dostávali k využití eKupóny" />
+    <Data key="lclReceiveCoupons2Resource1Text" value=", Pro eKupóny se prosím přihlaste zde" />
+    <Data key="lclReceiveCoupons2Resource2Text" value=", Pro eKupóny se prosím přihlaste zde" />
+    <Data key="lclReceiveCouponsResource1Text" value="Obdržíte kupony k využití" />
+    <Data key="lclReceiveCouponsResource2Text" value="Obdržíte kupony k využití" />
+    <Data key="lclResearchResource1Text" value="Tesco pravidelně provádí výzkum spokojenosti zákazníků s cílem poskytnout vám co nejlepší služby." />
+    <Data key="lclResearchResource2Text" value="Prosím zaškrtněte, pokud si již nadále nepřejete být kontaktován/a společností Tesco pro účely zákaznických" />
+    <Data key="lclSaveMsg1Resource1Text" value="Vaše změny byly uloženy" />
+    <Data key="lclSaveMsg1Resource2Text" value="Vaše změny byly uloženy" />
+    <Data key="lclsavemsgResource1Text" value="Vaše změny byly uloženy" />
+    <Data key="lclsavemsgResource2Text" value="Vaše změny byly uloženy" />
+    <Data key="lclSelectOne1Resource1Text" value="" />
+    <Data key="lclSelectOne1Resource2Text" value="Pokud máte společný účet, tato preference se vztahuje na oba." />
+    <Data key="lclSelectOneResource1Text" value="" />
+    <Data key="lclSelectOneResource2Text" value="Kdykoli můžete změnit své údaje výběrem jedné z následujících možností." />
+    <Data key="lclsentEmailmsgResource1Text" value="Bude vám zaslán e-mail s odkazem na účet Moje Clubcard pro snadný přístup k nejnovějším výpisům, poukázkám, kupónům a k přehledu bodů." />
+    <Data key="lclsentEmailmsgResource2Text" value="Bude vám zaslán e-mail s odkazem na Můj Clubcard účet pro snadný přístup k nejnovějším výpisům, poukázkám, kupónům a předu bodů." />
+    <Data key="lclSignupEcouponsResource1Text" value="Zaregistrujte se k eKuponům níže a obdržíte kupony pro použít on-line!" />
+    <Data key="lclSignupEcouponsResource2Text" value="Zaregistrujte se k eKuponům níže a obdržíte kupony pro použít on-line!" />
+    <Data key="lclSignupmsgResource1Text" value="Zaregistrujte se k eKuponům níže a obdržíte kupony pro použít on-line!" />
+    <Data key="lclSignupmsgResource2Text" value="Zaregistrujte se k eKuponům níže a obdržíte kupony pro použít on-line!" />
+    <Data key="lclTableReasearchResource1Text" value="Spotřebitelský výzkum" />
+    <Data key="lclTableReasearchResource2Text" value="Spotřebitelský výzkum" />
+    <Data key="lclTermsCondnResource1Text" value="" />
+    <Data key="lclTermsCondnResource2Text" value="" />
+    <Data key="lclTescoGroupResource1Text" value="Tesco obchodní nabídky" />
+    <Data key="lclTescoGroupResource2Text" value="Tesco obchodní nabídky" />
+    <Data key="lclTescoinfo1Resource1Text" value="Pokud" />
+    <Data key="lclTescoinfo1Resource2Text" value="Pokud" />
+    <Data key="lclTescoinfo2Resource1Text" value="nechcete" />
+    <Data key="lclTescoinfo2Resource2Text" value="nechcete" />
+    <Data key="lclTescoinfo3Resource1Text" value="dostávat žádné další nabídky a informace o produktech a službách společnosti Tesco, zaškrtněte prosím toto políčko" />
+    <Data key="lclTescoinfo3Resource2Text" value="Zaškrtněte toto políčko, chcete-li dostávat nabídky a informace o produktech a službách Tesco" />
+    <Data key="lclTextDescResource1Text" value="Bude vám zaslána textová zpráva s odkazem na Můj Clubcard účet pro přístup k nejnovější výpisům, poukázkám, kupónům a přehledům bodů." />
+    <Data key="lclTextDescResource2Text" value="Bude vám zaslána textová zpráva s odkazem na Můj Clubcard účet pro přístup k nejnovější výpisům, poukázkám, kupónům a přehledům bodů." />
+    <Data key="lclTextMsgResource1Text" value="formou SMS" />
+    <Data key="lclTextMsgResource2Text" value="formou SMS" />
+    <Data key="lclTextResource1Text" value=" Text" />
+    <Data key="lclTextResource2Text" value=" Text" />
+    <Data key="lclTnCSResource1Text" value="Podmínky používání" />
+    <Data key="lclTnCSResource2Text" value="Podívejte se na naše T&amp;Cs" />
+    <Data key="lclTogetherforTrees1Resource1Text" value="Rozhodli jste se věnovat své zelené body k záchráně deštného pralesa" />
+    <Data key="lclTogetherforTrees1Resource2Text" value="Rozhodli jste se věnovat své zelené body k záchráně deštného pralesa" />
+    <Data key="lclTogetherforTreesMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclTogetherforTreesMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclTogetherforTreesResource1Text" value="Společně pro stromy" />
+    <Data key="lclTogetherforTreesResource2Text" value="Společně pro stromy" />
+    <Data key="lclTreesMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclTreesMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclTreesTogether1Resource1Text" value="Můžete se přihlásit, pokud chcete věnovat své zelené Clubcard body k záchraně deštného pralesa." />
+    <Data key="lclTreesTogether1Resource2Text" value="Můžete se přihlásit, pokud chcete věnovat své zelené Clubcard body k záchraně deštného pralesa." />
+    <Data key="lclTreesTogetherResource1Text" value="Společně pro stromy" />
+    <Data key="lclTreesTogetherResource2Text" value="Společně pro stromy" />
+    <Data key="lclViaEmailResource1Text" value="E-mailem" />
+    <Data key="lclViaEmailResource2Text" value="Poštou" />
+    <Data key="lclViaPostResource1Text" value="Poštou" />
+    <Data key="lclViaPostResource2Text" value="Poštou" />
+    <Data key="lclViewCustCharterResource1Text" value="Ochrana osobních údajů" />
+    <Data key="lclViewCustCharterResource2Text" value="Prohlédněte si naší zákaznickou listinu" />
+    <Data key="lclVirginAtlantic1Resource1Text" value="If you would like to automatically convert all your vouchers to Virgin Atlantic Flying Club miles at a rate of " />
+    <Data key="lclVirginAtlantic1Resource2Text" value="If you would like to automatically convert all your vouchers to Virgin Atlantic Flying Club miles at a rate of " />
+    <Data key="lclVirginAtlantic2Resource1Text" value="Flying Club miles for every " />
+    <Data key="lclVirginAtlantic2Resource2Text" value="Flying Club miles for every " />
+    <Data key="lclVirginAtlantic3Resource1Text" value="formou poukázek, prosím přihlaste se zde" />
+    <Data key="lclVirginAtlantic3Resource2Text" value="formou poukázek, prosím přihlaste se zde" />
+    <Data key="lclVirginAtlantic4Resource1Text" value="Více informací" />
+    <Data key="lclVirginAtlantic4Resource2Text" value="Více informací" />
+    <Data key="lclVirginAtlantic5Resource1Text" value="By opting in to Virgin Atlantic Frequent Flying Club, all of your Clubcard points will be converted to Virgin Atlantic Flying Club miles from your next statement." />
+    <Data key="lclVirginAtlantic5Resource2Text" value="By opting in to Virgin Atlantic Frequent Flying Club, all of your Clubcard points will be converted to Virgin Atlantic Flying Club miles from your next statement." />
+    <Data key="lclVirginAtlantic6Resource1Text" value="Virgin Atlantic Flying Club" />
+    <Data key="lclVirginAtlantic6Resource2Text" value="Virgin Atlantic Flying Club" />
+    <Data key="lclVirginAtlantic7Resource1Text" value="You have opted to have all your points automatically converted to Virgin Atlantic Flying Club miles at a rate of" />
+    <Data key="lclVirginAtlantic7Resource2Text" value="You have opted to have all your points automatically converted to Virgin Atlantic Flying Club miles at a rate of" />
+    <Data key="lclVirginAtlantic8Resource1Text" value="Flying Club miles for every" />
+    <Data key="lclVirginAtlantic8Resource2Text" value="Flying Club miles for every" />
+    <Data key="lclVirginAtlanticAirlineResource1Text" value="If you are opted into another of our airline schemes, or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclVirginAtlanticAirlineResource2Text" value="If you are opted into another of our airline schemes, or Christmas savers, clicking confirm will opt you out of your existing scheme." />
+    <Data key="lclVirginAtlanticImportantResource1Text" value="DŮLEŽITÉ:" />
+    <Data key="lclVirginAtlanticImportantResource2Text" value="DŮLEŽITÉ:" />
+    <Data key="lclVirginAtlanticInVouchersResource1Text" value="formou poukázek." />
+    <Data key="lclVirginAtlanticInVouchersResource2Text" value="formou poukázek." />
+    <Data key="lclVirginAtlanticMembershipNumberResource1Text" value="Členské číslo:" />
+    <Data key="lclVirginAtlanticMembershipNumberResource2Text" value="Členské číslo:" />
+    <Data key="lclVirginAtlanticMoreInfoResource1Text" value="Více informací" />
+    <Data key="lclVirginAtlanticMoreInfoResource2Text" value="Více informací" />
+    <Data key="lclVirginAtlanticMsgResource1Text" value="Please enter your Virgin Atlantic Flying Club membership number below:" />
+    <Data key="lclVirginAtlanticMsgResource2Text" value="Please enter your Virgin Atlantic Flying Club membership number below:" />
+    <Data key="lclVirginAtlanticResource1Text" value="Virgin Atlantic Flying Club" />
+    <Data key="lclVirginAtlanticResource2Text" value="Virgin Atlantic Flying Club" />
+    <Data key="lclVirginAtlantictescoserviceResource1Text" value="Virgin Atlantic" />
+    <Data key="lclVirginAtlantictescoserviceResource2Text" value="Virgin Atlantic" />
+    <Data key="lclWhatelseResource1Text" value="K čemu jinému se ještě můžu zaregistrovat?" />
+    <Data key="lclWhatelseResource2Text" value="K čemu jinému se ještě můžu zaregistrovat?" />
+    <Data key="LinkButton2Resource1Text" value="+ přidat dítě" />
+    <Data key="LinkButton2Resource1ToolTip" value="" />
+    <Data key="LinkButton2Resource2Text" value="+ přidat dítě" />
+    <Data key="LinkButton2Resource2ToolTip" value="" />
+    <Data key="lnkAddChildResource1Text" value="+ přidat dítě" />
+    <Data key="lnkAddChildResource1ToolTip" value="" />
+    <Data key="lnkAddChildResource2Text" value="+ přidat dítě" />
+    <Data key="lnkAddChildResource2ToolTip" value="" />
+    <Data key="lnkRemove1Resource1Text" value="Odstranit" />
+    <Data key="lnkRemove1Resource1ToolTip" value="" />
+    <Data key="lnkRemove1Resource2Text" value="Odstranit" />
+    <Data key="lnkRemove1Resource2ToolTip" value="" />
+    <Data key="lnkRemove1Resource3Text" value="Odstranit" />
+    <Data key="lnkRemove1Resource3ToolTip" value="" />
+    <Data key="lnkRemove1Resource4Text" value="Odstranit" />
+    <Data key="lnkRemove1Resource4ToolTip" value="" />
+    <Data key="Localize1Resource1Text" value="Kliknutím na tlačítko potvrdit ám již nebude zasílán papírový výpis z ClubCard" />
+    <Data key="Localize1Resource2Text" value="Kliknutím na tlačítko potvrdit vám již nebude zasílán papírový výpis z ClubCard" />
+    <Data key="Localize2Resource1Text" value="Vaše vyúčtování, poukázky, kupóny a přehled bodů vám budou zasílány poštou." />
+    <Data key="Localize2Resource2Text" value="Vaše vyúčtování, poukázky, kupóny a přehled bodů vám budou zasílány poštou." />
+    <Data key="Localize33Resource1Text" value="Více informací" />
+    <Data key="Localize33Resource2Text" value="Více informací" />
+    <Data key="Localize3Resource1Text" value="" />
+    <Data key="Localize3Resource2Text" value="" />
+    <Data key="Localize4Resource1Text" value="Můžeme vás kontaktovat telefonicky nebo e-mailem, abychom vám mohli položit pár otázek. Ujišťujeme vás, že vaše údaje nebudou nikdy poskytnuty jiným organizacím pro jejich marketingové účely." />
+    <Data key="Localize4Resource2Text" value="průzkumů nebo si nepřejete aby byly Vaše údaje předány jiným organizacím pro jejich marketingové účely." />
+    <Data key="ltrAMilesEarnRateOutResource1Text" value="" />
+    <Data key="ltrAMilesEarnRateOutResource2Text" value="" />
+    <Data key="ltrAMilesEarnRateResource1Text" value="" />
+    <Data key="ltrAMilesEarnRateResource2Text" value="" />
+    <Data key="ltrAMilesVoucherValOutResource1Text" value="" />
+    <Data key="ltrAMilesVoucherValOutResource2Text" value="" />
+    <Data key="ltrAMilesVoucherValResource1Text" value="" />
+    <Data key="ltrAMilesVoucherValResource2Text" value="" />
+    <Data key="ltrBAMembershipNoResource1Text" value="" />
+    <Data key="ltrBAMembershipNoResource2Text" value="" />
+    <Data key="ltrBAMilesEarnRateOutResource1Text" value="" />
+    <Data key="ltrBAMilesEarnRateOutResource2Text" value="" />
+    <Data key="ltrBAMilesEarnRateResource1Text" value="" />
+    <Data key="ltrBAMilesEarnRateResource2Text" value="" />
+    <Data key="ltrBAMilesVoucherValMemNumberResource1Text" value="Please enter your British Airways Executive Club membership number below: " />
+    <Data key="ltrBAMilesVoucherValMemNumberResource2Text" value="Please enter your British Airways Executive Club membership number below: " />
+    <Data key="ltrBAMilesVoucherValOutResource1Text" value="" />
+    <Data key="ltrBAMilesVoucherValOutResource2Text" value="" />
+    <Data key="ltrBAMilesVoucherValResource1Text" value="" />
+    <Data key="ltrBAMilesVoucherValResource2Text" value="" />
+    <Data key="ltrChildNumberResource1Text" value="" />
+    <Data key="ltrChildNumberResource2Text" value="" />
+    <Data key="ltrChildNumberResource3Text" value="" />
+    <Data key="ltrChildNumberResource4Text" value="" />
+    <Data key="ltrVAFMembershipNoResource1Text" value="" />
+    <Data key="ltrVAFMembershipNoResource2Text" value="" />
+    <Data key="ltrVirginMilesValueOutResource1Text" value="" />
+    <Data key="ltrVirginMilesValueOutResource2Text" value="" />
+    <Data key="ltrVirginMilesValueResource1Text" value="" />
+    <Data key="ltrVirginMilesValueResource2Text" value="" />
+    <Data key="ltrVirginMilesVoucherValueOutResource1Text" value="" />
+    <Data key="ltrVirginMilesVoucherValueOutResource2Text" value="" />
+    <Data key="ltrVirginMilesVoucherValueResource1Text" value="" />
+    <Data key="ltrVirginMilesVoucherValueResource2Text" value="" />
+    <Data key="PageResource1Title" value="nastavení" />
+    <Data key="PageResource2Title" value="Moje nastavení" />
+    <Data key="Panel1Resource1GroupingText" value="" />
+    <Data key="Panel1Resource1ToolTip" value="" />
+    <Data key="Panel1Resource2GroupingText" value="" />
+    <Data key="Panel1Resource2ToolTip" value="" />
+    <Data key="Panel2Resource1GroupingText" value="" />
+    <Data key="Panel2Resource1ToolTip" value="" />
+    <Data key="Panel2Resource2GroupingText" value="" />
+    <Data key="Panel2Resource2ToolTip" value="" />
+    <Data key="pnlMailingOptionsResource1GroupingText" value="" />
+    <Data key="pnlMailingOptionsResource1ToolTip" value="" />
+    <Data key="pnlMailingOptionsResource2GroupingText" value="" />
+    <Data key="pnlMailingOptionsResource2ToolTip" value="" />
+    <Data key="pnlStatementOptionsResource1GroupingText" value="" />
+    <Data key="pnlStatementOptionsResource1ToolTip" value="" />
+    <Data key="pnlStatementOptionsResource2GroupingText" value="" />
+    <Data key="pnlStatementOptionsResource2ToolTip" value="" />
+    <Data key="PrefTableCell5Resource1Text" value="" />
+    <Data key="PrefTableCell5Resource1ToolTip" value="" />
+    <Data key="PrefTableCell5Resource2Text" value="" />
+    <Data key="PrefTableCell5Resource2ToolTip" value="" />
+    <Data key="radioAirMilesOptInResource1Text" value="" />
+    <Data key="radioAirMilesOptInResource1ToolTip" value="" />
+    <Data key="radioAirMilesOptInResource2Text" value="" />
+    <Data key="radioAirMilesOptInResource2ToolTip" value="" />
+    <Data key="radioBAMilesOptInResource1Text" value="" />
+    <Data key="radioBAMilesOptInResource1ToolTip" value="" />
+    <Data key="radioBAMilesOptInResource2Text" value="" />
+    <Data key="radioBAMilesOptInResource2ToolTip" value="" />
+    <Data key="radioEmailResource1Text" value="" />
+    <Data key="radioEmailResource1ToolTip" value="" />
+    <Data key="radioEmailResource2Text" value="" />
+    <Data key="radioEmailResource2ToolTip" value="" />
+    <Data key="radioPostResource1Text" value="" />
+    <Data key="radioPostResource1ToolTip" value="" />
+    <Data key="radioPostResource2Text" value="" />
+    <Data key="radioPostResource2ToolTip" value="" />
+    <Data key="radioSMSResource1Text" value="" />
+    <Data key="radioSMSResource1ToolTip" value="" />
+    <Data key="radioSMSResource2Text" value="" />
+    <Data key="radioSMSResource2ToolTip" value="" />
+    <Data key="radioVirginOptInResource1Text" value="" />
+    <Data key="radioVirginOptInResource1ToolTip" value="" />
+    <Data key="radioVirginOptInResource2Text" value="" />
+    <Data key="radioVirginOptInResource2ToolTip" value="" />
+    <Data key="radioXmasSaverOptInResource1Text" value="" />
+    <Data key="radioXmasSaverOptInResource1ToolTip" value="" />
+    <Data key="radioXmasSaverOptInResource2Text" value="" />
+    <Data key="radioXmasSaverOptInResource2ToolTip" value="" />
+    <Data key="TableCellResource1Text" value="" />
+    <Data key="TableCellResource1ToolTip" value="" />
+    <Data key="TableCellResource10Text" value="" />
+    <Data key="TableCellResource10ToolTip" value="" />
+    <Data key="TableCellResource11Text" value="" />
+    <Data key="TableCellResource11ToolTip" value="" />
+    <Data key="TableCellResource12Text" value="" />
+    <Data key="TableCellResource12ToolTip" value="" />
+    <Data key="TableCellResource13Text" value="" />
+    <Data key="TableCellResource13ToolTip" value="" />
+    <Data key="TableCellResource14Text" value="" />
+    <Data key="TableCellResource14ToolTip" value="" />
+    <Data key="TableCellResource15Text" value="" />
+    <Data key="TableCellResource15ToolTip" value="" />
+    <Data key="TableCellResource16Text" value="" />
+    <Data key="TableCellResource16ToolTip" value="" />
+    <Data key="TableCellResource17Text" value="" />
+    <Data key="TableCellResource17ToolTip" value="" />
+    <Data key="TableCellResource18Text" value="" />
+    <Data key="TableCellResource18ToolTip" value="" />
+    <Data key="TableCellResource19Text" value="" />
+    <Data key="TableCellResource19ToolTip" value="" />
+    <Data key="TableCellResource2Text" value="Pošta" />
+    <Data key="TableCellResource2ToolTip" value="" />
+    <Data key="TableCellResource20Text" value="" />
+    <Data key="TableCellResource20ToolTip" value="" />
+    <Data key="TableCellResource21Text" value="Pošta" />
+    <Data key="TableCellResource21ToolTip" value="" />
+    <Data key="TableCellResource22Text" value="EMail" />
+    <Data key="TableCellResource22ToolTip" value="" />
+    <Data key="TableCellResource23Text" value="Telefon" />
+    <Data key="TableCellResource23ToolTip" value="" />
+    <Data key="TableCellResource24Text" value="SMS" />
+    <Data key="TableCellResource24ToolTip" value="" />
+    <Data key="TableCellResource25Text" value="" />
+    <Data key="TableCellResource25ToolTip" value="" />
+    <Data key="TableCellResource26Text" value="" />
+    <Data key="TableCellResource26ToolTip" value="" />
+    <Data key="TableCellResource27Text" value="" />
+    <Data key="TableCellResource27ToolTip" value="" />
+    <Data key="TableCellResource28Text" value="" />
+    <Data key="TableCellResource28ToolTip" value="" />
+    <Data key="TableCellResource29Text" value="" />
+    <Data key="TableCellResource29ToolTip" value="" />
+    <Data key="TableCellResource3Text" value="EMail" />
+    <Data key="TableCellResource3ToolTip" value="" />
+    <Data key="TableCellResource30Text" value="" />
+    <Data key="TableCellResource30ToolTip" value="" />
+    <Data key="TableCellResource31Text" value="" />
+    <Data key="TableCellResource31ToolTip" value="" />
+    <Data key="TableCellResource32Text" value="" />
+    <Data key="TableCellResource32ToolTip" value="" />
+    <Data key="TableCellResource33Text" value="" />
+    <Data key="TableCellResource33ToolTip" value="" />
+    <Data key="TableCellResource34Text" value="" />
+    <Data key="TableCellResource34ToolTip" value="" />
+    <Data key="TableCellResource35Text" value="" />
+    <Data key="TableCellResource35ToolTip" value="" />
+    <Data key="TableCellResource36Text" value="" />
+    <Data key="TableCellResource36ToolTip" value="" />
+    <Data key="TableCellResource37Text" value="" />
+    <Data key="TableCellResource37ToolTip" value="" />
+    <Data key="TableCellResource38Text" value="" />
+    <Data key="TableCellResource38ToolTip" value="" />
+    <Data key="TableCellResource4Text" value="Telefon" />
+    <Data key="TableCellResource4ToolTip" value="" />
+    <Data key="TableCellResource5Text" value="SMS" />
+    <Data key="TableCellResource5ToolTip" value="" />
+    <Data key="TableCellResource6Text" value="" />
+    <Data key="TableCellResource6ToolTip" value="" />
+    <Data key="TableCellResource7Text" value="" />
+    <Data key="TableCellResource7ToolTip" value="" />
+    <Data key="TableCellResource8Text" value="" />
+    <Data key="TableCellResource8ToolTip" value="" />
+    <Data key="TableCellResource9Text" value="" />
+    <Data key="TableCellResource9ToolTip" value="" />
+    <Data key="TableRowResource1ToolTip" value="" />
+    <Data key="TableRowResource2ToolTip" value="" />
+    <Data key="TableRowResource3ToolTip" value="" />
+    <Data key="TableRowResource4ToolTip" value="" />
+    <Data key="TableRowResource5ToolTip" value="" />
+    <Data key="TableRowResource6ToolTip" value="" />
+    <Data key="TableRowResource7ToolTip" value="" />
+    <Data key="TableRowResource8ToolTip" value="" />
+    <Data key="TemplateFieldResource1AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource1FooterText" value="" />
+    <Data key="TemplateFieldResource1HeaderText" value="Dítě" />
+    <Data key="TemplateFieldResource10AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource10FooterText" value="" />
+    <Data key="TemplateFieldResource10HeaderText" value="Dítě" />
+    <Data key="TemplateFieldResource11AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource11FooterText" value="" />
+    <Data key="TemplateFieldResource11HeaderText" value="Datum narození(DD/MM/RRRR):" />
+    <Data key="TemplateFieldResource12AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource12FooterText" value="" />
+    <Data key="TemplateFieldResource12HeaderText" value="" />
+    <Data key="TemplateFieldResource2AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource2FooterText" value="" />
+    <Data key="TemplateFieldResource2HeaderText" value="Datum narození(DD/MM/RRRR):" />
+    <Data key="TemplateFieldResource3AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource3FooterText" value="" />
+    <Data key="TemplateFieldResource3HeaderText" value="" />
+    <Data key="TemplateFieldResource4AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource4FooterText" value="" />
+    <Data key="TemplateFieldResource4HeaderText" value="Dítě" />
+    <Data key="TemplateFieldResource5AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource5FooterText" value="" />
+    <Data key="TemplateFieldResource5HeaderText" value="Datum narození(DD/MM/RRRR):" />
+    <Data key="TemplateFieldResource6AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource6FooterText" value="" />
+    <Data key="TemplateFieldResource6HeaderText" value="" />
+    <Data key="TemplateFieldResource7AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource7FooterText" value="" />
+    <Data key="TemplateFieldResource7HeaderText" value="Dítě" />
+    <Data key="TemplateFieldResource8AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource8FooterText" value="" />
+    <Data key="TemplateFieldResource8HeaderText" value="Datum narození(DD/MM/RRRR):" />
+    <Data key="TemplateFieldResource9AccessibleHeaderText" value="" />
+    <Data key="TemplateFieldResource9FooterText" value="" />
+    <Data key="TemplateFieldResource9HeaderText" value="" />
+    <Data key="txtBAviosResource1Text" value="" />
+    <Data key="txtBAviosResource1ToolTip" value="" />
+    <Data key="txtBAviosResource2Text" value="" />
+    <Data key="txtBAviosResource2ToolTip" value="" />
+    <Data key="txtBrailleResource1Text" value="" />
+    <Data key="txtBrailleResource1ToolTip" value="" />
+    <Data key="txtBrailleResource2Text" value="" />
+    <Data key="txtBrailleResource2ToolTip" value="" />
+    <Data key="txtBTEmailResource1Text" value="" />
+    <Data key="txtBTEmailResource1ToolTip" value="" />
+    <Data key="txtBTEmailResource2Text" value="" />
+    <Data key="txtBTEmailResource2ToolTip" value="" />
+    <Data key="txtBTMobileResource1Text" value="" />
+    <Data key="txtBTMobileResource1ToolTip" value="" />
+    <Data key="txtBTMobileResource2Text" value="" />
+    <Data key="txtBTMobileResource2ToolTip" value="" />
+    <Data key="txtConfirmEmailResource1Text" value="" />
+    <Data key="txtConfirmEmailResource1ToolTip" value="" />
+    <Data key="txtConfirmEmailResource2Text" value="" />
+    <Data key="txtConfirmEmailResource2ToolTip" value="" />
+    <Data key="txtConfirmSMSResource1Text" value="" />
+    <Data key="txtConfirmSMSResource1ToolTip" value="" />
+    <Data key="txtConfirmSMSResource2Text" value="" />
+    <Data key="txtConfirmSMSResource2ToolTip" value="" />
+    <Data key="txtDOBResource1ToolTip" value="" />
+    <Data key="txtDOBResource2ToolTip" value="" />
+    <Data key="txtDOBResource3ToolTip" value="" />
+    <Data key="txtDOBResource4ToolTip" value="" />
+    <Data key="txtEmailResource1Text" value="" />
+    <Data key="txtEmailResource1ToolTip" value="" />
+    <Data key="txtEmailResource2Text" value="" />
+    <Data key="txtEmailResource2ToolTip" value="" />
+    <Data key="txtSMSResource1Text" value="" />
+    <Data key="txtSMSResource1ToolTip" value="" />
+    <Data key="txtSMSResource2Text" value="" />
+    <Data key="txtSMSResource2ToolTip" value="" />
+    <Data key="txtVirgnMembershipIDResource1Text" value="" />
+    <Data key="txtVirgnMembershipIDResource1ToolTip" value="" />
+    <Data key="txtVirgnMembershipIDResource2Text" value="" />
+    <Data key="txtVirgnMembershipIDResource2ToolTip" value="" />
+    <Data key="ValidDobFormat" value="Prosím vyplňte platné datum narození ve formátu DD/MM/RRRR" />
+    <Data key="ValidDobFormat9Months" value="Zadejte prosím platné datum splatnosti kratší než 9 měsíců ve formátu DD/MM /RRRR nebo odeberte položku dítěte." />
+    <Data key="ValidDobFormatlessthan" value="Zadejte prosím platné datum narození  kratší než" />
+    <Data key="ValidDobFormatlessthan1" value="rok ve formátu DD/MM/RRRR anebo odeberte položku dítěte" />
+    <Data key="CurrencySymbol" value="&amp;libry;" />
+    <Data key="Tab1Text" value="Pošta" />
+    <Data key="Tab2Text" value="Email" />
+    <Data key="Tab3Text" value="Telefon" />
+    <Data key="Tab4Text" value="SMS" />
+    <Data key="lclTesco3rdptyResource1text" value="Nabídky komerčních partnerů" />
+    <Data key="lclPageReqResource1Text" value="Označuje povinná pole" />
+    <Data key="lclCommunicateMsg1Resource1Text" value="" />
+    <Data key="lclCommunicateMsg2Resource1Text" value="" />
+    <Data key="txtPagedescforEmailText" value="Vyberte si, jakou formou chcete dostávat svoje vyúčtování nebo speciální nabídky. Změnu můžete provést kdykoliv a bude vám vždy potvrzena na vaše telefonní číslo nebo e-mail." />
+    <Data key="lclGrpTescoCustomerReasearchResourceText" value="Pokud nechcete dostávat žádné další nabídky a informace o produktech a službách společnosti Tesco, zaškrtněte prosím toto políčko" />
+    <Data key="lclGrpTescoOfferResourceText" value="Pokud nechcete dostávat žádné další nabídky a informace o produktech a službách partnerů společnosti Tesco zasílané společností Tesco, zaškrtněte prosím toto políčko" />
+    <Data key="lclGrpTescoproductsResourceText" value="Tesco pravidelně provádí výzkum spokojenosti zákazníků s cílem poskytnout vám co nejlepší služby. Můžeme vás kontaktovat telefonicky nebo e-mailem, abychom vám mohli položit pár otázek. Ujišťujeme vás, že vaše údaje nebudou nikdy poskytnuty jiným organizacím pro jejich marketingové účely. Pokud nechcete být kontaktování společností Tesco pro účely výzkumu spokojenosti zákazníků, zaškrtněte prosím toto políčko" />
+  </Home.aspx.cs-CZ.resx>
+</Preferences-App_LocalResources>

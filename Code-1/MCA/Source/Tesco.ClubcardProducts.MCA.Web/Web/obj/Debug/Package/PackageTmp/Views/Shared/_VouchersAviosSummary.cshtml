@@ -1,0 +1,46 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.VoucherRewardsMilesModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@*<div class="l-alpha gutters" id="div_VoucherAvios">
+    <div class="l-column">
+        <dl class="paired-list standalone my-points">
+            <dt id="lblAviosPointsCollected">@Html.Translate("Shared/_Vouchers", "lclPointsCollected")</dt>
+            <dd id="lblAviostotalRewardPoints">
+                <span>@Model.totalRewardPoints</span></dd>
+        </dl>
+    </div>
+    <div class="l-column">
+        <h2 id="lblAviosHaveConverted" class="h4-like text-centre">@Html.Translate("Shared/_Vouchers", "lclHaveConverted")</h2>
+        <img id="imgAirMiles" class="align-centre" alt="Avios" src='@Url.Content(Resources.ConfigLinks.imgAviosLogo)' />
+    </div>
+</div>*@
+<div class="row">
+    <div class="gr-12">
+        <div class="table-wrapper points-callout points-callout-secondary ddl-icon-before ddl-icon-vouchers">
+            <table>
+                <thead class="ddl-visually-hidden">
+                    <tr>
+                        <th class="ddl-text-left">
+                            Avios
+                        </th>
+                        <th class="ddl-text-centre">
+                           value
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="lblAviosPointsCollected"><h2>
+                            @Html.Translate("Shared/_Vouchers", "lclPointsCollected")</h2>
+                        </td>
+                        <td class="ddl-no-wrap" id="lblAviostotalRewardPoints">
+                           @Model.totalRewardPoints
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@*<div class="copy-wrapper">
+ <h2 id="lblAviosHaveConverted" class="ddl-h3-like">@Html.Translate("Shared/_Vouchers", "lclHaveConverted") @Html.Translate("Vouchers/Home", "lblAviosMilesButtom") </h2>
+ </div>*@

@@ -1,0 +1,19 @@
+ .ddl-filter {
+ 	background: none;
+ 	padding: 0 !important;
+ 	position: relative;
+
+ 	fieldset {
+  		background: $ddl-grey4;
+ 		position: relative;
+
+	 	.ddl-form-field {
+	 		min-width: 0;
+	 		width: 100%;
+	 	}
+
+	 	.ddl-button {
+	 		margin-top: 12px;
+	 	}
+	 }
+ }

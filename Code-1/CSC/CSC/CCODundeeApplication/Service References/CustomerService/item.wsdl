@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01/Imports">
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/ClubcardOnlineService/CustomerService/?xsd=xsd0" namespace="http://tesco.com/clubcardonline/datacontract/2010/01" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/ClubcardOnlineService/CustomerService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/ClubcardOnlineService/CustomerService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Web.Security" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/ClubcardOnlineService/CustomerService/?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICustomerService_SearchUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_SearchUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerID" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCardStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCardStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_TransactionsByOffer_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionsByOffer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_TransactionsByOffer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionsByOfferResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTransactionReasonCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionReasonCode" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTransactionReasonCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionReasonCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsBalance" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPoints" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsSummary" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAlternativeIds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlternativeIds" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAlternativeIds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlternativeIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_DeLinkingDotcomAccounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeLinkingDotcomAccounts" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_DeLinkingDotcomAccounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeLinkingDotcomAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_LoadPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_LoadPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Changepassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:Changepassword" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Changepassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangepasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetSecretQuestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecretQuestion" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetSecretQuestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecretQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateEmailPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateEmailPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetEmailPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetEmailPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateSecretQns_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSecretQns" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateSecretQns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSecretQnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateEmailAddresss_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailAddresss" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateEmailAddresss_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmailAddresssResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerRewards_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerRewards" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerRewards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerRewardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ConvertPointsToCash_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertPointsToCash" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ConvertPointsToCash_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertPointsToCashResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsExpiryDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsExpiryDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPointsExpiryDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointsExpiryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetRewardExpiryDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardExpiryDate" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetRewardExpiryDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardExpiryDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustUseMailStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustUseMailStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustUseMailStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustUseMailStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateUseMailStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUseMailStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateUseMailStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUseMailStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCardStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCardStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAllClubcards_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClubcards" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAllClubcards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllClubcardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdatePhoneNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhoneNumber" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdatePhoneNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePhoneNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdatePrimaryClubcardID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrimaryClubcardID" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdatePrimaryClubcardID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrimaryClubcardIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerTermsNConstionsStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerTermsNConstionsStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerTermsNConstionsStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerTermsNConstionsStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerIDSecurityDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerIDSecurityDB" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerIDSecurityDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerIDSecurityDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Resetpwd_InputMessage">
+    <wsdl:part name="parameters" element="tns:Resetpwd" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Resetpwd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetpwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerTNCInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerTNCInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerTNCInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerTNCInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ValidateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateToken" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ValidateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_CreateToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateToken" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_CreateToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ExpireToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExpireToken" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_ExpireToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExpireTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_SendEmailET_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailET" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_SendEmailET_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailETResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCoupons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCoupons" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCoupons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCouponsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCoupons_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCoupons" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCoupons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCouponsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetGroupDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetGroupDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Add_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_Add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustomerPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateCustomerPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_SearchCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_SearchCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTitles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitles" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTitles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetConfigDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConfigDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetConfigDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConfigDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPrintAtHomeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPrintAtHomeDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPrintAtHomeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPrintAtHomeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_InsertCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_InsertCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetSecretQtns_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecretQtns" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetSecretQtns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecretQtnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetExistingCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetExistingCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExistingCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateExistingCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExistingCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateExistingCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExistingCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPrimaryCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrimaryCard" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetPrimaryCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrimaryCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPhoneNoToAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPhoneNoToAccount" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddPhoneNoToAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPhoneNoToAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_EmailValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmailValidation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_EmailValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmailValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_PhoneNoValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:PhoneNoValidation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_PhoneNoValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PhoneNoValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AlternateIdValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlternateIdValidation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AlternateIdValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlternateIdValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustIdByEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustIdByEmailId" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCustIdByEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustIdByEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_InsertCardNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCardNo" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_InsertCardNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCardNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCardNoByCustId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardNoByCustId" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetCardNoByCustId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardNoByCustIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTransactionHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionHistory" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetTransactionHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetFriendCustomerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFriendCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetFriendCustomerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFriendCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAccountOverviewDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountOverviewDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAccountOverviewDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAccountOverviewDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAboutmeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAboutmeDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetAboutmeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAboutmeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateAboutMeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAboutMeDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateAboutMeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAboutMeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateDietaryPreferences_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDietaryPreferences" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateDietaryPreferences_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDietaryPreferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateMyProfileDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMyProfileDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_UpdateMyProfileDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMyProfileDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetMyProfileDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyProfileDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_GetMyProfileDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyProfileDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddSupplementaryCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupplementaryCard" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerService_AddSupplementaryCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupplementaryCardResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICustomerService">
+    <wsdl:operation name="SearchUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchUser" message="tns:ICustomerService_SearchUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchUserResponse" message="tns:ICustomerService_SearchUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/Update" message="tns:ICustomerService_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateResponse" message="tns:ICustomerService_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerID">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerID" message="tns:ICustomerService_GetCustomerID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerIDResponse" message="tns:ICustomerService_GetCustomerID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddCustomer" message="tns:ICustomerService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddCustomerResponse" message="tns:ICustomerService_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCardStatus" message="tns:ICustomerService_GetCardStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCardStatusResponse" message="tns:ICustomerService_GetCardStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionsByOffer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/TransactionsByOffer" message="tns:ICustomerService_TransactionsByOffer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/TransactionsByOfferResponse" message="tns:ICustomerService_TransactionsByOffer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionReasonCode">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTransactionReasonCode" message="tns:ICustomerService_GetTransactionReasonCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTransactionReasonCodeResponse" message="tns:ICustomerService_GetTransactionReasonCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsBalance">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsBalance" message="tns:ICustomerService_GetPointsBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsBalanceResponse" message="tns:ICustomerService_GetPointsBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPoints">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPoints" message="tns:ICustomerService_AddPoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPointsResponse" message="tns:ICustomerService_AddPoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsSummary">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsSummary" message="tns:ICustomerService_GetPointsSummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsSummaryResponse" message="tns:ICustomerService_GetPointsSummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/Test" message="tns:ICustomerService_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/TestResponse" message="tns:ICustomerService_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlternativeIds">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAlternativeIds" message="tns:ICustomerService_GetAlternativeIds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAlternativeIdsResponse" message="tns:ICustomerService_GetAlternativeIds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeLinkingDotcomAccounts">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/DeLinkingDotcomAccounts" message="tns:ICustomerService_DeLinkingDotcomAccounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/DeLinkingDotcomAccountsResponse" message="tns:ICustomerService_DeLinkingDotcomAccounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/LoadPreferences" message="tns:ICustomerService_LoadPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/LoadPreferencesResponse" message="tns:ICustomerService_LoadPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Changepassword">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/Changepassword" message="tns:ICustomerService_Changepassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ChangepasswordResponse" message="tns:ICustomerService_Changepassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSecretQuestion">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetSecretQuestion" message="tns:ICustomerService_GetSecretQuestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetSecretQuestionResponse" message="tns:ICustomerService_GetSecretQuestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmailPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateEmailPreferences" message="tns:ICustomerService_UpdateEmailPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateEmailPreferencesResponse" message="tns:ICustomerService_UpdateEmailPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetEmailPreferences" message="tns:ICustomerService_GetEmailPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetEmailPreferencesResponse" message="tns:ICustomerService_GetEmailPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSecretQns">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateSecretQns" message="tns:ICustomerService_UpdateSecretQns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateSecretQnsResponse" message="tns:ICustomerService_UpdateSecretQns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmailAddresss">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateEmailAddresss" message="tns:ICustomerService_UpdateEmailAddresss_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateEmailAddresssResponse" message="tns:ICustomerService_UpdateEmailAddresss_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerRewards">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerRewards" message="tns:ICustomerService_GetCustomerRewards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerRewardsResponse" message="tns:ICustomerService_GetCustomerRewards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPointsToCash">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ConvertPointsToCash" message="tns:ICustomerService_ConvertPointsToCash_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ConvertPointsToCashResponse" message="tns:ICustomerService_ConvertPointsToCash_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsExpiryDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsExpiryDetails" message="tns:ICustomerService_GetPointsExpiryDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPointsExpiryDetailsResponse" message="tns:ICustomerService_GetPointsExpiryDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRewardExpiryDate">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetRewardExpiryDate" message="tns:ICustomerService_GetRewardExpiryDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetRewardExpiryDateResponse" message="tns:ICustomerService_GetRewardExpiryDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustUseMailStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustUseMailStatus" message="tns:ICustomerService_GetCustUseMailStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustUseMailStatusResponse" message="tns:ICustomerService_GetCustUseMailStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUseMailStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateUseMailStatus" message="tns:ICustomerService_UpdateUseMailStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateUseMailStatusResponse" message="tns:ICustomerService_UpdateUseMailStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCardStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCardStatus" message="tns:ICustomerService_UpdateCardStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCardStatusResponse" message="tns:ICustomerService_UpdateCardStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllClubcards">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAllClubcards" message="tns:ICustomerService_GetAllClubcards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAllClubcardsResponse" message="tns:ICustomerService_GetAllClubcards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhoneNumber">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdatePhoneNumber" message="tns:ICustomerService_UpdatePhoneNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdatePhoneNumberResponse" message="tns:ICustomerService_UpdatePhoneNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrimaryClubcardID">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdatePrimaryClubcardID" message="tns:ICustomerService_UpdatePrimaryClubcardID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdatePrimaryClubcardIDResponse" message="tns:ICustomerService_UpdatePrimaryClubcardID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerTermsNConstionsStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerTermsNConstionsStatus" message="tns:ICustomerService_UpdateCustomerTermsNConstionsStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerTermsNConstionsStatusResponse" message="tns:ICustomerService_UpdateCustomerTermsNConstionsStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerStatus" message="tns:ICustomerService_GetCustomerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerStatusResponse" message="tns:ICustomerService_GetCustomerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerIDSecurityDB">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerIDSecurityDB" message="tns:ICustomerService_GetCustomerIDSecurityDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerIDSecurityDBResponse" message="tns:ICustomerService_GetCustomerIDSecurityDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ValidateUser" message="tns:ICustomerService_ValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ValidateUserResponse" message="tns:ICustomerService_ValidateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetUser" message="tns:ICustomerService_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetUserResponse" message="tns:ICustomerService_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateUser" message="tns:ICustomerService_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateUserResponse" message="tns:ICustomerService_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Resetpwd">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/Resetpwd" message="tns:ICustomerService_Resetpwd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ResetpwdResponse" message="tns:ICustomerService_Resetpwd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerTNCInfo">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerTNCInfo" message="tns:ICustomerService_GetCustomerTNCInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerTNCInfoResponse" message="tns:ICustomerService_GetCustomerTNCInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateToken">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ValidateToken" message="tns:ICustomerService_ValidateToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ValidateTokenResponse" message="tns:ICustomerService_ValidateToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateToken">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/CreateToken" message="tns:ICustomerService_CreateToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/CreateTokenResponse" message="tns:ICustomerService_CreateToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExpireToken">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ExpireToken" message="tns:ICustomerService_ExpireToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/ExpireTokenResponse" message="tns:ICustomerService_ExpireToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailET">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SendEmailET" message="tns:ICustomerService_SendEmailET_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SendEmailETResponse" message="tns:ICustomerService_SendEmailET_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCoupons">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCoupons" message="tns:ICustomerService_GetCoupons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCouponsResponse" message="tns:ICustomerService_GetCoupons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCoupons">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCoupons" message="tns:ICustomerService_UpdateCoupons_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCouponsResponse" message="tns:ICustomerService_UpdateCoupons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetGroupDetails" message="tns:ICustomerService_GetGroupDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetGroupDetailsResponse" message="tns:ICustomerService_GetGroupDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/Add" message="tns:ICustomerService_Add_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddResponse" message="tns:ICustomerService_Add_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetails" message="tns:ICustomerService_GetCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse" message="tns:ICustomerService_GetCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerDetails" message="tns:ICustomerService_UpdateCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerDetailsResponse" message="tns:ICustomerService_UpdateCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerPreferences" message="tns:ICustomerService_GetCustomerPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerPreferencesResponse" message="tns:ICustomerService_GetCustomerPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerPreferences" message="tns:ICustomerService_UpdateCustomerPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateCustomerPreferencesResponse" message="tns:ICustomerService_UpdateCustomerPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCustomer">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomer" message="tns:ICustomerService_SearchCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse" message="tns:ICustomerService_SearchCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTitles" message="tns:ICustomerService_GetTitles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTitlesResponse" message="tns:ICustomerService_GetTitles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AuthenticateUser" message="tns:ICustomerService_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AuthenticateUserResponse" message="tns:ICustomerService_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConfigDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetConfigDetails" message="tns:ICustomerService_GetConfigDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetConfigDetailsResponse" message="tns:ICustomerService_GetConfigDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConfig">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateConfig" message="tns:ICustomerService_UpdateConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateConfigResponse" message="tns:ICustomerService_UpdateConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPrintAtHomeDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPrintAtHomeDetails" message="tns:ICustomerService_AddPrintAtHomeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPrintAtHomeDetailsResponse" message="tns:ICustomerService_AddPrintAtHomeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/InsertCustomerDetails" message="tns:ICustomerService_InsertCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/InsertCustomerDetailsResponse" message="tns:ICustomerService_InsertCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSecretQtns">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetSecretQtns" message="tns:ICustomerService_GetSecretQtns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetSecretQtnsResponse" message="tns:ICustomerService_GetSecretQtns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetExistingCustomerDetails" message="tns:ICustomerService_GetExistingCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetExistingCustomerDetailsResponse" message="tns:ICustomerService_GetExistingCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExistingCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateExistingCustomerDetails" message="tns:ICustomerService_UpdateExistingCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateExistingCustomerDetailsResponse" message="tns:ICustomerService_UpdateExistingCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrimaryCard">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPrimaryCard" message="tns:ICustomerService_GetPrimaryCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetPrimaryCardResponse" message="tns:ICustomerService_GetPrimaryCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPhoneNoToAccount">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPhoneNoToAccount" message="tns:ICustomerService_AddPhoneNoToAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddPhoneNoToAccountResponse" message="tns:ICustomerService_AddPhoneNoToAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailValidation">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/EmailValidation" message="tns:ICustomerService_EmailValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/EmailValidationResponse" message="tns:ICustomerService_EmailValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PhoneNoValidation">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/PhoneNoValidation" message="tns:ICustomerService_PhoneNoValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/PhoneNoValidationResponse" message="tns:ICustomerService_PhoneNoValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlternateIdValidation">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AlternateIdValidation" message="tns:ICustomerService_AlternateIdValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AlternateIdValidationResponse" message="tns:ICustomerService_AlternateIdValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustIdByEmailId">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustIdByEmailId" message="tns:ICustomerService_GetCustIdByEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustIdByEmailIdResponse" message="tns:ICustomerService_GetCustIdByEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCardNo">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/InsertCardNo" message="tns:ICustomerService_InsertCardNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/InsertCardNoResponse" message="tns:ICustomerService_InsertCardNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardNoByCustId">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCardNoByCustId" message="tns:ICustomerService_GetCardNoByCustId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCardNoByCustIdResponse" message="tns:ICustomerService_GetCardNoByCustId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionHistory">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTransactionHistory" message="tns:ICustomerService_GetTransactionHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetTransactionHistoryResponse" message="tns:ICustomerService_GetTransactionHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFriendCustomerDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetFriendCustomerDetails" message="tns:ICustomerService_GetFriendCustomerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetFriendCustomerDetailsResponse" message="tns:ICustomerService_GetFriendCustomerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/CreateUser" message="tns:ICustomerService_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/CreateUserResponse" message="tns:ICustomerService_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountOverviewDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAccountOverviewDetails" message="tns:ICustomerService_GetAccountOverviewDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAccountOverviewDetailsResponse" message="tns:ICustomerService_GetAccountOverviewDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAboutmeDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAboutmeDetails" message="tns:ICustomerService_GetAboutmeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetAboutmeDetailsResponse" message="tns:ICustomerService_GetAboutmeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAboutMeDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateAboutMeDetails" message="tns:ICustomerService_UpdateAboutMeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateAboutMeDetailsResponse" message="tns:ICustomerService_UpdateAboutMeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDietaryPreferences">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateDietaryPreferences" message="tns:ICustomerService_UpdateDietaryPreferences_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateDietaryPreferencesResponse" message="tns:ICustomerService_UpdateDietaryPreferences_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMyProfileDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateMyProfileDetails" message="tns:ICustomerService_UpdateMyProfileDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/UpdateMyProfileDetailsResponse" message="tns:ICustomerService_UpdateMyProfileDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyProfileDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetMyProfileDetails" message="tns:ICustomerService_GetMyProfileDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetMyProfileDetailsResponse" message="tns:ICustomerService_GetMyProfileDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSupplementaryCard">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddSupplementaryCard" message="tns:ICustomerService_AddSupplementaryCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/AddSupplementaryCardResponse" message="tns:ICustomerService_AddSupplementaryCard_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

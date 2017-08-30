@@ -1,0 +1,40 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/SearchCustomerResponse</a:Action>
+		<a:RelatesTo>urn:uuid:f0b7eb17-f30e-4e72-a5bd-643c7d13a10e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<SearchCustomerResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<SearchCustomerResult>true</SearchCustomerResult>
+			<errorXml />
+			<resultXml>
+			<NewDataSet>
+  <Customer>
+    <CustomerID>671969397</CustomerID>
+    <ClubcardID>634004024126094715</ClubcardID>
+    <CardIssuedDate>2007-08-20T00:00:00+01:00</CardIssuedDate>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JANICE</Name1>
+    <Name2 />
+    <Name3>HODGSON</Name3>
+    <MailingAddressLine1>NAUMAI</MailingAddressLine1>
+    <MailingAddressLine2>COLLEY PARK ROAD</MailingAddressLine2>
+    <MailingAddressLine3>BRAUNTON</MailingAddressLine3>
+    <MailingAddressLine4>DEVON</MailingAddressLine4>
+    <MailingAddressLine5 />
+    <MailingAddressPostCode>EX33 2AR</MailingAddressPostCode>
+    <DateOfBirth>1969-05-02T00:00:00+01:00</DateOfBirth>
+    <CurrentPointsBalanceQty>3688</CurrentPointsBalanceQty>
+    <PreviousPointsBalanceQty>1844</PreviousPointsBalanceQty>
+    <JoinedDate>2006-05-23T00:00:00+01:00</JoinedDate>
+    <HouseHoldID>652158352</HouseHoldID>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <JoinRouteDesc />
+    <PromotionCode />
+  </Customer>
+</NewDataSet>
+			</resultXml>
+			<rowCount>1</rowCount>
+		</SearchCustomerResponse>
+	</s:Body>
+</s:Envelope>

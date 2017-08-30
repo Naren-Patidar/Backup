@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AviosTtl" xml:space="preserve">
+    <value>Avios total CZ</value>
+  </data>
+  <data name="AvsAwded" xml:space="preserve">
+    <value>Avios awarded</value>
+  </data>
+  <data name="AvsPptsCnvted" xml:space="preserve">
+    <value>Points converted to Avios</value>
+  </data>
+  <data name="BonusVuchers" xml:space="preserve">
+    <value>Bonus voucher total</value>
+  </data>
+  <data name="ChangePntsFromBoost" xml:space="preserve">
+    <value>Points change from Clubcard Boost</value>
+  </data>
+  <data name="ClickHerePointResource" xml:space="preserve">
+    <value>click here</value>
+  </data>
+  <data name="ClubcardVouchersTotal" xml:space="preserve">
+    <value>Clubcard voucher total</value>
+  </data>
+  <data name="ClubMilePptsCnvted" xml:space="preserve">
+    <value>Points converted to Flying Club miles</value>
+  </data>
+  <data name="ClubMilesAwded" xml:space="preserve">
+    <value>Flying Club miles awarded</value>
+  </data>
+  <data name="EndXmasTtl" xml:space="preserve">
+    <value> total is</value>
+  </data>
+  <data name="FlyingClubTtl" xml:space="preserve">
+    <value>Flying Club miles total</value>
+  </data>
+  <data name="PntsCarriedForwardXmas" xml:space="preserve">
+    <value>Total points carried forward towards your Christmas</value>
+  </data>
+  <data name="PntsCltedFrom" xml:space="preserve">
+    <value>Points collected from </value>
+  </data>
+  <data name="PntsCltedTo" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="PointCarriedforwordPrevious" xml:space="preserve">
+    <value>Points carried forward from previous statement</value>
+  </data>
+  <data name="PointsCarried" xml:space="preserve">
+    <value>Total points carried forward to your next statement</value>
+  </data>
+  <data name="PointsCollectedFromTesco" xml:space="preserve">
+    <value>Points collected with Tesco</value>
+  </data>
+  <data name="PointsCollectedFromTescoBank" xml:space="preserve">
+    <value>Points collected with Tesco Bank</value>
+  </data>
+  <data name="PointsConvertedAndCarried" xml:space="preserve">
+    <value>Total points not converted and carried forward to your next statement</value>
+  </data>
+  <data name="PointsTescoBankResource" xml:space="preserve">
+    <value>Clubcard points from Tesco Bank</value>
+  </data>
+  <data name="PointsTescoResource" xml:space="preserve">
+    <value>Clubcard points from Tesco</value>
+  </data>
+  <data name="PreStmtCarryForward" xml:space="preserve">
+    <value>Points carried forward from previous statement</value>
+  </data>
+  <data name="ReviewSummary" xml:space="preserve">
+    <value>To review a summary of the previous collection period </value>
+  </data>
+  <data name="StartTextFarXmas" xml:space="preserve">
+    <value>Your Christmas Savers </value>
+  </data>
+  <data name="StatementTitleResource" xml:space="preserve">
+    <value>Statement Summary</value>
+  </data>
+  <data name="Stmt" xml:space="preserve">
+    <value>statement</value>
+  </data>
+  <data name="TecsoBankVucherTtl" xml:space="preserve">
+    <value>Tesco Bank voucher total</value>
+  </data>
+  <data name="TescoBankCarriedForward" xml:space="preserve">
+    <value>Tesco Bank points carried forward</value>
+  </data>
+  <data name="TescoPointsCariedforword" xml:space="preserve">
+    <value>Tesco points carried forward</value>
+  </data>
+  <data name="TescoVucherTtl" xml:space="preserve">
+    <value>Tesco voucher totals</value>
+  </data>
+  <data name="TopupVouchers" xml:space="preserve">
+    <value>Top-up voucher total</value>
+  </data>
+  <data name="TotalPointsCollected" xml:space="preserve">
+    <value>Total points</value>
+  </data>
+  <data name="TotalRewardLabelNonXmas" xml:space="preserve">
+    <value>Voucher total</value>
+  </data>
+  <data name="TotalRewardLabelXmas" xml:space="preserve">
+    <value>Voucher total</value>
+  </data>
+  <data name="TotalTescoBnkPnts" xml:space="preserve">
+    <value>Total Tesco Bank points</value>
+  </data>
+  <data name="TotalTescoPnts" xml:space="preserve">
+    <value>Total Tesco points</value>
+  </data>
+  <data name="VucherTtl" xml:space="preserve">
+    <value>Voucher total CZ</value>
+  </data>
+  <data name="CurrencyAlphaSymbol" xml:space="preserve">
+    <value>Kč</value>
+  </data>
+  <data name="CurrencySymbol" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Moje body</value>
+  </data>
+  <data name="Nutri" xml:space="preserve">
+    <value>The Nutri Centre</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+</root>

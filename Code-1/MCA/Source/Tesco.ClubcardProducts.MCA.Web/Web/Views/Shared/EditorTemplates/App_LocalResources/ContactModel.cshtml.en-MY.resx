@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Please choose one option:</value>
+    <comment>lclPageDesc1Resource1.Text + lclPageDesc2Resource1.Text</comment>
+  </data>
+  <data name="HeaderText" xml:space="preserve">
+    <value>How would you like to receive your Clubcard statement, vouchers and coupons?</value>
+    <comment>lclConfirmcontactResource1.Text</comment>
+  </data>
+  <data name="lblBraille" xml:space="preserve">
+    <value />
+    <comment>lclLargePrintResource1.Text</comment>
+  </data>
+  <data name="lblBrailleDesc" xml:space="preserve">
+    <value />
+    <comment>lclOptinServicesResource1.Text + lcltollfree1Resource1.Text + lcltollfree1starResource1.Text + lcltollfree2Resource2.Text + lcltollfree2starResource2.Text</comment>
+  </data>
+  <data name="lblBrailleOpted" xml:space="preserve">
+    <value>You are opted in to Braille statement.</value>
+    <comment>BrailleStatementOptIn</comment>
+  </data>
+  <data name="lblBrailleStatementNotOptIn" xml:space="preserve">
+    <value>You are not opted in to Braille/Large Print statement.</value>
+    <comment>BrailleStatementNotOptInLargePrint</comment>
+  </data>
+  <data name="lblCheckAddress" xml:space="preserve">
+    <value>Please check the House no/name of your address:</value>
+    <comment>lclcheckAddressline1Resource1.Text</comment>
+  </data>
+  <data name="lblConfirm" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>btnConfirmContactPrefResource1.Text</comment>
+  </data>
+  <data name="lblConfirmEmail" xml:space="preserve">
+    <value>Please confirm your email address:</value>
+    <comment>lclConEmailAddressResource1.Text</comment>
+  </data>
+  <data name="lblConfirmMobile" xml:space="preserve">
+    <value>Please confirm your mobile number:</value>
+    <comment>lclConfirmMobileNumberResource1.Text</comment>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>We will do our best to communicate with you based on your chosen contact method but may have to send you communication via post where there are problems with your registered e-mail address or mobile phone number or for business or policy reasons. If you have a joint account, you must have the permission of the primary card holder to update the above preferences as the statements are only sent to the primary card holder.</value>
+    <comment>lclCommunicateMsgResource1.Text</comment>
+  </data>
+  <data name="lblDesc1" xml:space="preserve">
+    <value />
+    <comment>lclCommunicateMsg1Resource1.Text</comment>
+  </data>
+  <data name="lblDesc2" xml:space="preserve">
+    <value />
+    <comment>lclCommunicateMsg2Resource1.Text</comment>
+  </data>
+  <data name="lblEmailDesc" xml:space="preserve">
+    <value>You will be sent an email with a link to My Clubcard Account to access your latest statement, vouchers, coupons and points summary.</value>
+    <comment>lclsentEmailmsgResource1.Text</comment>
+  </data>
+  <data name="lblEmailDesc1" xml:space="preserve">
+    <value>By clicking confirm, you will no longer be sent a statement via post.</value>
+    <comment>Localize1Resource1.Text</comment>
+  </data>
+  <data name="lblEnterEmail" xml:space="preserve">
+    <value>Please enter your email address:</value>
+    <comment>lclemailAddressResource1.Text</comment>
+  </data>
+  <data name="lblEnterMobile" xml:space="preserve">
+    <value>Please enter your mobile number:</value>
+    <comment>lclMobileNumberResource1.Text</comment>
+  </data>
+  <data name="lblLargePrintOpted" xml:space="preserve">
+    <value>You are opted in to Large Print statement.</value>
+    <comment>BrailleStatementOptInLargePrint</comment>
+  </data>
+  <data name="lblPostDesc" xml:space="preserve">
+    <value>If your address is wrong, please update it in</value>
+    <comment>lclAddressupdateResource1.Text</comment>
+  </data>
+  <data name="lblPostDesc1" xml:space="preserve">
+    <value>You will be sent your latest statement, vouchers, coupons and points summary through the post.</value>
+    <comment>Localize2Resource1.Text</comment>
+  </data>
+  <data name="lblPrefEmail" xml:space="preserve">
+    <value>Online Via Email</value>
+    <comment>lclViaEmailResource1.Text</comment>
+  </data>
+  <data name="lblPrefPost" xml:space="preserve">
+    <value>Via Post</value>
+    <comment>lclViaPostResource1.Text</comment>
+  </data>
+  <data name="lblPrefText" xml:space="preserve">
+    <value>Via Text Message</value>
+    <comment>lclTextMsgResource1.Text</comment>
+  </data>
+  <data name="lblTextDesc" xml:space="preserve">
+    <value>You will be sent a text message with a link to My Clubcard Account to access your latest statement, vouchers, coupons and points summary.</value>
+    <comment>lclTextDescResource1.Text</comment>
+  </data>
+  <data name="lblTextDesc1" xml:space="preserve">
+    <value>By clicking confirm, you will no longer be sent a paper Clubcard statement</value>
+    <comment>Localize1Resource1.Text</comment>
+  </data>
+  <data name="lnkMyPersonalDetails" xml:space="preserve">
+    <value>My personal details</value>
+    <comment>lclMyPersonalDetailsResource1.Text</comment>
+  </data>
+  <data name="lnkTnC" xml:space="preserve">
+    <value />
+    <comment>lclTermsCondnResource1.Text</comment>
+  </data>
+  <data name="MessageDataSaved" xml:space="preserve">
+    <value>Your changes have been saved</value>
+    <comment>lclConfirmSaveMsgResource1.Text</comment>
+  </data>
+  <data name="lclRequireWarningText" xml:space="preserve">
+    <value>Indicates required fields</value>
+  </data>
+  <data name="lclMobileNumberExampleResource" xml:space="preserve">
+    <value>E.g.- 60356313858</value>
+    <comment>lclMobileNumberExampleResource1.Text</comment>
+  </data>
+  <data name="lclMobilePhoneNoExampleResource1.Text" xml:space="preserve">
+    <value>(Eg : 60362875225)</value>
+  </data>
+  <data name="errCompareEmail" xml:space="preserve">
+    <value>Email address did not match, please enter correct email address</value>
+    <comment>errCompareEmail -</comment>
+  </data>
+  <data name="errMessageConfirmMobile" xml:space="preserve">
+    <value>Mobile numbers did not match, please enter correct mobile numbers.</value>
+    <comment>errMessageConfirmMobile -</comment>
+  </data>
+  <data name="errMessageEmail" xml:space="preserve">
+    <value>Please enter a valid email address</value>
+    <comment>errMessageEmail -</comment>
+  </data>
+  <data name="errMessageMobile" xml:space="preserve">
+    <value>Please enter a valid mobile number.</value>
+    <comment>errMessageMobile -</comment>
+  </data>
+  <data name="clientErrEmailMismatch" xml:space="preserve">
+    <value></value>
+    <comment>clientSideErrMessageEmail -</comment>
+  </data>
+   <data name="clientErrMobileMismatch" xml:space="preserve">
+    <value></value>
+    <comment>clientSideErrMessageMobil -</comment>
+  </data>
+</root>

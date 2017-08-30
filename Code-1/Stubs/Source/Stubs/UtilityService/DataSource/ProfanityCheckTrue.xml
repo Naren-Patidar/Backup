@@ -1,0 +1,55 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <s:Header>
+    <a:Action s:mustUnderstand="1" u:Id="_2">http://tempuri.org/IUtilityService/ProfanityCheckResponse</a:Action>
+    <a:RelatesTo u:Id="_3">urn:uuid:6d380449-8902-44c2-a6ed-9b5c16293be0</a:RelatesTo>
+    <o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <u:Timestamp u:Id="uuid-81435777-f69f-4f4a-b3b4-9bedf3476c5b-22">
+        <u:Created>2016-03-16T07:26:38.693Z</u:Created>
+        <u:Expires>2016-03-16T07:31:38.693Z</u:Expires>
+      </u:Timestamp>
+      <c:DerivedKeyToken u:Id="uuid-81435777-f69f-4f4a-b3b4-9bedf3476c5b-18" xmlns:c="http://schemas.xmlsoap.org/ws/2005/02/sc">
+        <o:SecurityTokenReference>
+          <o:Reference URI="urn:uuid:39f68e6c-15c9-46da-8826-98335daebdc6" ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct" />
+        </o:SecurityTokenReference>
+        <c:Offset>0</c:Offset>
+        <c:Length>24</c:Length>
+        <c:Nonce>Ao8Nl6ZASMXS6x1UQUJRYA==</c:Nonce>
+      </c:DerivedKeyToken>
+      <c:DerivedKeyToken u:Id="uuid-81435777-f69f-4f4a-b3b4-9bedf3476c5b-19" xmlns:c="http://schemas.xmlsoap.org/ws/2005/02/sc">
+        <o:SecurityTokenReference>
+          <o:Reference URI="urn:uuid:39f68e6c-15c9-46da-8826-98335daebdc6" ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/sct" />
+        </o:SecurityTokenReference>
+        <c:Nonce>4YP9omqKBIrmnXqzilvyZw==</c:Nonce>
+      </c:DerivedKeyToken>
+      <e:ReferenceList xmlns:e="http://www.w3.org/2001/04/xmlenc#">
+        <e:DataReference URI="#_1" />
+        <e:DataReference URI="#_4" />
+      </e:ReferenceList>
+      <e:EncryptedData Id="_4" Type="http://www.w3.org/2001/04/xmlenc#Element" xmlns:e="http://www.w3.org/2001/04/xmlenc#">
+        <e:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+        <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+          <o:SecurityTokenReference>
+            <o:Reference ValueType="http://schemas.xmlsoap.org/ws/2005/02/sc/dk" URI="#uuid-81435777-f69f-4f4a-b3b4-9bedf3476c5b-19" />
+          </o:SecurityTokenReference>
+        </KeyInfo>
+        <e:CipherData>
+          <e:CipherValue>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</e:CipherValue>
+        </e:CipherData>
+      </e:EncryptedData>
+    </o:Security>
+  </s:Header>
+  <s:Body u:Id="_0">
+    <ProfanityCheckResponse xmlns="http://tempuri.org/">
+      <ProfanityCheckResult>true</ProfanityCheckResult>
+      <errorXml a:nil="true" xmlns:a="http://www.w3.org/2001/XMLSchema-instance" />
+      <resultXml>
+        <NewDataSet>
+          <ProfanityCheck>
+            <Count>1</Count>
+          </ProfanityCheck>
+        </NewDataSet>
+      </resultXml>
+      <rowCount>1</rowCount>
+    </ProfanityCheckResponse>
+  </s:Body>
+</s:Envelope>

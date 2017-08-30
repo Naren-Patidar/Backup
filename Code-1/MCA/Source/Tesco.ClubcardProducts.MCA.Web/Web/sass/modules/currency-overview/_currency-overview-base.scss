@@ -1,0 +1,88 @@
+.ddl-currency-overview {
+	padding: 20px 0;
+	
+	> .tab-control {
+		position: relative;
+		margin-bottom: 0 !important;
+		border-bottom: none !important;
+
+		li {
+			position: relative;
+			display: inline-block;
+			padding: 20px 10px;
+			text-align: center;
+			cursor: pointer;
+			text-align: center;
+			font-family: 'tescobold';
+			margin: 0 1.5% 0 0;
+			width: 48%;
+			font-size: 1.8rem !important;
+			font-family: 'tescobold';
+
+			&:last-child {
+				margin-right: 0 !important;
+			}
+
+			&:after {
+				content: "\e013";
+				font-family: 'Icons';
+				display: block;
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin-top: -20px;
+			    border: 1px solid $ddl-border-color-1;
+			    padding: 3px 7px;
+			    border-radius: 30px;
+			    display: none;
+			}
+
+			&.active {
+
+				&:after {
+					content: "\e00e";
+				}
+			}
+
+			span {
+				display: block;
+				font-size: 2.6rem;
+			}
+		}
+	}
+
+	&.three-tabs {
+
+		> .tab-control {
+
+			li {
+				margin: 0 1.5% 0 0;
+				width: 31%;
+			}
+		}
+	}
+
+	.tab {
+
+		.tab-inner {
+			border: 1px solid $ddl-border-color-1;
+			border-width: 0 1px 1px 1px;
+			padding: 20px;
+
+			.tab-control {
+				border-bottom: none !important;
+
+				li {
+					padding: 0;
+					width: auto;
+					border: none
+				}
+			}
+		}
+	}
+
+	> .tab.active {
+		border-top: 1px solid $ddl-border-color-1;
+	}
+}

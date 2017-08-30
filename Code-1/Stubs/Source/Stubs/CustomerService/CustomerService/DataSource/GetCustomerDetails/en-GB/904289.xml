@@ -1,0 +1,98 @@
+﻿<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+	<s:Header>
+		<a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/ICustomerService/GetCustomerDetailsResponse</a:Action>
+		<a:RelatesTo>urn:uuid:e5dd5c3e-afd0-4ada-90e0-70a9b864a64e</a:RelatesTo>
+	</s:Header>
+	<s:Body>
+		<GetCustomerDetailsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+			<GetCustomerDetailsResult>true</GetCustomerDetailsResult>
+			<errorXml />
+			<resultXml>
+				<CustomerInformation>
+					<NewDataSet>
+						<Customer>
+							<CustomerID>904289</CustomerID>
+							<CompleteName>Siddharth Aa</CompleteName>
+							<official_id>11223344</official_id>
+							<postal_code>AL7 1TW</postal_code>
+							<is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+							<family_member_1_dob>1971-02-12T00:00:00+00:00</family_member_1_dob>
+							<TitleEnglish>Mr</TitleEnglish>
+							<Name1>Siddharth</Name1>
+							<Name2>Aa</Name2>
+							<Name3>Andrewa</Name3>
+							<Sex>M</Sex>
+							<MailingAddressLine1>UNIT 6</MailingAddressLine1>
+							<MailingAddressLine2>SHIRE PARK</MailingAddressLine2>
+							<MailingAddressLine3>WELWYN GARDEN CITY</MailingAddressLine3>
+							<MailingAddressLine4 />
+							<MailingAddressLine5 />
+							<MailingAddressLine6 />
+							<email_address>yog@ghy.com</email_address>
+							<daytime_phone_number />
+							<mobile_phone_number>07654657897</mobile_phone_number>
+							<evening_phone_number />
+							<SSN />
+							<PassportNo />
+							<ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+							<RaceID>0</RaceID>
+							<JoinedStoreID>6645</JoinedStoreID>
+							<MailingAddressPostCode>AL7 1TW</MailingAddressPostCode>
+							<CustomerUseStatusID>1</CustomerUseStatusID>
+							<CustomerMailStatus>7</CustomerMailStatus>
+							<CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+							<CustomerEmailStatus>7</CustomerEmailStatus>
+						</Customer>
+						<Customer>
+							<CustomerID>904289</CustomerID>
+							<CompleteName>Siddharth Aa</CompleteName>
+							<official_id>0000874736</official_id>
+							<postal_code>AL7 1TW</postal_code>
+							<is_primary_customer_of_household>Yes</is_primary_customer_of_household>
+							<family_member_1_dob>1971-02-12T00:00:00+00:00</family_member_1_dob>
+							<TitleEnglish>Mr</TitleEnglish>
+							<Name1>Siddharth</Name1>
+							<Name2>Aa</Name2>
+							<Name3>Andrewa</Name3>
+							<Sex>M</Sex>
+							<MailingAddressLine1>UNIT 6</MailingAddressLine1>
+							<MailingAddressLine2>SHIRE PARK</MailingAddressLine2>
+							<MailingAddressLine3>WELWYN GARDEN CITY</MailingAddressLine3>
+							<MailingAddressLine4 />
+							<MailingAddressLine5 />
+							<MailingAddressLine6 />
+							<email_address>yog@ghy.com</email_address>
+							<daytime_phone_number />
+							<mobile_phone_number>07654657897</mobile_phone_number>
+							<evening_phone_number />
+							<SSN />
+							<PassportNo />
+							<ISOLanguageCode xml:space="preserve">     </ISOLanguageCode>
+							<RaceID>0</RaceID>
+							<JoinedStoreID>6645</JoinedStoreID>
+							<MailingAddressPostCode>AL7 1TW</MailingAddressPostCode>
+							<CustomerUseStatusID>1</CustomerUseStatusID>
+							<CustomerMailStatus>7</CustomerMailStatus>
+							<CustomerMobilePhoneStatus>7</CustomerMobilePhoneStatus>
+							<CustomerEmailStatus>7</CustomerEmailStatus>
+						</Customer>
+					</NewDataSet>
+					<NewDataSet>
+						<FamilyDetails>
+							<FamilyMemberSeqNo>1</FamilyMemberSeqNo>
+							<DateOfBirth>1990-01-01T00:00:00+00:00</DateOfBirth>
+							<number_of_household_members>3</number_of_household_members>
+						</FamilyDetails>
+						<FamilyDetails>
+							<FamilyMemberSeqNo>2</FamilyMemberSeqNo>
+							<DateOfBirth>2008-01-01T00:00:00+00:00</DateOfBirth>
+							<number_of_household_members>3</number_of_household_members>
+						</FamilyDetails>
+					</NewDataSet>
+				</CustomerInformation>
+			</resultXml>
+			<rowCount>2</rowCount>
+		</GetCustomerDetailsResponse>
+	</s:Body>
+</s:Envelope>
+

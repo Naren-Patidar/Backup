@@ -1,0 +1,87 @@
+.ddl-settings-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	> li {
+		padding: 20px 0;
+		border-top: 1px solid $ddl-border-color-1;
+		position: relative;
+
+		.accordion-header {
+			padding: 0 40px 0 0 !important;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				right: 0;
+				top: 50%;
+			}
+		}
+
+		.accordion-content {
+			border: none !important;
+			padding: 0 !important;
+
+			.accordion-content-inner {
+				padding: 20px 0 !important;
+			}
+		}
+	}
+
+	&.ddl-settings-link-list {
+
+		a {
+			font-family: 'tescobold';
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -10px;
+		}
+	
+		> li {
+			padding: 20px 120px 20px 20px;
+
+			em {
+				font-style: normal;
+				color: $ddl-link-colour;
+			}
+		}
+
+	}
+
+	&.ddl-rewards-settings {
+
+		> li {
+			margin: 0;
+			padding: 20px 0;
+
+			.ddl-radio.accordion-header {
+				padding: 0 0 0 35px !important;
+				border: none;
+
+				.ddl-radio {
+					top: 50%;
+					margin-top: -14px;
+					z-index: 99;
+				}
+
+				&:after {
+					position: absolute;
+					top: 50%;
+					right: 10px;
+					margin-top: -20px;
+				}
+
+			}
+
+			.accordion-content {
+				border: none;
+			}
+
+		}
+
+	}
+
+
+}

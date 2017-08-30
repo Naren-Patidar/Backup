@@ -1,0 +1,56 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>true</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+	<NewDataSet>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>171267062</PrimaryCustomerID>
+    <CustomerID>171267062</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JOSETTE</Name1>
+    <Name2 />
+    <Name3>SAVILLE</Name3>
+    <MailingAddressLine1>21 BARON CLOSE</MailingAddressLine1>
+    <MailingAddressPostCode>BS30 6LS</MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>171267062</PrimaryCustomerID>
+    <CustomerID>1095619700</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JOSETTE             </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>SAVILLE                  </Name3>
+    <MailingAddressLine1>21 BARON CLOSE                </MailingAddressLine1>
+    <MailingAddressPostCode>BS30 6LS </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>171267062</PrimaryCustomerID>
+    <CustomerID>1095637079</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JOSETTE             </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>SAVILLE                  </Name3>
+    <MailingAddressLine1>21 BARON CLOSE                </MailingAddressLine1>
+    <MailingAddressPostCode>BS30 6LS </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>171267062</PrimaryCustomerID>
+    <CustomerID>1095654458</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JOSETTE             </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>SAVILLE                  </Name3>
+    <MailingAddressLine1>21 BARON CLOSE                </MailingAddressLine1>
+    <MailingAddressPostCode>BS30 6LS </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+</NewDataSet>
+	</resultXml>
+</GetHouseholdCustomersResponse>

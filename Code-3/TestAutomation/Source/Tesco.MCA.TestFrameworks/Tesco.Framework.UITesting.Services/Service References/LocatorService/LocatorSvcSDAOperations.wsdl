@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LocatorSvcSDAOperations" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ILocatorSvcSDA_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ops01mapp08.comops.uk.tesco.org:81/LOCATORSVC/Locator.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ops01mapp08.comops.uk.tesco.org:81/LOCATORSVC/Locator.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ops01mapp08.comops.uk.tesco.org:81/LOCATORSVC/Locator.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tesco.Com.Framework.Services.Locator.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocatorSvcSDA_FindAddressesByPostcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindAddressesByPostcode" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_FindAddressesByPostcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindAddressesByPostcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressesByPostCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressesByPostCode" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressesByPostCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressesByPostCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressListForPostcode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressListForPostcode" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressListForPostcode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressListForPostcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAreaDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaDetails" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAreaDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreaDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetGridRefByPostCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGridRefByPostCode" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetGridRefByPostCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGridRefByPostCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressExceptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressExceptions" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressExceptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressExceptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressForLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressForLocation" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressForLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressForLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressesByPostCodeHouseNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressesByPostCodeHouseNumber" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetAddressesByPostCodeHouseNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAddressesByPostCodeHouseNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetGeoCoordinateByPostCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoCoordinateByPostCode" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_GetGeoCoordinateByPostCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoCoordinateByPostCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_FindAddressLite_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindAddressLite" />
+  </wsdl:message>
+  <wsdl:message name="ILocatorSvcSDA_FindAddressLite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindAddressLiteResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="ILocatorSvcSDA">
+    <wsdl:operation name="FindAddressesByPostcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/FindAddressesByPostcode" message="tns:ILocatorSvcSDA_FindAddressesByPostcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/FindAddressesByPostcodeResponse" message="tns:ILocatorSvcSDA_FindAddressesByPostcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressesByPostCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCode" message="tns:ILocatorSvcSDA_GetAddressesByPostCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCodeResponse" message="tns:ILocatorSvcSDA_GetAddressesByPostCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressListForPostcode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressListForPostcode" message="tns:ILocatorSvcSDA_GetAddressListForPostcode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressListForPostcodeResponse" message="tns:ILocatorSvcSDA_GetAddressListForPostcode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAreaDetails" message="tns:ILocatorSvcSDA_GetAreaDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAreaDetailsResponse" message="tns:ILocatorSvcSDA_GetAreaDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGridRefByPostCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetGridRefByPostCode" message="tns:ILocatorSvcSDA_GetGridRefByPostCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetGridRefByPostCodeResponse" message="tns:ILocatorSvcSDA_GetGridRefByPostCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressExceptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressExceptions" message="tns:ILocatorSvcSDA_GetAddressExceptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressExceptionsResponse" message="tns:ILocatorSvcSDA_GetAddressExceptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressForLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressForLocation" message="tns:ILocatorSvcSDA_GetAddressForLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressForLocationResponse" message="tns:ILocatorSvcSDA_GetAddressForLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressesByPostCodeHouseNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCodeHouseNumber" message="tns:ILocatorSvcSDA_GetAddressesByPostCodeHouseNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCodeHouseNumberResponse" message="tns:ILocatorSvcSDA_GetAddressesByPostCodeHouseNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoCoordinateByPostCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetGeoCoordinateByPostCode" message="tns:ILocatorSvcSDA_GetGeoCoordinateByPostCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/GetGeoCoordinateByPostCodeResponse" message="tns:ILocatorSvcSDA_GetGeoCoordinateByPostCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAddressLite">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocatorSvcSDA/FindAddressLite" message="tns:ILocatorSvcSDA_FindAddressLite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocatorSvcSDA/FindAddressLiteResponse" message="tns:ILocatorSvcSDA_FindAddressLite_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ILocatorSvcSDA" type="tns:ILocatorSvcSDA">
+    <wsp:PolicyReference URI="#WSHttpBinding_ILocatorSvcSDA_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FindAddressesByPostcode">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/FindAddressesByPostcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressesByPostCode">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressListForPostcode">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAddressListForPostcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAreaDetails">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAreaDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGridRefByPostCode">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetGridRefByPostCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressExceptions">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAddressExceptions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressForLocation">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAddressForLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAddressesByPostCodeHouseNumber">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetAddressesByPostCodeHouseNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoCoordinateByPostCode">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/GetGeoCoordinateByPostCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAddressLite">
+      <soap12:operation soapAction="http://tempuri.org/ILocatorSvcSDA/FindAddressLite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LocatorSvcSDAOperations">
+    <wsdl:port name="WSHttpBinding_ILocatorSvcSDA" binding="tns:WSHttpBinding_ILocatorSvcSDA">
+      <soap12:address location="http://ops01mapp08.comops.uk.tesco.org:81/LOCATORSVC/Locator.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://ops01mapp08.comops.uk.tesco.org:81/LOCATORSVC/Locator.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

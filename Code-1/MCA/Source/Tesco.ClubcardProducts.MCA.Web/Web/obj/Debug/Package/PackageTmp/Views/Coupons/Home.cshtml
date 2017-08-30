@@ -1,0 +1,130 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model  CouponViewModel
+@{
+    ViewBag.Title = @Html.Translate("PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("dtmPageTitle");
+    ViewBag.PageName = "Coupons";
+
+    bool showHowToUse = true;
+    var CouponsCount = ViewData[ParameterNames.TOTAL_COUPONS_VALUE];
+    //var appsettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];
+    var showMyCouponPage = Convert.ToDateTime(DBConfigurationManager.Instance[DbConfigurationTypeEnum.ShowMyCouponPage][DbConfigurationItemNames.ShowMyCouponPage.ToString()].ConfigurationValue1, System.Globalization.CultureInfo.InvariantCulture) >= Convert.ToDateTime(DateTime.Now.Date.ToShortDateString());
+    showHowToUse = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.ShowHowToUseCoupons.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE");
+    
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="row">
+    <div class="gr-12">
+        @if (showMyCouponPage)
+        {
+            <div class="copy-wrapper">
+                <h2 id="lblheader">@Html.Translate("PageTitle")</h2>
+                @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/CouponHoldingPage.html" })
+            </div>
+        }
+        else
+        {  
+            <div class="copy-wrapper">
+                <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("PageTitle")</h1>
+                <p>
+                    @Html.Translate("Description")
+                </p>
+            </div>
+
+            <div class="copy-wrapper">
+                <h2 class="ddl-h4-like">@Html.Translate("SummaryHeading")</h2>
+            </div>
+            <div class="row">
+                <div class="gr-12">
+                    <div class="table-wrapper points-callout points-callout-secondary ddl-icon-before ddl-icon-coupons">
+                        <table>
+                            <thead class="ddl-visually-hidden">
+                                <tr>
+                                    <th class="ddl-text-left">
+                                        Type of coupons
+                                    </th>
+                                    <th class="ddl-text-centre">
+                                        Value
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+							<tr>
+	<td><h2>@Html.Translate("Shared/_CouponsBox", "CouponAvailableLable")</h2></td>
+	<td class="ddl-no-wrap"> @Model.AvalableCouponCount </td>
+	</tr>
+                                           </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+       
+            @Html.Partial("_CouponsAvailable", Model.AvailableCoupons);
+                                                                      if (showHowToUse)
+                                                                      { 
+            <div class="row">
+                @Html.Partial("_CouponHowToUse")
+            </div>
+                                                                      }
+            <div class="row">
+                <div class="gr-12">
+                    <div class="copy-wrapper">
+                        <h2 class="ddl-h4-like">@Html.Translate("PrintTipsHeader")</h2>
+                        <p>@Html.Translate("PrintTips1")</p>
+                        <p>@Html.Translate("PrintTips2")</p>
+                        <p>@Html.Translate("PrintTips3")</p>
+                        <p>@Html.Translate("PrintTips4")</p>
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="gr-12">
+                    <div class="copy-wrapper">
+                        <h2 class="ddl-h4-like">
+                            Coupons you have used</h2>
+                    </div>
+                    <div class="table-wrapper points-callout points-callout-tertiary ddl-icon-before ddl-icon-coupons">
+                        <table>
+                            <thead class="ddl-visually-hidden">
+                                <tr>
+                                    <th class="ddl-text-left">
+                                        Type of coupons
+                                    </th>
+                                    <th class="ddl-text-centre">
+                                        Value
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @Html.Partial("_CouponsBox", new CouponBoxViewModel
+           {
+               Resources = new List<string>() { "CouponsSentLable" },
+               Value = Model.IssuedCouponCount
+           })
+                                @Html.Partial("_CouponsBox", new CouponBoxViewModel
+           {
+               Resources = new List<string>() { "CouponUsedLable" },
+               Value = Model.RedeemedCouponCount
+           })
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+                
+            @Html.Partial("_CouponsUsed", Model.RedeemedCoupons);
+
+        }
+    </div>
+</div>
+@section scripts
+{
+    @Scripts.Render("~/bundles/coupon")
+}

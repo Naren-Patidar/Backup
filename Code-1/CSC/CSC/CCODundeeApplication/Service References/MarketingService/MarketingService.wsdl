@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01/Imports">
+      <xsd:import schemaLocation="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/MarketingService.svc?xsd=xsd0" namespace="http://tesco.com/clubcardonline/datacontract/2010/01" />
+      <xsd:import schemaLocation="http://plprgxnngcu07.pl.tesco-europe.com/CCOServiceCR/MarketingService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMarketingService_Connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:Connect" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_Connect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewAgency" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAgency" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_SearchAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchAgency" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_SearchAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePointsLimit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePointsLimit" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePointsLimit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePointsLimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_SearchCSDPointsLimit_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCSDPointsLimit" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_SearchCSDPointsLimit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCSDPointsLimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewCollectionPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCollectionPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewCollectionPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCollectionPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddCollectionPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCollectionPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddCollectionPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCollectionPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateCollectionPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCollectionPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateCollectionPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCollectionPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeleteCollectionPeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCollectionPeriod" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeleteCollectionPeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCollectionPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DoesCapabilityExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoesCapabilityExist" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DoesCapabilityExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoesCapabilityExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewRewardMailingDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRewardMailingDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewRewardMailingDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRewardMailingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateRewardMailingDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRewardMailingDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateRewardMailingDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRewardMailingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewCouponSetupTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCouponSetupTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewCouponSetupTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCouponSetupTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeleteCouponSetupTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCouponSetupTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeleteCouponSetupTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCouponSetupTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_InsertCouponSetupTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCouponSetupTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_InsertCouponSetupTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCouponSetupTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateCouponSetupTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCouponSetupTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateCouponSetupTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCouponSetupTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewVoucherDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewVoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewVoucherDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewVoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewVoucherBarCodeDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewVoucherBarCodeDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewVoucherBarCodeDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewVoucherBarCodeDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateVoucherDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateVoucherDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddVoucherDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddVoucherDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddVoucherDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddVoucherDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerOutlets_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerOutlets" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerOutlets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerOutletsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartner" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddPartnerOutlets_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartnerOutlets" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_AddPartnerOutlets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartnerOutletsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePartnerOutlets_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOutlets" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePartnerOutlets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOutletsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_GetOptionalCustomerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionalCustomerStatus" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_GetOptionalCustomerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptionalCustomerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateAgency_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAgency" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateAgency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAgencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartner" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdatePartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeletePartnerOutlets_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartnerOutlets" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_DeletePartnerOutlets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePartnerOutletsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewReports_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewReports" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewReports_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewAssociatedPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewAssociatedPartners" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewAssociatedPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewAssociatedPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartner" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartners_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartners" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerType" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewPartnerType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewPartnerTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewMailingDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewMailingDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_ViewMailingDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewMailingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateMailingDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMailingDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMarketingService_UpdateMailingDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMailingDetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMarketingService">
+    <wsdl:operation name="Connect">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/Connect" message="tns:IMarketingService_Connect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ConnectResponse" message="tns:IMarketingService_Connect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewAgency">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewAgency" message="tns:IMarketingService_ViewAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewAgencyResponse" message="tns:IMarketingService_ViewAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAgency">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddAgency" message="tns:IMarketingService_AddAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddAgencyResponse" message="tns:IMarketingService_AddAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchAgency">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/SearchAgency" message="tns:IMarketingService_SearchAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/SearchAgencyResponse" message="tns:IMarketingService_SearchAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePointsLimit">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePointsLimit" message="tns:IMarketingService_UpdatePointsLimit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePointsLimitResponse" message="tns:IMarketingService_UpdatePointsLimit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCSDPointsLimit">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/SearchCSDPointsLimit" message="tns:IMarketingService_SearchCSDPointsLimit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/SearchCSDPointsLimitResponse" message="tns:IMarketingService_SearchCSDPointsLimit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCollectionPeriod">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewCollectionPeriod" message="tns:IMarketingService_ViewCollectionPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewCollectionPeriodResponse" message="tns:IMarketingService_ViewCollectionPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCollectionPeriod">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddCollectionPeriod" message="tns:IMarketingService_AddCollectionPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddCollectionPeriodResponse" message="tns:IMarketingService_AddCollectionPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCollectionPeriod">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateCollectionPeriod" message="tns:IMarketingService_UpdateCollectionPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateCollectionPeriodResponse" message="tns:IMarketingService_UpdateCollectionPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCollectionPeriod">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeleteCollectionPeriod" message="tns:IMarketingService_DeleteCollectionPeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeleteCollectionPeriodResponse" message="tns:IMarketingService_DeleteCollectionPeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoesCapabilityExist">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DoesCapabilityExist" message="tns:IMarketingService_DoesCapabilityExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DoesCapabilityExistResponse" message="tns:IMarketingService_DoesCapabilityExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewRewardMailingDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewRewardMailingDetails" message="tns:IMarketingService_ViewRewardMailingDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewRewardMailingDetailsResponse" message="tns:IMarketingService_ViewRewardMailingDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRewardMailingDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateRewardMailingDetails" message="tns:IMarketingService_UpdateRewardMailingDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateRewardMailingDetailsResponse" message="tns:IMarketingService_UpdateRewardMailingDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCouponSetupTypes">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewCouponSetupTypes" message="tns:IMarketingService_ViewCouponSetupTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewCouponSetupTypesResponse" message="tns:IMarketingService_ViewCouponSetupTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCouponSetupTypes">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeleteCouponSetupTypes" message="tns:IMarketingService_DeleteCouponSetupTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeleteCouponSetupTypesResponse" message="tns:IMarketingService_DeleteCouponSetupTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCouponSetupTypes">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/InsertCouponSetupTypes" message="tns:IMarketingService_InsertCouponSetupTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/InsertCouponSetupTypesResponse" message="tns:IMarketingService_InsertCouponSetupTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCouponSetupTypes">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateCouponSetupTypes" message="tns:IMarketingService_UpdateCouponSetupTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateCouponSetupTypesResponse" message="tns:IMarketingService_UpdateCouponSetupTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewVoucherDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewVoucherDetails" message="tns:IMarketingService_ViewVoucherDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewVoucherDetailsResponse" message="tns:IMarketingService_ViewVoucherDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewVoucherBarCodeDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewVoucherBarCodeDetails" message="tns:IMarketingService_ViewVoucherBarCodeDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewVoucherBarCodeDetailsResponse" message="tns:IMarketingService_ViewVoucherBarCodeDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVoucherDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateVoucherDetails" message="tns:IMarketingService_UpdateVoucherDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateVoucherDetailsResponse" message="tns:IMarketingService_UpdateVoucherDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVoucherDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddVoucherDetails" message="tns:IMarketingService_AddVoucherDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddVoucherDetailsResponse" message="tns:IMarketingService_AddVoucherDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewPartnerOutlets">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerOutlets" message="tns:IMarketingService_ViewPartnerOutlets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerOutletsResponse" message="tns:IMarketingService_ViewPartnerOutlets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewPartnerTransactions">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerTransactions" message="tns:IMarketingService_ViewPartnerTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerTransactionsResponse" message="tns:IMarketingService_ViewPartnerTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartner">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddPartner" message="tns:IMarketingService_AddPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddPartnerResponse" message="tns:IMarketingService_AddPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartnerOutlets">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddPartnerOutlets" message="tns:IMarketingService_AddPartnerOutlets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/AddPartnerOutletsResponse" message="tns:IMarketingService_AddPartnerOutlets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartnerOutlets">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePartnerOutlets" message="tns:IMarketingService_UpdatePartnerOutlets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePartnerOutletsResponse" message="tns:IMarketingService_UpdatePartnerOutlets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOptionalCustomerStatus">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/GetOptionalCustomerStatus" message="tns:IMarketingService_GetOptionalCustomerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/GetOptionalCustomerStatusResponse" message="tns:IMarketingService_GetOptionalCustomerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgency">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateAgency" message="tns:IMarketingService_UpdateAgency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateAgencyResponse" message="tns:IMarketingService_UpdateAgency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePartner">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePartner" message="tns:IMarketingService_UpdatePartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdatePartnerResponse" message="tns:IMarketingService_UpdatePartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePartnerOutlets">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeletePartnerOutlets" message="tns:IMarketingService_DeletePartnerOutlets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/DeletePartnerOutletsResponse" message="tns:IMarketingService_DeletePartnerOutlets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewReports">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewReports" message="tns:IMarketingService_ViewReports_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewReportsResponse" message="tns:IMarketingService_ViewReports_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewAssociatedPartners">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewAssociatedPartners" message="tns:IMarketingService_ViewAssociatedPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewAssociatedPartnersResponse" message="tns:IMarketingService_ViewAssociatedPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewPartner">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartner" message="tns:IMarketingService_ViewPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerResponse" message="tns:IMarketingService_ViewPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewPartners">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartners" message="tns:IMarketingService_ViewPartners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnersResponse" message="tns:IMarketingService_ViewPartners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewPartnerType">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerType" message="tns:IMarketingService_ViewPartnerType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewPartnerTypeResponse" message="tns:IMarketingService_ViewPartnerType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewMailingDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewMailingDetails" message="tns:IMarketingService_ViewMailingDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/ViewMailingDetailsResponse" message="tns:IMarketingService_ViewMailingDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMailingDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateMailingDetails" message="tns:IMarketingService_UpdateMailingDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2010/01/IMarketingService/UpdateMailingDetailsResponse" message="tns:IMarketingService_UpdateMailingDetails_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

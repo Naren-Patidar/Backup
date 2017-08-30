@@ -1,0 +1,290 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@{
+    
+    var dtmTitle = ViewBag.dtmTitle;
+    var dtmDate = string.Empty;
+    var dtmPageUrl = string.Empty;
+    // var dtmCustID = string.Empty;
+    var dtmLoginStatus = string.Empty;
+    var dtmErrorPage = string.Empty;
+    var dtmErrorMsg = string.Empty;
+    string currentModule = string.Empty;
+    var dtmPropertyId = string.Empty;
+    var dtm2LAStatus = "non-authenticated";
+    string isDTMRequired = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsDTMRequired.ToString()].ConfigurationValue1.ToString();
+    string dtmScriptUrl = (isDTMRequired.ToLower() == "false") ? "" : DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DTMUrl.ToString()].ConfigurationValue1.ToString();
+
+    string isOptimizelyEnabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsOptimizelyEnabled.ToString()].ConfigurationValue1.ToString();
+    string optimizelyScriptUrl = (isOptimizelyEnabled.ToLower() == "false") ? "" : DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.OptimizelyScriptURL.ToString()].ConfigurationValue1.ToString();
+
+
+    string isGoogelAnalyticsRequired = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsGoogleAnalyticsRequired.ToString()].ConfigurationValue1.ToString();
+    string WebPropertyID = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.WebPropertyId.ToString()].ConfigurationValue1.ToString();// "UA-50017499-1";
+    string GADomainName = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.GADomainName.ToString()].ConfigurationValue1.ToString(); //"localhost";
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality];
+    DbConfigurationItem ShowReskinAdvisingMessage = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.ShowReskinAdvisingMessage.ToString()];
+    bool checkAdvising = (ShowReskinAdvisingMessage != null && ShowReskinAdvisingMessage.ConfigurationValue1.ToUpper() == "TRUE");
+    RouteData currentRoute = HttpContext.Current.Request.RequestContext.RouteData;
+    currentModule = currentRoute.GetRequiredString("controller");
+
+    //Add appdynamic key
+
+    string AppDynamicsKey = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.AppDynamicsKey.ToString()].ConfigurationValue1.ToString();
+    var customerId = Request.Cookies[ParameterNames.UUID] == null ? String.Empty : Request.Cookies[ParameterNames.UUID].Value;
+    var IsSecurityCheckDone = (MCACookie.Cookie[MCACookieEnum.IsSecurityCheckDone] != null) ? MCACookie.Cookie[MCACookieEnum.IsSecurityCheckDone] : "";
+    
+    try
+    {
+        if (isDTMRequired.ToLower() == "true")
+        {
+
+
+            dtmDate = DateTime.Now.ToString("yyyyMMdd-HH:mm");
+            dtmPageUrl = HttpContext.Current.Request.Url.AbsoluteUri;
+            dtmPropertyId = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DTMPropertyId.ToString()].ConfigurationValue1.ToString();
+
+            if (currentModule.ToLower() == "join" || currentModule.ToLower() == "activation")
+            {
+                dtmLoginStatus = "logged out";
+            }
+            else
+            {
+                dtmLoginStatus = "logged in";
+            }
+
+            if (currentModule.ToLower() == "mcaerror")
+            {
+                dtmErrorPage = "errorPage";
+                dtmErrorMsg = "Sorry, we are currently experiencing problems with our system, please try again later.";
+            }
+            
+            if(!String.IsNullOrWhiteSpace(IsSecurityCheckDone))
+            {
+                if (IsSecurityCheckDone.Substring(0, 1) == "Y")
+                {
+                    dtm2LAStatus = "2la authenticated";
+                }
+            }
+            
+        }
+    }
+    catch (Exception ex)
+    {
+        throw ex;
+    }
+}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+
+	@*App dynamics key*@
+
+	<script>
+		window["adrum-app-key"] = "@AppDynamicsKey";
+		window["adrum-start-time"] = new Date().getTime();
+	</script>
+	<script src="https://cdn.appdynamics.com/adrum/adrum-latest.js"></script>
+	<script>
+		ADRUM.command ("addUserData", "customerid", @customerId);
+	</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="">
+    <script type="text/javascript" src="@optimizelyScriptUrl"></script>
+    <link rel="stylesheet" href="~/Content/css/styles/main.css" />
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- checking -->
+    @RenderSection("head", false)
+    <script type="text/javascript">
+        if ("@isDTMRequired.ToLower()" == "true") {
+
+        
+            var dataLayer = {
+                cont_channel: 'Clubcard',
+                cont_server_env: 'Tesco.com',
+                cont_h_1: 'account:clubcard:my account:@dtmTitle',
+                cont_cat: 'my account',
+                cont_sub_cat: '@dtmTitle',
+                cont_type: 'account',
+                cont_property_id: '@dtmPropertyId',
+                page_name: 'Clubcard:My Clubcard Account:@dtmTitle',
+                cont_url: '@dtmPageUrl',
+                cont_grp: 'My Clubcard Account',
+                dt_tm: '@dtmDate',
+                usr_auth_status: '@dtmLoginStatus',
+                two_layer_authentication: '@dtm2LAStatus'
+
+            }
+            if ("@currentModule.ToLower()" == "mcaerror") {
+                dataLayer["cont_pg_err"] = '@dtmErrorPage';
+                dataLayer["cont_err_msg"] = '@dtmErrorMsg';
+            }          
+
+
+        }
+    </script>
+    <!-- Data Layer End -->
+    <!-- Adobe DTM : Training Property Start -->
+    <script type="text/javascript" src="@dtmScriptUrl"></script>
+    <script type="text/javascript" language="javascript" src='@Url.Content("~/Content/js/oo_engine.min.js")'></script>
+    <style>
+
+  @@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+               #ddl-page-header #ddl-app-ident {
+                        background-position-x: -80px;
+                }
+
+                input, input.ddl-input, input[type='number'].ddl-input, input[type='search'].ddl-input, input[type='email'].ddl-input {
+                  line-height:20px;
+                }
+
+
+                .ddl-button-banner .ddl-button-banner-column:nth-child(1) {
+                    max-width: 400px;
+                }
+
+                .ddl-button-banner .ddl-button-banner-column:nth-child(2) {
+                    max-width: none;
+                }
+
+                .ddl-button-banner .ddl-button-banner-column:only-child {
+                    max-width: 600px;
+                }
+
+				.ddl-button-banner form {
+					height: auto;
+				}
+            }
+
+
+</style>
+</head>
+<body>
+    <script type="text/javascript">
+        //Feedback
+        var oo_feedback = new OOo.Ocode({});
+        //Cookie Policy
+        function readCookie(E) {
+            var D = E + "=", B = document.cookie.split(";"), C, A;
+            for (C = B.length - 1; C > -1; C--) {
+                A = B[C];
+                while (A.charAt(0) === " ") {
+                    A = A.substring(1, A.length);
+                }
+                if (A.indexOf(D) === 0) {
+                    return A.substring(D.length, A.length);
+                }
+            } return null;
+        }
+        function cpAccept() {
+            "use strict";
+            document.cookie = 'tesco_cookie_accepted=1; path=/; expires=Mon, 18 Jan 2038 01:23:45 GMT';
+            $("#cookie-notification").slideUp("slow");
+        }
+    </script>
+    @Scripts.Render("~/bundles/jquery")
+    <div id="cookie-notification" class="hide">
+        <div class="container">
+            <p class="ddl-t5">@Resources.Messages.CookiePopUpMsg <a href="@Resources.Messages.CookiePolicyLink" target="_blank">
+                @Resources.Messages.CookiePopUpMsgFindOutMore</a>
+                @Resources.Messages.CookiePopUpMsg2</p>
+            <span class="ddl-icon-after ddl-icon-close" onclick="return cpAccept();"><span class="ddl-visually-hidden">
+                Close</span></span>
+        </div>
+    </div>
+    <a href="#ddl-page-body" class="ddl-visually-hidden">Skip to content</a>
+    <div id="ddl-wrapper" class="@(checkAdvising ? "scrollable ddl-with-noticiation-bar" : "scrollable")">
+        @Html.Partial("_Header")
+
+        @{
+            bool HasError = ((RazorView)ViewContext.View).ViewPath.Contains("Error");
+            
+			bool hideLeftNavigation = ViewBag.EnableLeftNavigation == "FALSE";
+
+            bool isFullPage = ViewBag.IsFullPage != null && ViewBag.IsFullPage == "TRUE" && !HasError ;
+            bool isGrayBackGround = ViewBag.IsGrayBackGround != null && ViewBag.IsGrayBackGround == "TRUE" && !HasError;            
+        }
+
+        <div id="ddl-page-body" class='@(isGrayBackGround ? "vital-form-journey" : string.Empty)'>  
+          <div class="container">
+          @if (!isFullPage)
+          {
+				<div class="row">
+					@if (!hideLeftNavigation)
+					{
+						<div class="gr-12 gr-3@medium" id="secondary-navigation-wrapper-page">
+							@RenderSection("leftNavigation", false)
+						</div>
+					}
+					<div class='@(!hideLeftNavigation ? "gr-12 gr-9@medium" : "gr-12 gr-10@medium gr-centered")'  id="divgr12small">
+						@RenderBody()
+					</div>
+				</div>
+          }
+          else
+          { 
+              @RenderBody()
+          }
+          </div> 
+          @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/Footer.html" })
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/main")
+    @Html.PageScripts()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+        //Ga tagging
+        if ("@isGoogelAnalyticsRequired.ToLower()" == "true") {
+            var WebId = "@WebPropertyID";
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', WebId]);
+            _gaq.push(['_setDomainName', '@GADomainName']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+    <script type="text/javascript">
+
+        var cp, results = readCookie('tesco_cookie_accepted'), i, L, link_href, current_onclick;
+        var clt = document.getElementById('cookie-notification')
+        if (results == null) {
+
+            if (clt != null) {
+
+                clt.setAttribute("class", "show");
+            }
+        }
+        else {
+            if (clt != null) {
+
+                clt.setAttribute("class", "hide");
+            }
+        }
+
+        if ("@isDTMRequired.ToLower()" == "true") {
+            _satellite.pageBottom();
+        }
+    </script>
+    <script src="@Url.Content("~/Scripts/v_xdfgkeuryt.js")" type="text/javascript"></script>
+</body>
+</html>

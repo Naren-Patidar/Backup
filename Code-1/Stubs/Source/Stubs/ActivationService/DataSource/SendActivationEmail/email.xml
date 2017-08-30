@@ -1,0 +1,11 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tempuri.org/IClubcardOnlineService/SendActivationEmailResponse</a:Action>
+    <a:RelatesTo>urn:uuid:a506ee24-09e2-48a5-9734-22bd81c0b0e1</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <SendActivationEmailResponse xmlns="http://tempuri.org/">
+      <SendActivationEmailResult>true</SendActivationEmailResult>
+    </SendActivationEmailResponse>
+  </s:Body>
+</s:Envelope>

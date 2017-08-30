@@ -1,0 +1,14 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardCouponService/GetAvailableCouponsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:8dc46dfc-2ad2-41c3-9852-10e4e4c65763</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetAvailableCouponsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetAvailableCouponsResult>false</GetAvailableCouponsResult>
+      <errorXml />
+      <resultArray i:nil="true" xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+      <totalCoupons>4</totalCoupons>
+    </GetAvailableCouponsResponse>
+  </s:Body>
+</s:Envelope>

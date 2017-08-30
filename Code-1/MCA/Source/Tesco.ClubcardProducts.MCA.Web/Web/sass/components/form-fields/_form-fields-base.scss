@@ -1,0 +1,88 @@
+.form-row {
+	display: block;
+}
+
+.ddl-form-field {
+	position: relative;
+	margin-bottom: 24px;
+	border: none;
+
+	&.ddl-form-field-inline {
+		overflow: hidden;
+
+		label.ddl-label {
+			display: inline-block;
+			text-align: right;
+			padding-right: 10px;
+		}
+	}
+
+	&.ddl-checkbox, &.ddl-radio {
+		padding: 0 35px;
+	}
+
+	.ddl-checkbox, .ddl-radio {
+		position: absolute;
+		left: 0;
+		top: 2px;
+	}
+
+	p {
+		clear: both;
+	}
+}
+
+.ddl-inline-fieldset {
+	margin-bottom: 24px !important;
+
+	.ddl-form-field {
+		display: inline-block;
+		margin: 0 10px 0 0;
+
+		label.ddl-label {
+			display: none;
+		}
+
+		.ddl-input, .ddl-select {
+			min-width: 40px;
+			max-width: none;
+		}
+
+
+		&.ddl-radio, &.ddl-checkbox {
+			width: auto;
+			padding-right: 0;
+			margin-bottom: 0 !important;
+
+			label.ddl-label {
+				display: inline-block;
+			}
+
+			.ddl-radio, .ddl-checkbox {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}
+
+.ddl-fieldset {
+
+	.ddl-inline-fieldset {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.conditional-content {
+
+	.form-row {
+		display: block;
+		clear: both;
+
+		.ddl-form-field:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://pvuktstfeapp03.tst01.tesco.org/ActivationServices/ActivationServices.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ClubcardCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:Address" />
+      <xs:element minOccurs="0" name="Clubcard" nillable="true" type="tns:ArrayOfClubcard" />
+      <xs:element minOccurs="0" name="ContactDetail" nillable="true" type="tns:ContactDetail" />
+      <xs:element minOccurs="0" name="ContactPreference" nillable="true" type="tns:ContactPreference" />
+      <xs:element minOccurs="0" name="DateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DayOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DietaryPreferences" nillable="true" type="tns:DietaryPreferences" />
+      <xs:element minOccurs="0" name="DotcomCustomerID" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Households" nillable="true" type="tns:ArrayOfHousehold" />
+      <xs:element minOccurs="0" name="Initials" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonthOfBirth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YearOfBirth" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClubcardCustomer" nillable="true" type="tns:ClubcardCustomer" />
+  <xs:complexType name="Address">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine6" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="ArrayOfClubcard">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Clubcard" nillable="true" type="tns:Clubcard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClubcard" nillable="true" type="tns:ArrayOfClubcard" />
+  <xs:complexType name="Clubcard">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClubcardNumber" type="xs:long" />
+          <xs:element minOccurs="0" name="ExpiryDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Primary" type="xs:boolean" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Clubcard" nillable="true" type="tns:Clubcard" />
+  <xs:complexType name="ContactDetail">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DayContactNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EveningContactNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobileContactNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactDetail" nillable="true" type="tns:ContactDetail" />
+  <xs:complexType name="ContactPreference">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Contactable" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResearchContactable" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WantPartnerInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WantTescoInfo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactPreference" nillable="true" type="tns:ContactPreference" />
+  <xs:complexType name="DietaryPreferences">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsDiabetic" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsHalal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsKoshar" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsTeetotal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsVegiterian" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DietaryPreferences" nillable="true" type="tns:DietaryPreferences" />
+  <xs:complexType name="ArrayOfHousehold">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Household" nillable="true" type="tns:Household" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHousehold" nillable="true" type="tns:ArrayOfHousehold" />
+  <xs:complexType name="Household">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PeopleAges" nillable="true" type="q1:ArrayOfint" />
+          <xs:element minOccurs="0" name="TotalPeople" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Household" nillable="true" type="tns:Household" />
+</xs:schema>

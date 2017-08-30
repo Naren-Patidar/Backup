@@ -1,0 +1,212 @@
+#primary-navigation {
+	background: $ddl-white1;
+	position: relative;
+	z-index: 4;
+	margin:  0;
+	overflow: hidden;
+
+	> .nav-header {
+		max-height: 50px !important;
+	}
+
+	h2, h3, h4, h5, h6, a {
+		display: block;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		text-decoration: none;
+		color: $ddl-link-colour;
+		padding: 12px;
+		position: relative;
+		border-bottom: 1px solid $ddl-border-color-1;
+		transition: left .5s ease-in-out, padding-left .3s ease-in-out;
+		left: 0;
+		font-weight: bold;
+
+		&.nav-header {
+			transition: max-height 0 .5s linear;
+			background: $ddl-grey4;
+
+			&.ddl-icon-before {
+				padding-left: 12px;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			&.active {
+
+				&.ddl-icon-before {
+					padding-left: 30px;
+
+					&:before {
+						display: block;
+					}
+				}
+			}
+
+			&.current {
+				transition: max-height 0 .5s linear;
+				max-height: 50px;
+			}
+
+			&.active.current {
+
+				&.ddl-icon-before {
+					padding-left: 12px;
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			a {
+				padding: 0;
+				border: none;
+				font-weight: bold;
+				background: none;
+			}
+		}
+
+		&.ddl-icon-after {
+			position: relative;
+			
+			&:after {
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin-top: -12px;
+			}
+		}
+
+		&.ddl-icon-before {
+			position: relative;
+			padding-left: 30px;
+
+			&:before {
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				left: 10px;
+				margin-top: -10px;
+			}
+		}
+	}
+
+	a {
+		font-weight: normal;
+		background: $ddl-white1;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+
+		li {
+			display: block;
+			position: relative;
+			margin: 0;
+			padding: 0;
+			transition: left .5s ease-in-out;
+			left: 0;
+
+			&:last-child {
+				border: none;
+			}
+
+			nav {
+				width: 100%;
+				position: absolute;
+				left: 300px;
+				top: 0;
+				max-height: 0;
+				overflow: hidden;
+				transition: left .5s ease-in-out, max-height .3s .5s ease-in-out;
+
+				ul {
+					margin: 0;
+					padding: 0;
+					border: none;
+
+					li {
+						display: block;
+						margin: 0;
+
+						&:hover {
+							background: rgba(0,0,0,0.03);
+						}
+
+						a {
+							color: $ddl-link-colour;
+
+							&:hover {
+								color: $ddl-link-colour-hover;
+								text-decoration: underline;
+							}
+						}
+
+						nav {
+
+							ul {
+
+								li {
+									border: none;
+									margin: 0;
+								}
+							}
+						}
+					}
+				}
+
+				img {
+					display: none;
+				}
+			}
+
+			&.active {
+				position: static;
+				transition: left .5s ease-in-out;
+
+				> a {
+					left: -600px; //Active menu always has it's a tag hidden to the left
+				}
+
+				> .nav-header {
+					display: block;
+				}
+
+				h2, h3, h4, h5, h6 {
+					padding-left: 30px;
+					background: $ddl-grey4;
+
+					&.current {
+						padding-left: 12px;
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+
+				> nav {
+					transition: left .5s ease-in-out;
+					top: 50px;
+					left: 0;
+					max-height: 1000px;
+				}
+			}
+
+			&.left {			 //Pulls anything to the left
+				transition: left .5s ease-in-out;
+				left: -600px;
+			}
+
+			&.hidden {			 //hides somethings by reducing it's height to zero
+				max-height: 0;
+				overflow: hidden;
+			}
+		}
+	}
+}

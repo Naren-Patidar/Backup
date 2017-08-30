@@ -1,0 +1,43 @@
+.search-bar {
+	text-align: center;
+
+	fieldset {
+
+		.ddl-form-field {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	
+		.ddl-button {
+			float: none;
+			display: inline-block;
+		    top: -10px;
+		    position: relative;
+		}
+	}
+}
+
+.ddl-search-bar {
+	text-align: center;
+
+	fieldset {
+
+		.ddl-form-field {
+			display: inline-block;
+			margin-bottom: 0;
+			width: 33.3%;
+
+			.ddl-input, .ddl-select {
+				text-align: left;
+			}
+		}
+	
+		.ddl-button {
+			float: none;
+			display: inline-block;
+		    top: -10px;
+		    position: relative;
+			width: 30%;
+		}
+	}
+}

@@ -1,0 +1,5177 @@
+/* general */
+body
+{
+    font-family: Verdana,Arial,Geneva,sans-serif;
+    line-height: 1.2;
+    font-size: 75%;
+    color: #252525;
+}
+
+img
+{
+    border: none;
+    border: 0 solid #fff;
+}
+a, a:link, a:visited, a:active
+{
+    color: #0000ff;
+}
+a:hover
+{
+    color: #ab0c80;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p, h2, h3, h4, h5, dl
+{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+fltlft 
+{
+    float:left;
+}
+
+/* end of general */
+
+#outerContainer
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* top section */
+
+#topSection
+{
+    overflow: hidden;
+}
+
+#topSection ul
+{
+    float: right;
+    margin: 0.2em;
+}
+#topSection ul li
+{
+    border-left: 1px solid #cccccc;
+    float: left;
+    padding: 0 0.4em;
+}
+#topSection ul li a
+{
+    color: #2C3D8E;
+    text-decoration: none;
+}
+
+#topSection ul li.first
+{
+    border: none;
+}
+#topSection div
+{
+    width: 90%;
+    float: left;
+}
+#topSection div img
+{
+    margin-bottom: 4px;
+}
+#topSection div p
+{
+    margin-bottom: 6px;
+}
+#topSection .welcomeMsg
+{
+    clear: none;
+}
+#topSection .welcomeMsg a
+{
+    color: #aa0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+#topSection .tescoDotCom
+{
+    width: 12em;
+    float: left;
+}
+#topSection .tescoDotCom a
+{
+    color: #0925A3;
+    font-weight: bold;
+}
+
+/* end of top section*/
+
+/* primary nav */
+#primaryNav
+{
+    background: #03386A url(../I/navBg.png) repeat-y scroll 0 0;
+    margin: 5px 0;
+    height: 3.9em;
+    padding: 0 0 0 6px;
+    clear: both;
+}
+#primaryNav li
+{
+    background: transparent url(../I/dot.png) no-repeat scroll right center;
+    float: left;
+    font-size: 1.1em;
+    padding: 0 23px 0 5px;
+}
+#primaryNav li.oneLine a
+{
+    padding: 1.15em 0.5em;
+}
+#default .default a, #what .what a, #register .register a, #register_thanks .register a, #account .account a, #balance .account a, #rewards .rewards a, #collecting .collecting a, #spend .spend a, #clubs .clubs a, #signup .signup a
+{
+    background: #F01322 none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+#primaryNav a
+{
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    line-height: 120%;
+    padding: 0.5em 0.5em 0.6em;
+    text-align: center;
+    text-decoration: none;
+    width: 81px;
+}
+#primaryNav a:hover, #primaryNav a:active, #primaryNav a:focus
+{
+    background: #6398CA none repeat scroll 0 0;
+    color: #FFFFFF;
+}
+#primaryNav li.last
+{
+    background: transparent none repeat scroll 0 0;
+    padding: 0 10px;
+}
+/* end of primary nav */
+
+/* footer */
+#footer
+{
+    clear: both;
+    height: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 1000px;
+}
+#footer h2
+{
+    left: -200em;
+    position: absolute;
+    top: 0;
+}
+#footer ul
+{
+    background: #03386A url(../I/footer.png) repeat-y scroll 0 0;
+    height: 22px;
+    padding-top: 4px;
+}
+#footer ul li
+{
+    display: inline;
+    font-weight: bold;
+    padding: 0 20px;
+}
+#footer ul li a, #footer ul li a:visited
+{
+    border-bottom: 1px solid #03386A;
+    color: #FFFFFF;
+    padding-bottom: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#footer p
+{
+    padding-top: 10px;
+}
+#footer p img.everylittle
+{
+    display: inline;
+    float: right;
+}
+/* end footer */
+/* content */
+#content
+{
+    background: transparent url(../I/leftNavBg.gif) no-repeat scroll left bottom;
+    margin-bottom: 0.4em;
+    padding-bottom: 1px;
+}
+#inner
+{
+    overflow: hidden;
+    margin: 0.4em 0 0;
+    width: 998px;
+}
+/* end of content */
+
+/* left navigation */
+/*#leftNav
+{
+	width: 200px;
+	float: left;
+	background-color: #E3EEF0;
+	border: 1px solid #A8B1B8;
+	margin-bottom: -1500px;
+	padding-bottom: 1500px;
+	
+}*/
+#leftNav
+{
+    width: 200px;
+    float: left; /*height: 730px;*/
+    background-color: #E3EEF0;
+    border: 1px solid #A8B1B8;
+    margin-bottom: -1500px;
+    padding-bottom: 1500px;
+}
+/*reverting back to original*/
+#leftNav h3
+{
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left; /*background: #03386A url(../I/leftNav_header.jpg) repeat-x right top;*/
+    background: #FF0000 url(../I/leftNav_headerUK.jpg) repeat-x right top; /*changed the bleeded color to red-Padmanabh*/
+    padding: 8px 0 10px 15px;
+    margin: 0;
+}
+#leftNav h3 a
+{
+    text-decoration: none;
+}
+#leftNav ul
+{
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+#leftNav li
+{
+    border: 1px solid #E3EEF0;
+}
+#leftNav li a
+{
+    color: #6a7e97;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+}
+#leftNav li a:hover
+{
+    color: #ab0c7f;
+}
+#leftNav li a.active
+{
+    color: #ab0c7f;
+}
+#leftNav li .subMenu
+{
+    margin: 0 0.8em;
+    padding: 0;
+}
+#leftNav li .subMenu li
+{
+    margin: 0 0 0.2em;
+    padding: 0 0 0 1em;
+    background: url(../I/subMenu_arrow.gif) no-repeat 0 3px;
+    border: 1px solid #E3EEF0;
+}
+#leftNav li .subMenu a
+{
+    color: #6a7e97;
+    font-weight: normal;
+    font-size: 1em;
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+#leftNav li .subMenu a:hover
+{
+    color: #ab0c7f;
+}
+#leftNav li .subMenu li.subActive
+{
+    margin: 0 0 0.2em;
+    padding: 0 0 0 1em;
+    background: url(../I/subMenu_activeArrow.gif) no-repeat 0 3px;
+}
+#leftNav li .subMenu li.subActive a:link, #leftNav li .subMenu li.subActive a:visited, #leftNav li .subMenu li.subActive a:hover, #leftNav li .subMenu li.subActive a:active
+{
+    color: #ab0c7f;
+}
+/* end of left nav */
+
+/* start Account Activation style*/
+/* author: Robin Apoto, date:31/May/2010*/
+#mainContentAccountActivation
+{
+    width: 100%;
+    margin-left: 4px;
+    float: right;
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
+    
+}
+#mainContentAccountActivation h2
+{
+    color: #7186a1;
+    font-size: 1.75em;
+    font-weight: normal;
+    padding: 0.5em 0 0.2em;
+    margin: 0 12px 0.5em;
+    border-bottom: 1px solid #46bcd6;
+}
+#mainContentAccountActivation p.pageDescActivation
+{
+    margin: 0 12px 0.5em;
+    font-weight: bold;
+}
+/* end Account Activation style*/
+/* main page content */
+#mainContent
+{
+    width: 790px;
+    margin-left: 4px;
+    float: right;
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
+}
+#mainContent h2
+{
+    color: #7186a1;
+    font-size: 1.75em;
+    font-weight: normal;
+    padding: 0.5em 0 0.2em;
+    margin: 0 12px 0.5em;
+    border-bottom: 1px solid #46bcd6;
+}
+#pageMessage
+{
+    color: #FF0000;
+    margin: 0 12px 0.5em;
+    font-weight: bold;
+    padding: 0.1em 0 1.5em 1em;
+    border-bottom: 1px solid #46bcd6;
+}
+#pageMessage
+{
+    color: #FF0000;
+    margin: 0 12px 0.5em;
+    font-weight: bold;
+    padding: 0.1em 0 1.5em 1em;
+    border-bottom: 1px solid #46bcd6;
+}
+/*need pageMessage as class and not as div id style - Padmanabh*/
+.pageMessage
+{
+    color: #FF0000;
+    margin: 0 12px 0.5em;
+    font-weight: bold;
+    padding: 0.1em 0 1.5em 1em;
+    border-bottom: 1px solid #46bcd6;
+}
+#mainContent .ccPoints
+{
+    border: 1px solid #A8B1B8;
+    line-height: 2.8em;
+}
+#mainContent .ccPoints span
+{
+    background-color: #9C1C6B;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    padding-left: 1em;
+}
+#mainContent .ccPoints p
+{
+    padding-left: 1em;
+}
+/* end of main content */
+
+/* Personal details page */
+
+.box
+{
+    border: 1px solid #A8B1B8;
+    margin: 0.5em 0;
+    overflow: hidden;
+}
+.box h3
+{
+    background-color: #54C7F8;
+    color: #fff;
+    padding: 5px;
+}
+.contactDetails dt, .contactDetails dd
+{
+    width: 15em;
+    float: left;
+    text-align: right;
+    margin-bottom: 1em;
+}
+.contactDetails dt
+{
+    clear: both;
+}
+
+/* Order a replacement page */
+
+.orderCard
+{
+    width: 31.3em;
+    margin: 1em 0 1em 1em;
+    float: left;
+}
+.orderCard h4
+{
+    background-color: #6E1BB5;
+    color: #fff;
+    padding: 5px;
+}
+
+#mainContent .banners
+{
+    margin: 12px;
+}
+#mainContent .banners .first
+{
+    margin-right: 3px;
+}
+#mainContent p.pageDesc
+{
+    margin: 12px 12px 12px 20px;
+}
+/* Curve Header Portion */
+/* set the image to use and establish the lower-right position */
+.ccPinkHeaderSection, .cc_body, .cc_pinkhead, .cc_pinkhead h3
+{
+    /*background: transparent url(../I/ccPinkHeaderBox.gif) no-repeat bottom right;*/
+    margin: 0;
+    padding: 0;
+}
+.ccWhiteHeaderSection, .cc_whitehead, .cc_whitehead span.left, .ccWhiteInfoSection
+{
+    background: transparent url(../I/ccWhiteHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.customerPointsWhiteHeaderSection
+{
+    background: transparent url(../I/ccWhiteHeaderBox1.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.customerPointsWhiteHeaderSection .cc_whitehead
+{
+    background: transparent url(../I/ccWhiteHeaderBox1.gif) no-repeat top right;
+    margin: 0;
+    padding: 0;
+}
+.ccBlueHeaderSection, .cc_bluehead, .cc_bluehead h3
+{
+    background: transparent url(../I/ccBlueHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.customerPointsBlueHeaderSection, .customerPointsBlueHeaderSection .cc_bluehead, .customerPointsBlueHeaderSection .cc_bluehead h3
+{
+    background: transparent url(../I/ccBlueHeaderBox1.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccRedHeaderSection, .cc_redhead, .cc_redhead h3
+{
+    background: transparent url(../I/ccRedHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccPurpleGreySection, .cc_greybody, .cc_purpleGreyhead, .cc_purpleGreyhead h4, .cc_greyLongbody
+{
+    background: transparent url(../I/ccPurpleGreyBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccGreenGreySection, .cc_greyLongbody, .cc_greenGreyhead, .cc_greenGreyhead h4
+{
+    background: transparent url(../I/ccGreenHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccBlueGreySection, .cc_bluegreybody, .cc_bluegreyhead, .cc_bluegreyhead h3
+{
+    background: transparent url(../I/ccBlueGreyBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccPurpleInfoSection, .cc_purplebody, .cc_purpleinfohead, .cc_purpleinfohead span.left
+{
+    background: transparent url(../I/ccPurpleInfoBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccLightGreySection, .cc_lightGreybody, .cc_lightGreyhead, .cc_lightGreyhead span.left
+{
+    background: transparent url(../I/ccLightGreyBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccLightGreySection2, .cc_lightGreybody2, .cc_lightGreyhead2, .cc_lightGreyhead2 span.left
+{
+    background: transparent url(../I/ccLightGreyBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccDarkGreySection, .cc_darkGreybody, .cc_darkGreyhead, .cc_darkGreyhead span.left
+{
+    background: transparent url(../I/ccDarkGreyBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.ccPinkHeaderSection, .ccWhiteHeaderSection, .ccBlueHeaderSection, .ccBlueGreySection, .ccRedHeaderSection
+{
+    width: 761px;
+    padding-right: 0;
+    margin: 6px 12px;
+	margin-top:0px;float:left;
+	margin-right:0px;
+	margin-left:4px;margin-bottom:-2px;
+}
+.customerPointsWhiteHeaderSection
+{
+    width:745px;
+	padding-right: 0;
+    margin: 0;
+}
+.ccLightGreySection2
+{
+    margin: 18px 0 12px 8px;
+    width: 730px;
+    z-index: 2;
+}
+.cc_greyLongbody .ccWhiteHeaderSection
+{
+    margin: 18px 0 12px;
+    width: 350px;
+    z-index: 2;
+}
+.ccPurpleGreySection, .ccGreenGreySection
+{
+    float: left;
+    margin: 2px 4px 12px 0;
+    padding-right: 0;
+    width: 362px;
+}
+.ccGreenGreySection
+{
+    margin-right: 0;
+}
+.longTable
+{
+    margin-bottom: 20em;
+}
+.clubMembershipList .ccLightGreySection
+{
+    float: right;
+    width: 335px;
+}
+.ccLightGreySection, .ccDarkGreySection
+{
+    float: left;
+    margin: 0 3px 12px 10px;
+    padding-right: 0;
+    width: 385px;
+}
+.ccPurpleInfoSection
+{
+    float: right;
+    margin: 12px 12px 12px 0;
+    padding-right: 0;
+    width: 360px;
+}
+
+
+/* set the top-right image */
+.cc_pinkhead, .cc_whitehead, .cc_bluehead, .cc_purpleGreyhead, .cc_lightGreyhead, .cc_darkGreyhead, .cc_purpleinfohead, .cc_bluegreyhead, .cc_greenGreyhead, .cc_redhead, .customerPointsbluehead
+{
+    background-position: left top;
+    margin-right: 0;
+    padding-right: 0;
+}
+.cc_lightGreyhead2
+{
+    background-position: right top;
+    margin-right: 0;
+    padding-right: 0;
+}
+.cc_whitehead span.left
+{
+    background-position: top left;
+    border: 0;
+    color: #fff;
+    margin: 0;
+    padding: 0 0 0;
+    text-align: left;
+}
+.cc_greyLongbody .cc_whitehead span.left
+{
+    background-position: right top;
+    border: 0 none;
+    color: #FFFFFF;
+    margin: 0 0 0 347px;
+    padding: 0;
+    text-align: left;
+}
+.cc_lightGreyhead span.left, .cc_darkGreyhead span.left
+{
+    background-position: right top;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 0 0 5px;
+    padding: 0 0 4px;
+    text-align: left;
+    height: 5px;
+}
+.cc_lightGreyhead2 span.left
+{
+    background-position: left top;
+    color: #FFFFFF;
+    display: block;
+    height: 5px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    text-align: left;
+}
+.cc_purpleinfohead span.left
+{
+    background-position: right top;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 0 0 5px;
+    padding: 0;
+    height: 5px;
+    text-align: left;
+    width: auto;
+}
+
+/* set the top-left image */
+.cc_pinkhead h3, .cc_bluehead h3, .cc_redhead h3, .cc_bluegreyhead h3, .customerPointsBlueHeaderSection .cc_bluehead h3, .customerPointsbluehead h3
+{
+    background-position: top left;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 8px 12px;
+    text-align: left;
+}
+.cc_purpleGreyhead h4, .cc_greenGreyhead h4
+{
+    background-position: right top;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 6px;
+    margin-top: 0;
+    padding: 12px 6px;
+    text-align: left;
+}
+
+/* set the lower-left corner image */
+.cc_body, .cc_greybody, .cc_lightGreybody, .cc_darkGreybody, .cc_lightGreybody2, .cc_purplebody, .cc_greyLongbody, .cc_bluegreybody
+{
+    background-position: bottom left; /*margin-right: 5px;*/
+    margin-right: 3px;
+    padding: 1px 0 10px 8px;
+    overflow: hidden;
+    height: 100%;
+}
+.ccPurpleGreySection .cc_greybody
+{
+    margin-right: 6px;
+}
+.cc_bluegreybody
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.previousPoints
+{
+    padding: 12px 8px;
+}
+.cc_greybody
+{
+    height: 10em;
+}
+.cc_purplebody
+{
+    padding-bottom: 3px;
+}
+.cc_greyLongbody
+{
+    height: 53em;
+    _height: 53em;
+}
+#mainContent .cc_body p
+{
+    margin: 9px 0 3px;
+}
+
+/* Personal Details, Your Preferences, Points Summary, Vouchers, Order a replacement, Manage your cards, Christmas savers, Clubcard rewards */
+.cc_body ul.middleButtons
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 100%;
+    width: 740px; /*width: 62em;*/
+}
+
+.cc_body ul.middleButtons li
+{
+    clear: none;
+    float: left;
+    margin: 0 0 20px 8px;
+    padding: 0;
+}
+.cc_body ul.middleButtons li.first
+{
+    margin-left: 0;
+}
+.cc_body ul.middleButtons li a
+{
+    width: 179px;
+    height: 141px;
+    display: block;
+}
+.cc_body ul.middleButtons li a span
+{
+    display: none;
+}
+.cc_body ul.middleButtons li#personalDtls a
+{
+    background: url(../I/cc_personalDtls.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#personalDtls a:hover
+{
+    background: url(../I/cc_personalDtls_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#yourPreferences a
+{
+    background: url(../I/cc_yourPreference.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#yourPreferences a:hover
+{
+    background: url(../I/cc_yourPreference_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#pointsSummary a
+{
+    background: url(../I/cc_pointssummary.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#pointsSummary a:hover
+{
+    background: url(../I/cc_pointssummary_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#vouchers a
+{
+    background: url(../I/cc_vouchers.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#vouchers a:hover
+{
+    background: url(../I/cc_vouchers_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#orderAReplacement a
+{
+    background: url(../I/cc_orderareplacement.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#orderAReplacement a:hover
+{
+    background: url(../I/cc_orderareplacement_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#manageYourCards a
+{
+    background: url(../I/cc_manageyourCard.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#manageYourCards a:hover
+{
+    background: url(../I/cc_manageyourCard_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#christmasSavers a
+{
+    background: url(../I/cc_christmassavers.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#christmasSavers a:hover
+{
+    background: url(../I/cc_christmassavers_on.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#clubcardRewards a
+{
+    background: url(../I/cc_clubcardrewards.jpg) no-repeat 0 0;
+}
+.cc_body ul.middleButtons li#clubcardRewards a:hover
+{
+    background: url(../I/cc_clubcardrewards_on.jpg) no-repeat 0 0;
+}
+
+/* Order a replacement page */
+.cc_greybody form, .cc_body form
+{
+    padding: 0;
+    margin: 0;
+}
+.cc_greybody ul, .cc_body ul
+{
+    display: block;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0.6em 1em;
+    padding: 0;
+}
+.cc_greybody ul.customer, .cc_body ul.customer{margin:0px;margin-top:.8em;}
+#ctl00_PageContainer_ddlTitle1{padding:0px;}
+
+
+.cc_body ul.viewList
+{
+    margin: 1em 0;
+}
+.cc_body ul.yourStatementOpts
+{
+    margin: 1em;
+}
+.cc_body ul.yourStatementOpts li, .cc_body ul.changeDtls li
+{
+    margin-bottom: 1em;
+}
+span.changeDtlsInpt input
+{
+    border: 0;
+    margin-left: 3.5em;
+}
+.cc_body ul.yourStatementOpts input
+{
+    border: 0;
+}
+.cc_body ul.yourStatementOpts span
+{
+    float: left;
+    width: 60%; /*width: 80%;*/
+    padding-top: 1em;
+}
+.cc_body ul.yourStatementOpts span.statementIconImg
+{
+    width: 100px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.cc_body ul.yourStatementOpts label
+{
+    float: left;
+    width: 20%; /*width: 15%;*/
+    font-weight: bold;
+    margin-top: 1em;
+    margin-left: 8px;
+}
+.cc_body ul.yourStatementOpts input
+{
+    margin-top: 1em;
+}
+.cc_greybody li, .cc_body li
+{
+    clear: both;
+    height: auto;
+    margin-bottom: 0.3em;
+    overflow: hidden;
+}
+.cc_greybody label, .cc_body label, .cc_lightGreybody ul.joinPartner li label
+{
+    float: left;
+    width: 23%;
+	height: 15px;
+}
+
+.cc_greybody input, .cc_body input
+{
+    float: left;
+}
+.cc_greybody ul li input
+{
+    border: 0;
+}
+.cc_body ul.changeDtls li label
+{
+    width: auto;
+}
+.cc_body ul.changeDtls li input
+{
+    float: none;
+}
+.pageAction
+{
+    clear: both;
+    display: block;
+    padding-right: 0.6em;
+    text-align: right;
+}
+.findCustomer .imgBtn
+{
+    float: right;
+    width: auto;
+    border: 0;
+    margin-right: 5.5em;
+}
+
+/* Added for release 1.3 changes */
+.saveBtn
+{
+    border:0;
+    margin-left:260px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.pageActionL
+{
+    clear: both;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 1.7em;
+    padding-bottom: 0.2em;
+    text-align: left;
+}
+.pageActionL .imgBtnL
+{
+    border: 0;
+}
+.joinConfirmMsg .pageActionL
+{
+    padding-left: 0;
+}
+.pageAction .imgBtn
+{
+    float: right;
+    width: auto;
+    border: 0;
+}
+
+#btnConfirmPersonalDtls{float:left;margin-left:300px;}
+.noteText
+{
+    clear: both;
+    display: block;
+    margin: 12px;
+}
+#mainContent .cc_body .noteMsg
+{
+    margin-top: 1.5em;
+}
+#mainContent .cc_body .noteMsg p
+{
+    margin: 0;
+}
+/* Club Membership */
+.column
+{
+    float: left;
+    width: 50%;
+}
+.cc_body ul.clubMembershipList
+{
+    margin: 1em;
+}
+.cc_body ul.clubMembershipList div.desc
+{
+    float: left;
+    margin-top: 12px;
+    width: 65%;
+}
+.cc_body ul.clubMembershipList input
+{
+    margin-top: 14px;
+    border: 0;
+}
+.cc_body ul.clubMembershipList input#wineClub, .cc_body ul.clubMembershipList input#foodClub, .cc_body ul.clubMembershipList input#healthyLivingClub, .cc_body ul.clubMembershipList input#babyClub
+{
+    border: 0;
+}
+.cc_body ul.clubMembershipList .image
+{
+    float: left;
+    margin: 0;
+    margin-right: 12px;
+    width: 70px;
+}
+.cc_body ul.clubMembershipList .hideLbl
+{
+    float: left;
+    visibility: hidden;
+    width: 86%;
+}
+.cc_body ul.clubMembershipList .optOut
+{
+    font-weight: bold;
+}
+.cc_body ul.clubMembershipList h5
+{
+    clear: both;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 0 6px 83px;
+}
+.cc_body ul.childLists
+{
+    margin: 0.8em 0;
+}
+.cc_body ul.childLists label
+{
+    width: 20%;
+    margin-top: 3px;
+}
+.cc_body ul.childLists input, .cc_body ul.childLists select
+{
+    float: left;
+    margin: 0 0.2em 0 0;
+}
+.cc_body ul.childLists .day
+{
+    width: 3em;
+}
+.cc_body ul.childLists .year
+{
+    width: 3em;
+}
+.cc_body ul.childLists .select
+{
+    width: 3em;
+}
+
+/* Points Summary page*/
+/*.currentPeriod
+{
+	width: 31em;
+	float: left;
+	padding: 1em 0 1em 0.4em;
+}*/
+.currentPeriod
+{
+    width: 31em;
+    float: left;
+    padding: 1em 0 3em 0.4em;
+    margin-top: 2.5em;
+}
+/*Modified as per new requirements - Padmanabh*/
+.currentPeriod h5
+{
+    font-size: 1.2em;
+}
+/*ul.currentPts
+{
+	color: #FFFFFF;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	width: 335px;
+}*/
+ul.currentPts
+{
+    color: #FFFFFF;
+    float: left;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    text-align: right;
+    width: 325px;
+}
+/*Modified as per current requirements*/
+ul.clubcPts
+{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 350px;
+}
+ul.currentPts li
+{
+    margin-bottom: 0.5em;
+    text-align: right;
+    width: 100%;
+}
+ul.currentPts li strong
+{
+    float: left;
+    font-size: 1.2em;
+    height: 23px;
+    margin-top: 1px;
+    padding-top: 5px;
+    width: 66%;
+}
+ul.clubcPts li strong
+{
+    font-weight: normal;
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+.summary
+{
+    width: 31.3em;
+    margin: 1em 0 1em 1em;
+    float: left;
+    background-color: #EBEBEB;
+    height: 33em;
+}
+.summary li
+{
+    margin: 1em 2em;
+    clear: both;
+    overflow: hidden;
+}
+.summary span
+{
+    background-color: MediumSeaGreen;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    padding-left: 1em;
+}
+.summary hr
+{
+    color: WhiteSmoke;
+}
+.summary li span
+{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 5em;
+    display: inline;
+}
+.boxSummary
+{
+    border: 1px solid #A8B1B8;
+    margin: 0.5em 0;
+    overflow: hidden;
+    height: 50em;
+}
+.summary table
+{
+    width: 100%;
+ 
+
+/* Clubcard Details Box */
+.cc_body
+{
+    position: relative;
+	top: -1px;
+	left: -12px;
+	width: 742px;
+}
+ign: center;
+    border: 1px solid whitesmoke;
+    height: 5em;
+}
+hr
+{
+    color: #D8D8D8;
+    margin-left: -3px;
+    width: 29.5em;
+}
+
+/* Clubcard Details Box */
+.cc_body
+{
+    position: relative;
+	top: 0px;
+	left: 4px;
+	width: 742px;
+}
+.cc_body ul.ccDtlsList
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    z-index: 3;
+}
+.cc_body ul.ccDtlsList li
+{
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.cc_body ul.ccDtlsList li.tescoDotcom
+{
+    background: url(../I/tescodotcom_logo.jpg) no-repeat 0 0;
+    height: 76px;
+}
+.prevDtlsSmry
+{
+    padding-top:20px;
+    float: right;
+    width: 350px;
+    text-align: right;
+}
+.prevDtlsSmry ul li
+{
+    margin-bottom: 2em;
+}
+.prevDtlsSmry ul
+{
+    margin: 0.6em 0.4em;
+}
+.prevDtlsSmry .pageAction
+{
+    padding-right: 0;
+}
+
+/* Points table */
+.dataTable
+{
+    background: url(../I/pointtable_bottom.gif) no-repeat left bottom;
+    position: absolute;
+    width: 345px;
+    padding-bottom: 5px;
+}
+table.pointsTable
+{
+    background: url(../I/pointtable_top.gif) repeat-y left top;
+    z-index: 100;
+    position: relative;
+    width: 345px;
+    margin-top: 6px;
+    border-collapse: collapse;
+}
+table.pointsTable td
+{
+    border-right: 1px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
+    height: 76px;
+    text-align: right;
+    vertical-align: bottom;
+    width: 118px;
+}
+table.pointsTable td span
+{
+    color: #AB0C7F;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    padding-right: 0.4em;
+}
+table.pointsTable td.colLast
+{
+    border-right: 0;
+}
+table.pointsTable td.rowLast
+{
+    border-bottom: 0;
+}
+table.pointsTable .pointsList
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+table.pointsTable td .pointsList img
+{
+    border: 0;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+table.pointsTable td .pointsList span
+{
+    border: 0;
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    padding: 0;
+}
+
+/* Find Customer */
+
+ul.customer .stmntPreferences{}
+
+ul.customer
+{
+	margin-top:2em;
+	margin-left:0;
+
+}
+#ctl00_PageContainer_btnConfirmPreferences{margin-bottom:20px;}
+
+ul.customer label
+{
+    width: 8em;
+    float: left;
+    text-align: right;
+    margin-bottom: 0.2em; /*border: 0;Reverting back to original - Padmanabh*/
+	margin-right:1em;
+}
+
+ul.customer input, ul.customer span
+{
+    width: 15.4em;
+    float: left;
+    text-align: left;
+}
+
+ul.customer li div.customerSurName, ul.customer li div.customerFirstName
+{
+	float:left;
+}
+
+
+
+/*Personal details*/
+
+ul.contacts label, ul.contacts input, ul.contacts span
+{
+    width: 15em;
+    float: left;
+    text-align: left;
+    margin-bottom: 0.5em; /*border: 0;Reverting back to original - Padmanabh*/
+}
+ul.contacts span
+{
+    margin-left: 0;
+    padding: 0;
+}
+
+ul.contacts .gender span, ul.customer .gender span
+{
+    width: 1.5em;
+}
+/*Gender radio button span width changed - Padmanabh*/
+
+ul.contacts span input
+{
+    padding: 0;
+    _margin-left: -1em;
+}
+ul.contacts span.email
+{
+    width: 18em;
+    margin-left: 5px;
+}
+ul.contacts span.emailActivation
+{	width: 18em;
+    margin-left: 18px;
+}
+ul.contacts span p
+{
+    width: 36em;
+}
+ul.contacts .gender input, ul.contacts .gender label, ul.customer .gender input, ul.customer .gender label
+{
+    clear: none;
+    float: left;
+    margin-left: 0.3em;
+    margin-top: 0.2em;
+    width: auto;
+}
+ul.contacts .gender input
+{
+    border: 0;
+    margin-left: -0.1em;
+    _margin-left: -0.4em;
+    _margin-top: 0;
+}
+ul.contacts label
+{
+    clear: both;
+    margin-right: 1em;
+}
+ul.contacts #address2, ul.contacts #address3
+{
+    clear: both;
+}
+div.gender label
+{
+    width: auto;
+    float: left;
+}
+ul.ccDetailsList, ul.people, ul.ccDetailsList2
+{
+    margin: 1em 0;
+    overflow: hidden;
+}
+ul.ccDetailsList input, ul.contacts input.day, ul.contacts input.year, ul.people input, ul.ccDetailsList2 input
+{
+    width: 3em;
+    text-align: center; /*border: 0;Reverting back to original - Padmanabh*/
+}
+.cc_body ul.ccDetailsList2 li
+{
+    clear: none;
+    display: inline;
+    float: left;
+    width: 10em;
+}
+.cc_body ul.ccDetailsList2 li label
+{
+    width: auto;
+}
+.cc_body ul.ccDetailsList2 li input, .cc_body ul.diet2 li input, .cc_body ul.diet3 li input
+{
+    border: 0;
+}
+.cc_body ul.diet2
+{
+    width: 34em;
+    float: left;
+    margin: 0;
+}
+/*Sadanand : To fix Customer details page issue*/
+.cc_body ul.diet3
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+#ccDetails ul.diet
+{
+    width: auto;
+    border: 0;
+}
+ul.ccDetailsList li
+{
+    margin-bottom: 1em;
+    width: 9.5em;
+    float: left;
+    clear: none;
+}
+ul.ccDetailsList label, ul.people label
+{
+    margin-right: 5px;
+    margin-top: 0.2em;
+    width: auto;
+	height: 14px;
+}
+#ccDetails
+{
+    margin-left: 1em;
+}
+ul.contacts select
+{
+    float: left; /*border: 0 made commented as border for select boxes on personal details was not appearing*/
+}
+
+/* Points details */
+#transactionSearch
+{
+    margin-top: 6px;
+}
+#transactionSearch .ccLightGreySection
+{
+    width: 35em;
+    margin-left: 10px;
+}
+#transactionSearch .cc_lightGreyhead span.left
+{
+    width: 99%;
+}
+#transactionSearch .searchBy
+{
+    clear: both;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 0.6em;
+    text-align: right;
+    width: 98%;
+}
+#transactionSearch .searchBy .imgBtn
+{
+    float: right;
+    width: auto;
+    border: 0;
+}
+ul.cardDetails li
+{
+    clear: both;
+    margin-bottom: 0.4em;
+}
+ul.cardDetails label
+{
+    float: left;
+    margin-right: 8px;
+    text-align: right;
+    width: 40%;
+}
+ul.cardDetails select, ul.cardDetails span
+{
+    border: 0;
+    width: 17em;
+    float: left;
+    margin-bottom: 4px;
+}
+ul.cardDetails select
+{
+    border: 1px solid #03529D;
+}
+ul.cardDetails span select
+{
+    text-align: right;
+    padding-right: 0.4em;
+}
+ul.cardDetails span input
+{
+    width: 14.5em;
+    margin-bottom: 0.4em;
+}
+#transactionSearch .pageAction
+{
+    width: 38em;
+    float: right;
+}
+#transactionSearch .pageAction span
+{
+    margin-right: 6px;
+    margin-top: 2px;
+    width: auto;
+    float: left;
+}
+#transactionSearch .pageAction span .imgBtn
+{
+    margin-right: 6px;
+    margin-top: 6px;
+    width: auto;
+    float: left;
+}
+#transSearch .searchLabel
+{
+    font-weight: bold;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+#transactionSearch #pointDtlTbl
+{
+    margin-left: 0;
+    margin-right: 0;
+    width: 725px;
+}
+#transactionSearch #pointDtlTbl select
+{
+    background-color: #0154a4;
+    border: 1px solid #5c8db5;
+    color: #fff;
+}
+#transactionSearch #pointDtlTbl td
+{
+    font-weight: normal;
+}
+.transactionTable
+{
+    clear: both;
+    border-collapse: collapse;
+    width: 730px;
+    margin-left: 8px;
+}
+.transactionTable td, .transactionTable th
+{
+    border: 1px solid;
+    padding: 8px 5px;
+}
+.transactionTable tr.alternate
+{
+    background-color: #EEEEEE;
+}
+select#cardNo
+{
+    width: 13em;
+}
+select#transDetails
+{
+    width: 13em;
+}
+select#datePts
+{
+    width: 9em;
+}
+#pointDtlTbl
+{
+    border-collapse: collapse;
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 730px;
+    clear: both;
+}
+#pointDtlTbl thead th.rounded-company
+{
+    background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;
+}
+#pointDtlTbl thead th.rounded-q4
+{
+    background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;
+}
+#pointDtlTbl th
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 6px 3px;
+    text-align: center;
+}
+#pointDtlTbl th.first
+{
+    border-left: 0;
+}
+#pointDtlTbl tfoot td.rounded-foot-left
+{
+    background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;
+}
+#pointDtlTbl tfoot td.rounded-foot-right
+{
+    background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;
+}
+#pointDtlTbl tfoot td
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    padding: 5px;
+}
+#pointDtlTbl tfoot td.first
+{
+    border: 0;
+}
+#pointDtlTbl tbody tr
+{
+    background: #ffffff none repeat scroll 0 0;
+}
+#pointDtlTbl td
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+#pointDtlTbl tbody td.right
+{
+    text-align: right;
+}
+#pointDtlTbl tbody td.center
+{
+    text-align: center;
+}
+#pointDtlTbl td.last
+{
+    border-right: 1px solid #c2c2c2;
+}
+#pointDtlTbl tbody td.last
+{
+    text-align: center;
+}
+#pointDtlTbl tbody tr.alternate
+{
+    background: #eeeeee none repeat scroll 0 0;
+}
+
+/* Manage cards */
+.cc_lightGreybody input
+{
+    width: 15em;
+}
+.manageCardSection
+{
+    margin-left: 20px;
+    _margin-left: 10px;
+    width: 450px;
+}
+.joinConfirmMsg .manageCardSection
+{
+    margin-left: 0;
+    margin-top: 0.8em;
+}
+.joinIntroSection
+{
+    margin-left: 0;
+    margin-top: 0.8em;
+    width: 650px;
+}
+.merge
+{
+    margin-left: 0;
+    margin-top: 0.8em;
+    width: 550px;
+}
+.joinConfirmMsg
+{
+    padding: 0 20px 12px;
+    margin: 0;
+}
+ul.accChkList
+{
+    clear: both;
+}
+ul.accChkList li
+{
+    margin: 10px 0;
+}
+ul.accChkList li input
+{
+    border: 0;
+}
+ul.accChkList label
+{
+    margin-left: 8px;
+    margin-top: 2px;
+    _margin-top: 4px;
+}
+ul.joinPartner, ul.splitAccount
+{
+    margin: 0;
+    padding: 0;
+}
+ul.joinPartner li
+{
+    margin-bottom: 0.2em;
+}
+.cc_body ul.joinPartner li label, .cc_lightGreybody ul.joinPartner li label
+{
+    margin-right: 0.4em;
+    margin-top: 0.2em;
+    text-align: right;
+    width: 30%;
+}
+ul.splitAccount li
+{
+    margin-bottom: 1em;
+}
+ul.splitAccount li p
+{
+    margin-bottom: 0.6em;
+}
+ul.splitAccount li p input
+{
+    border: 0;
+}
+.joinConfirmMsg h4
+{
+    margin: 0.8em 0;
+    font-size: 1em;
+}
+/* Cardholder Table */
+.clubcardAcct
+{
+    background: transparent url(../I/clubcardbottom_l.gif) repeat-x scroll left bottom;
+    margin: 0.8em 0.3em;
+    padding-left: 1px;
+    width: 61.5em;
+}
+.clubcardAcct span
+{
+    background: url(../I/clubcardbottom_r.gif) no-repeat right bottom;
+    height: 5px;
+    display: block;
+}
+.clubcardAct_head
+{
+    background: transparent url(../I/clubcardHeader_l.gif) repeat-x scroll left top;
+    margin-left: -1px;
+}
+.clubcardAct_head h4
+{
+    background: url(../I/clubcardHeader_r.gif) no-repeat right top;
+    color: #ffffff;
+    padding: 0.8em;
+    font-size: 1em;
+}
+table.cardHolderTbl
+{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;
+}
+table.cardHolderTbl thead th
+{
+    background-color: #0054a4;
+    padding: 0.6em 0;
+    color: #fff;
+    border-right: 1px solid #c2c2c2;
+    border-left: 1px solid #0054a4;
+}
+table.cardHolderTbl tbody td
+{
+    padding: 0.6em;
+    border-right: 1px solid #c2c2c2;
+    text-align: center;
+}
+table.cardHolderTbl tbody tr.alternate td
+{
+    background-color: #f2f2f2;
+}
+table.cardHolderTbl thead th.last
+{
+    border-right: 0;
+}
+
+.christmasSaverMsg
+{
+    padding: 0 12px;
+}
+.christmasSaverMsg h4
+{
+    color: #dc1a32;
+    font-size: 1.2em;
+    margin: 0.8em 0;
+}
+.christmasSaverMsg ul
+{
+    margin: 0 0 0 1.5em;
+    padding: 0;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.cc_body .christmasSaverMsg ul li
+{
+    margin-bottom: 0.6em;
+}
+.centerImg
+{
+    text-align: center;
+}
+.fLt
+{
+    float: left;
+    width: 65%;
+}
+.fRt
+{
+    float: right;
+}
+.saverNote
+{
+    font-size: 0.9em;
+}
+
+/*Christmas Savers*/
+.christmasVoucher
+{
+    float: left;
+    width: 520px;
+}
+.christmasSaverDtls
+{
+    color: #fff;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 3px;
+}
+.christmasSaverDtls strong
+{
+    float: left;
+    margin-top: 4px;
+}
+.christmasVoucherDtls
+{
+    clear: both;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 1em;
+}
+.christmasVoucherDtls h4
+{
+    font-size: 1em;
+    margin-left: 6px;
+}
+.chrisSavleft
+{
+    width: 50%;
+    float: left;
+}
+.chrisSavRght
+{
+    float: left;
+    margin-left: 18px;
+    padding-top: 20px;
+    width: 45%;
+}
+.chrisSuccessMsg
+{
+    padding: 0;
+    margin: 0;
+}
+.chrisSuccessMsg h5
+{
+    color: #dc1a32;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+#mainContent .chrisSuccessMsg p
+{
+    margin: 0;
+    padding: 3px 0 0;
+}
+.christSummary
+{
+    border-collapse: collapse;
+    font-size: 0.95em;
+    font-weight: normal;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 100%;
+    clear: both;
+}
+.christSummary thead th.rounded-company
+{
+    /*background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;*/
+    background: #ff0000 url(../I/red_left.jpg) no-repeat scroll left -1px;
+}
+.christSummary thead th.rounded-q4
+{
+    /*background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;*/
+    background: #ff0000 url(../I/red_right.jpg) no-repeat scroll right -1px;
+
+}
+.christSummary thead th.rounded-whiteLft
+{
+    background: #FFFFFF url(../I/christTblTop_l.gif) no-repeat scroll left 0;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+}
+.christSummary thead th.rounded-whiteRt
+{
+    background: #FFFFFF url(../I/christTblTop_r.gif) no-repeat scroll right 0;
+    margin: 0;
+    padding: 0;
+}
+.christSummary th
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 6px 3px;
+    text-align: center;
+}
+.christSummary th.first
+{
+    border-left: 0;
+}
+.christSummary th.first, .christSummary td
+{
+    width: 70%;
+}
+.christSummary tfoot td.rounded-foot-left
+{
+    /*background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;*/
+    background: #008000 url(../I/green_botleft.jpg) no-repeat scroll left bottom;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 0;
+}
+.christSummary tfoot td.rounded-foot-right
+{
+    /*background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;*/
+    background: #008000 url(../I/green_botright.jpg) no-repeat scroll right bottom;
+}
+.christSummary tfoot td
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    padding: 5px;
+}
+.christSummary tfoot td.first
+{
+    border: 0;
+}
+.christSummary tbody tr
+{
+    background: #ffffff none repeat scroll 0 0;
+}
+.christSummary td
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.christSummary tbody td.right
+{
+    /*text-align: right;*/
+    text-align: center;
+}
+.christSummary tbody td.center
+{
+    text-align: center;
+}
+.christSummary td.last
+{
+    border-right: 1px solid #c2c2c2;
+}
+.christSummary tbody tr.alternate
+{
+    background: #eeeeee none repeat scroll 0 0;
+}
+.christSummary tfoot td strong
+{
+    float: right;
+}
+.christSummary tfoot td.singleCol
+{
+     border-left: solid 1px #c2c2c2;
+}
+.unusedVouchTxt
+{
+    float: left;
+    width: 78%;
+    margin-right: 12px;
+}
+/* Voucher */
+.vouchDtlTbl
+{
+    border-collapse: collapse;
+    clear: both;
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 650px;
+}
+.vouchDtlTbl thead th.rounded-company
+{
+    background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;
+}
+.vouchDtlTbl thead th.rounded-q4
+{
+    background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;
+}
+.vouchDtlTbl th
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 6px 3px;
+    text-align: center;
+}
+.vouchDtlTbl th.first
+{
+    border-left: 0;
+}
+.vouchDtlTbl tfoot td.rounded-foot-left
+{
+    background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;
+}
+.vouchDtlTbl tfoot td.rounded-foot-right
+{
+    background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;
+}
+.vouchDtlTbl tfoot td.rounded-Whitefoot-left
+{
+    background: #ffffff url(../I/voucherTblBtm_l.gif) no-repeat scroll left top;
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+    height: 8px;
+}
+.vouchDtlTbl tfoot td.rounded-Whitefoot-right
+{
+    background: #ffffff url(../I/voucherTblBtm_r.gif) no-repeat scroll right top;
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+}
+.vouchDtlTbl tfoot td.rounded-Greyfoot-left
+{
+    background: #f2f2f2 url(../I/voucherGreyTblBtm_l.gif) no-repeat scroll left bottom;
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+    height: 8px;
+}
+.vouchDtlTbl tfoot td.rounded-Greyfoot-right
+{
+    background: #f2f2f2 url(../I/voucherGreyTblBtm_r.gif) no-repeat scroll right bottom;
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+}
+.vouchDtlTbl tfoot td
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    padding: 5px;
+}
+.vouchDtlTbl tfoot td.first
+{
+    border: 0;
+}
+.vouchDtlTbl tbody tr
+{
+    background: #ffffff none repeat scroll 0 0;
+    font-weight: bold; /*robin's changes*/
+}
+.vouchDtlTbl td
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2; /*font-weight: bold;*/
+    font-weight: normal; /*revert back to original - Padmanabh*/
+    text-align:center;
+}
+.vouchDtlTbl tbody td input
+{
+    float: none;
+    border: 0;
+}
+.vouchDtlTbl tbody td.right
+{
+    text-align: right;
+}
+.vouchDtlTbl tbody td.center
+{
+    text-align: center;
+    font-weight: bold;
+}
+.vouchDtlTbl td.last
+{
+    border-right: 1px solid #c2c2c2;
+}
+.vouchDtlTbl tbody td.lastRw
+{
+    border-bottom: 0;
+}
+.vouchDtlTbl tbody tr.alternate
+{
+    background: #eeeeee none repeat scroll 0 0;
+}
+.christmasSaverSmryMsg
+{
+    float: left;
+    width: 50%;
+}
+.christmasSaverSmry
+{
+    clear: none;
+    float: right;
+    width: 40%;
+}
+.vouchReplacement
+{
+    width: 55%;
+}
+/********************************** Styles which were Added***********************************/
+#loginleftColumn
+{
+    position: relative;
+    float: left;
+    display: inline;
+    width: 635px;
+    height: auto;
+}
+
+#loginrightColumn, #loginrightColumnNarrow
+{
+    float: right;
+    display: inline;
+    width: 258px;
+    height: auto;
+    margin-top: 3.3em;
+}
+
+#loginrightColumnNarrow
+{
+    width: 193px;
+    text-align: right;
+}
+
+#loginrightColumn div
+{
+    margin-bottom: 1em;
+}
+
+#logincontent
+{
+    overflow: hidden;
+    margin: 0.4em 0;
+}
+#logincontent h1
+{
+    background: url(../I/h1.clubcard.png) #fff no-repeat;
+    text-indent: 70px;
+    color: #7186a1;
+    font-size: 1.75em;
+    padding: 0.5em 0 0.2em;
+    margin: 0 12px 0.5em;
+    border-bottom: 1px solid #46bcd6;
+}
+#logincontent p
+{
+    margin: 0.25em 0 0 0;
+}
+
+#logincontent #help p
+{
+    margin: 0.25em 0 0.5em 0;
+}
+
+.logintel
+{
+    font-size: 150%;
+    color: #7186A1;
+    white-space: nowrap;
+}
+.loginhide
+{
+    position: absolute;
+    top: 0;
+    left: -200em;
+}
+#logincontent fieldset
+{
+    width: 346px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+
+#logincontent fieldset div
+{
+    margin: 0.5em 0;
+    text-align: right;
+}
+
+#logincontent fieldset div label
+{
+    padding-right: 0.5em;
+}
+
+#logincontent label
+{
+    font-weight: bold;
+    color: #00529e;
+}
+
+#logincontent input.text
+{
+    border: 1px solid #00529e;
+    width: 15.5em;
+    background: #f7ffff;
+}
+
+#logincontent input.text:focus
+{
+    background: #fff;
+}
+
+#logincontent p.pageDesc
+{
+    margin: 12px 12px 12px 20px;
+}
+/* Grid Styles */
+.GridStyle
+{
+    border-collapse: collapse;
+    font-size: 0.95em;
+    font-weight: normal;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 730px;
+    clear: both;
+}
+.GridHeader
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 6px 3px;
+    text-align: center;
+}
+.GridHeaderLeft
+{
+    border-width: 0px;
+    background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;
+    text-align: center;
+    /*width: 175px;*/
+    
+}
+.GridHeaderRight
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 6px 3px;
+    text-align: center;
+}
+.GridHeaderRightLast
+{
+    border-left: 1px solid #C2C2C2;
+    background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;
+    text-align: center;
+}
+.GridRow
+{
+    background: #ffffff none repeat scroll 0 0;
+}
+.GridStyle tr
+{
+    background-color: #ffffff;
+}
+.GridTd
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.GridTdCenter
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    text-align: center;
+}
+.GridTdRight
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    text-align: right;
+}
+.GridTdRightLast
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2; /*text-align:right; - as per new requirements - Padmanabh*/
+    text-align: center;
+    border-right: 1px solid #c2c2c2;
+}
+.GridAlternateRow .GridTd, .GridAlternateRow .GridTdCenter, .GridAlternateRow .GridTdRight, .GridAlternateRow .GridTdRightLast
+{
+    background-color: #eeeeee;
+}
+
+.GridFooterTd
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    padding: 5px;
+}
+
+.GridStyle th, .GridStyle th a:link, .GridStyle th a:visited, .GridStyle th a:hover, .GridStyle th a:active
+{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.GridFooterTdRight
+{
+    border: 0;
+    background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;
+    /*border-left: 1px solid #c2c2c2;*/
+    padding-right: 0.4em;
+}
+.brdrLeft
+{
+    border-left: 1px solid #c2c2c2;
+}
+.GridFooterTdLeft
+{
+    border: 0;
+    background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;
+}
+/********************************** Styles which were modified (cut pasted here)***********************************/
+.GridStyle td span
+{
+    background: transparent url(../I/cc_whitepointsCurve_l.png) no-repeat scroll 0 3px;
+    display: block;
+    float: right;
+    height: 23px;
+    padding: 0 0 6px;
+}
+.GridStyle td span em
+{
+    background: transparent url(../I/cc_whitepointsCurve_r.png) repeat-x scroll right bottom;
+    color: #000000;
+    float: left;
+    font-size: 1.05em;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 0 0 9px;
+    padding: 8px 12px 4px 0;
+    width: 5em;
+    text-align: right;
+}
+
+/* Points */
+
+div.pointCurve_l
+{
+    background: transparent url(../I/cc_whitepointsCurve_l.png) no-repeat scroll left top;
+    color: #000000;
+    font-weight: bold;
+    height: 100%;
+    margin-top: 4px;
+    overflow: hidden;
+    padding-left: 9px;
+    float: right;
+}
+.christmasSaverDtls div.pointCurve_l,
+.christSummary div.pointCurve_l {
+                background: transparent url(../I/cc_grnwhitepointsCurve_l.png) no-repeat scroll left top;
+}
+
+div.pointCurve_l span.pointCurve_r
+{
+    background: transparent url(../I/cc_whitepointsCurve_r.png) repeat-x scroll right top;
+    display: block;
+    margin: 0;
+    padding: 4px 12px 0 6px;
+    text-align: center;
+    height: 19px;
+    width: 6.5em;
+}
+.christmasSaverDtls div.pointCurve_l span.pointCurve_r,
+.christSummary div.pointCurve_l span.pointCurve_r {
+                background: transparent url(../I/cc_grnwhitepointsCurve_r.png) repeat-x scroll right top;
+}
+
+.GridStyle div.pointCurve_l
+{
+    padding-left: 9px; /*As the left round box was not appearing - Padmanabh*/
+}
+.clubcPts .greyPointCurve_l
+{
+    background: transparent url(../I/cc_greypointsCurve_l.png) no-repeat scroll left top;
+}
+.clubcPts .greyPointCurve_l .greyPointCurve_r
+{
+    background: transparent url(../I/cc_greypointsCurve_r.png) repeat-x scroll right top;
+}
+#christSaverRwd
+{
+    float: left;
+    margin-left: 8px;
+}
+.vouchDtlTbl .vouchPoints, .christmasSaverDtls .vouchPoints, .christSummary .vouchPoints
+{
+    float: left;
+}
+.vouchDtlTbl .vouchPoints
+{
+    float: none;
+    margin: 0 auto;
+}
+.christmasSaverDtls .vouchPoints
+{
+    margin: 0 4px;
+}
+.christSummary .vouchPoints, #pointDtlTbl div.pointCurve_l
+{
+    margin-top: 0;
+}
+
+/* Form styles */
+input, select, textarea
+{
+    border: 1px solid #03529d;
+    font-size: 1em;
+    color: #666;
+    margin-right: 0.2em;
+    padding: 0.2em;
+}
+.cc_lightGreybody2 ul.contacts .brderInput, ul.ccDetailsList .brderInput, ul.people .brderInput, .cc_lightGreybody ul.childLists .brderInput, ul.clubMembershipList .brderInput, ul.cardDetails .brderInput
+{
+    border: 1px solid #03529d;
+    font-size: 1em;
+    color: #666;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    width:20em;
+}
+
+.errorsul
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+    list-style: square;
+}
+.errorsdiv
+{
+    border: 1px solid red;
+    color: red;
+    margin: 5px 0px;
+    padding: 15px;
+}
+.orderReplacement
+{
+    padding-top: 1em;
+}
+.orderReplacement li
+{
+    margin-bottom: 0.8em;
+}
+.dataTableDetails
+{
+    clear: both;
+    overflow: scroll;
+    height: 20em;
+    width: 745px;
+}
+ul.prefDetails li
+{
+    margin-bottom: 1.3em;
+}
+.zeroPtsMsg
+{
+    font-size: 0.95em;
+    font-weight: bold;
+}
+.noteTextp
+{
+    font-size: 0.9em;
+}
+
+
+/*--- New Styles: 23/03/2010 ---*/
+ul.contacts .imgBtn
+{
+    margin-left: 0.3em;
+    margin-top: 0.2em;
+    width: auto;
+    border: 0px;
+}
+.alertMsgs
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.4em 0.8em 0;
+}
+.alertMsgsInPoints
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+    background:transparent; 
+    width: 150%;      
+}
+ul.ccDetailsList li
+{
+    margin-bottom: 1em;
+    width: 11em;
+    float: left;
+    clear: none;
+}
+#ctl00_PageContainer_lblSuccessMessage{padding:0px;}
+.replaceCardNmb
+{
+    background: url(../I/ccCardNmbBox_left.gif) no-repeat scroll left top;
+    height: 50px;
+    margin: 0.8em 1.1em 0.8em auto;
+    padding-left: 9px;
+    width: 96%;
+    padding-bottom: 0;
+}
+.replaceCardNmb .replaceCardNmbRt
+{
+    background: url(../I/ccCardNmbBox_right.gif) no-repeat scroll right top;
+    color: #FFFFFF;
+    height: 100%;
+    padding: 0.6em 0.4em 0;
+}
+.replaceCardNmb .replaceCardNmbRt h4
+{
+    float: left;
+    font-size: 1.2em;
+    margin-top: 0.6em;
+}
+.replaceCardNmb .replaceCardNmbRt .cardNmb
+{
+    background: url(../I/cardNmbLt.gif) no-repeat scroll left top;
+    float: left;
+    height: 36px;
+    margin-left: 0.8em;
+    padding-left: 7px;
+    text-align: center;
+    width: 26em;
+}
+.replaceCardNmb .replaceCardNmbRt .cardNmbRt
+{
+    background: url(../I/cardNmbRt.gif) no-repeat scroll right top;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 100%;
+    padding-left: 3px;
+    padding-right: 12px;
+    padding-top: 7px;
+}
+
+.inputFields .errorFieldsActivation, .errorFieldsActivation select
+{
+    color: #ff0000;
+    display: block;
+    clear: both;
+    font-size: 0.9em;
+    font-weight: bold;
+    width:580px;
+    padding-left:10px;
+}
+.errorFields p
+{
+    text-align: right;
+}
+.inputFields
+{
+    float: left;
+    margin-bottom: 0.5em;
+    width: 56%;
+}
+
+.inputFieldsChk
+{
+    float: left;
+    margin-bottom: 0.5em;
+    width: 10%;
+}
+
+.inputFields .errorFields, .errorFields
+{
+    color: #ff0000;
+    display: block;
+    clear: both;
+    font-size: 0.9em;
+    font-weight: bold;
+    width:95%;
+}
+.errorFields p
+{
+    text-align: right;
+}
+.inputFields .pplWdth
+{
+    width: 25em;
+}
+.inputFields .dtlsWdth
+{
+    width: 9em;
+}
+.inputFields .dtFld
+{
+     width: 18.30em; 
+}
+.inputFields .dtAddress
+{
+    width: 19em;
+}
+.inputFields .dtAddressActivation
+{
+    width: 19em;
+    margin-left:17px;
+}
+ul.contacts .inputFields span.email
+{
+    width: 18em;
+}
+ul.contacts span.emailError
+{
+    color: #FF0000;
+    float: left;
+    margin-left: 0.8em;
+}
+input.errorFld, select.errorFld, textarea.errorFld, ul.contacts select.errorFld, .errorFld
+{
+    border: 1px solid #ff0000;
+    
+}
+
+.orderRplcmnterrorFld
+{
+    border: 1px solid #ff0000;
+    overflow: hidden;
+    height: 100%;
+    width: 367px;
+    float: left;
+}
+.orderRplcmnterrorNoFld
+{
+    border: 0px solid #ff0000;
+    overflow: hidden;
+    height: 100%;
+    width: 367px;
+    float: left;
+}
+ul.contacts input
+{
+    margin-bottom: 0;
+}
+ul.contacts span.SelectBorder
+{
+    background-color: red;
+    padding: 1px;
+    width: auto;
+}
+
+ul.contacts span.SelectBorder select, ul.customer span.SelectBorder select
+{
+    margin: 0;
+    padding: 0;
+    width: 15.5em;
+}
+.welMsg
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#detailsBox
+{
+    width: 761px;
+    margin: 6px 12px;
+    overflow: hidden;
+}
+.ccPointDetails
+{
+    float: left;
+    width: 50%;
+}
+.ccPointDetails #currPoints
+{
+    background: url("../I/darkBlue_left.jpg") no-repeat scroll left top;
+    padding-left: 8px;
+    overflow: hidden;
+    height: 77px;
+}
+.ccPointDetails #currPoints div
+{
+    background: url("../I/darkBlue_right.jpg") no-repeat scroll right top;
+    padding-left: 0.2em;
+    height: 100%;
+}
+.ccPointDetails #currPoints div h3, .ccPointDetails #vouchValues div h3
+{
+    color: #FFFFFF;
+    float: left;
+    font-size: 1.2em;
+    margin-top: 2em;
+    width: 15em;
+}
+
+.ccPointDetails #vouchValues div h3
+{
+    margin-top: 0.8em;
+}
+.ccPointDetails #currPoints div .infoBox_white, .ccPointDetails #vouchValues div .infoBox_white
+{
+    background: url("../I/smallWhite_left.gif") no-repeat scroll left top;
+    float: left;
+    height: 66px;
+    margin-left: 0.2em;
+    margin-top: 0.4em;
+    padding-left: 7px;
+    padding-top: 0;
+    text-align: center;
+    width: 11em;
+}
+.ccPointDetails #currPoints div .infoBox_white h4, .ccPointDetails #vouchValues div .infoBox_white h4
+{
+    background: url("../I/smallWhite_right.gif") no-repeat scroll right top transparent;
+    color: #000000;
+    font-size: 2.2em;
+    font-weight: normal;
+    height: 66px;
+    text-align: center;
+    padding: 0.65em 0 0;
+    margin: 0;
+}
+.ccPointDetails #vouchValues
+{
+    background: url("../I/lightBlue_left.gif") no-repeat scroll left top;
+    padding-left: 8px;
+    overflow: hidden;
+    height: 77px;
+    margin-top: -0.2em;
+}
+.ccPointDetails #vouchValues div
+{
+    background: url("../I/lightBlue_right.gif") no-repeat scroll right top;
+    padding-left: 0.2em;
+    height: 100%;
+}
+.yourMessages, .yourMsgbody, .yourMsghead, .yourMsghead h4, .yourPtsMessages
+{
+    background: transparent url(../I/ccBlueHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.yourMessages
+{
+    float: left;
+    height: 12.55em;
+    margin: 2px 4px 0 0.6em;
+    padding-right: 0;
+    width: 367px;
+}
+.yourMsghead
+{
+    background-position: left top;
+    margin-right: 0;
+    padding-right: 0;
+}
+.yourMsghead h4
+{
+    background: transparent url(../I/ccBlueHeaderBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+.yourMsghead h4
+{
+    background-position: right top;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 6px;
+    margin-top: 0;
+    padding: 12px 6px;
+    text-align: left;
+}
+.yourMsgbody
+{
+    background-position: bottom left;
+    margin-right: 5px;
+    padding: 1px 0 15px 0.2em;
+    overflow: hidden;
+    height: 61%;
+}
+.yourMsgbody h5
+{
+    font-size: 1.12em;
+    padding: 0.8em 0.2em 0;
+}
+.yourMsgbody p
+{
+    font-size: 1em;
+    padding: 0.8em 0.9em 2.5em;
+}
+/* New Styles for vocher page - Padmanabh 6-4-2010*/
+.voucherRedMsg
+{
+    color: #FF0000;
+    margin: 12px 12px 12px 20px;
+}
+.unusedVouchTxtNew
+{
+    float: left;
+    width: 78%;
+    margin-right: 12px;
+    margin-top: 4px;
+}
+#box1, #box2, #box3
+{
+    background: transparent url(../I/VouchersSummaryVal.jpg) no-repeat;
+    margin:10px 45px 10px 0px;
+    float: left;
+    margin-right:25px;
+    margin-left:25px;
+}
+#milesBox1,#milesBox2,#arrowImage1,#arrowImage2,#boxAirMiles,#boxBAMiles
+{
+	background: transparent url(../I/VouchersSummaryVal.jpg) no-repeat;
+    margin:10px 7px 10px 0px;
+    float: left;
+}
+#arrowImage1,#arrowImage2,#boxAirMiles,#boxBAMiles
+{
+    margin-top:25px;
+}
+
+.ccVoucherSummTable
+{
+    width: 178px;
+    height: 92px;
+}
+.ccVouchSummLable
+{
+    /*text-align: center;
+    padding: 0 17px 0 17px;
+    height: 27px;
+    vertical-align: middle;*/
+    text-align: center;
+	padding: 0 17px 0 17px;
+	height: 47px;
+}
+/*.ccVouchSummValue
+{
+	color:#FF0000;
+	font-size:15px;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	text-align:center;
+}*/
+.vouchDtlTbl tbody td.center
+{
+    text-align: center;
+    font-weight: bold;
+}
+.ccVouchSummValue
+{
+    /*text-align: center; 	font-weight: bold; Robin's changes*/
+    color: #FF0000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Additional 2 styles from Robin for voucher pages - Padmanabh */
+
+
+.pointsSmTbl
+{
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 730px;
+    clear: both;
+}
+.pointsSmTbl thead th.rounded-company
+{
+    background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;
+}
+.pointsSmTbl thead th.rounded-q4
+{
+    background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;
+}
+.pointsSmTbl th
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 6px 3px;
+    text-align: center;
+    width: 25%;
+}
+.pointsSmTbl th.first
+{
+    border-left: 0;
+    text-align: left;
+    padding-left: 22px;
+    width: 50%;
+}
+.pointsSmTbl tfoot td.rounded-foot-left
+{
+    background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;
+}
+.pointsSmTbl tfoot td.rounded-foot-right
+{
+    background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;
+}
+.pointsSmTbl tfoot td
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    padding: 5px;
+}
+.pointsSmTbl tfoot td.first
+{
+    border: 0;
+}
+.pointsSmTbl tbody tr
+{
+    background: #ffffff none repeat scroll 0 0;
+}
+.pointsSmTbl td
+{
+    color: #000000;
+    padding: 8px;
+    border-left: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2; /*font-weight: bold;*/
+    font-weight: normal; /*revert back to original - Padmanabh*/
+    text-align: center;
+}
+.pointsSmTbl tbody td input
+{
+    float: none;
+    border: 0;
+}
+.pointsSmTbl tbody td a:link, a:active, a:visited, a:hover
+{
+    /*text-decoration: underline;*/
+}
+.pointsSmTbl tbody td a.deactive:link, a.deactive:active, a.deactive:visited, a.deactive:hover
+{
+    /*text-decoration: underline;*/
+    color: #CCCCCC;
+}
+
+.pointsSmTbl tbody td.right
+{
+    text-align: right;
+}
+.pointsSmTbl tbody td.center
+{
+    text-align: center;
+}
+.pointsSmTbl td.first
+{
+    padding-left: 22px;
+    text-align: left;
+}
+.pointsSmTbl td.last
+{
+    border-right: 1px solid #c2c2c2;
+}
+.pointsSmTbl tbody td.lastRw
+{
+    border-bottom: 0;
+}
+.pointsSmTbl tbody tr.alternate
+{
+    background: #eeeeee none repeat scroll 0 0;
+}
+.colPrdSm
+{
+    width: 60%;
+}
+.pointsTable tbody td a:link, a:active, a:visited, a:hover
+{
+    /*text-decoration: underline;*/
+    cursor: pointer;
+}
+.noteTextPoints
+{
+    clear: both;
+    font-size: 1.1em;
+    display: block;
+    margin: 12px;
+    padding: 12px;
+}
+.curPtsSmry
+{
+    float: right;
+    width: 350px;
+    text-align: right;
+}
+.curPtsSmry ul
+{
+    margin: 3em 0.4em;
+}
+div.prevPtsSmmrCurve_l
+{
+    background: transparent url(../I/cc_prevPtsSmryWhitepointsCurve_l.png) no-repeat scroll left top;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 100%;
+    margin-top: -24px;
+    overflow: hidden;
+    padding-left: 9px;
+    float: right;
+}
+div.prevPtsSmmrCurve_l span.prevPtsSmmrCurve_r
+{
+    background: transparent url(../I/cc_prevPtsSmryWhitepointsCurve_r.png) repeat-x scroll right top;
+    display: block;
+    margin: 0;
+    padding: 4px 24px 10px 6px;
+    text-align: center;
+    height: 16px;
+    width: 4em;
+}
+.previousPeriod
+{
+    width: 470px;
+    float: left;
+    padding: 1em 0 1em 0.4em;
+}
+.previousPeriod #label
+{
+    font-size: 1.45em;
+    width: 370px;
+}
+/*For Previous PointsSummary AMiles/BAMiles type - Padmanabh*/
+.previousPeriodMiles
+{
+	width: 510px;
+	float: left;
+	padding: 1em 0 1em 0.4em;
+}
+.previousPeriodMiles #label
+{
+	font-size: 1.45em;
+	width: 399px;
+}
+#colPrdSmryDtls
+{
+    margin-top: 10px;
+}
+.yourPtsMessages
+{
+    float: right;
+    margin: 2px 8px 12px 0;
+    padding-right: 0;
+    width: 367px;
+}
+ul.diet input, ul.changeDtls input
+{
+    border: 0;
+}
+.infoIcon
+{
+    vertical-align: middle;
+    padding-left: 2px;
+}
+.modalBox
+{
+    background: url("../I/modalcurve_top.gif") no-repeat scroll 0 0 transparent;
+    height: 325px;
+    padding: 15px 15px 0;
+    text-align: left;
+    width: 670px;
+}
+.modalBox div
+{
+    height: 300px;
+    margin-bottom: 5px;
+    overflow: auto;
+    padding-right: 0;
+    width: 660px;
+}
+.modalBox .voucherBtm
+{
+    background: url("../I/modalcurve_bottom.gif") no-repeat scroll 0 bottom transparent;
+    height: 7px;
+    margin: 10px 0 0 -13px;
+    width: 684px;
+    display:block;
+    clear:both;
+}
+.voucherValue_lft
+{
+    background: url("../I/voucherValue_Lft.gif") no-repeat scroll 0 0 transparent;
+    display: inline;
+    height: 30px;
+    padding: 6px 10px;
+}
+.voucherValue_rt
+{
+    background: url("../I/voucherValue_Rt.gif") no-repeat scroll right 0 transparent;
+    display: inline;
+    height: 100%;
+    padding: 6px 10px 5px 0;
+}
+.voucherHeader
+{
+    position: relative;
+}
+.voucherImg
+{
+    top: -67px;
+    position: absolute;
+    right: 12px;
+}
+.xmasBox
+{
+    margin: 0 12px;
+    width: 765px;
+}
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix
+{
+    display: inline-block;
+}
+/* for IE/Mac */
+.missingPoints
+{
+    padding: 0.4em 1em;
+}
+.missingPoints h3
+{
+    font-size: 1.1em;
+}
+.missingPoints p
+{
+    margin: 0 !important;
+    padding: 0;
+}
+.missingPoints p a
+{
+    text-decoration: underline;
+}
+.pageText
+{
+    float: left;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+}
+#mainContent .pageText p.pageDesc
+{
+    margin: 12px 0;
+}
+#mainContent .pageText p.pageDescActivation
+{
+    margin: 9px 0;
+}
+#mainContent .pageText h2
+{
+    margin: 0 0 0.5em;
+}
+.pageImg
+{
+    float: right;
+}
+.pageImg IMG
+{
+    float: right;
+}
+/* Christmas Colors */
+
+.ccGreenInfoSection, .cc_greenbody, .cc_greeninfohead, .cc_greeninfohead span.left
+{
+    background: transparent url(../I/ccGreenInfoBox.gif) no-repeat bottom right;
+    margin: 0;
+    padding: 0;
+}
+
+.ccGreenInfoSection
+{
+    float: left;
+    margin: 12px 0;
+    padding-right: 0;
+    width: 520px;
+}
+
+.cc_greenbody
+{
+    background-position: bottom left; /*margin-right: 5px;*/
+    margin-right: 6px;
+    padding: 1px 0 3px 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.cc_greeninfohead
+{
+    background-position: left top;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.cc_greeninfohead span.left
+{
+    background-position: right top;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 0 0 5px;
+    padding: 0;
+    height: 5px;
+    text-align: left;
+    width: auto;
+}
+
+.cc_body ul.streetDetails
+{
+    margin: 0;
+    clear: both;
+}
+
+.cc_body ul.streetDetails li label
+{
+    width: 6em;
+}
+
+#mainContent .cc_body .inputFields p
+{
+    margin: 0 0 0.4em;
+}
+
+ul.customer li div.customerSurName .inputFields
+{
+	width:23em;
+}
+
+ul.customer li div.customerFirstName .inputFields
+{
+	width:18em;
+}
+
+ul.customer .inputFields .dtFld
+{
+     width: auto; 
+}
+
+div.logoutLink
+{
+	float:left;
+	display:inline;
+	border:2px solid #FF0000;
+	background-color:#FFFFFF;
+	margin-left:2.7em;
+	padding:0;
+}
+
+div.logoutLink a:link, div.logoutLink a:active, div.logoutLink a:visited, div.logoutLink a:hover
+{
+	color: #FF0000;
+	text-decoration:none;
+	padding:5px;
+	line-height:170%;
+}	
+ul.customer .noteText
+{
+    margin: 15px 0 15px 11px;
+}
+
+/* Search postcode */
+
+.mainCustomer
+{
+	border-right:1px solid #49BCD7;
+	border-bottom:1px solid #49BCD7;
+	width:49%;
+	float:left;
+	padding-top:0.5em;
+}
+.AddUser
+{
+	border-right:1px solid #49BCD7;
+	border-bottom:1px solid #49BCD7;
+	width:75%;
+	float:left;
+	padding-top:0.5em;
+}
+/*
+.resetpwd
+{
+	
+	border-bottom:1px solid #49BCD7;
+	height:100px;
+	padding-top:5.5em;
+}*/
+.resetpwd
+{
+	
+	border-bottom:1px solid #49BCD7;
+	padding-top:2.5em;
+	padding-bottom:4.5em;
+}
+.EditGrpMembership
+{
+	border-right:1px solid #49BCD7;
+	width:75%;
+	float:left;
+	padding-top:0.5em;
+}
+.UserDetails
+{
+	border-bottom:1px solid #49BCD7;
+	width:100%;
+	height:30px;
+	float:left;
+	padding-top:0.5em;
+}
+.EmptyDiv
+{
+	
+	width:100%;
+	height:20px;
+	float:left;
+	padding-top:0.5em;
+}
+.associateCustomer
+{
+	border-bottom:1px solid #49BCD7;
+	width:50%;
+	float:left;
+	padding-top:0.5em;
+}
+.mainCustomer h3, .associateCustomer h3
+{
+	border-bottom:1px solid #49BCD7;
+	padding-bottom:0.2em;
+	padding-left:0.2em;
+}
+.associateCustomer h3
+{
+	padding-left:0.5em;
+}
+.mainCustomer ul.customer div.inputFields, .associateCustomer ul.customer div.inputFields
+{
+    width: auto;
+}
+.mainCustomer ul.customer label, .associateCustomer ul.customer label
+{
+    width: 9.5em;
+}
+.mainCustomer ul.customer div.inputFields label, .associateCustomer ul.customer div.inputFields label
+{
+    width: auto;
+}
+.mainCustomer ul.ccDetailsList li, .associateCustomer ul.ccDetailsList li
+{
+    width: 10em;
+	margin-bottom:0.3em;
+}
+
+.mainCustomer p.dietaryNeeds, .associateCustomer p.dietaryNeeds
+{
+	border-top:1px solid #49BCD7;
+	padding-top:5px;
+}
+.associateCustomer p.dietaryNeeds, .associateCustomer .ccDetailsList
+{
+	padding-left:0.5em;
+}
+.mainCustomer div.inputFields span.dtFld select, .associateCustomer div.inputFields span.dtFld select
+{
+	padding:0;
+}
+ul.customer .imgBtn
+{
+    width: auto;
+    border: 0;
+}
+.addressChange 
+{
+}
+.addressChange ul.customer label
+{
+	width:14em;
+	height: 21px;
+}
+.contactDetails ul.customer label
+{
+	width:12em;
+}
+ul.people .inputFields
+{
+	width:auto;
+}
+ul.ccDetailsPadding
+{
+	padding-left:5em
+}
+ul.householdStatus
+{
+	padding-left:10em;
+}
+ul.householdStatus .errorFields
+{
+	background: #ffffff url(../I/infoIcon.png) no-repeat scroll 0 0;
+	padding-left:2.5em;
+	height:3em;
+	line-height:160%;
+}
+#leftNav ul.customerDetails
+{
+	clear:both;
+	margin-left:0.6em;
+	margin-top:3em;
+	margin-right:0.7em;
+	background-color:#ffffff;
+	border:2px solid #cccccc;
+	padding:0.8em;
+	float:left;
+	width:150px;
+}
+#leftNav ul.customerDetails li
+{
+	clear:both;
+	width:auto;
+	border:none;
+}
+#leftNav ul.customerDetails label
+{
+	margin:0;
+	padding:0;
+	
+}
+#leftNav ul.customerDetails .inputFields
+{
+	padding-left:1em;
+	border:none;
+}
+.reissueCardReplace .ccPurpleGreySection
+{
+	width:100%;
+}
+
+/* Customer re-issue */
+
+
+.reissueClubcardMain
+{
+	margin-top:1em;
+	padding-top:1em;
+	border-top:1px solid #49BCD7;
+}
+.reissueClubcardAcct, .reissueCardReplace
+{
+    background: transparent url(../I/clubcardbottom_l.gif) repeat-x scroll left bottom;
+    margin: 0.8em 0.3em;
+    padding-left: 1px;
+    width: 70%;
+}
+.reissueClubcardAcct .clubcardAct_head h4, .reissueCardReplace .clubcardAct_head h4
+{
+	padding-bottom:0.4em;
+}
+.reissueClubcardAcct span, .reissueCardReplace span
+{
+    background: url(../I/clubcardbottom_r.gif) no-repeat right bottom;
+    height: 5px;
+    display: block;
+}
+.reissueCardReplace .clubcardAct_head
+{
+    background: transparent url(../I/clubcardHeader_l1.gif) repeat-x scroll left top;
+    margin-left: -1px;
+}
+.reissueCardReplace .clubcardAct_head h4
+{
+    background: url(../I/clubcardHeader_r1.gif) no-repeat right top;
+    color: #ffffff;
+    padding: 0.8em;
+	padding-bottom: 0.4em;
+    font-size: 1em;
+}
+.reissueClubcardAcct .ccRightBorderSection, .reissueCardReplace .ccRightBorderSection
+{
+    background: url(../I/clubcardbottom_r1.gif) no-repeat right bottom;
+	margin:0;
+	width:100%;
+	height:230px;
+	padding-top:0.4em;
+}
+.reissueClubcardAcct .orderRplcmnterrorFld, .reissueCardReplace .orderRplcmnterrorFld
+{
+	width:245px;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+table.reissueCardHolderTbl
+{
+    border-collapse: collapse;
+    font-size: 0.9em;
+	width: 100%;
+}
+table.reissueCardHolderTbl thead th
+{
+    background-color: #0054a4;
+    padding: 0.6em 0;
+    color: #fff;
+    border-right: 1px solid #c2c2c2;
+    border-left: 1px solid #0054a4;
+}
+table.reissueCardHolderTbl tbody td
+{
+    padding: 0.6em;
+    border-right: 1px solid #c2c2c2;
+    text-align: center;
+}
+table.reissueCardHolderTbl tbody tr.alternate td
+{
+    background-color: #f2f2f2;
+}
+table.reissueCardHolderTbl thead th.last
+{
+    border-right: 0;
+}
+table.reissueCardHolderTbl td.replaceOption
+{
+	padding-left:1.3em;
+}
+table.reissueCardHolderTbl td.replaceOption input
+{
+	border:0;
+}
+table.reissueCardHolderTbl td input
+{
+	border:0;
+}
+.replacementCardNo
+{ 
+	width:100%;
+	border-bottom: 1px solid #49BCD7;
+	padding:0.6em 0;
+	float:left;
+	display:block
+}
+.replacementCardNo label
+{
+	font-size:1.4em;
+	font-weight:bold;
+	float:left;
+	margin-left:1em;
+	margin-right:0.5em;
+}
+.replacementCardNo .inputFields
+{
+	float:left;
+	width:auto
+}
+.replacementCardNo .inputFields input
+{
+	width:25em;
+}
+.reissueClubcardAcct .clubcardAct_head h4 select, .reissueCardReplace .clubcardAct_head h4 select
+{
+	width:35em;
+	padding:0;
+	background-color:#0154A4;
+	border:1px solid #5C8DB5;
+	font-size:1.2em;
+	color:#FFFFFF
+}
+
+.reissueClubcardAcct .orderRplcmnterrorFld, .reissueCardReplace .orderRplcmnterrorFld
+{
+
+	border:none;
+	margin:0 5px;
+}
+.reissueClubcardAcct .orderRplcmnterrorFld ul, .reissueCardReplace .orderRplcmnterrorFld ul
+{
+	margin:0;
+	padding:1em 0;
+	float:left;
+	width:100%;
+}
+.reissueClubcardAcct .orderRplcmnterrorFld ul li, .reissueCardReplace .orderRplcmnterrorFld ul li
+{
+	margin:0;
+	padding:0.2em 0;
+	float:left;
+	width:100%;
+}
+.reissueClubcardAcct .orderRplcmnterrorFld ul li label, .reissueCardReplace .orderRplcmnterrorFld ul li label
+{
+	width:80%;
+}
+
+/* Customer Points */
+.customerPointsBlueHeaderSection
+{
+    width: 744px;
+    padding-right: 0;
+    margin: 10px 0px;
+}
+.customerPointsBlueHeaderSection .ccPointDetails
+{
+    float: left;
+    width: 31em;
+	margin:0;
+	padding:0;
+}
+.customerPointsBlueHeaderSection .ccPointDetails ul
+{
+	margin:0.5em 0 0;
+	padding:0;
+}
+.customerPointsBlueHeaderSection .ccPointDetails #currPoints div h3, .customerPointsBlueHeaderSection .ccPointDetails #vouchValues div h3
+{
+    width: 14em;
+}
+.customerPointsBlueHeaderSection #transSearch label
+{
+	margin:0.5em 0 0 0.4em;
+}
+.customerPointsBlueHeaderSection #transSearch .searchLabel
+{
+	float:none;
+	display:block;
+}
+.customerPointsBlueHeaderSection #transSearch .cardDetails
+{
+	float:left;
+}
+.customerPointsBlueHeaderSection #transSearch .cardDetails label
+{
+	width:8em;
+	margin-right:1em;
+}
+.customerPointsBlueHeaderSection #transSearch .cardDetails select
+{
+	padding:0em 0em 0em 0.6em;
+}
+.customerPointsBlueHeaderSection #transSearch p.searchBy
+{
+	float:left;
+	margin:3em 0 0 0;
+	clear:none;
+	width:auto;
+}
+.customerPointsBlueHeaderSection #transSearch p.searchBy input
+{
+	float:left;
+}
+.customerPointsBlueHeaderSection table
+{
+    float:left
+}
+
+/* Household Preferences */
+.householdPreferences{margin:0px;margin-left:4px;}
+
+.householdPreferences .inputFields p
+{
+	font-size:1.4em;
+	font-weight:bold;
+}
+.householdPreferences ul.customer
+{
+	display:block;
+	padding-left:1em;
+	width:auto;
+}
+.householdPreferences ul.customer li
+{
+	padding:0 0 2em 0;
+	
+}
+.householdPreferences ul.customer label
+{
+	width:60%;
+	text-align:left;
+}
+.householdPreferences ul.customer .inputFields
+{
+	width:auto;
+}
+.householdPreferences ul.customer .inputFields input
+{
+	float:left;
+	border:none;
+	width:auto;
+	margin:0 10px 5px;
+}
+.householdPreferences .cc_body
+{
+	padding:0;
+	overflow:auto;
+}
+.statementPreferences
+{
+	float:left;
+	border-top:1px solid #49BCD7;
+	clear:both;
+	width:100%;
+	
+}
+.rewardPreferences
+{
+	float:left;
+	border-top:1px solid #49BCD7;
+	clear:both;
+	width:100%;
+}
+.statementPreferences h4
+{
+	padding:1em;
+}
+.statementPreferences ul.customer
+{
+	float:left;
+	padding-left:1em;
+	width:auto;
+	margin-top:0;
+}
+.statementPreferences ul.customer li
+{
+	padding:0;
+	float:left;
+}
+.statementPreferences ul.customer li strong
+{
+	display:block;
+	padding:0.1em 0;
+}
+.statementPreferences ul.customer label
+{
+	width:auto;
+	text-align:left;
+	margin:10px 0 0;
+}
+.statementPreferences ul.customer .Amiles
+{
+	width:52px;
+}
+.statementPreferences ul.customer .BAmiles
+{
+	width:50px;
+}
+.statementPreferences ul.customer .VirginAtlantic
+{
+	width:50px;
+}
+.statementPreferences ul.customer .inputFields
+{
+	margin-top:0.9em;
+}
+.statementPreferences .earnRate
+{
+    border-bottom:1px solid #000000;
+}
+.BAMiles
+{
+	clear:both;
+	display:block
+}
+.VirginAtlantic
+{
+	clear:both;
+	display:block
+}
+/* Customer Search */
+
+.customerSearch
+{
+	float:left;
+	border-top: 1px solid #49BCD7;
+	margin-top:1em;
+}
+#mainContent .customerSearch .cardHolderTbl td p
+{
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+#mainContent .customerSearch .cardHolderTbl th.selectAddress
+{
+	padding:0 0.5em;
+	background-color:#FF0000;
+}
+#mainContent .customerSearch .cardHolderTbl th.address
+{
+	width:9em
+}
+#mainContent .customerSearch .cardHolderTbl td
+{
+	vertical-align:top
+}
+#mainContent .customerSearch .cardHolderTbl td .imgBtn
+{
+	border:none
+}
+
+/* Pagination */
+
+.pagination{
+	padding: 2px;
+	float:right;
+}
+
+.pagination ul{
+	margin: 0;
+	padding: 0;
+	width:auto;
+}
+
+.pagination li{
+	list-style-type: none;
+	display: inline;
+}
+
+.pagination a, .pagination a:visited, .pagination a:hover, .pagination a:active{
+	padding: 0 2px;
+	text-decoration: none; 
+	color: #2e6ab1;
+}
+
+.pagination a.currentpage:link, .pagination a.currentpage:active, .pagination a.currentpage:visited, .pagination a.hover{
+	color:#000000;
+	font-weight: bold;
+	cursor: default;
+}
+
+.pagination .imgBtn
+{
+	border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    height: 9px;
+}
+
+.pagination .nextPage
+{
+	margin-right:1.5em;
+}
+
+.replaceRightBorderSection
+{
+    background: url(../I/clubcardbottom_r2.gif) no-repeat right bottom;
+    margin:0;
+    width:100%;
+    height:230px;
+    padding-top:0.4em;
+}
+
+.reissueCardReplaceRedHead
+{
+    background: transparent url(../I/clubcardbottom_l2.gif) repeat-x scroll left bottom;
+    margin: 0.8em 0.3em;
+    padding-left: 1px;
+    width: 70%;
+}
+.reissueCardReplaceRedHead span
+{
+    background: url(../I/clubcardbottom_r3.gif) no-repeat right bottom;
+    height: 5px;
+    display: block;
+
+}
+/* For fixing Preference page IE7 issue */
+.preferencesAlertMsgs
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.4em 0.8em 0;
+    float:left;
+}
+
+/*************************************************************** Newly added classes for point summary ***********************************/
+/*body {
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ padding:0px;
+ margin:0px;
+ line-height:150%;
+ color:#252525;
+ font-size:12px;
+}*/
+
+a
+{
+    color: #0a25b3;
+}
+
+/** headings **/
+#tc_right h1
+{
+    color: #7186a1;
+    font-size: 22px;
+    font-weight: normal;
+    border-bottom: 1px solid #46bcd6;
+    padding-bottom: 15px;
+}
+
+.tc_box .tc_header.tc_lightblue h2
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tc_box .tc_darkblue h3
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.tc_large
+{
+    font-size: x-large;
+}
+/** main boxes **/
+#tc_page
+{
+    width: 970px;
+    margin: 0px auto 0px;
+}
+#tc_head
+{
+}
+
+.tc_logo
+{
+    width: 283px;
+    height: 35px;
+    background: url("../I/logo.png") no-repeat;
+    display: block;
+}
+.tc_logo span
+{
+    display: none;
+}
+
+#tc_my_account
+{
+    background: #F0F5FB;
+    border: 1px solid #bdc7d3;
+    float: left;
+    width: 188px;
+    height: auto;
+    min-height: 100%;
+    margin-right: 10px;
+}
+#tc_my_account .tc_header
+{
+    background: url("../I/left-menu-header-bg.png") repeat-x;
+    min-height: 25px;
+    color: #F8FFFF;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+#tc_my_account ul
+{
+    padding-left: 25px;
+}
+#tc_my_account ul li a
+{
+    color: #8295ad;
+    font-weight: bold;
+    text-decoration: none;
+}
+#tc_my_account ul li a:hover
+{
+    text-decoration: underline;
+}
+#tc_my_account ul li
+{
+    list-style: none;
+}
+#tc_my_account ul li ul li a
+{
+    color: #7186a1;
+    font-weight: normal;
+}
+#tc_my_account ul li.active a
+{
+    color: #ab0c7f;
+}
+#tc_right
+{
+    float: left;
+    width: 770px;
+    margin-left:1em;
+}
+#tc_footer
+{
+    clear: both;
+    width: 100%;
+}
+
+/** right boxes **/
+.tc_box
+{
+    position: relative;
+    border: 1px solid #c2c2c2;
+    margin-bottom: 10px;
+}
+.tc_wide
+{
+    width: 100%;
+    min-height: 50px;
+}
+.tc_box.tc_table
+{
+    padding: 20px 8px;
+}
+.tc_box.tc_table.tc_lightblue
+{
+    border-left: 1px solid #4ABCD7;
+    border-right: 1px solid #4ABCD7;
+    margin: 5px;
+}
+
+.tc_box .tc_header
+{
+    min-height: 23px;
+    color: #FFF;
+    position: relative;
+    top: -1px; /*height:23px;*/
+    padding: 8px 10px 5px;
+}
+
+.tc_half
+{
+    width: 50%;
+    float: left;
+}
+.tc_points
+{
+    width: 95%;
+    margin: 10px;
+}
+
+#tc_christmas_total, #tc_standard_reward
+{
+    color: #FFF;
+    margin: 0 5px;
+    padding: 5px 30px;
+}
+#tc_standard_reward
+{
+    margin: 0px;
+    padding: 5px 0px;
+}
+#tc_standard_reward .tc_large
+{
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    text-align: right;
+    width: 243px;
+    font-weight: normal;
+}
+#tc_christmas_total .tc_large, #tc_standard_reward .tc_large
+{
+    color: #FFF;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+#tc_christmas_total .tc_pricecell, #tc_standard_reward .tc_pricecell
+{
+    background: url("../I/td-price-big-bg.png") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 18px;
+    padding: 8px 11px 8px 4px;
+    text-align: right;
+    width: 84px;
+    margin-left: 15px;
+}
+.tc_posup
+{
+    bottom: 12px;
+    left: 4px;
+    position: relative;
+    width: 350px;
+}
+.tc_underlying
+{
+    width: 345px;
+}
+.tc_points table
+{
+    margin: 4px auto;
+    width: 86%;
+}
+.tc_points table th
+{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: url("../I/logos-bg.png") no-repeat;
+    padding-left: 2px;
+}
+.tc_points table th img
+{
+    float: left;
+    margin-right: 5px;
+}
+.tc_points table th .tc_greyline
+{
+    float: right;
+}
+.tc_points table th .tc_relative
+{
+    height: 30px;
+}
+.tc_points table td
+{
+    color: #ab0c7f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom;
+}
+.tc_greyline
+{
+    border-bottom: 1px solid #CECECE;
+    bottom: 0;
+    position: absolute;
+    right: 5px;
+    width: 181px;
+}
+
+/** colors **/
+.tc_lightblue
+{
+    background: #49bcd7;
+}
+.tc_darkblue
+{
+    background: #0054a4;
+}
+.tc_grey
+{
+    background: #f2f2f2;
+}
+
+table.tc_points th
+{
+}
+.tc_box.tc_grey
+{
+    padding: 5px 8px;
+    margin: 6px;
+}
+.tc_box.tc_grey table
+{
+    width: 100%;
+}
+.tc_box.tc_grey table td
+{
+    background: url("../I/td-price-bg.png") no-repeat scroll 0 center transparent;
+    color: #000000;
+    font-weight: bold;
+    height: 29px;
+    padding: 0 6px 0 2px;
+    text-align: right;
+    width: 74px;
+    vertical-align: middle;
+}
+.tc_box.tc_grey table td.tc_noborder
+{
+    background: url("../I/td-price-bg-noborder.png") no-repeat scroll right center transparent;
+}
+
+.tc_box.tc_grey table th
+{
+    text-align: right;
+    padding-right: 6px;
+}
+
+/** button **/
+.tc_half p
+{
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+}
+.tc_button
+{
+    background: #00539F url("../I/link-bg.png") no-repeat;
+    display: block;
+    width: 220px;
+    min-height: 20px;
+    font-size:x-small;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    overflow: hidden;
+    clear: both;
+}
+/** clearing **/
+.tc_wrapper
+{
+    clear: both;
+}
+.tc_noborder
+{
+    border: 0px;
+}
+.tc_relative
+{
+    position: relative;
+}
+.tc_nobold
+{
+    font-weight: normal;
+}
+.tc_bottomline td, .tc_bottomline th, td.tc_bottomline
+{
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 4px;
+}
+td.tc_bottomline
+{
+    width: 150px;
+}
+.tc_left
+{
+    text-align: left;
+}
+.tc_box.tc_grey table th.tc_left
+{
+    text-align: left;
+}
+/** corners **/
+
+/** lightblue **/
+.tc_corner836
+{
+    position: absolute;
+    width: 8px;
+    height: 36px;
+}
+.tc_corner816
+{
+    position: absolute;
+    width: 8px;
+    height: 16px;
+}
+.tc_corner89
+{
+    position: absolute;
+    width: 8px;
+    height: 9px;
+}
+
+.tc_box .tc_lightblue .tc_crtopleft
+{
+    top: 0px;
+    left: -1px;
+    background: url("../I/header-lightblue-left.png") no-repeat;
+}
+.tc_box .tc_lightblue .tc_crtopright
+{
+    top: 0px;
+    right: -1px;
+    background: url("../I/header-lightblue-right.png") no-repeat;
+}
+.tc_box .tc_lightblue .tc_crbottomleft
+{
+    bottom: 0px;
+    left: -1px;
+    background: url("../I/bottom-lightblue-left.png") no-repeat;
+}
+.tc_box .tc_lightblue .tc_crbottomright
+{
+    bottom: 0px;
+    right: -1px;
+    background: url("../I/bottom-lightblue-right.png") no-repeat;
+}
+
+/** white + border **/
+.tc_box .tc_crtopleft
+{
+    top: -1px;
+    left: -1px;
+    background: url("../I/corner-top-left.png") no-repeat;
+}
+.tc_box .tc_crtopright
+{
+    top: -1px;
+    right: -1px;
+    background: url("../I/corner-top-right.png") no-repeat;
+}
+.tc_box .tc_crbottomleft
+{
+    bottom: -1px;
+    left: -1px;
+    background: url("../I/corner-bottom-left.png") no-repeat;
+}
+.tc_box .tc_crbottomright
+{
+    bottom: -1px;
+    right: -1px;
+    background: url("../I/corner-bottom-right.png") no-repeat;
+}
+
+/** grey + border **/
+.tc_box.tc_grey .tc_crtopleft
+{
+    top: -1px;
+    left: -1px;
+    background: url("../I/corner-top-left-grey.png") no-repeat;
+}
+.tc_box.tc_grey .tc_crtopright
+{
+    top: -1px;
+    right: -1px;
+    background: url("../I/corner-top-right-grey.png") no-repeat;
+}
+.tc_box.tc_posup .tc_crtopleft
+{
+    top: -1px;
+    left: -1px;
+    background: url("../I/corner-top-left-grey-inside.png") no-repeat;
+}
+.tc_box.tc_posup .tc_crtopright
+{
+    top: -1px;
+    right: -1px;
+    background: url("../I/corner-top-right-grey-inside.png") no-repeat;
+}
+.tc_box.tc_grey .tc_crbottomleft
+{
+    bottom: -1px;
+    left: -1px;
+    background: url("../I/corner-bottom-left-grey.png") no-repeat;
+}
+.tc_box.tc_grey .tc_crbottomright
+{
+    bottom: -1px;
+    right: -1px;
+    background: url("../I/corner-bottom-right-grey.png") no-repeat;
+}
+
+/** darkblue **/
+.tc_box .tc_darkblue .tc_crtopleft
+{
+    top: 0px;
+    left: -1px;
+    background: url("../I/header-darkblue-left.png") no-repeat;
+}
+.tc_box .tc_darkblue .tc_crtopright
+{
+    top: 0px;
+    right: -1px;
+    background: url("../I/header-darkblue-right.png") no-repeat;
+}
+
+.tc_lightblue
+{
+    z-index: 100;
+}
+.DataProtectionPointsTableheader td
+{
+       border:2;
+}
+
+.DataProtectionPointsTablerow
+{    border: 2;
+      font-size: 8pt;
+      font-weight: bold;
+}
+
+.DataProtectionPointsTablerow td
+{
+
+      border:2;
+}
+
+.button {cursor: pointer;float:right;position:relative;top:-3px;margin-right:10px}
+.button span.buttonbar {cursor: pointer;width:130px;line-height:1em}
+
+/* Standard Table */
+.tbl {border-collapse:collapse;clear: both;	font-weight: bold;margin: 10px 0;text-align: left;}
+.tbl th.first {background: url("../I/left.png") no-repeat scroll left -1px #0054A4;border-left: 0 none;text-align:left}
+.tbl th  {color: #fff;font-weight: bold;padding: 6px 10px;background-color:#0054A4;border-left: 1px solid #C2C2C2;text-align:center}
+.tbl th a {color:#fff}
+.tbl th.last {background: url("../I/right.png") no-repeat scroll right -1px #0054A4;}
+.tbl tbody tr {background: none repeat scroll 0 0 #FFFFFF;}
+.tbl tbody tr.alternate {background: none repeat scroll 0 0 #EEEEEE;}
+.tbl td {border-left: 1px solid #C2C2C2;border-bottom: 1px solid #C2C2C2;font-weight:normal;font-size:1em;padding: 8px;}
+.tbl td.last {border-right: 1px solid #C2C2C2;}
+.tbl tfoot tr {background: none repeat scroll 0 0 #629BD0;}
+.tbl tfoot td {padding:5px;color:#fff;font-weight:bold}
+.tbl .center {text-align: center;}
+.tbl .right {text-align: right;}
+.tbl td span.totalbox {display:block;background-color:#fff;padding:2px 5px;color:#0054A4}
+
+.tblCoupon {border-collapse:collapse;clear: both;	font-weight: bold;margin: 10px 0;text-align: center;}
+.tblCoupon th.first {background: url("../I/left.png") no-repeat scroll left -1px #0054A4;border-left: 0 none;text-align:center}
+.tblCoupon th  {color: #fff;font-weight: bold;background-color:#0054A4;border-left: 1px solid #C2C2C2;text-align:center}
+.tblCoupon th a {color:#fff}
+.tblCoupon th.last {background: url("../I/right.png") no-repeat scroll right -1px #0054A4;}
+.tblCoupon tbody tr {background: none repeat scroll 0 0 #FFFFFF;}
+.tblCoupon tbody tr.alternate {background: none repeat scroll 0 0 #EEEEEE;}
+.tblCoupon td {border-left: 1px solid #C2C2C2;border-bottom: 1px solid #C2C2C2;font-weight:normal;font-size:1em;text-align: center;}
+.tblCoupon td.last {border-right: 1px solid #C2C2C2;}
+.tblCoupon tfoot tr {background: none repeat scroll 0 0 #629BD0;}
+.tblCoupon tfoot td {color:#fff;font-weight:bold}
+.tblCoupon .center {text-align: center;}
+.tblCoupon .right {text-align: right;}
+.tblCoupon td span.totalbox {display:block;background-color:#fff;color:#0054A4}
+
+
+/*Modified as per current requirements*/
+ul.clubcPts
+{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 350px;
+}
+ul.currentPts li
+{
+    margin-bottom: 0.5em;
+    text-align: right;
+    width: 100%;
+}
+ul.currentPts li strong
+{
+    float: left;
+    font-size: 1.2em;
+    height: 23px;
+    margin-top: 1px;
+    padding-top: 5px;
+    width: 66%;
+}
+ul.clubcPts li strong
+{
+    font-weight: normal;
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+.summary
+{
+    width: 31.3em;
+    margin: 1em 0 1em 1em;
+    float: left;
+    background-color: #EBEBEB;
+    height: 33em;
+}
+.summary li
+{
+    margin: 1em 2em;
+    clear: both;
+    overflow: hidden;
+}
+.summary span
+{
+    background-color: MediumSeaGreen;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    padding-left: 1em;
+}
+.summary hr
+{
+    color: WhiteSmoke;
+}
+.summary li span
+{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 5em;
+    display: inline;
+}
+.boxSummary
+{
+    border: 1px solid #A8B1B8;
+    margin: 0.5em 0;
+    overflow: hidden;
+    height: 50em;
+}
+.summary table
+{
+    width: 100%;
+ 
+
+/* Clubcard Details Box */
+.cc_body
+{
+    position: relative;
+	top: -1px;
+	left: -12px;
+	width: 742px;
+}
+ign: center;
+    border: 1px solid whitesmoke;
+    height: 5em;
+}
+hr
+{
+    color: #D8D8D8;
+    margin-left: -3px;
+    width: 29.5em;
+}
+
+/* Clubcard Details Box */
+.cc_body
+{
+    position: relative;
+	top: 0px;
+	left: 4px;
+	width: 742px;
+}
+.cc_body ul.ccDtlsList
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    z-index: 3;
+}
+.cc_body ul.ccDtlsList li
+{
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+.cc_body ul.ccDtlsList li.tescoDotcom
+{
+    background: url(../I/tescodotcom_logo.jpg) no-repeat 0 0;
+    height: 76px;
+}
+.prevDtlsSmry
+{
+    padding-top:20px;
+    float: right;
+    width: 350px;
+    text-align: right;
+}
+.prevDtlsSmry ul li
+{
+    margin-bottom: 2em;
+}
+.prevDtlsSmry ul
+{
+    margin: 0.6em 0.4em;
+}
+.prevDtlsSmry .pageAction
+{
+    padding-right: 0;
+}
+
+/* Points table */
+.dataTable
+{
+    background: url(../I/pointtable_bottom.gif) no-repeat left bottom;
+    position: absolute;
+    width: 345px;
+    padding-bottom: 5px;
+}
+table.pointsTable
+{
+    background: url(../I/pointtable_top.gif) repeat-y left top;
+    z-index: 100;
+    position: relative;
+    width: 345px;
+    margin-top: 6px;
+    border-collapse: collapse;
+}
+table.pointsTable td
+{
+    border-right: 1px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
+    height: 76px;
+    text-align: right;
+    vertical-align: bottom;
+    width: 118px;
+}
+table.pointsTable td span
+{
+    color: #AB0C7F;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    padding-right: 0.4em;
+}
+table.pointsTable td.colLast
+{
+    border-right: 0;
+}
+table.pointsTable td.rowLast
+{
+    border-bottom: 0;
+}
+table.pointsTable .pointsList
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+table.pointsTable td .pointsList img
+{
+    border: 0;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+table.pointsTable td .pointsList span
+{
+    border: 0;
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    padding: 0;
+}
+
+/* Find Customer */
+
+ul.customer .stmntPreferences{}
+
+ul.customer
+{
+	margin-top:2em;
+	margin-left:0;
+
+}
+#ctl00_PageContainer_btnConfirmPreferences{margin-bottom:20px;}
+
+ul.customer label
+{
+    width: 8em;
+    float: left;
+    text-align: right;
+    margin-bottom: 0.2em; /*border: 0;Reverting back to original - Padmanabh*/
+	margin-right:1em;
+}
+
+
+ul.customer #UserId,ul.customer #Pwd,ul.customer #domain
+{
+    width: 25%;
+    float: left;
+    text-align: right;
+    margin-bottom: 0.2em; /*border: 0;Reverting back to original - Padmanabh*/
+	margin-right:1em;
+}
+
+
+
+ul.customer input, ul.customer span
+{
+    width: 15.4em;
+    float: left;
+    text-align: left;
+}
+
+ul.customer li div.customerSurName, ul.customer li div.customerFirstName
+{
+	float:left;
+}
+
+
+
+/*Personal details*/
+
+ul.contacts label, ul.contacts input, ul.contacts span
+{
+    width: 15em;
+    float: left;
+    text-align: left;
+    margin-bottom: 0.5em; /*border: 0;Reverting back to original - Padmanabh*/
+}
+ul.contacts span
+{
+    margin-left: 0;
+    padding: 0;
+}
+
+ul.contacts .gender span, ul.customer .gender span
+{
+    width: 1.5em;
+}
+/*Gender radio button span width changed - Padmanabh*/
+
+ul.contacts span input
+{
+    padding: 0;
+    _margin-left: -1em;
+}
+ul.contacts span.email
+{
+    width: 18em;
+    margin-left: 5px;
+}
+ul.contacts span.emailActivation
+{	width: 18em;
+    margin-left: 18px;
+}
+ul.contacts span p
+{
+    width: 36em;
+}
+ul.contacts .gender input, ul.contacts .gender label, ul.customer .gender input, ul.customer .gender label
+{
+    clear: none;
+    float: left;
+    margin-left: 0.3em;
+    margin-top: 0.2em;
+    width: auto;
+}
+ul.contacts .gender input
+{
+    border: 0;
+    margin-left: -0.1em;
+    _margin-left: -0.4em;
+    _margin-top: 0;
+}
+ul.contacts label
+{
+    clear: both;
+    margin-right: 1em;
+}
+ul.contacts #address2, ul.contacts #address3
+{
+    clear: both;
+}
+div.gender label
+{
+    width: auto;
+    float: left;
+}
+ul.ccDetailsList, ul.people, ul.ccDetailsList2
+{
+    margin: 1em 0;
+    overflow: hidden;
+}
+ul.ccDetailsList input, ul.contacts input.day, ul.contacts input.year, ul.people input, ul.ccDetailsList2 input
+{
+    width: 3em;
+    text-align: center; /*border: 0;Reverting back to original - Padmanabh*/
+}
+.cc_body ul.ccDetailsList2 li
+{
+    clear: none;
+    display: inline;
+    float: left;
+    width: 10em;
+}
+.cc_body ul.ccDetailsList2 li label
+{
+    width: auto;
+}
+.cc_body ul.ccDetailsList2 li input, .cc_body ul.diet2 li input, .cc_body ul.diet3 li input
+{
+    border: 0;
+}
+.cc_body ul.diet2
+{
+    width: 34em;
+    float: left;
+    margin: 0;
+}
+/*Sadanand : To fix Customer details page issue*/
+.cc_body ul.diet3
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+#ccDetails ul.diet
+{
+    width: auto;
+    border: 0;
+}
+ul.ccDetailsList li
+{
+    margin-bottom: 1em;
+    width: 9.5em;
+    float: left;
+    clear: none;
+}
+ul.ccDetailsList label, ul.people label
+{
+    margin-right: 5px;
+    margin-top: 0.2em;
+    width: auto;
+	height: 14px;
+}
+#ccDetails
+{
+    margin-left: 1em;
+}
+ul.contacts select
+{
+    float: left; /*border: 0 made commented as border for select boxes on personal details was not appearing*/
+}
+
+/* Points details */
+#transactionSearch
+{
+    margin-top: 6px;
+}
+#transactionSearch .ccLightGreySection
+{
+    width: 35em;
+    margin-left: 10px;
+}
+#transactionSearch .cc_lightGreyhead span.left
+{
+    width: 99%;
+}
+#transactionSearch .searchBy
+{
+    clear: both;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 0.6em;
+    text-align: right;
+    width: 98%;
+}
+#transactionSearch .searchBy .imgBtn
+{
+    float: right;
+    width: auto;
+    border: 0;
+}
+ul.cardDetails li
+{
+    clear: both;
+    margin-bottom: 0.4em;
+}
+ul.cardDetails label
+{
+    float: left;
+    margin-right: 8px;
+    text-align: right;
+    width: 40%;
+}
+ul.cardDetails select, ul.cardDetails span
+{
+    border: 0;
+    width: 17em;
+    float: left;
+    margin-bottom: 4px;
+}
+ul.cardDetails select
+{
+    border: 1px solid #03529D;
+}
+ul.cardDetails span select
+{
+    text-align: right;
+    padding-right: 0.4em;
+}
+ul.cardDetails span input
+{
+    width: 14.5em;
+    margin-bottom: 0.4em;
+}
+#transactionSearch .pageAction
+{
+    width: 38em;
+    float: right;
+}
+#transactionSearch .pageAction span
+{
+    margin-right: 6px;
+    margin-top: 2px;
+    width: auto;
+    float: left;
+}
+#transactionSearch .pageAction span .imgBtn
+{
+    margin-right: 6px;
+    margin-top: 6px;
+    width: auto;
+    float: left;
+}
+#transSearch .searchLabel
+{
+    font-weight: bold;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+#transactionSearch #pointDtlTbl
+{
+    margin-left: 0;
+    margin-right: 0;
+    width: 725px;
+}
+#transactionSearch #pointDtlTbl select
+{
+    background-color: #0154a4;
+    border: 1px solid #5c8db5;
+    color: #fff;
+}
+#transactionSearch #pointDtlTbl td
+{
+    font-weight: normal;
+}
+.transactionTable
+{
+    clear: both;
+    border-collapse: collapse;
+    width: 730px;
+    margin-left: 8px;
+}
+.transactionTable td, .transactionTable th
+{
+    border: 1px solid;
+    padding: 8px 5px;
+}
+.transactionTable tr.alternate
+{
+    background-color: #EEEEEE;
+}
+select#cardNo
+{
+    width: 13em;
+}
+select#transDetails
+{
+    width: 13em;
+}
+select#datePts
+{
+    width: 9em;
+}
+#pointDtlTbl
+{
+    border-collapse: collapse;
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 10px 5px 8px;
+    text-align: left;
+    width: 730px;
+    clear: both;
+}
+#pointDtlTbl thead th.rounded-company
+{
+    background: #0054a4 url(../I/left.png) no-repeat scroll left -1px;
+}
+#pointDtlTbl thead th.rounded-q4
+{
+    background: #0054a4 url(../I/right.png) no-repeat scroll right -1px;
+}
+#pointDtlTbl th
+{
+    background: #0054A4 none repeat scroll 0 0;
+    border-left: 1px solid #C2C2C2;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 6px 3px;
+    text-align: center;
+}
+#pointDtlTbl th.first
+{
+    border-left: 0;
+}
+#pointDtlTbl tfoot td.rounded-foot-left
+{
+    background: #ab0c7f url(../I/botleft.png) no-repeat scroll left bottom;
+}
+#pointDtlTbl tfoot td.rounded-foot-right
+{
+    background: #ab0c7f url(../I/botright.png) no-repeat scroll right bottom;
+}
+#pointDtlTbl tfoot td
+{
+    background: #ab0c7f none repeat scroll 0 0;
+    border: 0;
+    border-left: 1px solid #c2c2c2;
+    padding: 5px;
+}
+#pointDtlTbl tfoot td.first
+{
+    border: 0;
+}
+#pointDtlTbl tbody tr
+{
+    background: #ffffff none repeat scroll 0 0;
+}
+#pointDtlTbl td
+{
+    color: #000000;
+    padding: 8px;
+    /*border-le*/
+} 
+ .hideHousehold { display: none !important; }
+#liFirstAge { margin-top: 2% !important; }
+.liAgeddl { width: 9em !important; }
+.lblAge { margin-top: 0.1em !important; }
+.inputAgeFields { width: 50%; }
+.txtAge { background-color: #D6D6D6; border-style: ridge; }
+.ddlAge { padding: 1px 0px; }
+
+#liJoinFirstAge { width: 8em !important; }
+.liJoinAgeddl { width: 11em !important; }
+
+ .accountUnlock
+{
+    background-color:#FF0000;
+    padding: 0;
+    margin: 0 20px 0 205px;
+    color: #ffffff!important;
+    border-radius: 8px;
+    overflow: auto;
+}
+.btnUnlock
+{
+    background-color:#e57e24;
+    border-radius: 8px;
+    min-height: 8px;
+    margin: 2px 5px;
+    float: right;
+    border: 1px solid #c10505!important;
+    color: #ffffff!important;
+    padding: 10px 30px 10px 30px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.statusUnlock
+{
+ float: left; 
+ padding: 8px 0 10px 10px;  
+}
+.statusUnlock span
+{
+ font-size: 130%;
+}
+.alertMsgsCustomerDetail
+{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0px;
+}
+.UnlockError
+{
+    min-height: 8px;
+    margin: 2px 5px;
+    float: right;
+    color: #ffffff!important;
+    padding: 10px 30px 10px 30px;
+    font-weight:bold;    
+}

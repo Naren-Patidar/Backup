@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestingData>
+  <TestData_AccountDetails ID="DBT">
+    <Clubcard>634004024022388518</Clubcard>
+    <NoActiveCouponClubcard>634009480000000000</NoActiveCouponClubcard>
+    <ClubcardforDate>634009480000000002</ClubcardforDate>
+    <Password>cco1234</Password>
+    <EmailID/>
+  </TestData_AccountDetails>
+  <TestData_AccountDetails ID="GD">
+    <Clubcard>634009480000000002</Clubcard>
+    <NoActiveCouponClubcard>634009480000000000</NoActiveCouponClubcard>
+    <ClubcardforDate>634009480000000002</ClubcardforDate>
+    <Password>cco1234</Password>
+    <EmailID/>
+  </TestData_AccountDetails>
+  <TestData_AccountDetails ID="PPE">
+    <Clubcard>634009480639896399</Clubcard>
+    <Clubcard1>634004024022388518</Clubcard1>
+    <Clubcard2>634004024022388518</Clubcard2>
+    <BlockedClubcard>634004850161090915</BlockedClubcard>
+    <Password></Password>
+    <EmailID></EmailID>
+    <ClubcardforDate>634009480639896399</ClubcardforDate>
+    <ClubcardforHouseholdID>634004024057524755</ClubcardforHouseholdID>
+  </TestData_AccountDetails>
+  <TestData_Activation ID="DBT">
+    <Clubcard>634004850161090915</Clubcard>
+    <SpecialChars>spec!@l</SpecialChars>
+    <SpaceChar> </SpaceChar>
+    <AlphabetChar>ALPHABET</AlphabetChar>
+    <Numbers>123456</Numbers>
+    <CSCUsername>SVC-HU-IIS-NGC-APP</CSCUsername>
+    <CSCPassword>NCQU8V7f5q</CSCPassword>
+  </TestData_Activation>
+
+
+  <TestData_Activation ID="PPE">
+    <Email>box</Email>
+    <Password>abcd@1234</Password>
+    <Repassword>abcd@1234</Repassword>
+  </TestData_Activation>
+  <TestData_HomeSecurity ID="DBT">
+    <SpecialChars>#</SpecialChars>
+    <SpaceChar> </SpaceChar>
+    <AlphabetChar>A</AlphabetChar>
+  </TestData_HomeSecurity>
+  <TestData_Voucher ID="DBT">
+    <ActiveClubcard>634009480000000002</ActiveClubcard>
+    <TopUpClubcard>634009480000000002</TopUpClubcard>
+    <BonusClubCard>634009480000000002</BonusClubCard>
+    <RedeemedClubCard>634009507000000002</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher>
+  <TestData_Voucher ID="GD">
+    <ActiveClubcard>634009480000000002</ActiveClubcard>
+    <TopUpClubcard>634009480000000002</TopUpClubcard>
+    <BonusClubCard>634009480000000002</BonusClubCard>
+    <RedeemedClubCard>634009480000000002</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher>
+  <TestData_PersonalDetails ID="GD">
+    <ValidPostode>al74fg</ValidPostode>
+    <InvalidPostcode>@ALfdsf</InvalidPostcode>
+    <SpacePostcode>A B 515NP</SpacePostcode>
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>Auto</Name1>
+    <InvalidName1>1!*</InvalidName1>
+    <ProfaneName1>WHOREHOUSE</ProfaneName1>
+    <Name2>AA</Name2>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2>ho</ProfaneName2>
+    <Name3>Tester</Name3>
+    <InvalidName3>1!*</InvalidName3>
+    <ProfaneName3>WHOREHOUSE</ProfaneName3>
+    <MailingAddressPostCode>AL74FG</MailingAddressPostCode>
+    <HouseNoOrName>12</HouseNoOrName>
+    <ProfaneHouseName>WHOREHOUSE</ProfaneHouseName>
+    <InvalidMailingAddressPostCode>AL6621</InvalidMailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <EveningPhoneNumber>07</EveningPhoneNumber>
+    <InvalidEveningPhoneNumber>12</InvalidEveningPhoneNumber>
+    <MobilePhoneNumber>07</MobilePhoneNumber>
+    <InvalidMobilePhoneNumber>12</InvalidMobilePhoneNumber>
+    <DayTimePhoneNumber>07</DayTimePhoneNumber>
+    <InvalidDayTimePhoneNumber>12</InvalidDayTimePhoneNumber>
+    <MailingAddressLine1>Street No 1</MailingAddressLine1>
+    <ProfaneMailingAddressLine1>WHOREHOUSE</ProfaneMailingAddressLine1>
+    <MailingAddressLine2>Road 13</MailingAddressLine2>
+    <ProfaneMailingAddressLine2>WHOREHOUSE</ProfaneMailingAddressLine2>
+    <MailingAddressLine4>Cross 14</MailingAddressLine4>
+    <ProfaneMailingAddressLine4>WHOREHOUSE</ProfaneMailingAddressLine4>
+    <MailingAddressLine5>AddressLine 2</MailingAddressLine5>
+    <ProfaneMailingAddressLine5>WHOREHOUSE</ProfaneMailingAddressLine5>
+    <InvalidMailingAddressLine1>ABC%$$#$</InvalidMailingAddressLine1>
+    <InvalidMailingAddressLine2>4345ABC%$$#$</InvalidMailingAddressLine2>
+    <InvalidMailingAddressLine3>*%#A</InvalidMailingAddressLine3>
+    <InvalidMailingAddressLine4>NH_+_)</InvalidMailingAddressLine4>
+    <InvalidMailingAddressLine5>#@#$</InvalidMailingAddressLine5>
+    <InvalidMailingAddressLine6>ADDRESS*$#R</InvalidMailingAddressLine6>
+  </TestData_PersonalDetails>
+</TestingData>

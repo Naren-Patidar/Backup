@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{784142B2-5426-4075-9F1A-B1E3DFBF349F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClubcardCouponServices</RootNamespace>
+    <AssemblyName>ClubcardCouponServices</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClubcardCouponService.svc" />
+    <Content Include="DataSource\GetAvailableCoupons\122221839\122221839.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\149576376\149576376.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\15803\15803.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\167809018\167809018.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\1943149\1943149.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\2019912239\2019912239.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\2048392\2048392.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\2071632850\2071632850.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\215334811\215334811.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\2157\2157.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\26087395\26087395.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\26792924\26792924.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\275661713\275661713.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\37756105\37756105.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\37810566\37810566.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\40933675\40933675.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\415913750\415913750.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\444444\444444.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\49249309\49249309.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\499785952\499785952.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\555555\555555.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\59248589\59248589.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\604860\604860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\604861\604861.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\604862\604862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\604863\604863.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\63538948\63538948.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\652158352\652158352.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\666666\666666.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\704860\704860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\704861\704861.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\704862\704862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\704863\704863.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\777777\777777.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\8199\8199.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\870004\870004.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\874736\874736.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\888888\888888.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\999999\999999.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\804860\804860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\804861\804861.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\804862\804862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\904860\904860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\904862\904862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\104860\104860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\104861\104861.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\104862\104862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\204860\204860.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\204861\204861.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\204862\204862.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123026242\123026242.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123026240\123026240.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123026241\123026241.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\604864\604864.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123456\123456.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123026243\123026243.xml" />
+    <Content Include="DataSource\GetAvailableCoupons\123026244\123026244.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\15803\15803.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\1943149\1943149.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\2048392\2048392.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\26087395\26087395.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\8199\8199.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\870004\870004.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\cs-CZ\874736\874736.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\149576376\149576376.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\26087395\26087395.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\26792924\26792924.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\275661713\275661713.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\2157\2157.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\40933675\40933675.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\59248589\59248589.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\49249309\49249309.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\63538948\63538948.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\37756105\37756105.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\122221839\122221839.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\2071632850\2071632850.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\37810566\37810566.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\215334811\215334811.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\415913750\415913750.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\2019912239\2019912239.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\499785952\499785952.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\652158352\652158352.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\888888\888888.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\999999\999999.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\777777\777777.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\444444\444444.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\555555\555555.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\666666\666666.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\167809018\167809018.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123026242\123026242.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123026241\123026241.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123026240\123026240.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123456\123456.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123026243\123026243.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\123026244\123026244.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-MY\104860\104860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-MY\104861\104861.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-MY\104862\104862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\hu-HU\904860\904860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\hu-HU\904862\904862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\pl-PL\804860\804860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\pl-PL\804861\804861.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\pl-PL\804862\804862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\604862\604862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\1943149\1943149.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\604861\604861.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\26087395\26087395.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\604860\604860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\870004\870004.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\604863\604863.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetRedeemedCoupons\sk-SK\604864\604864.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\704860\704860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\704861\704861.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\704862\704862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\704863\704863.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\870004\870004.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\th-TH\874736.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\tr-TR\204860\204860.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\tr-TR\204861\204861.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\tr-TR\204862\204862.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\tr-TR\874736.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\hu-HU\874736.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-IE\874736.xml" />
+    <Content Include="DataSource\GetRedeemedCoupons\en-GB\874736\874736.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClubcardCouponService.svc.cs">
+      <DependentUpon>ClubcardCouponService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\RedeemType.cs" />
+    <Compile Include="Entities\RedemptionInfo.cs" />
+    <Compile Include="Entities\CouponLineTextInfo.cs" />
+    <Compile Include="Entities\CouponClass.cs" />
+    <Compile Include="Entities\CouponInformation.cs" />
+    <Compile Include="IClubcardCouponService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\ClubcardCouponServicesProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceUtility\ServiceUtility.csproj">
+      <Project>{C71BE56F-960E-48A4-86AA-5B995349E106}</Project>
+      <Name>ServiceUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17244</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

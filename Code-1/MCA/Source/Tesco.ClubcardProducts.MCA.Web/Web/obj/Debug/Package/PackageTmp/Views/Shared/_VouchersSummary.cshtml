@@ -1,0 +1,32 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.VoucherRewardDetailsOverallSummaryModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@{
+    bool isSpendOnlineDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableSpendOnline].ConfigurationValue1.TryParse<bool>();
+    bool isDecimalDisabled = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][DbConfigurationItemNames.DisableCurrencyDecimal].ConfigurationValue1.TryParse<bool>();
+}
+<div class="l-delta gutters equal-tall">
+    @if (isDecimalDisabled)
+    {
+        <div id="lblTotalVoucherIssuedLastTwoYears" class="l-column">
+            @Html.Partial("_VouchersIssued", GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.TotalVoucherIssuedLastTwoYears.TryParse<string>()).TryParse<decimal>())
+        </div>
+        <div id="lblTotalRewardUsed" class="l-column">
+            @Html.Partial("_VouchersRewardUsed", GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.TotalRewardUsed.TryParse<string>()).TryParse<decimal>())
+        </div>
+        <div id="lblTotalRewardLeftOver" class="l-column">
+            @Html.Partial("_VouchersRewardLeftOver", GeneralUtility.GetDecimalTrimmedCurrencyVal(Model.TotalRewardLeftOver.TryParse<string>()).TryParse<decimal>())
+        </div>
+    }
+    else
+    {
+        <div id="lblVouchersIssued" class="l-column">@Html.Partial("_VouchersIssued", Model.TotalVoucherIssuedLastTwoYears)</div>
+        
+        <div id="lblVouchersRewardUsed" class="l-column">@Html.Partial("_VouchersRewardUsed", Model.TotalRewardUsed)</div>     
+        
+        <div id="lblVouchersRewardLeftOver" class="l-column">@Html.Partial("_VouchersRewardLeftOver", Model.TotalRewardLeftOver)</div> 
+    }
+    
+</div>

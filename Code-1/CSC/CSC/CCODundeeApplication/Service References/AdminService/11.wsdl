@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tesco.com/clubcardonline/datacontract/2011/11" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tesco.com/clubcardonline/datacontract/2011/11" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tesco.com/clubcardonline/datacontract/2011/11/Imports">
+      <xsd:import namespace="http://tesco.com/clubcardonline/datacontract/2011/11" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdminService_AddRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddRoleCapability_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoleCapability" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddRoleCapability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoleCapabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddRoleMembership_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoleMembership" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddRoleMembership_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRoleMembershipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_DeleteRoleMembership_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleMembership" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_DeleteRoleMembership_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleMembershipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_GetCapabilty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapabilty" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_GetCapabilty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCapabiltyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_RemoveCapability_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveCapability" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_RemoveCapability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveCapabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_IsAdminUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAdminUser" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_IsAdminUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAdminUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_SearchRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRole" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_SearchRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdateRoleDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdateRoleDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_ViewRoleCapability_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRoleCapability" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_ViewRoleCapability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRoleCapabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_ViewRoleMembership_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRoleMembership" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_ViewRoleMembership_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewRoleMembershipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_GetPromotionCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionCode" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_GetPromotionCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromotionCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddPromotionCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPromotionCode" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_AddPromotionCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPromotionCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdatePromotionCodePC_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePromotionCodePC" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdatePromotionCodePC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePromotionCodePCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdatePromotionCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePromotionCode" />
+  </wsdl:message>
+  <wsdl:message name="IAdminService_UpdatePromotionCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePromotionCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdminService">
+    <wsdl:operation name="AddRole">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRole" message="tns:IAdminService_AddRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleResponse" message="tns:IAdminService_AddRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRoleCapability">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleCapability" message="tns:IAdminService_AddRoleCapability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleCapabilityResponse" message="tns:IAdminService_AddRoleCapability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRoleMembership">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleMembership" message="tns:IAdminService_AddRoleMembership_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleMembershipResponse" message="tns:IAdminService_AddRoleMembership_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleMembership">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/DeleteRoleMembership" message="tns:IAdminService_DeleteRoleMembership_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/DeleteRoleMembershipResponse" message="tns:IAdminService_DeleteRoleMembership_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCapabilty">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetCapabilty" message="tns:IAdminService_GetCapabilty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetCapabiltyResponse" message="tns:IAdminService_GetCapabilty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveCapability">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/RemoveCapability" message="tns:IAdminService_RemoveCapability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/RemoveCapabilityResponse" message="tns:IAdminService_RemoveCapability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAdminUser">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/IsAdminUser" message="tns:IAdminService_IsAdminUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/IsAdminUserResponse" message="tns:IAdminService_IsAdminUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchRole">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/SearchRole" message="tns:IAdminService_SearchRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/SearchRoleResponse" message="tns:IAdminService_SearchRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleDetails">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdateRoleDetails" message="tns:IAdminService_UpdateRoleDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdateRoleDetailsResponse" message="tns:IAdminService_UpdateRoleDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewRoleCapability">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleCapability" message="tns:IAdminService_ViewRoleCapability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleCapabilityResponse" message="tns:IAdminService_ViewRoleCapability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewRoleMembership">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleMembership" message="tns:IAdminService_ViewRoleMembership_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleMembershipResponse" message="tns:IAdminService_ViewRoleMembership_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionCode">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetPromotionCode" message="tns:IAdminService_GetPromotionCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetPromotionCodeResponse" message="tns:IAdminService_GetPromotionCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPromotionCode">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddPromotionCode" message="tns:IAdminService_AddPromotionCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddPromotionCodeResponse" message="tns:IAdminService_AddPromotionCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePromotionCodePC">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCodePC" message="tns:IAdminService_UpdatePromotionCodePC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCodePCResponse" message="tns:IAdminService_UpdatePromotionCodePC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePromotionCode">
+      <wsdl:input wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCode" message="tns:IAdminService_UpdatePromotionCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCodeResponse" message="tns:IAdminService_UpdatePromotionCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

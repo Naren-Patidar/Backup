@@ -1,0 +1,45 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@model PointsViewModel
+@{
+    ViewBag.Title = @Html.Translate("Shared/_Points", "PageTitle");
+    ViewBag.dtmTitle = @Html.Translate("Shared/_Points", "PageTitle");
+    ViewBag.PageName = "Points";
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("Shared/_Points", "lblMyPoints")</h1>
+            @if (!Model.IsPointEarnedEver)
+            {
+                        <p>
+                            @Html.Translate("Shared/_Points", "lblEasyEarn")</p>
+                        <p>
+                            @Html.Translate("Shared/_Points", "lblFrmTesco")<span>
+                                @if (GeneralUtility.IsExternalLink(@Resources.ConfigLinks.PntHCalculatorClickhere.ToString()))
+                                {                  
+                                    <a href='@Resources.ConfigLinks.PntHCalculatorClickhere' target="_blank">
+                                        @Html.Translate("Shared/_Points", "lblClickHere")</a>
+                                }
+                                else
+                                {
+                                    <a href='@Resources.ConfigLinks.PntHCalculatorClickhere' target="">
+                                        @Html.Translate("Shared/_Points", "lblClickHere")</a>                 
+                                }
+                            </span>
+                        </p>
+                @Html.Partial("_PointsSummary", Model)
+            }
+            else
+            {
+                @Html.Partial("_PointsSummary", Model)
+                @Html.Partial("_PointCollectionPeriod", Model.Offers)
+            }
+        </div>
+    </div>
+</div>

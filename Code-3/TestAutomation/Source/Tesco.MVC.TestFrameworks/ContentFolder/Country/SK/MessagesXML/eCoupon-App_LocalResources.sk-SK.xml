@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Coupons-App_LocalResources>
+  <Home.cshtml.sk-SK.resx>
+    <Data key="CouponSummaryHeader" value="Prehľad kupónov:" />
+    <Data key="Description" value="V tejto sekcií si môžete pozrieť súhrn vašich kupónov, ktoré vám boli zaslané za posledných 6 mesiacov. Aktívne kupóny si môžete vytlačiť a následne uplatniť pri vašom najbližšom nákupe. Už použité kupóny nájdete &lt;a href=&quot;#RedeemedCoupons&quot; id=&quot;LinkOnHome&quot;&gt;tu.&lt;/a&gt;" />
+    <Data key="ErrorCouponsDetail" value="Could not fetch your Coupons Details." />
+    <Data key="ErrorCouponsHome" value="There is some error in fetching your coupons." />
+    <Data key="ErrorCouponsPreview" value="Cannot preview your Coupon" />
+    <Data key="HoldingPageDescriptionPart1" value="Myní vám zasíláme kupóny, které se dají využít v kamenném obchodě. Pokud byste si místo nich přáli obdržet eKupóny, které můžete využít k nakupování online, běžte na" />
+    <Data key="HoldingPageDescriptionPart2" value="Moje nastavení" />
+    <Data key="HoldingPageDescriptionPart3" value="možnosti k eKupónům" />
+    <Data key="HoldingPageDescriptionPart4" value="Chcete-li získat další informace," />
+    <Data key="HoldingPageDescriptionPart5" value="Klikněte zde" />
+    <Data key="PageTitle" value="Moje kupóny" />
+    <Data key="PDFTitleCoupon" value="kupóny" />
+    <Data key="strCouponUsed" value="kupóny Uplatnené" />
+    <Data key="strCouponVoided" value="kupóny Uplatnené" />
+    <Data key="strOf" value="/" />
+    <Data key="SummaryHeading" value="Prehľad kupónov:" />
+  </Home.cshtml.sk-SK.resx>
+  <_CouponHowToUse.cshtml.sk-SK.resx>
+    <Data key="Heading" value="Ako vytlačiť vaše kupóny:" />
+    <Data key="InStoreHeading" value="Štyri jednoduché kroky pre tlač kupónov" />
+    <Data key="InStoreHtml" value="&lt;ol&gt;&lt;li&gt;Vyberte kupóny, ktoré si želáte vytlačiť&lt;/li&gt;&lt;li&gt;Kliknite na &quot;vytlačiť vybrané kupóny&quot;&lt;/li&gt;&lt;li&gt;Vybrané kupóny Vám budú zobrazené k vytlačeniu&lt;/li&gt;&lt;li&gt;Kliknite na ikonu tlače&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="OnlineHeading" value="Online eCode:" />
+    <Data key="OnlineHtml" value="&lt;ol&gt;&lt;li&gt;our coupons will be waiting for you at the Tesco groceries checkout&lt;/li&gt;&lt;li&gt;Simply select those you want to use and complete your shopping&lt;/li&gt;&lt;/ol&gt;" />
+  </_CouponHowToUse.cshtml.sk-SK.resx>
+  <_CouponsAvailable.cshtml.sk-SK.resx>
+    <Data key="CouponHeaderLable" value="Označ kupón" />
+    <Data key="ExpireLable" value="Platné do :" />
+    <Data key="FooterLable" value="Prosím, vytlačte na biely papier čiernobielo, alebo farebne. Rozmazané, alebo inak poškodené čiarové kódy nemusia byť pri nákupe akceptované. Poukážky môžete tlačiť viackrát, použité však môžu byť a budú iba jeden krát." />
+    <Data key="Heading" value="Moje aktívne kupóny" />
+    <Data key="NoCouponSeletedError" value="Vyberte prosím kupóny a zkúste znova. Ďakujeme." />
+    <Data key="NoCouponsLable" value="V túto chvíľu nemáte žiadne aktívne kupóny. Opäť sa prídte pozrieť už čoskoro." />
+    <Data key="OnlineCodeLable" value="Online eCode:" />
+    <Data key="PrintBtnLable" value="vytlačiť vybrané kupóny" />
+    <Data key="RedemptionsRemainingLable" value="Počet zostávajúcich :" />
+    <Data key="SelectBtnLable" value="Vybrať všetko" />
+    <Data key="SubHeading" value="Tieto kupóny sú pripravené k použitiu. Prečítajte si prosím panel na ľavej strane pre viac informácií o tom, ako si vytlačiť kupóny" />
+  </_CouponsAvailable.cshtml.sk-SK.resx>
+  <_CouponsBox.cshtml.sk-SK.resx>
+    <Data key="CouponAvailableLable" value="Počet kupónov, ktoré môžete uplatniť" />
+    <Data key="CouponsSentLable" value="Počet kupónov za posledných 6 mesiacov" />
+    <Data key="CouponUsedLable" value="Počet kupónov, ktoré ste  uplatnili za posledné 4 týždne" />
+  </_CouponsBox.cshtml.sk-SK.resx>
+  <_CouponsUsed.cshtml.sk-SK.resx>
+    <Data key="IssueDateLable" value="Datum vydání" />
+    <Data key="NoRedeemptionMessage" value="Za posledné 4 týždne ste neuplatnili žiadne kupóny." />
+    <Data key="OfferLable" value="Nabídka" />
+    <Data key="RedeemedDateLable" value="Dátum uplatnenia" />
+    <Data key="RedeemedLocationLable" value="Kde uplatnené" />
+    <Data key="RedemptionCountLable" value="Počet uplatnení" />
+    <Data key="UsedCouponSectionHeading" value="Kupóny, ktoré ste využili za posledné 4 týždne" />
+    <Data key="UsedLable" value="Uplatnené" />
+  </_CouponsUsed.cshtml.sk-SK.resx>
+</Coupons-App_LocalResources>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!-- The name of this fragment -->
+  <Fragment Id ="AppFiles">
+    <DirectoryRef Id="INSTALLMYACCOUNT">
+      <Component Id="BaseFiles" Guid="52FFD7A5-FD79-40F9-B26E-CF45CA61143A" DiskId="1" KeyPath="yes">
+        <File Id="BaseFilesFile0" Name="config.rb" Source="$(var.SolutionDir)..\Web\config.rb" Vital="yes" />
+        <File Id="BaseFilesFile1" Name="Global.asax" Source="$(var.SolutionDir)..\Web\Global.asax" Vital="yes" />
+
+        <File Id="BaseFilesFile3" Name="packages.config" Source="$(var.SolutionDir)..\Web\packages.config" Vital="yes" />
+        <!--<File Id="BaseFilesFile4" Name="Web.config" Source="$(var.SolutionDir)..\Web\Web.config" Vital="yes" />-->
+
+      </Component>
+      <!--<Directory Id="App_Data" Name="App_Data">
+</Directory>
+<Directory Id="App_GlobalResources" Name="App_GlobalResources">
+<Component Id="App_GlobalResources" Guid="436508f4-84cc-4b00-bf74-b357489ea4cd" DiskId="1" KeyPath="yes">
+	<File Id="App_GlobalResourcesFile0" Name="ConfigLinks.en-GB.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\ConfigLinks.en-GB.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile1" Name="ConfigLinks.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\ConfigLinks.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile2" Name="GenerateVouchersPDF.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\GenerateVouchersPDF.cs-CZ.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile3" Name="GenerateVouchersPDF.designer.cs" Source="$(var.SolutionDir)..\Web\App_GlobalResources\GenerateVouchersPDF.designer.cs" Vital="yes" />
+	<File Id="App_GlobalResourcesFile4" Name="GenerateVouchersPDF.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\GenerateVouchersPDF.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile5" Name="GenerateVouchersPDF.tr-TR.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\GenerateVouchersPDF.tr-TR.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile6" Name="Messages.en-GB.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\Messages.en-GB.resx" Vital="yes" />
+	<File Id="App_GlobalResourcesFile7" Name="Messages.resx" Source="$(var.SolutionDir)..\Web\App_GlobalResources\Messages.resx" Vital="yes" />
+</Component>
+</Directory>-->
+      <Directory Id="bin" Name="bin">
+        <Component Id="bin" Guid="3822B0A7-C34B-4391-B874-B507507047C0" DiskId="1" KeyPath="yes">
+          <File Id="binFile0" Name="Antlr3.Runtime.dll" Source="$(var.SolutionDir)..\Web\bin\Antlr3.Runtime.dll" Vital="yes" />
+          <File Id="binFile1" Name="AutoMapper.dll" Source="$(var.SolutionDir)..\packages\Automapper.4.1.1\lib\net40\AutoMapper.dll" Vital="yes" />
+          <File Id="binFile2" Name="BarcodeLib.dll" Source="$(var.SolutionDir)..\Web\bin\BarcodeLib.dll" Vital="yes" />
+          <File Id="binFile3" Name="EntityFramework.dll" Source="$(var.SolutionDir)..\Web\bin\EntityFramework.dll" Vital="yes" />
+          <File Id="binFile4" Name="Microsoft.Practices.ServiceLocation.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.ServiceLocation.dll" Vital="yes" />
+
+
+          <File Id="binFile6" Name="Microsoft.Practices.Unity.Configuration.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.Unity.Configuration.dll" Vital="yes" />
+
+          <File Id="binFile7" Name="Microsoft.Practices.Unity.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.Unity.dll" Vital="yes" />
+
+          <File Id="binFile8" Name="Microsoft.Web.Infrastructure.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Web.Infrastructure.dll" Vital="yes" />
+          <File Id="binFile9" Name="Newtonsoft.Json.dll" Source="$(var.SolutionDir)..\Web\bin\Newtonsoft.Json.dll" Vital="yes" />
+          <File Id="binFile10" Name="NLog.dll" Source="$(var.SolutionDir)..\Web\bin\NLog.dll" Vital="yes" />
+          <File Id="binFile11" Name="NLog.Extended.dll" Source="$(var.SolutionDir)..\Web\bin\NLog.Extended.dll" Vital="yes" />
+          <File Id="binFile12" Name="NLog.Web.dll" Source="$(var.SolutionDir)..\Web\bin\NLog.Web.dll" Vital="yes" />
+
+
+          <File Id="binFile13" Name="PdfSharp.dll" Source="$(var.SolutionDir)..\Web\bin\PdfSharp.dll" Vital="yes" />
+          <File Id="binFile14" Name="System.IO.dll" Source="$(var.SolutionDir)..\Web\bin\System.IO.dll" Vital="yes" />
+
+          <File Id="binFile15" Name="System.Net.Http.dll" Source="$(var.SolutionDir)..\Web\bin\System.Net.Http.dll" Vital="yes" />
+          <File Id="binFile16" Name="System.Net.Http.Formatting.dll" Source="$(var.SolutionDir)..\Web\bin\System.Net.Http.Formatting.dll" Vital="yes" />
+          <File Id="binFile17" Name="System.Net.Http.WebRequest.dll" Source="$(var.SolutionDir)..\Web\bin\System.Net.Http.WebRequest.dll" Vital="yes" />
+          <File Id="binFile18" Name="System.Runtime.dll" Source="$(var.SolutionDir)..\Web\bin\System.Runtime.dll" Vital="yes" />
+
+          <File Id="binFile19" Name="System.Threading.Tasks.dll" Source="$(var.SolutionDir)..\Web\bin\System.Threading.Tasks.dll" Vital="yes" />
+          <File Id="binFile20" Name="System.Web.Http.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Http.dll" Vital="yes" />
+          <File Id="binFile21" Name="PointsSummarySequencing.dll" Source="$(var.SolutionDir)..\Web\bin\PointsSummarySequencing.dll" Vital="yes" />
+
+          <File Id="binFile22" Name="System.Web.Http.WebHost.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Http.WebHost.dll" Vital="yes" />
+          <File Id="binFile23" Name="System.Web.Mvc.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Mvc.dll" Vital="yes" />
+          <File Id="binFile24" Name="System.Web.Optimization.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Optimization.dll" Vital="yes" />
+          <File Id="binFile25" Name="System.Web.Providers.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Providers.dll" Vital="yes" />
+          <File Id="binFile26" Name="System.Web.Razor.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.Razor.dll" Vital="yes" />
+          <File Id="binFile27" Name="System.Web.WebPages.Deployment.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.WebPages.Deployment.dll" Vital="yes" />
+          <File Id="binFile28" Name="System.Web.WebPages.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.WebPages.dll" Vital="yes" />
+          <File Id="binFile29" Name="System.Web.WebPages.Razor.dll" Source="$(var.SolutionDir)..\Web\bin\System.Web.WebPages.Razor.dll" Vital="yes" />
+          <File Id="binFile30" Name="Tesco.ClubcardProducts.MCA.Web.Business.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.ClubcardProducts.MCA.Web.Business.dll" Vital="yes" />
+          <File Id="binFile31" Name="Tesco.ClubcardProducts.MCA.Web.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.ClubcardProducts.MCA.Web.dll" Vital="yes" />
+          <File Id="binFile32" Name="Tesco.ClubcardProducts.MCA.Web.Common.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.ClubcardProducts.MCA.Web.Common.dll" Vital="yes" />
+
+          <File Id="binFile33" Name="Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.dll" Vital="yes" />
+
+          <File Id="binFile34" Name="Tesco.Com.Framework.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.dll" Vital="yes" />
+          <File Id="binFile35" Name="Tesco.Com.Framework.Security.Cryptography.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Security.Cryptography.dll" Vital="yes" />
+          <File Id="binFile36" Name="Tesco.Com.Framework.Security.ReferenceMonitor.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Security.ReferenceMonitor.dll" Vital="yes" />
+          <File Id="binFile37" Name="Tesco.Com.Framework.Security.Tokens.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Security.Tokens.dll" Vital="yes" />
+          <File Id="binFile38" Name="Tesco.Com.Framework.Services.Configuration.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Services.Configuration.dll" Vital="yes" />
+          <File Id="binFile39" Name="Tesco.Com.Framework.Services.Security.AccessControl.Auditing.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Services.Security.AccessControl.Auditing.dll" Vital="yes" />
+          <File Id="binFile40" Name="Tesco.Com.Framework.Services.Security.AccessControl.Authorisation.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Services.Security.AccessControl.Authorisation.dll" Vital="yes" />
+          <File Id="binFile41" Name="Tesco.Com.Framework.Services.Security.AccessControl.Identification.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Services.Security.AccessControl.Identification.dll" Vital="yes" />
+          <File Id="binFile42" Name="Tesco.Com.Framework.Services.Security.KeyManagement.MaterialStore.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Framework.Services.Security.KeyManagement.MaterialStore.dll" Vital="yes" />
+          <File Id="binFile43" Name="Tesco.Com.Security.Encryption.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Security.Encryption.dll" Vital="yes" />
+          <File Id="binFile44" Name="Tesco.Com.Security.Tokenisation.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.Com.Security.Tokenisation.dll" Vital="yes" />
+          <File Id="binFile45" Name="Common.Logging.dll" Source="$(var.SolutionDir)..\Web\bin\Common.Logging.dll" Vital="yes" />
+          <File Id="binFile46" Name="Common.Logging.dll" Source="$(var.SolutionDir)..\Web\bin\JWT.dll" Vital="yes" />
+          <File Id="binFile47" Name="Microsoft.ApplicationBlocks.ExceptionManagement.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.ApplicationBlocks.ExceptionManagement.dll" Vital="yes" />
+          <File Id="binFile48" Name="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll" Vital="yes" />
+          <File Id="binFile49" Name="Microsoft.Practices.EnterpriseLibrary.Common.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" Vital="yes" />
+          <File Id="binFile50" Name="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" Vital="yes" />
+          <File Id="binFile51" Name="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" Vital="yes" />
+          <File Id="binFile52" Name="Microsoft.Practices.EnterpriseLibrary.Logging.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" Vital="yes" />
+          <File Id="binFile53" Name="Microsoft.Practices.ObjectBuilder2.dll" Source="$(var.SolutionDir)..\Web\bin\Microsoft.Practices.ObjectBuilder2.dll" Vital="yes" />
+          <File Id="binFile54" Name="NGCTrace.dll" Source="$(var.SolutionDir)..\Web\bin\NGCTrace.dll" Vital="yes" />
+          <!--<File Id="binFile55" Name="ServiceStack.Text.dll" Source="$(var.SolutionDir)..\Web\bin\ServiceStack.Text.dll" Vital="yes" />-->
+          <File Id="binFile56" Name="Spring.Aop.dll" Source="$(var.SolutionDir)..\Web\bin\Spring.Aop.dll" Vital="yes" />
+          <File Id="binFile57" Name="Spring.Core.dll" Source="$(var.SolutionDir)..\Web\bin\Spring.Core.dll" Vital="yes" />
+          <File Id="binFile58" Name="BotDetect.dll" Source="$(var.SolutionDir)..\Web\bin\BotDetect.dll" Vital="yes" />
+          <File Id="binFile59" Name="WebGrease.dll" Source="$(var.SolutionDir)..\Web\bin\WebGrease.dll" Vital="yes" />
+          <File Id="binFile60" Name="BotDetect.Web.UI.Mvc.dll" Source="$(var.SolutionDir)..\Web\bin\BotDetect.Web.UI.Mvc.dll" Vital="yes" />
+          <File Id="binFile61" Name="HtmlSanitizationLibrary.dll" Source="$(var.SolutionDir)..\Web\bin\HtmlSanitizationLibrary.dll" Vital="yes" />
+          <File Id="binFile62" Name="AntiXssLibrary.dll" Source="$(var.SolutionDir)..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll" Vital="yes" />
+          <File Id="binFile63" Name="JWT.dll" Source="$(var.SolutionDir)..\MCAReferenceDLLS\JWT.dll" Vital="yes" />
+          <File Id="binFile64" Name="Tesco.ClubcardProducts.MCA.Web.RestClient.dll" Source="$(var.SolutionDir)..\Web\bin\Tesco.ClubcardProducts.MCA.Web.RestClient.dll" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="Config" Name="Config">
+        <Component Id="Config" Guid="53DD2827-187E-422A-A309-6C51E496D05F" DiskId="1" KeyPath="yes">
+          <!--<File Id="ConfigFile0" Name="Appsettings.config" Source="$(var.SolutionDir)..\Web\Config\Appsettings.config" Vital="yes" />-->
+          <File Id="ConfigFile1" Name="NLog.config" Source="$(var.SolutionDir)..\Web\Config\NLog.config" Vital="yes" />
+          <File Id="ConfigFile2" Name="keys.json" Source="$(var.SolutionDir)..\Web\Config\keys.json" Vital="yes" />
+          <File Id="ConfigFile3" Name="keys_live.json" Source="$(var.SolutionDir)..\Web\Config\keys_live.json" Vital="yes" />
+          <!--<File Id="ConfigFile2" Name="Unity.config" Source="$(var.SolutionDir)..\Web\Config\Unity.config" Vital="yes" />-->
+          <!--<File Id="ConfigFile1" Name="culture.config" Source="$(var.SolutionDir)..\Web\Config\culture.config" Vital="yes" />
+<File Id="ConfigFile2" Name="dbConfiguration.xml" Source="$(var.SolutionDir)..\Web\Config\dbConfiguration.xml" Vital="yes" />
+
+<File Id="ConfigFile5" Name="wcfbehaviors.config" Source="$(var.SolutionDir)..\Web\Config\wcfbehaviors.config" Vital="yes" />
+<File Id="ConfigFile6" Name="wcfclientendpoints.config" Source="$(var.SolutionDir)..\Web\Config\wcfclientendpoints.config" Vital="yes" />
+<File Id="ConfigFile7" Name="wcfstandardbinding.config" Source="$(var.SolutionDir)..\Web\Config\wcfstandardbinding.config" Vital="yes" />-->
+        </Component>
+      </Directory>
+      <Directory Id="Content" Name="Content">
+        <Component Id="Content" Guid="F500049D-48D0-465D-A427-47D7258CC662" DiskId="1" KeyPath="yes">
+          <File Id="ContentFile0" Name="Site.css" Source="$(var.SolutionDir)..\Web\Content\Site.css" Vital="yes" />
+        </Component>
+        
+        <Directory Id="fonts" Name="fonts">
+          <Directory Id="icon" Name="icon">
+            <Component Id="icon" Guid="702AF427-F2D6-46A6-B890-C49433CC4D2F" DiskId="1" KeyPath="yes">
+              <File Id="iconFile0" Name="icomoon.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\icomoon.eot" Vital="yes" />
+              <File Id="iconFile1" Name="icomoon.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\icomoon.svg" Vital="yes" />
+              <File Id="iconFile2" Name="icomoon.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\icomoon.ttf" Vital="yes" />
+              <File Id="iconFile3" Name="icomoon.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\icomoon.woff" Vital="yes" />
+              <File Id="iconFile4" Name="tesco-icons.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\tesco-icons.eot" Vital="yes" />
+              <File Id="iconFile5" Name="tesco-icons.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\tesco-icons.svg" Vital="yes" />
+              <File Id="iconFile6" Name="tesco-icons.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\tesco-icons.ttf" Vital="yes" />
+              <File Id="iconsFile7" Name="tesco-icons.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\icon\tesco-icons.woff" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="tesco" Name="tesco">
+            <Component Id="tesco" Guid="0E84965F-9ABD-4BCE-8F55-2103266E39EA" DiskId="1" KeyPath="yes">
+              <!--<File Id="my_tescoFile0" Name="tesco-icons.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-icons.eot" Vital="yes" />
+              <File Id="my_tescoFile1" Name="tesco-icons.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-icons.svg" Vital="yes" />
+              <File Id="my_tescoFile2" Name="tesco-icons.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-icons.ttf" Vital="yes" />
+              <File Id="my_tescoFile3" Name="tesco-icons.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-icons.woff" Vital="yes" />-->
+              <File Id="my_tescoFile4" Name="tesco-webfont.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-webfont.eot" Vital="yes" />
+              <File Id="my_tescoFile5" Name="tesco-webfont.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-webfont.svg" Vital="yes" />
+              <File Id="my_tescoFile6" Name="tesco-webfont.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-webfont.ttf" Vital="yes" />
+              <File Id="my_tescoFile7" Name="tesco-webfont.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tesco-webfont.woff" Vital="yes" />
+              <File Id="my_tescoFile8" Name="tescob-webfont.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescob-webfont.eot" Vital="yes" />
+              <File Id="my_tescoFile9" Name="tescob-webfont.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescob-webfont.svg" Vital="yes" />
+              <File Id="my_tescoFile10" Name="tescob-webfont.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescob-webfont.ttf" Vital="yes" />
+              <File Id="my_tescoFile11" Name="tescob-webfont.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescob-webfont.woff" Vital="yes" />
+              <File Id="my_tescoFile12" Name="tescoi-webfont.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescoi-webfont.eot" Vital="yes" />
+              <File Id="my_tescoFile13" Name="tescoi-webfont.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescoi-webfont.svg" Vital="yes" />
+              <File Id="my_tescoFile14" Name="tescoi-webfont.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescoi-webfont.ttf" Vital="yes" />
+              <File Id="my_tescoFile15" Name="tescoi-webfont.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tesco\tescoi-webfont.woff" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="tescobold" Name="tescobold">
+            <Component Id="tescobold" Guid="6BDC074D-1C64-49A7-972C-FFB4AD06F290" DiskId="1" KeyPath="yes">
+              <File Id="tescoBold0" Name="Tesco_W_Bd.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tescobold\Tesco_W_Bd.eot" Vital="yes" />
+              <File Id="tescoBold1" Name="Tesco_W_Bd.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tescobold\Tesco_W_Bd.ttf" Vital="yes" />
+              <File Id="tescoBold2" Name="Tesco_W_Bd.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tescobold\Tesco_W_Bd.woff" Vital="yes" />
+              <File Id="tescoBold3" Name="Tesco_W_Bd.woff2" Source="$(var.SolutionDir)..\Web\Content\fonts\tescobold\Tesco_W_Bd.woff2" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="tescoregular" Name="tescoregular">
+            <Component Id="tescoregular" Guid="BA38C8C1-A3E8-48E6-9643-9CDD01C8294C" DiskId="1" KeyPath="yes">
+              <File Id="tescoRegular0" Name="Tesco_W_Rg.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tescoregular\Tesco_W_Rg.eot" Vital="yes" />
+              <File Id="tescoRegular1" Name="Tesco_W_Rg.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tescoregular\Tesco_W_Rg.ttf" Vital="yes" />
+              <File Id="tescoRegular2" Name="Tesco_W_Rg.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tescoregular\Tesco_W_Rg.woff" Vital="yes" />
+              <File Id="tescoRegular3" Name="Tesco_W_Rg.woff2" Source="$(var.SolutionDir)..\Web\Content\fonts\tescoregular\Tesco_W_Rg.woff2" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="tescomodernbold" Name="tescomodernbold">
+            <Component Id="tescomodernbold" Guid="4A032949-E1E2-47EE-A917-A1C8E94E7D65" DiskId="1" KeyPath="yes">
+              <File Id="tescoModernBold0" Name="TESCOModern-Bold-web.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernbold\TESCOModern-Bold-web.eot" Vital="yes" />
+              <File Id="tescoModernBold1" Name="TESCOModern-Bold-web.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernbold\TESCOModern-Bold-web.ttf" Vital="yes" />
+              <File Id="tescoModernBold2" Name="TESCOModern-Bold-web.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernbold\TESCOModern-Bold-web.woff" Vital="yes" />
+              <File Id="tescoModernBold3" Name="TTESCOModern-Bold-web.woff2" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernbold\TESCOModern-Bold-web.woff2" Vital="yes" />
+              <File Id="tescoModernBold4" Name="TESCOModern-Bold-web.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernbold\TESCOModern-Bold-web.svg" Vital="yes" />
+            </Component>
+          </Directory>
+           <Directory Id="tescomodernregular" Name="tescomodernregular">
+            <Component Id="tescomodernregular" Guid="67948B40-4A52-4405-9853-E13E49225A16" DiskId="1" KeyPath="yes">
+              <File Id="tescoModernRegular0" Name="TESCOModern-Regular-web.eot" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernregular\TESCOModern-Regular-web.eot" Vital="yes" />
+              <File Id="tescoModernRegular1" Name="TESCOModern-Regular-web.ttf" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernregular\TESCOModern-Regular-web.ttf" Vital="yes" />
+              <File Id="tescoModernRegular2" Name="TESCOModern-Regular-web.woff" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernregular\TESCOModern-Regular-web.woff" Vital="yes" />
+              <File Id="tescoModernRegular3" Name="TTESCOModern-Regular-web.woff2" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernregular\TESCOModern-Regular-web.woff2" Vital="yes" />
+              <File Id="tescoModernRegular4" Name="TESCOModern-Regular-web.svg" Source="$(var.SolutionDir)..\Web\Content\fonts\tescomodernregular\TESCOModern-Regular-web.svg" Vital="yes" />
+            </Component>
+          </Directory>
+        </Directory>
+        
+        <Directory Id="js" Name="js">
+          <Component Id="js" Guid="AF2FBA5F-6207-48EF-82F0-ECD292815538" DiskId="1" KeyPath="yes">
+            <File Id="jsFile0" Name="main-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\main-1.0.0.js" Vital="yes" />
+            <File Id="jsFile1" Name="coupon-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\coupon-1.0.0.js" Vital="yes" />
+            <File Id="jsFile2" Name="preferences-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\preferences-1.0.0.js" Vital="yes" />
+            <File Id="jsFile4" Name="contactPreferences-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\contactPreferences-1.0.0.js" Vital="yes" />
+            <File Id="jsFile5" Name="personalDetails-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\personalDetails-1.0.0.js" Vital="yes" />
+            <File Id="jsFile6" Name="modal-1.0.0.js" Source="$(var.SolutionDir)..\Web\Content\js\modal-1.0.0.js" Vital="yes" />
+            <File Id="jsFile7" Name="oo_engine.min.js" Source="$(var.SolutionDir)..\Web\Content\js\oo_engine.min.js" Vital="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+
+      <Directory Id="Scripts" Name="Scripts">
+        <Component Id="Scripts" Guid="730BB620-8041-475B-8CB9-036275DF4C97" DiskId="1" KeyPath="yes">
+          <File Id="ScriptsFile0" Name="jquery-1.7.1-vsdoc.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery-1.7.1-vsdoc.js" Vital="yes" />
+          <File Id="ScriptsFile1" Name="jquery-1.7.1.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery-1.7.1.js" Vital="yes" />
+          <File Id="ScriptsFile2" Name="jquery-1.7.1.min.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery-1.7.1.min.js" Vital="yes" />
+          <File Id="ScriptsFile3" Name="jquery-ui-1.8.20.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery-ui-1.8.20.js" Vital="yes" />
+          <File Id="ScriptsFile4" Name="jquery-ui-1.8.20.min.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery-ui-1.8.20.min.js" Vital="yes" />
+          <File Id="ScriptsFile5" Name="jquery.unobtrusive-ajax.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.unobtrusive-ajax.js" Vital="yes" />
+          <File Id="ScriptsFile6" Name="jquery.unobtrusive-ajax.min.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.unobtrusive-ajax.min.js" Vital="yes" />
+          <File Id="ScriptsFile7" Name="jquery.validate-vsdoc.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.validate-vsdoc.js" Vital="yes" />
+          <File Id="ScriptsFile8" Name="jquery.validate.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.validate.js" Vital="yes" />
+          <File Id="ScriptsFile9" Name="jquery.validate.min.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.validate.min.js" Vital="yes" />
+          <File Id="ScriptsFile10" Name="jquery.validate.unobtrusive.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.validate.unobtrusive.js" Vital="yes" />
+          <File Id="ScriptsFile11" Name="jquery.validate.unobtrusive.min.js" Source="$(var.SolutionDir)..\Web\Scripts\jquery.validate.unobtrusive.min.js" Vital="yes" />
+          <File Id="ScriptsFile12" Name="knockout-2.1.0.debug.js" Source="$(var.SolutionDir)..\Web\Scripts\knockout-2.1.0.debug.js" Vital="yes" />
+          <File Id="ScriptsFile13" Name="knockout-2.1.0.js" Source="$(var.SolutionDir)..\Web\Scripts\knockout-2.1.0.js" Vital="yes" />
+          <File Id="ScriptsFile14" Name="modernizr-2.5.3.js" Source="$(var.SolutionDir)..\Web\Scripts\modernizr-2.5.3.js" Vital="yes" />
+          <File Id="ScriptsFile15" Name="_references.js" Source="$(var.SolutionDir)..\Web\Scripts\_references.js" Vital="yes" />
+          <File Id="ScriptsFile16" Name="v_xdfgkeuryt.js" Source="$(var.SolutionDir)..\Web\Scripts\v_xdfgkeuryt.js" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="StatementFormats" Name="StatementFormats">
+        <Component Id="StatementFormats" Guid="ff312415-9257-46f5-b2ef-f71392c502b0" DiskId="1" KeyPath="yes">
+          <File Id="StatementFormatsFile0" Name="1.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\1.xml" Vital="yes" />
+          <File Id="StatementFormatsFile1" Name="21.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\21.xml" Vital="yes" />
+          <File Id="StatementFormatsFile3" Name="10.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\10.xml" Vital="yes" />
+          <File Id="StatementFormatsFile4" Name="100.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\100.xml" Vital="yes" />
+          <File Id="StatementFormatsFile5" Name="111.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\111.xml" Vital="yes" />
+          <File Id="StatementFormatsFile6" Name="114.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\114.xml" Vital="yes" />
+          <File Id="StatementFormatsFile7" Name="126.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\126.xml" Vital="yes" />
+          <File Id="StatementFormatsFile8" Name="132.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\132.xml" Vital="yes" />
+          <File Id="StatementFormatsFile9" Name="14.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\14.xml" Vital="yes" />
+          <File Id="StatementFormatsFile10" Name="143.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\143.xml" Vital="yes" />
+          <File Id="StatementFormatsFile11" Name="148.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\148.xml" Vital="yes" />
+          <File Id="StatementFormatsFile12" Name="150.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\150.xml" Vital="yes" />
+          <File Id="StatementFormatsFile13" Name="153.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\153.xml" Vital="yes" />
+          <File Id="StatementFormatsFile14" Name="17.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\17.xml" Vital="yes" />
+          <File Id="StatementFormatsFile15" Name="170.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\170.xml" Vital="yes" />
+          <File Id="StatementFormatsFile16" Name="181.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\181.xml" Vital="yes" />
+          <File Id="StatementFormatsFile17" Name="19.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\19.xml" Vital="yes" />
+          <File Id="StatementFormatsFile18" Name="199.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\199.xml" Vital="yes" />
+          <File Id="StatementFormatsFile19" Name="200.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\200.xml" Vital="yes" />
+          <File Id="StatementFormatsFile20" Name="201.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\201.xml" Vital="yes" />
+          <File Id="StatementFormatsFile21" Name="211.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\211.xml" Vital="yes" />
+          <File Id="StatementFormatsFile22" Name="212.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\212.xml" Vital="yes" />
+          <File Id="StatementFormatsFile23" Name="216.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\216.xml" Vital="yes" />
+          <File Id="StatementFormatsFile24" Name="5.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\5.xml" Vital="yes" />
+          <File Id="StatementFormatsFile25" Name="51.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\51.xml" Vital="yes" />
+          <File Id="StatementFormatsFile26" Name="8.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\8.xml" Vital="yes" />
+          <File Id="StatementFormatsFile27" Name="81.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\81.xml" Vital="yes" />
+          <File Id="StatementFormatsFile28" Name="83.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\83.xml" Vital="yes" />
+          <File Id="StatementFormatsFile29" Name="87.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\87.xml" Vital="yes" />
+          <File Id="StatementFormatsFile30" Name="006.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\006.xml" Vital="yes" />
+          <File Id="StatementFormatsFile31" Name="128.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\128.xml" Vital="yes" />
+          <File Id="StatementFormatsFile32" Name="194.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\194.xml" Vital="yes" />
+          <File Id="StatementFormatsFile33" Name="248.xml" Source="$(var.SolutionDir)..\Web\StatementFormats\248.xml" Vital="yes" />
+        </Component>
+      </Directory>
+      <Directory Id="Views" Name="Views">
+        <Component Id="Views" Guid="2D356C06-8059-486C-8262-351034E34AA8" DiskId="1" KeyPath="yes">
+
+          <File Id="ViewsFile0" Name="_ViewStart.cshtml" Source="$(var.SolutionDir)..\Web\Views\_ViewStart.cshtml" Vital="yes" />
+          <File Id="ViewsFile1" Name="Web.config" Source="$(var.SolutionDir)..\Web\Views\Web.config" Vital="yes" />
+
+        </Component>
+
+        <Directory Id="Account" Name="Account">
+          <Component Id="Account" Guid="E44D10BD-3D4C-4BA2-9EEB-DBCE7CDD8712" DiskId="1" KeyPath="yes">
+            <File Id="AccountFile0" Name="Login.cshtml" Source="$(var.SolutionDir)..\Web\Views\Account\Login.cshtml" Vital="yes" />
+            <File Id="AccountFile1" Name="SecurityHome.cshtml" Source="$(var.SolutionDir)..\Web\Views\Account\SecurityHome.cshtml" Vital="yes" />
+            <File Id="AccountFile2" Name="DotcomLogin.cshtml" Source="$(var.SolutionDir)..\Web\Views\Account\DotcomLogin.cshtml" Vital="yes" />
+            <File Id="AccountFile3" Name="RedirectTo.cshtml" Source="$(var.SolutionDir)..\Web\Views\Account\RedirectTo.cshtml" Vital="yes" />
+          </Component>
+         
+        </Directory>
+
+        <Directory Id="BoostsAtTesco" Name="BoostsAtTesco">
+          <Component Id="BoostsAtTesco" Guid="DA180A85-8D67-49A0-B8C5-5A9966989D1B" DiskId="1" KeyPath="yes">
+            <File Id="BoostsAtTescoFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\BoostsAtTesco\Home.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+
+        <Directory Id="Activation" Name="Activation">
+
+          <Component Id="Activation" Guid="0FB0A60B-D47B-4A76-A981-32EE2F99825D" DiskId="1" KeyPath="yes">
+
+            <File Id="ActivationFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Activation\Home.cshtml" Vital="yes" />
+            <File Id="ActivationFile1" Name="ActivationStatus.cshtml" Source="$(var.SolutionDir)..\Web\Views\Activation\ActivationStatus.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+
+        <Directory Id="Join" Name="Join">
+
+          <Component Id="Join" Guid="FDCD905B-6DAA-42E3-B368-918E02193D37" DiskId="1" KeyPath="yes">
+
+            <File Id="JoinFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Join\Home.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+
+        <Directory Id="ChristmasSavers" Name="ChristmasSavers">
+          <Component Id="ChristmasSavers" Guid="0DCC50BC-F2C5-4A48-8BF6-F615BB1E451B" DiskId="1" KeyPath="yes">
+            <File Id="ChristmasSaversFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\ChristmasSavers\Home.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+
+
+        <Directory Id="Security" Name="Security">
+          <Component Id="Security" Guid="32EAEE91-A293-4078-A641-4956617B171E" DiskId="1" KeyPath="yes">
+            <File Id="SecurityFile0" Name="SecurityHome.cshtml" Source="$(var.SolutionDir)..\Web\Views\Security\SecurityHome.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+        <Directory Id="Coupons" Name="Coupons">
+          <Component Id="Coupons" Guid="1DC2FF87-6C8F-440D-9447-CDA966646F83" DiskId="1" KeyPath="yes">
+            <File Id="CouponsFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Coupons\Home.cshtml" Vital="yes" />
+            <File Id="CouponsFile1" Name="CouponPreview.cshtml" Source="$(var.SolutionDir)..\Web\Views\Coupons\CouponPreview.cshtml" Vital="yes" />
+          </Component>
+          <!--<Directory Id="App_LocalResources_1" Name="App_LocalResources">
+<Component Id="App_LocalResources_1" Guid="cac05a31-be23-4c47-8a3d-ae32e12210f6" DiskId="1" KeyPath="yes">
+<File Id="App_LocalResources_1File0" Name="Home.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_1File1" Name="Home.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_1File2" Name="Home.cshtml.ms-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.ms-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_1File3" Name="Home.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.resx" Vital="yes" />
+	
+</Component>
+</Directory>-->
+        </Directory>
+        <Directory Id="Home" Name="Home">
+          <Component Id="Home" Guid="5DAEABE0-34AB-4FED-AB63-73E1EEB55492" DiskId="1" KeyPath="yes">
+            <File Id="HomeFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Home\Home.cshtml" Vital="yes" />
+          </Component>
+          <!--<Directory Id="App_LocalResources_2" Name="App_LocalResources">
+<Component Id="App_LocalResources_2" Guid="ba18ffb3-5562-4854-a31c-56b0328c0f0d" DiskId="1" KeyPath="yes">
+<File Id="App_LocalResources_2File0" Name="Home.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Home\App_LocalResources\Home.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_2File1" Name="Home.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Home\App_LocalResources\Home.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_2File2" Name="Home.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Home\App_LocalResources\Home.cshtml.resx" Vital="yes" />
+	<File Id="App_LocalResources_2File3" Name="Home.cshtml.ms-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.ms-MY.resx" Vital="yes" />
+	<File Id="App_LocalResources_2File4" Name="Home.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Coupons\App_LocalResources\Home.cshtml.pl-PL.resx" Vital="yes" />
+</Component>
+</Directory>-->
+        </Directory>
+
+        <Directory Id="AccountManagement" Name="AccountManagement">
+          <Component Id="AccountManagement" Guid="39A70064-EFD1-40CC-AC94-3B00504B799A" DiskId="1" KeyPath="yes">
+            <File Id="AccountManagementFile0" Name="VoucherSchemes.cshtml" Source="$(var.SolutionDir)..\Web\Views\AccountManagement\VoucherSchemes.cshtml" Vital="yes" />
+            <File Id="AccountManagementFile1" Name="ContactPreferences.cshtml" Source="$(var.SolutionDir)..\Web\Views\AccountManagement\ContactPreferences.cshtml" Vital="yes" />
+            <File Id="AccountManagementFile2" Name="ClubcardsOnAccount.cshtml" Source="$(var.SolutionDir)..\Web\Views\AccountManagement\ClubcardsOnAccount.cshtml" Vital="yes" />
+            <File Id="AccountManagementFile3" Name="PersonalDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\AccountManagement\PersonalDetails.cshtml" Vital="yes" />
+            <File Id="AccountManagementFile4" Name="OrderANewCard.cshtml" Source="$(var.SolutionDir)..\Web\Views\AccountManagement\OrderANewCard.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+
+
+        <Directory Id="LatestStatement" Name="LatestStatement">
+          <Component Id="LatestStatement" Guid="B03782B1-6420-4747-B4B3-4A0A34550DD7" DiskId="1" KeyPath="yes">
+            <File Id="LatestStatementFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\LatestStatement\Home.cshtml" Vital="yes" />
+          </Component>
+        </Directory>
+        
+        <Directory Id="Points" Name="Points">
+          <Component Id="Points" Guid="BB3D5E33-AC9F-414B-880E-24D457F13A55" DiskId="1" KeyPath="yes">
+            <File Id="PointsFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Points\Home.cshtml" Vital="yes" />
+            <File Id="PointsFile1" Name="TransactionHistory.cshtml" Source="$(var.SolutionDir)..\Web\Views\Points\TransactionHistory.cshtml" Vital="yes" />
+            <File Id="PointsFile2" Name="PointsStatement.cshtml" Source="$(var.SolutionDir)..\Web\Views\Points\PointsStatement.cshtml" Vital="yes" />
+          </Component>
+          <!--<Directory Id="App_LocalResources_3" Name="App_LocalResources">
+<Component Id="App_LocalResources_3" Guid="aa43b97a-8e57-42f3-b53a-a5298acc9d96" DiskId="1" KeyPath="yes">
+<File Id="App_LocalResources_3File0" Name="Home.aspx.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Points\App_LocalResources\Home.aspx.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_3File1" Name="Home.aspx.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Points\App_LocalResources\Home.aspx.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_3File2" Name="Home.aspx.resx" Source="$(var.SolutionDir)..\Web\Views\Points\App_LocalResources\Home.aspx.resx" Vital="yes" />
+	
+	
+</Component>
+</Directory>-->
+        </Directory>
+
+        <Directory Id="Shared" Name="Shared">
+          <Directory Id="EditorTemplates" Name="EditorTemplates">
+            <Component Id="EditorTemplates" Guid="E2FE37FA-BF44-4793-91BE-DEB2C93ED406" DiskId="1" KeyPath="yes">
+              <File Id="EditorTemplatesFile0" Name="OptInsModel.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\EditorTemplates\OptInsModel.cshtml" Vital="yes" />
+              <File Id="EditorTemplatesFile1" Name="ContactModel.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\EditorTemplates\ContactModel.cshtml" Vital="yes" />
+			  <File Id="EditorTemplatesFile2" Name="CustomerEmail.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\EditorTemplates\CustomerEmail.cshtml" Vital="yes" />
+			  <File Id="EditorTemplatesFile3" Name="PointsBanner.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\EditorTemplates\PointsBanner.cshtml" Vital="yes" />
+			  <File Id="EditorTemplatesFile4" Name="VouchersBanner.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\EditorTemplates\VouchersBanner.cshtml" Vital="yes" />				
+			</Component>
+          </Directory>
+          <Component Id="Shared" Guid="2CC67A41-CD73-4474-89D0-261429A90C41" DiskId="1" KeyPath="yes">
+            <File Id="SharedFile0" Name="Error.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\Error.cshtml" Vital="yes" />
+            <File Id="SharedFile1" Name="_ActivationConfirmDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_ActivationConfirmDetails.cshtml" Vital="yes" />
+            <File Id="SharedFile2" Name="_BoostInstoreTokens.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_BoostInstoreTokens.cshtml" Vital="yes" />
+            <File Id="SharedFile3" Name="_BoostOnlineTokens.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_BoostOnlineTokens.cshtml" Vital="yes" />
+            <File Id="SharedFile4" Name="_ModalPaperless.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_ModalPaperless.cshtml" Vital="yes" />
+	          <File Id="SharedFile5" Name="_PopUp.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PopUp.cshtml" Vital="yes" />
+            <File Id="SharedFile6" Name="_CouponHowToUse.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_CouponHowToUse.cshtml" Vital="yes" />
+            <File Id="SharedFile7" Name="_CouponsAvailable.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_CouponsAvailable.cshtml" Vital="yes" />
+            <File Id="SharedFile8" Name="_CouponsBox.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_CouponsBox.cshtml" Vital="yes" />
+            <File Id="SharedFile9" Name="_CouponsUsed.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_CouponsUsed.cshtml" Vital="yes" />
+            <File Id="SharedFile10" Name="_Footer.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_Footer.cshtml" Vital="yes" />
+            <File Id="SharedFile11" Name="_Header.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_Header.cshtml" Vital="yes" />
+            <File Id="SharedFile12" Name="_HomeStamps.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_HomeStamps.cshtml" Vital="yes" />
+            <File Id="SharedFile13" Name="_HomeUpper.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_HomeUpper.cshtml" Vital="yes" />
+            <File Id="SharedFile14" Name="_JoinCaptcha.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_JoinCaptcha.cshtml" Vital="yes" />
+            <!--<File Id="SharedFile15" Name="_JoinContactPreferences.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_JoinContactPreferences.cshtml" Vital="yes" />-->
+            <File Id="SharedFile16" Name="_JoinHousehold.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_JoinHousehold.cshtml" Vital="yes" />
+            <File Id="SharedFile17" Name="_JoinPersonalDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_JoinPersonalDetails.cshtml" Vital="yes" />
+            <File Id="SharedFile18" Name="_Layout.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_Layout.cshtml" Vital="yes" />
+            <File Id="SharedFile19" Name="_LeftNavigation.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_LeftNavigation.cshtml" Vital="yes" />
+            <File Id="SharedFile20" Name="_LoadHTML.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_LoadHTML.cshtml" Vital="yes" />
+            <File Id="SharedFile21" Name="_MLSSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_MLSSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile22" Name="_PersonalBasicDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PersonalBasicDetails.cshtml" Vital="yes" />
+            <File Id="SharedFile23" Name="_PersonalContactDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PersonalContactDetails.cshtml" Vital="yes" />
+            <File Id="SharedFile24" Name="_PersonalDietaryPreferences.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PersonalDietaryPreferences.cshtml" Vital="yes" />
+            <File Id="SharedFile25" Name="_PersonalHouseholdDetails.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PersonalHouseholdDetails.cshtml" Vital="yes" />
+            <File Id="SharedFile26" Name="_PointCollectionPeriod.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PointCollectionPeriod.cshtml" Vital="yes" />
+            <File Id="SharedFile27" Name="_PointsSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PointsSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile28" Name="_ViewInstoreBoostTokens.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_ViewInstoreBoostTokens.cshtml" Vital="yes" />
+            <File Id="SharedFile29" Name="_VouchersAviosSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersAviosSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile30" Name="_VouchersChristmasSaver.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersChristmasSaver.cshtml" Vital="yes" />
+            <File Id="SharedFile31" Name="_VouchersIssued.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersIssued.cshtml" Vital="yes" />
+            <File Id="SharedFile32" Name="_VouchersRewardLeftOver.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersRewardLeftOver.cshtml" Vital="yes" />
+            <File Id="SharedFile33" Name="_VouchersRewardUsed.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersRewardUsed.cshtml" Vital="yes" />
+            <File Id="SharedFile34" Name="_VouchersSocial.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersSocial.cshtml" Vital="yes" />
+            <File Id="SharedFile35" Name="_VouchersSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile36" Name="_VouchersUnUsed.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersUnUsed.cshtml" Vital="yes" />
+            <File Id="SharedFile37" Name="_VouchersUsed.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersUsed.cshtml" Vital="yes" />
+            <File Id="SharedFile38" Name="_VouchersVirginSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VouchersVirginSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile39" Name="_XmasSaverSummary.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_XmasSaverSummary.cshtml" Vital="yes" />
+            <File Id="SharedFile40" Name="_XmasTopupSavings.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_XmasTopupSavings.cshtml" Vital="yes" />
+            <File Id="SharedFile41" Name="_XmasTotalSavings.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_XmasTotalSavings.cshtml" Vital="yes" />
+            <File Id="SharedFile42" Name="_XmasVoucherSaved.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_XmasVoucherSaved.cshtml" Vital="yes" />
+            <File Id="SharedFile43" Name="_PrintClubcard.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PrintClubcard.cshtml" Vital="yes" />
+            <File Id="SharedFile44" Name="_Confirmation.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_Confirmation.cshtml" Vital="yes" />
+            <File Id="SharedFile45" Name="_SecurityMVTV1.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_SecurityMVTV1.cshtml" Vital="yes" />
+            <File Id="SharedFile46" Name="_SecurityMVTV2.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_SecurityMVTV2.cshtml" Vital="yes" />
+            <File Id="SharedFile47" Name="_SecurityMVTV3.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_SecurityMVTV3.cshtml" Vital="yes" />
+            <File Id="SharedFile48" Name="_SecurityMVTV4.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_SecurityMVTV4.cshtml" Vital="yes" />
+            <File Id="SharedFile49" Name="_PopUp.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PopUp.cshtml" Vital="yes" />
+            <File Id="SharedFile50" Name="_ModalPaperless.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_ModalPaperless.cshtml" Vital="yes" />
+            <File Id="SharedFile51" Name="_PersonalDetailsModal.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_PersonalDetailsModal.cshtml" Vital="yes" />
+            <File Id="SharedFile52" Name="_CustomerDetailsBanner.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_CustomerDetailsBanner.cshtml" Vital="yes" />
+            <File Id="SharedFile53" Name="_VirtualLockout.cshtml" Source="$(var.SolutionDir)..\Web\Views\Shared\_VirtualLockout.cshtml" Vital="yes" />
+            
+          </Component>
+          <!--<Directory Id="App_LocalResources_4" Name="App_LocalResources">
+<Component Id="App_LocalResources_4" Guid="e7b9224f-bf69-42c3-b23d-fd8a4dedfd91" DiskId="1" KeyPath="yes">
+<File Id="App_LocalResources_4File0" Name="_CouponsBox.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_CouponsBox.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File1" Name="_LeftNavigation.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File2" Name="_LeftNavigation.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File3" Name="_LeftNavigation.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File4" Name="_LeftNavigation.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File5" Name="_LeftNavigation.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File6" Name="_LeftNavigation.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.pl-PL.resx" Vital="yes" />
+<File Id="App_LocalResources_4File7" Name="_LeftNavigation.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File8" Name="_LeftNavigation.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File9" Name="_LeftNavigation.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_LeftNavigation.cshtml.th-TH.resx" Vital="yes" />
+<File Id="App_LocalResources_4File10" Name="_PointCollectionPeriod.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointCollectionPeriod.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File11" Name="_PointCollectionPeriod.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointCollectionPeriod.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File12" Name="_PointCollectionPeriod.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointCollectionPeriod.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File13" Name="_PointCollectionPeriod.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointCollectionPeriod.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File14" Name="_PointCollectionPeriod.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointCollectionPeriod.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File15" Name="_PointsSummary.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointsSummary.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File16" Name="_PointsSummary.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointsSummary.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File17" Name="_PointsSummary.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointsSummary.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File18" Name="_PointsSummary.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointsSummary.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File19" Name="_PointsSummary.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_PointsSummary.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File20" Name="_Vouchers.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File21" Name="_Vouchers.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File22" Name="_Vouchers.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File23" Name="_Vouchers.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File24" Name="_Vouchers.cshtml.fr-FR.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.fr-FR.resx" Vital="yes" />
+<File Id="App_LocalResources_4File25" Name="_Vouchers.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File26" Name="_Vouchers.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File27" Name="_Vouchers.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File28" Name="_Vouchers.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.th-TH.resx" Vital="yes" />
+<File Id="App_LocalResources_4File29" Name="_Vouchers.cshtml.tr-TR.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Vouchers.cshtml.tr-TR.resx" Vital="yes" />
+<File Id="App_LocalResources_4File30" Name="_VouchersIssued.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File31" Name="_VouchersIssued.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File32" Name="_VouchersIssued.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File33" Name="_VouchersIssued.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File34" Name="_VouchersIssued.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File35" Name="_VouchersIssued.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.pl-PL.resx" Vital="yes" />
+<File Id="App_LocalResources_4File36" Name="_VouchersIssued.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File37" Name="_VouchersIssued.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File38" Name="_VouchersIssued.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersIssued.cshtml.th-TH.resx" Vital="yes" />
+<File Id="App_LocalResources_4File39" Name="_VouchersRewardLeftOver.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File40" Name="_VouchersRewardLeftOver.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File41" Name="_VouchersRewardLeftOver.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File42" Name="_VouchersRewardLeftOver.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File43" Name="_VouchersRewardLeftOver.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File44" Name="_VouchersRewardLeftOver.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.pl-PL.resx" Vital="yes" />
+<File Id="App_LocalResources_4File45" Name="_VouchersRewardLeftOver.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File46" Name="_VouchersRewardLeftOver.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File47" Name="_VouchersRewardLeftOver.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardLeftOver.cshtml.th-TH.resx" Vital="yes" />
+<File Id="App_LocalResources_4File48" Name="_VouchersRewardUsed.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File49" Name="_VouchersRewardUsed.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File50" Name="_VouchersRewardUsed.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File51" Name="_VouchersRewardUsed.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File52" Name="_VouchersRewardUsed.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File53" Name="_VouchersRewardUsed.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.pl-PL.resx" Vital="yes" />
+<File Id="App_LocalResources_4File54" Name="_VouchersRewardUsed.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File55" Name="_VouchersRewardUsed.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File56" Name="_VouchersRewardUsed.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersRewardUsed.cshtml.th-TH.resx" Vital="yes" />
+<File Id="App_LocalResources_4File57" Name="_VouchersSummary.cshtml.cs-CZ.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.cs-CZ.resx" Vital="yes" />
+<File Id="App_LocalResources_4File58" Name="_VouchersSummary.cshtml.en-GB.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.en-GB.resx" Vital="yes" />
+<File Id="App_LocalResources_4File59" Name="_VouchersSummary.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.en-IE.resx" Vital="yes" />
+<File Id="App_LocalResources_4File60" Name="_VouchersSummary.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.en-MY.resx" Vital="yes" />
+<File Id="App_LocalResources_4File61" Name="_VouchersSummary.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.hu-HU.resx" Vital="yes" />
+<File Id="App_LocalResources_4File62" Name="_VouchersSummary.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.pl-PL.resx" Vital="yes" />
+<File Id="App_LocalResources_4File63" Name="_VouchersSummary.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.resx" Vital="yes" />
+<File Id="App_LocalResources_4File64" Name="_VouchersSummary.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.sk-SK.resx" Vital="yes" />
+<File Id="App_LocalResources_4File65" Name="_VouchersSummary.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_VouchersSummary.cshtml.th-TH.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File66" Name="_Points.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Points.cshtml.th-TH.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File67" Name="_Points.cshtml.tr-TR.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Points.cshtml.tr-TR.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File68" Name="_Points.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Points.cshtml.en-IE.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File69" Name="_Points.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Points.cshtml.hu-HU.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File70" Name="_Points.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\_Points.cshtml.pl-PL.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File71" Name="PointsSummaryView.cshtml.sk-SK.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.sk-SK.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File72" Name="PointsSummaryView.cshtml.en-MY.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.en-MY.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File73" Name="PointsSummaryView.cshtml.en-IE.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.en-IE.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File74" Name="PointsSummaryView.cshtml.th-TH.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.th-TH.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File75" Name="PointsSummaryView.cshtml.tr-TR.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.tr-TR.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File76" Name="PointsSummaryView.cshtml.pl-PL.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.pl-PL.resx" Vital="yes" />
+	<File Id="App_LocalResources_4File77" Name="PointsSummaryView.cshtml.hu-HU.resx" Source="$(var.SolutionDir)..\Web\Views\Shared\App_LocalResources\PointsSummaryView.cshtml.hu-HU.resx" Vital="yes" />
+</Component>
+</Directory>-->
+        </Directory>
+        <Directory Id="Vouchers" Name="Vouchers">
+          <Component Id="Vouchers" Guid="F61A82A1-16F6-4688-88A9-D136783253FC" DiskId="1" KeyPath="yes">
+            <File Id="VouchersFile0" Name="Home.cshtml" Source="$(var.SolutionDir)..\Web\Views\Vouchers\Home.cshtml" Vital="yes" />
+          </Component>
+          <!--<Directory Id="App_LocalResources_5" Name="App_LocalResources">
+<Component Id="App_LocalResources_5" Guid="08321d53-b569-4762-a85c-19f7a0999c8a" DiskId="1" KeyPath="yes">
+<File Id="App_LocalResources_5File0" Name="Home.cshtml.resx" Source="$(var.SolutionDir)..\Web\Views\Vouchers\App_LocalResources\Home.cshtml.resx" Vital="yes" />
+</Component>
+</Directory>-->
+        </Directory>
+      </Directory>
+	  <!--<Directory Id="XML" Name="XML">
+<Component Id="XML" Guid="15e6c14e-8e01-4475-975e-9e1c54f97334" DiskId="1" KeyPath="yes">
+<File Id="XMLFile0" Name="xmlGroupMonths.xml" Source="$(var.SolutionDir)..\Web\XML\xmlGroupMonths.xml" Vital="yes" />
+</Component>
+</Directory>-->
+    </DirectoryRef>
+    <ComponentGroup Id="ApplicationFiles">
+      <ComponentRef Id="BaseFiles" />
+      <ComponentRef Id="Config" />
+      <ComponentRef Id="bin" />
+      <ComponentRef Id="Views" />
+      <ComponentRef Id="Account" />
+      <ComponentRef Id="Coupons" />
+      <ComponentRef Id="Home" />
+      <ComponentRef Id="Points" />
+      <ComponentRef Id="Shared" />
+      <ComponentRef Id="AccountManagement" />
+      <ComponentRef Id="Vouchers" />
+      <ComponentRef Id="LatestStatement" />
+      <ComponentRef Id="BoostsAtTesco" />
+      <ComponentRef Id="ChristmasSavers" />
+      <ComponentRef Id="Join" />
+      <ComponentRef Id="Security" />
+      <ComponentRef Id="StatementFormats" />
+      <ComponentRef Id="Scripts" />
+      <ComponentRef Id="icon" />
+      <ComponentRef Id="js" />
+      <ComponentRef Id="tesco" />
+      <ComponentRef Id="tescobold" />
+      <ComponentRef Id="tescoregular" />
+      <ComponentRef Id="tescomodernregular" />
+      <ComponentRef Id="tescomodernbold" />
+      <ComponentRef Id="Activation" />
+      <ComponentRef Id="Content" />
+      <ComponentRef Id="EditorTemplates" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

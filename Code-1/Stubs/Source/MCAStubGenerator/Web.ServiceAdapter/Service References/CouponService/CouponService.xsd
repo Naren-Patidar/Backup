@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tesco.com/clubcardonline/datacontract/2010/01" elementFormDefault="qualified" targetNamespace="http://tesco.com/clubcardonline/datacontract/2010/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetCouponDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCouponDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCouponDetailResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="serrorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sresultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

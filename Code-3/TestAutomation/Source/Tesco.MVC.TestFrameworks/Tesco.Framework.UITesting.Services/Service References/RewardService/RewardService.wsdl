@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RewardService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IRewardService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://pvuktstfeapp03.tst01.tesco.org/RewardServices/RewardService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://pvuktstfeapp03.tst01.tesco.org/RewardServices/RewardService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://pvuktstfeapp03.tst01.tesco.org/RewardServices/RewardService.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRewardService_GetRewardDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDetail" />
+  </wsdl:message>
+  <wsdl:message name="IRewardService_GetRewardDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRewardDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRewardService_GetTokenInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenInfo" />
+  </wsdl:message>
+  <wsdl:message name="IRewardService_GetTokenInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRewardService_InsertInStoreTokens_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInStoreTokens" />
+  </wsdl:message>
+  <wsdl:message name="IRewardService_InsertInStoreTokens_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInStoreTokensResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRewardService">
+    <wsdl:operation name="GetRewardDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRewardService/GetRewardDetail" message="tns:IRewardService_GetRewardDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRewardService/GetRewardDetailResponse" message="tns:IRewardService_GetRewardDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRewardService/GetTokenInfo" message="tns:IRewardService_GetTokenInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRewardService/GetTokenInfoResponse" message="tns:IRewardService_GetTokenInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInStoreTokens">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRewardService/InsertInStoreTokens" message="tns:IRewardService_InsertInStoreTokens_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRewardService/InsertInStoreTokensResponse" message="tns:IRewardService_InsertInStoreTokens_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IRewardService" type="tns:IRewardService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IRewardService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRewardDetail">
+      <soap12:operation soapAction="http://tempuri.org/IRewardService/GetRewardDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenInfo">
+      <soap12:operation soapAction="http://tempuri.org/IRewardService/GetTokenInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertInStoreTokens">
+      <soap12:operation soapAction="http://tempuri.org/IRewardService/InsertInStoreTokens" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RewardService">
+    <wsdl:port name="WSHttpBinding_IRewardService" binding="tns:WSHttpBinding_IRewardService">
+      <soap12:address location="http://172.21.179.47/RewardServices/RewardService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://172.21.179.47/RewardServices/RewardService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

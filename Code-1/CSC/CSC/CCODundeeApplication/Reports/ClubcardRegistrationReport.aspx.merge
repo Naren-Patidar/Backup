@@ -1,0 +1,347 @@
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClubcardRegistrationReport.aspx.cs" MasterPageFile="~/Site.Master" Inherits="CCODundeeApplication.Reports.ClubcardRegistrationReport" Title="Clubcard Registration Report"  %>
+
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="PageContainer" runat="server">
+
+    <script src="../JS/General.js" type="text/javascript"></script>
+<script src="../JS/CustomerDetails.js" type="text/javascript"></script>
+    <div id="mainContent">
+        <div class="ccBlueHeaderSection">
+            <div class="cc_bluehead">
+                
+                <br />
+                <br />
+                
+            </div>
+            <div class="cc_body">
+        
+            <div class="UserDetails">
+                 
+                      <span runat="server" id="spanMessageTop"><b>Select input</b></span>
+                </div>
+                            
+              
+          <b>
+               <span runat="server" id="spanMessageBelow">
+               <br />
+              
+                
+                Time frame
+                <img class="required" src="../I/asterisk.gif" alt="Required" />
+                 
+                  </span>
+                        </b>          
+                        
+                        
+                  <br />
+                <br />
+                <%--<table runat="server" width="100%">
+                    <tr>
+                        <td width="10%">
+                            <asp:RadioButton ID="RadioButton1" runat="server" />
+                            </td>
+                        <td  width="20%"><span runat="server" id="spanStartDateMessage">Start date</span>
+                            </td>
+                        <td width="30%">
+                              <span id="spanStartDate0" class="<%=spanClassDOBDropDown0%>">
+                                <asp:DropDownList runat="server" ID="ddlStartDay" class="day">
+                                    <asp:ListItem Value="">Day</asp:ListItem>
+                                    <asp:ListItem Value="01">1</asp:ListItem>
+                                    <asp:ListItem Value="02">2</asp:ListItem>
+                                    <asp:ListItem Value="03">3</asp:ListItem>
+                                    <asp:ListItem Value="04">4</asp:ListItem>
+                                    <asp:ListItem Value="05">5</asp:ListItem>
+                                    <asp:ListItem Value="06">6</asp:ListItem>
+                                    <asp:ListItem Value="07">7</asp:ListItem>
+                                    <asp:ListItem Value="08">8</asp:ListItem>
+                                    <asp:ListItem Value="09">9</asp:ListItem>
+                                    <asp:ListItem Value="10">10</asp:ListItem>
+                                    <asp:ListItem Value="11">11</asp:ListItem>
+                                    <asp:ListItem Value="12">12</asp:ListItem>
+                                    <asp:ListItem Value="13">13</asp:ListItem>
+                                    <asp:ListItem Value="14">14</asp:ListItem>
+                                    <asp:ListItem Value="15">15</asp:ListItem>
+                                    <asp:ListItem Value="16">16</asp:ListItem>
+                                    <asp:ListItem Value="17">17</asp:ListItem>
+                                    <asp:ListItem Value="18">18</asp:ListItem>
+                                    <asp:ListItem Value="19">19</asp:ListItem>
+                                    <asp:ListItem Value="20">20</asp:ListItem>
+                                    <asp:ListItem Value="21">21</asp:ListItem>
+                                    <asp:ListItem Value="22">22</asp:ListItem>
+                                    <asp:ListItem Value="23">23</asp:ListItem>
+                                    <asp:ListItem Value="24">24</asp:ListItem>
+                                    <asp:ListItem Value="25">25</asp:ListItem>
+                                    <asp:ListItem Value="26">26</asp:ListItem>
+                                    <asp:ListItem Value="27">27</asp:ListItem>
+                                    <asp:ListItem Value="28">28</asp:ListItem>
+                                    <asp:ListItem Value="29">29</asp:ListItem>
+                                    <asp:ListItem Value="30">30</asp:ListItem>
+                                    <asp:ListItem Value="31">31</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:DropDownList runat="server" ID="ddlStartMonth" class="month" />
+                                <asp:DropDownList runat="server" ID="ddlStartYear" class="year" />
+                            </span></td>
+                                    
+                                   
+                        <td colspan="2" width="20%">
+                            <span runat="server" id="spanEnddateMessage">End date</span></td>
+                        <td colspan="2">
+                            <span id="spanEnddate0" class="<%=spanClassDOBDropDown0%>">
+                                <asp:DropDownList runat="server" ID="ddlEndDay" class="day">
+                                    <asp:ListItem Value="">Day</asp:ListItem>
+                                    <asp:ListItem Value="01">1</asp:ListItem>
+                                    <asp:ListItem Value="02">2</asp:ListItem>
+                                    <asp:ListItem Value="03">3</asp:ListItem>
+                                    <asp:ListItem Value="04">4</asp:ListItem>
+                                    <asp:ListItem Value="05">5</asp:ListItem>
+                                    <asp:ListItem Value="06">6</asp:ListItem>
+                                    <asp:ListItem Value="07">7</asp:ListItem>
+                                    <asp:ListItem Value="08">8</asp:ListItem>
+                                    <asp:ListItem Value="09">9</asp:ListItem>
+                                    <asp:ListItem Value="10">10</asp:ListItem>
+                                    <asp:ListItem Value="11">11</asp:ListItem>
+                                    <asp:ListItem Value="12">12</asp:ListItem>
+                                    <asp:ListItem Value="13">13</asp:ListItem>
+                                    <asp:ListItem Value="14">14</asp:ListItem>
+                                    <asp:ListItem Value="15">15</asp:ListItem>
+                                    <asp:ListItem Value="16">16</asp:ListItem>
+                                    <asp:ListItem Value="17">17</asp:ListItem>
+                                    <asp:ListItem Value="18">18</asp:ListItem>
+                                    <asp:ListItem Value="19">19</asp:ListItem>
+                                    <asp:ListItem Value="20">20</asp:ListItem>
+                                    <asp:ListItem Value="21">21</asp:ListItem>
+                                    <asp:ListItem Value="22">22</asp:ListItem>
+                                    <asp:ListItem Value="23">23</asp:ListItem>
+                                    <asp:ListItem Value="24">24</asp:ListItem>
+                                    <asp:ListItem Value="25">25</asp:ListItem>
+                                    <asp:ListItem Value="26">26</asp:ListItem>
+                                    <asp:ListItem Value="27">27</asp:ListItem>
+                                    <asp:ListItem Value="28">28</asp:ListItem>
+                                    <asp:ListItem Value="29">29</asp:ListItem>
+                                    <asp:ListItem Value="30">30</asp:ListItem>
+                                    <asp:ListItem Value="31">31</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:DropDownList runat="server" ID="ddlEndMonth" class="month" />
+                                <asp:DropDownList runat="server" ID="ddlEndYear" class="year" />
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:RadioButton ID="RadioButton2" runat="server" />
+                        </td>
+                        <td></td>
+                        <td>
+                              </td>
+                                    
+                                   
+                        <td>
+                            <asp:RadioButton ID="RadioButton3" runat="server" />
+                        </td>
+                        <td>
+                            </td>
+                        <td colspan="2">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                          
+                            </td>
+                        <td colspan="3" class="style1">
+                          
+                            <div id="divStartDate"  runat="server"></div>
+                                    </td>
+                        <td colspan="2" class="style1">
+                       <div id="divEndDate"  runat="server"></div>
+                            </td>
+                        <td class="style1">
+                            </td>
+                    </tr>
+                    
+                </table>--%>
+                        
+                        
+                        <table width="100%">
+                        <tr>
+                                <td width="1%">
+                                <asp:RadioButton id="rdoDate" checked="true" runat="server"/>
+                                </td>
+                                <td width="14%">
+                                <span runat="server" id="spanStartDateMessage">Start date</span>
+                                </td>
+                                <td width="35%">
+                                <span id="spanStartDate0" class="<%=spanClassDOBDropDown0%>">
+                                <asp:DropDownList runat="server" ID="ddlStartDay" class="day">
+                                    <asp:ListItem Value="">Day</asp:ListItem>
+                                    <asp:ListItem Value="01">1</asp:ListItem>
+                                    <asp:ListItem Value="02">2</asp:ListItem>
+                                    <asp:ListItem Value="03">3</asp:ListItem>
+                                    <asp:ListItem Value="04">4</asp:ListItem>
+                                    <asp:ListItem Value="05">5</asp:ListItem>
+                                    <asp:ListItem Value="06">6</asp:ListItem>
+                                    <asp:ListItem Value="07">7</asp:ListItem>
+                                    <asp:ListItem Value="08">8</asp:ListItem>
+                                    <asp:ListItem Value="09">9</asp:ListItem>
+                                    <asp:ListItem Value="10">10</asp:ListItem>
+                                    <asp:ListItem Value="11">11</asp:ListItem>
+                                    <asp:ListItem Value="12">12</asp:ListItem>
+                                    <asp:ListItem Value="13">13</asp:ListItem>
+                                    <asp:ListItem Value="14">14</asp:ListItem>
+                                    <asp:ListItem Value="15">15</asp:ListItem>
+                                    <asp:ListItem Value="16">16</asp:ListItem>
+                                    <asp:ListItem Value="17">17</asp:ListItem>
+                                    <asp:ListItem Value="18">18</asp:ListItem>
+                                    <asp:ListItem Value="19">19</asp:ListItem>
+                                    <asp:ListItem Value="20">20</asp:ListItem>
+                                    <asp:ListItem Value="21">21</asp:ListItem>
+                                    <asp:ListItem Value="22">22</asp:ListItem>
+                                    <asp:ListItem Value="23">23</asp:ListItem>
+                                    <asp:ListItem Value="24">24</asp:ListItem>
+                                    <asp:ListItem Value="25">25</asp:ListItem>
+                                    <asp:ListItem Value="26">26</asp:ListItem>
+                                    <asp:ListItem Value="27">27</asp:ListItem>
+                                    <asp:ListItem Value="28">28</asp:ListItem>
+                                    <asp:ListItem Value="29">29</asp:ListItem>
+                                    <asp:ListItem Value="30">30</asp:ListItem>
+                                    <asp:ListItem Value="31">31</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:DropDownList runat="server" ID="ddlStartMonth" class="month" />
+                                <asp:DropDownList runat="server" ID="ddlStartYear" class="year" />
+                            </span>
+                                </td>
+                                <td width="1%">
+                                
+                                </td>
+                                <td width="14%">
+                                 <span runat="server" id="spanEnddateMessage">End date</span>
+                                </td>
+                                <td width="35%">
+                                <span id="spanEnddate0" class="<%=spanClassDOBDropDown0%>">
+                                <asp:DropDownList runat="server" ID="ddlEndDay" class="day">
+                                    <asp:ListItem Value="">Day</asp:ListItem>
+                                    <asp:ListItem Value="01">1</asp:ListItem>
+                                    <asp:ListItem Value="02">2</asp:ListItem>
+                                    <asp:ListItem Value="03">3</asp:ListItem>
+                                    <asp:ListItem Value="04">4</asp:ListItem>
+                                    <asp:ListItem Value="05">5</asp:ListItem>
+                                    <asp:ListItem Value="06">6</asp:ListItem>
+                                    <asp:ListItem Value="07">7</asp:ListItem>
+                                    <asp:ListItem Value="08">8</asp:ListItem>
+                                    <asp:ListItem Value="09">9</asp:ListItem>
+                                    <asp:ListItem Value="10">10</asp:ListItem>
+                                    <asp:ListItem Value="11">11</asp:ListItem>
+                                    <asp:ListItem Value="12">12</asp:ListItem>
+                                    <asp:ListItem Value="13">13</asp:ListItem>
+                                    <asp:ListItem Value="14">14</asp:ListItem>
+                                    <asp:ListItem Value="15">15</asp:ListItem>
+                                    <asp:ListItem Value="16">16</asp:ListItem>
+                                    <asp:ListItem Value="17">17</asp:ListItem>
+                                    <asp:ListItem Value="18">18</asp:ListItem>
+                                    <asp:ListItem Value="19">19</asp:ListItem>
+                                    <asp:ListItem Value="20">20</asp:ListItem>
+                                    <asp:ListItem Value="21">21</asp:ListItem>
+                                    <asp:ListItem Value="22">22</asp:ListItem>
+                                    <asp:ListItem Value="23">23</asp:ListItem>
+                                    <asp:ListItem Value="24">24</asp:ListItem>
+                                    <asp:ListItem Value="25">25</asp:ListItem>
+                                    <asp:ListItem Value="26">26</asp:ListItem>
+                                    <asp:ListItem Value="27">27</asp:ListItem>
+                                    <asp:ListItem Value="28">28</asp:ListItem>
+                                    <asp:ListItem Value="29">29</asp:ListItem>
+                                    <asp:ListItem Value="30">30</asp:ListItem>
+                                    <asp:ListItem Value="31">31</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:DropDownList runat="server" ID="ddlEndMonth" class="month" />
+                                <asp:DropDownList runat="server" ID="ddlEndYear" class="year" />
+                            </span>
+                                </td>
+                        </tr>
+                        
+                        <tr>
+                                <td>
+                                    </td>
+                                <td  colspan="2" style="width: 45%">
+                                    <div id="divStartDate"  runat="server"></div></td>
+                                <td >
+                                
+                                <td  colspan="2" style="width: 45%">
+                                     <div id="divEndDate"  runat="server"></div></td>
+                        </tr>
+                        
+                        <tr>
+                                <td colspan="6" align="center">
+                                   <%-- <div class="UserDetails">--%>
+                                        <div id="divComparision" runat="server">
+                                        </div>
+                                  <%--  </div>--%>
+                                </td>
+                        </tr>
+                        
+                          <tr>
+                                 <td>
+                                 <asp:RadioButton id="rdoWeekNo" runat="server"/>
+                                </td>
+                                <td>
+                                 <span runat="server" id="spnWeekNo">Week number</span>
+                                </td>
+                                <td>
+                               
+                                <asp:DropDownList runat="server" ID="ddlWeek" class="month" />
+                                
+                                </td>
+                                <td>
+                                  <asp:RadioButton  id="rdoPeriod" runat="server" />
+                                </td>
+                                <td>
+                                <span runat="server" id="spnPeriod">Period</span>
+                                </td>
+                                <td>
+                                <asp:DropDownList runat="server" ID="ddlPeriod" class="month" />
+                                </td>
+                        </tr>
+                        
+                          <tr>
+                                 <td>
+                                
+                                </td>
+                                <td colspan="2">
+                                <div id="divWeek"  runat="server"></div>
+                                </td>
+                                <td>
+                                
+                                </td>
+                                <td colspan="2">
+                                <div id="divPeriod"  runat="server"></div>
+                                </td>
+                        </tr>
+                        
+                          </table>
+                        </table>
+                      
+                     <br />
+               <table>
+               <tr>
+               <td><asp:Button ID="btnScheduleRpt" text="Schedule report >" runat="server" 
+                       onclick="btnScheduleRpt_Click"/></td>
+               <td><asp:Button ID="btnRunRpt" text="Run report >" runat="server" 
+                       onclick="btnRunRpt_Click"/></td>
+               </tr>
+               </table>
+                        
+                  </div>
+                  
+        </div>
+    </div>
+ 
+</asp:Content>
+<asp:Content ID="Content1" runat="server" contentplaceholderid="head">
+
+    <style type="text/css">
+        .style1
+        {
+            height: 13px;
+        }
+    </style>
+
+</asp:Content>
+

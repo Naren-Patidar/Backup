@@ -1,0 +1,201 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardCouponService/GetAvailableCouponsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:4ed7a9a7-9508-4582-8542-c7a5178b84e6</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetAvailableCouponsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetAvailableCouponsResult>true</GetAvailableCouponsResult>
+      <errorXml />
+      <resultArray xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.Marketing.IT.ClubcardCoupon.DataContract" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+        <b:CouponInformation>
+          <b:AlphaCode i:nil="true" />
+          <b:CouponDescription>£1.05 off your next shop</b:CouponDescription>
+          <b:CouponImageFull i:nil="true" />
+          <b:CouponImageThumbnail i:nil="true" />
+          <b:EANBarcode i:nil="true" />
+          <b:FullImageName>UAT_121_F.jpg</b:FullImageName>
+          <b:IsGenerateSmartCodes>false</b:IsGenerateSmartCodes>
+          <b:IssuanceChannel>STATEMENT</b:IssuanceChannel>
+          <b:IssuanceEndDate i:nil="true" />
+          <b:IssuanceEndTime i:nil="true" />
+          <b:IssuanceStartDate>2015-10-19T00:00:00</b:IssuanceStartDate>
+          <b:IssuanceStartTime i:nil="true" />
+          <b:ListCouponLineInfo i:nil="true" />
+          <b:MaxRedemptionLimit>1</b:MaxRedemptionLimit>
+          <b:RedemptionChannel i:nil="true" />
+          <b:RedemptionEndDate>2016-04-03T13:31:25.973</b:RedemptionEndDate>
+          <b:StatementNumber>AD4</b:StatementNumber>
+          <b:ThumbnailImageName>UAT_121_T.jpg</b:ThumbnailImageName>
+          <b:TillCouponTemplateNumber i:nil="true" />
+          <b:TriggerNumber>105</b:TriggerNumber>
+          <b:CouponIssuanceChannel i:nil="true" />
+          <b:CouponStatusId i:nil="true" />
+          <b:HouseholdId i:nil="true" />
+          <b:IssuanceDate i:nil="true" />
+          <b:IssuanceStore i:nil="true" />
+          <b:ListRedemptionInfo i:nil="true" />
+          <b:RedemptionUtilized>0</b:RedemptionUtilized>
+          <b:SmartAlphaNumeric />
+          <b:SmartBarcode>9925890010122890010303</b:SmartBarcode>
+        </b:CouponInformation>
+      </resultArray>
+      <totalCoupons>9</totalCoupons>
+    </GetAvailableCouponsResponse>
+  </s:Body>
+</s:Envelope>

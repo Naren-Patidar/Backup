@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="71c40c48-fe94-4c3b-966e-d74c80a9f2e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.27.8.30/Preferences/PreferenceService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1106eae2-2e5a-4a09-b61a-e33c8a99ec28" SourceId="1" SourceUrl="http://172.27.8.30/Preferences/PreferenceService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8ee675e3-0828-4962-9860-a4a58297ff28" SourceId="1" SourceUrl="http://172.27.8.30/Preferences/PreferenceService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="4559ae82-a833-417c-8d7d-d0685a7307af" SourceId="1" SourceUrl="http://172.27.8.30/Preferences/PreferenceService.svc/mex" />
+    <MetadataFile FileName="Tesco.com.ClubcardOnline.Entities.xsd" MetadataType="Schema" ID="af18ee2c-590e-4101-83fe-ab384f9b8380" SourceId="1" SourceUrl="http://172.27.8.30/Preferences/PreferenceService.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="2379ce11-6681-4c6b-9889-0f7e309d22ea" SourceId="1" SourceUrl="http://172.27.8.30/Preferences/PreferenceService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,118 @@
+// import gridle
+@import "../../gridle/gridle/_gridle";
+//@import "../../gridle/sass/gridle/gridle-flex";
+
+// setting up the grid
+@include gridle_setup( (
+    context : 12,
+    gutter-width : 24px
+));
+
+@include gridle_register_state (base, (
+    max-width : $breakpoint-0 
+));
+
+@include gridle_register_state (smallest, (
+    min-width : $breakpoint-1
+));
+
+@include gridle_register_state (small, (
+    min-width : $breakpoint-2
+));
+
+@include gridle_register_state (medium, (
+    min-width : $breakpoint-3 
+));
+
+@include gridle_register_state (large, (
+    min-width : $breakpoint-4 
+));
+
+@include gridle_register_state (massive, (
+    min-width : $breakpoint-5 
+)) ;
+
+
+
+@include gridle_generate_classes ();
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+
+	body {
+    overflow-x: hidden;
+
+        #ddl-wrapper {
+            position: relative;
+        }
+
+		.container {
+		    max-width : $breakpoint-3;
+		    margin : 0 auto;
+            padding: 0 12px;
+            position: relative;
+		}
+    }
+}
+
+.row {
+            
+    .gr-additional-breakpoint1, .gr-additional-breakpoint2, .gr-additional-breakpoint3, .gr-additional-breakpoint4, .gr-additional-breakpoint5 {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-2){
+
+    .row {
+
+        .gr-additional-breakpoint2 {
+            display: inline-block !important;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-3){
+
+    #ddl-wrapper {
+        padding-top: 40px;
+    }
+
+    .row {
+
+        .gr-2 {
+            width: 126px !important;
+        }
+
+        .gr-3 {
+            width: 252px !important;
+        }
+
+        .gr-additional-breakpoint3 {
+            display: inline-block !important;
+        }
+
+    }
+}
+
+@media only screen and (min-width: $breakpoint-4){
+
+    .row {
+
+        .gr-additional-breakpoint4 {
+            display: inline-block !important;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-5){
+
+    .row {
+
+        .gr-additional-breakpoint5 {
+            display: inline-block !important;
+        }
+    }
+}

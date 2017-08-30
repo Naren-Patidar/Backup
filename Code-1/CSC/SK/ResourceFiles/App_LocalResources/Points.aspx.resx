@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnClearSelectionResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnClearSelectionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCloseThisWindowResource1.AlternateText" xml:space="preserve">
+    <value>Close this window</value>
+  </data>
+  <data name="btnCloseThisWindowResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clctionperiodResource1.Text" xml:space="preserve">
+    <value>Collection Period</value>
+  </data>
+  <data name="ddlCardNumbersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTransactionTypesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdTransactionsResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdTransactionsResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdTransactionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgBacktosummarypageResource1.AlternateText" xml:space="preserve">
+    <value>Back to points page</value>
+  </data>
+  <data name="imgBacktosummarypageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblShow0PtsMsgResource1.Text" xml:space="preserve">
+    <value>Could not find any transactions</value>
+  </data>
+  <data name="lblShow0PtsMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAmountSpentResource1.Text" xml:space="preserve">
+    <value>Amount Spent</value>
+  </data>
+  <data name="lclAmounttoppedupResource1.Text" xml:space="preserve">
+    <value>Amount topped up</value>
+  </data>
+  <data name="lclcardNmbResource1.Text" xml:space="preserve">
+    <value>Card number:</value>
+  </data>
+  <data name="lclCardNumResource1.Text" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+  <data name="lclCarriedFromPreviousResource1.Text" xml:space="preserve">
+    <value>Points carried over from your previous statement</value>
+  </data>
+  <data name="lclCarriedTonxtResource1.Text" xml:space="preserve">
+    <value>Carried forward to your next statement</value>
+  </data>
+  <data name="lclcarriedtonxtstmtResource1.Text" xml:space="preserve">
+    <value>Carried forward to your next statement</value>
+  </data>
+  <data name="lclchristmasSaverSumaryResource1.Text" xml:space="preserve">
+    <value>Christmas Saver Summary</value>
+  </data>
+  <data name="lclClubcardPointsFrmBankResource1.Text" xml:space="preserve">
+    <value>Clubcard points from Tesco Bank:</value>
+  </data>
+  <data name="lclcollectionperiodResource1.Text" xml:space="preserve">
+    <value>Earlier Collection Periods</value>
+  </data>
+  <data name="lclCustomerPointResource1.Text" xml:space="preserve">
+    <value>Customer Points</value>
+  </data>
+  <data name="lclDateofTxnResource1.Text" xml:space="preserve">
+    <value>Date of transaction</value>
+  </data>
+  <data name="lclDatetoppedupResource1.Text" xml:space="preserve">
+    <value>Date topped up</value>
+  </data>
+  <data name="lclDetailResource1.Text" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="lclmemberofChristmasResource1.Text" xml:space="preserve">
+    <value>Whilst the customer was a member of the Christmas saver Club they saved some money, 
+                                which is shown in the table.</value>
+  </data>
+  <data name="lclnotxnfoundResource1.Text" xml:space="preserve">
+    <value>Could not find any transactions</value>
+  </data>
+  <data name="lclpointsResource1.Text" xml:space="preserve">
+    <value>Clubcard points from Tesco:</value>
+  </data>
+  <data name="lclPreviousStatementResource1.Text" xml:space="preserve">
+    <value>Points carried over from your previous statement</value>
+  </data>
+  <data name="lclqtrPoints1Resource1.Text" xml:space="preserve">
+    <value>Points collected this quarter</value>
+  </data>
+  <data name="lclqtrpointsResource1.Text" xml:space="preserve">
+    <value>Points collected this quarter</value>
+  </data>
+  <data name="lclRewardsResource1.Text" xml:space="preserve">
+    <value>Points credited from Clubcard rewards</value>
+  </data>
+  <data name="lclsearchLabelResource1.Text" xml:space="preserve">
+    <value>Search by:</value>
+  </data>
+  <data name="lclSummaryResource1.Text" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="lclSummaryResource2.Text" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="lclTotalPointUptoResource1.Text" xml:space="preserve">
+    <value>Clubcard points total up to</value>
+  </data>
+  <data name="lcltotalResource1.Text" xml:space="preserve">
+    <value>Points total:</value>
+  </data>
+  <data name="lclTotPointResource1.Text" xml:space="preserve">
+    <value>Total points</value>
+  </data>
+  <data name="lcltotpointsResource1.Text" xml:space="preserve">
+    <value>Clubcard points total up to</value>
+  </data>
+  <data name="lclTransactionResource1.Text" xml:space="preserve">
+    <value>Transaction:</value>
+  </data>
+  <data name="lcltxnDetails1Resource1.Text" xml:space="preserve">
+    <value>Transaction Details</value>
+  </data>
+  <data name="lcltxnDetailsResource1.Text" xml:space="preserve">
+    <value>To view transaction detail for this period</value>
+  </data>
+  <data name="lclTxndetailssResource1.Text" xml:space="preserve">
+    <value>Transaction Details</value>
+  </data>
+  <data name="lclTxnTypeResource1.Text" xml:space="preserve">
+    <value>Transaction type</value>
+  </data>
+  <data name="lclviewpointsResource1.Text" xml:space="preserve">
+    <value>To view your points, please select which collection period you are interested in.</value>
+  </data>
+  <data name="lclvouchersBackResource1.Text" xml:space="preserve">
+    <value>Explain that this money will be given back to them as vouchers in their November
+                                statement.</value>
+  </data>
+  <data name="lnkShowInfoResource1.Text" xml:space="preserve">
+    <value>Show Info</value>
+  </data>
+  <data name="lnkShowInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkViewDetailResource1.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lnkViewDetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkViewDetailResource2.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lnkViewDetailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkViewSummaryResource1.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lnkViewSummaryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkViewSummaryResource2.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lnkViewSummaryResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrColPrdResource1.Text" xml:space="preserve">
+    <value>Collection Period</value>
+  </data>
+  <data name="ltrOfferEndDate1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrOfferEndDate2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBankBroughtForwardPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBankCarriedForwardPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBankPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBankPointsTotalResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBankTotalRewardLabelResource1.Text" xml:space="preserve">
+    <value>Voucher Total to date</value>
+  </data>
+  <data name="ltrTescoBankTotalRewardResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoBroughtForwardPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoCarriedForwardPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoPointsChangeFromRewardsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoPointsTotalResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTescoTotalRewardLabelResource1.Text" xml:space="preserve">
+    <value>Voucher Total to date</value>
+  </data>
+  <data name="ltrTescoTotalRewardResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTotalRewardPointsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTotalRewardValueResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrTotalRewardValueTitleResource1.Text" xml:space="preserve">
+    <value>Value in Clubcard vouchers:</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Customer Points</value>
+  </data>
+  <data name="pnlTescoBankPointsTotalsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTescoBankPointsTotalsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTescoPointsTotalsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTescoPointsTotalsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="TemplateFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TemplateFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.HeaderText" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="TemplateFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.HeaderText" xml:space="preserve">
+    <value>Transaction details</value>
+  </data>
+  <data name="TemplateFieldResource6.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.HeaderText" xml:space="preserve">
+    <value>Bonus Points</value>
+  </data>
+  <data name="TemplateFieldResource7.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.HeaderText" xml:space="preserve">
+    <value>Total Points</value>
+  </data>
+  <data name="TemplateFieldResource8.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource8.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource8.HeaderText" xml:space="preserve">
+    <value>Total Spend</value>
+  </data>
+  <data name="TemplateFieldResource9.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource9.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource9.HeaderText" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="CredetedAcc" xml:space="preserve">
+    <value>credited to your account</value>
+  </data>
+  <data name="CreditedBAMiles" xml:space="preserve">
+    <value>Number of BA Miles credited to your account</value>
+  </data>
+  <data name="NoOf" xml:space="preserve">
+    <value>Number of</value>
+  </data>
+  <data name="TotVoucherCost" xml:space="preserve">
+    <value>Clubcard Voucher Total</value>
+  </data>
+  <data name="lclCurrencyResource1.Text" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="lclCurResource1.Text" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="lclCurrResource1.Text" xml:space="preserve">
+    <value>£</value>
+  </data>
+  <data name="lclCurResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrCollectionPeriod" xml:space="preserve">
+    <value>Points collected from</value>
+  </data>
+  <data name="Vouchertospendnow" xml:space="preserve">
+    <value>Vouchers to spend now:</value>
+  </data>
+  <data name="Totalvouchersaved" xml:space="preserve">
+    <value>Total point saved</value>
+  </data>
+ <data name="lclddlCardNumbersResouce1" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lclddlTransactionTypesResource1" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lclgrdTransactionHeaderResource1" xml:space="preserve">
+    <value>Transaction</value>
+  </data>
+  <data name="ltrTotalRewardValueToSpendTitleResource1" xml:space="preserve">
+    <value>Vouchers to spend now</value>
+  </data>
+</root>

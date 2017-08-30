@@ -1,0 +1,16 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Business.Contracts;
+@using Microsoft.Practices.ServiceLocation;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    bool HasError = ((RazorView)ViewContext.View).ViewPath.Contains("Error");
+    if (!ISOLanguages.IsDataLoaded && !HasError)
+    {
+        IAccountBC accountProvider = ServiceLocator.Current.GetInstance<IAccountBC>();
+        DbConfiguration dbConfigs = accountProvider.GetDBConfigurations(new List<DbConfigurationTypeEnum>() { DbConfigurationTypeEnum.Holding_dates }, System.Globalization.CultureInfo.CurrentCulture.Name);
+        DBConfigurationManager.Instance.LoadDBConfigurations(dbConfigs);
+    }
+}

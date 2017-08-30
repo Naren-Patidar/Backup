@@ -1,0 +1,99 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.MyLatestStatementViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@{
+    ViewBag.Title = @Html.Translate("MLSPageTitle");
+    ViewBag.dtmTitle = @Html.Translate("MLSPageTitle");
+
+    ViewBag.PageName = "LatestStatement";
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+
+
+
+<div class="row">
+    <div class="gr-12">
+        @*<h1 id="lblheader">@Html.Translate("PageTitle")</h1>*@
+        @if (Model.isHoldingPageEnabled)
+        {
+            @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/htmls/MyLatestStatementHoldingPage.html" })
+        }
+        else
+        {
+            var sCustomerType = Model.pointsSummary.CustomerType.ToString().ToUpper();
+            string footerFile = string.Format("~/Content/mls/FooterContents/{0}-footer.html", sCustomerType);
+            <div class="copy-wrapper">
+                @*string MarketingImages = string.Format("~/Content/mls/MarketingImages/{0}.jpg", sCustomerType);
+                @*<img src="@Url.Content(MarketingImages)" alt="My latest statement" class="image-right" id="MarketingImages" />
+
+                var imgPath = Url.Content("~/Content/mls/MiscellaneousImages"); *@
+                @{
+            string LetterContentFile = string.Format("~/Content/mls/LetterContents/{0}-letter.html",sCustomerType);
+                    <h1 id="spnMLSPageheader" class="ddl-h2-like">@Html.Translate("LatestStatement/Home", "MLSHeader")</h1>
+                    @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = LetterContentFile })
+        }
+            </div>
+            @Html.Partial("_MLSSummary", Model)
+            <div class="copy-wrapper">
+            <p id="lblTescoBank" class="ddl-t5">@Html.Translate("LatestStatement/Home", "TescoBank")</p>  
+            @if (sCustomerType == BusinessConstants.AVOIS_BRITISHAIRWAYS_EXCLUB_CUSTOMERS ||
+                sCustomerType == BusinessConstants.AVOIS_NON_REWARD_BRITISHAIRWAYS_EXCLUB_CUSTOMERS ||
+                sCustomerType == BusinessConstants.AVIOS_CUSTOMERS ||
+                sCustomerType == BusinessConstants.AVIOS_NON_REWARD_CUSTOMERS ||
+                sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS ||
+                sCustomerType == BusinessConstants.NON_VOUCHER ||
+                sCustomerType == BusinessConstants.VIRGIN_FREQUENT_FLYERS_CUSTOMERS ||
+                sCustomerType == BusinessConstants.VIRGIN_FREQUENT_FLYERS_NON_REWARD_CUSTOMERS ||
+                sCustomerType == BusinessConstants.NON_MAILED_CUSTOMERS ||
+                sCustomerType == BusinessConstants.NEW_NON_VOUCHER_CUSTOMERS)
+            {
+                <p class="frame">
+                        @if (sCustomerType.Equals(BusinessConstants.AVOIS_BRITISHAIRWAYS_EXCLUB_CUSTOMERS) || sCustomerType.Equals(BusinessConstants.AVIOS_CUSTOMERS))
+                        {
+                            <span id="lblAviosConversion" class="ddl-t5">@Html.Translate("LatestStatement/Home", "AviosConversion") @Model.voucherPerMileFifty</span>
+                            <span id="lblClubCardPoint" class="ddl-t5">@Html.Translate("LatestStatement/Home", "ClubCardPoint") @Model.dMiles @Html.Translate("LatestStatement/Home", "Avios")</span>
+                        }
+                        else if (sCustomerType.Equals(BusinessConstants.AVOIS_NON_REWARD_BRITISHAIRWAYS_EXCLUB_CUSTOMERS) || sCustomerType.Equals(BusinessConstants.AVIOS_NON_REWARD_CUSTOMERS))
+                        {
+                            <span id="lblAvoisvoucherPerMileFifty" class="ddl-t5">@Html.Translate("LatestStatement/Home", "AvoisCollectedPoint")</span>
+                        }
+                        else if (sCustomerType.Equals(BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS))
+                        {
+                            <span id="lblVouchers" class="ddl-t5">@Html.Translate("LatestStatement/Home", "Vouchers")</span>
+                        }
+                        else if (sCustomerType.Equals(BusinessConstants.VIRGIN_FREQUENT_FLYERS_CUSTOMERS))
+                        {
+                                <span id="lblAirmilesMLS" class="ddl-t5">@Html.Translate("LatestStatement/Home", "AirmilesMLS")@Model.voucherPerMileFifty</span>  
+                                <span id="lblFlyingmiles" class="ddl-t5">@Html.Translate("LatestStatement/Home", "ClubCardPoint") @Model.dMiles @Html.Translate("LatestStatement/Home", "Flyingmiles")</span>
+                        }
+                        else if (sCustomerType.Equals(BusinessConstants.VIRGIN_FREQUENT_FLYERS_NON_REWARD_CUSTOMERS))
+                        {
+                            //To find the conversion rate 
+                                <span id="lblvoucherPerMileFifty" class="ddl-t5">@Html.Translate("LatestStatement/Home", "VirginPointsCollected")</span> 
+                              @*  <span id="lblFlyingClub">@Html.Translate("LatestStatement/Home", "ClubCardPoint")  @Model.dMiles @Html.Translate("LatestStatement/Home", "FlyingClub") </span>*@
+                        }
+                        else if (sCustomerType.Equals(BusinessConstants.NON_MAILED_CUSTOMERS) || sCustomerType.Equals(BusinessConstants.NEW_NON_VOUCHER_CUSTOMERS) || sCustomerType.Equals(BusinessConstants.NON_VOUCHER))
+                        {
+                            <span id="lblVouchers" class="ddl-t5">@Html.Translate("LatestStatement/Home", "Vouchers")</span>
+                            <span id="lblPoints" class="ddl-t5">@Html.Translate("LatestStatement/Home", "Points")</span>
+                        }
+                                               
+                     
+                </p>
+            }
+           @* <div class="cheveron-footer" id="div_footer">
+                <p id="lclfooter">@Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = footerFile })</p>
+            </div>*@
+
+            </div>
+        
+        }
+        
+    </div>
+</div>

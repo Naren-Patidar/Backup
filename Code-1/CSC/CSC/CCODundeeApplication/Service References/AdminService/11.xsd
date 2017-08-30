@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tesco.com/clubcardonline/datacontract/2011/11" elementFormDefault="qualified" targetNamespace="http://tesco.com/clubcardonline/datacontract/2011/11" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AddRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRoleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRoleCapability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRoleCapabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRoleCapabilityResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRoleMembership">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRoleMembershipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRoleMembershipResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRoleMembership">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRoleMembershipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteRoleMembershipResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCapabilty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCapabiltyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCapabiltyResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveCapability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveCapabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RemoveCapabilityResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAdminUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAdminUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsAdminUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maxRowCount" type="xs:int" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchRoleResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRoleDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sessionUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRoleDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRoleDetailsResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="objectId" type="xs:long" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRoleCapability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoleID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRoleCapabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ViewRoleCapabilityResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRoleMembership">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" type="xs:long" />
+        <xs:element minOccurs="0" name="culture" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewRoleMembershipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ViewRoleMembershipResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPromotionCode">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPromotionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPromotionCodeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="errorXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPromotionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddPromotionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddPromotionCodeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePromotionCodePC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePromotionCodePCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePromotionCodePCResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePromotionCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objectXml" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userID" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePromotionCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePromotionCodeResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="resultXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

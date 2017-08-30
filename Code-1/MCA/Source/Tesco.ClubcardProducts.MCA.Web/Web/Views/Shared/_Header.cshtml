@@ -1,0 +1,159 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities
+@{
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality];
+    DbConfigurationItem ShowReskinAdvisingMessage = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.ShowReskinAdvisingMessage.ToString()];
+    var pageName = ViewBag.PageName;
+}
+
+<header id="ddl-page-header" name="page-header" class="container">
+    				<div id="ddl-page-header-inner">
+    					<div class="row">
+    						<div class="gr-6@base gr-5@medium">
+    							<a href=@Html.Translate("Shared/_Header", "TescoLogo") id="ddl-app-ident">@Html.Translate("Shared/_Header", "lblTesco") <span>@Html.Translate("Shared/_Header", "lblClubcard")</span></a>
+    						</div>
+    						<div class="gr-12@base gr-7@medium">
+    							<form action="https://secure.tesco.com/clubcard/boost/search-results/search" method="get" id="primary-search" name="primary_search">
+    								<div class="ddl-form-field">
+    									<label class="ddl-label ddl-visually-hidden">@Html.Translate("Shared/_Header", "lblSearch")</label>
+    									<span class="ddl-search">
+    										<input type="text" placeholder="Search for any reward" class="ddl-input" id="txtsearch" name="search" />
+                                            
+    									</span>
+    									<button type="submit" class="ddl-button ddl-icon-before ddl-icon-only ddl-icon-search" id="btnSearch">@Html.Translate("Shared/_Header", "lblSearch")</button>
+    								</div>
+    							</form>
+    							<div id="ddl-basket">
+    								<ul class="ddl-inline-list">
+    									<li><a href='@Html.Translate("Shared/_Header", "hrefBasket").ToString()' id="basket-link" target='_blank' onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Basket'])" class="ddl-button ddl-icon-before ddl-icon-outside ddl-icon-basket"></a></li>
+    								</ul>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    		</header>
+@if (ShowReskinAdvisingMessage != null && ShowReskinAdvisingMessage.ConfigurationValue1.ToUpper() == "TRUE")
+{ 
+    <div id="divAdvisingMsg" class="ddl-noticiation-bar">
+        <p class="ddl-t5">
+            @Resources.Messages.ReskinAdvisingMsg1 <a href="@Resources.Messages.ReskinAdvisingMsgURL" target="_blank"><u>@Resources.Messages.ReskinAdvisingMsg2</u></a> @Resources.Messages.ReskinAdvisingMsg3</p>
+    </div>
+}
+	<div id="ddl-flyout" class="container scrollable">
+    			<div id="ddl-global-header">
+    				<div class="container">
+    					<ul id="global-nav">
+    						<li id="litescocom"><a href="@Html.Translate("Shared/_Header", "hrefTescoSite").ToString()" target="_blank">@Html.Translate("Shared/_Header", "lblTescoSite")</a></li>
+    						 <li id="liSignout"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Sign out']);" href='../Account/Signout'>@Html.Translate("Shared/_Header", "lblSignOut")</a></li>
+    						<li class="ddl-icon-before ddl-icon-map-marker"><a href="@Html.Translate("Shared/_Header", "hrefStoreLocator").ToString()" target="_blank">@Html.Translate("Shared/_Header", "lblStoreLocator")</a></li>
+    						<li id="liWebsite"><a onclick="_gaq.push(['_trackEvent', 'Header', 'Click', 'Website Feedback']); oo_feedback.show();" href="javascript:void(0);">@Html.Translate("Shared/_Header", "lblFeedback")</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<nav id="primary-navigation">
+    				<h2 class="nav-header ddl-icon-before ddl-icon-left"><a href=#">@Html.Translate("Shared/_Header", "lblClubcard")</a></h2>
+    				<ul>
+    					<li id="liAboutClubcard">
+                            <a href="@Html.Translate("Shared/_Header", "hrefAboutClubcard").ToString()"><span>@Html.Translate("Shared/_Header", "lblAboutClubcard")</span></a>
+    					</li>
+    					<li id="liCollectPoints">
+    						<a href="@Html.Translate("Shared/_Header", "hrefCollectPoints").ToString()"><span>@Html.Translate("Shared/_Header", "lblCollectPoints")</span></a>
+    					</li>
+    					<li id="liSpendVoucher">
+    						<a href="#" class="ddl-icon-after ddl-icon-right"><span>@Html.Translate("Shared/_Header", "lblSpendVouchers")</span></a>
+                            <nav>
+                                <h3 class="ddl-icon-before ddl-icon-left nav-header">
+                                    <a href="#fun-landing-page-link-goes-here" class="landing-page-link">@Html.Translate("Shared/_Header", "lblSpendVouchers")</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_How").ToString()">@Html.Translate("Shared/_Header", "lblSV_How")</a></li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_Boost").ToString()">@Html.Translate("Shared/_Header", "lblSV_Boost")</a></li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_Fun").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_Fun")</a>
+									 <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_Fun").ToString()">@Html.Translate("Shared/_Header", "lblSV_Fun")</a></h4>
+                                             <ul>
+                                                <li><a href="@Html.Translate("Shared/_Header", "hrefFun_FindDay").ToString()">@Html.Translate("Shared/_Header", "lblFun_FindDay")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "hrefFun_DaysOut").ToString()">@Html.Translate("Shared/_Header", "lblFun_DaysOut")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "hrefFun_Experience").ToString()">@Html.Translate("Shared/_Header", "lblFun_Experience")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "herfFun_Entertainment").ToString()">@Html.Translate("Shared/_Header", "lblFun_Entertainment")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "herfFun_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                            </ul>
+                                     </nav>
+									</li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_EatingOut").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_EatingOut")</a>
+									  <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_EatingOut").ToString()">@Html.Translate("Shared/_Header", "lblSV_EatingOut")</a></h4>
+                                         <ul>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefEO_FindRestaurant").ToString()">@Html.Translate("Shared/_Header", "lblEO_FindRestaurant")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefEO_Pubs").ToString()">@Html.Translate("Shared/_Header", "lblEO_Pubs")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefEO_Restaurant").ToString()">@Html.Translate("Shared/_Header", "lblEO_Restaurant")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefEO_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                        </ul>
+                                      </nav>
+									</li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_Travel").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_Travel")</a>
+									 <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_Travel").ToString()">@Html.Translate("Shared/_Header", "lblSV_Travel")</a></h4>
+                                         <ul>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefTravel_Airlines").ToString()">@Html.Translate("Shared/_Header", "lblTravel_Airlines")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefTravel_Holiday").ToString()">@Html.Translate("Shared/_Header", "lblTravel_Holiday")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefTravel_HotelBreak").ToString()">@Html.Translate("Shared/_Header", "lblTravel_HotelBreak")</a></li>
+                                             <li><a href="@Html.Translate("Shared/_Header", "hrefTravel_Transport").ToString()">@Html.Translate("Shared/_Header", "lblTravel_Transport")</a></li>                                           
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefTravel_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                        </ul>	
+                                     </nav>
+									</li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_HomeEssen").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_HomeEssen")</a>
+									 <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_HomeEssen").ToString()">@Html.Translate("Shared/_Header", "lblSV_HomeEssen")</a></h4>
+                                         <ul>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefHome_Garden").ToString()">@Html.Translate("Shared/_Header", "lblHome_Garden")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefHome_Learning").ToString()">@Html.Translate("Shared/_Header", "lblHome_Learning")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefHome_Motoring").ToString()">@Html.Translate("Shared/_Header", "lblHome_Motoring")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefHome_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                        </ul>
+									</nav>
+									</li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_Lifestyle").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_Lifestyle")</a>
+									 <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_Lifestyle").ToString()">@Html.Translate("Shared/_Header", "lblSV_Lifestyle")</a></h4>
+                                         <ul>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefLifestyle_Health").ToString()">@Html.Translate("Shared/_Header", "lblLifestyle_Health")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefLifestyle_Shopping").ToString()">@Html.Translate("Shared/_Header", "lblLifestyle_Shopping")</a></li>
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefLifestyle_Magazine").ToString()">@Html.Translate("Shared/_Header", "lblLifestyle_Magazine")</a></li>                               
+                                            <li><a href="@Html.Translate("Shared/_Header", "hrefLifestyle_Membership").ToString()">@Html.Translate("Shared/_Header", "lblLifestyle_Membership")</a></li>
+									        <li><a href="@Html.Translate("Shared/_Header", "hrefLifestyle_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                        </ul>
+                                     </nav>
+									</li>
+                                    <li><a href="@Html.Translate("Shared/_Header", "hrefSV_4XValue").ToString()" class="ddl-icon-after ddl-icon-right no-follow">@Html.Translate("Shared/_Header", "lblSV_4XValue")</a>
+									   <nav>
+                                            <h4 class="nav-header"><a href="@Html.Translate("Shared/_Header", "hrefSV_4XValue").ToString()">@Html.Translate("Shared/_Header", "lblSV_4XValue")</a></h4>
+                                             <ul>
+                                                <li><a href="@Html.Translate("Shared/_Header", "href4XValue_DayOut").ToString()">@Html.Translate("Shared/_Header", "lbl4XValue_DayOut")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "hrefl4XValue_Attraction").ToString()">@Html.Translate("Shared/_Header", "lbl4XValue_Attraction")</a></li>
+                                                <li><a href="@Html.Translate("Shared/_Header", "href4XValue_Pub").ToString()">@Html.Translate("Shared/_Header", "lbl4XValue_Pub")</a></li>                                                           
+									            <li><a href="@Html.Translate("Shared/_Header", "href4XValue_ViewAll").ToString()">@Html.Translate("Shared/_Header", "lblFun_ViewAll")</a></li>
+                                            </ul>
+                                        </nav>
+									</li>
+                                </ul>
+                                <a href="@Html.Translate("Shared/_Header", "hrefSpendVoucher").ToString()" class="ad" target="@(GeneralUtility.IsExternalLink(@Html.Translate("Shared/_Header", "imgBoostSrc").ToString()) ? "_blank" : "_self")" >
+                                    <img src="@Url.Content(Html.Translate("Shared/_Header", "imgBoostSrc").ToString())" alt="" />
+                                </a>
+                            </nav>
+    					</li>
+    					<li id="secondary-navigation-wrapper-flyout">
+    						@Html.ActionLink("My Clubcard Account", "Home", new { controller = "Home" },
+								new { @class = (pageName.Equals("Home") || pageName.Equals("Security") || pageName.Equals("ActivationStatus") || pageName.Equals("Activation") ||
+									pageName.Equals("BoostsAtTesco") || pageName.Equals("ChristmasSaver") || pageName.Equals("Coupons") || pageName.Equals("Join") ||
+									pageName.Equals("MyContactPreferences") || pageName.Equals("OptionsAndBenefits") || pageName.Equals("ViewMyCards") || pageName.Equals("MyLatestStatement") ||
+									pageName.Equals("OrderAReplacement") || pageName.Equals("PersonalDetails") || pageName.Equals("Points") || pageName.Equals("PointsDetails") ||
+									pageName.Equals("PointsSummary") || pageName.Equals("ActivationConfirmation") || pageName.Equals("Vouchers")) ? "active" : "" , id="default-open-for-clubcard"})
+    					</li>
+    				</ul>
+    			</nav>
+</div>

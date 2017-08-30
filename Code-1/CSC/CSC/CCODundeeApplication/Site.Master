@@ -1,0 +1,423 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CCODundeeApplication.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" type="text/css" href="CSS/core.css" />
+    <link href="CSS/ie6.css" rel="stylesheet" type="text/css" />
+   <script language="javascript" type="text/javascript">
+        window.history.forward(1);                            
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="outerContainer">
+            <div id="topSection">
+                <div style="float:left">
+                    <p>
+                        <a>
+                            <img src='<%= Page.ResolveUrl("~/I/tescoLogo.gif") %>' /></a></p>
+                </div>
+            
+            
+                <div  style="width:70px;height:50px">
+                <asp:Image runat="server" ImageUrl="~/I/flaguk.gif" id="FlagLogo" style="width:70px;height:50px" />
+                </div>
+            </div>
+            <div id="content">
+                <div id="inner">
+                    <div id="leftNav" class="colHt">
+                        <h3>
+                            <asp:Localize ID="lclScreenMenu" runat="server" Text="<%$ Resources:CSCGlobal, lblScreenMenu %>" />
+                        </h3>
+                        <ul>
+                            <li><a href="SearchCustomer.aspx" id="findCustomer" runat="server">
+                                <asp:Localize ID="lclFindCustomer" runat="server" Text="<%$ Resources:CSCGlobal, lnkFindCustomer %>" />
+                            </a></li>
+                            <li><a href="FindCoupon.aspx" id="findCoupon" runat="server">
+                                <asp:Localize ID="Localize5" runat="server" Text="<%$ Resources:CSCGlobal, lnkFindCoupon %>" />
+                            </a></li>
+                            <li runat="server" id="liDataconfig">
+                                <asp:Label ID="lblDataConfiguration" runat="server" meta:resourcekey="lblDataConfigResource1"><a href="DataConfiguration.aspx"
+                                    id="dataconfig" runat="server" ><asp:Localize ID="lclDataconfig" runat="server" Text="<%$ Resources:CSCGlobal, lnkDataConfig %>" /></a></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblCustomerDtl" runat="server" meta:resourcekey="lblCustomerDtlResource1">
+                                    <a href="CustomerDetail.aspx" id="cutomerDetails" runat="server">
+                                        <asp:Localize ID="lclCustomerDtl" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerDtl %>" />
+                                    </a></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblCustomePref" runat="server" meta:resourcekey="lblCustomePrefResource1">
+                                    <a href="Preferences.aspx" id="customerPreferences" runat="server">
+                                        <asp:Localize ID="lclCustomerPref" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerPref %>" />
+                                    </a></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblCustomerPts" runat="server" meta:resourcekey="lblCustomerPtsResource1">
+                                    <a href="Points.aspx" id="customerPoints" runat="server">
+                                        <asp:Localize ID="lclCustomerPts" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerPts %>" />
+                                    </a></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblCustomerCards" runat="server" meta:resourcekey="lblCustomerCardsResource1">
+                                    <a href="CustomerCards.aspx" id="customerCards" runat="server">
+                                        <asp:Localize ID="lclCustomerCards" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerCards %>" />
+                                    </a></asp:Label></li>
+                           
+                                   <li>
+                                <asp:Label ID="lblMergeCards" runat="server" meta:resourcekey="lblMergeCardsResource1">
+                                    <a href="MergeCard.aspx" id="MergeCard" runat="server">
+                                        <asp:Localize ID="lclMergeCard" runat="server" Text="<%$ Resources:CSCGlobal, lnkMergeCards %>" />
+                                    </a></asp:Label></li>
+                                     <li>
+                                <asp:Label ID="lblAddPoints" runat="server" meta:resourcekey="lblAddPointsResource1">
+                                    <a href="AddPoints.aspx" id="AddPoints" runat="server">
+                                        <asp:Localize ID="lclAddPoints" runat="server" Text="<%$ Resources:CSCGlobal, lnkAddPoints %>" />
+                                    </a></asp:Label></li>
+                                    <li>
+                                <asp:Label ID="lblCustomerCoupons" runat="server" meta:resourcekey="lblCustomerCouponsResource1">
+                                    <a href="CustomerCoupons.aspx" id="customerCoupon" runat="server">
+                                        <asp:Localize ID="Localize3" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerCoupons %>" />
+                                    </a></asp:Label></li>
+                            <li runat="server" id="liDelinking">
+                                <asp:Label ID="lblDelinking" runat="server" meta:resourcekey="lblDelinkingResource1">
+                                    <a id="DelinkAccounts" href="DeLinking.aspx" runat="server">
+                                        <asp:Localize ID="lclDeLinking" runat="server" Text="<%$ Resources:CSCGlobal, lnkDelink %>" />
+                                    </a></asp:Label>
+                            </li>
+                            <%-- Added as a part of Group CR phase CR12--%>
+                            <li>
+                                <asp:Label ID="lblUserNotes" runat="server" meta:resourcekey="lblUserNotes">
+                                    <a href="UserNotes.aspx" id="userNotes" runat="server">
+                                        <asp:Localize ID="lclUserNotes" runat="server" Text="<%$ Resources:CSCGlobal, lnkUserNotes %>" />
+                                    </a></asp:Label></li>
+                            <%--******** Group CR phase1 CR12 ********--%>
+                            <li>
+                                <asp:Label ID="lblXmasSaver" runat="server" meta:resourcekey="lblXmasSaverResource1">
+                                    <a href="ChristmasSavers.aspx" id="christmasSaver" runat="server">
+                                        <asp:Localize ID="lclXmasSaver" runat="server" Text="<%$ Resources:CSCGlobal, lnkXmasSaver %>" />
+                                    </a></asp:Label></li>
+                            <li>
+                                <asp:Label ID="lblViewPoints" runat="server" meta:resourcekey="lblViewPointsResource1">
+                                    <a href="ViewPoints.aspx" id="viewpoints" runat="server">
+                                        <asp:Localize ID="lclViewPoints" runat="server" Text="<%$ Resources:CSCGlobal, lnkViewPoints %>" />
+                                    </a></asp:Label></li>
+                            <!-- NGC CODE -->
+                            <li runat="server" id="liJoin">
+                                <asp:Label ID="lblJoin" runat="server" meta:resourcekey="lblJoinResource1"><a id="Join"
+                                     href="Join.aspx" runat="server">
+                                    <asp:Localize ID="lclJoin" runat="server" Text="<%$ Resources:CSCGlobal, lnkJoin %>" />
+                                </a></asp:Label>
+                            </li>
+                           <li runat="server" id="li1">
+                                <asp:Label ID="lblPromotionCode" runat="server" meta:resourcekey="lblPromotionCodeResource1"><a id="Promotioncode"
+                                     href="PromotionCode.aspx" runat="server">
+                                    <asp:Localize ID="lclPromotion" runat="server" Text="<%$ Resources:CSCGlobal, lnkpromotion %>" />
+                                </a></asp:Label>
+                            </li>
+                            <li runat="server" id="liadmin">
+                                <asp:Label ID="lblAdmin" runat="server" meta:resourcekey="lblAdminResource1"><a id="aAdmin"
+                                     href="#" runat="server">
+                                    <asp:Localize ID="lclAdmin" runat="server" Text="<%$ Resources:CSCGlobal, lnkAdmin %>" />
+                                </a></asp:Label>
+                                <asp:PlaceHolder ID="plAdmin" runat="server">
+                                    <ul class="subMenu">
+                                        <li>
+                                            <asp:Label ID="lblUsers" runat="server" meta:resourcekey="lblUsersResource1"><a id="ausers"
+                                                 runat="server">
+                                                <asp:Localize ID="lclUsers" runat="server" Text="<%$ Resources:CSCGlobal, lnkUsers %>" />
+                                            </a></asp:Label>
+                                            <asp:PlaceHolder ID="plUser" runat="server">
+                                                <ul class="subMenu">
+                                                    <li>
+                                                        <asp:Label ID="lblFindUser" runat="server" meta:resourcekey="lblFindUserResource1"><a
+                                                            href="FindUser.aspx" id="FindUser" runat="server">
+                                                            <asp:Localize ID="lclFindUser" runat="server" Text="<%$ Resources:CSCGlobal, lnkFindUser %>" />
+                                                        </a></asp:Label></li>
+                                                    <li>
+                                                        <asp:Label ID="lblAddUser" runat="server" meta:resourcekey="lblAddUserResource1"><a
+                                                            href="AddUser.aspx" id="AddUser" runat="server">
+                                                            <asp:Localize ID="lclAddUser" runat="server" Text="<%$ Resources:CSCGlobal, lnkAddUser %>" />
+                                                        </a></asp:Label></li>
+                                                </ul>
+                                            </asp:PlaceHolder>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblGroups" runat="server" meta:resourcekey="lblGroupsResource1"><a
+                                                id="agroups" runat="server">
+                                                <asp:Localize ID="lclGroups" runat="server" Text="<%$ Resources:CSCGlobal, lnkGroups %>" />
+                                            </a></asp:Label>
+                                            <asp:PlaceHolder ID="plgroup" runat="server">
+                                                <ul class="subMenu">
+                                                    <li>
+                                                        <asp:Label ID="lblFindGroup" runat="server" meta:resourcekey="lblFindGroupResource1">
+                                                            <a href="FindGroup.aspx" id="FindGroup" runat="server">
+                                                                <asp:Localize ID="lclFindGroup" runat="server" Text="<%$ Resources:CSCGlobal, lnkFindGroup %>" />
+                                                            </a></asp:Label></li>
+                                                    <li>
+                                                        <asp:Label ID="lblAddGroup" runat="server" meta:resourcekey="lblAddGroupResource1"><a
+                                                            href="AddGroup.aspx" id="AddGroup" runat="server">
+                                                            <asp:Localize ID="lclAddGroup" runat="server" Text="<%$ Resources:CSCGlobal, lnkAddGroup %>" />
+                                                        </a></asp:Label></li>
+                                                </ul>
+                                            </asp:PlaceHolder>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblStores" runat="server" meta:resourcekey="lblStoresResource1"><a
+                                                id="Stores" href="TescoStore.aspx"  runat="server">
+                                                <asp:Localize ID="lclStores" runat="server" Text="<%$ Resources:CSCGlobal, lnkStores %>" />
+                                            </a></asp:Label>
+                                        </li>
+                                         <li>
+                                            <asp:Label ID="lblPartners" runat="server" meta:resourcekey="lblPartnersResource1"><a
+                                                id="Partners" href="TescoPartner.aspx"  runat="server">
+                                                <asp:Localize ID="lclPartners" runat="server" Text="<%$ Resources:CSCGlobal, lnkPartners %>" />
+                                            </a></asp:Label>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblCardRange" runat="server" meta:resourcekey="lblCardRangeResource1">
+                                                <a id="CardRange" href="CardRanges.aspx"  runat="server">
+                                                    <asp:Localize ID="lclCardRange" runat="server" Text="<%$ Resources:CSCGlobal, lnkCardRange %>" />
+                                                </a></asp:Label>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblCardType" runat="server" meta:resourcekey="lblCardTypeResource1"><a
+                                                id="CardType" href="CardType.aspx"  runat="server">
+                                                <asp:Localize ID="lclCardType" runat="server" Text="<%$ Resources:CSCGlobal, lnkCardType %>" />
+                                            </a></asp:Label>
+                                        </li>
+                                    </ul>
+                                </asp:PlaceHolder>
+                            </li>
+                            <li>
+                                <asp:Label ID="lblresetpass" runat="server" meta:resourcekey="lblresetpassResource1">
+                                    <a href="ResetPassword.aspx" id="resetpass" runat="server">
+                                        <asp:Localize ID="lclresetpass" runat="server" Text="<%$ Resources:CSCGlobal, lnkresetpass %>" />
+                                    </a></asp:Label></li>
+                            <!-- NGC CODE -->
+                            <li>
+                                <asp:Label ID="lblReports" runat="server" meta:resourcekey="lblAdminResource1"><a
+                                    id="reporthome"  href="#" runat="server">
+                                    <asp:Localize ID="Localize2" runat="server" Text="<%$ Resources:CSCGlobal, lnkReports %>"  />
+                                </a></asp:Label>
+                                <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+                                    <ul class="subMenu">
+                                        <li>
+                                            <asp:Label ID="lblAccReports" runat="server" meta:resourcekey="lblUsersResource1"><a
+                                                 id="AccReports" runat="server" href="Reports/AccountReportHomePage.aspx">
+                                                <asp:Localize ID="Localize1" runat="server" Text="<%$ Resources:CSCGlobal, lnkAccounts %>"  />
+                                            </a></asp:Label>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblPromotionalCode" runat="server"><a id="PromotionalCode" 
+                                                runat="server" href="Reports/PromotionCodeReport.aspx">
+                                                <asp:Localize ID="lclPromotionalCode" runat="server" Text="<%$ Resources:CSCGlobal, lnkPromotional %>" />
+                                            </a></asp:Label>
+                                        </li>
+                                        <li>
+                                            <asp:Label ID="lblPointsEarnedReport" runat="server"><a id="PointsEarnedReport"
+                                                runat="server" href="Reports/PointsEarnedReport.aspx">
+                                                <asp:Localize ID="Localize4" runat="server"  Text="<%$ Resources:CSCGlobal, lnkPoints %>"/>
+                                            </a></asp:Label>
+                                        </li>
+                                    </ul>
+                                </asp:PlaceHolder>
+                            </li>
+                        </ul>
+                        <div class="logoutLink">
+                            <strong>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" meta:resourcekey="LinkButton1Resource1">
+                                <asp:Localize ID="Localize6" runat="server"  Text="<%$ Resources:CSCGlobal, lnkLogout %>"/></asp:LinkButton></strong></div>
+                        <asp:ContentPlaceHolder ID="CustDetailsLeftNav" runat="server">
+                            <ul class="customerDetails" id="divCustDetailsLeftNav" runat="server" visible="false">
+                                <li>
+                                    <label>
+                                        <strong>
+                                                <asp:Localize ID="lclName" runat="server" Text="<%$ Resources:CSCGlobal, lnkName %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblName" runat="server" meta:resourcekey="lblNameResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                   
+                                    <label style="float:left;">
+                                        <strong >
+                                            <asp:Localize ID="lclCardNo"   runat="server" Text="<%$ Resources:CSCGlobal, lnkCardNo %>" />
+                                            
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div>
+                                       <asp:Label ID="lblCardNo" runat="server" meta:resourcekey="lblCardNoResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclHousehold" runat="server" Text="<%$ Resources:CSCGlobal, lnkCHousehold %>" />
+                                        </strong>
+                                    </label>
+                                    <br/>
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblHouseholdID" runat="server" meta:resourcekey="lblHouseholdIDResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclCurrPoints" runat="server" Text="<%$ Resources:CSCGlobal, lnkCurrPoints %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblCurrPoints" runat="server" meta:resourcekey="lblCurrPointsResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclCustType" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustType %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblCustType" runat="server" meta:resourcekey="lblCustTypeResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclJoinDate" runat="server" Text="<%$ Resources:CSCGlobal, lnkJoinDate %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblJoinedDate" runat="server" meta:resourcekey="lblJoinedDateResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                  <!-- ***********Release 3.6 changes ******* -->
+                                <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclRouteCode" runat="server" Text="<%$ Resources:CSCGlobal, lnkRouteCode %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblRouteCode" runat="server" meta:resourcekey="lblRouteCode1"></asp:Label>
+                                    </div>
+                                </li>
+                                
+                                  <li>
+                                    <label style="float:left;" >
+                                        <strong>
+                                            <asp:Localize ID="lclPromotionalCode1" runat="server" Text="<%$ Resources:CSCGlobal, lnkPromotionalCode %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblPromotionalCode1" runat="server" meta:resourcekey="lblPromotionalCode1"></asp:Label>
+                                    </div>
+                                </li>
+                                
+                                <!-- Added as a part of Group CR phase CR12 -->
+                                <li>
+                                    <label style="float:left;" >
+                                    <strong>
+                                    <asp:Localize ID="lclCustomerLastUpdatedBy" runat="server" Text="<%$ Resources:CSCGlobal, lnkCustomerLastUpdatedBy %>" />
+                                    </strong>
+                                 </label>
+                                 <br />
+                                 <div>
+                                    <asp:Label ID="lblCustomerLastUpdatedBy"  runat="server" meta:resourcekey="lblCustomerLastUpdatedBy"></asp:Label>
+                                 </div>
+                                </li>
+                                <!-- ******** Group CR phase1 CR12 ******** -->
+                                
+                                <!-- ***********Release 2.0 changes ******* -->
+                                <%--<ul class="householdStatus">--%>
+                                <br />
+                                <br />
+                                <li>
+                                    <label class="errorFields" id="spnAddressError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclAddinError" runat="server" Text="<%$ Resources:CSCGlobal, lnkAddinError %>" />
+                                    </label>
+                                </li>
+                             <!-- ***********NGC 3.6 changes ******* -->
+                                <li>	 
+                                    <label class="errorFields" id="spnEmailError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclEmailError" runat="server" Text="<%$ Resources:CSCGlobal, lnkEmailError %>" />
+                                    </label>
+                                </li>
+								 <li>
+                                    <label class="errorFields" id="spnMobileNoError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclMobileNoError" runat="server" Text="<%$ Resources:CSCGlobal, lnkMobileNoError %>" />
+                                    </label>
+                                </li>
+                                <!-- ****************** -->
+                                <li>
+                                    <label class="errorFields" id="spnDuplicateError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclDuplicate" runat="server" Text="<%$ Resources:CSCGlobal, lnkDuplicate %>" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="errorFields" id="spnBannedError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclBanned" runat="server" Text="<%$ Resources:CSCGlobal, lnkBanned %>" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="errorFields" id="spnLeftError" runat="server" visible="false">
+                                        <img src="./I/infoIcon.png" style="vertical-align: middle" />
+                                        <asp:Localize ID="lclLeftScheme" runat="server" Text="<%$ Resources:CSCGlobal, lnkLeftScheme %>" />
+                                    </label>
+                                </li>
+                                <%-- </ul>--%>
+                                <!-- *********Release 2.0 changes end ****** -->
+                            </ul>
+                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="LastUpdatedLeftNav" runat="server" Visible="false">
+                            <ul class="customerDetails" id="divLastUpdatedLeftNav" runat="server">
+                                <li>
+                                    <label>
+                                        <strong>
+                                            <asp:Localize ID="lclLastUpdateBy" runat="server" Text="<%$ Resources:CSCGlobal, lnkLastUpdateBy %>" />
+                                        </strong>
+                                    </label>
+                                    <br />
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblLastUpdatedBy" runat="server" meta:resourcekey="lblLastUpdatedByResource1"></asp:Label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>
+                                        <strong>
+                                            <asp:Localize ID="lclUpdateDate" runat="server" Text="<%$ Resources:CSCGlobal, lnkUpdateDate %>" />
+                                        </strong>
+                                    </label>
+                                    <div class="inputFields">
+                                        <asp:Label ID="lblLastUpdatedDate" runat="server" meta:resourcekey="lblLastUpdatedDateResource1"></asp:Label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div>
+                        <asp:ContentPlaceHolder ID="PageContainer" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

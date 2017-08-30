@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmConfigDtlsResource1.AlternateText" xml:space="preserve">
+    <value>Potvrdit</value>
+  </data>
+  <data name="btnConfirmConfigDtlsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EndResource1.Text" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="EndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbldateResource1.Text" xml:space="preserve">
+    <value>&lt;font color="blue" 
+    __designer:mapid="22b"&gt;Date Format - &lt;b&gt;dd/mm/yyyy&lt;/b&gt;&lt;/font&gt; </value>
+  </data>
+  <data name="lbldateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclBigExEndResource1.Text" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="lclBigExEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclBigExStartResource1.Text" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="lclBigExStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclCurrentResource1.Text" xml:space="preserve">
+    <value>aktuální</value>
+  </data>
+  <data name="lclDataCinfigurationResource1.Text" xml:space="preserve">
+    <value>Konfigurace dat</value>
+  </data>
+  <data name="lclErrorPageResource1.Text" xml:space="preserve">
+    <value>Chybová stránka:</value>
+  </data>
+  <data name="lclFlagResource1.Text" xml:space="preserve">
+    <value>Příznak:</value>
+  </data>
+  <data name="lclFlagResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclHeader1Resource1.Text" xml:space="preserve">
+    <value>Strana o vlastnictví:</value>
+  </data>
+  <data name="lclHeaderBigExchangeResource1.Text" xml:space="preserve">
+    <value>Období velké výměny:</value>
+  </data>
+  <data name="lclHeaderExchangesResource1.Text" xml:space="preserve">
+    <value>Vaše výměny</value>
+  </data>
+  <data name="lclHeaderResource1.Text" xml:space="preserve">
+    <value>Zpracovávání vyúčtování</value>
+  </data>
+  <data name="lclNextResource1.Text" xml:space="preserve">
+    <value>příští</value>
+  </data>
+  <data name="lclNXmasEndResource1.Text" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="lclNXmasEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclNXmasStartResource1.Text" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="lclNXmasStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclStartResource1.Text" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="lclStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclVoucherEndResource1.Text" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="lclVoucherEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclVouchersErrorPageResource1.Text" xml:space="preserve">
+    <value>Chybová stránka:</value>
+  </data>
+  <data name="lclVouchersResource1.Text" xml:space="preserve">
+    <value>Vaše poukázky</value>
+  </data>
+  <data name="lclVoucherStartResource1.Text" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="lclVoucherStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclXmasEndResource1.Text" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="lclXmasEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclXmasSaversResource1.Text" xml:space="preserve">
+    <value>Vánoční spoření</value>
+  </data>
+  <data name="lclXmasStartResource1.Text" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="lclXmasStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Konfigurace dat</value>
+  </data>
+  <data name="txtCurXmasEndDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCurXmasEndDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCurXmasStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCurXmasStartDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExchangesEndDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExchangesEndDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExchangesStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExchangesStartDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFlagResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFlagResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNextXmasEndDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNextXmasEndDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNextXmasStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNextXmasStartDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPtSummEnddateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPtSummEnddateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPtSummStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPtSummStartDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoucherEndDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoucherEndDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoucherStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoucherStartDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CompareDate.Text" xml:space="preserve">
+    <value>Počáteční datum musí předcházet koncovému datu</value>
+  </data>
+  <data name="CurrCompareDate.Text" xml:space="preserve">
+    <value>Aktuální počáteční datum musí předcházet následujícímu počátečnímu datu</value>
+  </data>
+  <data name="Either01Msg.Text" xml:space="preserve">
+    <value>Prosíme, zadejte buď 0, nebo 1</value>
+  </data>
+  <data name="lclErrorMsg.Text" xml:space="preserve">
+    <value>Prosíme, opravte následující informace</value>
+  </data>
+  <data name="lclSuccessMsg.Text" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+  </data>
+  <data name="ValidDate.Text" xml:space="preserve">
+    <value>Prosíme, zadejte platné datum</value>
+  </data>
+  <data name="lclMyStatementEndResource1" xml:space="preserve">
+    <value>Konec:</value>
+  </data>
+  <data name="lclMyStatementResource1.Text" xml:space="preserve">
+    <value>Mé poslední vyúčtování</value>
+  </data>
+  <data name="lclMyStatementStartResource1" xml:space="preserve">
+    <value>Začátek:</value>
+  </data>
+  <data name="txtMyStatementStartDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclMyStatementholdingPageResource1.Text" xml:space="preserve">
+    <value>Strana o vlastnictví:</value>
+  </data>
+</root>

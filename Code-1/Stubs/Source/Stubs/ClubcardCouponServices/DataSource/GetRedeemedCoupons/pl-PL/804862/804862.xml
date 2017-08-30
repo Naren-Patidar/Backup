@@ -1,0 +1,55 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardCouponService/GetRedeemedCouponsResponse</a:Action>
+    <a:RelatesTo>urn:uuid:18dae7a5-42e5-4cc0-a14a-5f3d7195d122</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetRedeemedCouponsResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetRedeemedCouponsResult>true</GetRedeemedCouponsResult>
+      <errorXml />
+      <couponDetail>
+        &lt;NewDataSet&gt;
+        &lt;UsedCouponDetail&gt;
+        &lt;CouponDescription&gt;zł1.05 off your next shop&lt;/CouponDescription&gt;
+        &lt;IssuanceStartDate&gt;19/10/2015 00:00:00&lt;/IssuanceStartDate&gt;
+        &lt;RedemptionDate&gt;30/11/2015 12:00:50&lt;/RedemptionDate&gt;
+        &lt;RedemptionStore&gt;1720&lt;/RedemptionStore&gt;
+        &lt;RedemptionStoreName&gt;Test Data For Automation&lt;/RedemptionStoreName&gt;
+        &lt;CouponStatus&gt;Redeem&lt;/CouponStatus&gt;
+        &lt;RedemptionCount&gt;1&lt;/RedemptionCount&gt;
+        &lt;ClubCardNo&gt;634004024007890751&lt;/ClubCardNo&gt;
+        &lt;BarCodeNo&gt;9925890010122890010303&lt;/BarCodeNo&gt;
+        &lt;TotalRedemption&gt;1&lt;/TotalRedemption&gt;
+        &lt;TotalRedeemedCoupon&gt;3&lt;/TotalRedeemedCoupon&gt;
+        &lt;/UsedCouponDetail&gt;
+        &lt;UsedCouponDetail&gt;
+        &lt;CouponDescription&gt;zł1.05 off your next shop&lt;/CouponDescription&gt;
+        &lt;IssuanceStartDate&gt;19/10/2015 00:00:00&lt;/IssuanceStartDate&gt;
+        &lt;RedemptionDate&gt;30/11/2015 12:00:59&lt;/RedemptionDate&gt;
+        &lt;RedemptionStore&gt;1720&lt;/RedemptionStore&gt;
+        &lt;RedemptionStoreName&gt;Test Data For Automation&lt;/RedemptionStoreName&gt;
+        &lt;CouponStatus&gt;Redeem&lt;/CouponStatus&gt;
+        &lt;RedemptionCount&gt;1&lt;/RedemptionCount&gt;
+        &lt;ClubCardNo&gt;634004024007890751&lt;/ClubCardNo&gt;
+        &lt;BarCodeNo&gt;9925890010122890010303&lt;/BarCodeNo&gt;
+        &lt;TotalRedemption&gt;1&lt;/TotalRedemption&gt;
+        &lt;TotalRedeemedCoupon&gt;3&lt;/TotalRedeemedCoupon&gt;
+        &lt;/UsedCouponDetail&gt;
+        &lt;UsedCouponDetail&gt;
+        &lt;CouponDescription&gt;zł1.05 off your next shop&lt;/CouponDescription&gt;
+        &lt;IssuanceStartDate&gt;19/10/2015 00:00:00&lt;/IssuanceStartDate&gt;
+        &lt;RedemptionDate&gt;30/11/2015 12:01:05&lt;/RedemptionDate&gt;
+        &lt;RedemptionStore&gt;1720&lt;/RedemptionStore&gt;
+        &lt;RedemptionStoreName&gt;Test Data For Automation&lt;/RedemptionStoreName&gt;
+        &lt;CouponStatus&gt;Redeem&lt;/CouponStatus&gt;
+        &lt;RedemptionCount&gt;1&lt;/RedemptionCount&gt;
+        &lt;ClubCardNo&gt;634004024007890751&lt;/ClubCardNo&gt;
+        &lt;BarCodeNo&gt;9925890010122890010303&lt;/BarCodeNo&gt;
+        &lt;TotalRedemption&gt;1&lt;/TotalRedemption&gt;
+        &lt;TotalRedeemedCoupon&gt;3&lt;/TotalRedeemedCoupon&gt;
+        &lt;/UsedCouponDetail&gt;
+        &lt;/NewDataSet&gt;
+      </couponDetail>
+    </GetRedeemedCouponsResponse>
+  </s:Body>
+</s:Envelope>

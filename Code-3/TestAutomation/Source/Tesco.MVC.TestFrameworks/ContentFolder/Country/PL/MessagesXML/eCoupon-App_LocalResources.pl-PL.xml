@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<eCoupon-App_LocalResources>
+  <Home.cshtml.pl-PL.resx>
+    <Data key="Description" value="Kupony CLUBCARD są jednym ze sposobów podziękowania za uczestnictwo w Programie CLUBCARD. Poniżej możesz zobaczyć podsumowanie kuponów. Aktywne kupony możesz wydrukować i zrealizować w stacjonarnych sklepach Tesco przy kolejnych zakupach. Możesz również dowiedzieć się, które kupony zostały ostatnio przez Ciebie  &lt;a href=&quot;#RedeemedCoupons&quot; id=&quot;LinkOnHome&quot;&gt;wykorzystane.&lt;/a&gt;" />
+    <Data key="HoldingPageDescriptionPart1" value="Obecnie wysłać kupony wydać w sklepie . Jeśli wolisz , aby otrzymywać eCoupons spędzić w Internecie , przejdź do" />
+    <Data key="HoldingPageDescriptionPart2" value="Moje preferencje" />
+    <Data key="HoldingPageDescriptionPart3" value="i opt-in do eCoupons ." />
+    <Data key="HoldingPageDescriptionPart4" value="Aby dowiedzieć się więcej," />
+    <Data key="HoldingPageDescriptionPart5" value="Kliknij tutaj" />
+    <Data key="PageTitle" value="Moje Kupony" />
+    <Data key="PDFTitleCoupon" value="Kupony" />
+    <Data key="SummaryHeading" value="Podsumowanie kuponów CLUBCARD" />
+  </Home.cshtml.pl-PL.resx>
+  <_CouponHowToUse.cshtml.pl-PL.resx>
+    <Data key="InStoreHtml" value="&lt;ol&gt;&lt;li&gt;Po wydrukowaniu kuponów CLUBCARD upewnij się, że zostały wydrukowane prawidłowo, tzn. że kupony są czytelne (widoczny nominał i kod kreskowy).&lt;/li&gt;&lt;li&gt;W razie potrzeby kupon CLUBCARD możesz wydrukować ponownie, lecz zrealizować tylko raz.&lt;/li&gt;&lt;li&gt;Obecnie kuponami CLUBCARD można płacić wyłącznie w stacjonarnych sklepach Tesco.&lt;/li&gt;&lt;li&gt;Każdy kupon posiada określoną datę ważności oraz warunek zakupowy, który należy spełnić, aby kupon zrealizować.&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="OnlineHtml" value="&lt;ol&gt;&lt;li&gt;Zaznacz wybrane lub wszystkie kupony do wydruku, a następnie kliknij w przycisk Drukuj wybrane kupony.&lt;/li&gt;&lt;li&gt;Kupony CLUBCARD w zależności od rodzaju i ustawień Twojej drukarki powinny zostać wydrukowane w odcieniach szarości lub w kolorze. Obie wersje kolorystyczne są akceptowane w stacjonarnych sklepach Tesco.&lt;/li&gt;&lt;/ol&gt;" />
+    <Data key="InStoreHeading" value="Wskazówki dotyczące REALIZACJI kuponów CLUBCARD" />
+    <Data key="OnlineHeading" value="Wskazówki dotyczące DRUKU kuponów CLUBCARD" />
+    <Data key="Heading" value="Jak korzystać z kuponów CLUBCARD" />
+  </_CouponHowToUse.cshtml.pl-PL.resx>
+  <_CouponsAvailable.cshtml.pl-PL.resx>
+    <Data key="Heading" value="Kupony CLUBCARD do zrealizowania" />
+    <Data key="PrintBtnLable" value="Wydrukować wybrane kupony" />
+    <Data key="SubHeading" value="Poniżej znajdują się kupony CLUBCARD, które nie zostały jeszcze przez Ciebie zrealizowane. Pamiętaj, że kupony CLUBCARD są jednokrotnego użytku i można ich użyć w trakcie zakupów, okazując kartę CLUBCARD. Powyżej zamieszczono kilka użytecznych wskazówek, w jaki sposób wydrukować oraz skorzystać z elektronicznej wersji kuponów CLUBCARD w stacjonarnych sklepach Tesco." />
+    <Data key="SelectBtnLable" value="Zaznacz wszystko" />
+    <Data key="CouponHeaderLable" value="Wybierz kupon" />
+    <Data key="ExpireLable" value="wygasa" />
+    <Data key="FooterLable" value="" />
+    <Data key="OnlineCodeLable" value="eCode online" />
+    <Data key="NoCouponsLable" value="Nie masz obecnie żadnych kuponów do zrealizowania. Sprawdź wkrótce!" />
+    <Data key="NoCouponSeletedError" value="Wybierz kupony i spróbuj ponownie. Dziękujemy." />
+  </_CouponsAvailable.cshtml.pl-PL.resx>
+  <_CouponsBox.cshtml.pl-PL.resx>
+    <Data key="CouponAvailableLable" value="Ilość kuponów do zrealizowania" />
+    <Data key="CouponsSentLable" value="Ilość kuponów wysłanych w ostatnich 6 miesiącach" />
+    <Data key="CouponUsedLable" value="Ilość zrealizowanych kuponów w ostatnich 4 tyg." />
+  </_CouponsBox.cshtml.pl-PL.resx>
+  <_CouponsUsed.cshtml.pl-PL.resx>
+    <Data key="IssueDateLable" value="Data nadania" />
+    <Data key="NoRedeemptionMessage" value="Brak kuponów CLUBCARD zrealizowanych w ciągu ostatnich 4 tygodni." />
+    <Data key="OfferLable" value="Oferta" />
+    <Data key="RedeemedDateLable" value="Data wykorzystania" />
+    <Data key="RedeemedLocationLable" value="Gdzie wykorzystano" />
+    <Data key="RedemptionCountLable" value="Realizacja" />
+    <Data key="UsedCouponSectionHeading" value="Kupony CLUBCARD zrealizowane w ciągu ostatnich 4 tygodni." />
+    <Data key="UsedLable" value="Wykorzystane/Nieważne" />
+  </_CouponsUsed.cshtml.pl-PL.resx>
+</eCoupon-App_LocalResources>

@@ -1,0 +1,77 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.XmasSaverViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@{
+    ViewBag.Title = Html.Translate("PageTitle");
+    ViewBag.dtmTitle = Html.Translate("PageTitle");
+    ViewBag.PageName = "ChristmasSavers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation")
+}
+@section scripts
+{
+    <script type="text/javascript">
+        function getBaseUrl() {
+            var re = new RegExp(/^.*\//);
+            return re.exec(window.location.href) + "/Views/AccountManagement/VoucherSchemes";
+        }
+    </script>
+}
+<div class="row">
+    <div class="gr-12">
+            <h1 id="lblheader" class="ddl-h2-like">@Html.Translate("headerChristmasSaaver")</h1>
+        @if (Model.xmasSaverSummaryModel.totalVouchersSavedSofar <= 0)
+        {
+            var oNBLink = Html.ActionLink("Click here", "VoucherSchemes", new { controller = "AccountManagement" });
+    
+            @Html.Partial("_LoadHTML", new LoadHtmlModel
+                                    {
+                                        FileName = "~/Content/htmls/ChristmasSaversHoldingPage.html",
+                                        Arguments = new[] { oNBLink }
+                                    })
+        }
+        else
+        {
+            <div class="copy-wrapper">
+                <p id="lblxmasSaversWelcomeDesc">@Html.Translate("xmasSaversWelcomeDesc") @Model.XmasSaverYear
+                    @Html.Translate("xmasSaversStatementDesc")</p>
+                <h2 class="ddl-h3-like" id="lblthankyouForBeingXmasSaver">@Html.Translate("thankyouForBeingXmasSaver")</h2>
+            </div> 
+            @Html.Partial("_XmasTotalSavings", Model.xmasSaverHeaderModel)
+            if (Model.xmasSaverSummaryModel != null)
+            {
+            <div class="copy-wrapper">
+                <h3 id="lblsummaryForChristmas" class="ddl-h3-like">@Html.Translate("summaryForChristmas")
+                    @Model.XmasSaverYear</h3>
+            </div>
+            @Html.Partial("_XmasSaverSummary", Model.xmasSaverSummaryModel)
+        
+            }
+            if (Model.xmasSaverVoucherSavedModel.TotalVoucherSaver > 0)
+            { 
+            <div class="copy-wrapper">
+                <h3 id="lblclubVoucherSoFar" class="ddl-h3-like">@Html.Translate("clubVoucherSoFar")</h3>
+            </div>
+            @Html.Partial("_XmasVoucherSaved", Model.xmasSaverVoucherSavedModel)
+            }
+            if (Model.xmasSaverTopUpModel.sumTtlToppedUpMoney > 0)
+            { 
+            <div class="copy-wrapper">
+                <h3 id="lblmoneyTopupSoFar" class="ddl-h3-like">@Html.Translate("moneyTopupSoFar")</h3>
+            </div>
+            @Html.Partial("_XmasTopupSavings", Model.xmasSaverTopUpModel)
+            }
+            if (Model.IsOptionsAndBenefitsEnabled)
+            {
+            <div class="copy-wrapper">
+                <p id="lblmyPrefChange">@Html.Translate("myPrefChange")<a href='@Url.Action("VoucherSchemes", "AccountManagement")'
+            id="lnkOptionAndBenefits">@Html.Translate("myPrefOptionAndBenefits")</a>.</p>
+            </div>
+            }
+        }
+    </div>
+</div>

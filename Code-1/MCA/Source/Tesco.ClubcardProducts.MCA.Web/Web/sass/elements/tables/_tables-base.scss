@@ -1,0 +1,143 @@
+.table-wrapper {
+	margin: 0 0 24px 0;
+	padding: 6px 0;
+	position: relative;
+	border-top: 1px solid $ddl-border-color-1;
+
+	caption {
+		font-size: 2.8rem;
+		line-height: 3.2rem;
+		color: $ddl-heading-colour;
+		font-family: 'tescobold';
+		padding: 1.6rem 0;
+	}
+
+	table {
+		width: 100%;
+		margin: 0;
+
+		.ddl-checkbox {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.ddl-label {
+			white-space: nowrap;
+		}
+
+		thead {
+			display: none;
+
+			tr {
+
+				th {
+					border-bottom: 1px solid $ddl-border-color-1;
+					padding: 12px;
+					color: $ddl-black1;
+					font-weight: normal;
+					text-align: left;
+					background: $ddl-white2;
+					line-height: 2rem;
+					font-family: 'tescobold';
+				}
+			}
+		}
+
+		tfoot {
+			//border-top: 1px solid $ddl-border-color-1;
+			background: $ddl-grey6;
+
+			tr {
+				border-bottom: 1px solid $ddl-border-color-1;
+
+				td {
+					padding: 12px 6px;
+					line-height: 2rem;
+					font-family: 'tescobold';
+					display: block;
+					color: $ddl-black1;
+					float: left;
+					width: 70%;
+
+					&:last-child {
+						float: right;
+						text-align: right;
+						width: 30%;
+					}
+				}
+			}
+		}
+
+		tbody {
+
+			tr {
+				display: inline-block;
+				width: 100%;
+				border-bottom: 1px solid $ddl-border-color-1;
+
+				th {
+					display: none;
+				}
+
+				td {
+					//border-bottom: 1px solid $ddl-border-color-1;
+					padding: 6px;
+					line-height: 3.2rem;
+					display: inline-block;
+					clear: right;
+					float: left;
+					font-family: 'tescoregular';
+
+					&:nth-child(even){
+						text-align: right;
+						float: right;
+					}
+
+					//span {
+						//display: block;
+					//}
+				}
+
+				[data-mobileHeader] {
+					width: 100%;
+					text-align: right;
+
+					&:before {
+						content: attr(data-mobileHeader);
+						text-align: left;
+						float: left;
+						font-family: 'tescobold';
+					}
+				}
+
+				th {
+					border-bottom: 1px solid $ddl-border-color-1;
+					color: $ddl-black1;
+					font-weight: normal;
+					text-align: left;
+					padding: 12px;
+					line-height: 2rem;
+					font-family: 'tescobold';
+				}
+
+				&:nth-child(even){
+					background: $ddl-white2;
+
+					th, td {
+						background: $ddl-white2;
+					}
+				}
+
+				&.prominent {
+					background: $ddl-blue1;
+
+					th, td {
+						background: $ddl-blue1;
+						border-color: $ddl-blue1;
+						color: $ddl-white1;
+					}
+				}
+			}
+		}
+	}
+}

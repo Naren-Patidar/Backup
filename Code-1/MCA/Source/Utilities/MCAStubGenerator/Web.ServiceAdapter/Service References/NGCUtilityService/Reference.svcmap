@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f1880f46-d8e8-4871-b2d3-747dd2f09dfe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pvuktstfeapp03.tst01.tesco.org/UtilityService/UtilityService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UtilityService.xsd" MetadataType="Schema" ID="459fbca4-10ea-4653-a7b1-a5b568c7577e" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/UtilityService/UtilityService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UtilityService.disco" MetadataType="Disco" ID="868695a3-7fab-4d6b-8e15-828226346197" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/UtilityService/UtilityService.svc?disco" />
+    <MetadataFile FileName="UtilityService1.xsd" MetadataType="Schema" ID="4100e9f7-2c54-4431-ba0d-125919a988c3" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/UtilityService/UtilityService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UtilityService.wsdl" MetadataType="Wsdl" ID="840417ac-46c7-4944-8038-9479c053c2ec" SourceId="1" SourceUrl="http://pvuktstfeapp03.tst01.tesco.org/UtilityService/UtilityService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addressLine2.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket</value>
+  </data>
+  <data name="addressLine3.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket</value>
+  </data>
+  <data name="addressLine4.valid" xml:space="preserve">
+    <value>Kérjük, töltse ki a mezőt. Ne használjon speciális karaktereket.</value>
+  </data>
+  <data name="addressLine5.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket</value>
+  </data>
+  <data name="babyToddlerPref.valid" xml:space="preserve">
+    <value>A Baby Club-ba jelentkezett be, 
+Kérjük, adjon meg más elérhetőséget, mielőtt törni az e-mail címét.</value>
+  </data>
+  <data name="changePref.valid" xml:space="preserve">
+    <value>Jelenleg a Clubcard pontösszesítőt, utalványokat és kuponokat e-mailen kapja. Kérje pontösszesítőjét postai úton (Levél/Email/Telefon menüpont alatt), mielőtt törli az e-mail címét.</value>
+  </data>
+  <data name="clickArrow.valid" xml:space="preserve">
+    <value>Klikkeljen a nyílra,hogy kiválassza a lakóhelyét.</value>
+  </data>
+  <data name="daytimePhone.valid" xml:space="preserve">
+    <value>Kérjük, használja a helyes formátumot (0036 városelőhívó 123456, elválasztás nélkül)</value>
+  </data>
+  <data name="dobLessThan.valid" xml:space="preserve">
+    <value>Hibás és …. korábbi születési dátumot adjon meg</value>
+  </data>
+  <data name="FamilyMemberDOB1" xml:space="preserve">
+    <value>Kérjük, adjon meg érvényes születési dátumot.</value>
+  </data>
+  <data name="dueDate.valid" xml:space="preserve">
+    <value>9 hónapnál fiatalabb újszülöttek esetén a dátumot a Nap/Hónap/Év formátumban adja meg vagy törölje.</value>
+  </data>
+  <data name="email.valid" xml:space="preserve">
+    <value>Hibás e-mail címet adott meg.</value>
+  </data>
+  <data name="enterAge.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket.</value>
+  </data>
+  <data name="enterNo.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket.</value>
+  </data>
+  <data name="eveningPhone.valid" xml:space="preserve">
+    <value>Hibás elérhetőséget adott meg az esti órákra</value>
+  </data>
+  <data name="firstName.valid" xml:space="preserve">
+    <value>Kérjük, töltse ki a mezőt. Ne használjon speciális karaktereket.</value>
+  </data>
+  <data name="format.valid" xml:space="preserve">
+    <value> a dátumot a Nap/Hónap/Év formátumban adja meg vagy törölje.</value>
+  </data>
+  <data name="gender.mismatch" xml:space="preserve">
+    <value>Hibás előnév</value>
+  </data>
+  <data name="gender.valid" xml:space="preserve">
+    <value>Kérjük, adja meg nemét.</value>
+  </data>
+  <data name="language.valid" xml:space="preserve">
+    <value>Hibás használt nyelvet adott meg.</value>
+  </data>
+  <data name="lclAddress.Text" xml:space="preserve">
+    <value>Cím </value>
+  </data>
+  <data name="lclAddressLine2.Text" xml:space="preserve">
+    <value>Házszám, emelet, ajtó</value>
+  </data>
+  <data name="lclAddressLine3.Text" xml:space="preserve">
+    <value>Egyéb</value>
+  </data>
+  <data name="lclAddressLine4.Text" xml:space="preserve">
+    <value>Város</value>
+  </data>
+  <data name="lclAddressLine5.Text" xml:space="preserve">
+    <value>Ország</value>
+  </data>
+  <data name="lclAge.Text" xml:space="preserve">
+    <value>Életkor</value>
+  </data>
+  <data name="lclBabyAndToddler.Text" xml:space="preserve">
+    <value>a Tesco Baby Club</value>
+  </data>
+  <data name="lclBabyMessage1.Text" xml:space="preserve">
+    <value>Jelenleg a Tesco Baby Club tagja.</value>
+  </data>
+  <data name="lclBabyMessage2.Text" xml:space="preserve">
+    <value>Kérjük, ellenőrizze a … év alatti gyermekei születési dátumait.</value>
+  </data>
+  <data name="lclCantFindAddress.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChild.Text" xml:space="preserve">
+    <value>Amennyiben 1 éves kor alatti gyermeke van, írjon 0-t.</value>
+  </data>
+  <data name="lclChooseAnAddress.Text" xml:space="preserve">
+    <value>Válassza ki a lakcímét</value>
+  </data>
+  <data name="lclCountry.Text" xml:space="preserve">
+    <value>Ország</value>
+  </data>
+  <data name="lclDayTimePhoneNo.Text" xml:space="preserve">
+    <value>Vezetékes szám (0036 kezdettel magyar hívószám esetében, elválasztás nélkül)</value>
+  </data>
+  <data name="lclDietaryNeed.Text" xml:space="preserve">
+    <value>Étrendje</value>
+  </data>
+  <data name="lclDob.Text" xml:space="preserve">
+    <value>Születési dátum (18 év alatti vásárlók regisztrációját nem tudjuk elfogadni)</value>
+  </data>
+  <data name="lclEmailAddress.Text" xml:space="preserve">
+    <value>E-mail cím (használja a Clubcard fiókom regisztrációnál megadott e-mail címet)</value>
+  </data>
+  <data name="lclEnterAge.Text" xml:space="preserve">
+    <value>Kérjük írja be a háztartásában élők életkorát (kivéve a kártya fő tulajdonosáét)</value>
+  </data>
+  <data name="lclEvnPhoneNo.Text" xml:space="preserve">
+    <value>Vezetékes telefon (este)</value>
+  </data>
+  <data name="lclFemale.Text" xml:space="preserve">
+    <value>Nő</value>
+  </data>
+  <data name="lclFirstName.Text" xml:space="preserve">
+    <value>Vezetéknév</value>
+  </data>
+  <data name="lclGender.Text" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+  <data name="lclHouseHoldDetails.Text" xml:space="preserve">
+    <value>A háztartásával kapcsolatos adatok</value>
+  </data>
+  <data name="lclHouseNo.Text" xml:space="preserve">
+    <value>Közterület neve (utca, köztér stb.)</value>
+  </data>
+  <data name="lclHouseNoName.Text" xml:space="preserve">
+    <value>Közterület neve (utca, köztér stb.)</value>
+  </data>
+  <data name="lclLocality.Text" xml:space="preserve">
+    <value>Tartózkodási hely</value>
+  </data>
+  <data name="lclMale.Text" xml:space="preserve">
+    <value>Férfi</value>
+  </data>
+  <data name="lclMiddleInitials.Text" xml:space="preserve">
+    <value>Középső név</value>
+  </data>
+  <data name="lclMobilePhoneNo.Text" xml:space="preserve">
+    <value>Mobil szám (0036 kezdettel magyar hívószám esetében, elválasztás nélkül)</value>
+  </data>
+  <data name="lclMoreInfo.Text" xml:space="preserve">
+    <value>Több információ</value>
+  </data>
+  <data name="lclNoteText.Text" xml:space="preserve">
+    <value>Annak érdekében, hogy személyre szabott tájékoztatást és kuponokat kapjon tőlünk, kérjük, adja meg a háztartásával kapcsolatos információkat.</value>
+  </data>
+  <data name="lclOptOut.Text" xml:space="preserve">
+    <value>Elutasít</value>
+  </data>
+  <data name="lclPeople.Text" xml:space="preserve">
+    <value>Hány ember él a háztartásában (beleértve Önt is)?</value>
+  </data>
+  <data name="lclPostCode.Text" xml:space="preserve">
+    <value>Irányítószám</value>
+  </data>
+  <data name="lclPrefLanguage.Text" xml:space="preserve">
+    <value>Választott nyelv</value>
+  </data>
+  <data name="lclPrimID.Text" xml:space="preserve">
+    <value>Elsődleges ID (Társadalombiztosítási Szám)</value>
+  </data>
+  <data name="lclRace.Text" xml:space="preserve">
+    <value>Kérjük válasszon nemzetiséget</value>
+  </data>
+  <data name="lclSecID.Text" xml:space="preserve">
+    <value>Másodlagos ID (Útlevél, személyi igazolvány szám)</value>
+  </data>
+  <data name="lclStreet.Text" xml:space="preserve">
+    <value>Utca</value>
+  </data>
+  <data name="lclSurName.Text" xml:space="preserve">
+    <value>Keresztnév</value>
+  </data>
+  <data name="lclTitle.Text" xml:space="preserve">
+    <value>Előnév</value>
+  </data>
+  <data name="lclTitleMsg.Text" xml:space="preserve">
+    <value>Kérjük válasszon előnevet</value>
+  </data>
+  <data name="lclTown.Text" xml:space="preserve">
+    <value>Város</value>
+  </data>
+  <data name="lclYourContDetails.Text" xml:space="preserve">
+    <value>Személyes adatlap</value>
+  </data>
+  <data name="MiddleName.valid" xml:space="preserve">
+    <value>Kérjük, ne használjon speciális karaktereket</value>
+  </data>
+  <data name="mobPhone.valid" xml:space="preserve">
+    <value>Kérjük, használja a helyes formátumot (0036201234567)</value>
+  </data>
+  <data name="pleaseTry.valid" xml:space="preserve">
+    <value>Kérjük, próbálja újra vagy vegye fel velünk a kapcsolatot a következő számon: 0800 59 16 88.</value>
+  </data>
+  <data name="postcode.valid" xml:space="preserve">
+    <value>Nem adott meg érvényes irányítószámot.</value>
+  </data>
+  <data name="primaryId.valid" xml:space="preserve">
+    <value>Hibás elsődleges ID-t adott meg.</value>
+  </data>
+  <data name="primaryIdLength.valid" xml:space="preserve">
+    <value>Hibás és nem megfelelő hosszúságú elsődleges ID-t adott meg.</value>
+  </data>
+  <data name="primIdsecId.valid" xml:space="preserve">
+    <value>Kérjük, adja meg az elsődleges vagy a másodlagos ID-t.</value>
+  </data>
+  <data name="race.valid" xml:space="preserve">
+    <value>Hibás nemzetiséget adott meg.</value>
+  </data>
+  <data name="save.valid" xml:space="preserve">
+    <value>Változások elmentve</value>
+  </data>
+  <data name="secondaryId.valid" xml:space="preserve">
+    <value>Hibás másodlagos ID-t adott meg.</value>
+  </data>
+  <data name="secondaryIdLength.valid" xml:space="preserve">
+    <value>Hibás és nem megfelelő hosszúságú másodlagos ID-t adott meg.</value>
+  </data>
+  <data name="selectHouse.valid" xml:space="preserve">
+    <value>Kérjük,válasszon lakhelyet.</value>
+  </data>
+  <data name="sorry.valid" xml:space="preserve">
+    <value>Sajnos ez az irányítószám nem létezik.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="surName.valid" xml:space="preserve">
+    <value>Kérjük, töltse ki a mezőt. Ne használjon speciális karaktereket..</value>
+  </data>
+  <data name="tooManyAges.valid" xml:space="preserve">
+    <value>Hibásan adta meg a háztartásában élő személyek számát, kérjük, ellenőrizze és írja be újra.</value>
+  </data>
+  <data name="validDob.valid" xml:space="preserve">
+    <value>Hibás születési dátumot adott meg..</value>
+  </data>
+  <data name="lclTitle1.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="lclTitle2.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="lclTitle3.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="lclTitle4.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="lclSelectTitle.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Cím keresése</value>
+  </data>
+  <data name="btnSaveAddressResource1.Text" xml:space="preserve">
+    <value>Változások elmentve</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>nap</value>
+  </data>
+  <data name="lclSelectMonth.Text" xml:space="preserve">
+    <value>hónap</value>
+  </data>
+  <data name="lclSelectYear.Text" xml:space="preserve">
+    <value>év</value>
+  </data>
+  <data name="Len_DayTimePhonenumber" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes telefonszámot a megfelelő formában!</value>
+  </data>
+  <data name="Len_EmailAddress" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes E-mail címet a megfelelő formában!</value>
+  </data>
+  <data name="Len_EveningPhonenumber" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes telefonszámot a megfelelő formában!</value>
+  </data>
+  <data name="Len_FirstName" xml:space="preserve">
+    <value>Kérjük adja meg az utónevét a megfelelő formában!</value>
+  </data>
+  <data name="Len_Initial" xml:space="preserve">
+    <value>Kérjük adja meg a második utónevét a megfelelő formában!</value>
+  </data>
+  <data name="Len_LastName" xml:space="preserve">
+    <value>Kérjük adja meg a vezetéknevét a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine1" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet az első sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine2" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet a második sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine3" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet a harmadik sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine4" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet a negyedik sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine5" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet az ötödik sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressLine6" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes címet a hatodik sorba a megfelelő formában!</value>
+  </data>
+  <data name="Len_MailingAddressPostCode" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes irányítószámot a megfelelő formában!</value>
+  </data>
+  <data name="Len_MobilePhoneNumber" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes mobil telefonszámot a megfelelő formában!</value>
+  </data>
+  <data name="Len_PassportNo" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes másodlagos azonosítót a megfelelő formában!</value>
+  </data>
+  <data name="Len_SSN" xml:space="preserve">
+    <value>Kérjük adjon meg egy érvényes elsődleges azonosítót a megfelelő formában!</value>
+  </data>
+  <data name="selectrace" xml:space="preserve">
+    <value>- Select race -</value>
+  </data>
+  <data name="ReplacementText" xml:space="preserve">
+    <value>Do you need a replacement card with your new name?</value>
+  </data>
+</root>

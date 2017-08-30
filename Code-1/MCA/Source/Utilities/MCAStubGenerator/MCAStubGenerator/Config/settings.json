@@ -1,0 +1,169 @@
+{
+ "apis" : 
+	[	{
+			"servicetype" : "ISmartVoucherServices",
+			"methods" : [	{ 
+								"name": "GetRewardDtls",
+								"responseformat" : "xml",
+								"opname" : "GetVoucherRewardDetails"
+							},
+							{
+								"name": "GetUnusedVoucherDtls",
+								"responseformat" : "js",
+								"opname" : "GetUnusedVoucherDetails"
+							},
+							{
+								"name": "GetVoucherValCPS",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerVoucherValCPS"
+							},	
+							{
+								"name": "GetUsedVoucherDtls",
+								"responseformat" : "xml",
+								"opname" : "GetUsedVoucherDetails"
+							},
+							{
+								"name": "GetRewardDtlsMiles",
+								"responseformat" : "xml",
+								"opname" : "GetRewardDetailsMiles"
+							}								
+						],
+			"proxy" : "Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.Services.SmartVoucherServiceAdapter"
+		},
+		{
+			"servicetype" : "IRewardService",
+			"methods" : [	{ 
+								"name": "GetRewardDetail",
+								"responseformat" : "xml",
+								"opname" : "GetRewardAndTokens"
+							},
+							{
+								"name": "GetTokenInfo",
+								"responseformat" : "xml",
+								"opname" : "GetTokens"
+							}								
+						],
+			"proxy" : "Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.Services.RewardServiceAdapter"
+		},
+		{
+			"servicetype" : "ICustomerService",
+			"methods" : [	{ 
+								"name": "SearchCustomer",
+								"responseformat" : "xml",
+								"opname" : "GetHouseHoldDetailsByCustomer"
+							},
+							{ 
+								"name": "GetCustomerDetails",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerFamilyMasterDataByClubcard"
+							},
+							{ 
+								"name": "GetCustomerVerificationDetails",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerVerificationStatusDetails"
+							},
+							{ 
+								"name": "GetConfigDetails",
+								"responseformat" : "xml",
+								"opname" : "GetConfiguration"
+							},
+							{ 
+								"name": "ValidateEmailLink",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerIDbyGUID"
+							},							
+							{ 
+								"name": "AddPrintAtHomeDetails",
+								"responseformat" : "xml",
+								"opname" : "RecordPrintAtHomeDetails"
+							},
+							{ 
+								"name": "UpdateCustomerDetails",
+								"responseformat" : "xml",
+								"opname" : "UpdateCustomerDetails"
+							},
+							{ 
+								"name": "InsertUpdateCustomerVerificationDetails",
+								"responseformat" : "xml",
+								"opname" : "NoteSecurityAttemptInAudit"
+							}
+						],
+			"proxy" : "Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.Services.CustomerServiceAdapter"
+		},
+		{
+			"servicetype" : "IClubcardService",
+			"methods" : [	{ 
+								"name": "GetPointsForAllCollPeriodByCustomer",
+								"responseformat" : "xml",
+								"opname" : "GetOffersForCustomer"
+							},
+							{
+								"name": "GetMyAccountDetails",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerAccountDetails"
+							},
+							{
+								"name": "IsXmasClubMember",
+								"responseformat" : "xml",
+								"opname" : "IsXmasClubMember"
+							},
+							{
+								"name": "GetChristmasSaverSummary",
+								"responseformat" : "xml",
+								"opname" : "GetChristmasSaverSummary"
+							},						
+							{
+								"name": "IGHSCheckCustomerActivated",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerActivationStatusDetails"
+							},
+							{
+								"name": "GetHouseholdCustomers",
+								"responseformat" : "xml",
+								"opname" : "GetHouseHoldCustomersData"
+							},
+							{
+								"name": "GetClubcardsCustomer",
+								"responseformat" : "xml",
+								"opname" : "GetClubcardsCustomerData"
+							},
+							{
+								"name": "GetPointsSummaryInfo",
+								"responseformat" : "xml",
+								"opname" : "GetPointsSummary"
+							},
+							{
+								"name": "GetTxnDetailsByCustomerAndOfferID",
+								"responseformat" : "xml",
+								"opname" : "GetCustomerTransactions"
+							},
+							{
+								"name": "IsNewOrderReplacementValid",
+								"responseformat" : "xml",
+								"opname" : "GetOrderReplacementStatus"
+							},
+							{
+								"name": "AddNewOrderReplacement",
+								"responseformat" : "xml",
+								"opname" : "ProcessOrderReplacementRequest"
+							}
+						],
+			"proxy" : "Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.Services.ClubcardServiceAdapter"
+		},	
+		{
+			"servicetype" : "IClubcardCouponService",
+			"methods" : [	{ 
+								"name": "GetAvailableCoupons",
+								"responseformat" : "xml",
+								"opname" : "GetAvailableCoupons"
+							},
+							{
+								"name": "GetRedeemedCoupons",
+								"responseformat" : "xml",
+								"opname" : "GetRedeemedCoupons"
+							}								
+						],
+			"proxy" : "Tesco.ClubcardProducts.MCA.Web.ServiceAdapter.Services.ClubcardCouponServiceAdapter"
+		}		
+	]
+}

@@ -1,0 +1,65 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+
+@model VouchersBanner
+@{
+    bool hideVoucherLockOnHome = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HideJoinFunctionality][DbConfigurationItemNames.HideVoucherLock.ToString()].ConfigurationValue1.Equals("1");
+    //bool hidePointConversionBanner = !DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointConversionBanner].ConfigurationValue1.Equals("0");    
+    bool isVoucherValueVisible = Model.IsSecurityCheckDone || hideVoucherLockOnHome;
+ }
+ <label id='voucherlink' style='display: none;'>@Url.Action("AvailableVouchers", "Vouchers")</label>
+ <div class="gr-12" id="vouchersStrip">
+        <a id="vouchersLink" href="@Url.Action("Home", ((Model.OptedScheme == BusinessConstants.XMASSAVER) ? "ChristmasSavers" : "Vouchers"))">
+            <div class="table-wrapper points-callout points-callout-link points-callout-secondary ddl-icon-before ddl-icon-vouchers">
+                <table>
+                    <thead class="ddl-visually-hidden">
+                        <tr>
+                            <th class="ddl-text-left">
+                                Type of points
+                            </th>
+                            <th class="ddl-text-centre">
+                                Amount of points
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="vouchersText">
+                            <h2>
+                            @switch (Model.OptedScheme)
+                            {
+                                case BusinessConstants.XMASSAVER:
+                                    @Html.Translate("Shared/_Points", "xmasmiles")
+                               break;
+                               case BusinessConstants.AIRMILES_PREMIUM:
+                               case BusinessConstants.AIRMILES_STD:
+                                    @Html.Translate("Shared/_Points", "aviosMiles")
+                               break;
+                               case BusinessConstants.VIRGIN:
+                                    @Html.Translate("Shared/_Points", "virginMiles")
+                               break;
+                               case BusinessConstants.BAMILES_STD:
+                               case BusinessConstants.BAMILES_PREMIUM:
+                                    @Html.Translate("Shared/_Points", "BAmiles")
+                               break;
+                               default:
+                                    @Html.Translate("Shared/_Points", "stdVoucher")
+                               break;
+                            }
+                            </h2>
+                            </td>
+                            <td id="vouchersTotal" class="ddl-no-wrap">
+                               @if (isVoucherValueVisible)
+                               {
+                                    <span id="voucherCurrencySymbol" style="display:none;">@Html.Translate("Shared/_Points", "CurrencySymbol")</span><span id="vouchersValue"></span><span style="display:none;" id="voucherAlphaSymbol">@Html.Translate("Shared/_Points", "AlphaSymbol")</span>
+                               }
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </a>
+    </div>

@@ -1,0 +1,381 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@model Tesco.ClubcardProducts.MCA.Web.Common.Entities.Activation.ClubcardCustomer
+@{
+    
+    ViewBag.Title = @Html.Translate("Activation/Home", "PageResource1.Title");
+    ViewBag.dtmTitle = @Html.Translate("Activation/Home", "PageResource1.Title");
+    ViewBag.PageName = "Activation";
+    ViewBag.EnableLeftNavigation = "FALSE";
+    ViewBag.IsGrayBackGround = "TRUE";
+    var ActivationConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Activation];
+    var LengthConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.Length_of_the_input_fields];
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+                @if (ViewBag.Name != "CustomerIDalready")
+                {
+                <h2 id="spnConfirmClubDetails">@Html.Translate("Activation/Home", "Span1ConfirmClubcardDetails.Text")</h2>
+                <p id="lblKeep">
+                    @Html.Translate("Activation/Home", "lclKeepResource1.Text")</p>
+                <p id="lblNameAddress">
+                    @Html.Translate("Activation/Home", "lclNameAddressResource1.Text")</p>
+                    if (Html.Translate("lclNextTimeResource1.Text").ToString().Length > 0)
+                    { 
+                <p id="lblNextTime">
+                    @Html.Translate("Activation/Home", "lclNextTimeResource1.Text")</p>
+                    }
+                    if (Html.Translate("lclAwareResource1.Text").ToString().Length > 0)
+                    { 
+                <p id="lbllclAware">
+                    @Html.Translate("Activation/Home", "lclAwareResource1.Text")</p>
+                    }
+                }
+            
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Home", "Activation", new { @from = Request.QueryString["from"]}, FormMethod.Post, new { @class = "ddl-form" }))
+{
+    @Html.AntiForgeryToken()
+    <form class="ddl-form">
+    <div>
+    @if (ViewBag.Name == "DuplicateDotcomID")
+            {
+                <div id="divDuplicateDotcomErrorMsg" class="message-level-2 message-error">
+                    <p class="page_intro message" id="PAccountLinked">@Html.Translate("Activation/Home", "lclDuplicateDotcomID1.Text")</p>
+                    <p class="pageDescActivation message" id="pHeaderText">
+                        <span id="lblDuplicateDotcomid2">@Html.Translate("Activation/Home", "lclDuplicateDotcomID2.Text")
+                        </span><a href="../../Views/Home/Home" id="lblDuplicateDotcomid3">@Html.Translate("Activation/Home", "lclDuplicateDotcomID3.Text")</a>
+                        <span id="lblDuplicateDotcomid4">@Html.Translate("Activation/Home", "lclDuplicateDotcomID4.Text")</span></p>
+                </div>
+            }
+            @if (ViewBag.Name == "CustomerIDalready")
+            {
+                <div id="divMultipleDotcomID" runat="server" class="copy-wrapper">
+                    <p class="message-level-2 message-error" id="p2">
+                        <span class="red" id="lblMultipleDotcomID">@Html.Translate("Activation/Home", "lclMultipleDotcomID1.Text")</span></p>
+                </div>
+            }
+            @if (ViewBag.Name == "ClubcardDetailsDoesntMatch")
+            {
+			<div class="copy-wrapper">
+			
+                @if (Html.Translate("Activation/Home","Span2ReConfirmClubcardDetails.Text").ToString().Length > 0)
+                { 
+                <h2>
+                    <span id="spnReConfirmClubcardDetails">@Html.Translate("Activation/Home", "Span2ReConfirmClubcardDetails.Text")</span></h2>
+                }
+                <p id="spnReconfirmDetailsMessage" class="message-level-2 message-error">@Html.Translate("Activation/Home", "Span3ReconfirmDetailsMessage.Text")</p>
+                @if (Html.Translate("Activation/Home","lclTryAgainResource1.Text").ToString().Length > 0)
+                { 
+                <p id="lblTryAgain">@Html.Translate("Activation/Home", "lclTryAgainResource1.Text")</p>
+                }
+                @if (Html.Translate("Activation/Home","lclHintResource1.Text").ToString().Length > 0)
+                { 
+                <p id='lblHint'>
+                    @Html.Translate("Activation/Home", "lclHintResource1.Text")
+                </p>
+                }
+				</div>
+				
+            }
+            </div>
+    <div class="form-row" id="divforClubcardNumber">
+        @if (!errorKeys.Contains("Clubcard.ClubcardNumber"))
+        {
+            <div class="ddl-form-field" id="errdivforCC">
+                <label for="txtClubcardNumber" class="ddl-label" id="liClubcardNumber">
+                    @Html.Translate("Activation/Home", "lclClubcardResource1.Text")
+                </label>
+                @Html.TextBoxFor(model => model.Clubcard.ClubcardNumber, new { @type="tel",@class = "ddl-input", id = "txtClubcardNumber", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.ClubcardNumber].ConfigurationValue2.ToString() })
+            </div> 
+        }
+
+        else
+        {
+            <div class="ddl-form-field ddl-error" id="errdivforCC">
+                <label for="txtClubcardNumber" class="ddl-label" id="liClubcardNumber">
+                    @Html.Translate("Activation/Home", "lclClubcardResource1.Text")
+                </label>
+                @Html.TextBoxFor(model => model.Clubcard.ClubcardNumber, new { @type="tel",@class = "ddl-input", id = "txtClubcardNumber", autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.ClubcardNumber].ConfigurationValue2.ToString() })
+                <p id="lclerrClubcardNumber">@Html.ValidationMessageFor(model => model.Clubcard.ClubcardNumber)</p>
+            </div>  
+        }
+    </div>
+    @if (ActivationConfig[DbConfigurationItemNames.Name1].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforFirstName">
+            @if (!errorKeys.Contains("FirstName"))
+            {
+                <div class="ddl-form-field" id="errdivforFN">
+                    <label for="txtFirstName" class="ddl-label" id="lifirstName">
+                        @Html.Translate("Activation/Home", "lclFirstNameResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.FirstName, new { @class = "ddl-input", id = "txtFirstName", autocomplete = "off" })</div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error" id="errdivforFN">
+                    <label for="txtFirstName" class="ddl-label" id="lifirstName">
+                        @Html.Translate("Activation/Home", "lclFirstNameResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.FirstName, new { @class = "ddl-input", id = "txtFirstName", autocomplete = "off" })
+                    <p id="lclerrFirstName">@Html.ValidationMessageFor(model => model.FirstName)</p>
+                </div>
+            }
+        </div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.Name3].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforSurname">
+            @if (!errorKeys.Contains("Surname"))
+            {
+                <div class="ddl-form-field" id="errdovforLN">
+                    <label for="txtSurname" class="ddl-label" id="lisurname">
+                        @Html.Translate("Activation/Home", "lclSurNameResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.Surname, new { @class = "ddl-input", id = "txtSurname", autocomplete = "off" })
+                </div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error" id="errdovforLN">
+                    <label for="txtSurname" class="ddl-label" id="lisurname">
+                        @Html.Translate("Activation/Home", "lclSurNameResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.Surname, new { @class = "ddl-input", id = "txtSurname", autocomplete = "off" })
+                    @if (errorKeys.Contains("Surname"))
+                    {
+                        <p id="lclerrSurname">@Html.ValidationMessageFor(model => model.Surname)</p>
+                    }
+                </div>
+            }</div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.DayofBirth].ConfigurationValue1.Equals("1") || ActivationConfig[DbConfigurationItemNames.MonthofBirth].ConfigurationValue1.Equals("1") || ActivationConfig[DbConfigurationItemNames.YearofBirth].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforDOB">
+            <fieldset class="ddl-fieldset ddl-inline-fieldset date-of-birth-field">
+                <legend>@Html.Translate("Activation/Home", "lclDOBResource1.Text")</legend>
+                @if (ActivationConfig[DbConfigurationItemNames.DayofBirth].ConfigurationValue1.Equals("1"))
+                {
+                    if (!errorKeys.Contains("DayOfBirth"))
+                    {
+                    <div class="ddl-form-field" id="divforDay">
+                        <label for="fld_dayOfBirth" id="lblDayofBirth" class="ddl-label">
+                            Day Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.DayOfBirth, new SelectList(GeneralUtility.GetDays(), "Key", "Value", Model.DayOfBirth), @Html.Translate("Activation/Home", "ListItemResource1.Text").ToString(), new { id = "ddlDate" })
+                        </span>
+                    </div>
+                    }
+                }
+                @if (ActivationConfig[DbConfigurationItemNames.MonthofBirth].ConfigurationValue1.Equals("1"))
+                {
+                    if (!errorKeys.Contains("MonthOfBirth"))
+                    {
+                    <div class="ddl-form-field" id="divforMonthofBirth">
+                        <label for="fld_monthOfBirth" id="lblMonthofBirth" class="ddl-label">
+                            Month Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.MonthOfBirth, new SelectList(GeneralUtility.GetMonthsList(), "Key", "Value", Model.MonthOfBirth), @Html.Translate("Activation/Home", "lclSelectMonth.Text").ToString(), new { id = "ddlMonth" })
+                        </span>
+                    </div>
+                    }
+                }
+                @if (ActivationConfig[DbConfigurationItemNames.YearofBirth].ConfigurationValue1.Equals("1"))
+                {
+                    if (errorKeys.Contains("YearOfBirth"))
+                    {  
+                    <div class="ddl-form-field" id="divforYearofBirth">
+                        <label for="fld_yearOfBirth" id="lblYearofBirth" class="ddl-label">
+                            Year Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.YearOfBirth, new SelectList(GeneralUtility.GetYearsList(), "Key", "Value", Model.YearOfBirth), Html.Translate("Activation/Home", "lclSelectYear.Text").ToString(), new { id = "ddlYear" })
+                        </span>
+                    </div> 
+                    }
+                }
+                @if (errorKeys.Contains("DayOfBirth"))
+                {
+                    <div class="ddl-form-field ddl-error" id="divforDay">
+                        <label for="fld_dayOfBirth" id="lblDayofBirth" class="ddl-label">
+                            Day Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.DayOfBirth, new SelectList(GeneralUtility.GetDays(), "Key", "Value", Model.DayOfBirth), @Html.Translate("Activation/Home", "ListItemResource1.Text").ToString(), new { id = "ddlDate" })
+                        </span>
+                        <p class="error" id="lblerrDayOB">@Html.ValidationMessageFor(model => model.DayOfBirth)</p>
+                    </div>
+                }
+                @if (errorKeys.Contains("MonthOfBirth"))
+                {
+                    <div class="ddl-form-field ddl-error" id="divforMonthofBirth">
+                        <label for="fld_monthOfBirth" id="lblMonthofBirth" class="ddl-label">
+                            Month Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.MonthOfBirth, new SelectList(GeneralUtility.GetMonthsList(), "Key", "Value", Model.MonthOfBirth), @Html.Translate("Activation/Home", "lclSelectMonth.Text").ToString(), new { id = "ddlMonth" })
+                        </span>
+                        <p class="error" id="lblerrMonthOB">@Html.ValidationMessageFor(model => model.MonthOfBirth)</p>
+                    </div>  
+                }
+                @if (errorKeys.Contains("YearOfBirth"))
+                { 
+                    <div class="ddl-form-field ddl-error" id="divforYearofBirth">
+                        <label for="fld_yearOfBirth" id="lblYearofBirth" class="ddl-label">
+                            Year Of Birth</label>
+                        <span class="ddl-select">
+                            @Html.DropDownListFor(model => model.YearOfBirth, new SelectList(GeneralUtility.GetYearsList(), "Key", "Value", Model.YearOfBirth), Html.Translate("Activation/Home", "lclSelectYear.Text").ToString(), new { id = "ddlYear" })
+                        </span>
+                        <p class="error" id="lblerryearOB">@Html.ValidationMessageFor(model => model.YearOfBirth)</p>
+                    </div> 
+                }
+            </fieldset>
+        </div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.MailingAddressLine1].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforAddressline1">
+            @if (!errorKeys.Contains("Address.AddressLine1"))
+            {      <div class="ddl-form-field">
+                <label for="txtAddressline1" class="ddl-label" id="liAddressline1">
+                    @Html.Translate("Activation/Home", "lclHouseNoResource1.Text")
+                </label>
+                @Html.TextBoxFor(model => model.Address.AddressLine1, new { @class = "ddl-input", id = "txtAddressline1", autocomplete = "off" })
+            </div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error">
+                    <label for="txtAddressline1" class="ddl-label" id="liAddressline1">
+                        @Html.Translate("Activation/Home", "lclHouseNoResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.Address.AddressLine1, new { @class = "ddl-input", id = "txtAddressline1", autocomplete = "off" })
+                    @if (errorKeys.Contains("Address.AddressLine1"))
+                    {                 
+                        <p id="lblerrAddressline1">@Html.ValidationMessageFor(model => model.Address.AddressLine1)</p>
+                    }
+                </div>
+            }
+        </div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.MailingAddressPostCode].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divPostCode">
+            @if (!errorKeys.Contains("Address.PostCode"))
+            {                 
+                <div class="ddl-form-field">
+                    <label for="txtPostcode" class="ddl-label" id="liPostCode">
+                        @Html.Translate("Activation/Home", "lclPostcodeResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.Address.PostCode, new { @class = "ddl-input", id = "txtPostcode", autocomplete = "off" })</div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error">
+                    <label for="txtPostcode" class="ddl-label" id="liPostCode">
+                        @Html.Translate("Activation/Home", "lclPostcodeResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.Address.PostCode, new { @class = "ddl-input", id = "txtPostcode", autocomplete = "off" })
+                    @if (errorKeys.Contains("Address.PostCode"))
+                    {                 
+                        <p class="error" id="lblErrPostcode">@Html.ValidationMessageFor(model => model.Address.PostCode)</p>
+                    }
+                </div>
+            }</div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.MobilePhoneNumber].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforMobilePhoneNumber">
+            @if (!errorKeys.Contains("ContactDetail.MobileContactNumber"))
+            {                 
+                <div class="ddl-form-field">
+                    <label for="txtMobilePhoneNumber" class="ddl-label" id="liMobileNumber">
+                        @Html.Translate("Activation/Home", "lclMobileResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.ContactDetail.MobileContactNumber, new { @type="tel",@class = "ddl-input", id = "txtMobilePhoneNumber", placeholder = @Html.Translate("Activation/Home", "lclMobilePhoneNoExampleResource1.Text"), autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.MobilePhoneNumber].ConfigurationValue2.ToString() })</div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error">
+                    <label for="txtMobilePhoneNumber" class="ddl-label" id="liMobileNumber">
+                        @Html.Translate("Activation/Home", "lclMobileResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.ContactDetail.MobileContactNumber, new { @type="tel",@class = "ddl-input", id = "txtMobilePhoneNumber", placeholder = @Html.Translate("Activation/Home", "lclMobilePhoneNoExampleResource1.Text"), autocomplete = "off", maxLength = LengthConfig[DbConfigurationItemNames.MobilePhoneNumber].ConfigurationValue2.ToString() })
+                    @if (errorKeys.Contains("ContactDetail.MobileContactNumber"))
+                    {                 
+                        <p class="error" id="lblerrMobileContactNumber">@Html.ValidationMessageFor(model => model.ContactDetail.MobileContactNumber)</p>
+                    }
+                </div>
+            }</div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.SSN].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforSSN">
+            @if (!errorKeys.Contains("SSN"))
+            {                 
+                <div class="ddl-form-field">
+                    <label for="txtSSN" class="ddl-label" id="liSSN">
+                        @Html.Translate("Activation/Home", "liSSNoResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.SSN, new { @class = "ddl-input", id = "txtSSN", autocomplete = "off" })</div>
+            }
+            else
+            {
+                <div class="ddl-form-field ddl-error">
+                    <label for="txtSSN" class="ddl-label" id="liSSN">
+                        @Html.Translate("Activation/Home", "liSSNoResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.SSN, new { @class = "ddl-input", id = "txtSSN", autocomplete = "off" })
+                    @if (errorKeys.Contains("SSN"))
+                    {                 
+                        <p class="error" id="lblerrSSN">@Html.ValidationMessageFor(model => model.SSN)</p>
+                    }
+                </div> 
+            }</div>
+    }
+    @if (ActivationConfig[DbConfigurationItemNames.EmailAddress].ConfigurationValue1.Equals("1"))
+    {
+        <div class="form-row" id="divforEmailAddress">
+            @if (!errorKeys.Contains("ContactDetail.EmailAddress"))
+            {
+                <div class="ddl-form-field">
+                    <label for="txtEmailAddress" class="ddl-label" id="liEmailAddress">
+                        @Html.Translate("Activation/Home", "lclEmailResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.ContactDetail.EmailAddress, new { @class = "ddl-input", id = "txtEmailAddress", autocomplete = "off" })</div>
+            }
+            else
+            {  
+                <div class="ddl-form-field ddl-error">
+                    <label for="txtEmailAddress" class="ddl-label" id="liEmailAddress">
+                        @Html.Translate("Activation/Home", "lclEmailResource1.Text")
+                    </label>
+                    @Html.TextBoxFor(model => model.ContactDetail.EmailAddress, new { @class = "ddl-input", id = "txtEmailAddress", autocomplete = "off" })
+                    @if (errorKeys.Contains("ContactDetail.EmailAddress"))
+                    {
+                        <p class="error" id="lblerrEmailAddress">@Html.ValidationMessageFor(model => model.ContactDetail.EmailAddress)</p>
+                    }
+                </div>
+            }</div>
+    }
+    <input type="submit" value="@Html.Translate("Activation/Home", "btnConfirmPersonalDtlsResource1.Text")" class="ddl-button"  id="btnConfirm"/>
+    </form>
+    <div class="copy-wrapper">
+        <p id="lblTroubleText">@Html.Translate("Activation/Home", "lclTroubleResource.Text")</p>
+        <p id="lblRegisterQueryText">@Html.Translate("Activation/Home", "lclRegisterQueryResource.Text")</p>
+        <p id="lblchkLSText">@Html.Translate("Activation/Home", "lclChkLSResource.Text")</p>
+        <p id="lblCallCust">@Html.Translate("Activation/Home", "lclCallCustResource.Text")</p>
+        <p id="lblCommunicateMsg1" class="ddl-t5">
+            @Html.Translate("Activation/Home", "lclCommunicateMsg1Resource1.Text")</p>
+        <p id="lblCommunicateMsg2" class="ddl-t5">
+            @Html.Translate("Activation/Home", "lclCommunicateMsg2Resource1.Text")</p>
+    </div>
+             
+}

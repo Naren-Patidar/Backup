@@ -1,0 +1,89 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@model HomeViewModel
+@{
+    ViewBag.Title = @Html.Translate("PageResource1.Title");
+    ViewBag.dtmTitle = @Html.Translate("PageResource1.Title");
+    ViewBag.PageName = "Home";
+    var showTempCard = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.EnablePrintTempCard.ToString()].ConfigurationValue1.ToString();
+	var hideCtrlConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var showCustomerDetailsBanner = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsCustomerDetailsBannerVisible.ToString()].ConfigurationValue1.ToString();
+    bool IsBannerVisible = (showCustomerDetailsBanner == "1" && Model.CustomerAddressVerificationView.IsCustomerDetailsMatched == false && Model.CustomerAddressVerificationView.IsVerifiedLastStep == false);
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation", Model)
+}
+@if(hideCtrlConfig[DbConfigurationItemNames.HideModalForPaperless].ConfigurationValue1.Equals("0"))
+{
+<div id = "modalholder">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //--Model pop up changes by Pranay
+        if (document.cookie['popUpStatus'] == null) {
+            $.ajax({ url: './ModalPaperless',
+                success: function (result) {
+                    $("#modalholder").html(result);
+                },
+                error: function (xhr, status, err) {
+                    console.log(err);
+                }
+            });
+        }
+    });
+</script>
+
+</div>
+   
+}
+
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h2 id="welcomeMessage">
+                @Html.Translate("Home/Home", "Hello")@Model.WelcomeMessage
+            </h2>
+            <p>@Html.Translate("Home/Home", "MngCC")</p>
+        </div>
+    </div>
+</div>
+@Html.Partial("_HomeUpper", Model)
+
+<div class="row">
+    <div class="gr-12">
+        @if (IsBannerVisible)
+        { 
+           using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+           {          
+            @Html.AntiForgeryToken()
+            @Html.Partial("_CustomerDetailsBanner", Model.CustomerAddressVerificationView)
+           }
+        }
+    </div>
+</div>
+
+@Html.Partial("_HomeStamps", Model.StampView)
+@if (showTempCard == "1" && Model.IsSecurityCheckDone)
+{
+    <div class="row">
+        <div class="gr-12">
+            <div class="ddl-button-banner">
+                <div class="ddl-button-banner-column">
+                    <h2 class="ddl-h5-like">@Html.Translate("Home/Home", "TempCC")</h2>
+                    <p>@Html.Translate("lclPrintTempClubcard")</p>
+                </div>
+                <div class="ddl-button-banner-column">
+                    @using (Html.BeginForm("Home", "Home", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Partial("_PrintClubcard")
+                        @Html.HiddenFor(model => model.ClubcardNumber)
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

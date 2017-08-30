@@ -1,0 +1,34 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+
+<legend class="ddl-h4-like">@Html.Translate("Shared/_PersonalDetails", "lclDietaryNeed.Text")</legend>
+
+@for (int i = 0; i < Model.PersonalDetailsPreferences.Count; i++)
+{
+    <div class="form-row" id="divforDietaryPreference">
+        <div class="ddl-form-field ddl-checkbox">
+            @if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.IsLocale.ToString()].ConfigurationValue1.ToUpper().Equals("TRUE"))
+            {
+                <label class="ddl-label" id="lblDietaryPreferencelclDesc" for="@Model.PersonalDetailsPreferences[i].PreferenceDescLocal">@Model.PersonalDetailsPreferences[i].PreferenceDescLocal</label>
+                <span class="ddl-checkbox">
+                    @Html.CheckBoxFor(m => m.PersonalDetailsPreferences[i].OptedStatus, new { type = "checkbox", @id = Model.PersonalDetailsPreferences[i].PreferenceDescLocal, @name = @Model.PersonalDetailsPreferences[i].PreferenceDescLocal })
+                    <em></em>
+                </span>
+                @Html.HiddenFor(m => m.PersonalDetailsPreferences[i].PreferenceDescLocal)
+                @Html.HiddenFor(m => m.PersonalDetailsPreferences[i].PreferenceID)
+            }
+            else
+            {
+                <label class="ddl-label" id="lblDietaryPreference" for="@Model.PersonalDetailsPreferences[i].PreferenceDescEnglish">@Model.PersonalDetailsPreferences[i].PreferenceDescEnglish</label>
+                <span class="ddl-checkbox">
+                    @Html.CheckBoxFor(m => m.PersonalDetailsPreferences[i].OptedStatus, new { type = "checkbox", @id = Model.PersonalDetailsPreferences[i].PreferenceDescEnglish, @name = @Model.PersonalDetailsPreferences[i].PreferenceDescEnglish })
+                    <em></em></span>
+                @Html.HiddenFor(m => m.PersonalDetailsPreferences[i].PreferenceDescEnglish)
+                @Html.HiddenFor(m => m.PersonalDetailsPreferences[i].PreferenceID)
+            }
+        </div>
+    </div>
+}

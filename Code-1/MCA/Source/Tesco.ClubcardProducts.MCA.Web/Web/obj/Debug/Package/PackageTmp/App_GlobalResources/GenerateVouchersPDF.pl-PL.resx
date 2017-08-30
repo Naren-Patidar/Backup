@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblClubcardVoucherenGB" xml:space="preserve">
+    <value>Do wykorzystania w sklepie stacjonarnym</value>
+  </data>
+  <data name="lblClubcardVoucherenIE" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblClubcardVoucherplPL" xml:space="preserve">
+    <value>Do wykorzystania w sklepie stacjonarnym</value>
+  </data>
+  <data name="lblClubcardVouchersfrFR" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblClubcardVoucherzhCN" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrBonusvoucher" xml:space="preserve">
+    <value>Dodatkowe bony</value>
+  </data>
+  <data name="lblstrBonusvoucherenGB" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrBonusvoucherenIE" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrBonusvoucherfrFR" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrBonusvoucherplPL" xml:space="preserve">
+    <value>Dodatkowe bony</value>
+  </data>
+  <data name="lblstrBonusVouchers" xml:space="preserve">
+    <value>Dodatkowe bony</value>
+  </data>
+  <data name="lblstrBonusvoucherzhCN" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrClubcardBoostatTesco" xml:space="preserve">
+    <value>Clubcard Boost at Tesco</value>
+  </data>
+  <data name="lblstrClubcardChristmas" xml:space="preserve">
+    <value>Clubcard Christmas</value>
+  </data>
+  <data name="lblstrClubcardFileName" xml:space="preserve">
+    <value>Clubcard.pdf</value>
+  </data>
+  <data name="lblstrClubcardVoucher" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblstrClubcardVouchers" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrClubcardWinner" xml:space="preserve">
+    <value>Clubcard Winner</value>
+  </data>
+  <data name="lblstrCouponsFileName" xml:space="preserve">
+    <value>Kupon.pdf</value>
+  </data>
+  <data name="lblstrCurrencyAllignment" xml:space="preserve">
+    <value>RIGHT</value>
+  </data>
+  <data name="lblstrCurrencyDecimalSymbol" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="lblstrCurrencySymbol" xml:space="preserve">
+    <value>zł</value>
+  </data>
+  <data name="lblstrCurrencySymbolplPL" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblstrCustomerPrinted" xml:space="preserve">
+    <value>Bon wydrukowany przez Klienta</value>
+  </data>
+  <data name="lblstrCustomerPrintedClubcardBoostToken" xml:space="preserve">
+    <value>Customer Printed Clubcard Boost Token</value>
+  </data>
+  <data name="lblstrDateFormat" xml:space="preserve">
+    <value>dd-MM-yyyy</value>
+  </data>
+  <data name="lblstrDatePrinted" xml:space="preserve">
+    <value>Data wydrukowania:</value>
+  </data>
+  <data name="lblstrFromTescoBank" xml:space="preserve">
+    <value>IEFrom Tesco Bank</value>
+  </data>
+  <data name="lblstrInaSingleTransaction" xml:space="preserve">
+    <value>w pojedyńczej transakcji</value>
+  </data>
+  <data name="lblstrLine1" xml:space="preserve">
+    <value>This is a Customer Printed Boost token. Present this token with</value>
+  </data>
+  <data name="lblstrLine10" xml:space="preserve">
+    <value>This token is the property of Tesco Stores Limited, has no cash</value>
+  </data>
+  <data name="lblstrLine11" xml:space="preserve">
+    <value>value and is not for resale or publication. Refund policy applies.</value>
+  </data>
+  <data name="lblstrLine12" xml:space="preserve">
+    <value>Valid in the UK and IOM only. For full terms and conditions</value>
+  </data>
+  <data name="lblstrLine13" xml:space="preserve">
+    <value>see in store or online at www.tesco.com/boost/terms</value>
+  </data>
+  <data name="lblstrLine2" xml:space="preserve">
+    <value>your Clubcard. This token can only be redeemed once for</value>
+  </data>
+  <data name="lblstrLine3" xml:space="preserve">
+    <value>purchases in the selected department. You must spend at</value>
+  </data>
+  <data name="lblstrLine4" xml:space="preserve">
+    <value>least</value>
+  </data>
+  <data name="lblstrLine5" xml:space="preserve">
+    <value>in the department after any discount in one</value>
+  </data>
+  <data name="lblstrLine6" xml:space="preserve">
+    <value>transaction. Please ensure your Boost token is printed clearly on</value>
+  </data>
+  <data name="lblstrLine7" xml:space="preserve">
+    <value>white paper before taking into store. Unfortunately, smudged</value>
+  </data>
+  <data name="lblstrLine8" xml:space="preserve">
+    <value>or unclear barcodes are unable to be scanned at the till.</value>
+  </data>
+  <data name="lblstrLine9" xml:space="preserve">
+    <value>Copied, damaged or defaced tokens will not be accepted.</value>
+  </data>
+  <data name="lblstrOFF" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="lblstrOnlineCode" xml:space="preserve">
+    <value>kod on-line</value>
+  </data>
+  <data name="lblstrOrMoreOn" xml:space="preserve">
+    <value>lub więcej na</value>
+  </data>
+  <data name="lblstrSaverTop_UpVoucher" xml:space="preserve">
+    <value>Saver Top -Up Voucher</value>
+  </data>
+  <data name="lblstrSerialNumber" xml:space="preserve">
+    <value>numer seryjny:</value>
+  </data>
+  <data name="lblstrTitleClubcard" xml:space="preserve">
+    <value>Clubcard</value>
+  </data>
+  <data name="lblstrTitleCoupon" xml:space="preserve">
+    <value>Kupon</value>
+  </data>
+  <data name="lblstrTitleVoucher" xml:space="preserve">
+    <value>Bon</value>
+  </data>
+  <data name="lblstrToken" xml:space="preserve">
+    <value>Token</value>
+  </data>
+  <data name="lblstrTokenFileName" xml:space="preserve">
+    <value>Token.pdf</value>
+  </data>
+  <data name="lblstrTopup" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrTopupenGB" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrTopupenIE" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrTopupfrFR" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrTopupplPL" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrTopupzhCN" xml:space="preserve">
+    <value>Do wykorzystania w sklepie</value>
+  </data>
+  <data name="lblstrValidUntil" xml:space="preserve">
+    <value>Ważny do:</value>
+  </data>
+  <data name="lblstrValidUntilplPL" xml:space="preserve">
+    <value>Ważny do:</value>
+  </data>
+  <data name="lblstrVoucherFileName" xml:space="preserve">
+    <value>Bon.pdf</value>
+  </data>
+  <data name="lblstrVouchersAndCouponsFileName" xml:space="preserve">
+    <value>Bon&amp;Kupon.pdf</value>
+  </data>
+  <data name="lblstrWhenYouSpend" xml:space="preserve">
+    <value>Jeśli wydasz zł</value>
+  </data>
+</root>

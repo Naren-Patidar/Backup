@@ -1,0 +1,2106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnConfirmJoinResource1.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnConfirmJoinResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfirmJoinResource2.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnConfirmJoinResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Find Address</value>
+  </data>
+  <data name="btnFindAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFindAddressResource2.Text" xml:space="preserve">
+    <value>Find Address</value>
+  </data>
+  <data name="btnFindAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaCodeTextBoxResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaIncorrectLabelResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CaptchaResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cblDietaryNeedsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cblDietaryNeedsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPartnerOffersResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkResearchResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkTescoOfersResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DataProtectionTableResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlDayResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMonthResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlRaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlRaceResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlTitleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYearResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlYearResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyDetailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountyResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLocalityResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStreetResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource1.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="lblSuccessMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSuccessMessageResource2.Text" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="lblSuccessMessageResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTownResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclAddressline2Resource1.Text" xml:space="preserve">
+    <value>Address Line 2 :</value>
+  </data>
+  <data name="lclAddressline2Resource2.Text" xml:space="preserve">
+    <value>Address Line 2 :</value>
+  </data>
+  <data name="lclAddressline3Resource1.Text" xml:space="preserve">
+    <value>Address Line 3 :</value>
+  </data>
+  <data name="lclAddressline3Resource2.Text" xml:space="preserve">
+    <value>Address Line 3 :</value>
+  </data>
+  <data name="lclAddressline4Resource1.Text" xml:space="preserve">
+    <value>Address Line 4 :</value>
+  </data>
+  <data name="lclAddressline4Resource2.Text" xml:space="preserve">
+    <value>Address Line 4 :</value>
+  </data>
+  <data name="lclAddressline5Resource1.Text" xml:space="preserve">
+    <value>Address Line 5 :</value>
+  </data>
+  <data name="lclAddressline5Resource2.Text" xml:space="preserve">
+    <value>Address Line 5 :</value>
+  </data>
+  <data name="lclAge1Resource1.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge1Resource2.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge2Resource1.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge2Resource2.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge3Resource1.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge3Resource2.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge4Resource1.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAge4Resource2.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAgeResource1.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclAgeResource2.Text" xml:space="preserve">
+    <value>Age:</value>
+  </data>
+  <data name="lclageshouseholdResource1.Text" xml:space="preserve">
+    <value>Please enter the ages of other people in your household (if you have a child under 1, please enter 0)</value>
+  </data>
+  <data name="lclageshouseholdResource2.Text" xml:space="preserve">
+    <value>Please enter the ages of other people in your household (if you have a child under 1, please enter 0)</value>
+  </data>
+  <data name="lclCaptcha1Resource1.Text" xml:space="preserve">
+    <value>You have entered the text incorrectly, please try again.</value>
+  </data>
+  <data name="lclCaptcha1Resource2.Text" xml:space="preserve">
+    <value>You have entered the text incorrectly, please try again.</value>
+  </data>
+  <data name="lclCaptcha2Resource1.Text" xml:space="preserve">
+    <value>Please enter the characters that you see, in the order they appear above.</value>
+  </data>
+  <data name="lclCaptcha2Resource2.Text" xml:space="preserve">
+    <value>Please enter the characters that you see, in the order they appear above.</value>
+  </data>
+  <data name="lclCaptcha3Resource1.Text" xml:space="preserve">
+    <value>Letters are not case-sensitive.</value>
+  </data>
+  <data name="lclCaptcha3Resource2.Text" xml:space="preserve">
+    <value>Letters are not case-sensitive.</value>
+  </data>
+  <data name="lclChooseanAddresResource1.Text" xml:space="preserve">
+    <value>Choose an Address:</value>
+  </data>
+  <data name="lclChooseanAddresResource2.Text" xml:space="preserve">
+    <value>Choose an Address:</value>
+  </data>
+  <data name="lclChooseContact1Resource1.Text" xml:space="preserve">
+    <value>From time to time we would like to contact you with offers and information about products and services of interest to you and your family.</value>
+  </data>
+  <data name="lclChooseContact1Resource2.Text" xml:space="preserve">
+    <value>From time to time we would like to contact you with offers and information about products and services of interest to you and your family.</value>
+  </data>
+  <data name="lclChooseContact2Resource1.Text" xml:space="preserve">
+    <value>If you tick the boxes below, we will NOT be able to send you additional great offers and information.</value>
+  </data>
+  <data name="lclChooseContact2Resource2.Text" xml:space="preserve">
+    <value>If you tick the boxes below, we will NOT be able to send you additional great offers and information.</value>
+  </data>
+  <data name="lclChooseContactResource1.Text" xml:space="preserve">
+    <value>Choose what we contact you about</value>
+  </data>
+  <data name="lclChooseContactResource2.Text" xml:space="preserve">
+    <value>Choose what we contact you about</value>
+  </data>
+  <data name="lclConfirmation1Resource1.Text" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="lclConfirmation1Resource2.Text" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="lclConfirmation2Resource1.Text" xml:space="preserve">
+    <value>Clubcard Terms &amp; Conditions </value>
+  </data>
+  <data name="lclConfirmation2Resource2.Text" xml:space="preserve">
+    <value>Clubcard Terms &amp; Conditions </value>
+  </data>
+  <data name="lclConfirmation3Resource1.Text" xml:space="preserve">
+    <value>and accept the terms of our </value>
+  </data>
+  <data name="lclConfirmation3Resource2.Text" xml:space="preserve">
+    <value>and accept the terms of our </value>
+  </data>
+  <data name="lclConfirmation4Resource1.Text" xml:space="preserve">
+    <value> Privacy Policy</value>
+  </data>
+  <data name="lclConfirmation4Resource2.Text" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="lclConfirmation5Resource1.Text" xml:space="preserve">
+    <value>(Clicking on confirm means that you agree to the </value>
+  </data>
+  <data name="lclConfirmation5Resource2.Text" xml:space="preserve">
+    <value>(Clicking on confirm means that you agree to the </value>
+  </data>
+  <data name="lclConfirmationResource1.Text" xml:space="preserve">
+    <value>I agree to the use of my information as stated above and on the</value>
+  </data>
+  <data name="lclConfirmationResource2.Text" xml:space="preserve">
+    <value>I agree to the use of my information as stated above and on the</value>
+  </data>
+  <data name="lclDataProtectionMatrix1Resource1.Text" xml:space="preserve">
+    <value>Please tick if you do not want Tesco to send you offers and information about the products and services offered by our partners:</value>
+  </data>
+  <data name="lclDataProtectionMatrix1Resource2.Text" xml:space="preserve">
+    <value>Please tick if you do not want Tesco to send you offers and information about the products and services offered by our partners:</value>
+  </data>
+  <data name="lclDataProtectionMatrix2Resource1.Text" xml:space="preserve">
+    <value>Please tick if you do not want to be contacted by Tesco for customer research purposes:</value>
+  </data>
+  <data name="lclDataProtectionMatrix2Resource2.Text" xml:space="preserve">
+    <value>Please tick if you do not want to be contacted by Tesco for customer research purposes:</value>
+  </data>
+  <data name="lclDataProtectionMatrixResource1.Text" xml:space="preserve">
+    <value>Please tick if you do not want to receive offers and information about Tesco products and services:</value>
+  </data>
+  <data name="lclDataProtectionMatrixResource2.Text" xml:space="preserve">
+    <value>Please tick if you do not want to receive offers and information about Tesco products and services:</value>
+  </data>
+  <data name="lclDataProtectionResource1.Text" xml:space="preserve">
+    <value>Data protection</value>
+  </data>
+  <data name="lclDataProtectionResource2.Text" xml:space="preserve">
+    <value>Data protection</value>
+  </data>
+  <data name="lclDaytimePhoneNumberResource1.Text" xml:space="preserve">
+    <value>Daytime phone number:</value>
+  </data>
+  <data name="lclDaytimePhoneNumberResource2.Text" xml:space="preserve">
+    <value>Daytime phone number:</value>
+  </data>
+  <data name="lclDietaryReqResource1.Text" xml:space="preserve">
+    <value>Please tick if you have any of the following dietary requirements?</value>
+  </data>
+  <data name="lclDietaryReqResource2.Text" xml:space="preserve">
+    <value>Please tick if you have any of the following dietary requirements?</value>
+  </data>
+  <data name="lclDOBResource1.Text" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lclDOBResource2.Text" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="lcldvMoneyTobeSavedForBonus1Resource1.Text" xml:space="preserve">
+    <value>Join Clubcard Today</value>
+  </data>
+  <data name="lcldvMoneyTobeSavedForBonus1Resource2.Text" xml:space="preserve">
+    <value>Join Clubcard Today</value>
+  </data>
+  <data name="lclEmailAddressResource1.Text" xml:space="preserve">
+    <value>Email address:</value>
+  </data>
+  <data name="lclEmailAddressResource2.Text" xml:space="preserve">
+    <value>Email address:</value>
+  </data>
+  <data name="lclEmailResource1.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lclEmailResource2.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value>Evening phone number:</value>
+  </data>
+  <data name="lclEveningPhoneNumberResource2.Text" xml:space="preserve">
+    <value>Evening phone number:</value>
+  </data>
+  <data name="lclFirstNameResource1.Text" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="lclFirstNameResource2.Text" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="lclGenderResource1.Text" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lclGenderResource2.Text" xml:space="preserve">
+    <value>Gender:</value>
+  </data>
+  <data name="lclhouseholdnumberResource1.Text" xml:space="preserve">
+    <value>How many people are there in your household (including yourself)?</value>
+  </data>
+  <data name="lclhouseholdnumberResource2.Text" xml:space="preserve">
+    <value>How many people are there in your household (including yourself)?</value>
+  </data>
+  <data name="lclHousenameResource1.Text" xml:space="preserve">
+    <value>House no/name :</value>
+  </data>
+  <data name="lclHousenameResource2.Text" xml:space="preserve">
+    <value>House no/name :</value>
+  </data>
+  <data name="lclHousenonameResource1.Text" xml:space="preserve">
+    <value>Or House no/name:</value>
+  </data>
+  <data name="lclHousenonameResource2.Text" xml:space="preserve">
+    <value>Or House no/name:</value>
+  </data>
+  <data name="lclLocalityResource1.Text" xml:space="preserve">
+    <value>Locality:</value>
+  </data>
+  <data name="lclLocalityResource2.Text" xml:space="preserve">
+    <value>Locality:</value>
+  </data>
+  <data name="lclMailResource1.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="lclMailResource2.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="lclMiddleInitialResource1.Text" xml:space="preserve">
+    <value>Middle initial(s):</value>
+  </data>
+  <data name="lclMiddleInitialResource2.Text" xml:space="preserve">
+    <value>Middle initial(s):</value>
+  </data>
+  <data name="lclMobilePhoneNumberResource1.Text" xml:space="preserve">
+    <value>Mobile phone number:</value>
+  </data>
+  <data name="lclMobilePhoneNumberResource2.Text" xml:space="preserve">
+    <value>Mobile phone number:</value>
+  </data>
+  <data name="lclOptionalInformation1Resource1.Text" xml:space="preserve">
+    <value>So we can send you offers, coupons and information relevant to you and your family</value>
+  </data>
+  <data name="lclOptionalInformation1Resource2.Text" xml:space="preserve">
+    <value>So we can send you offers, coupons and information relevant to you and your family</value>
+  </data>
+  <data name="lclOptionalInformation2Resource1.Text" xml:space="preserve">
+    <value>To ensure we send you relevant information and coupons, it is useful to have the following information on your household.</value>
+  </data>
+  <data name="lclOptionalInformation2Resource2.Text" xml:space="preserve">
+    <value>To ensure we send you relevant information and coupons, it is useful to have the following information on your household.</value>
+  </data>
+  <data name="lclOptionalInformationResource1.Text" xml:space="preserve">
+    <value>Optional information</value>
+  </data>
+  <data name="lclOptionalInformationResource2.Text" xml:space="preserve">
+    <value>Optional information</value>
+  </data>
+  <data name="lclPageResource1.Text" xml:space="preserve">
+    <value>page</value>
+  </data>
+  <data name="lclPageResource2.Text" xml:space="preserve">
+    <value>page</value>
+  </data>
+  <data name="lclPartnerthirdpartyResource1.Text" xml:space="preserve">
+    <value>Partner(3rd Party)</value>
+  </data>
+  <data name="lclPartnerthirdpartyResource2.Text" xml:space="preserve">
+    <value>Partner(3rd Party)</value>
+  </data>
+  <data name="lclPhoneResource1.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lclPhoneResource2.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lclPostcode1Resource1.Text" xml:space="preserve">
+    <value>Postcode:</value>
+  </data>
+  <data name="lclPostcode1Resource2.Text" xml:space="preserve">
+    <value>Postcode:</value>
+  </data>
+  <data name="lclPostcodeResource1.Text" xml:space="preserve">
+    <value>Postcode:</value>
+  </data>
+  <data name="lclPostcodeResource2.Text" xml:space="preserve">
+    <value>Postcode:</value>
+  </data>
+  <data name="lclPreferredResource1.Text" xml:space="preserve">
+    <value>Preferred Language:</value>
+  </data>
+  <data name="lclPreferredResource2.Text" xml:space="preserve">
+    <value>Preferred Language:</value>
+  </data>
+  <data name="lclPromotionalCode1Resource1.Text" xml:space="preserve">
+    <value>If you have a promotional code, please enter it here:</value>
+  </data>
+  <data name="lclPromotionalCode1Resource2.Text" xml:space="preserve">
+    <value>If you have a promotional code, please enter it here:</value>
+  </data>
+  <data name="lclPromotionalCodeResource1.Text" xml:space="preserve">
+    <value>Promotional Code</value>
+  </data>
+  <data name="lclPromotionalCodeResource2.Text" xml:space="preserve">
+    <value>Promotional Code</value>
+  </data>
+  <data name="lclRaceResource1.Text" xml:space="preserve">
+    <value>Please select race:</value>
+  </data>
+  <data name="lclRaceResource2.Text" xml:space="preserve">
+    <value>Please select race:</value>
+  </data>
+  <data name="lclResearchResource1.Text" xml:space="preserve">
+    <value>Research</value>
+  </data>
+  <data name="lclResearchResource2.Text" xml:space="preserve">
+    <value>Research</value>
+  </data>
+  <data name="lclSecondaryIDResource1.Text" xml:space="preserve">
+    <value>Secondary ID(passport,officer number):</value>
+  </data>
+  <data name="lclSecondaryIDResource2.Text" xml:space="preserve">
+    <value>Secondary ID(passport,officer number):</value>
+  </data>
+  <data name="lclSecuritycheckResource1.Text" xml:space="preserve">
+    <value>Security Check</value>
+  </data>
+  <data name="lclSecuritycheckResource2.Text" xml:space="preserve">
+    <value>Security Check</value>
+  </data>
+  <data name="lclSMSResource1.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclSMSResource2.Text" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="lclSSNResource1.Text" xml:space="preserve">
+    <value>Primary ID(Social Security No):</value>
+  </data>
+  <data name="lclSSNResource2.Text" xml:space="preserve">
+    <value>Primary ID(Social Security No):</value>
+  </data>
+  <data name="lclstreetResource1.Text" xml:space="preserve">
+    <value>Street:</value>
+  </data>
+  <data name="lclstreetResource2.Text" xml:space="preserve">
+    <value>Street:</value>
+  </data>
+  <data name="lclSurnameResource1.Text" xml:space="preserve">
+    <value>Surname:</value>
+  </data>
+  <data name="lclSurnameResource2.Text" xml:space="preserve">
+    <value>Surname:</value>
+  </data>
+  <data name="lclTermsnConditionsResource1.Text" xml:space="preserve">
+    <value>Terms &amp; conditions</value>
+  </data>
+  <data name="lclTermsnConditionsResource2.Text" xml:space="preserve">
+    <value>Terms &amp; conditions</value>
+  </data>
+  <data name="lclTescogrpResource1.Text" xml:space="preserve">
+    <value>Tesco (Group)</value>
+  </data>
+  <data name="lclTescogrpResource2.Text" xml:space="preserve">
+    <value>Tesco (Group)</value>
+  </data>
+  <data name="lclTitleErrorResource1.Text" xml:space="preserve">
+    <value>Please select a Title</value>
+  </data>
+  <data name="lclTitleErrorResource2.Text" xml:space="preserve">
+    <value>Please select a Title</value>
+  </data>
+  <data name="lclTitleResource1.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lclTitleResource2.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="lclTownCityResource1.Text" xml:space="preserve">
+    <value>Town/City:</value>
+  </data>
+  <data name="lclTownCityResource2.Text" xml:space="preserve">
+    <value>Town/City:</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource22.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource23.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource24.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource25.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource26.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource27.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource28.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource29.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource29.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="ListItemResource30.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource30.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource31.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource31.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource32.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource32.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource33.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource33.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource34.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource34.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource35.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource35.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource36.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource36.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource37.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource37.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource38.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource38.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource39.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="ListItemResource39.Value" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="ListItemResource40.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="ListItemResource40.Value" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="ListItemResource41.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="ListItemResource41.Value" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="ListItemResource42.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="ListItemResource42.Value" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="ListItemResource43.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ListItemResource43.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource44.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource44.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource45.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource45.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource46.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource46.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="ListItemResource47.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource47.Value" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="ListItemResource48.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource48.Value" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="ListItemResource49.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource49.Value" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="ListItemResource50.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource50.Value" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="ListItemResource51.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource51.Value" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="ListItemResource52.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource52.Value" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="ListItemResource53.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource53.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource54.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource54.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource55.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource55.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource56.Text" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource56.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource57.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource57.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource58.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource58.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource59.Text" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource59.Value" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource60.Text" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource60.Value" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="ListItemResource61.Text" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource61.Value" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="ListItemResource62.Text" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource62.Value" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="ListItemResource63.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource63.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource64.Text" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource64.Value" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ListItemResource65.Text" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource65.Value" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ListItemResource66.Text" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource66.Value" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="ListItemResource67.Text" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource67.Value" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="ListItemResource68.Text" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource68.Value" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="ListItemResource69.Text" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource69.Value" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="ListItemResource70.Text" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource70.Value" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="ListItemResource71.Text" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource71.Value" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ListItemResource72.Text" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource72.Value" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ListItemResource73.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource73.Value" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource74.Text" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource74.Value" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="Localize10Resource1.Text" xml:space="preserve">
+    <value>Customer Charter and Privacy Policy</value>
+  </data>
+  <data name="Localize10Resource2.Text" xml:space="preserve">
+    <value>Customer Charter and Privacy Policy</value>
+  </data>
+  <data name="Localize1Resource1.Text" xml:space="preserve">
+    <value>Simply fill in and submit the application form below.</value>
+  </data>
+  <data name="Localize1Resource2.Text" xml:space="preserve">
+    <value>Simply fill in and submit the application form below.</value>
+  </data>
+  <data name="Localize2Resource1.Text" xml:space="preserve">
+    <value>The more information you give will allow us to send you offers on products we think you'll like.</value>
+  </data>
+  <data name="Localize2Resource2.Text" xml:space="preserve">
+    <value>The more information you give will allow us to send you offers on products we think you'll like.</value>
+  </data>
+  <data name="Localize3Resource1.Text" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize3Resource2.Text" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize4Resource1.Text" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="Localize4Resource2.Text" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="Localize5Resource1.Text" xml:space="preserve">
+    <value>Your Details</value>
+  </data>
+  <data name="Localize5Resource2.Text" xml:space="preserve">
+    <value>Your Details</value>
+  </data>
+  <data name="Localize6Resource1.Text" xml:space="preserve">
+    <value>So we know where to send your Clubcard, Keyfobs and Clubcard vouchers</value>
+  </data>
+  <data name="Localize6Resource2.Text" xml:space="preserve">
+    <value>So we know where to send your Clubcard, Keyfobs and Clubcard vouchers</value>
+  </data>
+  <data name="Localize7Resource1.Text" xml:space="preserve">
+    <value>Indicates required fields</value>
+  </data>
+  <data name="Localize7Resource2.Text" xml:space="preserve">
+    <value>Indicates required fields</value>
+  </data>
+  <data name="Localize8Resource1.Text" xml:space="preserve">
+    <value>County:</value>
+  </data>
+  <data name="Localize8Resource2.Text" xml:space="preserve">
+    <value>County:</value>
+  </data>
+  <data name="Localize9Resource1.Text" xml:space="preserve">
+    <value>We would like to reassure you that your details are safe with us and will never be released to companies outside of the Tesco Group for their marketing purposes. For more information see our </value>
+  </data>
+  <data name="Localize9Resource2.Text" xml:space="preserve">
+    <value>We would like to reassure you that your details are safe with us and will never be released to companies outside of the Tesco Group for their marketing purposes. For more information see our </value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>join</value>
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value>join</value>
+  </data>
+  <data name="Panel1Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="plEditAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrefTableCell5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="radioFemaleResource1.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="radioFemaleResource1.ToolTip" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="radioFemaleResource2.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="radioFemaleResource2.ToolTip" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="radioMaleResource1.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="radioMaleResource1.ToolTip" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="radioMaleResource2.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="radioMaleResource2.ToolTip" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="rdoLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdoLanguageResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource10.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource11.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource12.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource13.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource14.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource15.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource16.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource17.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource18.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource19.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource20.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource21.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource22.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource23.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource24.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource25.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource26.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource27.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource28.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource28.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource29.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource29.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource30.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource30.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource31.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource31.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource32.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource32.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource33.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource33.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource34.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource34.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource35.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource35.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource36.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource36.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource37.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource37.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource38.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource38.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource4.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource5.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource6.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource7.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource8.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource9.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableCellResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TableRowResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine4Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressLine5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge4Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAge5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEveningPhoneNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHouseNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtInitialResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMobileNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNoofPeopleResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneNumberResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCode2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPostCodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrimIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPromoCodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSecIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSurnameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclFemaleResource1.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="lclFemaleResource2.Text" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="lclMaleResource1.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="lclMaleResource2.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="lcltittleErrMsgResource1.Text" xml:space="preserve">
+    <value>Please select a Title</value>
+  </data>
+  <data name="errClickArrow" xml:space="preserve">
+    <value>Click the arrow to select your home -&gt;</value>
+  </data>
+  <data name="errCorrectInformation" xml:space="preserve">
+    <value>Please correct the following information</value>
+  </data>
+  <data name="errDBCardError" xml:space="preserve">
+    <value>Our database shows that you are already a Clubcard member.  If you have lost or damaged your card and need a replacement, please call us on 0800 59 16 88 so we can transfer your points balance to your new card.</value>
+  </data>
+  <data name="errMsgEitherSecondaryId" xml:space="preserve">
+    <value>Please enter either primary id or secondary id.</value>
+  </data>
+  <data name="errMsgSecondaryId" xml:space="preserve">
+    <value>Please enter a valid secondary id.</value>
+  </data>
+  <data name="errPostcodeFindAddress" xml:space="preserve">
+    <value>Please enter a postcode, click the 'Find Address' button and select your address</value>
+  </data>
+  <data name="errPostcodeRequired" xml:space="preserve">
+    <value>Postcode is required or not valid</value>
+  </data>
+  <data name="errRegistration" xml:space="preserve">
+    <value>There was a problem with your registration. Please check that the information you have entered is correct. If you require further assistance, please contact the customer helpdesk on 0800 59 16 88.</value>
+  </data>
+  <data name="errRequiredDOB" xml:space="preserve">
+    <value>Date of birth is required or not valid</value>
+  </data>
+  <data name="errSelectGender" xml:space="preserve">
+    <value>Please select Gender</value>
+  </data>
+  <data name="errSorryFindAddress3" xml:space="preserve">
+    <value>. Please try again or contact us on 0800 59 16 88</value>
+  </data>
+  <data name="errSorryGender" xml:space="preserve">
+    <value>Sorry, the Gender selected doesn't match with the Title chosen</value>
+  </data>
+  <data name="errVaildEnterPostcode" xml:space="preserve">
+    <value>You did not enter a postcode</value>
+  </data>
+  <data name="errValid18Clubcard" xml:space="preserve">
+    <value>Please note you must be over 18 to be a member of Clubcard</value>
+  </data>
+  <data name="errValidAddressline2" xml:space="preserve">
+    <value>Please enter a valid address line2.</value>
+  </data>
+  <data name="errValidAddressline2length" xml:space="preserve">
+    <value>Please enter a valid address line2 of appropriate length.</value>
+  </data>
+  <data name="errValidAddressline3" xml:space="preserve">
+    <value>Please enter a valid address line3.</value>
+  </data>
+  <data name="errValidAddressline3length" xml:space="preserve">
+    <value>Please enter a valid address line3 of appropriate length.</value>
+  </data>
+  <data name="errValidAddressline4" xml:space="preserve">
+    <value>Please enter a valid address line4.</value>
+  </data>
+  <data name="errValidAddressline4length" xml:space="preserve">
+    <value>Please enter a valid address line4 of appropriate length.</value>
+  </data>
+  <data name="errValidAddressline5" xml:space="preserve">
+    <value>Please enter a valid address line5.</value>
+  </data>
+  <data name="errValidAddressline5length" xml:space="preserve">
+    <value>Please enter a valid address line5 of appropriate length.</value>
+  </data>
+  <data name="errValidDayPhoneNumber" xml:space="preserve">
+    <value>Please enter a valid daytime phone number.</value>
+  </data>
+  <data name="errValidDOB" xml:space="preserve">
+    <value>Date of birth is invalid</value>
+  </data>
+  <data name="errValideCode" xml:space="preserve">
+    <value>This code is not valid, please check and try again.</value>
+  </data>
+  <data name="errValidEmail" xml:space="preserve">
+    <value>Please enter a valid email address.</value>
+  </data>
+  <data name="errValidEveningPhoneNumber" xml:space="preserve">
+    <value>Please enter a valid evening phone number.</value>
+  </data>
+  <data name="errValidFirstName" xml:space="preserve">
+    <value>Please enter a valid first name.</value>
+  </data>
+  <data name="errValidHouseNumber" xml:space="preserve">
+    <value>Please enter a valid house number.</value>
+  </data>
+  <data name="errValidHouseNumberLength" xml:space="preserve">
+    <value>Please enter a valid house number of appropriate length.</value>
+  </data>
+  <data name="errValidLanguage" xml:space="preserve">
+    <value>Please select valid language.</value>
+  </data>
+  <data name="errValidLenghPrimaryID" xml:space="preserve">
+    <value>Please enter a valid primary id of appropriate length.</value>
+  </data>
+  <data name="errValidLenghSecondaryID" xml:space="preserve">
+    <value>Please enter a valid secondary id of appropriate length</value>
+  </data>
+  <data name="errValidLetter" xml:space="preserve">
+    <value>Please enter a valid letter.</value>
+  </data>
+  <data name="errValidMobilePhoneNumber" xml:space="preserve">
+    <value>Please enter a valid mobile phone number.</value>
+  </data>
+  <data name="errValidPostCode" xml:space="preserve">
+    <value>Please enter a valid Postcode.</value>
+  </data>
+  <data name="errValidPrimaryID" xml:space="preserve">
+    <value>Please enter a valid primary id.</value>
+  </data>
+  <data name="errValidRace" xml:space="preserve">
+    <value>Please select valid race.</value>
+  </data>
+  <data name="errValidSurname" xml:space="preserve">
+    <value>Please enter a valid surname.</value>
+  </data>
+  <data name="SuccessMessage" xml:space="preserve">
+    <value>Please correct the following information</value>
+  </data>
+  <data name="errMsg0to99" xml:space="preserve">
+    <value>Please enter an Age between 0 and 99</value>
+  </data>
+  <data name="errMsg1to99" xml:space="preserve">
+    <value>Please enter a valid number between 1 and 99</value>
+  </data>
+  <data name="errMsgNoHHPersons" xml:space="preserve">
+    <value>Please enter less than 7 household members.</value>
+  </data>
+  <data name="errMsgNoHHPersonstoMany" xml:space="preserve">
+    <value>Sorry you have entered too many ages below for this household size. Please check and re-enter.</value>
+  </data>
+  <data name="errSorryFindAddress1" xml:space="preserve">
+    <value>Sorry, we are unable to find your postcode</value>
+  </data>
+  <data name="btnConfirmPersonalDtlsResource1.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnFindAddressResource1.Text1" xml:space="preserve">
+    <value>Find Address</value>
+  </data>
+  <data name="btnSaveAddressResource1.Text" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Please select a valid Genders</value>
+  </data>
+  <data name="errPromotion" xml:space="preserve">
+    <value>This code is not valid, please check and try again.</value>
+  </data>
+  <data name="lcltollfree1Resource1.Text" xml:space="preserve">
+    <value>0800 591 688</value>
+  </data>
+  <data name="lcltollfree1starResource1.Text" xml:space="preserve">
+    <value>* or</value>
+  </data>
+  <data name="lcltollfree2Resource2.Text" xml:space="preserve">
+    <value>0330 123 1688</value>
+  </data>
+  <data name="lcltollfree2starResource2.Text" xml:space="preserve">
+    <value>**</value>
+  </data>
+  <data name="Localize2Resource1.Text1" xml:space="preserve">
+    <value>If you have any questions or would like to register your temporary Clubcard, please </value>
+  </data>
+  <data name="Localize2Resource2.Text1" xml:space="preserve">
+    <value>If you have any questions or would like to register your temporary Clubcard, please contact us or call us on 0800 59 16 88*</value>
+  </data>
+  <data name="Localize2Resource3.Text" xml:space="preserve">
+    <value>or call our Customer Services team on </value>
+  </data>
+  <data name="Localize2Resource4.Text" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="Localize3Resource1.Text1" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize3Resource2.Text1" xml:space="preserve">
+    <value>If you have any questions please </value>
+  </data>
+  <data name="Localize4Resource1.Text1" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="Localize4Resource2.Text1" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+  <data name="lclCommunicateMsg1Resource1.Text" xml:space="preserve">
+    <value>* Free from BT landlines. Other providers vary. Calls may be recorded.</value>
+  </data>
+  <data name="lclCommunicateMsg2Resource1.Text" xml:space="preserve">
+    <value>** Charged at local rate from mobiles and private telephones.</value>
+  </data>
+  <data name="lclClosedBrace.Text" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="correctFollowing.valid" xml:space="preserve">
+    <value>Please correct the following information</value>
+  </data>
+  <data name="dob.valid" xml:space="preserve">
+    <value>Please enter a valid Date of birth</value>
+  </data>
+  <data name="errRegistration1" xml:space="preserve">
+    <value>There was a problem with your registration. Please check that the information you have entered is correct. If you require further assistance, please contact the customer helpdesk on 0800 59 16 88.</value>
+  </data>
+  <data name="houseNo.valid" xml:space="preserve">
+    <value>Please enter a valid house number</value>
+  </data>
+  <data name="over18.valid" xml:space="preserve">
+    <value>Please note you must be over 18 to be a member of Clubcard</value>
+  </data>
+  <data name="errSorryFindAddress2" xml:space="preserve">
+    <value>. Please try again or contact us on 0800 591 688* or 0330 123 1688**</value>
+  </data>
+  <data name="lclRequireWarning.Text" xml:space="preserve">
+    <value>Indicates required fields</value>
+  </data>
+</root>

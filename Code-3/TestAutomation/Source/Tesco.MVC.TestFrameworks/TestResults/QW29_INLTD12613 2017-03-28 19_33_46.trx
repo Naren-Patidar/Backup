@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5066c7f6-22d5-4162-9c00-a16116852a3a" name="QW29@INLTD12613 2017-03-28 19:33:46" runUser="TESCOGLOBAL\QW29" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="TestSettings1" id="21859d0f-7bdc-4165-b9ad-05fc803c9ee9">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="QW29_INLTD12613 2017-03-28 19_33_46">
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Build\Tesco.Framework.Common.Logging.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\WebDriver.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Tesco.Framework.UITesting.Services\bin\Debug\Tesco.Framework.UITesting.Services.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\nunit.framework.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\ThoughtWorks.Selenium.Core.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Build\Tesco.Framework.Common.Utilities.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\Tesco.NGC.RestClient.dll" />
+      <DeploymentItem filename="D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\ReferenceDll\WebDriver.Support.dll" />
+    </Deployment>
+    <Execution parallelTestCount="5">
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-03-28T19:33:46.3319904+05:30" queuing="2017-03-28T19:33:47.4123904+05:30" start="2017-03-28T19:33:47.5215904+05:30" finish="2017-03-28T19:35:21.6896904+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <DebugTrace>InitializeClass - Starting
+InitializeClass - Ending
+</DebugTrace>
+    </Output>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Home_HistoricalVoucherValueCompareWithVoucherPage" storage="d:\git_new\automation\6355\testautomation\source\tesco.mvc.testframeworks\tesco.framework.uitesting\bin\debug\tesco.framework.uitesting.dll" id="396e8bb1-458b-6747-f2a7-38934f863df3">
+      <Description>Verify historical Voucher value on home page from voucher page availiable voucher value</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="HomePage" />
+        <TestCategoryItem TestCategory="P2" />
+      </TestCategory>
+      <Execution id="a67d4977-4c23-4433-84c2-e190d5e84be9" />
+      <TestMethod codeBase="D:/git_New/Automation/6355/TestAutomation/Source/Tesco.MVC.TestFrameworks/Tesco.Framework.UITesting/bin/Debug/Tesco.Framework.UITesting.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tesco.Framework.UITesting.Test.HomeTestSuit, Tesco.Framework.UITesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Home_HistoricalVoucherValueCompareWithVoucherPage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="396e8bb1-458b-6747-f2a7-38934f863df3" executionId="a67d4977-4c23-4433-84c2-e190d5e84be9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a67d4977-4c23-4433-84c2-e190d5e84be9" testId="396e8bb1-458b-6747-f2a7-38934f863df3" testName="Home_HistoricalVoucherValueCompareWithVoucherPage" computerName="INLTD12613" duration="00:01:32.1594242" startTime="2017-03-28T19:33:47.6463904+05:30" endTime="2017-03-28T19:35:21.5804904+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a67d4977-4c23-4433-84c2-e190d5e84be9">
+      <Output>
+        <StdErr>log4net:ERROR XmlConfigurator: Failed to initialize configuration file watcher for file [D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver\log4net.config]
+System.ArgumentException: The directory name D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver is invalid.
+   at System.IO.FileSystemWatcher.set_Path(String value)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler..ctor(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler.StartWatching(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatch(ILoggerRepository repository, FileInfo configFile)</StdErr>
+        <DebugTrace>log4net:ERROR XmlConfigurator: Failed to initialize configuration file watcher for file [D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver\log4net.config]
+System.ArgumentException: The directory name D:\git_New\Automation\6355\TestAutomation\Source\Tesco.MVC.TestFrameworks\Source\Tesco.MVC.TestFrameworks\Driver is invalid.
+   at System.IO.FileSystemWatcher.set_Path(String value)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler..ctor(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatchHandler.StartWatching(ILoggerRepository repository, FileInfo configFile)
+   at log4net.Config.XmlConfigurator.ConfigureAndWatch(ILoggerRepository repository, FileInfo configFile)
+TestInitialize - Starting
+.ctor - Starting
+.ctor - Ending
+TestInitialize - Ending
+Waited for input[id='ClubcardNumber'] control by 187 mili sec.
+Login_Verification|Login Successfull with -634004024022388518
+Waited for input[id*='btnSbmtNumbers'] control by 577 mili sec.
+verifyPageName - Starting
+Vouchers - expected link name
+verifyPageName - Starting
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

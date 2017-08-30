@@ -1,0 +1,61 @@
+#account-verification {
+	background: none;
+	padding: 0;
+
+	#cards {
+		width: 320px;
+		margin: 0 auto 20px auto;
+		overflow: hidden;
+
+		img {
+			width: 140px;
+			margin-right: 10px;
+			display: block;
+			float: left;
+
+			&:last-child {
+				margin: 0 0 0 10px;
+				width: 139px;
+			}
+		}
+	}
+
+	fieldset {
+		padding: 0;
+		margin: 0 0 20px 0;
+
+		fieldset {
+			margin-bottom: 0;
+
+			.form-row {
+				border: 1px solid $ddl-border-color-1;
+				border-width: 1px 0;
+				padding: 22px 12px;
+
+				&:nth-child(even){
+					background: $ddl-white2;
+
+				}
+
+				.ddl-form-field {
+					width: 100%;
+					margin: 0;
+					overflow: hidden;
+				}
+
+				.ddl-label {
+					display: inline-block;
+					padding-top: 8px;
+				}
+
+				input {
+					width: 40px;
+					height: 40px;
+					float: right;
+					margin: 4px;
+				}			
+			}
+		}
+	}
+	
+}

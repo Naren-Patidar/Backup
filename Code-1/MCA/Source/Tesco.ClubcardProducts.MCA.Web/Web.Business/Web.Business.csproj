@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F07DB97-CD50-48FE-8BA2-0D79DE32036D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tesco.ClubcardProducts.MCA.Web.Business</RootNamespace>
+    <AssemblyName>Tesco.ClubcardProducts.MCA.Web.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net40\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\MCAReferenceDlls\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.3.1684.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Pdfsharp\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PointsSummarySequencing">
+      <HintPath>..\MCAReferenceDlls\PointsSummarySequencing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapping\AutoMapperConfiguration.cs" />
+    <Compile Include="AutoMapping\IMappingService.cs" />
+    <Compile Include="AutoMapping\MappingService.cs" />
+    <Compile Include="AutoMapping\ViewModelProfile.cs" />
+    <Compile Include="BusinessLogics\AccountBC.cs" />
+    <Compile Include="BusinessLogics\ActivationBC.cs" />
+    <Compile Include="BusinessLogics\BoostsAtTescoBC.cs" />
+    <Compile Include="BusinessLogics\JoinBC.cs" />
+    <Compile Include="BusinessLogics\CustomerPreferenceBC.cs" />
+    <Compile Include="BusinessLogics\EmailDownloadBC.cs" />
+    <Compile Include="BusinessLogics\HomeBC.cs" />
+    <Compile Include="BusinessLogics\ManageCardsBC.cs" />
+    <Compile Include="BusinessLogics\MyLatestStatementBC.cs" />
+    <Compile Include="BusinessLogics\OrderAReplacementBC.cs" />
+    <Compile Include="BusinessLogics\PDFGenerator.cs" />
+    <Compile Include="BusinessLogics\PersonalDetailsBC.cs" />
+    <Compile Include="BusinessLogics\CouponBC.cs" />
+    <Compile Include="BusinessLogics\PointsBC.cs" />
+    <Compile Include="BusinessLogics\VoucherBC.cs" />
+    <Compile Include="BusinessLogics\XmasSaverBC.cs" />
+    <Compile Include="Contracts\IJoinBC.cs" />
+    <Compile Include="Contracts\IAccountBC.cs" />
+    <Compile Include="Contracts\IActivationBC.cs" />
+    <Compile Include="Contracts\IBoostAtTescoBC.cs" />
+    <Compile Include="Contracts\IBoostsAtTescoBC.cs" />
+    <Compile Include="Contracts\ICouponBC.cs" />
+    <Compile Include="Contracts\ICustomerPreferenceBC.cs" />
+    <Compile Include="Contracts\IEmailDownloadBC.cs" />
+    <Compile Include="Contracts\IHomeBC.cs" />
+    <Compile Include="Contracts\IManageCardsBC.cs" />
+    <Compile Include="Contracts\IMyLatestStatementBC.cs" />
+    <Compile Include="Contracts\IOrderAReplacementBC.cs" />
+    <Compile Include="Contracts\IPDFGenerator.cs" />
+    <Compile Include="Contracts\IPersonalDetailsBC.cs" />
+    <Compile Include="Contracts\IPointsBC.cs" />
+    <Compile Include="Contracts\IVoucherBC.cs" />
+    <Compile Include="Contracts\IXmasSaverBC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Common\Web.Common.csproj">
+      <Project>{F5D1C51F-0E34-4062-9D48-59FC06AED200}</Project>
+      <Name>Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.ServiceAdapter\Web.ServiceAdapter.csproj">
+      <Project>{80F159E1-B218-45CB-A80E-3B9ECD2C5F15}</Project>
+      <Name>Web.ServiceAdapter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,270 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@{
+    
+    var StampsConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.HomePageStamps];
+}
+@model StampModel
+<ul class="row ddl-stamps" id="stamps">
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp1].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp1" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp1.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp1").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp1").ToString()" target='_blank'>@*<span>*@
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp1.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp1Resource.Text")"/>
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp1Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp1DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore1")</p>*@ @*</span>*@
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp1.Action, Model.Stamp1.Controller)">@*<span>*@ <em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp1.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp1Resource.Text")"/>
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp1Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp1DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore1")</p>*@ @*</span>*@
+                </a>
+            }
+        </li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp2].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp2" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp2.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp2").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp2").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp2.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp2Resource.Text")"/>
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp2Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp2DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore2")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp2.Action, Model.Stamp2.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp2.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp2Resource.Text")"/>
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp2Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp2DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore2")</p>*@ </span>
+                </a>
+            }
+        </li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp3].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp3" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp3.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp3").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp3").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp3.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp3Resource.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp3Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp3DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore3")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp3.Action, Model.Stamp3.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp3.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp3Resource.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp3Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp3DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore3")</p>*@ </span>
+                </a>
+            }</li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp4].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp4" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp4.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp4").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp4").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp4.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp4Resource.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp4Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp4DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore4")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp4.Action, Model.Stamp4.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp4.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp4Resource.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp4Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp4DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore4")</p>*@ </span>
+                </a>
+            }</li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp5].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp5" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp5.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp5").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp5").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp5.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp5Resource.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp5Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp5DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore5")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp5.Action, Model.Stamp5.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp5.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp5Resource.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp5Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp5DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore5")</p>*@ </span>
+                </a>
+            }</li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp6].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp6" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp6.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp6").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp6").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp6.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp6Resource.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp6Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp6DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore6")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp6.Action, Model.Stamp6.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp6.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp6Resource.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp6Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp6DetailsResource.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore6")</p>*@ </span>
+                </a>
+            }</li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp7].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp7" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp7.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp7").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp7").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp7.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp7Resource.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp7Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp7Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore7")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp7.Action, Model.Stamp7.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp7.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp7Resource.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp7Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp7Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore7")</p>*@ </span>
+                </a>
+            }</li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp8].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp8" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp8.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp8").ToString()))
+            {
+                <a href='@Html.Translate("Home/Home", "urlStamp8").ToString()' target = '_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp8.Text").ToString())" alt="@Html.Translate("Home/Home", "lclOrderareplacementResource1.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp8Resource.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp8Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore8")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href='@Url.Action(Model.Stamp8.Action, Model.Stamp8.Controller)'><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp8.Text").ToString())" alt="@Html.Translate("Home/Home", "lclOrderareplacementResource1.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp8Resource.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp8Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore8")</p>*@ </span>
+                </a>
+            }
+        </li>
+    }
+    @if (!StampsConfig[DbConfigurationItemNames.Stamp9].IsDeleted)
+    {
+        <li class="gr-6 gr-4@small" id="liStamp9" onclick="return EventTracking('@Html.Translate("Home/Home", "TrackStamp9.Text")');">
+            @if (@GeneralUtility.IsExternalLink(@Html.Translate("Home/Home", "urlStamp9").ToString()))
+            {
+                <a href="@Html.Translate("Home/Home", "urlStamp9").ToString()" target='_blank'><span>
+                    <em>
+                        <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp9.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp9Resource1.Text")" />
+                    </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp9Resource1.Text")</h2>
+                    @*<p>@Html.Translate("Home/Home", "lclViewStamp9Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore9")</p>*@ </span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action(Model.Stamp9.Action, Model.Stamp9.Controller)"><span><em>
+                    <img src="@Url.Content(Html.Translate("Home/Home", "imgStamp9.Text").ToString())" alt="@Html.Translate("Home/Home", "lclStamp9Resource1.Text")" />
+                </em>
+                    <h2 class="ddl-icon-after ddl-icon-right">@Html.Translate("Home/Home", "lclStamp9Resource1.Text")</h2>
+                    @* <p>@Html.Translate("Home/Home", "lclViewStamp9Details.Text")</p>
+                    <p class="faux-button">@Html.Translate("Home/Home", "FindOutMore9")</p>*@ </span>
+                </a>
+            }</li>
+    }
+</ul>
+@*@if (!string.IsNullOrEmpty(Html.Translate("Home/Home", "urlBannerImage").ToString()))
+{
+    if (GeneralUtility.IsExternalLink(Html.Translate("Home/Home", "urlBannerImage").ToString()))
+    {
+        <a href='@Html.Translate("Home/Home", "urlBannerImage").ToString()' target="_blank">
+            <img src='@Url.Content(Resources.ConfigLinks.imgBanner)' style="" alt="" />
+        </a>
+    }
+    else
+    {
+        <a href='@Html.Translate("Home/Home", "urlBannerImage").ToString()' target="">
+            <img src='@Url.Content(Resources.ConfigLinks.imgBanner)' style="" alt="" />
+        </a>
+                                    
+    }
+    }
+else
+{
+    <img src='@Url.Content(Resources.ConfigLinks.imgBanner)' style="" alt="" />
+}*@
+<script type="text/javascript">
+
+    function EventTracking(content) {
+        if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+            _gaq.push(['_trackEvent', 'MCA Home Page', 'Click', content]);
+            return true;
+        }
+    }
+
+</script>

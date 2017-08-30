@@ -1,0 +1,47 @@
+﻿<GetRewardDtlsRsp xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.IntegrationServices.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<ErrorLogID i:nil="true" />
+	<ErrorMessage i:nil="true" />
+	<ErrorStatusCode i:nil="true" />
+	<dsResponse>
+		<xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+			<xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="en-GB">
+				<xs:complexType>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="Table">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Household_ID" type="xs:long" minOccurs="0" />
+									<xs:element name="Period_Name" type="xs:string" minOccurs="0" />
+									<xs:element name="Reward_Issued" type="xs:decimal" minOccurs="0" />
+									<xs:element name="Reward_Used" type="xs:decimal" minOccurs="0" />
+									<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+									<xs:element name="Reason" type="xs:string" minOccurs="0" />
+									<xs:element name="Reward_Left_Over" type="xs:decimal" minOccurs="0" />
+									<xs:element name="ColPeriodNo" type="xs:int" minOccurs="0" />
+									<xs:element name="StartDate" type="xs:string" minOccurs="0" />
+									<xs:element name="EndDate" type="xs:string" minOccurs="0" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+		<diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+			<NewDataSet xmlns="">
+				<Table diffgr:id="Table1" msdata:rowOrder="0">
+					<Household_ID>904862</Household_ID>
+					<Period_Name>Aug 15   </Period_Name>
+					<Reward_Issued>2.00</Reward_Issued>
+					<Reward_Used>0.50</Reward_Used>
+					<STATUS>ISSUED</STATUS>
+					<Reason>_</Reason>
+					<Reward_Left_Over>1.50</Reward_Left_Over>
+					<ColPeriodNo>170</ColPeriodNo>
+					<StartDate>08/05/15</StartDate>
+					<EndDate>23/07/15</EndDate>
+				</Table>
+			</NewDataSet>
+		</diffgr:diffgram>
+	</dsResponse>
+</GetRewardDtlsRsp>

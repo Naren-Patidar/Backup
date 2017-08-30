@@ -1,0 +1,67 @@
+
+
+.ddl-fieldset, .ddl-fieldset-like {
+	border: none;
+	margin: 0 0 24px 0;
+	padding: 20px 0 0 0;
+
+	&:nth-last-child(2) {
+		margin-bottom: 14px;
+	}
+
+	.copy-wrapper:nth-last-child(2){
+		margin-bottom: 0;
+	}
+
+	.conditional-content {
+
+		.copy-wrapper {
+			padding-bottom: 0;
+		}
+
+	}
+
+	legend {
+		display: block;
+		line-height: 2.4rem;
+		font-size: 2rem;
+		font-family: 'tescobold';
+		color: $ddl-black1;
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.form-row:nth-child(2) {
+
+		> .ddl-fieldset {
+			margin-top: 0;
+		}
+	}
+
+	.ddl-fieldset {
+		margin: 0 0 0 0;
+		padding-bottom: 0;
+
+		legend {
+			border: none;
+			padding: 0;
+			margin-bottom: 0;
+			font-size: 1.6rem;
+		}
+
+		.form-row:last-child {
+
+			.ddl-form-field {
+				margin-bottom: 0 !important;
+
+				&.ddl-radio, &.ddl-checkbox {
+					margin-bottom: 12px !important;
+				}
+			}
+		}
+	}
+
+	> p:nth-child(2){
+		padding-top: 0;
+	}
+}

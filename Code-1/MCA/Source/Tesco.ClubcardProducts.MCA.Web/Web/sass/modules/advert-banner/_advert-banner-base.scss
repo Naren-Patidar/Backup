@@ -1,0 +1,18 @@
+
+.advert-banner {
+	position: relative;
+	margin-bottom: 20px;
+	border: 1px solid $ddl-grey3;
+
+	img {
+		display: none;
+	}
+
+	.advert-banner-content {
+
+		.advert-banner-content-inner {
+			padding: 20px 60px 20px 20px;
+
+		}
+	}
+}

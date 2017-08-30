@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tesco.StoredValue.Interfaces.Messages" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tesco.StoredValue.Interfaces.Messages" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="GetBalanceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Balance" nillable="true" type="tns:Balance" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetBalanceResponse" nillable="true" type="tns:GetBalanceResponse" />
+  <xs:complexType name="Balance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BalanceByExpiry" nillable="true" type="tns:ArrayOfBalanceByExpiry" />
+      <xs:element minOccurs="0" name="ReservedBalance" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalBalance" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Balance" nillable="true" type="tns:Balance" />
+  <xs:complexType name="ArrayOfBalanceByExpiry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BalanceByExpiry" nillable="true" type="tns:BalanceByExpiry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBalanceByExpiry" nillable="true" type="tns:ArrayOfBalanceByExpiry" />
+  <xs:complexType name="BalanceByExpiry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Balance" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Expiry" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BalanceByExpiry" nillable="true" type="tns:BalanceByExpiry" />
+</xs:schema>

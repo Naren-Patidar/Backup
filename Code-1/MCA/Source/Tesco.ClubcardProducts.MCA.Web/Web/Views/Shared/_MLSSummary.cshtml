@@ -1,0 +1,245 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models
+@model MyLatestStatementViewModel
+@{
+    var sCustomerType = Model.pointsSummary.CustomerType.ToString().ToUpper();
+    var appsettings = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings];
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h2 id="lblMyAccountSummary" class="ddl-h3-like">@Html.Translate("Shared/_MyLatestStatement", "MyAccountSummary")</h2>
+        </div>
+        @* @{var points = Html.Translate("Shared/_MyLatestStatement", "BtnMyPoints");}*@
+        @{var dateFormat = appsettings[AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1;}
+        @if (Model.prevOfferId != 0)
+        {
+            <a href="@Url.Action("PointsStatement", "Points", new { offerid = Convert.ToString(Model.prevOfferId) })" id="btnmypoints">
+                @PointsSection(dateFormat.ToString())
+            </a>
+        }
+        else
+        {
+            
+            <a href="@Url.Action("Home", "Points")" id = "btnmypoints">
+                @PointsSection(dateFormat.ToString())
+            </a>
+        }
+        @if (sCustomerType == BusinessConstants.VOUCHER_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_REWARD_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.NON_VOUCHER ||
+                    sCustomerType == BusinessConstants.NON_MAILED_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.NEW_CUSTOMER_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.NEW_NON_VOUCHER_CUSTOMERS)
+        {
+            <a href="@Url.Action("Home", "Vouchers")" id="btnvouchers">
+                <div class="table-wrapper points-callout points-callout-multiline points-callout-secondary points-callout-link ddl-icon-before ddl-icon-clubcard">
+                    <table>
+                        <tbody>
+                            <tr id="div_myvouchers">
+                                <td id="lblpointstoVoucher">
+                                    <h2>@Html.Translate("Shared/_MyLatestStatement", "MyVouchers")</h2>
+                                    @if (Convert.ToDouble(Model.pointsSummary.TotalReward) > 0.00)
+                                    { 
+                                        <p>@Html.Translate("Shared/_MyLatestStatement", "PointsToVouchers")</p>
+                                    }
+                                    else
+                                    {
+                                        <p>@Html.Translate("Shared/_MyLatestStatement", "ZeroPointsToVouchers")</p>
+                                    }
+                                </td>
+                                <td class="ddl-no-wrap">
+                                    <span id="lblCurrencySymbol">@Html.Translate("Shared/_MyLatestStatement", "CurrencySymbol")</span>
+                                    <span id="ltrCurVouchers">@Model.pointsSummary.TotalReward.ToString()</span> <span
+                                        id="ltrCurAlphaSymbol">@Html.Translate("Shared/_MyLatestStatement", "CurrencyAlphaSymbol")</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        }
+        @if (sCustomerType == BusinessConstants.AVOIS_BRITISHAIRWAYS_EXCLUB_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.AVOIS_NON_REWARD_BRITISHAIRWAYS_EXCLUB_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.AVIOS_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.AVIOS_NON_REWARD_CUSTOMERS)
+        {
+            if (sCustomerType == BusinessConstants.AVOIS_BRITISHAIRWAYS_EXCLUB_CUSTOMERS ||
+                        sCustomerType == BusinessConstants.AVOIS_NON_REWARD_BRITISHAIRWAYS_EXCLUB_CUSTOMERS)
+            { 
+            <a href='@Html.Translate("Shared/_MyLatestStatement", "URLAvois")' target ="_blank" id="btnAvios">
+                @AviosSection()
+            </a>
+            }
+            else
+            { 
+            <a href='@Html.Translate("Shared/_MyLatestStatement", "URLAvoisOne")' target ="_blank" id="btnAvioss">
+                @AviosSection()
+            </a>
+            }
+        }
+        @if (sCustomerType == BusinessConstants.VIRGIN_FREQUENT_FLYERS_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.VIRGIN_FREQUENT_FLYERS_NON_REWARD_CUSTOMERS)
+        {
+            <a href='@Html.Translate("Shared/_MyLatestStatement", "URLVirgin")' target="_blank" id="btnVirginAtlantic">
+                <div class="table-wrapper points-callout points-callout-multiline points-callout-secondary points-callout-link ddl-icon-before ddl-icon-clubcard">
+                    <table>
+                        <tbody>
+                            <tr id="div_Virgin">
+                                <td id="MyVirginAtlantic">
+                                    <h2>@Html.Translate("Shared/_MyLatestStatement", "MyVirginAtlantic")</h2>
+                                    @if (Convert.ToDouble(Model.pointsSummary.TotalRewardMiles) > 0.00)
+                                    { 
+                                        <p id="lclPointsToVirginAtlantic">@Html.Translate("Shared/_MyLatestStatement", "PointsToVirginAtlantic")</p>
+                                    }
+                                    else
+                                    {
+                                        <p>@Html.Translate("Shared/_MyLatestStatement", "ZeroPointsToVirginAtlantic")</p>
+                                    }
+                                </td>
+                                <td class="ddl-no-wrap" id="ltrmyvirginmiles">@Model.pointsSummary.TotalRewardMiles.ToString()
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        }
+        @if (sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_REWARD_CUSTOMERS ||
+                    sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS)
+        {
+            <a href="@Url.Action("Home", "Vouchers")" id = "btnviewallvouchers">
+                <div class="table-wrapper points-callout points-callout-multiline points-callout-link ddl-icon-before ddl-icon-clubcard">
+                    <table>
+                        <tbody>
+                            <tr id="div_mytopup">
+                                <td id="MyTopUp">
+                                    <h2>@Html.Translate("Shared/_MyLatestStatement", "MyTopUp")</h2>
+                                    <p id="lblYourTopUpVouchers">@Html.Translate("Shared/_MyLatestStatement", "YourTopUpVouchers")</p>
+                                </td>
+                                <td class="ddl-no-wrap">
+                                    <span id="lblCurrencySymbol2">@Html.Translate("Shared/_MyLatestStatement", "CurrencySymbol")</span>
+                                    <span id="ltrmytopup">@Model.pointsSummary.TopUpVouchers.ToString()</span> <span
+                                        id="ltrCurrencyAlphaSymbol1">@Html.Translate("Shared/_MyLatestStatement", "CurrencyAlphaSymbol")</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        }
+    
+@*@{var vouchers = Html.Translate("Shared/_MyLatestStatement", "BtnMyVouchers");}*@
+        @if (sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_REWARD_CUSTOMERS ||
+                sCustomerType == BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS)
+        {
+            <a href="@Url.Action("Home", "Vouchers")", id="btnmybonus" >
+                <div class="table-wrapper points-callout  points-callout-multiline points-callout-link points-callout-secondary ddl-icon-before ddl-icon-clubcard">
+                    <table>
+                        <tbody>
+                            <tr id="div_myBonus">
+                                <td id="MyBonus">
+                                    <h2>@Html.Translate("Shared/_MyLatestStatement", "MyBonus")</h2>
+                                    <p id="lblBonusVouchers">@Html.Translate("Shared/_MyLatestStatement", "YourBonusVouchers")</p>
+                                </td>
+                                <td class="ddl-no-wrap">
+                                    <span id="lblCurrencySymbol2">@Html.Translate("Shared/_MyLatestStatement", "CurrencySymbol")</span>
+                                    <span id="ltrmybonus">@Model.pointsSummary.BonusVouchers.ToString()</span> <span
+                                        id="ltrCurrencyAlphaSymbol1">@Html.Translate("Shared/_MyLatestStatement", "CurrencyAlphaSymbol")</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        }
+        @if (sCustomerType != BusinessConstants.VOUCHER_CUSTOMERS &&
+        sCustomerType != BusinessConstants.AVOIS_BRITISHAIRWAYS_EXCLUB_CUSTOMERS &&
+        sCustomerType != BusinessConstants.AVOIS_NON_REWARD_BRITISHAIRWAYS_EXCLUB_CUSTOMERS &&
+        sCustomerType != BusinessConstants.AVIOS_CUSTOMERS &&
+        sCustomerType != BusinessConstants.AVIOS_NON_REWARD_CUSTOMERS &&
+        sCustomerType != BusinessConstants.CHRISTMAS_SAVERS_REWARD_CUSTOMERS &&
+        sCustomerType != BusinessConstants.CHRISTMAS_SAVERS_NON_REWARD_CUSTOMERS &&
+        sCustomerType != BusinessConstants.NON_VOUCHER &&
+        sCustomerType != BusinessConstants.VIRGIN_FREQUENT_FLYERS_CUSTOMERS &&
+        sCustomerType != BusinessConstants.VIRGIN_FREQUENT_FLYERS_NON_REWARD_CUSTOMERS &&
+        sCustomerType != BusinessConstants.NON_MAILED_CUSTOMERS &&
+        sCustomerType != BusinessConstants.NEW_CUSTOMER_CUSTOMERS &&
+        sCustomerType != BusinessConstants.NEW_NON_VOUCHER_CUSTOMERS)
+        {
+            @Html.Partial("_LoadHTML", new LoadHtmlModel { FileName = "~/Content/HTMLs/MyLatestStatementHoldingPage.html" })     
+        }
+    
+@*@{var coupons = Html.Translate("Shared/_MyLatestStatement", "BtnMyCoupons");}*@
+        @if (!string.IsNullOrEmpty(Model.pointsSummary.NoCoupons) && !Model.pointsSummary.NoCoupons.Equals("0"))
+        {
+            <a href="@Url.Action("Home", "Coupons")", id = "btnmycoupons">
+                <div class="table-wrapper points-callout points-callout-link ddl-icon-before ddl-icon-clubcard">
+                    <table>
+                        <tbody>
+                            <tr id="div_MyCoupons">
+                                <td id="MyCoupons"><h2>@Html.Translate("Shared/_MyLatestStatement", "MyCoupons")</h2>
+                                </td>
+                                <td class="ddl-no-wrap">
+                                    <span id="ltrMyCoupons">@Model.pointsSummary.NoCoupons.ToString()
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </a>
+        }
+        @helper PointsSection(string dateFormat)
+            {
+            <div class="table-wrapper points-callout points-callout-multiline points-callout-link ddl-icon-before ddl-icon-clubcard">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="lblMyPoints">
+                                <h2><span id="lblpoints">@Html.Translate("Shared/_MyLatestStatement", "MyPoints") </span></h2>
+                                <p>
+                                    @string.Format(Html.Translate("Shared/_MyLatestStatement", "PointsCollectedFrom").ToString(), Model.pointsPrevStartDate.HasValue ?
+                           @Model.pointsPrevStartDate.Value.FormatDate(dateFormat) : string.Empty, Model.pointsPrevEndDate.HasValue ?
+                           @Model.pointsPrevEndDate.Value.FormatDate(dateFormat) : string.Empty)<sup>1</sup>
+                                </p>
+                            </td>
+                            <td class="ddl-no-wrap" id="lbltotalpoints">
+                                @Model.pointsSummary.TotalPoints.ToString()
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        }
+        @helper AviosSection()
+            {
+            <div class="table-wrapper points-callout points-callout-multiline points-callout-secondary points-callout-link ddl-icon-before ddl-icon-clubcard">
+                <table>
+                    <tbody>
+                        <tr id="div_avios">
+                            <td id="myavios">
+                                <h2>@Html.Translate("Shared/_MyLatestStatement", "MyAvios")</h2>
+                                @if (Convert.ToDouble(Model.pointsSummary.TotalRewardMiles) > 0.00)
+                                { 
+                                    <p>@Html.Translate("Shared/_MyLatestStatement", "PointstoAvios")</p>
+                                }
+                                else
+                                {
+                                    <p>@Html.Translate("Shared/_MyLatestStatement", "ZeroPointsToAvios")</p>
+                                }
+                            </td>
+                            <td class="ddl-no-wrap">
+                                <span id="ltrmyAvios">@Model.pointsSummary.TotalRewardMiles.ToString()</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    
+        }
+    </div>
+</div>

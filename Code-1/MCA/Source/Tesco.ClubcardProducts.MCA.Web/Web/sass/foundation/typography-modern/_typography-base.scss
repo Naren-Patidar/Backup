@@ -1,0 +1,18 @@
+body.typography-modern {
+  line-height: 1.6rem;
+  font-family: 'tescomodern';
+
+  /* Headings */
+  h1, .ddl-h1-like,
+  h2, .ddl-h2-like,
+  h3, .ddl-h3-like,
+  h4, .ddl-h4-like,
+  h5, .ddl-h5-like,
+  h6, .ddl-h6-like {
+    color: $ddl-heading-colour;
+    font-family: tescomodernbold;
+    letter-spacing: -1px;
+  }
+}
+
+

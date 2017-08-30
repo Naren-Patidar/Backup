@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.WebService.Messages" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ValidateClubcardAccountExistsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Matched" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateClubcardAccountExistsResponse" nillable="true" type="tns:ValidateClubcardAccountExistsResponse" />
+  <xs:complexType name="ResponseBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorLogID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorStatusCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseBase" nillable="true" type="tns:ResponseBase" />
+  <xs:complexType name="AccountFindByClubcardNumberResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContactDetailMatchStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Matched" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountFindByClubcardNumberResponse" nillable="true" type="tns:AccountFindByClubcardNumberResponse" />
+  <xs:complexType name="AccountDuplicateCheckResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HasDuplicates" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountDuplicateCheckResponse" nillable="true" type="tns:AccountDuplicateCheckResponse" />
+  <xs:complexType name="AccountCreateResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClubcardNumber" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountCreateResponse" nillable="true" type="tns:AccountCreateResponse" />
+  <xs:complexType name="AccountLinkResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountLinkResponse" nillable="true" type="tns:AccountLinkResponse" />
+  <xs:complexType name="AccountUpdateResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountUpdateResponse" nillable="true" type="tns:AccountUpdateResponse" />
+</xs:schema>

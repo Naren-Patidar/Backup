@@ -1,0 +1,72 @@
+
+#ddl-flyout-control {
+	position: absolute;
+	top: 17px;
+	right: 12px;
+	min-width: 40px;
+	min-height: 40px;
+
+	&:before {
+		font-size: 24px;
+		line-height: 36px;
+		font-weight: normal;
+	}
+}
+
+#ddl-flyout {
+	position: fixed !important;
+	top: 0;
+	right: -999px;
+	transition: right .8s ease-in-out;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999;
+	padding: 4px 60px 0 0 !important;
+	background: rgba(0,0,0,.7);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border-top: 2px solid $ddl-blue1;
+
+
+	&:before {
+		content: "\e007";
+		font-family: 'Icons';
+		font-size: 2rem;
+		display: block;
+		height: 49px;
+		width: 100%;
+		padding: 20px 20px 0 0;
+		line-height: 20px;
+		text-align: right;
+		background: rgba(0,0,0,.8);
+		color: $ddl-white1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 3;
+	}
+
+	&:after {
+		content: "Close";
+		display: block;
+		width: 60px;
+		height: 60px;
+		padding:  45px 0 0 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 4;
+		color: $ddl-white1;
+		text-align: center;
+		font-size: 1.2rem;
+		font-family: 'tescoregular';
+		text-transform: uppercase;
+	}
+}
+
+.ddl-flyout-active {
+
+	#ddl-flyout {
+		right: 0;
+	}
+}

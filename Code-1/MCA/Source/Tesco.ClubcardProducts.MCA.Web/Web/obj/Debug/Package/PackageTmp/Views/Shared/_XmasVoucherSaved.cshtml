@@ -1,0 +1,58 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.XmasSaverVoucherSavedViewModel
+@using System.Globalization
+@using Tesco.ClubcardProducts.MCA.Web.Common
+
+
+    <div class="table-wrapper table-bordered">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <span id="spnStatementIssuedIn">@Html.Translate("Shared/_XmasSaver", "StatementIssuedIn")</span>
+                    </th>
+                    <th class="ddl-text-right">
+                        <span id="spnValue">Value</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.StatementDate.Count; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                    <tr>
+                        <td>
+                            @Model.StatementDate[i].ToString().Split(' ')[0]
+                        </td>
+                        <td class="ddl-text-right" data-mobileheader="Value">
+                            @Html.Translate("Shared/_XmasSaver", "Currency") @Convert.ToDecimal(Model.VoucherValue[i], CultureInfo.InvariantCulture)
+                            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+                        </td>
+                    </tr>
+                    }
+                    else
+                    { 
+                    <tr>
+                        <td>
+                            @Model.StatementDate[i]
+                        </td>
+                        <td class="ddl-text-right" data-mobileheader="Value">
+                            @Html.Translate("Shared/_XmasSaver", "Currency") @Model.VoucherValue[i] @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")
+                        </td>
+                    </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <span id="lclchrisaveTotal">@Html.Translate("Shared/_XmasSaver", "Total")</span>
+                    </td>
+                    <td>
+                        <span id="spnSumOfVouchersSaved">@Html.Translate("Shared/_XmasSaver", "Currency") @Model.TotalVoucherSaver
+                            @Html.Translate("Shared/_XmasSaver", "CurrencyAlpaSymbol")</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>

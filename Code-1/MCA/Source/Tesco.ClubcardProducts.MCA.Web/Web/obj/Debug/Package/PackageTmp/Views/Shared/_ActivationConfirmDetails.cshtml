@@ -1,0 +1,29 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common;
+@{
+    ViewBag.Title = @Html.Translate("Activation/Home", "PageResource2.Title");
+    ViewBag.dtmTitle = @Html.Translate("Activation/Home", "PageResource2.Title");
+
+    ViewBag.PageName = @Html.Translate("Activation/Home", "lclActivationConfirmation.Text"); 
+}
+
+@using (Html.BeginForm("ConfirmActivation", "Activation", FormMethod.Post, new { @class = "ddl-form" }))
+{
+    @Html.AntiForgeryToken()
+    <div id="mainContentAccountActivation" style="height:415px;">
+
+<h2>@Html.Translate("Activation/Home","lclConfirm1Resource1.Text")</h2>
+
+<div id="divforPageconfirm">
+ @if (Html.Translate("lclTryAgainResource1.Text").ToString().Length > 0)
+                { 
+    <p class="pageDescActivation" id="lblConfirm">
+          @Html.Translate("Activation/Home", "lclConfirm2Resource1.Text") </p>
+        }       
+  <p class="pageDescActivation" id ="lblaccess">  @Html.Translate("Activation/Home", "lclAccessResource1.Text")</p>
+ </div>
+<br />
+ <p class="pageDesc" id="pGoBackLink" runat="server" style="direction:rtl;" >
+    <input id="btnSubmit" type="submit" value="@Html.Translate("Activation/Home", "btnGotoHome")" class="ddl-button"/>
+ </p>
+</div>
+}

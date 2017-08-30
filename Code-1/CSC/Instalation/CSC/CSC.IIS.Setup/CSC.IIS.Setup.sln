@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "CSC.IIS.Setup", "CSC.IIS.Setup\CSC.IIS.Setup.wixproj", "{CAB189EF-51AA-41A6-A215-736F25C1822F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsapp.dotcom.tesco.org/tfs/marketing
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CSC.IIS.Setup\\CSC.IIS.Setup.wixproj
+		SccProjectName1 = CSC.IIS.Setup
+		SccLocalPath1 = CSC.IIS.Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Debug|Any CPU.Build.0 = Debug|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Debug|x86.ActiveCfg = Debug|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Debug|x86.Build.0 = Debug|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Release|Any CPU.ActiveCfg = Release|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Release|Any CPU.Build.0 = Release|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Release|x86.ActiveCfg = Release|x86
+		{CAB189EF-51AA-41A6-A215-736F25C1822F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

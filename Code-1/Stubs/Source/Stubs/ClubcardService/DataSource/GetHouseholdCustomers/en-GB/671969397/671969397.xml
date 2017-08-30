@@ -1,0 +1,56 @@
+﻿<GetHouseholdCustomersResponse>
+	<GetHouseholdCustomersResult>true</GetHouseholdCustomersResult>
+	<errorXml />
+	<resultXml>
+		<NewDataSet>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>671969397</PrimaryCustomerID>
+    <CustomerID>671969397</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JANICE</Name1>
+    <Name2 />
+    <Name3>HODGSON</Name3>
+    <MailingAddressLine1>NAUMAI</MailingAddressLine1>
+    <MailingAddressPostCode>EX33 2AR</MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>671969397</PrimaryCustomerID>
+    <CustomerID>1095623438</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JANICE              </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>HODGSON                  </Name3>
+    <MailingAddressLine1>NAUMAI                        </MailingAddressLine1>
+    <MailingAddressPostCode>EX33 2AR </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>671969397</PrimaryCustomerID>
+    <CustomerID>1095640817</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JANICE              </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>HODGSON                  </Name3>
+    <MailingAddressLine1>NAUMAI                        </MailingAddressLine1>
+    <MailingAddressPostCode>EX33 2AR </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+  <HouseholdCustomers>
+    <PrimaryCustomerID>671969397</PrimaryCustomerID>
+    <CustomerID>1095658196</CustomerID>
+    <TitleEnglish>Miss</TitleEnglish>
+    <Name1>JANICE              </Name1>
+    <Name2 xml:space="preserve">  </Name2>
+    <Name3>HODGSON                  </Name3>
+    <MailingAddressLine1>NAUMAI                        </MailingAddressLine1>
+    <MailingAddressPostCode>EX33 2AR </MailingAddressPostCode>
+    <CustomerUseStatusID>1</CustomerUseStatusID>
+    <CustomerMailStatus>1</CustomerMailStatus>
+  </HouseholdCustomers>
+</NewDataSet>
+	</resultXml>
+</GetHouseholdCustomersResponse>

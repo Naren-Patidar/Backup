@@ -1,0 +1,178 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities;
+@using System.Text.RegularExpressions;
+@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PersonalDetailsViewModel
+@{
+    ViewBag.Title = @Html.Translate("PersonalDetails/Home", "PageName");
+    ViewBag.PageName = "PersonalDetails";
+    bool dietaryPrefrence = false;
+    var hideCtrlConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality];
+    var HideConfig = DBConfigurationManager.Instance[DbConfigurationTypeEnum.EmailNotification];
+    dietaryPrefrence = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DisableDiaetoryPreference.ToString()].ConfigurationValue1.ToUpper().Equals("FALSE");
+    var errorKeys = (from item in ViewData.ModelState
+                     where item.Value.Errors.Any()
+                     select item.Key).ToList();
+    string dotcomCustID = ViewBag.DotcomCustomerId;
+}
+@section leftNavigation
+{
+    @Html.Partial("_LeftNavigation")
+}
+<div class="row">
+    <div class="gr-12">
+        <div class="copy-wrapper">
+            <h2 id="lblheader">
+                @Html.Translate("PersonalDetails/Home", "lclMyPersonalDetails.Text")</h2>
+            <p id="lblPageDesc">
+                @if (HideConfig[DbConfigurationItemNames.EmailNotification].ConfigurationValue1.Equals("1") &&
+                     Html.Translate("lclPageDescforEmailNotfn.Text").ToString().Length > 0)
+                {
+                    @Html.Translate("PersonalDetails/Home", "lclPageDescforEmailNotfn.Text")
+                }
+                else
+                {
+                    @Html.Translate("PersonalDetails/Home", "lclpageDesc1.Text")
+                }
+            </p>
+            <small id="lblpagedescCD">
+                @Html.Translate("PersonalDetails/Home", "lclpageDesc2.Text")
+                @if (GeneralUtility.IsExternalLink(@Resources.ConfigLinks.PDHContactDetails.ToString()))
+                {
+                    <a href='@Resources.ConfigLinks.PDHContactDetails' target="_blank">
+                        @Html.Translate("PersonalDetails/Home", "lclpageDesc3.Text")</a>
+                }
+                else
+                {
+                    <a href='@Resources.ConfigLinks.PDHContactDetails' target="">
+                        @Html.Translate("PersonalDetails/Home", "lclpageDesc3.Text")</a>
+                }
+                @Html.Translate("PersonalDetails/Home", "lclpageDesc4.Text")</small>
+            @if (Html.Translate("lclblueheaderbar.Text").ToString().Length > 0)
+            {
+                <h2 id="lblPDpageheader">
+                    @Html.Translate("PersonalDetails/Home", "lclblueheaderbar.Text")</h2>
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="gr-12">
+        @using (Html.BeginForm("Home", "PersonalDetails", FormMethod.Post, new { @class = "ddl-form", id = "MainForm", defaultbutton = "btnConfirm" }))
+        {
+            @Html.AntiForgeryToken()
+            <fieldset id="lblvalidationmsgs" class="ddl-fieldset">
+                <legend id="lblyourcontdtls" class="ddl-h4-like">@Html.Translate("Shared/_PersonalDetails", "lclYourContDetails.Text")</legend>
+                <div class="copy-wrapper">
+                    @if (errorKeys.Contains("errSummary"))
+                    {
+                        string errorSummary = Regex.Replace(@Html.ValidationMessage("errSummary").ToString(), "<.*?>", string.Empty);
+                        <p class="message-level-2 message-error" id="errSummary">
+                            @switch (errorSummary)
+                            {
+                                case "CorrectFollowing":
+                                <span data-valmsg-for="errSummary" data-valmsg-replace="true">@Html.Translate("PersonalDetails/Home", "correctFollowing.valid")</span>
+                                                                                         break;
+                                case "Duplicate":
+                                <span data-valmsg-for="errSummary" data-valmsg-replace="true">@Html.Translate("PersonalDetails/Home", "recordExist.valid")</span>
+                                                                                         break;
+                                case "Profanity":
+                                <span data-valmsg-for="errSummary" data-valmsg-replace="true">@Html.Translate("PersonalDetails/Home", "problemWithDetails.valid")</span>
+                                                                                         break;
+                            }
+                        </p>
+                    }
+                    @if (errorKeys.Contains("msgSummary"))
+                    {
+                        <p class="message-level-2 message-success" id="sm-saved">@Html.ValidationMessage("msgSummary")</p>
+                        if (hideCtrlConfig[DbConfigurationItemNames.HidePersonalDetailsPopup].ConfigurationValue1.Equals("0"))
+                        {
+
+                        PopUpModel popup = new PopUpModel();
+                        popup.PrimaryButton.IsVisible = true;
+                        popup.Template="_PersonalDetailsModal";
+                        popup.trigger="load";
+                        popup.PrimaryButton.Link="lnkforbtnTesco";
+                        popup.PrimaryButton.Text="btnTesco";
+                        @Html.Partial("_PopUp",popup)
+                        }
+                    }
+                </div>
+                @Html.Partial("_PersonalBasicDetails", Model)
+                @Html.Partial("_PersonalContactDetails", Model)
+            </fieldset>
+                    if (dietaryPrefrence)
+                    {
+            <fieldset class="ddl-fieldset" id="lblHHmodel">
+                @Html.Partial("_PersonalHouseholdDetails", Model)
+            </fieldset>
+                        if (Model.PersonalDetailsPreferences != null && Model.PersonalDetailsPreferences.Count > 0)
+                        {
+            <fieldset id="lblDPmodel" class="ddl-fieldset">
+                @Html.Partial("_PersonalDietaryPreferences", Model)
+            </fieldset>
+                        }
+
+                    }
+            <p id="lblbuttonsection">
+                <button class="ddl-button" id="btnConfirm"  name="Command" value="@Html.Translate("PersonalDetails/Home", "btnConfirmPersonalDtlsResource1.Text")" onclick="return TrackGAEvent('Confirm Submit');" >
+                    @Html.Translate("PersonalDetails/Home", "btnConfirmPersonalDtlsResource1.Text")</button>
+            </p>
+        }
+        <div class="row">
+            <div class="gr-12">
+                <div class="ddl-button-banner">
+                    <div class="ddl-button-banner-column">
+                        <h2 class="ddl-h5-like">
+                            @Html.Translate("PersonalDetails/Home", "lclpageDesc5.Text") @Html.Translate("PersonalDetails/Home", "lclpageDesc6.Text")</h2>
+                        <p>
+                            @Html.Translate("PersonalDetails/Home", "lclpageDesc7.Text")</p>
+                    </div>
+                    <div class="ddl-button-banner-column">
+                        @if (GeneralUtility.IsExternalLink(@Resources.ConfigLinks.PDHTescoPassword.ToString()))
+                        {
+                            <a href="@Resources.ConfigLinks.PDHTescoPassword" target="_blank" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+                                @Html.Translate("PersonalDetails/Home", "lclChangePassword") </a>
+                        }
+                        else
+                        {
+                            <a href="@Resources.ConfigLinks.PDHTescoPassword" target="" class="ddl-button ddl-button-secondary ddl-icon-after ddl-icon-arrow-right">
+                                @Html.Translate("PersonalDetails/Home", "lclChangePassword") </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gr-12">
+                <div class="copy-wrapper">
+                    <p id="lblFinalmsg">
+                        @Html.Translate("PersonalDetails/Home", "lclFinalMessage.Text")
+                    </p>
+                    <p id="lblCommmsg" class="ddl-t5">
+                        @Html.Translate("PersonalDetails/Home", "lclCommunicateMsg1Resource1.Text")</p>
+                        <p class="ddl-t5">@Html.Translate("PersonalDetails/Home", "lclCommunicateMsg2Resource1.Text")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+        if ("@Culture" != "en-GB") {
+            if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+                var _gaq = _gaq || [];
+                _gaq.push(['_trackEvent', 'PersonalDetails-Home', 'DotcomCustomerId', "@ViewBag.DotcomCustomerId"]);
+            }
+        }
+        function TrackGAEvent(ClickEvent) {
+            if ("@ViewBag.IsGARequired.ToLower()" == "true") {
+                _gaq.push(['_trackEvent', 'PersonalDetails', 'Click', ClickEvent]);
+            }
+        }
+    </script>
+    @Scripts.Render("~/bundles/personaldetails")
+}

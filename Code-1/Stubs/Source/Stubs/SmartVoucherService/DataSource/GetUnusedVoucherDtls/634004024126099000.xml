@@ -1,0 +1,100 @@
+﻿<GetUnusedVoucherDtlsRsp xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.IntegrationServices.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <ErrorLogID i:nil="true" />
+        <ErrorMessage i:nil="true" />
+        <ErrorStatusCode i:nil="true" />
+        <dsResponse>
+          <xs:schema id="NewDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="en-GB">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="Table">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Household_ID" type="xs:long" minOccurs="0" />
+                        <xs:element name="Period_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Value" type="xs:decimal" minOccurs="0" />
+                        <xs:element name="Voucher_Number" type="xs:long" minOccurs="0" />
+                        <xs:element name="Online_x0020_Code" type="xs:string" minOccurs="0" />
+                        <xs:element name="Expiry_x0020_Date" type="xs:string" minOccurs="0" />
+                        <xs:element name="Voucher_x0020_Type" type="xs:unsignedByte" minOccurs="0" />
+                        <xs:element name="_x0032_2DigitVoucher_Number" type="xs:string" minOccurs="0" />
+                        <xs:element name="Period_End_Date" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <NewDataSet xmlns="">
+              <Table diffgr:id="Table1" msdata:rowOrder="0">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>30.00</Value>
+                <Voucher_Number>947521887540</Voucher_Number>
+                <Online_x0020_Code>ACKBGKDMD4WY</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170061947521887540</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+              <Table diffgr:id="Table2" msdata:rowOrder="1">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>30.00</Value>
+                <Voucher_Number>947521887541</Voucher_Number>
+                <Online_x0020_Code>AQFK849H9RRP</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170061947521887541</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+              <Table diffgr:id="Table3" msdata:rowOrder="2">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>30.00</Value>
+                <Voucher_Number>947521887542</Voucher_Number>
+                <Online_x0020_Code>AH6T9DWPN7QN</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170061947521887542</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+              <Table diffgr:id="Table4" msdata:rowOrder="3">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>30.00</Value>
+                <Voucher_Number>947521887543</Voucher_Number>
+                <Online_x0020_Code>AC6GT8GMJ9FF</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170061947521887543</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+              <Table diffgr:id="Table5" msdata:rowOrder="4">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>30.00</Value>
+                <Voucher_Number>947521887544</Voucher_Number>
+                <Online_x0020_Code>ACWKN6X7QMDF</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170061947521887544</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+              <Table diffgr:id="Table6" msdata:rowOrder="5">
+                <Household_ID>999999</Household_ID>
+                <Period_Name>August 2015</Period_Name>
+                <Value>10.00</Value>
+                <Voucher_Number>947521887545</Voucher_Number>
+                <Online_x0020_Code>ADVBV99WCGG3</Online_x0020_Code>
+                <Expiry_x0020_Date>31/01/18</Expiry_x0020_Date>
+                <Voucher_x0020_Type>1</Voucher_x0020_Type>
+                <_x0032_2DigitVoucher_Number>9611170021947521887545</_x0032_2DigitVoucher_Number>
+                <Period_End_Date>Jul 23 2015 12:00AM</Period_End_Date>
+              </Table>
+            </NewDataSet>
+          </diffgr:diffgram>
+        </dsResponse>
+    </GetUnusedVoucherDtlsRsp>

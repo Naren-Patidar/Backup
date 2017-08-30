@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tesco.com/clubcardonline/datacontract/2011/11" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdminService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IAdminService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://tesco.com/clubcardonline/datacontract/2011/11" location="" />
+  <wsdl:types />
+  <wsdl:binding name="WSHttpBinding_IAdminService" type="i0:IAdminService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IAdminService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddRole">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRoleCapability">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleCapability" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRoleMembership">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddRoleMembership" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoleMembership">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/DeleteRoleMembership" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCapabilty">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetCapabilty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveCapability">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/RemoveCapability" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsAdminUser">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/IsAdminUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchRole">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/SearchRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoleDetails">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdateRoleDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewRoleCapability">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleCapability" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewRoleMembership">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/ViewRoleMembership" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPromotionCode">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/GetPromotionCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPromotionCode">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/AddPromotionCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePromotionCodePC">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCodePC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePromotionCode">
+      <soap12:operation soapAction="http://tesco.com/clubcardonline/datacontract/2011/11/IAdminService/UpdatePromotionCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdminService">
+    <wsdl:port name="WSHttpBinding_IAdminService" binding="tns:WSHttpBinding_IAdminService">
+      <soap12:address location="http://plprgxnngcu07.pl.tesco-europe.com/CCOServices/AdminService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://plprgxnngcu07.pl.tesco-europe.com/CCOServices/AdminService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

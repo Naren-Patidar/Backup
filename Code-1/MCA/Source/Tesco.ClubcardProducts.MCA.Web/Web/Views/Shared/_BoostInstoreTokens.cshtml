@@ -1,0 +1,101 @@
+﻿@model List<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Boost.Token>
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Boost
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration;
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@{
+    string dateFormat = DBConfigurationManager.Instance[DbConfigurationTypeEnum.AppSettings][AppConfigEnum.DisplayDateFormat.ToString()].ConfigurationValue1;
+}
+
+@using (Html.BeginForm("Home", "BoostsAtTesco", FormMethod.Post, new { @class = "form cf" }))
+{
+    @Html.AntiForgeryToken()
+    <h2 id="lblStoreExcCodes">@Html.Translate("Shared/_BoostsAtTesco", "lclStoreExcCodes")</h2>
+    
+    <div id="divforBoostmsgs">
+        <p id="lblmsg1">@Html.Translate("Shared/_BoostsAtTesco", "lclmsg1")</p>
+        <p id="lblmsg2">@Html.Translate("Shared/_BoostsAtTesco", "lclmsg2")</p>
+        <p id="lblmsg3">@Html.Translate("Shared/_BoostsAtTesco", "lclmsg3")</p>
+        <p><strong id="lblmsg4">@Html.Translate("Shared/_BoostsAtTesco", "lclmsg4")</strong></p>
+    </div>   
+    <div class="table-wrapper">
+        <div class="table-wrapper-inner" id="divforBoostinfo">      
+            <table border="0" cellpadding="0" cellspacing="0" id="tblBoost">
+                <thead>
+                    <tr id="trBoostinfo">
+                        <th id="lblDateOrdResource">@Html.Translate("Shared/_BoostsAtTesco", "lclDateOrdResource")</th>
+                        <th id="lblDescResource">@Html.Translate("Shared/_BoostsAtTesco", "lclDescResource")</th>
+                        <th id="lblOrdStatusResource">@Html.Translate("Shared/_BoostsAtTesco", "lclOrdStatusResource")</th>
+                        <th id="lblValResource">@Html.Translate("Shared/_BoostsAtTesco", "lclValResource")</th>
+                        <th>@Html.Translate("Shared/_BoostsAtTesco", "lclExpDateResource")</th>
+                        <th class="text-centre" id="lblSelectTokenResource">@Html.Translate("Shared/_BoostsAtTesco", "lclSelectTokenResource")
+                            <br />
+                            @Html.Translate("Shared/_BoostsAtTesco", "lclSelectAllTokens")
+                            <input id="selAllTokens" type="checkbox" class="selectall" />
+                        </th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                 @for (int i = 0; i < Model.Count; i++)
+                 {
+                     @Html.HiddenFor(v => v[i].TokenIDEncr)
+
+                        <tr>
+                            @if (Model[i].BookingDate != null)
+                            {
+                                <td id="lblinstoreBookingDate">@Convert.ToDateTime(Model[i].BookingDate).ToString(dateFormat)</td>   
+                            }
+                                
+                            @if (Model[i].TokenDescription != null)
+                            {
+                                <td id="lblinstoreTokenDesc">@Model[i].TokenDescription</td>
+                            }
+                               
+                            @if (Model[i].ProductStatus != null)
+                            { 
+                                <td id="lblinstoreProductstatus">@Model[i].ProductStatus</td>
+                            }
+                                
+                                
+                            @if (Model[i].TokenValue != null)
+                            {
+                                <td id="lblinstoreTokenvalue">@Html.Translate("Shared/_Vouchers", "CurrencySymbol")@Model[i].TokenValue</td>
+                            }
+                               
+                            @if (Model[i].ValidUntil != null)
+                            { 
+                                <td id="lblinstoreValiduntil">@Convert.ToDateTime(Model[i].ValidUntil).ToString(dateFormat)</td>
+                            }
+                                
+                            <td class="text-centre">@Html.CheckBoxFor(v => Model[i].Selected, new { @class = "select", id = "chkSelect" })</td>
+                    </tr>                      
+                 }
+                </tbody>
+            </table>
+        </div>
+    </div>  
+    <span class="right" id="pnlPrinttoken"> I want To: <input id="btnPrinttoken"  class="button right download" type="submit" value="@Html.Translate("Shared/_BoostsAtTesco", "btnPrintTokens")"/></span> 
+                 if (string.IsNullOrEmpty(Request.QueryString["error"]))
+                 { 
+        <p class="error" style="display:none;" id="lblerrmsg">@Html.Translate("Shared/_BoostsAtTesco", "lblShowErrorMsgResource")</p> 
+                 }
+                 else
+                 { 
+        <p class="error" id="lblshwerrmsg">@Html.Translate("Shared/_BoostsAtTesco", "lblShowErrorMsgResource")</p>
+                 }
+    <p><strong id="lblshwerrormsg">@Html.Translate("Shared/_BoostsAtTesco", "lblShowErrorMsg")</strong></p>
+    
+    <ol class="olNone">
+        <li id="liExcTokensprint">@Html.Translate("Shared/_BoostsAtTesco", "lclExcTokensprint")</li>
+        <li id="liPrintTokens">@Html.Translate("Shared/_BoostsAtTesco", "lclPrintTokens")</li>
+        <li id="liExcTokenStore">@Html.Translate("Shared/_BoostsAtTesco", "lclExcTokenStore")</li>
+    </ol>
+    
+    <p id="pnlforinfo">
+        <strong id="lblboostinfo1">@Html.Translate("Shared/_BoostsAtTesco", "lclInfo1")</strong>
+            @Html.Translate("Shared/_BoostsAtTesco", "lclInfo2")
+    </p>
+    <p id="lblboostinfo3">@Html.Translate("Shared/_BoostsAtTesco", "lclInfo3")</p>
+}

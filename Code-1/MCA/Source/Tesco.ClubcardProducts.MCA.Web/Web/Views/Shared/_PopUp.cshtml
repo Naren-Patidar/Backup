@@ -1,0 +1,55 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+@model PopUpModel
+@{
+    ViewBag.Title = "_PopUp";
+    ViewBag.dtmTitle = "_PopUp";
+	var target="";
+	var primaryButtonLink=(Model.PrimaryButton.Link!=null)  ? Html.Translate("Shared/_PopUp",Model.PrimaryButton.Link).ToString() : "#";
+	var primaryButtonText=(Model.PrimaryButton.Text!=null) ? Html.Translate("Shared/_PopUp",Model.PrimaryButton.Text).ToString() : Html.Translate("Shared/_PopUp","btnOk").ToString();
+	var secondaryButtonText=(Model.SecondaryButton.Text!=null) ? Html.Translate("Shared/_PopUp",Model.SecondaryButton.Text).ToString() : Html.Translate("Shared/_PopUp","btnCancel").ToString();
+	var secondaryButtonLink=(Model.SecondaryButton.Link!=null)  ? @Html.Translate("Shared/_PopUp",Model.SecondaryButton.Link).ToString() : "#";
+	var secondaryButtonTracker= secondaryButtonLink!="#";
+	var primaryButtonTracker= primaryButtonLink!="#";
+	var primaryButtonVisible= (Model.PrimaryButton.IsVisible!=null) ? Model.PrimaryButton.IsVisible : false;
+	var secondaryButtonVisible = (Model.SecondaryButton.IsVisible!=null) ? Model.SecondaryButton.IsVisible : false;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+</head>
+<body>
+ <div id="modal-wrapper"><div id="modal-wrapper-inner"><div id="modal"><a href="#n" id="close-modal" class="ddl-icon-before ddl-icon-close"><span class="ddl-visually-hidden">Close</span></a><div id="modal-content">
+ <div data-modalMethod="static" data-modalSpecs="method=static,content=this,trigger=@Model.trigger" class='modal'>
+  @Html.Partial(Model.Template)
+    <div  class='ddl-button-group ddl-button-group-centre'>
+	@if(primaryButtonVisible)
+   {
+		target=(GeneralUtility.IsExternalLink(@primaryButtonLink) && primaryButtonLink!="#") ? "_blank" : "_self";
+		<a href=@primaryButtonLink class="ddl-button ddl-button-fixed close-modal" target=@target onclick="trackGaqEvent(@primaryButtonTracker.ToString().ToLower(),'@primaryButtonText')">@primaryButtonText</a>
+	}
+	@if(secondaryButtonVisible){
+		target=(GeneralUtility.IsExternalLink(@secondaryButtonLink) && secondaryButtonLink!="#") ? "_blank" : "_self";
+		<a href=@secondaryButtonLink class="ddl-button ddl-button-fixed ddl-button-secondary close-modal" target=@target onclick="trackGaqEvent(@secondaryButtonTracker.ToString().ToLower(),'@secondaryButtonText')">@secondaryButtonText</a>
+	}
+
+     </div>
+    </div>
+   </div></div></div></div>
+   <script type='text/javascript'>
+
+	function trackGaqEvent(trackerFlag,url){
+		$("#close-modal").click();
+		 if(trackerFlag && _gaq!=undefined)
+			_gaq.push(['_trackEvent', 'Button', 'Click', url]);
+	}
+   </script>
+   @Scripts.Render("~/bundles/modal")
+</body>
+
+
+</html>

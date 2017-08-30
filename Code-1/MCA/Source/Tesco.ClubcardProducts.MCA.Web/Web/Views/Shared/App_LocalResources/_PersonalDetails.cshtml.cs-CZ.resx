@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aviosMiles" xml:space="preserve">
+    <value>Equivalent Avios:</value>
+  </data>
+  <data name="BAmiles" xml:space="preserve">
+    <value>Equivalent BA Avios:</value>
+  </data>
+  <data name="lblClickHere" xml:space="preserve">
+    <value>Klikněte zde</value>
+  </data>
+  <data name="lblClubcardStatement" xml:space="preserve">
+    <value>, k datu</value>
+  </data>
+  <data name="lblClubcardSummary" xml:space="preserve">
+    <value>Přehled Clubcard bodů</value>
+  </data>
+  <data name="lblCurrentCollectionPeriod" xml:space="preserve">
+    <value>Aktuální zúčtovací období</value>
+  </data>
+  <data name="lblCurrentPointsTotal" xml:space="preserve">
+    <value>Současný stav bodů:</value>
+  </data>
+  <data name="lblEasyEarn" xml:space="preserve">
+    <value>Získat body je tak snadné.</value>
+  </data>
+  <data name="lblFinalDate" xml:space="preserve">
+    <value>Další uzávěrka Clubcard bodů je připravena na</value>
+  </data>
+  <data name="lblFrmTesco" xml:space="preserve">
+    <value>Chcete-li zjistit, jak získat co nejvíce z vašeho Tesco Clubcard, prosím</value>
+  </data>
+  <data name="lblLink" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="lblMyPoints" xml:space="preserve">
+    <value>Moje body</value>
+  </data>
+  <data name="AlphaSymbol" xml:space="preserve">
+    <value>Kč</value>
+  </data>
+  <data name="lblUHaveCollected" xml:space="preserve">
+    <value>Zde najdete souhrn Clubcard bodů, které jste nasbírali od</value>
+  </data>
+  <data name="stdVoucher" xml:space="preserve">
+    <value>Platné Clubcard poukázky:</value>
+  </data>
+  <data name="virginMiles" xml:space="preserve">
+    <value>Equivalent Virgin Flying Club Miles:</value>
+  </data>
+  <data name="xmasmiles" xml:space="preserve">
+    <value>Celkem uloženo poukázek</value>
+  </data>
+  <data name="CurrencySymbol" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclClickHereResource" xml:space="preserve">
+    <value>Klikněte zde</value>
+  </data>
+  <data name="lclDtlResource" xml:space="preserve">
+    <value>Podrobnosti</value>
+  </data>
+  <data name="lclMisPointsResource" xml:space="preserve">
+    <value>Chybějící body?</value>
+  </data>
+  <data name="lclMissingPointsResource" xml:space="preserve">
+    <value>Pokud si myslíte, že vám chybí nějaké body, prosím</value>
+  </data>
+  <data name="lclPeriodcltedResource" xml:space="preserve">
+    <value>Nasbírané body v období:</value>
+  </data>
+  <data name="lclSummaryResource" xml:space="preserve">
+    <value>Přehled</value>
+  </data>
+  <data name="lclWhichCollectionPeriodResource" xml:space="preserve">
+    <value>Zvolte období, abyste si mohli prohlédnout vaše body.</value>
+  </data>
+  <data name="lclWudLikeResource" xml:space="preserve">
+    <value>Přehled vašich bodů za minulá období</value>
+  </data>
+  <data name="lnkViewDetailResource" xml:space="preserve">
+    <value>Zobrazit</value>
+  </data>
+  <data name="babyToddlerPref.valid" xml:space="preserve">
+    <value>V současné době jste přihlášeni k Baby&amp;Toddler Klubu, změňte prosím toto nastavení před odebráním své emailové adresy</value>
+  </data>
+  <data name="clickArrow.valid" xml:space="preserve">
+    <value>Klikněte na šipku pro výber vašeho domova</value>
+  </data>
+  <data name="DayTimePhonenumber" xml:space="preserve">
+    <value>Prosím zadejte platné telefonní číslo, na kterém jste k zastižení přes den</value>
+  </data>
+  <data name="ddlDayResource1" xml:space="preserve">
+    <value>Gün</value>
+  </data>
+  <data name="ddlHouseholdYearResource1.Text" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="ddlMonthResource1" xml:space="preserve">
+    <value>Měsíc</value>
+  </data>
+  <data name="ddlYearResource1" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="dobLessThan.valid" xml:space="preserve">
+    <value>Prosím zadejte platné datum narození menší než</value>
+  </data>
+  <data name="FamilyMemberDOB1" xml:space="preserve">
+    <value>Datum narození je vyžadováno nebo není platné</value>
+  </data>
+  <data name="dueDate.valid" xml:space="preserve">
+    <value>Please enter a valid due date less than 9 months
+ in DD/MM/YYYY format or remove the child entry</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Prosím zadejte platnou e-mailovou adresu</value>
+  </data>
+  <data name="enterAge.valid" xml:space="preserve">
+    <value>Prosím zadejte věk v rozmezí 0 až 99 let</value>
+  </data>
+  <data name="enterNo.valid" xml:space="preserve">
+    <value>Prosím zadejte číslo v rozmezí 1 až 99</value>
+  </data>
+  <data name="EveningPhonenumber" xml:space="preserve">
+    <value>Prosím zadejte platné telefonní číslo, na kterém jste k zastižení večer.</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Prosím zadejte platné křestní jméno</value>
+  </data>
+  <data name="format.valid" xml:space="preserve">
+    <value>roky ve formátu Den/Mšsíc/Rok nebo odstraňte zápis dítěte</value>
+  </data>
+  <data name="gender.mismatch" xml:space="preserve">
+    <value>Omlouvám se, ale vámi zvolené pohlaví neodpovídá vybranému titulu.</value>
+  </data>
+  <data name="gender.valid" xml:space="preserve">
+    <value>Prosím zvolte pohlaví</value>
+  </data>
+  <data name="Initial" xml:space="preserve">
+    <value>Zadejte prosím platný prostřední jméno</value>
+  </data>
+  <data name="ISOLanguageCode" xml:space="preserve">
+    <value>Please enter a valid preferred language</value>
+  </data>
+  <data name="Landline" xml:space="preserve">
+    <value>Prosím zadejte platné číslo mobilního telefonu</value>
+  </data>
+  <data name="language.valid" xml:space="preserve">
+    <value>Prosím vyberte platný jazyk</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Prosím zadejte platné příjmení</value>
+  </data>
+  <data name="lclAddress.Text" xml:space="preserve">
+    <value>Adresa:</value>
+  </data>
+  <data name="lclAddressLine2.Text" xml:space="preserve">
+    <value>Číslo popisné:</value>
+  </data>
+  <data name="lclAddressLine3.Text" xml:space="preserve">
+    <value>Adresa:</value>
+  </data>
+  <data name="lclAddressLine4.Text" xml:space="preserve">
+    <value>Město:</value>
+  </data>
+  <data name="lclAddressLine5.Text" xml:space="preserve">
+    <value>Stát:</value>
+  </data>
+  <data name="lclAddressLine6.Text" xml:space="preserve">
+    <value>Adresa:</value>
+  </data>
+  <data name="lclAge.Text" xml:space="preserve">
+    <value>Věk:</value>
+  </data>
+  <data name="lclBabyAndToddler.Text" xml:space="preserve">
+    <value>(z) klubu Baby&amp;Toddler</value>
+  </data>
+  <data name="lclBabyMessage1.Text" xml:space="preserve">
+    <value>Jste členem našeho klubu Baby&amp;Toddler</value>
+  </data>
+  <data name="lclBabyMessage2.Text" xml:space="preserve">
+    <value>Prosím zkontrolujte předpokládaná data narození a data narození všech dětí mladších</value>
+  </data>
+  <data name="lclCantFindAddress.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lclChild.Text" xml:space="preserve">
+    <value>(pokud máte dítě mladší než 1 rok, zadejte 0)</value>
+  </data>
+  <data name="lclChooseAnAddress.Text" xml:space="preserve">
+    <value>Vyberte adresu:</value>
+  </data>
+  <data name="lclCountry.Text" xml:space="preserve">
+    <value>Kraj:</value>
+  </data>
+  <data name="lclDayTimePhoneNo.Text" xml:space="preserve">
+    <value>Telefonní číslo, na kterém jste k zastižení přes den:</value>
+  </data>
+  <data name="lclDietaryNeed.Text" xml:space="preserve">
+    <value>Prosím zaškrtněte, pokud máte některé z následujících požadavků na stravování?</value>
+  </data>
+  <data name="lclDob.Text" xml:space="preserve">
+    <value>Datum narození:</value>
+  </data>
+  <data name="lclEmailAddress.Text" xml:space="preserve">
+    <value>E-mailová adresa:</value>
+  </data>
+  <data name="lclEnterAge.Text" xml:space="preserve">
+    <value>Prosím zadejte věk dalších lidí ve vaší domácnosti (pokud máte dítě mladší než 1 rok, vepište 0)</value>
+  </data>
+  <data name="lclEvnPhoneNo.Text" xml:space="preserve">
+    <value>Telefonní číslo, na kterém jste k zastižení večer:</value>
+  </data>
+  <data name="lclFemale.Text" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="lclFirstName.Text" xml:space="preserve">
+    <value>Jméno:</value>
+  </data>
+  <data name="lclGender.Text" xml:space="preserve">
+    <value>Pohlaví:</value>
+  </data>
+  <data name="lclHouseHoldDetails.Text" xml:space="preserve">
+    <value>Údaje o vaší domácnosti:</value>
+  </data>
+  <data name="lclHouseNo.Text" xml:space="preserve">
+    <value>Číslo/jméno domu</value>
+  </data>
+  <data name="lclHouseNoName.Text" xml:space="preserve">
+    <value>Ulice:</value>
+  </data>
+  <data name="lclLocality.Text" xml:space="preserve">
+    <value>Lokalita:</value>
+  </data>
+  <data name="lclMale.Text" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="lclMiddleInitials.Text" xml:space="preserve">
+    <value>Prostřední iniciála/y:</value>
+  </data>
+  <data name="lclMobilePhoneNo.Text" xml:space="preserve">
+    <value>Telefonní číslo nebo mobil: (např.00420111222333)</value>
+  </data>
+  <data name="lclMoreInfo.Text" xml:space="preserve">
+    <value>Více informací</value>
+  </data>
+  <data name="lclNoteText.Text" xml:space="preserve">
+    <value>Abychom zajistili, že vám budou zaslány relevantní informace a kupóny, je užitečné mít následující informace o vaší domácnosti.</value>
+  </data>
+  <data name="lclOptOut.Text" xml:space="preserve">
+    <value>Odhlásit/vystoupit</value>
+  </data>
+  <data name="lclPeople.Text" xml:space="preserve">
+    <value>Kolik osob žije ve vaší domácnosti (včetně vás)?</value>
+  </data>
+  <data name="lclPostCode.Text" xml:space="preserve">
+    <value>PSČ:</value>
+  </data>
+  <data name="lclPrefLanguage.Text" xml:space="preserve">
+    <value>Preferovaný jazyk:</value>
+  </data>
+  <data name="lclPrimID.Text" xml:space="preserve">
+    <value>Primární ID (</value>
+  </data>
+  <data name="lclRace.Text" xml:space="preserve">
+    <value>Prosím vyberte rasu</value>
+  </data>
+  <data name="lclSecID.Text" xml:space="preserve">
+    <value>Sekundární ID (pas, občanský průkaz):</value>
+  </data>
+  <data name="lclStreet.Text" xml:space="preserve">
+    <value>Ulice:</value>
+  </data>
+  <data name="lclSurName.Text" xml:space="preserve">
+    <value>Příjmení:</value>
+  </data>
+  <data name="lclTitle.Text" xml:space="preserve">
+    <value>Titul:</value>
+  </data>
+  <data name="lclTitleMsg.Text" xml:space="preserve">
+    <value>Prosím vyberte titul</value>
+  </data>
+  <data name="lclTown.Text" xml:space="preserve">
+    <value>Město:</value>
+  </data>
+  <data name="lclYourContDetails.Text" xml:space="preserve">
+    <value>Vaše kontaktní údaje</value>
+  </data>
+  <data name="Len_DayTimePhonenumber" xml:space="preserve">
+    <value>Zadejte prosím Vaše telefonní číslo.</value>
+  </data>
+  <data name="Len_EmailAddress" xml:space="preserve">
+    <value>Zadejte prosím Váš email.</value>
+  </data>
+  <data name="Len_EveningPhonenumber" xml:space="preserve">
+    <value>Zadejte prosím Vaše telefonní číslo.</value>
+  </data>
+  <data name="Len_FirstName" xml:space="preserve">
+    <value>Zadejte prosím Vaše jméno.</value>
+  </data>
+  <data name="Len_Initial" xml:space="preserve">
+    <value>Zadejte prosím Vaše druhé jméno.</value>
+  </data>
+  <data name="Len_LastName" xml:space="preserve">
+    <value>Zadejte prosím Vaše příjmení.</value>
+  </data>
+  <data name="Len_MailingAddressPostCode" xml:space="preserve">
+    <value>Zadejte prosím PSČ.</value>
+  </data>
+  <data name="Len_MobilePhoneNumber" xml:space="preserve">
+    <value>Zadejte prosím Vaše mobilní telefonní číslo.</value>
+  </data>
+  <data name="Len_PassportNo" xml:space="preserve">
+    <value>Zadejte prosím platné číslo karty Clubcard.</value>
+  </data>
+  <data name="Len_SSN" xml:space="preserve">
+    <value>Zadejte prosím platné číslo karty Clubcard.</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="MailingAddressPostCode" xml:space="preserve">
+    <value>Prosím zadejte platné poštovní směrovací číslo</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>Prosím zadejte platné číslo mobilního telefonu</value>
+  </data>
+  <data name="PassportNo" xml:space="preserve">
+    <value>Please enter valid secondary id</value>
+  </data>
+  <data name="pleaseTry.valid" xml:space="preserve">
+    <value>Zkuste prosím znova nebo nás kontaktuje na čísle 0800 59 16 88</value>
+  </data>
+  <data name="primaryId.valid" xml:space="preserve">
+    <value>Prosím zadejte primární průkaz totožnosti</value>
+  </data>
+  <data name="primaryIdLength.valid" xml:space="preserve">
+    <value>Prosím zadejte primární průkaz totožnosti ve vhodné délce</value>
+  </data>
+  <data name="primIdsecId.valid" xml:space="preserve">
+    <value>Prosím zadejte primární nebo sekundární průkaz totožnosti</value>
+  </data>
+  <data name="RaceId" xml:space="preserve">
+    <value>Please enter a valid Race</value>
+  </data>
+  <data name="RegExPhone" xml:space="preserve">
+    <value>^[0-9]*$</value>
+  </data>
+  <data name="save.valid" xml:space="preserve">
+    <value>Vaše změny byly uloženy</value>
+  </data>
+  <data name="secondaryId.valid" xml:space="preserve">
+    <value>Prosím zadejte sekundární průkaz totožnosti</value>
+  </data>
+  <data name="secondaryIdLength.valid" xml:space="preserve">
+    <value>Prosím zadejte sekundární průkaz totožnosti ve vhodné délce</value>
+  </data>
+  <data name="selectHouse.valid" xml:space="preserve">
+    <value>Prosím zvolte váš dům</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Prosím zvolte pohlaví</value>
+  </data>
+  <data name="sorry.valid" xml:space="preserve">
+    <value>Omlouváme se, ale nejsme schopni najít vaše poštovní směrovací číslo</value>
+  </data>
+  <data name="SSN" xml:space="preserve">
+    <value>Please enter valid primary id</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Please enter a valid title</value>
+  </data>
+  <data name="tooManyAges.valid" xml:space="preserve">
+    <value>Omlouváme se, ale údaj o věku jste zadali vícekrát než je velikost vaší domácnosti. Prosím zkontrolujte a novu zadejte</value>
+  </data>
+  <data name="validDob.valid" xml:space="preserve">
+    <value>Datum narození je neplatné</value>
+  </data>
+  <data name="lclTitle1.Text" xml:space="preserve">
+    <value>Mr</value>
+  </data>
+  <data name="lclTitle2.Text" xml:space="preserve">
+    <value>Mrs</value>
+  </data>
+  <data name="lclTitle3.Text" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="lclTitle4.Text" xml:space="preserve">
+    <value>Ms</value>
+  </data>
+  <data name="changePref.valid" xml:space="preserve">
+    <value>V současné době máte nastaveno zasílání Clubcard výpisů, poukázek a kupónů poštou, změňte prosím toto nastavení před odebráním své adresy</value>
+  </data>
+  <data name="lclSelectTitle.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="btnFindAddressResource1.Text" xml:space="preserve">
+    <value>Najít adresu</value>
+  </data>
+  <data name="btnSaveAddressResource1.Text" xml:space="preserve">
+    <value>Změny uloženy</value>
+  </data>
+  <data name="lclSelectDay.Text" xml:space="preserve">
+    <value>Den</value>
+  </data>
+  <data name="lclSelectMonth.Text" xml:space="preserve">
+    <value>Měsíc</value>
+  </data>
+  <data name="lclSelectYear.Text" xml:space="preserve">
+    <value>Rok</value>
+  </data>
+  <data name="selectrace" xml:space="preserve">
+    <value>- Select race -</value>
+  </data>
+  <data name="errSorryFindAddress1" xml:space="preserve">
+    <value>Sorry, we are unable to find your postcode</value>
+  </data>
+  <data name="lclCantFindAdressmsg.text" xml:space="preserve">
+    <value>Please ensure your post code is entered with correct character spacing e.g. AL7 1TW rather than AL71TW</value>
+  </data>
+  <data name="lclFindAddressMsgResource.text" xml:space="preserve">
+    <value>This may be due to incorrect character spacing e.g. AL71TW rather than AL7 1TW</value>
+  </data>
+  <data name="lclPerson2.Text" xml:space="preserve">
+    <value>Person 2:</value>
+  </data>
+  <data name="lclPerson3.Text" xml:space="preserve">
+    <value>Person 3:</value>
+  </data>
+  <data name="lclPerson4.Text" xml:space="preserve">
+    <value>Person 4:</value>
+  </data>
+  <data name="lclPerson5.Text" xml:space="preserve">
+    <value>Person 5:</value>
+  </data>
+  <data name="lclPerson6.Text" xml:space="preserve">
+    <value>Person 6:</value>
+  </data>
+  <data name="selectprovince" xml:space="preserve">
+    <value>- Select province -</value>
+  </data>
+  <data name="ReplacementText" xml:space="preserve">
+    <value>Do you need a replacement card with your new name?</value>
+  </data>
+  <data name="Len_MailingAddressLine1" xml:space="preserve">
+    <value>Zadejte prosím PSČ.</value>
+  </data>
+  <data name="Len_MailingAddressLine2" xml:space="preserve">
+    <value>Zadejte prosím název ulice.</value>
+  </data>
+  <data name="Len_MailingAddressLine3" xml:space="preserve">
+    <value>Zadejte prosím  číslo popisné.</value>
+  </data>
+  <data name="Len_MailingAddressLine4" xml:space="preserve">
+    <value>Zadejte prosím poznámku pro doručení</value>
+  </data>
+  <data name="Len_MailingAddressLine5" xml:space="preserve">
+    <value>Zadejte prosím název města.</value>
+  </data>
+  <data name="Len_MailingAddressLine6" xml:space="preserve">
+    <value>Zadejte prosím název země.</value>
+  </data>
+</root>

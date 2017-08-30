@@ -1,0 +1,44 @@
+﻿@model Tesco.ClubcardProducts.MCA.Web.Common.Models.PointsViewModel
+@using Tesco.ClubcardProducts.MCA.Web.Common
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.DBConfiguration
+@using Tesco.ClubcardProducts.MCA.Web.Common.Entities.Settings
+@using Tesco.ClubcardProducts.MCA.Web.Common.Utilities
+
+@{
+    var OffersList = Model.Offers as List<Tesco.ClubcardProducts.MCA.Web.Common.Entities.Common.Offer>;
+    var offerCurrent = OffersList[0];
+}
+<div class="copy-wrapper">
+<p id = "lblpointscollected">
+@if (@Html.Translate("Shared/_Points", "lblUHaveCollected").ToString().Length > 0)
+{
+    @Html.Translate("Shared/_Points", "lblUHaveCollected") @ViewBag.StartDate
+}
+else
+{
+    @Html.Translate("Shared/_Points", "lblPointsCollected")
+}</p>
+<h2 class="ddl-h3-like" id="lblClubSummary">
+    @Html.Translate("Shared/_Points", "lblClubcardSummary")</h2>
+<p id="lblofferdate">
+    @Html.Translate("Shared/_Points", "lblCurrentCollectionPeriod")
+     <strong>@if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointsStartDate].ConfigurationValue1 == "0")
+             {@ViewBag.StartDate}
+        @Html.Translate("Shared/_Points", "lblSeparator")
+        @if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointsEndDate].ConfigurationValue1 == "0")
+        {@ViewBag.EndDate}</strong>
+         @Html.Translate("Shared/_Points", "lblFullStop")</p>
+<p id="lblofferEnddates">
+    @Html.Translate("Shared/_Points", "lblFinalDate")
+    @if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointsEndDate].ConfigurationValue2 == "0")
+    {<strong>@ViewBag.EndDate</strong>}
+    @Html.Translate("Shared/_Points", "lblWillAppear")
+    @if (DBConfigurationManager.Instance[DbConfigurationTypeEnum.ChinaHiddenFunctionality][DbConfigurationItemNames.HidePointsEndMonth].ConfigurationValue1 == "0")
+    {@ViewBag.CurrentMonthName}
+    @Html.Translate("Shared/_Points", "lblClubcardStatement")
+    
+</p>
+</div>
+<div class="row">
+    @Html.EditorFor(model => model.PointsStrip, "PointsBannerModel")
+</div>

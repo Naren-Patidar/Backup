@@ -1,0 +1,16 @@
+﻿@using Tesco.ClubcardProducts.MCA.Web.Common.Models;
+@model LoadHtmlModel
+ 
+@using Tesco.ClubcardProducts.MCA.Web.Common
+
+@if (Model.Arguments == null)
+{
+    @Html.LoadHtmlContent(Model.FileName)
+}
+else
+{ 
+    @Html.LoadHtmlContent(Model.FileName, Model.Arguments)
+}
+
+
+ 

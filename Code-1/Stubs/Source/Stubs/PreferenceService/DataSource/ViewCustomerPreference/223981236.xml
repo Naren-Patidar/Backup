@@ -1,0 +1,579 @@
+﻿<CustomerPreference xmlns:b="http://schemas.datacontract.org/2004/07/Tesco.com.ClubcardOnline.Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Culture/>
+  <CustomerID>0</CustomerID>
+  <CustomerPreferenceType>0</CustomerPreferenceType>
+  <EmailSubject/>
+  <IsDeleted/>
+  <POptStatus>NOT_SELECTED</POptStatus>
+  <Preference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>2</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Diabetic</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Diabetic</PreferenceDescriptionLocal>
+      <PreferenceID>1</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>1</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>10</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Clubcard E-Mails</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Clubcard E-Mails</PreferenceDescriptionLocal>
+      <PreferenceID>42</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>1</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>3</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>E-Mail Contact</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>E-Mail Contact</PreferenceDescriptionLocal>
+      <PreferenceID>43</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>1</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>3</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Mobile/SMS</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Mobile/SMS</PreferenceDescriptionLocal>
+      <PreferenceID>44</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>2</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>10</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Baby &amp; Toddler</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Baby &amp; Toddler</PreferenceDescriptionLocal>
+      <PreferenceID>48</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>2</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>2</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Kosher</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Kosher</PreferenceDescriptionLocal>
+      <PreferenceID>2</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>2</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>2</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Halal</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Halal</PreferenceDescriptionLocal>
+      <PreferenceID>3</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>3</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>3</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Post Contact</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Post Contact</PreferenceDescriptionLocal>
+      <PreferenceID>45</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>3</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>3</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Post Large Print</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Post Large Print</PreferenceDescriptionLocal>
+      <PreferenceID>46</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>4</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>2</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Vegetarian</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Vegetarian</PreferenceDescriptionLocal>
+      <PreferenceID>4</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>4</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>2</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Teetotal</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Teetotal</PreferenceDescriptionLocal>
+      <PreferenceID>5</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>5</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>3</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Braille</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Braille</PreferenceDescriptionLocal>
+      <PreferenceID>47</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>5</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Bonus Coupon Mailing</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Bonus Coupon Mailing</PreferenceDescriptionLocal>
+      <PreferenceID>49</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>6</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Tesco Products</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Tesco Products</PreferenceDescriptionLocal>
+      <PreferenceID>7</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>7</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Tesco Partners</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Tesco Partners</PreferenceDescriptionLocal>
+      <PreferenceID>8</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>8</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Customer Research</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Customer Research</PreferenceDescriptionLocal>
+      <PreferenceID>9</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>9</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BA Miles Standard</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BA Miles Standard</PreferenceDescriptionLocal>
+      <PreferenceID>10</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>10</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Airmiles Standard</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Airmiles Standard</PreferenceDescriptionLocal>
+      <PreferenceID>11</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>11</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Airmiles Premium</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Airmiles Premium</PreferenceDescriptionLocal>
+      <PreferenceID>12</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>12</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Xmas Saver</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Xmas Saver</PreferenceDescriptionLocal>
+      <PreferenceID>13</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>13</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BA Miles Premium</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BA Miles Premium</PreferenceDescriptionLocal>
+      <PreferenceID>14</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>14</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Ecoupon</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Ecoupon</PreferenceDescriptionLocal>
+      <PreferenceID>15</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>15</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted>N</IsDeleted>
+      <POptStatus>OPTED_IN</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Save Trees</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Save Trees</PreferenceDescriptionLocal>
+      <PreferenceID>16</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>16</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>5</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted>N</IsDeleted>
+      <POptStatus>OPTED_IN</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Virgin Atlantic</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Virgin Atlantic</PreferenceDescriptionLocal>
+      <PreferenceID>17</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>17</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BCM Mail</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BCM Mail</PreferenceDescriptionLocal>
+      <PreferenceID>50</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BCM EMail</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BCM EMail</PreferenceDescriptionLocal>
+      <PreferenceID>51</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BCM Phone</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BCM Phone</PreferenceDescriptionLocal>
+      <PreferenceID>52</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>BCM SMS</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>BCM SMS</PreferenceDescriptionLocal>
+      <PreferenceID>53</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>9</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Protected Rate</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Protected Rate</PreferenceDescriptionLocal>
+      <PreferenceID>54</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>6</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Business</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>** Business</PreferenceDescriptionLocal>
+      <PreferenceID>21</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>6</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Home</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>** Home</PreferenceDescriptionLocal>
+      <PreferenceID>22</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>4</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Allow group promotions</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Allow group promotions</PreferenceDescriptionLocal>
+      <PreferenceID>23</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+    <CustomerPreference>
+      <Culture/>
+      <CustomerID>0</CustomerID>
+      <CustomerPreferenceType>8</CustomerPreferenceType>
+      <EmailSubject/>
+      <IsDeleted />
+      <POptStatus>OPTED_OUT</POptStatus>
+      <Preference/>
+      <PreferenceDescriptionEng>Expat</PreferenceDescriptionEng>
+      <PreferenceDescriptionLocal>Expat</PreferenceDescriptionLocal>
+      <PreferenceID>26</PreferenceID>
+      <PreferenceOptStatus/>
+      <PreferenceType/>
+      <Sortseq>0</Sortseq>
+      <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+      <UserID/>
+    </CustomerPreference>
+  </Preference>
+  <PreferenceDescriptionEng/>
+  <PreferenceDescriptionLocal/>
+  <PreferenceID>0</PreferenceID>
+  <PreferenceOptStatus/>
+  <PreferenceType/>
+  <Sortseq>0</Sortseq>
+  <UpdateDateTime>0001-01-01T00:00:00</UpdateDateTime>
+  <UserID/>
+</CustomerPreference>

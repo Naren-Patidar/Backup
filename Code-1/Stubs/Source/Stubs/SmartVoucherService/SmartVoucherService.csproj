@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05A6B703-FDC8-4B7F-B70F-956CA56DDE36}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartVoucherService</RootNamespace>
+    <AssemblyName>SmartVoucherService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSource\GetRewardDtlsMiles\634002400020149122.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004000253956843.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004022010553358.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004022813428873.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024022388518.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024057524755.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024126099771.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024126269176.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024126278177.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009199999999000.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009199999999001.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009199999999002.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009199999999003.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000000.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000001.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000002.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\6340095070000003.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009540000604860.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009540000803074.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009540010474171.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009540024454334.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009550000000118.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009560024687569.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009528001013000.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009528001013001.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009528001013002.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009549930000000.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009549930000002.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009480000000000.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009480000000001.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009480000000002.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000010.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000011.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000012.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024006785259.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024006785250.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024006785251.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634009507000000004.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004022010553359.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024006785260.xml" />
+    <Content Include="DataSource\GetRewardDtlsMiles\634004024006785261.xml" />
+    <Content Include="DataSource\GetRewardDtls\5521889002327737.xml" />
+    <Content Include="DataSource\GetRewardDtls\634002400020149122.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004000253956843.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004000663993873.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022010553358.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022011286420.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022011286438.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022109453098.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022757820812.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022813428873.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024002192492.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006432126.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024007890751.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024022388518.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024037002278.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024057524755.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024093742262.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126094000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126094715.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126099000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126099771.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126269000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126269176.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126278000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126278177.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024126368309.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024189312566.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004025016032558.xml" />
+    <Content Include="DataSource\GetRewardDtls\6340049003867800.xml" />
+    <Content Include="DataSource\GetRewardDtls\6340049021040566.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009199999999000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009199999999001.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009199999999002.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009199999999003.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000001.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000002.xml" />
+    <Content Include="DataSource\GetRewardDtls\6340095070000003.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009540000604860.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009540000803074.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009540010474171.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009540024454334.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009540025255227.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009550000000118.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009560024687568.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009560024687569.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009528001013000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009528001013001.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009528001013002.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009549930000000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009549930000002.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009480000000000.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009480000000001.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009480000000002.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000010.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000011.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000012.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006785259.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006785250.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006785251.xml" />
+    <Content Include="DataSource\GetRewardDtls\634009507000000004.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004022010553359.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006785260.xml" />
+    <Content Include="DataSource\GetRewardDtls\634004024006785261.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634002400020149122.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004000253956843.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004000663993873.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022010553358.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022011286420.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022011286438.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022109453098.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022757820812.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022813428873.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024002192492.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006432126.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024007890751.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024022388518.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024037002278.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024057524755.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024093742262.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126094000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126094715.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126099000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126099771.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126269000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126269176.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126278000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126278177.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024126368309.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024189312566.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004025016032558.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\6340049003867800.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\6340049021040566.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009199999999000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009199999999001.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009199999999002.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009199999999003.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000001.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000002.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\6340095070000003.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009540000604860.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009540000803074.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009540010474171.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009540024454334.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009550000000118.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009560024687568.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009560024687569.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009528001013000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009528001013001.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009528001013002.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009549930000000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009549930000002.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009480000000000.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009480000000001.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009480000000002.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000010.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000011.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000012.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006785259.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006785250.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006785251.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634009507000000004.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004022010553359.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006785260.xml" />
+    <Content Include="DataSource\GetUnusedVoucherDtls\634004024006785261.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634002400020149122.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004000253956843.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009199999999000.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataSource\GetUsedVoucherDtls\634009199999999001.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009199999999002.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009199999999003.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000001.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000002.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\6340095070000003.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009540000604860.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009540000803074.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009540010474171.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009540024454334.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009550000000118.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009560024687568.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009560024687569.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024037002278.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024007890751.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024057524755.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024022388518.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022011286438.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022011286420.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024002192492.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024093742262.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\6340049021040566.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022757820812.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022813428873.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024189312566.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004025016032558.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126094000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126099000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126269000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\6340049003867800.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126368309.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126278000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004000663993873.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126099771.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126094715.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126269176.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024126278177.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022010553358.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009528001013000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009528001013001.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009528001013002.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009549930000000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009549930000002.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009480000000000.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009480000000001.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009480000000002.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000010.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000011.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000012.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024006785259.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024006785250.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024006785251.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634009507000000004.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004022010553359.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024006785260.xml" />
+    <Content Include="DataSource\GetUsedVoucherDtls\634004024006785261.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004022011286438.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024126094715.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024126099771.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024126269176.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024126278177.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024126368309.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\6340049003867800.xml" />
+    <Content Include="DataSource\GetVoucherValCPS\634004024093742262.xml" />
+    <Content Include="SmartVoucherServices.svc" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\GetRewardDtlsRsp.cs" />
+    <Compile Include="Entities\GetRewardsDtlsMilesRsp.cs" />
+    <Compile Include="Entities\GetUnusedVoucherDtlsRsp.cs" />
+    <Compile Include="Entities\GetUsedVoucherDtlsRsp.cs" />
+    <Compile Include="Entities\GetVoucherValAllCPSRsp.cs" />
+    <Compile Include="Entities\GetVoucherValHHRsp.cs" />
+    <Compile Include="Entities\ResponseBase.cs" />
+    <Compile Include="SmartVoucherServices.svc.cs">
+      <DependentUpon>SmartVoucherServices.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ISmartVoucherService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\SmartVoucherServiceProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="DataSource\GetUsedVoucherDtls\en-GB\" />
+    <Folder Include="DataSource\GetVoucherValCPS\cs-CZ\" />
+    <Folder Include="DataSource\GetVoucherValCPS\en-IE\" />
+    <Folder Include="DataSource\GetVoucherValCPS\en-MY\" />
+    <Folder Include="DataSource\GetVoucherValCPS\hu-HU\" />
+    <Folder Include="DataSource\GetVoucherValCPS\pl-PL\" />
+    <Folder Include="DataSource\GetVoucherValCPS\sk-SK\" />
+    <Folder Include="DataSource\GetVoucherValCPS\th-TH\" />
+    <Folder Include="DataSource\GetVoucherValCPS\tr-TR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceUtility\ServiceUtility.csproj">
+      <Project>{C71BE56F-960E-48A4-86AA-5B995349E106}</Project>
+      <Name>ServiceUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17229</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AndSeprator" xml:space="preserve">
+    <value>&amp;&amp;&amp;</value>
+  </data>
+  <data name="CardHeaderResource1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CardHolder" xml:space="preserve">
+    <value> card holder -</value>
+  </data>
+  <data name="CardnumberResource1" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="CustomerTypeAssoc" xml:space="preserve">
+    <value>Associate</value>
+  </data>
+  <data name="CustomerTypeMain" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="FAQSResource1" xml:space="preserve">
+    <value>frequently asked questions</value>
+  </data>
+  <data name="LasttimeusedResource1" xml:space="preserve">
+    <value>Last time used</value>
+  </data>
+  <data name="lclAnothercardlistedResource1" xml:space="preserve">
+    <value>If you have another card not listed here, would like to separate your account or would like to leave the scheme, please contact us on </value>
+  </data>
+  <data name="lclCardsVariousResource1" xml:space="preserve">
+    <value>Since joining Clubcard you may have collected various Clubcards. Below are the card numbers that we hold in this account.</value>
+  </data>
+  <data name="lclfurtheirdtlsResource1" xml:space="preserve">
+    <value>for further details.</value>
+  </data>
+  <data name="lclMore" xml:space="preserve">
+    <value>More than 6 months</value>
+  </data>
+  <data name="lclNameAccResource1" xml:space="preserve">
+    <value>Name(s) on account:</value>
+  </data>
+  <data name="lclVwCradsResource1" xml:space="preserve">
+    <value>View my cards</value>
+  </data>
+  <data name="Literal1Resource1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localize1Resource1" xml:space="preserve">
+    <value>If any of the cards listed are no longer in regular use, we advise you to change to a newer card in order to keep your details current. See </value>
+  </data>
+  <data name="Localize4Resource1" xml:space="preserve">
+    <value>00800 00 59 16 88</value>
+  </data>
+  <data name="Localize5Resource1" xml:space="preserve">
+    <value>If you have another card not listed here, or would like to add someone else to your
+account (max 2 names); or would like to leave the scheme, please contact us on </value>
+  </data>
+  <data name="Localize6Resource1" xml:space="preserve">
+    <value>All clubcards against which you earn points (even occasionally), are kept in your account.</value>
+  </data>
+  <data name="ltrNamesResource1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Cards</value>
+  </data>
+  <data name="pnlCardsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCardsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Typeofcard" xml:space="preserve">
+    <value>Type of card</value>
+  </data>
+  <data name="WhereResource1" xml:space="preserve">
+    <value>Where last used</value>
+  </data>
+</root>

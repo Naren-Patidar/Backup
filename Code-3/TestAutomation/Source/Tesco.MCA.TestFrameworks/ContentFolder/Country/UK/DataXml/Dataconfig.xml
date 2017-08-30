@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestingData>
+  <TestData_AccountDetails ID="Login">
+    <Clubcard>634004024022388518</Clubcard>
+    <Password>cco1234</Password>
+    <EmailID/>
+  </TestData_AccountDetails>
+  <TestData_AccountDetails ID="DBT">
+    <Clubcard>634004024037002278</Clubcard>
+    <Clubcard1>634004850161090915</Clubcard1>
+    <Clubcard2>634004024022388518</Clubcard2>
+    <ChristmasSaver>634004024022388518</ChristmasSaver>
+    <StandardClubcard>634004024007890751</StandardClubcard>
+    <VirginClubcard>6340049021040566</VirginClubcard>
+    <BlockedClubcard>634004024022388518</BlockedClubcard>
+    <NoActiveCouponClubcard>634004022813428873</NoActiveCouponClubcard>
+    <ClubcardforDate>634004024037002278</ClubcardforDate>
+    <ClubcardforHouseholdID>634004024057524755</ClubcardforHouseholdID>
+    <ClubcardBAAviosPre>634004024037002278</ClubcardBAAviosPre>
+    <ClubcardBAAviosStd>634004022109453098</ClubcardBAAviosStd>
+    <ClubcardAviosPre>634004024006432126</ClubcardAviosPre>
+    <ClubcardAviosStd>634004024006432126</ClubcardAviosStd>
+    <ClubcardNonStdTypeB>634002400020149122</ClubcardNonStdTypeB>
+    <ClubcardNonStdTypeN>634004022109453098</ClubcardNonStdTypeN>
+    <ClubcardMaxOrdersReached>634002400020149122</ClubcardMaxOrdersReached>
+    <Clubcard2>634004024022388518</Clubcard2>
+    <ResetClubcard1>634004024037002278</ResetClubcard1>
+    <ResetClubcard2>634002400020149122</ResetClubcard2>
+    <Password>cco1234</Password>
+    <EmailID/>
+  
+</TestData_AccountDetails>
+  <TestData_AccountDetails ID="GD">
+    <Clubcard>634004024037002278</Clubcard>
+    <Clubcard1>634004850161090915</Clubcard1>
+    <Clubcard2>634004024022388518</Clubcard2>
+    <StandardClubcard>634004024007890751</StandardClubcard>
+    <VirginClubcard>6340049021040566</VirginClubcard>
+    <BlockedClubcard>634004024022388518</BlockedClubcard>
+    <NoActiveCouponClubcard>634004022813428873</NoActiveCouponClubcard>
+    <ClubcardforDate>634004024037002278</ClubcardforDate>
+    <ClubcardforHouseholdID>634004024057524755</ClubcardforHouseholdID>
+    <ClubcardBAAviosPre>634004024057524755</ClubcardBAAviosPre>
+    <ClubcardBAAviosStd>634004022109453098</ClubcardBAAviosStd>
+    <ClubcardAviosPre>634004024006432126</ClubcardAviosPre>
+    <ClubcardAviosStd>634004024006432126</ClubcardAviosStd>
+    <ClubcardNonStdTypeB>634002400020149122</ClubcardNonStdTypeB>
+    <ClubcardNonStdTypeN>634004022109453098</ClubcardNonStdTypeN>
+    <ClubcardMaxOrdersReached>6340049003867800</ClubcardMaxOrdersReached>
+    <StandardClubcard>634004022010553358</StandardClubcard>
+    <ClubcardBAAviosPre>634004024057524755</ClubcardBAAviosPre>
+    <ChristmasSaver>634004024022388518</ChristmasSaver>
+    <ResetClubcard1>634004024037002278</ResetClubcard1>
+    <ResetClubcard2>634002400020149122</ResetClubcard2>
+    <Password>cco1234</Password>
+  </TestData_AccountDetails>
+  <TestData_JoinDetails ID="DBT">
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>Auto</Name1>
+    <InvalidName1>1!*</InvalidName1>
+    <ProfaneName1>WHOREHOUSE</ProfaneName1>
+    <Name2>AA</Name2>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2>ho</ProfaneName2>
+    <Name3>Tester</Name3>
+    <InvalidName3>1!*</InvalidName3>
+    <ProfaneName3>WHOREHOUSE</ProfaneName3>
+    <MailingAddressPostCode>AL74FG</MailingAddressPostCode>
+    <ProfaneHouseName>WHOREHOUSE</ProfaneHouseName>
+    <InvalidMailingAddressPostCode>AL6621</InvalidMailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <EveningPhoneNumber>07</EveningPhoneNumber>
+    <InvalidEveningPhoneNumber>12</InvalidEveningPhoneNumber>
+    <MobilePhoneNumber>07</MobilePhoneNumber>
+    <InvalidMobilePhoneNumber>12</InvalidMobilePhoneNumber>
+    <DayTimePhoneNumber>07</DayTimePhoneNumber>
+    <InvalidDayTimePhoneNumber>12</InvalidDayTimePhoneNumber>
+    <MailingAddressLine1>Street No 1</MailingAddressLine1>
+    <ProfaneMailingAddressLine1>WHOREHOUSE</ProfaneMailingAddressLine1>
+    <MailingAddressLine2>Road 13</MailingAddressLine2>
+    <ProfaneMailingAddressLine2>WHOREHOUSE</ProfaneMailingAddressLine2>
+    <MailingAddressLine4>Cross 14</MailingAddressLine4>
+    <ProfaneMailingAddressLine4>WHOREHOUSE</ProfaneMailingAddressLine4>
+    <MailingAddressLine5>AddressLine 2</MailingAddressLine5>
+    <ProfaneMailingAddressLine5>WHOREHOUSE</ProfaneMailingAddressLine5>
+    <PromotionalCodeStartingToday>Sand</PromotionalCodeStartingToday>
+    <PromotionalCodeExpiringToday>Sand</PromotionalCodeExpiringToday>
+    <InvalidPromotionalCode>IN01VALID</InvalidPromotionalCode>
+    <PromotionalCodeStartingTommorow></PromotionalCodeStartingTommorow>
+    <ExpiredPromotionalCode>comp10</ExpiredPromotionalCode>
+  </TestData_JoinDetails>
+  <TestData_JoinDetails ID="GD">
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>Auto</Name1>
+    <InvalidName1>1!*</InvalidName1>
+    <ProfaneName1>WHOREHOUSE</ProfaneName1>
+    <Name2>AA</Name2>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2>ho</ProfaneName2>
+    <Name3>Tester</Name3>
+    <InvalidName3>1!*</InvalidName3>
+    <ProfaneName3>WHOREHOUSE</ProfaneName3>
+    <MailingAddressPostCode>AL74FG</MailingAddressPostCode>
+    <ProfaneHouseName>WHOREHOUSE</ProfaneHouseName>
+    <InvalidMailingAddressPostCode>AL6621</InvalidMailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <EveningPhoneNumber>07</EveningPhoneNumber>
+    <InvalidEveningPhoneNumber>12</InvalidEveningPhoneNumber>
+    <MobilePhoneNumber>07</MobilePhoneNumber>
+    <InvalidMobilePhoneNumber>12</InvalidMobilePhoneNumber>
+    <DayTimePhoneNumber>07</DayTimePhoneNumber>
+    <InvalidDayTimePhoneNumber>12</InvalidDayTimePhoneNumber>
+    <MailingAddressLine1>Street No 1</MailingAddressLine1>
+    <ProfaneMailingAddressLine1>WHOREHOUSE</ProfaneMailingAddressLine1>
+    <MailingAddressLine2>Road 13</MailingAddressLine2>
+    <ProfaneMailingAddressLine2>WHOREHOUSE</ProfaneMailingAddressLine2>
+    <MailingAddressLine4>Cross 14</MailingAddressLine4>
+    <ProfaneMailingAddressLine4>WHOREHOUSE</ProfaneMailingAddressLine4>
+    <MailingAddressLine5>AddressLine 2</MailingAddressLine5>
+    <ProfaneMailingAddressLine5>WHOREHOUSE</ProfaneMailingAddressLine5>
+    <PromotionalCodeStartingToday>Sand</PromotionalCodeStartingToday>
+    <PromotionalCodeExpiringToday>Sand</PromotionalCodeExpiringToday>
+    <InvalidPromotionalCode>IN01VALID</InvalidPromotionalCode>
+    <PromotionalCodeStartingTommorow></PromotionalCodeStartingTommorow>
+    <ExpiredPromotionalCode>comp10</ExpiredPromotionalCode>
+  </TestData_JoinDetails>
+  <TestData_Activation ID="DBT">
+    <Clubcard>634004850161090915</Clubcard>
+    <SpecialChars>spec!@l</SpecialChars>
+    <SpaceChar> </SpaceChar>
+    <AlphabetChar>ALPHABET</AlphabetChar>
+    <Numbers>123456</Numbers>
+    <CSCUsername>SVC-HU-IIS-NGC-APP</CSCUsername>
+    <CSCPassword>NCQU8V7f5q</CSCPassword>
+  </TestData_Activation>
+  <TestData_HomeSecurity ID="DBT">
+    <SpecialChars>#</SpecialChars>
+    <SpaceChar> </SpaceChar>
+    <AlphabetChar>A</AlphabetChar>
+  </TestData_HomeSecurity>
+  <TestData_Voucher ID="DBT">
+    <ActiveClubcard>634004024006785259</ActiveClubcard>
+    <TopUpClubcard>634004022757820812</TopUpClubcard>
+    <BonusClubCard>634004022757820812</BonusClubCard>
+    <RedeemedClubCard>634004024007890751</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher>
+  <TestData_Voucher ID="GD">
+    <ActiveClubcard>634004024007890751</ActiveClubcard>
+    <AviosClubcard>634004024006785251</AviosClubcard>
+    <BAAviosClubcard>634004024006785259</BAAviosClubcard>
+    <VirginAtlantic>634004024006785250</VirginAtlantic>
+    <TopUpClubcard>634004024007890751</TopUpClubcard>
+    <BonusClubCard>634004024007890751</BonusClubCard>
+    <RedeemedClubCard>634004024007890751</RedeemedClubCard>
+    <Password>cco1234</Password>
+  </TestData_Voucher>
+  <TestData_PersonalDetails ID="DBT">
+    <ValidPostode>al74fg</ValidPostode>
+    <InvalidPostcode>@ALfdsf</InvalidPostcode>
+    <SpacePostcode>A B 515NP</SpacePostcode>
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>Auto</Name1>
+    <InvalidName1>1!*</InvalidName1>
+    <ProfaneName1>WHOREHOUSE</ProfaneName1>
+    <Name2>AA</Name2>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2>ho</ProfaneName2>
+    <Name3>Tester</Name3>
+    <InvalidName3>1!*</InvalidName3>
+    <ProfaneName3>WHOREHOUSE</ProfaneName3>
+    <MailingAddressPostCode>AL74FG</MailingAddressPostCode>
+    <HouseNoOrName>12</HouseNoOrName>
+    <ProfaneHouseName>WHOREHOUSE</ProfaneHouseName>
+    <InvalidMailingAddressPostCode>AL6621</InvalidMailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <EveningPhoneNumber>07</EveningPhoneNumber>
+    <InvalidEveningPhoneNumber>12</InvalidEveningPhoneNumber>
+    <MobilePhoneNumber>07</MobilePhoneNumber>
+    <InvalidMobilePhoneNumber>12</InvalidMobilePhoneNumber>
+    <DayTimePhoneNumber>07</DayTimePhoneNumber>
+    <InvalidDayTimePhoneNumber>12</InvalidDayTimePhoneNumber>
+    <MailingAddressLine1>Street No 1</MailingAddressLine1>
+    <ProfaneMailingAddressLine1>WHOREHOUSE</ProfaneMailingAddressLine1>
+    <MailingAddressLine2>Road 13</MailingAddressLine2>
+    <ProfaneMailingAddressLine2>WHOREHOUSE</ProfaneMailingAddressLine2>
+    <MailingAddressLine4>Cross 14</MailingAddressLine4>
+    <ProfaneMailingAddressLine4>WHOREHOUSE</ProfaneMailingAddressLine4>
+    <MailingAddressLine5>AddressLine 2</MailingAddressLine5>
+    <ProfaneMailingAddressLine5>WHOREHOUSE</ProfaneMailingAddressLine5>
+    <InvalidMailingAddressLine1>ABC%$$#$</InvalidMailingAddressLine1>
+    <InvalidMailingAddressLine2>4345ABC%$$#$</InvalidMailingAddressLine2>
+    <InvalidMailingAddressLine3>*%#A</InvalidMailingAddressLine3>
+    <InvalidMailingAddressLine4>NH_+_)</InvalidMailingAddressLine4>
+    <InvalidMailingAddressLine5>#@#$</InvalidMailingAddressLine5>
+    <InvalidMailingAddressLine6>ADDRESS*$#R</InvalidMailingAddressLine6>
+  </TestData_PersonalDetails>
+  <TestData_PersonalDetails ID="GD">
+    <ValidPostode>al74fg</ValidPostode>
+    <InvalidPostcode>@ALfdsf</InvalidPostcode>
+    <SpacePostcode>A B 515NP</SpacePostcode>
+    <DuplicateName1>Automation</DuplicateName1>
+    <DuplicateEmailAddress>automation@test.com</DuplicateEmailAddress>
+    <Name1>Auto</Name1>
+    <InvalidName1>1!*</InvalidName1>
+    <ProfaneName1>WHOREHOUSE</ProfaneName1>
+    <Name2>AA</Name2>
+    <InvalidName2>1!</InvalidName2>
+    <ProfaneName2>ho</ProfaneName2>
+    <Name3>Tester</Name3>
+    <InvalidName3>1!*</InvalidName3>
+    <ProfaneName3>WHOREHOUSE</ProfaneName3>
+    <MailingAddressPostCode>AL74FG</MailingAddressPostCode>
+    <HouseNoOrName>12</HouseNoOrName>
+    <ProfaneHouseName>WHOREHOUSE</ProfaneHouseName>
+    <InvalidMailingAddressPostCode>AL6621</InvalidMailingAddressPostCode>
+    <EmailAddress>@test.com</EmailAddress>
+    <InvalidEmailAddress>test.com</InvalidEmailAddress>
+    <EveningPhoneNumber>07</EveningPhoneNumber>
+    <InvalidEveningPhoneNumber>12</InvalidEveningPhoneNumber>
+    <MobilePhoneNumber>07</MobilePhoneNumber>
+    <InvalidMobilePhoneNumber>12</InvalidMobilePhoneNumber>
+    <DayTimePhoneNumber>07</DayTimePhoneNumber>
+    <InvalidDayTimePhoneNumber>12</InvalidDayTimePhoneNumber>
+    <MailingAddressLine1>Street No 1</MailingAddressLine1>
+    <ProfaneMailingAddressLine1>WHOREHOUSE</ProfaneMailingAddressLine1>
+    <MailingAddressLine2>Road 13</MailingAddressLine2>
+    <ProfaneMailingAddressLine2>WHOREHOUSE</ProfaneMailingAddressLine2>
+    <MailingAddressLine4>Cross 14</MailingAddressLine4>
+    <ProfaneMailingAddressLine4>WHOREHOUSE</ProfaneMailingAddressLine4>
+    <MailingAddressLine5>AddressLine 2</MailingAddressLine5>
+    <ProfaneMailingAddressLine5>WHOREHOUSE</ProfaneMailingAddressLine5>
+    <InvalidMailingAddressLine1>ABC%$$#$</InvalidMailingAddressLine1>
+    <InvalidMailingAddressLine2>4345ABC%$$#$</InvalidMailingAddressLine2>
+    <InvalidMailingAddressLine3>*%#A</InvalidMailingAddressLine3>
+    <InvalidMailingAddressLine4>NH_+_)</InvalidMailingAddressLine4>
+    <InvalidMailingAddressLine5>#@#$</InvalidMailingAddressLine5>
+    <InvalidMailingAddressLine6>ADDRESS*$#R</InvalidMailingAddressLine6>
+  </TestData_PersonalDetails>
+  <TestData_XmusSaver ID="GD">
+    <XmusSaverClubcard>634004024126099771</XmusSaverClubcard>
+    <XmusSaverCardWithTopUpLessThen25>634004024126094715</XmusSaverCardWithTopUpLessThen25>
+    <XmusSaverCardWithTopUpLessThen50>634004024126099771</XmusSaverCardWithTopUpLessThen50>
+    <XmusSaverCardWithTopUpLessThen100>634004024126269176</XmusSaverCardWithTopUpLessThen100>
+    <XmusSaverCardWithTopUpLessThen200>634004024126278177</XmusSaverCardWithTopUpLessThen200>
+    <XmusSaverCardWithTopUpGreaterThen200>634004024126368309</XmusSaverCardWithTopUpGreaterThen200>
+    <ClubcardNotXmusSaver>634004024007890751</ClubcardNotXmusSaver>
+    <Password>cco1234</Password>
+    <EmailID/>
+  </TestData_XmusSaver>
+</TestingData>
+
+
+

@@ -1,0 +1,28 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://tesco.com/clubcardonline/datacontract/2010/01/IClubcardService/GetTxnDetailsByCustomerAndOfferIDResponse</a:Action>
+    <a:RelatesTo>urn:uuid:6c3ba202-02cc-4f19-a58e-99353d9107b3</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <GetTxnDetailsByCustomerAndOfferIDResponse xmlns="http://tesco.com/clubcardonline/datacontract/2010/01">
+      <GetTxnDetailsByCustomerAndOfferIDResult>true</GetTxnDetailsByCustomerAndOfferIDResult>
+      <errorXml />
+      <resultXml>
+        <NewDataSet>
+        <OfferDetails>
+        <OfferID>20</OfferID>
+        <CollectionPeriodNumber>20</CollectionPeriodNumber>
+        <OfferName>Offer20</OfferName>
+        <PointsToRewardConversionRate>1.00</PointsToRewardConversionRate>
+        <StartDateTime>2015-10-03T00:00:00+02:00</StartDateTime>
+        <EndDateTime>2016-01-26T00:00:00+01:00</EndDateTime>
+        <ViewMailingReportStatusCode>0</ViewMailingReportStatusCode>
+        <FullMailingStatusCode>0</FullMailingStatusCode>
+        <VoucherDefinitionStatusCode>0</VoucherDefinitionStatusCode>
+        </OfferDetails>
+        </NewDataSet>
+      </resultXml>
+      <rowCount>0</rowCount>
+    </GetTxnDetailsByCustomerAndOfferIDResponse>
+  </s:Body>
+</s:Envelope>

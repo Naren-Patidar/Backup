@@ -1,0 +1,21 @@
+#ddl-page-header {
+	padding: 20px;
+
+	#ddl-page-header-inner {
+
+		#ddl-app-ident {
+
+			span {
+				display: block;
+				position: absolute;
+			    font-size: 3.2em;
+				top: 4px;
+				top: 28px;
+				left: 160px;
+				text-indent: 0;
+				color: $ddl-blue1;
+				font-weight: normal;
+			}
+		}
+	}
+}

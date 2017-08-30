@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+      xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Id="d4f1b71b-078b-4269-a22f-45f4bfa39228" Name="JoinAtKioskSetup" Language="1033" Version="1.0.0.0" Manufacturer="JoinAtKioskSetup" UpgradeCode="b1c12683-5416-420c-acda-9e92a2b8de6d">
+    <Package InstallerVersion="200" Compressed="yes" />
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+    <Property Id="JoinAtKioskSetup"  Value="INSTALLLOCATION"></Property>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="JoinAtKioskSetup">
+          <Component Id="JoinAtKioskVirtualDir" Guid="{A00D97CD-0BF5-4b24-9A16-EBF1D77ACFBA}">
+            <CreateFolder Directory="INSTALLLOCATION" ></CreateFolder>
+            <iis:WebVirtualDir Id="JoinAtKioskVirtualDir" Alias="JoinAtKiosk" Directory="INSTALLLOCATION"
+                                 WebSite="DefaultWebSite">
+              <iis:WebDirProperties Id="DefaultDocJoin" DefaultDocuments="Default.aspx"/>
+              <iis:WebApplication Id="JoinAtKiosk" Name="JoinAtKiosk" Isolation="medium" WebAppPool="JoinAtKioskPool" >
+              </iis:WebApplication>
+            </iis:WebVirtualDir>
+
+          </Component>
+          <Component Id="JoinAtKioskPool" Guid="{92E7003E-C124-4e1a-AD78-6FE4881FD670}" KeyPath="yes">
+            <iis:WebAppPool Id="JoinAtKioskPool"
+                            Name="JoinAtKiosk"
+                            Identity="localSystem" ManagedPipelineMode="integrated"
+                            ManagedRuntimeVersion="v4.0" />
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <iis:WebSite Id='DefaultWebSite' Description='Default Web Site'>
+      <iis:WebAddress Id="AllUnassigned" Port="80"/>
+    </iis:WebSite>
+
+    <Feature Id="ProductFeature" Title="JoinAtKiosk" Level="1">
+      <ComponentGroupRef Id="JoinAtKiosk" />
+      <ComponentRef Id="JoinAtKioskPool"/>
+      <ComponentRef Id="JoinAtKioskVirtualDir"/>
+      <ComponentGroupRef Id="Product.Generated" />
+    </Feature>
+  </Product>
+</Wix>

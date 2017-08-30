@@ -1,0 +1,325 @@
+
+body {margin:0;padding:0;background-color:#e4eef7;font-family: trebuchet, arial, sans-serif;color:#576673;}
+p {margin:0;padding:0;margin-bottom:10px; font-size:17px;}
+.red {color:#ed1b2e;}
+.italic { font-style:italic;}
+p.blue {color:#00539f;}
+ul {padding:0;}
+.floatright {float:right}
+.marginleft236 {margin-left:236px}
+#wrapper {width:1618px;height:1040px}	
+#header {height:170px;}
+#navigation {margin-top:9px;background:url(../images/headerback.png) repeat-x; height:84px;width:103%;}
+#navigation img {margin-top:25px;margin-left:236px;}
+#body_wrapper {margin-left:236px;width:1155px;}
+#breadcrumbs {display:block;margin-left:236px;margin-top:26px;}
+#content {height:670px;}
+#maincontent {margin-top:25px;height:470px;}
+.curved { -moz-border-radius:10px; -webkit-border-radius:10px; behavior:url(border-radius.htc);}
+
+.text {font-size:28px;width:90%;border:none;color:#576673}
+#contentVerify .textbox {padding-top:20px;padding-left:12px;overflow:hidden;max-width:95%}
+#contentVerify .buttons {float:left;height:105px;margin-top:14px}
+.buttonitems {float:left;padding-right:30px;margin-top:13px}
+.buttonitems.last  {float:left;padding-right:0}
+#contentVerify .titletext {float:left;font-size:20px;}
+#contentVerify .titletext.firstname {left:0px;top:20px;width:120px; }
+#contentVerify .titletext.middle {left:30px;top:3px;width:108px}
+#contentVerify .titletext.surname {left:0px;top:43px;width:120px}
+#contentVerify .titletext.postcode{left:0px;top:20px;width:125px;text-align:right;}
+#contentVerify .titletext.address {left:0px;top:43px;width:170px;text-align:right;}
+#contentVerify .inputboxes {float:left;background:url(../images/inputboxes.png) no-repeat;position:relative}
+#contentVerify .inputboxes div.text {padding-left:13px;padding-top:20px;}
+#contentVerify .firstnameboxwhite {background-position: 0 -321px;width:315px;height:80px;}
+#contentVerify .surnameboxwhite {background-position:0 -400px;width:415px;height:80px;}
+#contentVerify .postcodeboxwhite {background-position:0 -321px;width:315px;height:80px;}
+#contentVerify .addressboxwhite  {background-position:0 -400px;width:415px;height:80px;}
+
+.textselected {font-size:28px;width:90%;color:#576673;border-color:black;border-width:thin;}
+#contentVerify .addressboxgrey  {background-position:0 -160px;width:415px;height:80px;}
+#contentVerify .postcodeboxgrey {background-position:0 -81px;width:315px;height:80px;}
+#contentVerify .addressboxgrey .textgrey {font-size:28px;width:90%;border:none;color:#576673; float:left;background:url(../images/inputboxes.png) no-repeat;position:relative;background-position:0 -160px;}
+#contentVerify .postcodeboxgrey .textgrey {font-size:28px;width:90%;border:none;color:#576673; float:left;background:url(../images/inputboxes.png) no-repeat;position:relative;background-position:0 -81px;}
+
+#contentVerify .input92 {float:left;background:url(../images/input92.png) no-repeat 0 9px; width:89px; height:100px;}
+#contentVerify .paddingtop-10 {margin-top:-10px;}
+#contentVerify  div.text {padding-left:13px;padding-top:16px}
+#contentVerify  .input116white {background-position:-424px 9px;width:129px}
+#contentVerify .input92grey {background-position:-92px 9px;}
+#contentVerify .input116grey {background-position:-559px 9px;width:129px}
+
+/* grey button states */
+.greybtn a,.greybtn.inactive {float:left;width:175px;height:71px;background:url(../images/cancel_btn.png);background-position:0 -146px;text-decoration:none;color:#666;text-align:center;margin:0 20px 15px 0}
+.greybtn a:active {background-position: 0px -74px;}
+.greybtn.inactive {background-position: 0px 0px;}
+.greybtn.inactive a{background-position: 0px 0px;}
+
+.greybtn a:active {background-position: 0px -74px;}
+.greybtn.inactive {background-position: 0px 0px;}
+
+/* grey button with different text */
+.greybtn a span {display:block;font-weight:normal;}
+.greybtn a span.typein {font-size:14px;font-weight:normal;padding-top:17px;line-height:1.4em}
+.greybtn a span.cancelStart {font-size:20px;color:#FF0000;font-weight:bold;padding-top:13px;}
+.greybtn a span.cancelStartagain {font-size:14px;font-weight:normal;}
+
+.greybtn a span.cancelStart2 {font-size:20px;color:#FF0000;font-weight:bold;padding-top:22px;}
+
+.greybtn a span.terms {font-size:large;font-weight:bold;padding-top:25px;}
+.greybtn span.addextra {font-size:16px;padding-top:15px;color:#fff;display:block;line-height:1.4em}
+.greybtn a span.addextra {color:#666}
+.greybtn.inactive.floatright,.greybtn.floatright a {float:right}
+.greybtn.inactive.floatright a {float:left}
+.greybtn a span.newcustomer {font-size:15px;font-weight:bold;padding-top:7px;color:#FF0000}
+.greybtn.floatright1 a {margin-left:230px;}
+
+.greybtn a span.allvouchers{color:#666;font-size: 20px;font-weight: bold;padding-top:10px;text-transform:uppercase;}
+/* SMALL grey button states */
+.greybtnsmall a,.greybtnsmall.inactive {float:left;width:177px;height:55px;background:url(../images/cancel_btn.png);background-position:0 -329px;text-decoration:none;color:#666;text-align:center;margin:0 20px 15px 0}
+.greybtnsmall a:active {background-position: 0px -276px;}
+.greybtnsmall.inactive {background-position: 0px -219px;}
+.greybtnsmall.inactive a{background-position: 0px -219px;}
+.greybtnsmall.inactive span.lessmore {font-size:20px;font-weight:bold;padding-top:15px;color:#fff;display:block;}
+.greybtnsmall a span.lessmore {font-size:20px;font-weight:bold;padding-top:14px;display:block;}
+
+
+/*green button states*/
+.confirm a,.confirm.inactive{float:right;width:265px;height:75px;background:url(../images/confirm_btn.png);background-position:0 -150px;text-decoration:none;color:#fff;}
+.confirm a:active {background-position: 0 -74px;color:#00539F;}
+.confirm.inactive {background-position: 0 1px;}
+.confirm.inactive a{background-position: 0 1px;}
+.confirm span {display:block;padding-top:25px;font-size:19px;text-align:center;width:225px}
+.confirm span.twolines {padding-top:12px;width:220px;text-align:center;line-height:1.3em;color:#FFF}
+.confirm1 a,.confirm1.inactive{float:left;width:265px;height:74px;background:url(../images/confirm_btn.png);background-position:0 -150px;text-decoration:none;color:#fff;padding-top:4px;font-size:large;line-height:3.1em;color:#FFF;font-weight:bold}
+
+
+/*small green button states*/
+.confirmsmall a {float:right;width:220px;height:75px;background:url(../images/confirm_btn.png);background-position:0 -377px;text-decoration:none;color:#fff;font-weight:bold;}
+.confirmsmall a:active {background-position: 0 -300px;color:#666}
+.confirmsmall.highlight a {background-position: 0 -229px;}
+/* green button with different text */
+.confirmsmall a span {display:block;padding-top:24px;padding-left:20px;font-size:19px;text-align:left}
+.confirmsmall a span.twolines {padding-top:12px;}
+
+
+.back a  {float:left;width:215px;height:77px; background:url(../images/Back_btn.png);background-position:  0 -153px ;text-decoration:none;margin-right: 20px;}
+.back a:active {height:76px;background-position: 0 -76px ;text-decoration:none;}
+.back div  {color:#666;font-size: 20px;font-weight: bold;padding-top:22px;padding-left:85px;text-transform:uppercase;}
+.back span  {color:#666;font-size: 20px;font-weight: bold;padding-top:22px;padding-left:85px;text-transform:uppercase;}
+.back.inactive a{background-position: 0 0px; width:215px;height:74px;}
+
+.next {margin-left:489px;padding-bottom:330px;height:75px;clear:right;}
+.next a  {float:left;width:177px;height:75px; background:url(../images/button-next.png);background-position:0 -750px;}
+.next a:hover   {background-position:-177px -750px;}
+
+
+.startagain {margin-left:489px;padding-bottom:300px;height:75px;clear:right;}
+.startagain a  {float:left;width:177px;height:75px; background:url(../images/button-next.png);background-position:  0 -225px ;}
+.startagain  a:hover   {background-position: -177px -225px ;}
+
+
+.startcontinue {margin:0 auto;width:522px;height:430px;}
+.newstart a  {float:left;width:177px;height:75px; background:url(../images/button-next.png);background-position:  0 225px ;}
+.newstart a:hover   {background-position: -177px 225px ;}
+.yescontinue a  {float:right;width:177px;height:75px; background:url(../images/button-next.png);background-position:  0 375px ;}
+.yescontinue  a:hover   {background-position: -177px 375px ;}
+
+.clear {clear:both;}
+.clear1 {clear:both;height:1px;}
+.clear5a {clear:both;height:40px;}
+.clear5 {clear:both;height:50px;}
+.clear8 {clear:both;height:140px;padding-top:15px;}
+.clear9b {clear:both;height:10px;}
+.clear9a {clear:both;padding:5px 0 0 0 ;}
+.clear9 {clear:both;height:30px;}
+.clear10 {clear:both;height:150px;}
+.clear16 {clear:both;height:260px;}
+.clear17 {clear:both;height:186px;}
+.clear22 {clear:both;height:345px;}
+.clearboth {clear:both;}
+
+
+#contentClubcard .holder1 {width:240px;margin:80px 100px 0 0;float:left;}
+#contentClubcard .holder1 p {font-size:20px}
+#contentClubcard .holder2 {margin:0 30px 0 0;float:left;}
+#contentClubcard .holder3 {margin:60px 0 0 0;width:250px;float:left;font-weight:normal;}
+#contentClubcard .holder4 {position:relative;top:170px;left:0px;width:230px;float:left;}
+#contentClubcard .barReader {margin-left:0px;font-size:24px;width:475px;text-align:center;}
+#contentClubcard .holder2 .leftTo {margin-left:35px;font-size:24px;width:405px;text-align:center;}
+#contentClubcard .holder2 .leftTo span {font-size:40px;margin:0;font-weight:bold;}
+#contentClubcard .holder2 p {padding-top:8px}
+#contentClubcard .holder1 em,#contentClubcard .holder3 em{font-size:18px;float:left;margin:5px 0 5px 3px}
+#contentClubcard .holder1 p,#contentClubcard .holder3 p {padding-top:8px}
+#contentClubcard .holder4 em {font-size:18px}
+#contentClubcard .holder4 p {font-size:18px;font-weight:bold;margin-top:15px}
+
+#contentClubcard {height:558px;}
+#contentClubcard .boxwrapper {float:left;width:373px;margin:20px 0 0 50px}
+#contentClubcard .box  {width:353px;height:298px;background:#fff;text-align:center;padding:0 10px;}
+#contentClubcard .box h1 {font-size:28px;margin:0;padding:40px 0 20px 0 ;text-transform:uppercase;}
+#contentClubcard .box p.vouchertotal {font-weight:bold;text-transform:uppercase;font-size:17px;padding-top:20px;}
+#contentClubcard .boxtop  {height:9px;background:url(../images/white-corner-t373.png) bottom; background-repeat:no-repeat;width:373px;height:9px;margin:0 auto;}
+#contentClubcard .boxbot  {height:9px;background:url(../images/white-corner-b373.png); background-repeat:no-repeat;width:373px;height:9px;margin:0 auto;}
+
+
+#contentCCEntry img {float:left;padding-top:30px}
+#contentCCEntry .blank {float:left;padding-top:30px;padding-right:50px;height:250px;width:286px;}
+#contentCCEntry .back {margin-left:4px;padding-right:10px;height:73px;clear:right;}
+#contentCCEntry .textboxCC {height:315px;text-align:center;float:left;margin-left:0px;padding-top:30px}
+#contentCCEntry .textboxCC .textCC {font-size:22px;padding:15px 0 15px 20px;text-align:center;}
+#contentCCEntry .textboxCC .inputtextCC {font-size:20px;padding:5px 0 5px 2px;text-align:center;}
+#contentCCEntry img.voucher {float:left;padding-top:30px;padding-right:50px}
+#contentCCEntry .textboxCC em {padding-top:20px;display:block}
+#contentCCEntry .error {color:#FF0000;padding-top:15px}
+
+
+#contentVoucher {height:630px;padding-right:6px;}
+#contentVoucher .blank {float:left;padding-top:30px;padding-right:50px;height:250px;width:286px;}
+#contentVoucher .back {margin-left:4px;padding-right:10px;height:73px;clear:right;}
+#contentVoucher .textbox {height:315px;text-align:center;float:left;margin-left:0px;padding-top:30px}
+#contentVoucher .textbox .text {font-size:22px;padding:15px 0 15px 20px;text-align:center;}
+#contentVoucher .textbox .inputtext {font-size:20px;padding:5px 0 5px 2px;text-align:center;}
+#contentVoucher img.voucher {float:left;padding-top:30px;padding-right:50px}
+#contentVoucher .textbox em {padding-top:20px;display:block}
+#contentVoucher .error {color:#FF0000;padding-top:15px;font-size:22px;}
+#contentVoucher .cssPager table { margin-right:-5px; display:block;}
+#contentVoucher .cssPager td {padding-left: 30px; padding-right: 30px;font-size:30px;}
+#contentVoucher .cssPager span {padding-left: 30px; padding-right: 30px; font-size:32px; background-color:#507CD1; color:#fff}     
+#contentVoucher .grid {border:1}
+#contentVoucher .msg {font-size:20px;text-align:left;margin-left:0px;font-weight:bold;}
+#contentVoucher .valuelbl {font-size:24px;text-align:center;font-weight:bold;}
+#contentVoucher .vouchermsgdiv {padding-top:10px;}
+#contentVoucher .vouchermsg {font-size:26px;text-align:left;font-weight:bold;}
+#contentVoucher .vouchermsg1 {float:left; width:175px;height:52px;background:url('../images/WhiteBox.JPG') 0 -140px;font-size:26px;text-align:center;padding-top:16px;font-weight:bold;margin:7px 0 0 -10px}
+
+#contentAllVoucher {height:350px;padding-right:6px;}
+#contentAllVoucher .blank {float:left;padding-top:30px;padding-right:50px;height:250px;width:286px;}
+#contentAllVoucher .back {margin-left:4px;padding-right:10px;height:73px;clear:right;}
+#contentAllVoucher .textbox {height:315px;text-align:center;float:left;margin-left:0px;padding-top:30px}
+#contentAllVoucher .textbox .text {font-size:22px;padding:15px 0 15px 20px;text-align:center;}
+#contentAllVoucher .textbox .inputtext {font-size:20px;padding:5px 0 5px 2px;text-align:center;}
+#contentAllVoucher img.voucher {float:left;padding-top:30px;padding-right:50px}
+#contentAllVoucher .textbox em {padding-top:20px;display:block}
+#contentAllVoucher .error {color:#FF0000;padding-top:15px;font-size:22px;}
+#contentAllVoucher .msg {margin-left:0px;font-size:24px;text-align:justify; padding-top:30px; font-weight:bold;}
+
+
+#contentPrint .boxbckgrd {margin:200px auto 0 auto;width:250px;height:200px;background-color:#fff;z-index:-1;}
+#contentPrint .box {text-align:center;width:250px;position:relative;top:19px;}
+#contentPrint .box p {font-size:24px;}
+#contentPrint .box p.vouchernumberlarge {font-weight:bold;font-size:40px;margin-bottom:10px;}
+.clearPrint {clear:both;height:345px;}
+
+
+#contentTerms .wrappercentre {height:650px; margin-top:10px; text-align:center;}
+#contentTerms p {font-size:20px;line-height:145%;width:800px;margin:0 auto 0 auto;text-align:justify;}
+#contentTerms h1 {font-size:26px;line-height:145%;width:800px;margin:0 auto 25px auto;}
+.startTerms {margin:20px auto 0 auto;width:200px;}
+#contentTerms .box  {width:800px;height:580px;margin:0 auto;background:#fff;text-align:center;padding:30px 45px 0px 45px;}
+
+
+#contentCancel .box p {font-size:24px;}
+#contentCancel .boxbckgrd {margin:200px auto 0 auto;width:450px;height:200px;background-color:#fff;z-index:-1;}
+#contentCancel .box{text-align:center;width:450px;position:relative;top:30px;}
+#contentCancel .box p.thanks {font-weight:bold;font-size:40px;padding-top:10px;}
+#contentCancel .confirm {float:left;margin:20px 0 0 470px;background-position:center;}
+#contentCancel p.thanks{font-size:28px;font-weight:bold;}
+.startError {margin:20px auto 0 auto;width:200px;}
+.clearMsg {clear:both;height:40px;}
+.startMsg {margin:40px auto 0 auto;width:200px;}
+.startError1 {margin:10px 50 auto;width:150px;position:relative;top: -10px;left: 366px;}
+.startError2 {margin:10px 50 auto;width:150px;position:relative;
+	top: -96px;
+	left: 543px;
+}
+
+
+
+.cancelright {float:right; width:270px;font-style:italic;line-height:150%;font-size:20px;}
+.cancelright p {font-size:20px;}
+
+
+#footer {height:75px;display:block;padding-bottom:50px;margin-left:236px;margin-right:30px; width:1155px;}
+.arrow {background-image:url(../images/arrow-down.png); background-repeat:no-repeat; background-position:730px 780px;}
+.arrowleft {background-position:270px 780px;}
+.keyboard {width:100%;height:410px;background-color:#e4eef7;float:left}
+
+
+.inputbluesquare {float:left;background:url(../images/unchk.jpg) no-repeat 0 0; width:45px; height:45px;margin-left:20px;}
+.inputbluesquaretick {float:left;background:url(../images/chk.png) no-repeat 0 0; width:45px; height:45px;margin-left:20px;}
+
+/* Added as part of International Kiosk Development */
+#navigation em {font-size:28px;font-weight:bold;font-style:normal;color:#00539F;position:relative;top:-2px;left:25px}
+
+
+/*Voucher Summary Screen Green Button States*/
+.confirmVoucherSummary a,.confirmVoucherSummary.inactive{float:left;width:265px;height:75px;background:url(../images/confirm_btn.png);background-position:0 -150px;text-decoration:none;color:#fff;}
+.confirmVoucherSummary a:active {background-position: 0 -74px;color:#00539F;}
+.confirmVoucherSummary.inactive {background-position: 0 1px;}
+.confirmVoucherSummary.inactive a{background-position: 0 1px;}
+.confirmVoucherSummary span {display:block;padding-top:25px;font-size:19px;text-align:center;width:225px}
+.confirmVoucherSummary span.twolines {padding-top:12px;width:220px;text-align:center;line-height:1.3em;color:#FFF}
+
+.msgVoucherSummary {margin-top:0px;font-size:24px;text-align:left; padding-top:30px; font-weight:bold;}
+.floatleftVoucherSummary a {margin-left:230px;}
+
+.hr.dottedline
+{
+	border-top-width: thin;
+	border-top-style: dotted;
+	border-top-color:Red;
+}
+
+#body_wrapperVoucherSummary1 {margin-left:236px;width:1155px;}
+#body_wrapperVoucherSummary2 {margin-left:236px;width:1155px;}
+#body_wrapperVoucherSummary3 {margin-left:236px;width:1155px; margin-top:100px;}
+#contentVerify .titletext.Genericlabel{left:0px;top:20px;width:155px;text-align:right;}
+.VoucherSummaryBackCancel{margin-top:200px;}
+
+#contentCoupon {height:660px;padding-right:6px;}
+#contentCoupon .blank {float:left;padding-top:30px;padding-right:50px;height:250px;width:286px;}
+#contentCoupon .back {margin-left:4px;padding-right:10px;height:73px;clear:right;}
+#contentCoupon .textbox {height:315px;text-align:center;float:left;margin-left:0px;padding-top:30px}
+#contentCoupon .textbox .text {font-size:22px;padding:15px 0 15px 20px;text-align:center;}
+#contentCoupon .textbox .inputtext {font-size:20px;padding:5px 0 5px 2px;text-align:center;}
+#contentCoupon img.voucher {float:left;padding-top:30px;padding-right:50px}
+#contentCoupon .textbox em {padding-top:20px;display:block}
+#contentCoupon .error {color:#FF0000;padding-top:15px;font-size:22px;}
+#contentCoupon .cssPager table { margin-right:-5px; display:block;}
+#contentCoupon .cssPager td {padding-left: 30px; padding-right: 30px;font-size:30px;}
+#contentCoupon .cssPager span {padding-left: 30px; padding-right: 30px; font-size:32px; background-color:#507CD1; color:#fff}     
+#contentCoupon .grid {border:1}
+#contentCoupon .msg {font-size:20px;text-align:left;margin-left:0px;font-weight:bold;}
+#contentCoupon .valuelbl {font-size:24px;text-align:center;font-weight:bold;}
+#contentCoupon .vouchermsgdiv {padding-top:10px;}
+#contentCoupon .vouchermsg {font-size:26px;text-align:left;font-weight:bold;}
+
+
+
+/*Terms & Conditions*/
+/*TC1*/
+#contentTerms .TC1highlight {display:inline-block;background:url(../Images/TC1Highlighted.png) no-repeat;width:83px;height:83px;background-position:0 0 ;} 
+#contentTerms .TC1normal {display:inline-block;background:url(../Images/TC1Normal.png) no-repeat;width:83px;height:83px;background-position:0 0;}
+
+/*TC2*/
+#contentTerms .TC2highlight {display:inline-block;background:url(../Images/TC2Highlighted.png) no-repeat;width:83px;height:83px;background-position:0 0;} 
+#contentTerms .TC2normal {display:inline-block;background:url(../Images/TC2Normal.png) no-repeat;width:83px;height:83px;background-position:0 0;}
+
+/*TC3*/
+#contentTerms .TC3highlight {display:inline-block;background:url(../Images/TC3Highlighted.png) no-repeat;width:83px;height:83px;background-position:0 0;} 
+#contentTerms .TC3normal {display:inline-block;background:url(../Images/TC3Normal.png) no-repeat;width:83px;height:83px;background-position:0 0;}
+
+/*TC4*/
+#contentTerms .TC4highlight {display:inline-block;background:url(../Images/TC4Highlighted.png) no-repeat;width:83px;height:83px;background-position:0 0;} 
+#contentTerms .TC4normal {display:inline-block;background:url(../Images/TC4Normal.png) no-repeat;width:83px;height:83px;background-position:0 0;}
+
+/*TC5*/
+#contentTerms .TC5highlight {display:inline-block;background:url(../Images/TC5Highlighted.png) no-repeat;width:83px;height:83px;background-position:0 0;} 
+#contentTerms .TC5normal {display:inline-block;background:url(../Images/TC5Normal.png) no-repeat;width:83px;height:83px;background-position:0 0;}
+
+/*TC Page Height*/
+#contentTerms .TCPage1Height{height: 650px; padding-top: 10px;}
+
+.info-section {clear:both; padding:21px 0 30px; overflow:hidden}
+.info-section img {float:left}
+.info-section p {color:#333; margin:0; padding-left:100px; float:left; padding-top:50px; font-size:20px}

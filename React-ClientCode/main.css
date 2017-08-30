@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'tescormodernegular';
+  src: url("fonts/tescomodernregular/TESCOModern-Regular-web.eot");
+  src: url("fonts/tescomodernregular/TESCOModern-Regular-web.eot?#iefix") format("embedded-opentype"), url("fonts/tescomodernregular/TESCOModern-Regular-web.woff") format("woff"), url("fonts/tescomodernregular/TESCOModern-Regular-web.ttf") format("truetype"), url("fonts/tescomodernregular/TESCOModern-Regular-web.svg#tescoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'tescomodernbold';
+  src: url("fonts/tescomodernbold/TESCOModern-Bold-web.eot");
+  src: url("fonts/tescomodernbold/TESCOModern-Bold-web.eot?#iefix") format("embedded-opentype"), url("fonts/tescomodernbold/TESCOModern-Bold-web.woff") format("woff"), url("fonts/tescomodernbold/TESCOModern-Bold-web.ttf") format("truetype"), url("fonts/tescomodernbold/TESCOModern-Bold-web.svg#tescobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+  font-family: 'tescoregular';
+  src: url("fonts/tescoregular/Tesco_W_Rg.eot");
+  src: url("fonts/tescoregular/Tesco_W_Rg.eot?#iefix") format("embedded-opentype"), url("fonts/tescoregular/Tesco_W_Rg.woff") format("woff"), url("fonts/tescoregular/Tesco_W_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'tescobold';
+  src: url("fonts/tescobold/Tesco_W_Bd.eot");
+  src: url("fonts/tescobold/Tesco_W_Bd.eot?#iefix") format("embedded-opentype"), url("fonts/tescobold/Tesco_W_Bd.woff") format("woff"), url("fonts/tescobold/Tesco_W_Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+
+  body {
+    font-family: 'tescoregular';}
+    .header{
+      height: 60px;
+      z-index: 10;
+      border-bottom: 4px solid #00539f;
+      background-color: #00294f;
+      left: 0;
+      right: 0;
+      top:0;
+      margin: 0,auto;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+    .headerText{
+      font-family: tescoregular,Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .copyright
+    {
+      color:#666;
+      width: 100%;
+      position: relative;
+      font-family: 'tescobold';
+      padding-top: 10px;
+      text-align: center;
+    }
+
+.menuText{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #00539f;
+}

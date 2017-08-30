@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'tescormodernegular';
+  src: url("./fonts/tescomodernregular/TESCOModern-Regular-web.eot");
+  src: url("./fonts/tescomodernregular/TESCOModern-Regular-web.eot?#iefix") format("embedded-opentype"), url("./fonts/tescomodernregular/TESCOModern-Regular-web.woff") format("woff"), url("./fonts/tescomodernregular/TESCOModern-Regular-web.ttf") format("truetype"), url("./fonts/tescomodernregular/TESCOModern-Regular-web.svg#tescoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'tescomodernbold';
+  src: url("./fonts/tescomodernbold/TESCOModern-Bold-web.eot");
+  src: url("./fonts/tescomodernbold/TESCOModern-Bold-web.eot?#iefix") format("embedded-opentype"), url("./fonts/tescomodernbold/TESCOModern-Bold-web.woff") format("woff"), url("./fonts/tescomodernbold/TESCOModern-Bold-web.ttf") format("truetype"), url("./fonts/tescomodernbold/TESCOModern-Bold-web.svg#tescobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+  font-family: 'tescoregular';
+  src: url("./fonts/tescoregular/Tesco_W_Rg.eot");
+  src: url("./fonts/tescoregular/Tesco_W_Rg.eot?#iefix") format("embedded-opentype"), url("./fonts/tescoregular/Tesco_W_Rg.woff") format("woff"), url("./fonts/tescoregular/Tesco_W_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'tescobold';
+  src: url("./fonts/tescobold/Tesco_W_Bd.eot");
+  src: url("./fonts/tescobold/Tesco_W_Bd.eot?#iefix") format("embedded-opentype"), url("./fonts/tescobold/Tesco_W_Bd.woff") format("woff"), url("./fonts/tescobold/Tesco_W_Bd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+
+  body {
+    font-family: 'tescoregular';}
+    .header{
+      height: 60px;
+      z-index: 10;
+      border-bottom: 4px solid #00539f;
+      background-color: #00294f;
+      left: 0;
+      right: 0;
+      top:0;
+      margin: 0,auto;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+    .headerText{
+      font-family: tescoregular,Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .copyright
+    {
+      color:#666;
+      width: 100%;
+      position: relative;
+      font-family: 'tescobold';
+      padding-top: 10px;
+      text-align: center;
+    }
+
+  .menuText{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #00539f;
+  }
+  .txtMsg{
+    font-size: 1.1em;
+    font-weight: 200;
+    color:#666;
+  }
+  .txtHeader{
+    font-size: 1.4em;
+    font-weight: 600;
+    color:#666;
+  }
+  .ddl{
+    width: 30%;
+    height: 100%;
+    opacity:1;
+    border:1px solid #ccc;
+    background-color: #fff;
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 200;
+  }
+  .txtbox{
+    background: #fff;
+     border: 1px solid #CCCCCC;
+     color: #222;
+     font-size: 1.0rem;
+     line-height: 1.2em;
+     height: 30px;
+     padding: 6px 8px;
+     box-sizing: border-box;
+     box-shadow: 0 0 0 0 rgba(153, 209, 233, 0);
+     transition: box-shadow .3s ease-in-out;
+     -webkit-appearance: none;
+     border-radius: 0;
+     width:40%;
+     }
+  .btn{
+    background: #00539F;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-family: 'tescobold';
+    line-height: 30px;
+    min-height: 35px;
+    min-width: 30px;
+    padding: 0 26px;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 0 0 rgba(153, 209, 233, 0);
+    transition: box-shadow .3s ease-in-out;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+ .divPositionCenter{
+   text-align: center;
+   width: 40%;
+ }
+ .displayNone{
+   display:none;
+ }
+  .displayBlock{
+    display: block;
+  }
+  .btnDownload{
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    color: #666;
+  }
+  .positionRight{
+    float: right;
+  }
+  .container{
+    border-radius: 4;
+    border: 0px solid lightgray;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    left: 12%;
+  }
+  .content{
+    width: 95%;
+    padding-left: 10px;
+    position: relative;
+    vertical-align: top;
+  }
+  .anchor{
+    font-weight:bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #00539f;
+  }
+  .menuDiv{
+    font-weight: bold;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #00539f;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+    position: relative;
+  }
+  .right{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    position: relative;
+    vertical-align:middle;
+  }
+  .ddlSelect {
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  color: #222;
+  display: inline-block;
+  font-size: 1.0rem;
+  line-height: 30px;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  width: 40%;
+  z-index: 1; }
+.ddlSelect em {
+  font-style: normal; }
+.ddlSelect em:after {
+  content: '\e008';
+  display: block;
+  font-family: 'icons';
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 30px;
+  color: #222; }
+.ddlSelect select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  border: none;
+  background: none;
+  position: relative;
+  width: 40%;
+  padding: 0 40px 0 12px;
+  color: #666666;
+  font-size: 1.0rem;
+  height: 30px;
+  line-height: 30px;
+  font-family: 'tescobold';
+  font-style: italic;
+  z-index: 2; }
+.ddlSelect select:focus {
+  color: #222;
+  outline: none; }
+.ddlSelect select:focus + em:after {
+  content: '\e602'; }
+.ddlSelect:disabled {
+  background: #f6f6f6; }
+
+
+  input[type="file" i] {
+      align-items:center;
+      text-align: center;
+      background: #fff;
+       border: 1px solid #CCCCCC;
+       color: #222;
+       font-size: 1.0rem;
+       line-height: 1.1em;       
+       padding: 6px 8px;
+       box-sizing: border-box;
+       box-shadow: 0 0 0 0 rgba(153, 209, 233, 0);
+       transition: box-shadow .3s ease-in-out;
+       -webkit-appearance: none;
+       border-radius: 0;
+       width:40%;
+  }
